@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-01-02",
-  "totalTopics": 57,
+  "lastUpdated": "2026-01-05",
+  "totalTopics": 58,
   "totalPostLinks": 536,
   "navigation": [
     {
@@ -26,6 +26,11 @@
     }
   ],
   "topics": [
+    {
+      "id": "0.1",
+      "title": "Uncategorized",
+      "posts": []
+    },
     {
       "id": "5.1",
       "title": "Custom Exporter",

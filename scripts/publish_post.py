@@ -35,11 +35,13 @@ POSTS_DIR = REPO_ROOT / "a"
 DRAFTS_DIR = POSTS_DIR / "drafts"
 INDEX_FILE = POSTS_DIR / "index.html"
 CHRONO_FILE = POSTS_DIR / "toc" / "chrono-data.json"
+TOC_FILE = POSTS_DIR / "toc" / "toc-data.json"
 ROOT_INDEX = REPO_ROOT / "index.html"
 
-# Note: The left sidebar (toc-data.json) contains topic-based navigation (by subject).
-# New posts are NOT automatically added to topics - use manage_topics.py to add posts
-# to subject categories. The right-side timeline (chrono-data.json) is always updated.
+# Topic assignment:
+# - New posts are automatically added to the "Uncategorized" topic (ID 0.1)
+# - Use manage_topics.py to move posts to subject-specific topics
+# - The right-side timeline (chrono-data.json) is always updated
 
 # HTML template for new posts
 POST_TEMPLATE = '''<!DOCTYPE html>
@@ -253,6 +255,57 @@ def update_chrono_data(title, filename, post_number, post_date, dry_run=False):
     return True
 
 
+def update_toc_data(title, filename, dry_run=False):
+    """Add the new post to the Uncategorized topic in toc-data.json."""
+    if not TOC_FILE.exists():
+        print(f"Warning: TOC file not found: {TOC_FILE}")
+        return False
+    
+    try:
+        toc_data = json.loads(TOC_FILE.read_text(encoding='utf-8'))
+    except json.JSONDecodeError as e:
+        print(f"Warning: Could not parse TOC file: {e}")
+        return False
+    
+    # Find the Uncategorized topic (ID 0.1)
+    uncategorized = None
+    for topic in toc_data.get('topics', []):
+        if topic.get('id') == '0.1':
+            uncategorized = topic
+            break
+    
+    if uncategorized is None:
+        print("Warning: Uncategorized topic (ID 0.1) not found in toc-data.json")
+        return False
+    
+    # Create new post entry
+    new_post = {
+        "title": title,
+        "file": filename
+    }
+    
+    # Check if post already exists (avoid duplicates)
+    existing_files = [p.get('file') for p in uncategorized.get('posts', [])]
+    if filename not in existing_files:
+        uncategorized['posts'].append(new_post)
+        toc_data['totalPostLinks'] = toc_data.get('totalPostLinks', 0) + 1
+    
+    # Update metadata
+    toc_data['lastUpdated'] = datetime.now().strftime("%Y-%m-%d")
+    
+    if dry_run:
+        print(f"[DRY RUN] Would add to Uncategorized topic in toc-data.json")
+    else:
+        TOC_FILE.write_text(
+            json.dumps(toc_data, indent=2, ensure_ascii=False),
+            encoding='utf-8'
+        )
+        print(f"Updated toc-data.json:")
+        print(f"  - Added to Uncategorized topic")
+    
+    return True
+
+
 def update_homepage_stats(post_count, dry_run=False):
     """Update the post count on the homepage."""
     if not ROOT_INDEX.exists():
@@ -364,6 +417,10 @@ def publish_post(md_file, date=None, title=None, slug=None,
     if update_toc_flag:
         update_chrono_data(post_title, filename, post_number, post_date, dry_run)
     
+    # Update toc-data.json (left sidebar - add to Uncategorized topic)
+    if update_toc_flag:
+        update_toc_data(post_title, filename, dry_run)
+    
     # Update homepage stats
     if update_stats:
         update_homepage_stats(post_number, dry_run)
@@ -376,7 +433,8 @@ def publish_post(md_file, date=None, title=None, slug=None,
         print("  git add -A")
         print(f'  git commit -m "Add post {post_number}: {post_title}"')
         print("  git push")
-        print("\nTo add this post to a topic (left sidebar):")
+        print("\nTo move this post to a specific topic (from Uncategorized):")
+        print(f"  python scripts/manage_topics.py remove-post 0.1 {filename}")
         print(f"  python scripts/manage_topics.py add-post <topic_id> {filename} \"{post_title}\"")
     
     return True
@@ -396,10 +454,11 @@ Updates performed:
   - Creates HTML file in a/ directory
   - Adds entry to a/index.html post table (chronological TOC)
   - Adds to a/toc/chrono-data.json (right column timeline navigation)
+  - Adds to Uncategorized topic in a/toc/toc-data.json (left sidebar)
   - Updates post count on homepage (index.html)
   
-Note: Posts are NOT automatically added to topics in the left sidebar.
-      Use manage_topics.py to add posts to subject categories.
+Note: New posts are added to the Uncategorized topic (ID 0.1) by default.
+      Use manage_topics.py to move posts to subject-specific topics.
         """
     )
     
