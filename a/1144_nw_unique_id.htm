@@ -407,7 +407,7 @@ Acad model:
 Q1) The requirement in any NW source file seems to be that all elements must have *unique* IDs, but these are not guaranteed to have any meaning back in the originating application and not guaranteed to be the same for same elements in subsequent exports. These seem to be mapped to 'InstanceHahCode' (there also seems to be difference between the hash codes for ModelItem-s vs ModelGeometry-s, but that's not too relevant in the current context).
 Pls confirm?
 
-Q2) Each app can *optionally* provide 'InstanceGuid' as the unique identifier in 'BIM-ish' sense, but it is the exporter's responsibility to make this GUID unique (NW makes no checks for this). For example, Autocad does not provide this GUID (see above), while Revit provides it in the same manner as 'DWF GUID' as described in: http://thebuildingcoder.typepad.com/blog/2009/02/UniqueId-dwf-and-IFC-guid.html. BTW, Revit files also expose the same internal InstanceGuid via [Item]/[GUID] property.
+Q2) Each app can *optionally* provide 'InstanceGuid' as the unique identifier in 'BIM-ish' sense, but it is the exporter's responsibility to make this GUID unique (NW makes no checks for this). For example, Autocad does not provide this GUID (see above), while Revit provides it in the same manner as 'DWF GUID' as described in: 0104_uniqueid_dwf_ifc_guid.htm BTW, Revit files also expose the same internal InstanceGuid via [Item]/[GUID] property.
 Pls confirm?
 
 Q2A) Due to the stability and persistence of Revit's internal 'UniqueId', the corresponding InstanceGuid exported to NW WILL be the same for all same elements in any subsequent exports.

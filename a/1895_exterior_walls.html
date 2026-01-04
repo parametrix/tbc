@@ -37,9 +37,9 @@
 <!---
 
 - /a/src/rvt/RevitFindExteriorWalls/
-  https://thebuildingcoder.typepad.com/blog/2018/05/filterrule-use-and-retrieving-exterior-walls.html#comment-5289806219
+  1656_exterior_walls.html#comment-5289806219
 
-  First round at [Retrieving All Exterior Walls](https://thebuildingcoder.typepad.com/blog/2018/05/drive-revit-via-a-wcf-service-wall-directions-and-parameters.html#8)
+  First round at [Retrieving All Exterior Walls](1652_revit_wcf_service.html#8)
   - using the built-in wall function parameter `FUNCTION_PARAM` to filter for exterior walls, `IsExterior( w.WallType )` returns true
   The Revit API also provides a BuildingEnvelopeAnalyzer class that should help with this, but there seem to be problems using it, cf.:
   - Finding exterior walls by BuildingEnvelopeAnalyzer
@@ -47,7 +47,7 @@
   Yet another workaround was suggested: Place some room separation lines outside the building envelope and create a huge room around the entire building. Then, it’s just a matter of getting room boundaries, filtering out the RSLs, appending the remaining elements to your list, deleting the room and RSLs, and moving up to the next level. It may not work for some bad modelling cases, but catches most.
   After further discussion with the development team, they asked: Is the building model enclosed? It needs to be in order for the analyzer to work. In other words, do you have Roof and Floor elements to form enclosed spaces in the model?
   Ten days later:
-  Several possible approaches to [retrieve all exterior walls](https://thebuildingcoder.typepad.com/blog/2018/05/filterrule-use-and-retrieving-exterior-walls.html#2)
+  Several possible approaches to [retrieve all exterior walls](1656_exterior_walls.html#2)
   Now a discussion between ...
 
 - Get the walls, ceiling and floor of a room?

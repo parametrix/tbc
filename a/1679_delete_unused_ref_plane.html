@@ -40,23 +40,23 @@
 <!---
 
 - find references intersector
-  http://thebuildingcoder.typepad.com/blog/2010/01/findreferencesbydirection.html#comment-4067218487
+  0294_abg09_findReferencesByDir.htm#comment-4067218487
   Return reference to ceiling face to place lighting fixture above a given point.
 
 - FindReferencesByDirection sample by Joshua Lumley
 
 - add joshua comment to main blog post
-  http://thebuildingcoder.typepad.com/blog/2016/04/stable-reference-string-magic-voodoo.html#comment-4068022721
-  http://thebuildingcoder.typepad.com/blog/2016/04/stable-reference-string-magic-voodoo.html#6
+  1429_stable_references.html#comment-4068022721
+  1429_stable_references.html#6
 
 - email [Deleting Unnamed Non-Hosting Reference Planes] Austin Sudtelgte
   /a/doc/revit/tbc/git/a/zip/as_RemoveReferencePlanes.zip
   /a/doc/revit/tbc/git/a/img/as_RemoveReferencePlanes01.png
   /a/doc/revit/tbc/git/a/img/as_RemoveReferencePlanes02.png
-  http://thebuildingcoder.typepad.com/blog/2014/02/deleting-unnamed-non-hosting-reference-planes.html#comment-3985629186
+  1098_delete_unused_ref_plane.htm#comment-3985629186
     Austin Sudtelgte
     As of 2017 this method no longer works, Revit doesn't throw an error when deleting a plane with something hosted to it. You will have to get all family instances in the document, check their host ID parameter, get all reference planes excluding the ones whose IDs we just collected, then delete. Dimensions that measure to a reference plane will be removed with the reference plane. The methods used above will still work to determine if one of those will be deleted or not. Alternatively, as of 2018.1, there is an Element.GetDependentElements() method that will return the same things as what is returned when deleting the element, just without having to delete it and roll back a transaction.
-  http://thebuildingcoder.typepad.com/blog/2018/04/whats-new-in-the-revit-2019-api.html#comment-3985568426
+  1647_whats_new_2019.html#comment-3985568426
     Austin Sudtelgte
     Point 2.3 Element.GetDependentElements() seems to require an element filter rather than having it be optional as noted above. It's possible (since the complete API doesn't seem to be posted to revitapidocs.com yet) that in 2019 the filter is optional but as of 2018.1 it was not.
   0738_melbourne_devlab.htm: Delete reference planes not hosting any elements: DeleteUnnamedNonHostingReferencePlanes.
@@ -69,7 +69,7 @@
     CmdDeleteUnusedRefPlanes in The Building Coder samples, migrated
     Construct a parameter filter to get only unnamed reference planes, i.e. reference planes whose name equals the empty string:
   We already have the global solution to purge unused objects:
-  http://thebuildingcoder.typepad.com/blog/2018/08/purge-unused-using-performance-adviser.html
+  1678_purge_unused.html
   However, let's pick up a specific sub-problem that may or may not be covered and examine it once again, for the third time:
 
 Reference intersector and deleting reference planes in the #RevitAPI @AutodeskRevit #bim #dynamobim @AutodeskForge #ForgeDevCon http://bit.ly/refintdelrefplane

@@ -661,7 +661,7 @@ I'm not sure if it would work, worth a try I guess.</p>
 <p>Assuming the above rule holds true, all parameter definitions found within Document.ParameterBindings can then be categorised as shared or non-shared. In the event that several parameters are found with the same name (case-sensitive), any that are shared can be uiquely identified using the GUID and there will be at most 1 non-shared parameter which can be uniquely identified within the group based on its non-shared status.</p>
 <p>That should get you motoring along.</p>
 <p>By the way I'd like to thank Jeremy for his blog post and code
-for <span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/2012/04/adding-a-category-to-a-shared-parameter-binding.htm">adding a category to a shared parameter binding <em>(post unavailable)</em></span>, which I used to cobble together a quick test rig for the binding.</p>
+for <span class="unavailable-link" title="Original: 0754_shared_param_add_categ.htm">adding a category to a shared parameter binding <em>(post unavailable)</em></span>, which I used to cobble together a quick test rig for the binding.</p>
 <p><strong>Response:</strong> While it's unfortunate that we have to play games like this, the approach sounds utterly brilliant.  I had forgotten that the ProjectInformation object is effectively like a singleton &ndash; always exactly 1 element of it exists.</p>
 <p>It's the perfect place to try to do something like this.</p>
 <p>I'll work on integrating this into my code today, but it sounds extremely promising.  I'll let you know how it goes.</p>
