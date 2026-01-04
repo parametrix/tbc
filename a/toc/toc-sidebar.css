@@ -805,3 +805,279 @@ body.tbc-resizing * {
 .tbc-code-wrapper pre {
   margin: 0 0 1em 0;
 }
+
+/* ================================
+   CHRONOLOGICAL TIMELINE COLUMN
+   Integrated right-side navigation
+   ================================ */
+
+/* CSS Variables for Timeline */
+:root {
+  --tbc-chrono-width: 150px;
+  --tbc-chrono-gap: 30px;
+  --tbc-chrono-text: #6b7280;
+  --tbc-chrono-text-muted: #9ca3af;
+  --tbc-chrono-link: #4b5563;
+  --tbc-chrono-link-hover: #2563eb;
+}
+
+/* Content wrapper - flexbox layout for content + timeline */
+.tbc-content-wrapper {
+  display: flex;
+  gap: var(--tbc-chrono-gap);
+  padding: 20px;
+  padding-right: 20px;
+}
+
+/* Main blog content - MAXIMIZED, no max-width */
+.tbc-blog-content {
+  flex: 1;
+  min-width: 0;  /* Allow flex shrinking */
+}
+
+/* Ensure article inside content has readable max-width on very wide screens */
+.tbc-blog-content article {
+  max-width: 900px;
+}
+
+/* Right column - integrated, minimal footprint */
+.tbc-chrono-column {
+  width: var(--tbc-chrono-width);
+  flex-shrink: 0;
+  background: transparent;  /* Same as content area */
+  border: none;
+  padding-top: 20px;
+  font-size: 13px;
+  color: var(--tbc-chrono-text);
+  line-height: 1.8;
+}
+
+/* Sticky positioning for timeline nav */
+.tbc-chrono-nav {
+  position: sticky;
+  top: 20px;
+}
+
+/* Section labels - subtle uppercase */
+.tbc-chrono-section-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--tbc-chrono-text-muted);
+  margin-bottom: 12px;
+  display: block;
+  font-weight: 500;
+}
+
+/* Previous/Next navigation */
+.tbc-chrono-prevnext {
+  margin-bottom: 24px;
+}
+
+.tbc-chrono-prev,
+.tbc-chrono-next {
+  display: block;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: var(--tbc-chrono-link);
+  transition: color 0.15s ease;
+}
+
+.tbc-chrono-prev:hover,
+.tbc-chrono-next:hover {
+  color: var(--tbc-chrono-link-hover);
+}
+
+.tbc-chrono-label {
+  display: block;
+  font-size: 11px;
+  color: var(--tbc-chrono-text-muted);
+  margin-bottom: 2px;
+}
+
+.tbc-chrono-title {
+  display: block;
+  font-size: 12px;
+  line-height: 1.4;
+  /* Truncate long titles */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Current post indicator */
+.tbc-chrono-current {
+  margin-bottom: 24px;
+  padding: 8px 10px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  border-left: 3px solid var(--tbc-accent-primary);
+}
+
+.tbc-chrono-current .tbc-chrono-label {
+  color: var(--tbc-accent-primary);
+  font-weight: 500;
+}
+
+.tbc-chrono-current .tbc-chrono-num {
+  font-size: 12px;
+  color: var(--tbc-chrono-text);
+}
+
+/* Year browser */
+.tbc-chrono-years {
+  margin-top: 16px;
+}
+
+.tbc-chrono-years ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tbc-chrono-years li {
+  margin-bottom: 4px;
+}
+
+.tbc-chrono-year-item {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.tbc-chrono-year-link {
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  color: var(--tbc-chrono-link);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tbc-chrono-year-link:hover {
+  color: var(--tbc-chrono-link-hover);
+  text-decoration: underline;
+}
+
+.tbc-chrono-year-count {
+  font-size: 11px;
+  color: var(--tbc-chrono-text-muted);
+}
+
+/* Expanded year - posts list */
+.tbc-chrono-year-posts {
+  list-style: none;
+  margin: 6px 0 12px 12px;
+  padding: 0;
+  display: none;
+}
+
+.tbc-chrono-year-posts.expanded {
+  display: block;
+}
+
+.tbc-chrono-year-posts li {
+  margin-bottom: 3px;
+}
+
+.tbc-chrono-post-link {
+  font-size: 11px;
+  color: var(--tbc-chrono-text-muted);
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tbc-chrono-post-link:hover {
+  color: var(--tbc-chrono-link-hover);
+}
+
+.tbc-chrono-post-link.current {
+  color: var(--tbc-accent-primary);
+  font-weight: 500;
+}
+
+/* Divider */
+.tbc-chrono-divider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 16px 0;
+}
+
+/* ================================
+   Responsive: Timeline Column
+   ================================ */
+
+/* Hide timeline on narrower screens, move to bottom */
+@media (max-width: 1000px) {
+  .tbc-content-wrapper {
+    flex-direction: column;
+  }
+  
+  .tbc-chrono-column {
+    width: 100%;
+    padding-top: 0;
+    margin-top: 30px;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 24px;
+  }
+  
+  .tbc-chrono-nav {
+    position: static;
+  }
+  
+  /* Horizontal prev/next layout */
+  .tbc-chrono-prevnext {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .tbc-chrono-prev,
+  .tbc-chrono-next {
+    flex: 1;
+    margin-bottom: 0;
+  }
+  
+  .tbc-chrono-next {
+    text-align: right;
+  }
+  
+  /* Horizontal year browser */
+  .tbc-chrono-years ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+  }
+  
+  .tbc-chrono-years li {
+    margin-bottom: 0;
+  }
+}
+
+/* When sidebar is collapsed on mobile, full width content */
+@media (max-width: 768px) {
+  .tbc-content-wrapper {
+    padding: 15px;
+  }
+  
+  .tbc-chrono-prevnext {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .tbc-chrono-next {
+    text-align: left;
+  }
+}
+
+/* Print: hide timeline */
+@media print {
+  .tbc-chrono-column {
+    display: none;
+  }
+}
