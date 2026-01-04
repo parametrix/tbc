@@ -146,6 +146,46 @@ class TopicTOCExtractor(HTMLParser):
             self.topics.append(self.current_topic)
 
 
+def find_all_post_links(content: str) -> List[Dict[str, str]]:
+    """
+    Find all post links (href to .htm/.html files) in the content.
+    Handles various HTML structures including nested lists.
+    """
+    # Pattern to find links to post files - allows <code> tags in title
+    link_pattern = re.compile(
+        r'<a\s+href="([^"]+\.htm[l]?(?:#[^"]*)?)"[^>]*>(.*?)</a>',
+        re.IGNORECASE | re.DOTALL
+    )
+    
+    posts = []
+    for match in link_pattern.finditer(content):
+        href = match.group(1)
+        title = match.group(2).strip()
+        
+        # Skip external links and non-post files
+        if href.startswith('http://') or href.startswith('https://'):
+            continue
+        if not re.match(r'\d{4}_', href):
+            continue
+        
+        # Remove <code> tags from title
+        title = re.sub(r'</?code>', '', title)
+            
+        # Convert HTML entities
+        title = title.replace('&ndash;', '–').replace('&mdash;', '—')
+        title = title.replace('&amp;', '&').replace('&gt;', '>').replace('&lt;', '<')
+        
+        # Normalize whitespace
+        title = ' '.join(title.split())
+        
+        posts.append({
+            "title": title,
+            "file": href
+        })
+    
+    return posts
+
+
 def find_matching_ul(content: str, start_pos: int) -> Optional[str]:
     """
     Find a complete <ul>...</ul> block starting from start_pos,
@@ -186,79 +226,64 @@ def find_matching_ul(content: str, start_pos: int) -> Optional[str]:
 
 def extract_topics_with_regex(html_content: str) -> List[Dict[str, Any]]:
     """
-    Extract topics using regex as a more robust fallback.
-    This handles the actual structure better than the HTML parser.
+    Extract topics using regex.
+    Uses <h4> headers as the primary topic delimiter since some anchors may be missing.
     """
     topics = []
     
-    # First, find all topic anchor positions - only main topics (5.X) and subtopics (5.X.Y)
-    # Skip sub-section markers like 5.9b which are embedded inside <ul> lists
-    anchor_pattern = re.compile(r'<a\s+name="(5\.\d+(?:\.\d+)?)">\s*</a>', re.IGNORECASE)
-    anchors = [(m.group(1), m.start(), m.end()) for m in anchor_pattern.finditer(html_content)]
+    # Find all <h4>5.X... headers to define topic boundaries
+    # This is more reliable than anchors since some anchors are missing
+    h4_pattern = re.compile(
+        r'<h4>\s*(5\.(\d+)(?:\.(\d+))?\.?\s*)(.*?)</h4>',
+        re.IGNORECASE | re.DOTALL
+    )
     
-    # For each anchor, extract its content
-    for i, (topic_id, start, end) in enumerate(anchors):
-        # Determine where this topic's section ends (next main anchor or section 6)
-        if i + 1 < len(anchors):
-            next_start = anchors[i + 1][1]
+    h4_matches = list(h4_pattern.finditer(html_content))
+    
+    for i, match in enumerate(h4_matches):
+        full_num = match.group(1).strip().rstrip('.')  # e.g. "5.32"
+        major = match.group(2)  # e.g. "32"
+        minor = match.group(3)  # e.g. "1" for subtopics, None for main
+        title_raw = match.group(4)
+        
+        # Build topic ID
+        if minor:
+            topic_id = f"5.{major}.{minor}"
         else:
-            # Find end of section (next major section like <a name="6">)
-            section_end = re.search(r'<a\s+name="6', html_content[end:])
-            next_start = end + section_end.start() if section_end else len(html_content)
+            topic_id = f"5.{major}"
         
-        chunk = html_content[end:next_start]
-        
-        # Extract title from h4 (may contain <code> tags)
-        h4_match = re.search(r'<h4>(.*?)</h4>', chunk, re.IGNORECASE | re.DOTALL)
-        if h4_match:
-            title_raw = h4_match.group(1)
+        # Determine section boundaries (from this h4 to next h4)
+        section_start = match.end()
+        if i + 1 < len(h4_matches):
+            section_end = h4_matches[i + 1].start()
         else:
-            # Try to get title from the first li text if no h4
-            li_match = re.search(r'<li>\s*([^<:]+)', chunk)
-            title_raw = li_match.group(1).strip() if li_match else f"Topic {topic_id}"
+            # Find end of section 5 (look for section 6)
+            s6_match = re.search(r'<a\s+name="6"', html_content[section_start:])
+            if s6_match:
+                section_end = section_start + s6_match.start()
+            else:
+                section_end = len(html_content)
         
-        # Find the first complete <ul>...</ul> block (handling nesting)
-        ul_block = find_matching_ul(html_content, end)
-        if not ul_block:
-            continue  # Skip topics with no links
+        section_content = html_content[section_start:section_end]
         
-        # Make sure the ul_block starts within our expected range (before next topic's h4)
-        ul_pos = html_content.find(ul_block, end)
-        if ul_pos > next_start:
-            continue  # This ul belongs to a different topic
-        
-        ul_content = ul_block[4:-5]  # Remove <ul> and </ul> tags
-        
-        # Clean title - remove leading number
-        title = re.sub(r'^5\.\d+\.?\d*\.?\s*', '', title_raw).strip()
-        # Convert HTML entities
+        # Clean title
+        title = title_raw.strip()
         title = title.replace('&ndash;', '–').replace('&mdash;', '—')
         title = title.replace('<code>', '').replace('</code>', '')
+        title = ' '.join(title.split())  # Normalize whitespace
         
-        # Pattern to extract links from ul content
-        link_pattern = re.compile(
-            r'<li>\s*<a\s+href="([^"]+)"[^>]*>([^<]+)</a>',
-            re.IGNORECASE
-        )
+        # Extract all post links from this section
+        posts = find_all_post_links(section_content)
         
-        # Extract posts
-        posts = []
-        for link_match in link_pattern.finditer(ul_content):
-            href = link_match.group(1)
-            link_text = link_match.group(2).strip()
-            # Convert HTML entities in link text
-            link_text = link_text.replace('&ndash;', '–').replace('&mdash;', '—')
-            posts.append({
-                "title": link_text,
-                "file": href
-            })
+        if not posts:
+            continue  # Skip topics with no posts
         
         # Determine if this is a subtopic
-        is_subtopic = bool(re.match(r'^5\.\d+\.\d+$', topic_id))
+        is_subtopic = minor is not None
         
         if is_subtopic:
             # Add as subtopic to parent main topic
-            parent_id = '.'.join(topic_id.split('.')[:2])
+            parent_id = f"5.{major}"
             parent_found = False
             for t in reversed(topics):
                 if t["id"] == parent_id:
@@ -270,22 +295,11 @@ def extract_topics_with_regex(html_content: str) -> List[Dict[str, Any]]:
                     parent_found = True
                     break
             
-            # If parent wasn't found, create it (some parent topics have no <ul> of their own)
+            # If parent wasn't found, create it
             if not parent_found:
-                # Look up the parent's title from the anchors list
-                parent_title = f"Topic {parent_id}"
-                for pid, pstart, pend in anchors:
-                    if pid == parent_id:
-                        pchunk = html_content[pend:pend+500]
-                        ph4_match = re.search(r'<h4>([^<]+(?:<code>[^<]+</code>[^<]*)?)</h4>', pchunk, re.IGNORECASE)
-                        if ph4_match:
-                            parent_title = re.sub(r'^5\.\d+\.?\s*', '', ph4_match.group(1)).strip()
-                            parent_title = parent_title.replace('&ndash;', '–').replace('&mdash;', '—')
-                        break
-                
                 topics.append({
                     "id": parent_id,
-                    "title": parent_title,
+                    "title": f"Topic {parent_id}",
                     "posts": [],
                     "subTopics": [{
                         "id": topic_id,
@@ -327,10 +341,13 @@ def extract_navigation_links(html_content: str) -> List[Dict[str, str]]:
 
 def main():
     """Main function to extract TOC and create JSON."""
+    import os
+    
     # Paths
     script_dir = Path(__file__).parent
     repo_root = script_dir.parent
     index_path = repo_root / "a" / "index.html"
+    a_dir = repo_root / "a"
     output_dir = repo_root / "a" / "toc"
     output_path = output_dir / "toc-data.json"
     
@@ -340,6 +357,10 @@ def main():
         print(f"ERROR: {index_path} not found!")
         return 1
     
+    # Get list of existing files
+    existing_files = set(f for f in os.listdir(a_dir) if f.endswith('.htm'))
+    print(f"Found {len(existing_files)} existing .htm files")
+    
     # Read HTML content
     html_content = index_path.read_text(encoding="utf-8", errors="replace")
     
@@ -347,6 +368,27 @@ def main():
     
     # Use regex-based extraction (more reliable for this HTML structure)
     topics = extract_topics_with_regex(html_content)
+    
+    # Filter out posts for non-existent files
+    removed_count = 0
+    for topic in topics:
+        orig_count = len(topic.get("posts", []))
+        topic["posts"] = [
+            p for p in topic.get("posts", [])
+            if p["file"].split("#")[0] in existing_files
+        ]
+        removed_count += orig_count - len(topic["posts"])
+        
+        for subtopic in topic.get("subTopics", []):
+            orig_count = len(subtopic.get("posts", []))
+            subtopic["posts"] = [
+                p for p in subtopic.get("posts", [])
+                if p["file"].split("#")[0] in existing_files
+            ]
+            removed_count += orig_count - len(subtopic["posts"])
+    
+    if removed_count > 0:
+        print(f"Filtered out {removed_count} entries for non-existent files")
     
     # Get navigation links
     nav_links = extract_navigation_links(html_content)

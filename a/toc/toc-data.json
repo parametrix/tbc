@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "lastUpdated": "2026-01-02",
-  "totalTopics": 55,
-  "totalPostLinks": 503,
+  "totalTopics": 57,
+  "totalPostLinks": 421,
   "navigation": [
     {
       "label": "About Jeremy Tammik",
@@ -69,14 +69,6 @@
         {
           "title": "Revit Export Precision and Tolerance",
           "file": "1330_hack_export_tolerance.htm#4"
-        },
-        {
-          "title": "Using a Custom Exporter for 2D",
-          "file": "1379_custom_export_2d.html#2"
-        },
-        {
-          "title": "Controlling the Quality of the Geometry on Custom Export",
-          "file": "1405_quality_custom_export.html#8"
         }
       ]
     },
@@ -115,18 +107,6 @@
         {
           "title": "Creating Topography Contours and Building Masses",
           "file": "1236_data_topo_building.htm"
-        },
-        {
-          "title": "Fire Rating Zone Intersection",
-          "file": "1708_fire_rating_zone_inters.html"
-        },
-        {
-          "title": "2D Boolean Interactive Real-Time Sketch Viewer",
-          "file": "1797_indesign_rvtclipper.html"
-        },
-        {
-          "title": "Extrusion Analyser and 2D Boolean Element Outline",
-          "file": "1809_element_outline.html"
         }
       ]
     },
@@ -157,26 +137,6 @@
         {
           "title": "Programmatic launching of custom add-in commands",
           "file": "1040_postcommand.htm"
-        },
-        {
-          "title": "PostCommand Limitations, Rules and Exceptions",
-          "file": "1364_postcommand_rules.html"
-        },
-        {
-          "title": "Purge and PostCommand",
-          "file": "1600_purge_empty_view.html#2"
-        },
-        {
-          "title": "Using PostCommand with the Windows Automation API",
-          "file": "1614_merry_xmas.html#3"
-        },
-        {
-          "title": "Using PostCommand to Close Document",
-          "file": "1741_rvtsamp_zero_close.html#5"
-        },
-        {
-          "title": "PostCommand API context and view focus",
-          "file": "2051_modeless.html#5"
         }
       ]
     },
@@ -265,22 +225,6 @@
         {
           "title": "Getting Serious Adding New Materials from List",
           "file": "1129_add_materials.htm"
-        },
-        {
-          "title": "Modifying Material Visual Appearance",
-          "file": " "
-        },
-        {
-          "title": "archi+lab few more comments about materials in Revit, Dynamo, APIs etc.",
-          "file": "https://archi-lab.net/few-more-comments-about-materials-in-revit-dynamo-apis-etc"
-        },
-        {
-          "title": "Create New Material with Texture",
-          "file": "1932_symb_inst_ole_journal.html#3"
-        },
-        {
-          "title": "21-minute video tutorial to create material with Revit API and C&#35;",
-          "file": "https://youtu.be/9ZoyuR1hzXA"
         }
       ]
     },
@@ -421,14 +365,6 @@
         {
           "title": "Using a custom exporter",
           "file": "1002_custom_exporter_visib.htm"
-        },
-        {
-          "title": "Selecting all physical elements in model",
-          "file": "1519_model_vert_align_cs.html#3"
-        },
-        {
-          "title": "Efficiently retrieve crop box for given view",
-          "file": "1622_get_crop_box_for_view.html"
         }
       ]
     },
@@ -481,10 +417,6 @@
         {
           "title": "Subscription Packs",
           "file": "0592_subscription_packs.htm"
-        },
-        {
-          "title": "Google for Revit Model Review",
-          "file": "http://lmgtfy.com/?q=revit+model+review"
         }
       ]
     },
@@ -585,30 +517,6 @@
         {
           "title": "The Dynamo Revit Unit Test Framework",
           "file": "1041_dynamo_unit_test.htm"
-        },
-        {
-          "title": "Revit Unit Test Framework Improvements",
-          "file": "1674_revittestframework.htmml"
-        },
-        {
-          "title": "TestRunner – Run Unit Tests in Revit",
-          "file": "1788_testrunner.html"
-        },
-        {
-          "title": "AU Class – Automate your Revit Add-In Testing with Unit Testing",
-          "file": "1814_unit_testing.html#2"
-        },
-        {
-          "title": "Unit Test Your Revit Add-In",
-          "file": "1971_unit_test.html#6"
-        },
-        {
-          "title": "speckle xUnitRevit: a test runner for Revit",
-          "file": "https://speckle.systems/blog/xunitrevit"
-        },
-        {
-          "title": "ricaun RevitTest Unit Test framework 24-minute video",
-          "file": "https://youtu.be/ppgASRwTCLQ"
         }
       ]
     },
@@ -733,74 +641,6 @@
         {
           "title": "Revit Add-In Wizards on GitHub and Installer",
           "file": "1350_wizard_github_install.htm"
-        },
-        {
-          "title": "Visual Studio 2015 Revit 2017 Add-in Wizards",
-          "file": "1438_addin_wizard_2017.html"
-        },
-        {
-          "title": "Update to suppress the architecture mismatch warning",
-          "file": "1448_py_dmu_tutorial.html#2"
-        },
-        {
-          "title": "New Visual Studio Templates for Revit Add-Ins",
-          "file": "1528_andrey_wizard.html"
-        },
-        {
-          "title": "Revit 2018 Visual Studio .NET Add-in Wizards",
-          "file": "1552_addin_wizard_2018.html"
-        },
-        {
-          "title": "User Profile for Visual Studio Revit Add-In Wizard Installation",
-          "file": "1577_forge_ids_install.html#7"
-        },
-        {
-          "title": "Revit 2018.1 API NuGet Packages",
-          "file": "1582_forge_view_nuget.html#3"
-        },
-        {
-          "title": "Multi-Version Revit Add-In Template",
-          "file": "1670_brassac.html"
-        },
-        {
-          "title": "Revit 2019 Visual Studio .NET Add-in Wizards",
-          "file": "1681_addin_wizard_2019.html"
-        },
-        {
-          "title": "Revit 2020 C# and VB Visual Studio Add-in Wizards",
-          "file": "1745_wiz_2020.html"
-        },
-        {
-          "title": "Built-In Zip Utility for Add-In Wizard",
-          "file": "1764_rebar_curves_wizard_zip.html#4"
-        },
-        {
-          "title": "Visual Studio 2019 Revit add-in template tags",
-          "file": "1796_wiz_tag_vs_2019.html"
-        },
-        {
-          "title": "Revit WPF add-ins and template",
-          "file": "1816_wpf_addin_template.html"
-        },
-        {
-          "title": "Revit 2021 Visual Studio add-in templates",
-          "file": "1848_wizard_2021.html"
-        },
-        {
-          "title": "Hellpie Revit add-in dotnet template",
-          "file": "1875_dotnet_template_prism.html"
-        },
-        {
-          "title": "Visual Studio Revit 2022 add-in templates",
-          "file": "1906_lookup_2022.html#4"
-        },
-        {
-          "title": "VS Wizard Template Location",
-          "file": "1967_addins.html#6"
-        },
-        {
-          "title": "Add-In Wizard Template in VS 2022",
-          "file": "1978_sdk_2023_1.html#3"
         }
       ]
     },
@@ -822,7 +662,7 @@
         },
         {
           "title": "Temporary graphical display of the boundary loops for debugging purposes",
-          "file": ">Transform Revit graphics to SVG path descriptions</a></li>\n<li><a href="
+          "file": "0924_geo_snoop.htm"
         }
       ]
     },
@@ -867,16 +707,16 @@
           "file": "0942_dockable_panel.htm"
         },
         {
+          "title": "RevitRubyShell for Revit 2014",
+          "file": "0955_revitrubyshell.htm"
+        },
+        {
           "title": "Copy and paste API usage examples",
           "file": "0943_duplicate_views.htm"
         },
         {
           "title": "FreeFormElement and saving a solid to SAT",
           "file": "1026_save_solid_to_file.htm"
-        },
-        {
-          "title": "PostCommand topics and launching custom add-in commands",
-          "file": "#5.3"
         },
         {
           "title": "The Unit API, unit abbreviations and mapping display unit types to unit types",
@@ -949,24 +789,40 @@
           "file": "1278_estorage_worksharing.htm"
         },
         {
-          "title": "Named Guid Storage for Project Identification",
-          "file": "1422_named_guid_storage.html"
+          "title": "Extensible Storage Features",
+          "file": "0604_estorage_element_id.htm"
         },
         {
-          "title": "Extensible storage – versioning best practices",
-          "file": "1661_rename_family.html#4"
+          "title": "DevBlog, DevCamp, Element and Project Wide Data",
+          "file": "0765_estorage_single.htm"
         },
         {
-          "title": "EstoreFile GitHub repository",
-          "file": "https://github.com/jeremytammik/EstoreFile"
+          "title": "Multi-Version Add-in",
+          "file": "0800_multi_version_addin.htm"
         },
         {
-          "title": "Class",
-          "file": "http://au.autodesk.com/au-online/classes-on-demand/class-catalog/2011/autodesk-revit-architecture/extensible-storage-in-the-autodesk-revit-2012-api"
+          "title": "Cloud & Mobile, Extensible Storage Data Use in Schedules",
+          "file": "0912_cm_estorage_schedule.htm"
         },
         {
-          "title": "Lab",
-          "file": "http://au.autodesk.com/au-online/classes-on-demand/class-catalog/2011/autodesk-revit-architecture/autodesk-revit-2012-api-extensible-storage"
+          "title": "Effortless Extensible Storage",
+          "file": "0950_vc_estore_extension.htm"
+        },
+        {
+          "title": "Deleting and Updating Extensible Storage Schema",
+          "file": "0997_estorage.htm"
+        },
+        {
+          "title": "Erasing Extensible Storage with Linked Files",
+          "file": "1066_erase_estore_link.htm"
+        },
+        {
+          "title": "DevLab Munich",
+          "file": "1078_devlab_muc.htm"
+        },
+        {
+          "title": "Accessing Extensible Storage on OwnerFamily in Project",
+          "file": "1198_estorage_owner_family.htm"
         }
       ]
     },
@@ -989,20 +845,12 @@
         {
           "title": "View Filter API",
           "file": "1001_view_filter.htm"
-        },
-        {
-          "title": "Control DirectShape Colour and Material",
-          "file": "1615_directshape.html#7"
-        },
-        {
-          "title": "Assign different colour and material to each DirectShape face",
-          "file": "1963_point_cloud.html#2"
         }
       ]
     },
     {
       "id": "5.25",
-      "title": "Family API, Loading and Placing Family Instances",
+      "title": "Topic 5.25",
       "posts": [],
       "subTopics": [
         {
@@ -1016,14 +864,6 @@
             {
               "title": "Key Concepts of the Family Editor",
               "file": "0972_family_key_concept.htm"
-            },
-            {
-              "title": "In-memory family creation, loading, and instance placement",
-              "file": "1360_revitlookup.html#5"
-            },
-            {
-              "title": "Creating an Electrical Family",
-              "file": "1361_rfa_api_iterate.html#4"
             }
           ]
         },
@@ -1106,16 +946,16 @@
               "file": "0660_reload_family.htm"
             },
             {
+              "title": "LoadFamily and collector iteration performance",
+              "file": "0908_load_family_perform.htm"
+            },
+            {
               "title": "Activate your family symbol before using it",
               "file": "1191_activate_famil_symbol.htm"
             },
             {
               "title": "Modifying, saving and reloading families",
               "file": "1214_mod_reload_family.htm"
-            },
-            {
-              "title": "Renaming a family in a project",
-              "file": "1661_rename_family.html#3"
             }
           ]
         }
@@ -1202,10 +1042,6 @@
       "title": "Idling and External Events for Modeless Access and Driving Revit from Outside",
       "posts": [
         {
-          "title": "Official Autodesk Knowledge Network introduction to External Events",
-          "file": "https://help.autodesk.com/cloudhelp/2018/ENU/Revit-API/Revit_API_Developers_Guide/Advanced_Topics/External_Events.html"
-        },
-        {
           "title": "Driving Revit from Outside",
           "file": "0051_driving_revit.htm"
         },
@@ -1272,68 +1108,13 @@
         {
           "title": "Batch Processing Revit Documents",
           "file": "1348_batch_dwf_futureproof.htm#4"
-        },
-        {
-          "title": "PostCommand from Modeless Context or Idling causes Internal Exception",
-          "file": "1364_postcommand_rules.html#2"
-        },
-        {
-          "title": "PickPoint from Modeless WPF Form and No Multithreading",
-          "file": "1377_wpf_thread_pickpoint.html"
-        },
-        {
-          "title": "Use of the Revit API Requires a Valid Context",
-          "file": "1383_external_event_10_year.html#2"
-        },
-        {
-          "title": "Driving Revit from Outside through an External Event",
-          "file": "1383_external_event_10_year.html#3"
-        },
-        {
-          "title": "Extracting all Visible Text from the Revit Model and StringSearch 2016",
-          "file": "1391_string_search_2016.html#3"
-        },
-        {
-          "title": "Idling and external events, DMU and DocumentChanged comparison",
-          "file": "1393_idling_dmu_doc_change.html"
-        },
-        {
-          "title": "Communication between AutoCAD and Revit",
-          "file": "1435_sign_acad_bim_uk.html#4"
-        },
-        {
-          "title": "Setting Active View During Idling",
-          "file": "1526_set_view_idling.html"
-        },
-        {
-          "title": "External Access to the Revit API",
-          "file": "1555_modeless.html"
-        },
-        {
-          "title": "Batch Processing Revit Families and Documents",
-          "file": "1742_asstringvalue_batch.html#2"
-        },
-        {
-          "title": "Async and Await External Event Wrapper",
-          "file": "1817_async_await.html#2"
-        },
-        {
-          "title": "Revit.Async External Event Wrapper Using Task-Based Asynchronous Pattern (TAP)",
-          "file": "1826_rex_2020_async_await.html#3"
-        },
-        {
-          "title": "Modeless add-ins for simultaneous add-in and Revit interaction",
-          "file": "2050_modeless.html#2"
-        },
-        {
-          "title": "Background process and Revit API",
-          "file": "2051_modeless.html#2"
-        },
-        {
-          "title": "Revit API in API context predicate",
-          "file": "2051_modeless.html#4"
         }
       ]
+    },
+    {
+      "id": "5.28",
+      "title": "b Thoughts and Input on Revit I/O",
+      "posts": []
     },
     {
       "id": "5.29",
@@ -1438,10 +1219,76 @@
         {
           "title": "DevLab Munich",
           "file": "1078_devlab_muc.htm"
+        }
+      ]
+    },
+    {
+      "id": "5.32",
+      "title": "Detecting and Handling Dialogues and Dialogues",
+      "posts": [
+        {
+          "title": "Dismiss Dialogue using Windows API",
+          "file": "0229_dialogue_clicker.htm"
         },
         {
-          "title": "RevitPythonShell Dynamic Model Updater tutorial",
-          "file": "1448_py_dmu_tutorial.html#3"
+          "title": "Editing Elements inside Groups",
+          "file": "0429_group_edit.htm"
+        },
+        {
+          "title": "Suppress Unwanted Dialogue",
+          "file": "0430_unwanted_dialogue.htm"
+        },
+        {
+          "title": "Closing the Active Document and Why Not To",
+          "file": "0456_close_active_doc.htm"
+        },
+        {
+          "title": "Synchronize with Central",
+          "file": "0710_sync_with_central.htm"
+        },
+        {
+          "title": "Auto-Confirm Save Using DialogBoxShowing Event",
+          "file": "0151_auto_confirm_save.htm"
+        },
+        {
+          "title": "Journal File Replay",
+          "file": "0174_journal_file_replay.htm"
+        },
+        {
+          "title": "Mirroring in a New Family and Changing Active View",
+          "file": "0488_mirror_in_new_family.htm"
+        },
+        {
+          "title": "Application Versus Command Event",
+          "file": "0552_app_versus_cmd_event.htm"
+        },
+        {
+          "title": "Detach Workset and TaskDialog Command Link Order",
+          "file": "0837_detach_workset.htm"
+        },
+        {
+          "title": "Export Wall Parts Individually to DXF",
+          "file": "0906_export_wall_part_dxf.htm"
+        },
+        {
+          "title": "Driving CNC Fabrication and Shared Parameters",
+          "file": "1080_exportcncfab.htm"
+        },
+        {
+          "title": "Failure API",
+          "file": "0350_failure_api.htm"
+        },
+        {
+          "title": "Failure API Take Two",
+          "file": "0484_failure_api.htm"
+        },
+        {
+          "title": "Failure Rollback",
+          "file": "0752_failure_rollback.htm"
+        },
+        {
+          "title": "Skipping invalid element generation",
+          "file": "1099_failure_api.htm"
         }
       ]
     },
@@ -1500,44 +1347,8 @@
           "file": "0905_nurb_spline_eval_gulls.htm"
         },
         {
-          "title": "Regenerate between plane and dimension creation",
-          "file": "http://adndevblog.typepad.com/aec/2013/01/it-is-easy-to-miss-this-regenerating-the-model.html"
-        },
-        {
           "title": "Regenerate to avoid accessing stale data",
           "file": "1066_erase_estore_link.htm#3"
-        },
-        {
-          "title": "Need for regen in an updater",
-          "file": "1393_idling_dmu_doc_change.html#3"
-        },
-        {
-          "title": "TextNote Bounding Box Requires Regen",
-          "file": "1440_idea_station_txt_bb.html#3"
-        },
-        {
-          "title": "Regeneration Performance Benchmark",
-          "file": "1440_idea_station_txt_bb.html#4"
-        },
-        {
-          "title": "Isolating an Element in a Newly Created View Requires Two Transactions",
-          "file": "1481_commit_twice.html#2"
-        },
-        {
-          "title": "Sub-Transaction Requires Regeneration",
-          "file": "1563_subtrans_regen.html#3"
-        },
-        {
-          "title": "Setting a Parameter to Regenerate the Model",
-          "file": "1605_param_regen_cloud_model.html#3"
-        },
-        {
-          "title": "Sometimes it’s not you",
-          "file": "https://boostyourbim.wordpress.com/2021/01/13/sometimes-its-not-you"
-        },
-        {
-          "title": "UpdateAllOpenViews",
-          "file": "2027_refresh.html#1"
         }
       ]
     },
@@ -1624,10 +1435,6 @@
         {
           "title": "RoomEditorApp for Revit 2015 and CopySourceAsHtml for Visual Studio 2012",
           "file": "1137_roomeditorapp_2015.htm#5"
-        },
-        {
-          "title": "Installing VS 2015 PowerTools Copy HTML Markup",
-          "file": "1741_rvtsamp_zero_close.html#4"
         }
       ]
     },
@@ -1708,14 +1515,6 @@
         {
           "title": "Set View Section Box to Match Scope Box for Revit 2014",
           "file": "1030_view_section_to_scope.htm"
-        },
-        {
-          "title": "CreateAndPrintSheetsAndViews",
-          "file": "https://github.com/jeremytammik/CreateAndPrintSheetsAndViews/tree/main"
-        },
-        {
-          "title": "Create Section View in Python",
-          "file": "2007_sys_fam_py_section.html#4"
         }
       ]
     },
@@ -1852,22 +1651,6 @@
         {
           "title": "Custom Exporter Framework Feedback",
           "file": "1016_linked_project_element.htm#5"
-        },
-        {
-          "title": "Material Asset Textures, Forge Webinar Recordings",
-          "file": "1482_material_asset_texture.html"
-        },
-        {
-          "title": "Material Texture Path",
-          "file": "1596_texture_path.html"
-        },
-        {
-          "title": "Setting Material Texture Path in EditScope",
-          "file": "1735_editscope_texture.html"
-        },
-        {
-          "title": "Create New Material with Texture",
-          "file": "1932_symb_inst_ole_journal.html#3"
         }
       ]
     },
@@ -2048,10 +1831,6 @@
         {
           "title": "Determining intersecting elements",
           "file": "1243_future_proof.htm#3"
-        },
-        {
-          "title": "Using an Intersection Filter for Linked Elements",
-          "file": "1707_filter_intersect.html"
         }
       ]
     },
@@ -2090,18 +1869,6 @@
         {
           "title": "Live Development",
           "file": "1317_live_development.htm#3"
-        },
-        {
-          "title": "Using AddInManager and Attach to Process to Edit and Continue",
-          "file": "1492_edit_continue.html#2"
-        },
-        {
-          "title": "Debug and Continue in a Revit Add-In",
-          "file": "1732_snoop_appearance_asset.html#3"
-        },
-        {
-          "title": "Apply Code Changes Debugging Revit Add-In",
-          "file": "1920_apply_code_changes.html#4"
         }
       ]
     },
@@ -2120,26 +1887,6 @@
         {
           "title": "From Hack to App – OBJ Mesh Import to DirectShape",
           "file": "1283_directobjloader.htm"
-        },
-        {
-          "title": "Creating a DirectShape Element from a Face Mesh",
-          "file": "1355_directshape_face.html"
-        },
-        {
-          "title": "Simpler DirectShape on Picked Face Using Total Transform",
-          "file": "1357_directshape_simple.html#2"
-        },
-        {
-          "title": "Flatten All Elements to DirectShape",
-          "file": "1375_flatten_to_directshape.html"
-        },
-        {
-          "title": "Create Swept Blend DirectShape in C++",
-          "file": "1620_create_swept_blend.html"
-        },
-        {
-          "title": "Assign different colour and material to each DirectShape face",
-          "file": "1963_point_cloud.html#2"
         }
       ]
     },
@@ -2172,7 +1919,36 @@
     {
       "id": "5.52",
       "title": "The Revit API Util Classes are Often Overlooked",
-      "posts": []
+      "posts": [
+        {
+          "title": "RevitAddInUtility",
+          "file": "0336_addinutility.htm"
+        },
+        {
+          "title": "for 32 and 64 Bit Systems",
+          "file": "0369_addinutility_32_64_bit.htm"
+        },
+        {
+          "title": "User Visible Enumeration Value Labels",
+          "file": "0338_label_utils.htm"
+        },
+        {
+          "title": "Built-in Parameter Name and LabelUtils",
+          "file": "0626_label_utils.htm"
+        },
+        {
+          "title": "Handy Utility Classes",
+          "file": "0925_handy_utils.htm"
+        },
+        {
+          "title": "Unique Names and the NamingUtils Class",
+          "file": "1209_namingutils.htm"
+        },
+        {
+          "title": "ExporterIfcUtils Curve Loop Sort and Validate",
+          "file": "1269_exporterifcutils.htm"
+        }
+      ]
     },
     {
       "id": "5.53",
@@ -2219,10 +1995,6 @@
           "file": "0854_temp_transact.htm"
         },
         {
-          "title": "TTT to Obtain Section Marker Endpoint",
-          "file": "1541_section_marker_endp.html"
-        },
-        {
           "title": "Updater Queues Multi-Transaction Operation for Idling",
           "file": "0859_updater_transact.htm"
         },
@@ -2241,10 +2013,6 @@
         {
           "title": "Using Transaction Groups",
           "file": "1280_transaction_group.htm"
-        },
-        {
-          "title": "Avoid Brain Racking by Using Using",
-          "file": "1869_using_vs_racking.html"
         }
       ]
     },
@@ -2273,76 +2041,15 @@
           "file": "1294_framing_xsec_analyse.htm"
         },
         {
-          "title": "REX Add-In Development and Migration",
-          "file": "1384_rex.html"
-        },
-        {
-          "title": "REX SDK FreezeDrawing Sample",
-          "file": "1493_au_2017_1_sdk_freeze.html#5"
-        },
-        {
-          "title": "REX Extensions versus Revit Add-Ins",
-          "file": "1627_keynote_rex.html#5"
-        },
-        {
-          "title": "RST and the Structural Analysis SDK",
-          "file": "1658_rex.html"
-        },
-        {
-          "title": "REX SDK Templates for Revit Structure 2019",
-          "file": "1665_rex_sdk_vs_2019.html"
-        },
-        {
-          "title": "REX SDK and Structural Analysis SDK 2020",
-          "file": "1826_rex_2020_async_await.html#2"
+          "title": "web",
+          "file": "1294_framing_xsec_analyse.htm"
         }
       ]
     },
     {
       "id": "5.55",
       "title": "DA4R – Design Automation for Revit",
-      "posts": [
-        {
-          "title": "The Field of View Overview of DA4R Resources",
-          "file": "https://fieldofviewblog.wordpress.com/revit"
-        },
-        {
-          "title": "Swallowing StairsAutomation Warnings",
-          "file": "1689_automation_warnings.html"
-        },
-        {
-          "title": "Auto-Run an Add-In for Design Automation",
-          "file": "1690_convert_addin_da4r.html"
-        },
-        {
-          "title": "Forge Design Automation for Revit",
-          "file": "1695_da4r.html"
-        },
-        {
-          "title": "Design Automation for Revit at AU and in Public",
-          "file": "1701_da4r_au.html"
-        },
-        {
-          "title": "IfcSpaceZoneBoundaries add-in",
-          "file": "https://github.com/jeremytammik/IfcSpaceZoneBoundaries"
-        },
-        {
-          "title": "Room Boundaries to CSV and WPF Template",
-          "file": "1713_room_boundary_wpf.html"
-        },
-        {
-          "title": "Preparing a Revit Add-in for Design Automation",
-          "file": "1720_prepare_da4r.html"
-        },
-        {
-          "title": "Before Getting Started with Design Automation",
-          "file": "1729_begin_da4r.html"
-        },
-        {
-          "title": "Placing Detail Group Without UI Access",
-          "file": "2040_rvt_2025_1.html#3"
-        }
-      ]
+      "posts": []
     },
     {
       "id": "5.56",
@@ -2359,30 +2066,6 @@
         {
           "title": "Understanding the Use of the UniqueId",
           "file": "1277_uniqueid.htm"
-        },
-        {
-          "title": "Revit Object Unique ID's & IFC GUID's",
-          "file": "1359_share_learn_book.html#5"
-        },
-        {
-          "title": "Consistency of IFC GUID and UniqueId",
-          "file": "1459_ifc_guid_uniqueid.html"
-        },
-        {
-          "title": "Unique IDs for Forge Viewer Elements",
-          "file": "1577_forge_ids_install.html#4"
-        },
-        {
-          "title": "RevitLookup Search by Element and Unique Id",
-          "file": "1634_lookup_search_snoop.html"
-        },
-        {
-          "title": "Element Identifiers in RVT, IFC, NW and Forge",
-          "file": "1762_forge_rvt_nw_ifc_id.html"
-        },
-        {
-          "title": "Unique Id and IFC GUID Parameter",
-          "file": "1949_unique_ifc_guid.html"
         }
       ]
     }
