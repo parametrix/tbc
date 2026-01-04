@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - 7580 [Error on Saving a RVT as the C4R model]
@@ -56,7 +87,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 <h4><a name="2"></a> DA4R Cannot Save RVT as a Cloud Model</h4>
 <p>As is well known and clearly documented,
 <a href="https://forge.autodesk.com/api/design-automation-cover-page">Forge Design Automation for Revit</a> or
-<a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55">DA4R</a> currently
+<span class="unavailable-link">DA4R</span> currently
 does not enable any Internet access whatsoever to the running workitem.</p>
 <p>This obviously also prevents the ability to store an RVT BIM straight to BIM360 or C4R, Collaboration for Revit, or anywhere else in the cloud.</p>
 <!-- 
@@ -88,15 +119,15 @@ This issue came up quite a number of times already:
 <p>You are creating and passing in new, arbitrary GUIDs for the BIM 360 account id and project id as the first two arguments to the SaveAsCloudModel method.</p>
 <p>This will not work. The GUIDs are pre-defined by the system.</p>
 <p>They can be obtained as described
-in <a href="https://thebuildingcoder.typepad.com/blog/2020/04/revit-2021-cloud-model-api.html#4.5">how to save a local file to a non-workshared cloud model</a>.</p>
+in <a href="1834_2021_cloud_model_api.html#4.5">how to save a local file to a non-workshared cloud model</a>.</p>
 <p>Here are some further, related discussions that I have been collecting and that may also be of interest:</p>
 <ul>
 <li><a href="https://forums.autodesk.com/t5/revit-api-forum/doc-saveas-on-active-cloudmodel/m-p/9059906">Save RVT from cloud to local file</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2018/12/forge-devcon-keynote-and-bim360-model-access.html#3">Accessing BIM360 Models</a></li>
+<li><a href="1706_keynote_bim360.html#3">Accessing BIM360 Models</a></li>
 <li><a href="https://stackoverflow.com/questions/53538382/how-to-create-urn-for-revit-file-from-revit-plugin-or-using-forge-apis">How to create URN for Revit file from Revit plugin or using Forge APIs</a></li>
 <li>Forge blog post on <a href="https://forge.autodesk.com/blog/accessing-bim-360-design-models-revit">accessing BIM 360 design models on Revit</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/05/precast-api-and-cloud-open-callback.html#3"><code>IOpenFromCloudCallback</code> and the <code>DefaultOpenFromCloudCallback</code> class</a> &ndash; using the Revit 2019 API to detach a model from BIM360</li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/06/accessing-bim360-cloud-links-thumbnail-and-dynamo.html#2">Accessing BIM360 cloud links</a></li>
+<li><a href="1752_precast_cloud_open.html#3"><code>IOpenFromCloudCallback</code> and the <code>DefaultOpenFromCloudCallback</code> class</a> &ndash; using the Revit 2019 API to detach a model from BIM360</li>
+<li><a href="1756_bim360_links.html#2">Accessing BIM360 cloud links</a></li>
 <li><a href="https://stackoverflow.com/questions/54788232/update-revit-custom-properties-by-web-api">Update Revit custom properties by web API</a></li>
 <li><a href="https://stackoverflow.com/questions/57806330/open-revit-bim360-model-via-command-line">Open Revit BIM360 Model via command line</a></li>
 <li><a href="https://stackoverflow.com/questions/58483626/do-we-have-api-access-to-c4rcollaboration-for-revit-functionalities-in-forge-a">Do we have API access to C4R (Collaboration for Revit) functionalities in Forge API/Revit API?</a></li>
@@ -113,7 +144,7 @@ in <a href="https://thebuildingcoder.typepad.com/blog/2020/04/revit-2021-cloud-m
 </pre>
 
 <p>These GUIDs and IDs were determined as described
-in <a href="https://thebuildingcoder.typepad.com/blog/2020/04/revit-2021-cloud-model-api.html#4.5">how to save a local file to a non-workshared cloud model</a>.</p>
+in <a href="1834_2021_cloud_model_api.html#4.5">how to save a local file to a non-workshared cloud model</a>.</p>
 <p>However, the result was the same (log of DA WorkItem):</p>
 <pre>
   [10/08/2020 23:20:40] Autodesk.Revit.Exceptions.InvalidOperationException: Could not obtain entitlement server.
@@ -186,3 +217,11 @@ This means that Apple knows when you’re at home. When you’re at work. What a
 <p><center>
 <img src="img/transparent_tiny_house.jpg" alt="Transparent" title="Transparent" width="300"/> <!-- 600 -->
 </center></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

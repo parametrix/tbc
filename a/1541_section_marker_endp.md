@@ -20,7 +20,7 @@ Here is a new exquisitly subtle variant for you to enjoy, provided by Frank @Fai
 ### TTT to Obtain Section Marker Endpoint
 
 We discussed several examples of using the temporary transaction trick TTT in the past, and it is also mentioned in The Building Coder topic group
-on [handling transactions and transaction groups](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.53).
+on handling transactions and transaction groups *(link unavailable)*.
 
 Here is a new exquisitely subtle variant for you to enjoy, provided by
 Frank [@Fair59](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/2083518) Aarssen.

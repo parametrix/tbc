@@ -122,8 +122,8 @@ Really.
 ####<a name="4"></a> Sun Direction Adjusted for Project True North
 
 Back to the Revit API, Mohsen Assaqqaf shared a method `GetSunDirection` for obtaining the vector of the sun taking the project True North angle into account
-in [his comment](https://thebuildingcoder.typepad.com/blog/2013/06/sun-direction-shadow-calculation-and-wizard-update.html#comment-4614771756) on
-the [Sun Direction and Shadow Calculation](https://thebuildingcoder.typepad.com/blog/2013/06/sun-direction-shadow-calculation-and-wizard-update.html#comment-4614771756) discussion.
+in [his comment](0969_sun_direct_shadow.htm#comment-4614771756) on
+the [Sun Direction and Shadow Calculation](0969_sun_direct_shadow.htm#comment-4614771756) discussion.
 
 I added it as follows
 to [The Building Coder samples](https://github.com/jeremytammik/the_building_coder_samples)
@@ -217,12 +217,12 @@ To achieve more, you can read the RVT file as a structured OLE storage container
 
 Several different approaches are discussed in the following articles:
 
-- [Open Revit OLE Storage](https://thebuildingcoder.typepad.com/blog/2010/06/open-revit-ole-storage.html)
-- [Basic File Info and RVT File Version](http://thebuildingcoder.typepad.com/blog/2013/01/basic-file-info-and-rvt-file-version.html)
-- [Custom File Properties](https://thebuildingcoder.typepad.com/blog/2015/09/lunar-eclipse-and-custom-file-properties.html#3)
-- [Reading an RVT File without Revit](http://thebuildingcoder.typepad.com/blog/2016/02/reading-an-rvt-file-without-revit.html)
-- [Determining RVT File Version Using Python](http://thebuildingcoder.typepad.com/blog/2017/06/determining-rvt-file-version-using-python.html)
-- [Retrieve RVT Preview Thumbnail Image with Python](https://thebuildingcoder.typepad.com/blog/2019/06/accessing-bim360-cloud-links-thumbnail-and-dynamo.html#3)
+- [Open Revit OLE Storage](0391_open_ole_storage.htm)
+- [Basic File Info and RVT File Version](0887_rvt_file_version.htm)
+- [Custom File Properties](1363_custom_file_prop.html#3)
+- [Reading an RVT File without Revit](1407_read_rvt_without_revit.html)
+- [Determining RVT File Version Using Python](1570_rvt_version_py.html)
+- [Retrieve RVT Preview Thumbnail Image with Python](1756_bim360_links.html#3)
 
 ####<a name="6"></a> The Top 100 Free Online Courses
 

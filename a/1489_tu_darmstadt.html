@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <title>The Building Coder</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" type="text/css" href="3dwc.css"/>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true" defer="defer"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -55,7 +86,7 @@ the institute for numerical methods and computer science in the construction ind
 </center></p>
 <p>The agenda is simple:</p>
 <ul>
-<li>10:45-12:15 presentation &ndash; <a href="http://thebuildingcoder.typepad.com/blog/2016/10/connecting-desktop-and-cloud-at-rtc-material.html">Connecting desktop and  cloud</a></li>
+<li>10:45-12:15 presentation &ndash; <a href="1487_roomedit3d_material.html">Connecting desktop and  cloud</a></li>
 <li>13:00-17:00 hands-on workshop with two topics:<ul>
 <li>Revit API &ndash; <a href="#4">creating a Revit add-in with one single click</a></li>
 <li>Connecting BIM with the cloud &ndash; <a href="#5">connecting Revit and Forge in 55 minutes</a></li>
@@ -64,17 +95,17 @@ the institute for numerical methods and computer science in the construction ind
 </ul>
 <h4><a name="4"></a>Creating a Revit Add-In with One Single Click</h4>
 <p>I can create a new Revit add-in DLL, compile, load and execute it with one single click or two using
-the <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20">Visual Studio Revit add-in wizards</a>,
+the <span class="unavailable-link">Visual Studio Revit add-in wizards</span>,
 and I demonstrate that live in a handful of seconds.</p>
 <p>Obviously, if everything were as simple as one single click, life would be extremely boring and no challenge at all.</p>
 <p>It makes things a lot more interesting if you understand what is going on under the hood.</p>
 <p>That is easily achieved by working through
-the <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#2">Revit API getting started material</a>,
+the <span class="unavailable-link">Revit API getting started material</span>,
 looking at the basic installation sections of
 the <a href="http://help.autodesk.com/view/RVT/2016/ENU/?guid=GUID-F0A122E0-E556-4D0D-9D0F-7E72A9315A42">Revit API Developer Guide</a>,
 and installing the Revit SDK from
 the <a href="http://www.autodesk.com/developrevit">Revit Developer Centre</a>.</p>
-<p>With that material in hand, you will understand and be able to make good and exciting use of the single-click functionality provided by the <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20">Visual Studio Revit add-in wizards</a>.</p>
+<p>With that material in hand, you will understand and be able to make good and exciting use of the single-click functionality provided by the <span class="unavailable-link">Visual Studio Revit add-in wizards</span>.</p>
 <p>The most effective way to get started programming with the Revit API is to work through the step-by-step instructions provided by the <em>DevTV</em> and <em>My First Revit Plugin</em> video tutorials.</p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=l8dQxoAjSP8">DevTV &ndash; Introduction to Revit Programming</a></li>
@@ -100,7 +131,7 @@ download the Revit SDK containing documentation and samples:</p>
 </li>
 </ul>
 <p>I already wrote similar instructions
-for <a href="http://thebuildingcoder.typepad.com/blog/2012/01/preparing-for-a-hands-on-revit-api-training.html">preparing for a hands-on Revit API training</a> back in 2012 which are also still absolutely relevant.</p>
+for <a href="0703_training_prep.htm">preparing for a hands-on Revit API training</a> back in 2012 which are also still absolutely relevant.</p>
 <h4><a name="5"></a>Connecting Revit and Forge in 55 Minutes</h4>
 <p>Connecting Revit and Forge is extremely simple, thanks to the large amount of existing boiler-plate code available, mainly in the
 GitHub <a href="https://github.com/Developer-Autodesk">Developer-Autodesk</a>
@@ -118,12 +149,20 @@ huge <a href="https://github.com/Developer-Autodesk/library-javascript-viewer-ex
 <p>All in all, I cannot have added much more than one or a couple of dozen lines of code to the boilerplate provided by Philippe.</p>
 <p>Here is the full detailed description of all my research and implementation efforts right from the start:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/09/roomedit3d-update-for-connecting-desktop-and-forge.html">Introduction and first search for a starting point</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/09/the-birth-of-roomedit3dv3-and-forge-webinar-series.html#2">The Birth of Roomedit3dv3</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/09/roomedit3d-broadcast-teigha-bim-and-forge-webinar-3.html#2">Roomedit3dv3 Broadcast Architecture</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/09/warning-swallower-and-roomedit3d-viewer-extension.html#3">Roomedit3dv3 Transform Viewer Extension</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/10/retrieving-and-broadcasting-the-roomedit3dv3-translation.html">Retrieving and Broadcasting the Roomedit3dv3 Translation</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/10/roomedit3dv3-up-and-running-with-demo-recording.html">Roomedit3dv3 Up and Running with Demo Recording</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/10/connecting-desktop-and-cloud-at-rtc-material.html">Recording of the complete <em>Connecting Desktop and Cloud</em> presentation</a></li>
+<li><a href="1471_roomedit3d_forge.html">Introduction and first search for a starting point</a></li>
+<li><a href="1473_roomedit3d_forge.html#2">The Birth of Roomedit3dv3</a></li>
+<li><a href="1475_roomedit3d_forge.html#2">Roomedit3dv3 Broadcast Architecture</a></li>
+<li><a href="1476_roomedit3d_forge_warn.html#3">Roomedit3dv3 Transform Viewer Extension</a></li>
+<li><a href="1478_roomedit3d_broadcast.html">Retrieving and Broadcasting the Roomedit3dv3 Translation</a></li>
+<li><a href="1479_roomedit3d_running.html">Roomedit3dv3 Up and Running with Demo Recording</a></li>
+<li><a href="1487_roomedit3d_material.html">Recording of the complete <em>Connecting Desktop and Cloud</em> presentation</a></li>
 </ul>
 <p>Let's see whether (and hope that) I manage to package this in a suitable format for a 55-minute hands-on lab in the coming week.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

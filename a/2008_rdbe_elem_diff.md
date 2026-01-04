@@ -115,7 +115,7 @@ Stay tuned for more updates and get ready to experience a whole new level of eff
 
 ####<a name="3"></a> The Revit Database Explorer RDBE
 
-We already [mentioned](https://thebuildingcoder.typepad.com/blog/2022/07/immutable-uniqueid-and-revit-database-explorer.html#3)
+We already [mentioned](1959_rdbe.html#3)
 the [Revit database explorer RDBE](https://github.com/NeVeSpl/RevitDBExplorer) last year:
 
 > The fastest, most advanced, asynchronous Revit database exploration tool for Revit 2021+.
@@ -147,7 +147,7 @@ It has undergone further enhancement since then.
 ####<a name="4"></a> The Shapely Python 2D Geometry Library
 
 Jake of [Ripcord Engineering](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/3926242) recently
-shared a bunch of valuable [Python and gbXML tips](https://thebuildingcoder.typepad.com/blog/2023/07/export-gbxml-and-python-tips.html).
+shared a bunch of valuable [Python and gbXML tips](2002_dll_hell_gbxml.html).
 Discussing a solution
 to [gbXML from adjacent conceptual mass or space missing small surface](https://forums.autodesk.com/t5/revit-api-forum/gbxml-from-adjacent-conceptual-mass-adjacent-space-missing-small/m-p/12238726),
 he now added a pointer

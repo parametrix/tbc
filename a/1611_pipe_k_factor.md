@@ -275,7 +275,7 @@ Revit now recognises my add in. It displays the correct name in the ribbon. but 
  
 I'm not sure what exactly I missed out. Can somebody give me a hint which areas in VS I need to check? Is there a blog I can read on how to correctly deploy a Revit add-in?
  
-**Answer:** The [Revit API getting started material](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2) includes
+**Answer:** The Revit API getting started material *(link unavailable)* includes
 all the information you require on the add-in architecture and installation basics.
   
 For a totally comprehensive and complete summary of the relevant information, you can also jump straight to 

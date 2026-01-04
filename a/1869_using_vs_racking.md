@@ -77,7 +77,7 @@ In one case at least, that can easily be avoided by using a `using` statement:
 ####<a name="2"></a> Avoid Brain Racking by Using Using
 
 Here is a quick note on the importance
-of [using `using` to automagically dispose and roll back](http://thebuildingcoder.typepad.com/blog/2012/04/using-using-automagically-disposes-and-rolls-back.html) transactions
+of [using `using` to automagically dispose and roll back](0753_dispose_transact_2.htm) transactions
 and transaction groups, and the grief and brain racking that can easily ensue from failing to do so:
 
 **Question:** For certain users, my add-in is hard crashing Revit to the desktop.
@@ -128,7 +128,7 @@ Thank you very much for your research and useful explanation.
 Were your transaction groups originally encapsulated in a `using` statement?
 
 The Building Coder recommends doing so and claims that will obviate the need to call `Assimilate` or `Rollback`:
-[Using Using Automagically Disposes and Rolls Back](http://thebuildingcoder.typepad.com/blog/2012/04/using-using-automagically-disposes-and-rolls-back.html).
+[Using Using Automagically Disposes and Rolls Back](0753_dispose_transact_2.htm).
 
 I would be a rather shocked if that would turn out to be false.
 

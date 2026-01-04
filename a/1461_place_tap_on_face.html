@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <title>The Building Coder</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" type="text/css" href="3dwc.css"/>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true" defer="defer"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -55,10 +86,10 @@ of <a href="http://drawtech.com">DrawTech, Inc</a>.</p>
 <p>I would suggest retrieving the element geometry, iterating over all its faces, projecting the XYZ point onto each one, and determining the distance between the original and the projected result.</p>
 <p>Here are some early examples from The Building Coder where I played at those kind of games:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/12/raytracebounce-pool-table.html">RayTraceBounce Pool Table</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/01/rectangular-duct-corners.html">Rectangular Duct Corners</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/01/spot-elevation-creation-on-top-of-beam.html">Spot Elevation Creation on Top of Beam</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/02/dimension-walls-by-iterating-faces.html">Dimension Walls by Iterating Faces</a></li>
+<li><a href="0273_raytracebounce_pool_table.htm">RayTraceBounce Pool Table</a></li>
+<li><a href="0285_rectangular_duct_corners.htm">Rectangular Duct Corners</a></li>
+<li><a href="0293_spot_elevation_at_beam_top.htm">Spot Elevation Creation on Top of Beam</a></li>
+<li><a href="0539_dim_walls_it_face.htm">Dimension Walls by Iterating Faces</a></li>
 </ul>
 <p>The second post demonstrates a method called <code>FaceContainsConnector</code> that might suit your needs.</p>
 <p>The fourth implements <code>GetClosestFace</code>, which takes the face normal vector into account as well as the target point.</p>
@@ -70,7 +101,7 @@ of <a href="http://drawtech.com">DrawTech, Inc</a>.</p>
 <p>Look at the <code>Face.Project</code> method, which projects the specified input <code>XYZ</code> point onto the face.</p>
 <p>It returns an <code>IntersectionResult</code> that includes a <code>UVPoint</code> property with the 2D parameters of the point of intersection in the face coordinate system.</p>
 <p>For one of many examples of using this method in context, please take a look at the method <code>PlaceFamilyInstanceOnFace</code> provided in The Building Coder discussion
-on <a href="http://thebuildingcoder.typepad.com/blog/2015/02/determining-the-face-tangent-at-a-picked-point.html#4">determining the face tangent at a picked point by generic face tangent determination</a>.</p>
+on <a href="1282_face_point_tangent.htm#4">determining the face tangent at a picked point by generic face tangent determination</a>.</p>
 <p>Please note that this face analysis and the nitty-gritty details of <code>XYZ</code> and <code>UV</code> coordinates are not utilised at all in the final solution using the <code>PreferredJunctionMethod</code> described below. We will simply keep these sections in place for narrative purposes, since these are the steps we investigated to make it happen.</p>
 <h4><a name="4"></a>How to Anchor an Object Like AutoCAD Architecture?</h4>
 <p>Thank you for the quick reply and the wealth of information! Your resources are great for getting the actual tap onto my object.</p>
@@ -81,9 +112,9 @@ on <a href="http://thebuildingcoder.typepad.com/blog/2015/02/determining-the-fac
 <h4><a name="4.1"></a>Answer</h4>
 <p>The AutoCAD ObjectARX anchor functionality only ensures a geometrical relationship. It does not care about duct system information.</p>
 <p>That can be achieved using the Revit
-API <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.31">Dynamic Model Updater framework DMU</a>.</p>
+API <span class="unavailable-link">Dynamic Model Updater framework DMU</span>.</p>
 <p>Look specifically at
-the <a href="http://thebuildingcoder.typepad.com/blog/2011/08/associative-section-view-fix.html#2">Associative Section View SDK sample</a> for
+the <a href="0624_assoc_sect_view.htm#2">Associative Section View SDK sample</a> for
 an example of geometric anchoring of an object to another.</p>
 <p>No, this does not have anything whatsoever to do with handling inheritance of duct system information, and neither does the AutoCAD Architecture Anchor system.</p>
 <h4><a name="5"></a>How to Inherit System Information?</h4>
@@ -105,18 +136,18 @@ an example of geometric anchoring of an object to another.</p>
 <p>There is a special mechanism for adding additional connectors for such cases.</p>
 <p>You might have to create that situation manually and analyse the results.</p>
 <p>Explore the differences generated by manually adding taps to a duct using RevitLookup, the BipChecker, element lister
-and <a href="http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html">other database exploration tools</a>.</p>
+and <a href="1057_db_explor_python_sh.htm">other database exploration tools</a>.</p>
 <p>Use that understanding to reproduce the same programmatically.</p>
 <p>You may need to use the right overload of the <code>NewFamilyInstance</code> method to place the tap on the duct and generate a new connector for it.</p>
 <p>Actually, maybe the <code>Document.NewTakeoffFitting</code> method is what you need to use:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/02/use-of-newtakeofffitting-on-a-duct.html">Use of <code>NewTakeOffFitting</code> on a duct</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/04/use-of-newtakeofffitting-on-a-pipe.html">Use of <code>NewTakeOffFitting</code> on a pipe</a></li>
+<li><a href="0529_newtakeofffitting_duct.htm">Use of <code>NewTakeOffFitting</code> on a duct</a></li>
+<li><a href="0564_newtakeofffitting_pipe.htm">Use of <code>NewTakeOffFitting</code> on a pipe</a></li>
 </ul>
 <p>Let's see, what more do I have to offer on taps?</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/02/adjustable-versus-perpendicular-spud.html">Adjustable versus perpendicular spud</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/02/daylighting-extension-and-splitting-with-taps.html#3">Splitting a duct or pipe with taps</a></li>
+<li><a href="0897_spud.htm">Adjustable versus perpendicular spud</a></li>
+<li><a href="1104_duct_pipe_tap_split.htm#3">Splitting a duct or pipe with taps</a></li>
 </ul>
 <h4><a name="7"></a>How to Control Take-Off and Tap Sizing on a Duct?</h4>
 <p>So I've been looking at this and have decided my approach has been wrong on this particular matter from the start. As opposed to using a Duct Fitting Family for each individual Duct Joint Length, I'm now using an actual Duct object (the Revit base) and splitting it to represent the joint lengths. This feature is a god send.</p>
@@ -286,3 +317,11 @@ and <a href="http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-dat
 <p>I put this together really quickly for you, but I think it covers all the bases.</p>
 <p>I've found that this solution works extremely well for creating a tap that utilizes the standard features Revit has for taps, producing results like the two samples shown above.</p>
 <p>Thank you for all your support!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

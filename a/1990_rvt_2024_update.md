@@ -235,7 +235,7 @@ I discovered a new author and a new favourite book,
 by [Cory Doctorow](https://en.wikipedia.org/wiki/Cory_Doctorow).
 
 For me, it is a brilliant philosophical scifi reminiscent
-of [William Gibson's Agency](https://thebuildingcoder.typepad.com/blog/2021/10/sci-fi-languages-and-pipe-insulation-retrieval.html#4) that I was so thrilled by in 2021.
+of [William Gibson's Agency](1923_mep_insulation.html#4) that I was so thrilled by in 2021.
 
 It is also focused on community, cooperation, communication, appreciation, relationships, exploitation, rich exploiters fighting to maintain a world of inequality, walkaways proving that we live in a world of surplus, not shortage, realising a post-scarcity gift economy, on-site fabrication of everything you need, and finally moving towards real visionary scifi ideas like eternal life using digital simulations of the human mind.
 

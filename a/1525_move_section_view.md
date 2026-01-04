@@ -42,7 +42,7 @@ Why does it have a `ch` domain, Danny?
 Anyway, here is the issue moving the location of a section view:
 
 **Question:** I saw a great post on the *The Building Coder* on how
-to [create a section view to be aligned with a wall](http://thebuildingcoder.typepad.com/blog/2012/06/create-section-view-parallel-to-wall.html).
+to [create a section view to be aligned with a wall](0784_create_section_view.htm).
 
 I'm working on a project in which the wall angle will change and I need to rotate an existing section to match it.  
  
@@ -62,10 +62,10 @@ Is it possible to set a curve similar to a wall?  I can't seem to find any curve
 First of all, out of habit, I repeat:
  
 For your own comfort and security,
-[all use of transactions should be encapsulated in a `using` statement](http://thebuildingcoder.typepad.com/blog/2012/04/using-using-automagically-disposes-and-rolls-back.html).
+[all use of transactions should be encapsulated in a `using` statement](0753_dispose_transact_2.htm).
 
 The Building Coder defines an entire topic group
-on [handling transactions and transaction groups](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.53).
+on handling transactions and transaction groups *(link unavailable)*.
  
 I think you can indeed change the wall location curve in a manner similar to what you show.
  
@@ -148,7 +148,7 @@ RejustSectionView(&nbsp;doc,&nbsp;window,&nbsp;section&nbsp;);
 **Response:** Perfect!  I forget the many awesome examples in the SDK.  I really need to look through them instead of always using Google. 
 
 **Answer:** I think you need to use both SDK and Internet searches, and more besides, as described
-in [how to research to find a Revit API solution](http://thebuildingcoder.typepad.com/blog/2017/01/virtues-of-reproduction-research-mep-settings-ontology.html#3).
+in [how to research to find a Revit API solution](1515_repro_tray_conduit.html#3).
  
 **Response:** I just wanted to add my solution in case anyone else is looking to align section views and create aligned sections.  
  

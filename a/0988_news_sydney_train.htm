@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 
@@ -52,18 +83,18 @@ I am on vacation next week.</p>
 
 <p>Before they were placed on the official site, I discussed my migration of the expanded versions of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/migrating-the-adn-training-labs-to-revit-2014.html">
+<a href="0960_adn_migr_2014.htm">
 step-by-step labs</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/the-adn-sample-adnrme-for-revit-mep-2014.html">
+<a href="0965_adn_migr_2014_mep.htm">
 MEP sample AdnRme</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/adn-training-material-for-revit-structure-2014.html">
+<a href="0966_adn_migr_2014_rst.htm">
 structural labs and link sample</a> plus
 
 the update and command-line utility for removing the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/processor-architecture-mismatch-warning.html">
+<a href="0968_architecture_mismatch.htm">
 processor architecture mismatch warning</a>.</p>
 
 <p>Since all participants in my training here already had either good programming knowledge or extensive Revit product usage experience, we were able to cover all the important basics of the Revit API using the participants' specific needs and wishes as a basis for discussion, without sticking to the standard ADN training material.</p>
@@ -86,7 +117,7 @@ processor architecture mismatch warning</a>.</p>
 <li>Is there a limitation on the size of the extensible storage that can be associated with a single element? No.</li>
 <li>Does this feature depend on the Revit version? Yes.</li>
 <li>When did it become available? In
-<a href="http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2012-api.html"> Revit 2012</a>.</li>
+<a href="0903_whats_new_2012.htm"> Revit 2012</a>.</li>
 </ul>
 
 <li>Element Id</li>
@@ -144,12 +175,12 @@ If these two reasons are not interesting in your case, extensible storage is pro
 <li>How can Excel update the Revit database?
 Bi-directional linking of external data to family instances or other Revit elements: look at the FireRating SDK sample in VB, or the C# version provided by the Lab4_3_1_CreateAndBindSharedParam, Lab4_3_2_ExportSharedParamToExcel and Lab4_3_3_ImportSharedParamFromExcel commands in the XtraCs project in the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/recursively-disable-architecture-mismatch-warning.html#12">
+<a href="0977_architecture_mismatch.htm#12">
 Revit API training labs</a>.</li>
 </ul>
 
 <li>Prepare model for issue, strip out everything except model:
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html">
+<a href="0979_custom_exporter.htm">
 custom exporter</a>.</li>
 
 <li>Generate floor plans, e.g. large PNG: <a href="#9">cloud-based room editor</a>.</li>
@@ -161,19 +192,19 @@ custom exporter</a>.</li>
 <li>Revit model checking: <a href="http://lmgtfy.com/?q=revit+model+review">Revit Model Review</a>.</li>
 <li>Family API: define and use a family:
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/key-concepts-of-the-family-editor.html">Key concepts</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/family-api-add-in-load-family-and-place-instances.html">Load family and place instances</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/07/family-api-create-type-select-and-modify-instances.html">Create type, select and modify instances</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/07/family-api-nested-type-instance-and-symbol-retrieval.html">Nested types, instance and symbol retrieval</a>.</li>
+<li><a href="0972_family_key_concept.htm">Key concepts</a></li>
+<li><a href="0973_family_api_addin.htm">Load family and place instances</a></li>
+<li><a href="0974_family_api_addin.htm">Create type, select and modify instances</a></li>
+<li><a href="0975_family_api_addin.htm">Nested types, instance and symbol retrieval</a>.</li>
 </ul>
 </li>
 <li>Filter for all tags: iterate built-in categories, search for *tag*, feed into LogicalOrFilter: completed by Brett</li>
 <li>Electrical loading and circuit design, non-US rules:
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/12/uk-electrical-schedule-sample.html">
+<a href="0272_uk_elec_panel_schedule.htm">
 UK panel schedule</a> (2009),
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/05/the-schedule-api-and-access-to-schedule-data.html">
+<a href="0761_access_schedule_data.htm">
 Schedule API</a>.</li>
 
 
@@ -194,7 +225,7 @@ Schedule API</a>.</li>
 
 <p>This proved to be a perfect learning example to practice using RevitLookup and the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/pre-post-and-pick-select.html">
+<a href="0364_pre_post_pick_select.htm">
 element lister</a> to
 
 explore the Revit database and basic filtered element functionality.</p>
@@ -213,7 +244,7 @@ explore the Revit database and basic filtered element functionality.</p>
 
 <p>All of the steps listed above are completely automated by my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/sun-direction-shadow-calculation-and-wizard-update.html">
+<a href="0969_sun_direct_shadow.htm">
 Visual Studio Revit add-in wizards</a>.</p>
 
 <p>We ended up with the following command, which selects all rooms in the model with an area that is almost empty and deletes them, reporting whether they have been partially deleted or simply not yet placed:</p>
@@ -909,7 +940,7 @@ Beca</a> and
 
 Sydney Revit API training participant, pointed out some amazing TED presentations on the capabilities of UAVs,
 
-<a href="">
+<a href=">
 unmanned aerial vehicles</a>,
 
 and explained some of his ideas on how they could be used for automatically scanning buildings and other surveying purposes:</p>
@@ -946,3 +977,12 @@ now covering more topics, including BIM 360 Field.
 <p>I am sitting in Dubai airport now, travelling back to Switzerland, and going on vacation next week.</p>
 
 <p>I wish you a good time, and we will continue our Revit API adventures in August!</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

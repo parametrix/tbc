@@ -40,7 +40,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 ### Multi-Threading Family Instance Placement Monitor
 
 In the last post, I mentioned
-some [undocumented UIFrameworkService utility methods](https://thebuildingcoder.typepad.com/blog/2020/02/lat-long-to-metres-and-duplicate-legend-component.html#4)
+some [undocumented UIFrameworkService utility methods](1821_dupl_legend_comp.html#4)
 pointed out by Kennan Chen of Shanghai in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 on [getting notified when a family type is about to be placed](https://forums.autodesk.com/t5/revit-api-forum/get-notified-when-a-family-type-is-about-to-place/m-p/9327282).
@@ -60,12 +60,12 @@ Is it possible to have another event `FamilyTypePlacingIntoDocument` for this?
 Or is there a workaround?
 
 **Answer:** As recently discussed, you
-can [use the DocumentChanged event to detect the launching of a command](https://thebuildingcoder.typepad.com/blog/2020/01/torsion-tools-command-event-and-info-in-da4r.html#3).
+can [use the DocumentChanged event to detect the launching of a command](1813_torsion_tools.html#3).
 
 **Response:** It works great to catch the placing FamilyType event triggered by placing type directly from Revit UI.
 
 After hours of struggle to improve
-the [initial solution](https://thebuildingcoder.typepad.com/blog/2020/02/lat-long-to-metres-and-duplicate-legend-component.html#4),
+the [initial solution](1821_dupl_legend_comp.html#4),
 I finally completed this by simply using a `Timer` to constantly check the currently placing type until the UI refreshes and the API call returns correctly.
 It may not be the best solution, but at least it works.
 

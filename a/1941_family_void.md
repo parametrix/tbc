@@ -138,8 +138,8 @@ The latter is more modern and explicitly tailored for use by applications and da
 That seems most suitable for our purpose here.
 Extensible storage can be added to any database element.
 However, it interferes least with Revit operation when placed on a dedicated `DataStorage` element,
-especially [in a worksharing environment](http://thebuildingcoder.typepad.com/blog/2015/02/extensible-storage-in-a-worksharing-environment.html).
-Creation and population of a `DataStorage` element is demonstrated by the [named GUID storage for project identification](https://thebuildingcoder.typepad.com/blog/2016/04/named-guid-storage-for-project-identification.html) sample.
+especially [in a worksharing environment](1278_estorage_worksharing.htm).
+Creation and population of a `DataStorage` element is demonstrated by the [named GUID storage for project identification](1422_named_guid_storage.html) sample.
 
 ####<a name="4"></a> Drilling Holes in Beams
 

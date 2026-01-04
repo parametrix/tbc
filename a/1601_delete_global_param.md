@@ -23,9 +23,9 @@ I have list of all global parameters from the active Revit document. I want to d
 This is another entry in the list of my attempts at teaching Revit API developers how to fish instead of feeding them.
 Mostly, it ends up a mixture between the two, of course:
 
-- [Creating a group and how to fish](http://thebuildingcoder.typepad.com/blog/2009/02/creating-a-group-and-how-to-fish.html)
-- [Teaching a man how to fish and schedule creation](http://thebuildingcoder.typepad.com/blog/2014/07/teaching-a-man-how-to-fish-and-schedule-creation.html)
-- [Trusted signature motivation and fishing](http://thebuildingcoder.typepad.com/blog/2016/09/trusted-signature-motivation-and-fishing.html)
+- [Creating a group and how to fish](0089_create_group.htm)
+- [Teaching a man how to fish and schedule creation](1185_teach_how_to_fish.htm)
+- [Trusted signature motivation and fishing](1465_trust_sign_fish.html)
 
 This time, we address the question on how to:
 

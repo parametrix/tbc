@@ -127,15 +127,15 @@ Second, the answer to your question is *yes*.
 I think this is the one and only purpose of
 the [`FilterCategoryRule` class](https://www.revitapidocs.com/2022/7df5b10b-c423-b5c8-6492-1274d7a447d9.htm).
 
-Read the article on [how to use FilterCategoryRule](https://thebuildingcoder.typepad.com/blog/2018/05/how-to-use-filtercategoryrule.html) for more info.
+Read the article on [how to use FilterCategoryRule](1651_filtercategoryrule.html) for more info.
 
 It also mentions how you can easily achieve the same without using FilterCategoryRule, by using a Boolean OR combination filter of ElementCategoryFilter instances, showing how that approach can be used to:
 
-- [Retrieve MEP elements](https://thebuildingcoder.typepad.com/blog/2010/06/retrieve-mep-elements-and-connectors.html)
-- [Retrieve structural elements](https://thebuildingcoder.typepad.com/blog/2010/07/retrieve-structural-elements.html)
+- [Retrieve MEP elements](0398_retrieve_mep_elements.htm)
+- [Retrieve structural elements](0404_structural_elements.htm)
 
 For yet more info, please refer to
-The Building Coder [topic group on filtering for elements](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.9).
+The Building Coder topic group on filtering for elements *(link unavailable)*.
 
 Last but not least, you can also use
 the [`ElementMulticategoryFilter` class](https://www.revitapidocs.com/2022/e43a304a-6931-7492-441c-3cac428f2431.htm),
@@ -165,8 +165,8 @@ I will compare using `FilterCategoryRule` with `ElemenetMulticategoryFilter`.
 I prefer `ElementMulticategoryFilter` myself, now I think about it.
 It is clearer and more direct.
 It did not exist when I originally implemented the samples
-to [retrieve MEP elements](https://thebuildingcoder.typepad.com/blog/2010/06/retrieve-mep-elements-and-connectors.html)
-and [structural elements](https://thebuildingcoder.typepad.com/blog/2010/07/retrieve-structural-elements.html),
+to [retrieve MEP elements](0398_retrieve_mep_elements.htm)
+and [structural elements](0404_structural_elements.htm),
 or I would have opted for that back then.
 
 ####<a name="4"></a> Retrieving All Outer Walls
@@ -175,7 +175,7 @@ Mark de Vries of [ICN Development](https://icn.eu/) shared
 some important real-world considerations in the discussion
 about [how to get all the outermost walls in the model](https://forums.autodesk.com/t5/revit-api-forum/how-do-i-get-all-the-outermost-walls-in-the-model/m-p/11250597)
 that we edited and shared here four years ago in the article
-on [`FilterRule` use and retrieving exterior walls](http://thebuildingcoder.typepad.com/blog/2018/05/filterrule-use-and-retrieving-exterior-walls.html):
+on [`FilterRule` use and retrieving exterior walls](1656_exterior_walls.html):
 
 This algorithm to create a room around the building and let it determine its boundary walls is the most reliable and fastest solution to this particular problem of finding the exterior walls of a building. It also works better with, e.g., Dutch drawing practice, where compound walls are split into individual walls for its layers, making approaches that rely on `isExternal` properties or the count of bounded rooms unreliable at best.
 

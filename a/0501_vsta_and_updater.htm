@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>VSTA to Stay and Updater to Go</h3>
@@ -41,7 +72,7 @@ Liseberg amusement park</a>:</p>
 
 <p>Meanwhile, here are some questions that cropped up several times at
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/the-revit-api-track-at-au-2010.html">
+<a href="0490_au_2010_revit_api_track.htm">
 Autodesk University</a> and
 
 were mentioned during some of our meetings here in Europe as well:
@@ -84,10 +115,10 @@ Previous communications touching on the status of VSTA in Revit expressed some u
 <p>One of the most powerful new API features in Revit 2011 is the Dynamic Model Update or DMU framework.
 It enables you to register an updater to be triggered by certain events, and also to react on these events within the same transaction that triggered them, as demonstrated by the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/element-level-events.html#2">
+<a href="0340_element_events.htm#2">
 DynamicModelUpdate and DistanceToSurfaces SDK samples</a> and Saikat's
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/08/structural-dynamic-model-update-sample.html">
+<a href="0418_rst_dmu.htm">
 Structural DMU sample</a>.
 
 <p>However, when a Revit model is modified by an updater and then distributed to a client without the add-in installed, a warning message is displayed which is not comprehensible for an uninitiated user.
@@ -163,7 +194,7 @@ I did the following:
 
 <!--
 
-Mikako ñ
+Mikako ÔøΩ
 
 If you use an updater to modify a document, the client ID (along with certain other information like updater id and name) is stored in the document.  The next time you load the document without that updater running Revit will warn you about it.
 
@@ -188,16 +219,16 @@ Importance: Low
 
 Hello,
 
-Just a minor comment ñ
+Just a minor comment ÔøΩ
 
 It was there in alpha2.  I encountered it while preparing for the DevDay demo.
 
 I somehow got an impression that once I use a certain client ID, it remembers it somewhere.  Is it correct observation?
 (I think I needed to use completely new set of GUID to make it work. ).
 
-If so, if there a place where I can ìrefreshî it?
+If so, if there a place where I can ÔøΩrefreshÔøΩ it?
 
-(If not, maybe it was something else Ö please ignore.)
+(If not, maybe it was something else ÔøΩ please ignore.)
 
 -	Mikako
 
@@ -221,7 +252,7 @@ Subject: RE: Dymanic Model update sample
 
 Hi Harry:
 
-After I made the GUID of Add-in in the manifest file same as what exists in the code, it worked fine for me. Not sure if this was a requirement with Alpha 2 too, since I donít remember making conscious effort to ensure both are the same (or maybe I did) and the sample used to work. Nevertheless, it works fine now and this information is definitely good to know.
+After I made the GUID of Add-in in the manifest file same as what exists in the code, it worked fine for me. Not sure if this was a requirement with Alpha 2 too, since I donÔøΩt remember making conscious effort to ensure both are the same (or maybe I did) and the sample used to work. Nevertheless, it works fine now and this information is definitely good to know.
 
 Thanks again
 Saikat
@@ -291,3 +322,12 @@ Thanks
 Saikat
 
 -->
+
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

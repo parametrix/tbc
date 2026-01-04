@@ -1,42 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Desktop to Cloud via DreamSeat CouchDB Client</h3>
 
 <p>Continuing the research and development for my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/cloud-mobile-extensible-storage-data-use-in-schedules.html#3">
+<a href="0912_cm_estorage_schedule.htm#3">
 cloud-based round-trip 2D Revit model editing project</a>,
 
 I now started looking at storing the plan view room and furniture boundary loop data in the cloud.
 
 <p>I wound up the main Revit add-in functionality using the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/extrusion-analyser-and-plan-view-boundaries.html">
+<a href="0921_extrusion_analyser.htm">
 ExtrusionAnalyzer</a>
 
 to create a plan view boundary profile for the furniture and equipment family instances,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/sort-and-orient-curves-to-form-a-contiguous-loop.html">
+<a href="0918_contiguous_curves.htm">
 sort and orient its output curves</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/curve-following-face-and-bounding-box-implementation.html">
+<a href="0922_bounding_box_xyz_int.htm">
 determine their bounding box</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/geosnoop-net-boundary-curve-loop-visualisation.html">
+<a href="0924_geo_snoop.htm">
 visualise the results</a> in
 
 a dynamically generated GeoSnoop .NET form for verification.
 The plan view boundary loop data is handily managed in
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/geosnoop-net-boundary-curve-loop-visualisation.html#2">
+<a href="0924_geo_snoop.htm#2">
 integer-based 2D points</a> packaged
 
 by the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/geosnoop-net-boundary-curve-loop-visualisation.html#4">
+<a href="0924_geo_snoop.htm#4">
 JtLoops</a> class.</p>
 
 <p>That wraps up the initial add-in implementation.
@@ -52,12 +83,12 @@ We will certainly return to it and add more functionality when the time comes to
 
 <p>I mentioned looking at the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/relax-simple-free-cloud-based-data-repository-with-nosql-couchdb-and-iriscouch.html#4">
+<a href="0914_nosql_couchdb_iris.htm#4">
 CouchDB</a> database
 
 and the free
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/relax-simple-free-cloud-based-data-repository-with-nosql-couchdb-and-iriscouch.html#5">
+<a href="0914_nosql_couchdb_iris.htm#5">
 IrisCouch</a> hosting
 
 service as a candidate repository implementation.</p>
@@ -75,7 +106,7 @@ those components to host and consume images of CAD model data.
 
 <p>Philippe used the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/relax-simple-free-cloud-based-data-repository-with-nosql-couchdb-and-iriscouch.html#6">
+<a href="0914_nosql_couchdb_iris.htm#6">
 DreamSeat</a> .NET
 
 CouchDB wrapper library to easily access the functionality from within a .NET add-in.
@@ -126,7 +157,7 @@ At the end, a 'Z' is appended to close the path.
 
 <p>For an individual point,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/geosnoop-net-boundary-curve-loop-visualisation.html#2">Point2dInt</a>,
+<a href="0924_geo_snoop.htm#2">Point2dInt</a>,
 
 the SvgPath property is therefore implemented like this:</p>
 
@@ -146,7 +177,7 @@ the SvgPath property is therefore implemented like this:</p>
 
 <p>For an individual boundary loop,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/geosnoop-net-boundary-curve-loop-visualisation.html#3">JtLoop</a>,
+<a href="0924_geo_snoop.htm#3">JtLoop</a>,
 
 the member vertices are converted to their SVG string representation using LINQ and concatenated using the string Join method:</p>
 
@@ -170,7 +201,7 @@ the member vertices are converted to their SVG string representation using LINQ 
 
 <p>For a collection of loops,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/geosnoop-net-boundary-curve-loop-visualisation.html#4">JtLoops</a>,
+<a href="0924_geo_snoop.htm#4">JtLoops</a>,
 
 concatenate the individual loop paths:</p>
 
@@ -452,12 +483,12 @@ my simple JavaScript application from accessing my IrisCouch domain, so I cannot
 <a href="http://adndevblog.typepad.com/cloud_and_mobile/jeremy-tammik.html">
 Jeremy</a>
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html">
-Tammik</a>.</i></p>
+<span class="unavailable-link">
+Tammik</span>.</i></p>
 
 <p>I mentioned the idea of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/relax-simple-free-cloud-based-data-repository-with-nosql-couchdb-and-iriscouch.html">
+<a href="0914_nosql_couchdb_iris.htm">
 using CouchDB and IrisCouch as a simple cloud-based data repository</a> option,
 
 and Philippe picked up that idea to demonstrate a
@@ -469,9 +500,18 @@ those components to host and consume images of CAD model data.
 
 <p>Now I presented my own example of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/desktop-to-cloud-via-dreamseat-couchdb-client.html">
+<a href="0927_dreamseat_couchdb.htm">
 pushing desktop data to the cloud via a DreamSeat CouchDB client</a> to
 
 store 2D plan view room and furniture boundaries in a cloud-hosted data repository.</p>
 
 <p>Check it out, and please let us know what you think of it!</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

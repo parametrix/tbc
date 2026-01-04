@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!---
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -70,7 +101,7 @@ It is a very useful resource to explore and learn more about all Autodesk produc
 on <a href="http://forums.autodesk.com/t5/revit-api/all-model-elements-in-project/m-p/5972035">all model elements in project</a>:</p>
 <p><strong>Question:</strong> How can I get the model elements?
 This old code from The Building Coder discussion
-on <a href="http://thebuildingcoder.typepad.com/blog/2009/05/selecting-model-elements.html">selecting model elements</a> does not work anymore.
+on <a href="0140_select_model_elements.htm">selecting model elements</a> does not work anymore.
 Thank you in advance.</p>
 <p><strong>Answer:</strong> Yes, indeed, the code that you are pointing to is pretty old.</p>
 <p>However, as pointed out in that post, the code is part of the ADN Revit API training material, in the Revit API Introduction Lab 2-2.</p>
@@ -81,14 +112,22 @@ Thank you in advance.</p>
 </ul>
 <p>You could grab the current version from there, if you like, e.g., directly
 from <a href="https://github.com/jeremytammik/AdnRevitApiLabsXtra/blob/master/XtraCs/Labs2.cs#L506-L686">XtraCs/Labs2.cs</a>.</p>
-<p>Furthermore, luckily for you, a number of different other approaches to solve this very issue have been presented by The Building Coder in the topic group on <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.9">filtering for all elements</a>.</p>
+<p>Furthermore, luckily for you, a number of different other approaches to solve this very issue have been presented by The Building Coder in the topic group on <span class="unavailable-link">filtering for all elements</span>.</p>
 <p>I just updated the links under 'Selecting Model Elements or Visible 3D Elements' for you, listing the following possibilities:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/05/selecting-model-elements.html">Valid category and non-empty geometry</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/11/select-model-elements-2.html">Ditto, and eliminate certain categories</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/11/visible-elements.html">Valid category and neither category nor element is hidden</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/10/selecting-model-elements.html">Based on the Category.HasMaterialQuantities property</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/10/model-elements-revisited.html">Based on the elements visible in a default 3D view</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/08/determining-absolutely-all-visible-elements.html">Using a custom exporter</a></li>
+<li><a href="0140_select_model_elements.htm">Valid category and non-empty geometry</a></li>
+<li><a href="0254_select_model_elements_2.htm">Ditto, and eliminate certain categories</a></li>
+<li><a href="0255_visible_elements.htm">Valid category and neither category nor element is hidden</a></li>
+<li><a href="0453_model_elements.htm">Based on the Category.HasMaterialQuantities property</a></li>
+<li><a href="0454_model_elements.htm">Based on the elements visible in a default 3D view</a></li>
+<li><a href="1002_custom_exporter_visib.htm">Using a custom exporter</a></li>
 </ul>
 <p>I hope this helps.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1253563 [Is a Point inside an Area] -->
@@ -28,7 +59,7 @@ It also causes occasional fuss and worry.
 <p>Anyway, determining whether a 2D point is located within a given 2D polygon is actually very simple, and this is an important instrument to have available in every CAD programmer's toolbox, so why depend on the Revit API implementation when you can roll it yourself?
 In conjunction with the Revit independent 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/boolean-operations-for-2d-polygons.html">
+<a href="0098_booleans_on_polygons.htm">
 Boolean operations on 2D polygons</a>, 
 
 a lot of powerful analysis can be performed on pure geometry both within Revit and exported into some other external container such as a database.
@@ -36,10 +67,10 @@ a lot of powerful analysis can be performed on pure geometry both within Revit a
 <p>Actually, one discussion we had dealt with a number of linked files representing the architectural, furniture, MEP, and medical equipment in large hospital projects.
 The relevant geometrical properties of these elements can be systematically encoded in such a way that they can be used as keys in an external database, e.g. using encodings produced similarly to my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/nested-instance-geometry.html">
+<a href="0134_nested_instance_geo.htm">
 XYZ Compare method</a> and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/nested-instance-geometry.html">
+<a href="0134_nested_instance_geo.htm">
 XyzEqualityComparer class</a>.
 
 <p>This can enable us to manage the equipment and other Revit family instances and maintain their relationship with the appropriate rooms, storing their locations, line segments, and boundary polygons in the database so that they can also be used as keys for identification, searching and sorting.
@@ -298,12 +329,12 @@ The result looks like this:
 
 <p>This compiles all right, but I have not tested it yet. I would appreciate if you would set up a sample project, test it, and let me know whether it satisfies your needs. You will need to implement code to extract the boundary polygon of an area, convert it to an abstract geometrical 2D polygon represented by an UVArray, and call PolygonContains with that and a point to test for containment inside the room. I already discussed the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/polygon-transformation.html">
+<a href="0057_polygon_transformation.htm">
 transformation of arrays of points between 2D and 3D</a>.
 
 <p>A nice little exercise based on this would be to implement a Revit command that retrieves room, space or area boundaries, feeds them into this algorithm, and verifies that it really does correctly determine the containment of a number of given points in the resulting boundary polygon, as a sort of simplistic
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/11/unit-testing-in-revit.html">
+<a href="0473_unit_test.htm">
 unit test</a>.
 
 I would love to implement this myself.
@@ -315,3 +346,12 @@ If anybody else if faster, please be my guest.
 PointInPoly.zip</a>
 
 containing the entire Visual Studio project implementing the methods listed above.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

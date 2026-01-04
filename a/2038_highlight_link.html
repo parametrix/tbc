@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
@@ -12,7 +42,8 @@
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 <style> code[class*=language-], pre[class*=language-] { font-size : 90%; } </style>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - highlight elements from a linked document
@@ -188,7 +219,7 @@ locCurve.Curve = extendedCurve;
 
 <p>If the duct is connected to neighbouring elements, you can let Revit modify and adapt its length automatically by moving those neighbours and their connection points.
 Look at an exploration of different approaches to modifying pipe length in the blog post series
-on <a href="http://thebuildingcoder.typepad.com/blog/2014/01/final-rolling-offset-using-pipecreate.html">implementing a rolling offset</a>.</p>
+on <a href="1093_pipe_create.htm">implementing a rolling offset</a>.</p>
 <p>Just moving the neighbour elements will keep all the connections intact.</p>
 <p>To add another approach, for those MEP curves without neighbour connections:
 We may also extend the curve directly by its connector, which means no new line or assigning a location curve is needed:</p>
@@ -251,3 +282,11 @@ public class RevitWindowUtils(UIApplication uiApplication)
 </code></pre>
 
 <p>Many thanks to Aleksandr for this elegant solution.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

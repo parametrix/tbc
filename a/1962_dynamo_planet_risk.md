@@ -74,7 +74,7 @@ If you specifically want to implement your solution using Dynamo, the best place
 the [Dynamo discussion forum](https://forum.dynamobim.com).
 
 If you want to work with the standard .NET Revit API, please read
-the [Revit API getting started material](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2) first
+the Revit API getting started material *(link unavailable)* first
 and work through the DevTV and My first Revit plugin tutorials.
 
 **Response:** Thank you. Can I ask you one more question?

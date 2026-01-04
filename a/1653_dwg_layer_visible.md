@@ -101,7 +101,7 @@ The following code works as expected, only adding the DWG geometry that is curre
 </pre>
 
 This required cleaning it up a bit to avoid calling `GetInstanceGeometry` without first checking whether `gInstance` is null, and eliminate
-the [evil catch-all exception handler](http://thebuildingcoder.typepad.com/blog/2017/05/prompt-cancel-throws-exception-in-revit-2018.html#5).
+the [evil catch-all exception handler](1556_prompt_exception.html#5).
 
 To try it out yourself at home, here is
 a [simple demonstration project, `dwg_visible_geo_2018.rvt`](zip/dwg_visible_geo_2018.rvt)

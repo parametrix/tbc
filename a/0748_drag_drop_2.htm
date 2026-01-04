@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -17,24 +48,24 @@ SPR #223324 [Revit crash in UIApplication.DoDragDrop(IDropHandler) if Revit comm
 <p>We already looked at what can be done using
 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/01/drag-and-drop-to-revit.html">
+<a href="0705_drag_drop.htm">
 drag and drop in Revit 2012</a>.
 
 <p>At that point, an external Windows application could be used to initiate a standard Revit drag and drop sequence, but we had no control over Revit's behaviour on receiving the dropped files.
 
 <p>This has changed in the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/revit-2013-and-its-api.html">
+<a href="0740_revit_2013_api.htm">
 Revit 2013 API</a>,
 
 which provides a drag and drop API as part of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/revit-2013-and-its-api.html#2">
+<a href="0740_revit_2013_api.htm#2">
 add-in integration</a> features
 
 and includes the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/new-revit-2013-sdk-samples.html#4">
+<a href="0742_new_sdk_samples.htm#4">
 UIAPI</a> sample
 
 in the Revit SDK to demonstrate its use, among several other new API features such as discipline dependent application availability, preview control, and a custom WPF options dialogue.
@@ -251,3 +282,12 @@ The drag operation must be initiated from a point where it can call DoDragDrop t
 
 
 <p>Be sure to take a look at the other commands defined by the UIAPI SDK sample as well, because they are all pretty exciting and address a number of long-standing wish list items.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

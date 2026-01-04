@@ -78,8 +78,8 @@ adding a few simple enhancements in order to demonstrate interactive movement of
 
 The additional enhancements include:
 
-- [Adding a viewer `transform` extension](http://thebuildingcoder.typepad.com/blog/2016/09/warning-swallower-and-roomedit3d-viewer-extension.html#3).
-- [Retrieving and broadcasting the affected element `UniqueId` and translation](http://thebuildingcoder.typepad.com/blog/2016/10/retrieving-and-broadcasting-the-roomedit3dv3-translation.html) via `socket.io`.
+- [Adding a viewer `transform` extension](1476_roomedit3d_forge_warn.html#3).
+- [Retrieving and broadcasting the affected element `UniqueId` and translation](1478_roomedit3d_broadcast.html) via `socket.io`.
 
 I created a new Forge app for the production version, set up its `PROD` environment and deployed to [Heroku](http://heroku.com) with no major issues.
 
@@ -87,12 +87,12 @@ Everything went well, as you can see below in my description of the [Revit add-i
 
 Here is are all the nitty-gritty details on choosing a suitable starting point and adapting the boilerplate code for my needs:
 
-- [Roomedit3d Update for Connecting Desktop and Forge](http://thebuildingcoder.typepad.com/blog/2016/09/roomedit3d-update-for-connecting-desktop-and-forge.html)
-- [More Roomedit3dv3 Starting Points](http://thebuildingcoder.typepad.com/blog/2016/09/forge-webinar-series-and-more-roomedit-starting-point-samples.html#2)
-- [The Birth of Roomedit3dv3](http://thebuildingcoder.typepad.com/blog/2016/09/the-birth-of-roomedit3dv3-and-forge-webinar-series.html#2)
-- [REST vs WebSocket and Roomedit3dv3 Broadcast Architecture](http://thebuildingcoder.typepad.com/blog/2016/09/roomedit3d-broadcast-teigha-bim-and-forge-webinar-3.html#2)
-- [Roomedit3dv3 Transform Viewer Extension](http://thebuildingcoder.typepad.com/blog/2016/09/warning-swallower-and-roomedit3d-viewer-extension.html#3)
-- [Retrieving and Broadcasting the Roomedit3dv3 Translation](http://thebuildingcoder.typepad.com/blog/2016/10/retrieving-and-broadcasting-the-roomedit3dv3-translation.html)
+- [Roomedit3d Update for Connecting Desktop and Forge](1471_roomedit3d_forge.html)
+- [More Roomedit3dv3 Starting Points](1472_roomedit3d_forge.html#2)
+- [The Birth of Roomedit3dv3](1473_roomedit3d_forge.html#2)
+- [REST vs WebSocket and Roomedit3dv3 Broadcast Architecture](1475_roomedit3d_forge.html#2)
+- [Roomedit3dv3 Transform Viewer Extension](1476_roomedit3d_forge_warn.html#3)
+- [Retrieving and Broadcasting the Roomedit3dv3 Translation](1478_roomedit3d_broadcast.html)
 
 Now that the web server part is complete, let's test it from Revit:
 

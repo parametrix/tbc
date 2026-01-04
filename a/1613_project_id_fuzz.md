@@ -51,7 +51,7 @@ Furthermore, even if you could change it, how are you going to guarantee that an
 Therefore, I would suggest that you create your own personal project identifier that you can control as you yourself see fit, in a way that perfectly matches your own requirements.
 
 I implemented such a system for The Building Coder
-using [named `GUID` storage for project identification](http://thebuildingcoder.typepad.com/blog/2016/04/named-guid-storage-for-project-identification.html).
+using [named `GUID` storage for project identification](1422_named_guid_storage.html).
 
 I am not saying that my solution is perfect.
 
@@ -198,7 +198,7 @@ What result would you consider correct for that case?
 Remember, lines A and A' must be considered completely identical in all respects!
 
 The only way I see for you to handle your problem properly using inexact floating point arithmetic is to perform
-a [fuzzy comparison](http://thebuildingcoder.typepad.com/blog/2017/06/sensors-bim-ai-revitlookup-and-fuzzy-comparison.html#4) of
+a [fuzzy comparison](1564_fuzz_lookup_futur.html#4) of
 the edge cases such as these.
 
 I would say that this is not a bug, and there is no way to decide whether parallel lines that meet in one single point intersect or not.

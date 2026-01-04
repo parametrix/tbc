@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1271057 [Unable to get Railing objects] -->
@@ -17,33 +48,33 @@
 <p>I already mentioned that API access to stairs and railings is currently still a bit patchy.
 Still, you can 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/retrieving-column-and-stair-geometry.html">
+<a href="0298_column_stair_geometry.htm">
 retrieve their geometry</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/retrieve-stairs-on-level.html">
+<a href="0346_stairs_on_level.htm">
 determine the instances on a given level</a>, and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/list-railing-types.html">
+<a href="0097_list_railing_types.htm">
 list the railing types</a>.
 
 <p>As you can see from the comments by Berria and Andrew, it is currently 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/list-railing-types.html?cid=6a00e553e1689788330112790ba9af28a4#comment-6a00e553e1689788330112790ba9af28a4">
+<a href="0097_list_railing_types.htm">
 not possible</a> to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/03/create-room-on-level-in-phase.html?cid=6a00e553e168978833011168f39e48970c#comment-6a00e553e168978833011168f39e48970c">
+<a href="0107_room_on_level_in_phase.htm">
 create railings</a>,
 
 even though I did once implement a command named 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/list-linked-elements.html">
+<a href="0106_list_linked_elements.htm">
 CmdNewRailing</a> in 
 
 The Building Coder samples to test this which unfortunately does <strong>not</strong> create a new railing instance.
 
 <p>Anyway, as discussed with Renzo, we can easily
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/07/retrieve-structural-elements.html?cid=6a00e553e168978833013489158949970c#comment-6a00e553e168978833013489158949970c">
+<a href="0404_structural_elements.htm">
 retrieve railing instances</a>.
 
 This question of retrieving railings came up again now, and here is yet another answer and snippet of sample code to address it, this time demonstrating a nice compact concatenation of filtered element collector, generic LINQ, and string methods to create a string listing the element ids of all instances found.
@@ -140,13 +171,22 @@ By the way, the current user selection in rvtDoc.Selection does return railing o
 
 <p>You might of course want to filter for all the different variations of the railing category, in which case the approach described to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/retrieve-mep-elements-and-connectors.html">
+<a href="0398_retrieve_mep_elements.htm">
 retrieve all MEP</a> or 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/07/retrieve-structural-elements.html">
+<a href="0404_structural_elements.htm">
 structural elements</a> might 
 
 be of interest to you, since it includes handling of multiple categories.
 
 <p>Here is <a href="zip/FilterRailings.zip">FilterRailings.zip</a> containing the complete Visual Studio solution including source code and add-in manifest file for my little test command.
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

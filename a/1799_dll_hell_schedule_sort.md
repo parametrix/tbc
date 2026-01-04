@@ -8,7 +8,7 @@
 <!---
 
 - 15913252 [Contradiction between shared dependencies used by Revit plugins]
-  [Handling Third Party Library DLL Conflicts](https://thebuildingcoder.typepad.com/blog/2017/06/handling-third-party-library-dll-conflicts.html)
+  [Handling Third Party Library DLL Conflicts](1567_dll_conflict.html)
 
 - Fair59 presents a very comprehensive and well explained solution to
   [Replicate Graphical Column Schedule Sort Order with C#]
@@ -78,7 +78,7 @@ Avoiding [smartphone danger](https://duckduckgo.com/?q=smartphone+danger);
 Back to a more technology friendly topic... or is it?
 
 One recurring problematic topic is
-on [handling third party library DLL conflicts](https://thebuildingcoder.typepad.com/blog/2017/06/handling-third-party-library-dll-conflicts.html).
+on [handling third party library DLL conflicts](1567_dll_conflict.html).
 
 A new query related to that came up, asking:
 
@@ -97,7 +97,7 @@ What can I do to fix this?
 The two add-ins require different versions and a conflict ensues.
 
 You are not the first to run into such an issue, as you can see from the list of old discussions 
-on [handling third party library DLL conflicts](https://thebuildingcoder.typepad.com/blog/2017/06/handling-third-party-library-dll-conflicts.html) from 2017.
+on [handling third party library DLL conflicts](1567_dll_conflict.html) from 2017.
 
 For new suggestions and solutions that came up since then, you can search
 the [Revit API discussion forum](https://forums.autodesk.com/t5/revit-api-forum/bd-p/160) for

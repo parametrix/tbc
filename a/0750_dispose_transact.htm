@@ -1,12 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Scope and Dispose of Transactions</h3>
 
 <p>Arno&scaron;t L&ouml;bel added an important comment on the sample code that I published for 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/04/devcamp-and-refresh-display-for-a-kinetic-facade.html">
+<a href="0746_kinetic_facade.htm">
 refreshing a view</a>:
 
 <p>It is for the best if all transaction objects are always properly scoped, e.g. within a C# 'using' block. 
@@ -68,7 +99,7 @@ If not, an exception will be thrown, and since it would be thrown during garbage
 
 an updated version of the kinetic facade sample command with proper scoping and including the complete Revit 2013 source code, Visual Studio solution and add-in manifest.
 
-<p>Oh, and by the way, the final result of the kinetic facade sample up and running can be viewed on Prof. Jos� Luis Menegotto's 
+<p>Oh, and by the way, the final result of the kinetic facade sample up and running can be viewed on Prof. Jos� Luis Menegotto's 
 
 <a href="https://sites.google.com/a/poli.ufrj.br/dc_menegotto/programacao-autolisp/ArqCin">
 Kinetics Architecture</a> page
@@ -92,3 +123,12 @@ I recommend always scoping inside 'using' blocks.
 
 <p>In addition, the API may start providing more of these scope-like objects in the future, and it is better get into habit of scoping them properly in your C# and VB code, something provided automatically and for free in C++.
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -22,12 +53,12 @@ http://thebuildingcoder.typepad.com/blog/2009/01/room-and-wall-adjacency.html?ci
 
 <p>Here is an interesting solution to determine the gross and net area of a wall, i.e. with and without its openings, making use of the SpatialElementGeometryCalculator and the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/10/the-temporary-transaction-trick-for-gross-slab-data.html">
+<a href="0851_gross_slab_boundary.htm">
 temporary transaction trick</a>.</p>
 
 <p>The question was raised and solved by
 
-Phillip Miller of <a href="">Kiwi Codes Solutions Ltd</a>, starting with the
+Phillip Miller of <a href=">Kiwi Codes Solutions Ltd</a>, starting with the
 
 <a href="http://forums.autodesk.com/t5/revit-api/bd-p/160">Revit API discussion forum</a> thread on
 
@@ -43,7 +74,7 @@ Phillip Miller of <a href="">Kiwi Codes Solutions Ltd</a>, starting with the
 
 <p>For a pure API perspective, I assume you are aware of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/material-quantity-extraction.html">
+<a href="0296_abg10_material_quantity.htm">
 Revit SDK MaterialQuantities sample</a>?</p>
 
 <p>Does that not give you pretty much exactly what you need?</p>
@@ -60,7 +91,7 @@ I'm pretty sure that will then give me the true area of the room's walls.</p>
 
 <p>The Building Coder currently does not provide any samples of using that except the rather complex
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/football-and-space-adjacency-for-heat-load-calculation.html#3">
+<a href="0983_space_adjacency.htm#3">
 space adjacency for heat load calculation</a>.</p>
 
 <p><strong>Response:</strong> Thank you so much for your suggestions.  The good news is that the temporary deletion of cutting objects in the wall works very well.  I'm not to sure why the BIP Area parameter is reporting odd values but I suppose that does not matter any more.</p>
@@ -241,7 +272,7 @@ see the steps that I took:</p>
 
 <p>I started off by compiling, installing and testing the VB.NET solution, then disassembling the VB.NET add-in assembly DLL using
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/converting-between-vb-and-c-and-net-decompilation.html">
+<a href="0028_reflector.htm">
 Reflector</a> to
 
 generate some raw C# code as a starting point.</p>
@@ -502,48 +533,57 @@ release 2015.0.0.0</a>.</p>
 
 <p>Another recent query that might also make use of this discussion was raised by Arif Hanif in a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/01/room-and-wall-adjacency.html?cid=6a00e553e16897883301b8d0ec5711970c#comment-6a00e553e16897883301b8d0ec5711970c">
+<a href="0076_room_wall_adjacency.htm">
 comment</a> on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/01/room-and-wall-adjacency.html">room and wall adjacency</a>:
+<a href="0076_room_wall_adjacency.htm">room and wall adjacency</a>:
 
 <p><strong>Question:</strong> Love the website, I have recently started to learn C# and have started exploring the API to help with MEP Design. It has been frustrating dealing with gbXML. I am trying to get Wall Area and Orientation for Room to Excel. Can you point me to some of your past postings that could help me.</p>
 
 
 <p><strong>Answer:</strong> There are a lot of discussions on getting the wall area, e.g. for mass quantities, the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/material-quantity-extraction.html">
+<a href="0296_abg10_material_quantity.htm">
 Revit SDK MaterialQuantities sample</a> mentioned
 
 above and the discussion of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/2d-polygon-areas-and-outer-loop.html">
+<a href="0053_2d_polygon_area_outer_loop.htm">
 2D polygon areas and outer loop</a>.</p>
 
 <p>For the orientation, here are some starting points:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/10/azimuth.html">Azimuth</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/01/project-location.html">Facing North</a></li>
+<li><a href="0027_azimuth.htm">Azimuth</a></li>
+<li><a href="0292_abg08_project_location.htm">Facing North</a></li>
 </ul>
 
 <p>Those initial ponderings led to these further discussions:</p>
 
 <!-- 0027 0230 0275 0292 0730 0738 0787 -->
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/10/unrotate-north.html">Unrotate North</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/03/rotate-true-north.html">Rotate True North</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/06/real-world-concrete-corner-coordinates.html">Real-world concrete corner coordinates</a></li>
+<li><a href="0230_unrotate_north.htm">Unrotate North</a></li>
+<li><a href="0730_rotate_true_north.htm">Rotate True North</a></li>
+<li><a href="0787_real_world_corners.htm">Real-world concrete corner coordinates</a></li>
 </ul>
 
 <p>We put in some additional work on converting Revit project coordinates to real-world ones, including the orientation transformation, when working on the setout point application:</p>
 
 <!-- 0806 1234 -->
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/08/structural-concrete-setout-point-add-in.html">Structural concrete setout point add-in</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/11/concrete-setout-points-for-revit-structure-2015.html">Concrete setout points for Revit Structure 2015</a></li>
+<li><a href="0806_setout_points.htm">Structural concrete setout point add-in</a></li>
+<li><a href="1234_setout_points.htm">Concrete setout points for Revit Structure 2015</a></li>
 </ul>
 
 <p>I hope this helps.</p>
 
 <p>Enjoy.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

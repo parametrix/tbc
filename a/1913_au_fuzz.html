@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - au registration open and free
@@ -118,9 +149,9 @@ Both of the offsets were not represented precisely, e.g., because they were conv
 The result is imprecise, almost exactly zero, but very slightly off.</p>
 <p>That is completely normal and must be taken into account whenever dealing with real numbers of a digital computer, for instance, in many operations, e.g., comparisons,  by adding some fuzz:</p>
 <ul>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2017/06/sensors-bim-ai-revitlookup-and-fuzzy-comparison.html#4">Fuzzy comparison</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2017/12/project-identifier-and-fuzzy-comparison.html#3">Fuzzy comparison versus exact arithmetic for curve intersection</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2018/12/rebars-in-host-net-framework-and-importance-of-fuzz.html#4">Importance of fuzz for curtain wall dimensioning</a></li>
+<li><a href="1564_fuzz_lookup_futur.html#4">Fuzzy comparison</a></li>
+<li><a href="1613_project_id_fuzz.html#3">Fuzzy comparison versus exact arithmetic for curve intersection</a></li>
+<li><a href="1709_rebar_framework_fuzz.html#4">Importance of fuzz for curtain wall dimensioning</a></li>
 </ul>
 <p>The same issue came up again right away in the discussion
 on <a href="https://forums.autodesk.com/t5/revit-api-forum/element-geometry-not-returning-expected-face-count/m-p/10473778">element geometry not returning expected face count</a>.</p>
@@ -160,27 +191,35 @@ on <a href="https://stackoverflow.blog/2021/07/14/getting-started-with-python">g
 -->
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/python-and-ruby-scripting-resources-and-the-sharp-glyph.html">Python and Ruby Scripting Resources and the Sharp Glyph</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html">Interactive Revit Database Exploration with the Python Shell</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/04/wav-database-python-and-gui-tutorials.html">Python Tutorials</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/06/revitpythonshell-dynamic-model-updater-tutorial-and-wizard-update.html#3">RevitPythonShell Dynamic Model Updater Tutorial</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/07/retrieving-a-c-out-argument-value-in-python.html">Retrieving a C# out Argument Value in Python</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/06/determining-rvt-file-version-using-python.html">Determining RVT File Version Using Python</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2018/12/rotate-picked-element-around-bounding-box-centre-in-python.html#1">Cyril's Python HVAC Blog</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2018/12/rotate-picked-element-around-bounding-box-centre-in-python.html#2">Rotating Elements Around Their Centre in Python</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2018/12/rotate-picked-element-around-bounding-box-centre-in-python.html#6">Python Popularity Growing</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/01/retrieving-linked-ifczone-elements-using-python.html">Retrieving Linked IfcZone Elements Using Python</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/06/accessing-bim360-cloud-links-thumbnail-and-dynamo.html#3">Retrieve RVT Preview Thumbnail Image with Python</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/10/pet-change-python-and-dynamo-swap-nested-families.html">Pet Change &ndash; Python + Dynamo Swap Nested Family</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2020/02/lat-long-to-metres-and-duplicate-legend-component.html#2">Duplicate Legend Component in Python</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2020/02/lat-long-to-metres-and-duplicate-legend-component.html#3">Convert Latitude and Longitude to Metres in Python</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2020/04/2021-migration-add-in-language-and-bim360-login.html#3.1">C&#35; versus Python</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2020/04/2021-migration-add-in-language-and-bim360-login.html#3.2">Python and .NET</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2021/02/splits-persona-collector-region-tag-modification.html#5">Python and Dynamo Autotag Without Overlap</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2021/02/addin-file-learning-python-and-ifcjs.html#3">Learning Python and Dynamo</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2021/02/addin-file-learning-python-and-ifcjs.html#3.2">Take Dynamo Further Using Python</a></li>
+<li><a href="0964_ruby_python_newbie.htm">Python and Ruby Scripting Resources and the Sharp Glyph</a></li>
+<li><a href="1057_db_explor_python_sh.htm">Interactive Revit Database Exploration with the Python Shell</a></li>
+<li><a href="1143_wav_db_python_gui.htm">Python Tutorials</a></li>
+<li><a href="1448_py_dmu_tutorial.html#3">RevitPythonShell Dynamic Model Updater Tutorial</a></li>
+<li><a href="1452_py_out_arg.html">Retrieving a C# out Argument Value in Python</a></li>
+<li><a href="1570_rvt_version_py.html">Determining RVT File Version Using Python</a></li>
+<li><a href="1712_py_rot_bb_midp.html#1">Cyril's Python HVAC Blog</a></li>
+<li><a href="1712_py_rot_bb_midp.html#2">Rotating Elements Around Their Centre in Python</a></li>
+<li><a href="1712_py_rot_bb_midp.html#6">Python Popularity Growing</a></li>
+<li><a href="1715_list_ifc_zones_py.html">Retrieving Linked IfcZone Elements Using Python</a></li>
+<li><a href="1756_bim360_links.html#3">Retrieve RVT Preview Thumbnail Image with Python</a></li>
+<li><a href="1786_pet_change.html">Pet Change &ndash; Python + Dynamo Swap Nested Family</a></li>
+<li><a href="1821_dupl_legend_comp.html#2">Duplicate Legend Component in Python</a></li>
+<li><a href="1821_dupl_legend_comp.html#3">Convert Latitude and Longitude to Metres in Python</a></li>
+<li><a href="1838_cs_python_bim360_login.html#3.1">C&#35; versus Python</a></li>
+<li><a href="1838_cs_python_bim360_login.html#3.2">Python and .NET</a></li>
+<li><a href="1890_multiple_filter.html#5">Python and Dynamo Autotag Without Overlap</a></li>
+<li><a href="1893_js_ifc_python_rps.html#3">Learning Python and Dynamo</a></li>
+<li><a href="1893_js_ifc_python_rps.html#3.2">Take Dynamo Further Using Python</a></li>
 </ul>
 
 <h4><a name="5"></a> Vacation Time</h4>
 <p>I'll be mostly offline for the coming three weeks, from July 26 until August 13, spending time in nature in different parts of Switzerland.</p>
 <p>I wish you a happy and fruitful time until I return.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

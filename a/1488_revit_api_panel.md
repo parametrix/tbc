@@ -69,7 +69,7 @@ This represents an ideal combination, bringing in-depth knowledge both from insi
 
 - [Revit Idea Station](http://forums.autodesk.com/t5/revit-ideas/idb-p/302/)
 - [Tag: API](http://forums.autodesk.com/t5/tag/API/tg-p/board-id/302)
-- [Introducing the Revit Idea Station](http://thebuildingcoder.typepad.com/blog/2016/05/idea-station-and-textnote-bounding-box.html#2)
+- [Introducing the Revit Idea Station](1440_idea_station_txt_bb.html#2)
 
 The idea station currently lists over 1300 wishes. We need votes to help prioritise them.
 
@@ -135,7 +135,7 @@ implementing [#RTCEUR API Wish #1: Purging Types and Families](https://boostyour
 <b>[Q]:</b> How to debug a Revit command without relaunching?
 
 <b>[A]:</b> One simple possibility is to implement your code as a macro, debug, then convert to an add-in. Several other possibilities are discussed in The Building Coder topic group 5.49
-on [Edit and Continue, Debug without Restart, Live Development](http://thebuildingcoder.typepad.com/blog/about-the-author.html - 5.49).
+on Edit and Continue, Debug without Restart, Live Development *(link unavailable)*.
 
 Alternatively, use the AddIn Manager. If your add-in is loaded by the AddIn Manager, you can debug it in Visual Studio using ‘Attach to’ the Revit.exe process. That enables you to recompile and reload updated code without restarting Revit.
 
@@ -166,9 +166,9 @@ Q; Can I specify the Revit Add-In folder location?
 
 Here are some notes from previous similar Revit API panel sessions:
 
-- [SD5156 &ndash; The Revit API Expert Panel at Autodesk University 2014](http://thebuildingcoder.typepad.com/blog/2014/12/the-revit-api-panel-at-autodesk-university.html#1)
-- [The Building Coder Revit API Panel at the Revit Technology Conference RTC Europe 2015](http://thebuildingcoder.typepad.com/blog/2015/11/rtc-budapest-and-the-revit-api-panel.html#5)
-- [SD10181 &ndash; Revit API Expert Roundtable at Autodesk University 2015](http://thebuildingcoder.typepad.com/blog/2015/12/au-keynote-and-revit-api-panel.html#9)
+- [SD5156 &ndash; The Revit API Expert Panel at Autodesk University 2014](1254_au_revit_api_panel.htm#1)
+- [The Building Coder Revit API Panel at the Revit Technology Conference RTC Europe 2015](1370_rtc_revit_api_panel.html#5)
+- [SD10181 &ndash; Revit API Expert Roundtable at Autodesk University 2015](1380_au2015_day_1.html#9)
 
 
 

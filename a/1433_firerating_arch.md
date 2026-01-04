@@ -47,7 +47,7 @@ like [RoomEditorApp](https://github.com/jeremytammik/RoomEditorApp), followed by
 #### <a name="2"></a>FireRatingCloud Context and Architecture
 
 I took a first stab yesterday at explaining
-the [context of the FireRatingCloud sample](http://thebuildingcoder.typepad.com/blog/2016/04/real-time-bim-update-via-fireratingcloud-windows-client.html#2).
+the [context of the FireRatingCloud sample](1432_fireratingclient.html#2).
 
 I later took that one step further, creating the image below and adding an in-depth explanation of
 the [context and architecture](https://github.com/jeremytammik/FireRatingCloud#context-and-architecture) to
@@ -91,16 +91,16 @@ Inevitably, talking about connecting BIM and the cloud, the question on using Re
 
 We provided several examples in the past that might help enable that kind of usage, e.g.:
 
-- [A pattern for semi-asynchronous Idling API access](http://thebuildingcoder.typepad.com/blog/2010/11/pattern-for-semi-asynchronous-idling-api-access.html)
-- [Driving Revit through a WCF service](http://thebuildingcoder.typepad.com/blog/2012/11/drive-revit-through-a-wcf-service.html)
-- [Processing a queue of commands to control Revit from a modeless dialogue](http://thebuildingcoder.typepad.com/blog/2013/06/behind-the-scenes-of-the-nbs-revit-add-in.html#3)
-- [Batch processing Revit documents](http://thebuildingcoder.typepad.com/blog/2015/08/batch-processing-dwfx-links-and-future-proofing.html#4)
-- [Revit Python shell in the cloud as a web server](http://thebuildingcoder.typepad.com/blog/2015/07/firerating-and-the-revit-python-shell-in-the-cloud-as-web-servers.html#5)
+- [A pattern for semi-asynchronous Idling API access](0487_async_idling_pattern.htm)
+- [Driving Revit through a WCF service](0853_revit_wcf_service.htm)
+- [Processing a queue of commands to control Revit from a modeless dialogue](0970_nbs.htm#3)
+- [Batch processing Revit documents](1348_batch_dwf_futureproof.htm#4)
+- [Revit Python shell in the cloud as a web server](1338_firerating_cloud.htm#5)
 
 Please be aware, though, that the EULA or *end user license agreement* clearly prohibits the use of Revit as a server, and it cannot be used as part of a web site or service.
 
 If you would be interested in any such-like future functionality,
-[Autodesk is interested in talking with you](http://thebuildingcoder.typepad.com/blog/2016/02/what-can-revit-on-the-cloud-do-for-you.html) about
+[Autodesk is interested in talking with you](1400_revit_cloud.html) about
 it to help make a decision on possibly exposing some sort of 'Revit I/O' web service.
 
 Here is a question raised today by Guillaume
@@ -131,22 +131,22 @@ A: No, there is currently no such license. Revit is not suited for use as a serv
 Q: Is it possible to modify only the information part of a RFA without modifying the geometric part by using server scripts? I know I can do it by using the API within Revit, but is there any other way?
 
 A: I do not think so. You can read part atoms, but can you modify them? Please try it out and let us know what you find out. Here is a discussion on the topic
-of [reading an RVT file without Revit](http://thebuildingcoder.typepad.com/blog/2016/02/reading-an-rvt-file-without-revit.html).
+of [reading an RVT file without Revit](1407_read_rvt_without_revit.html).
 
 You should definitely contact Jim Quanci and discuss your wishes and requirements with him, as he invited all developers to do in January this year,
-asking [what can Revit on the cloud do for you?](http://thebuildingcoder.typepad.com/blog/2016/02/what-can-revit-on-the-cloud-do-for-you.html#2)
+asking [what can Revit on the cloud do for you?](1400_revit_cloud.html#2)
 
 I put that discussion into context later,
-exploring [why BIM Cloud?](http://thebuildingcoder.typepad.com/blog/2016/04/forge-devcon-spring-impermanence-and-bim-cloud.html#6)
+exploring [why BIM Cloud?](1420_forge_devcon.html#6)
 
 Regardless of the context, all external access to the Revit API has to take into account the rules and restrictions
-that apply to [Idling and external events for modeless access and driving Revit from outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+that apply to Idling and external events for modeless access and driving Revit from outside *(link unavailable)*.
 
 Instead of using Revit as a server, you can always explore generating a public format and interacting with that, or interacting with specific subset of the data, as demonstrated by my samples to connect BIM and the cloud, most recently these three based on Revit 2017:
 
-- [Room Editor &ndash; First Revit 2017 Addin Migration](http://thebuildingcoder.typepad.com/blog/2016/04/room-editor-first-revit-2017-addin-migration.html)
-- [Real-Time BIM Update with FireRatingCloud 2017](http://thebuildingcoder.typepad.com/blog/2016/04/real-time-bim-update-with-fireratingcloud-2017.html)
-- [Real-Time BIM Update via a Windows Forms Client](http://thebuildingcoder.typepad.com/blog/2016/04/real-time-bim-update-via-fireratingcloud-windows-client.html)
+- [Room Editor &ndash; First Revit 2017 Addin Migration](1430_room_editor_2017.html)
+- [Real-Time BIM Update with FireRatingCloud 2017](1431_firerating_2017.html)
+- [Real-Time BIM Update via a Windows Forms Client](1432_fireratingclient.html)
 
 They show how you can easily extract a minimal set of relevant data from the BIM and make that globally available, including the possibility to edit it and reintegrate the changes back into the BIM in real-time.
 

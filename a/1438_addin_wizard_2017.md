@@ -35,11 +35,11 @@ Just hit `F5` to start debugging; the add-in manifest is automatically created, 
 
 Here are the corresponding notes on the migration, customisation, usage and installation from the analogue task previous year:
 
-- [Revit add-in wizards for Revit 2016](http://thebuildingcoder.typepad.com/blog/2015/04/add-in-migration-to-revit-2016-and-updated-wizards.html#3)
-- [Revit add-in wizard customisation](http://thebuildingcoder.typepad.com/blog/2015/04/add-in-migration-to-revit-2016-and-updated-wizards.html#4)
-- [Revit add-in wizard usage](http://thebuildingcoder.typepad.com/blog/2015/04/add-in-migration-to-revit-2016-and-updated-wizards.html#5)
-- [Download and installation](http://thebuildingcoder.typepad.com/blog/2015/04/add-in-migration-to-revit-2016-and-updated-wizards.html#6)
-- [Revit add-in wizards on GitHub and installer](http://thebuildingcoder.typepad.com/blog/2015/08/revit-add-in-wizard-github-installer.html)
+- [Revit add-in wizards for Revit 2016](1312_addin_wizard_2016.htm#3)
+- [Revit add-in wizard customisation](1312_addin_wizard_2016.htm#4)
+- [Revit add-in wizard usage](1312_addin_wizard_2016.htm#5)
+- [Download and installation](1312_addin_wizard_2016.htm#6)
+- [Revit add-in wizards on GitHub and installer](1350_wizard_github_install.htm)
 
 Please refer to those for all further background information, since I will not repeat it here.
 

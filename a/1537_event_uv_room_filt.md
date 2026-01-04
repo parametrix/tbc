@@ -80,7 +80,7 @@ Jaime is going, and unfortunately, I am not...
 #### <a name="4"></a>Autodesk University in London
 
 As I mentioned,
-[Autodesk University is coming to London](http://thebuildingcoder.typepad.com/blog/2017/01/au-in-london-and-deep-learning.html#2),
+[Autodesk University is coming to London](1514_deep_learning.html#2),
 to Tobacco Dock, E1 on June 21-22, 2017;
 the first English speaking Autodesk University in Northern Europe!
 
@@ -97,7 +97,7 @@ To get a taste of what we’ve got in store for you this year, check out the ven
 #### <a name="5"></a>Retrieve and Map Texture UV Coordinates Exporting Geometry and Material
 
 **Question:** I have a question looking at the rather outdated discussion
-on [texture data UV coordinates and FBX](http://thebuildingcoder.typepad.com/blog/2010/02/texture-data-uv-coordinates-and-fbx.html):
+on [texture data UV coordinates and FBX](0306_uv_coords_fbx.htm):
 
 I find that the API `Mesh.UVs` is not available in Revit 2014 or later.
 
@@ -180,5 +180,5 @@ This is more efficient than the first version due to:
 - Elimination of `doc.GetElement`
 
 The reason you cannot filter directly for `Room` elements is explained in the discussion 
-on [filtering for a non-native class](http://thebuildingcoder.typepad.com/blog/2010/08/filtering-for-a-nonnative-class.html) and in
+on [filtering for a non-native class](0426_filter_non_native_class.htm) and in
 the [remarks on the `ElementClassFilter` class](http://www.revitapidocs.com/2017/4b7fb6d7-cb9c-d556-56fc-003a0b8a51b7.htm).

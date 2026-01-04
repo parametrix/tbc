@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1270365 [Problems with AutoCAD CAD import (colors and categories)] -->
@@ -106,7 +137,7 @@ I also tested changing some element parameter values back and forth, but since t
 
 <p><strong>Addendum:</strong> As Rudolf points out in his 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/07/refresh-element-graphics-display.html?cid=6a00e553e16897883301538fb68718970b#comment-6a00e553e16897883301538fb68718970b">
+<a href="0611_refresh_graphics.htm">
 comment</a> below, 
 
 this workaround may need to be adjusted for hosted elements:
@@ -114,3 +145,12 @@ this workaround may need to be adjusted for hosted elements:
 <p>Moving windows or doors may cause errors if the translation is too large, causing the element to leave its host boundaries, or if the moving direction is locked for the element. For example, windows cannot be moved in the Wall.Orientation direction.
 
 <p>Therefore, it would be safer to move the elements by just a tiny amount instead of a whole foot, and also ensure that the movement direction is parallel to the host face. For example, for a window in a vertical wall, you might use XYZ.BasisZ.Multiply(tinyAmount) instead of XYZ.BasisX.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

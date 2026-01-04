@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -12,12 +43,12 @@
 
 <p>After 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/10/wall-footing-relationship-revisited.html">
+<a href="0838_wall_footing.htm">
 yesterday's rejuvenation</a> of
 
 the old wall footing 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/06/host-reference.html">
+<a href="0146_host_reference.htm">
 host reference relationship detection</a>,
 
 today raises another old question prompting me to update and retest The Building Coder samples yet again:
@@ -28,7 +59,7 @@ today raises another old question prompting me to update and retest The Building
 
 <p><strong>Answer:</strong> I implemented a CmdSlabBoundary external command to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/slab-boundary.html">
+<a href="0031_slab_boundary.htm">
 determine the slab boundary</a> back
 
 in the dawn of time, in 2008, in one of the first posts on this blog.
@@ -40,7 +71,7 @@ in the dawn of time, in 2008, in one of the first posts on this blog.
 <p>To ensure that it still works, I updated it slightly and tested in Revit 2013.
 All I did this time around was to change the transaction mode from automatic to manual, since 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/05/read-only-and-automatic-transaction-modes.html">
+<a href="0760_read_auto_transact.htm">
 automatic transaction mode is considered obsolete</a> nowadays.
 
 <p>Here is the updated implementation:
@@ -260,7 +291,7 @@ It is worthwhile noting the date of publication, also  :-)
 
 <p>I discussed 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/closing-the-active-document-and-why-not-to.html">
+<a href="0456_close_active_doc.htm">
 closing the active document</a> and
 
 why not to do so. 
@@ -272,3 +303,12 @@ The same caveats obviosuly apply to shutting down the Revit session itself.
 close down Revit</a> by
 
 using SendMessage to post a WM_CLOSE request to it.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1259898 [How to retrieve a curtain wall's geometry] -->
@@ -41,7 +72,7 @@ Before looking into that, we will have a look at the associated panel elements w
 
 <p>To explore the relationship between a curtain wall and its panels, I created a sample model and added a new curtain wall, using the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/pre-post-and-pick-select.html">
+<a href="0364_pre_post_pick_select.htm">
 element lister</a>
 
 implemented in Lab2_1_Elements in the Revit API introduction labs to determine what new elements get added by that step.
@@ -90,10 +121,10 @@ C:\tmp\ &gt;diff
 
 <p>One is to delete the main element inside a sub-transaction that is later aborted, and see what elements are deleted with it, as demonstrated by the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/object-relationships.html">
+<a href="0314_object_relationship.htm">
 object relationship viewer</a> (in 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/object-relationships-in-vb.html">
+<a href="0319_object_relationship_vb.htm">
 VB</a>).
 
 <p>Better still is to use geometrical analysis. The curtain wall itself does not have any accessible geometry objects, as you have seen, but you can still use its bounding box or location curve to determine its position in the model.
@@ -108,12 +139,12 @@ Snoop DB &gt; Panel &gt; Glazed 149170 &gt; Geometry &gt; Objects &gt; Symbol ge
 
 <p>This is described in the analysis of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/03/transform-instance-coordinates.html">
+<a href="0111_transform_instance_coords.htm">
 instance coordinate transformation</a>.
 
 <p>Using the position of the curtain wall determined from its location line or bounding box, and the geometry of the panel, you can determine their relationship to each other by checking for overlap or adjacency. One way to checking for adjacency is to use the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/findreferencesbydirection.html">
+<a href="0294_abg09_findReferencesByDir.htm">
 FindReferencesByDirection</a> method.
 This should work, using the curtain wall location line to define the starting point of the ray and then shooing it in various directions to intersect the panel geometry. 
 
@@ -223,7 +254,7 @@ I asked the curtain wall for its geometry with IncludeNonVisibleObjects set to t
 
 <p>To generate the model curves shown above, I made some enhancements to The Building Coder sample 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/model-line-creation.html">
+<a href="0032_model_lines.htm">
 Creator</a> class, 
 
 which we will present in detail in a future post.
@@ -245,7 +276,8 @@ Says Joe:
 
 <p>What my program does is export all the curtain wall mullion geometry from Revit into an analytical software package.
 
-<p>Based on our discussion, I was able to retrieve the X,Y,Z of each end of each mullion that was hosted by a System Family - Curtain Wall.  
+<p>Based on our discussion, I was able to retrieve the X,Y,Z of each end of each mullion that was hosted by 
+a System Family - Curtain Wall.  
 But because architects like to dream up exotic shapes for glass structures, there may also exist curtain wall systems on non-vertical surfaces in the model.  
 Thus, I also had to export out CurtainSystems and RoofFootPrint elements that might contain CurtainGrids and Mullions.
 
@@ -256,3 +288,12 @@ The HermiteSpline elements usually occurred on sloped roofs with curved boundari
 
 <p>Using the same logic as the walls, I found X,Y,Z coordinates for the non-visible border of RoofFootPrints and CurtainSystems, as well as X,Y,Z coordinates of all the interior nodes using CurtainGridLines.ExistingSegments. 
 <p>Many thanks to Joe for the fruitful discussions on this subject!
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

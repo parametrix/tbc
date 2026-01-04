@@ -71,7 +71,7 @@ the institute for numerical methods and computer science in the construction ind
 
 The agenda is simple:
 
-- 10:45-12:15 presentation &ndash; [Connecting desktop and  cloud](http://thebuildingcoder.typepad.com/blog/2016/10/connecting-desktop-and-cloud-at-rtc-material.html)
+- 10:45-12:15 presentation &ndash; [Connecting desktop and  cloud](1487_roomedit3d_material.html)
 - 13:00-17:00 hands-on workshop with two topics:
     - Revit API &ndash; [creating a Revit add-in with one single click](#4)
     - Connecting BIM with the cloud &ndash; [connecting Revit and Forge in 55 minutes](#5)
@@ -80,7 +80,7 @@ The agenda is simple:
 #### <a name="4"></a>Creating a Revit Add-In with One Single Click
 
 I can create a new Revit add-in DLL, compile, load and execute it with one single click or two using
-the [Visual Studio Revit add-in wizards](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20),
+the Visual Studio Revit add-in wizards *(link unavailable)*,
 and I demonstrate that live in a handful of seconds.
 
 Obviously, if everything were as simple as one single click, life would be extremely boring and no challenge at all.
@@ -88,13 +88,13 @@ Obviously, if everything were as simple as one single click, life would be extre
 It makes things a lot more interesting if you understand what is going on under the hood.
 
 That is easily achieved by working through
-the [Revit API getting started material](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2),
+the Revit API getting started material *(link unavailable)*,
 looking at the basic installation sections of
 the [Revit API Developer Guide](http://help.autodesk.com/view/RVT/2016/ENU/?guid=GUID-F0A122E0-E556-4D0D-9D0F-7E72A9315A42),
 and installing the Revit SDK from
 the [Revit Developer Centre](http://www.autodesk.com/developrevit).
 
-With that material in hand, you will understand and be able to make good and exciting use of the single-click functionality provided by the [Visual Studio Revit add-in wizards](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20).
+With that material in hand, you will understand and be able to make good and exciting use of the single-click functionality provided by the Visual Studio Revit add-in wizards *(link unavailable)*.
 
 The most effective way to get started programming with the Revit API is to work through the step-by-step instructions provided by the *DevTV* and *My First Revit Plugin* video tutorials.
 
@@ -120,7 +120,7 @@ download the Revit SDK containing documentation and samples:
     - The Revit API Developer Guide provides in-depth explanations.
 
 I already wrote similar instructions
-for [preparing for a hands-on Revit API training](http://thebuildingcoder.typepad.com/blog/2012/01/preparing-for-a-hands-on-revit-api-training.html) back in 2012 which are also still absolutely relevant.
+for [preparing for a hands-on Revit API training](0703_training_prep.htm) back in 2012 which are also still absolutely relevant.
 
 
 #### <a name="5"></a>Connecting Revit and Forge in 55 Minutes
@@ -146,13 +146,13 @@ All in all, I cannot have added much more than one or a couple of dozen lines of
 
 Here is the full detailed description of all my research and implementation efforts right from the start:
 
-- [Introduction and first search for a starting point](http://thebuildingcoder.typepad.com/blog/2016/09/roomedit3d-update-for-connecting-desktop-and-forge.html)
-- [The Birth of Roomedit3dv3](http://thebuildingcoder.typepad.com/blog/2016/09/the-birth-of-roomedit3dv3-and-forge-webinar-series.html#2)
-- [Roomedit3dv3 Broadcast Architecture](http://thebuildingcoder.typepad.com/blog/2016/09/roomedit3d-broadcast-teigha-bim-and-forge-webinar-3.html#2)
-- [Roomedit3dv3 Transform Viewer Extension](http://thebuildingcoder.typepad.com/blog/2016/09/warning-swallower-and-roomedit3d-viewer-extension.html#3)
-- [Retrieving and Broadcasting the Roomedit3dv3 Translation](http://thebuildingcoder.typepad.com/blog/2016/10/retrieving-and-broadcasting-the-roomedit3dv3-translation.html)
-- [Roomedit3dv3 Up and Running with Demo Recording](http://thebuildingcoder.typepad.com/blog/2016/10/roomedit3dv3-up-and-running-with-demo-recording.html)
-- [Recording of the complete *Connecting Desktop and Cloud* presentation](http://thebuildingcoder.typepad.com/blog/2016/10/connecting-desktop-and-cloud-at-rtc-material.html)
+- [Introduction and first search for a starting point](1471_roomedit3d_forge.html)
+- [The Birth of Roomedit3dv3](1473_roomedit3d_forge.html#2)
+- [Roomedit3dv3 Broadcast Architecture](1475_roomedit3d_forge.html#2)
+- [Roomedit3dv3 Transform Viewer Extension](1476_roomedit3d_forge_warn.html#3)
+- [Retrieving and Broadcasting the Roomedit3dv3 Translation](1478_roomedit3d_broadcast.html)
+- [Roomedit3dv3 Up and Running with Demo Recording](1479_roomedit3d_running.html)
+- [Recording of the complete *Connecting Desktop and Cloud* presentation](1487_roomedit3d_material.html)
 
 Let's see whether (and hope that) I manage to package this in a suitable format for a 55-minute hands-on lab in the coming week.
 

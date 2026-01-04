@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <!-- <script src="http://thebuildingcoder.typepad.com/google-code-prettify/run_prettify.js"></script>-->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -180,9 +211,9 @@ The ViewSheetSetting.AvailableViews property is definitely read-only according t
 <p>By the way, your way to manage the transaction is not optimal. Encapsulating it within a using block is safer:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/04/using-using-automagically-disposes-and-rolls-back.html">Using <code>using</code> automagically disposes and rolls back</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/11/handling-transaction-status-and-errors.html">Handling transaction status and errors</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/02/using-transaction-groups.html">Using transaction groups</a></li>
+<li><a href="0753_dispose_transact_2.htm">Using <code>using</code> automagically disposes and rolls back</a></li>
+<li><a href="1250_transaction.htm">Handling transaction status and errors</a></li>
+<li><a href="1280_transaction_group.htm">Using transaction groups</a></li>
 </ul>
 
 <p>Unfortunately, I cannot run your code, though.</p>
@@ -286,3 +317,12 @@ However, if the placeholders use one transaction and the conversion uses a secon
 <p>Both approaches avoid the problem with API sheet creation and undo/redo.</p>
 
 <p>Dear Revit add-in developer, please take heed!</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

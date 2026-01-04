@@ -40,8 +40,8 @@ Each of these is fully documented in its own GitHub repository, and the first tw
 on [Box &amp; Forge](http://adndevblog.typepad.com/cloud_and_mobile/2016/09/box-forge.html).
 
 I also made some notes on them in my first search for a
-suitable [roomedit3dv3 starting point](http://thebuildingcoder.typepad.com/blog/2016/09/roomedit3d-update-for-connecting-desktop-and-forge.html#4),
-followed by [more roomedit3dv3 starting points](http://thebuildingcoder.typepad.com/blog/2016/09/forge-webinar-series-and-more-roomedit-starting-point-samples.html#2).
+suitable [roomedit3dv3 starting point](1471_roomedit3d_forge.html#4),
+followed by [more roomedit3dv3 starting points](1472_roomedit3d_forge.html#2).
 
 I finally decided to go for the latter, for the sake of completeness.
 Besides including all the Forge APIs that I might possibly need, it also makes use of a full web development and deployment stack including

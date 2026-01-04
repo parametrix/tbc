@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <title>The Building Coder</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" type="text/css" href="3dwc.css"/>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true" defer="defer"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -153,7 +184,7 @@ in <a href="https://github.com/jeremytammik/the_building_coder_samples/blob/mast
 </center></p>
 <p><strong>Answer:</strong> This is easy to answer and solve.</p>
 <p>Two steps are required:</p>
-<p>First of all, all Revit database <a href="http://thebuildingcoder.typepad.com/blog/2011/03/internal-imperial-units.html">length measurements are in imperial feet</a>.</p>
+<p>First of all, all Revit database <a href="0553_imperial_units.htm">length measurements are in imperial feet</a>.</p>
 <p>There is no way to change that. </p>
 <p>Therefore, when you retrieve coordinates via the Revit API, they will always be in feet, and you will have to convert them to millimetres yourself.</p>
 <p>That is very easy, of course.</p>
@@ -265,7 +296,7 @@ on <a href="http://forums.autodesk.com/t5/revit-api/how-to-get-the-total-width-a
 <p>Does anyone know what would be the best way to achieve it using Revit API?</p>
 <p><strong>Answer:</strong> The number of possible approaches is infinite.</p>
 <p>I would probably start off
-by <a href="http://thebuildingcoder.typepad.com/blog/2009/06/convex-hull-and-volume-computation.html">computing the convex hull</a> of
+by <a href="0160_convex_hull_volume.htm">computing the convex hull</a> of
 the entire design, and then determine the width and length of that.</p>
 <p>Another approach, which may or may not be faster, depending on many factors:</p>
 <p>Skip the convex hull part and just iterate over all building elements, enlarging a bounding box containing all their vertices as you go along:</p>
@@ -417,3 +448,11 @@ in <a href="https://github.com/jeremytammik/the_building_coder_samples">The Buil
 <p>http://thebuildingcoder.typepad.com/blog/2016/08/vacation-end-forge-news-and-bounding-boxes.html#8</p>
 <p>Cheers,</p>
 <p>Jeremy</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

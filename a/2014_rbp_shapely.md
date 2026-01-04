@@ -69,7 +69,7 @@ Powerful tools and solutions for batch processing, 2D geometric analysis and top
 ####<a name="2"></a> Revit Batch Processor Sample Code
 
 Several  years ago, we pointed out the
-powerful [Revit Batch Processor (RBP)](https://thebuildingcoder.typepad.com/blog/2019/11/the-revit-batch-processor-rbp.html).
+powerful [Revit Batch Processor (RBP)](1801_revit_batch_processor.html).
 
 [Jan Christel](https://github.com/jchristel) has implemented and shared
 a number of Python code samples making use of it in
@@ -89,9 +89,9 @@ Many thanks to Jan for sharing these.
 ####<a name="3"></a> Shapely for Dynamo
 
 We recently discussed
-the [Shapely Python 2D geometry library](https://thebuildingcoder.typepad.com/blog/2023/09/element-diff-compare-shapely-and-rdbe.html#4) and
+the [Shapely Python 2D geometry library](2008_rdbe_elem_diff.html#4) and
 how it can be used
-to [find and fix a hole](https://thebuildingcoder.typepad.com/blog/2023/09/element-diff-compare-shapely-and-rdbe.html#4.1).
+to [find and fix a hole](2008_rdbe_elem_diff.html#4.1).
 
 Durmuş Cesur (Bayryam) of [BPA Architecture](https://bpa.archi/) announced an associated Dynamo package to wrap it and provide access to its functionality:
 

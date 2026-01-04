@@ -111,7 +111,7 @@ the roadmap enables you to vote for the roadmap items that have the greatest imp
 ####<a name="3"></a> Praise for Modeless RevitLookup
 
 We received praise on Twitter and LinkedIn for
-the new [modeless RevitLookup](https://thebuildingcoder.typepad.com/blog/2021/10/bridges-regeneration-and-modeless-revitlookup.html):
+the new [modeless RevitLookup](1924_modeless_revitlookup.html):
 
 - This is a breakthrough. &ndash; <i>Joshua Lumley @joshnewzealand</i>
 - These are some nice adds. Thanks @jeremytammik. &ndash; <i>Timon Hazell @TmnHzll</i>
@@ -130,7 +130,7 @@ Thank you for your appreciation, everybody, and yet again a huge thanks to [@NeV
 ####<a name="4"></a> Benchmarking Generic Any versus Count
 
 One interesting little item that came up after
-the subsequent [RevitLookup cleanup](https://thebuildingcoder.typepad.com/blog/2021/11/revit-20221-sdk-revitlookup-build-and-install.html#4) questions the use of the [generic `Any` method]() to check for an empty collection
+the subsequent [RevitLookup cleanup](1925_2022_1_bld_inst_dev.html#4) questions the use of the [generic `Any` method]() to check for an empty collection
 in [issue #113 &ndash; error snooping family type from project browser](https://github.com/jeremytammik/RevitLookup/issues/113),
 where [Roman @Nice3point](https://github.com/Nice3point) points out:
 

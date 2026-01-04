@@ -42,7 +42,7 @@ For example, I would like to have users be able to name a reference plane '*my a
 Then, when it's loaded in the project, I would like to find an instance of it, be able to find the '*my arbitrary location*' in the project, and use that location data for other things in relation to the placement in the project.
  
 I've seen the post 
-on [how to retrieve dimensioning references](http://thebuildingcoder.typepad.com/blog/2015/05/how-to-retrieve-dimensioning-references.html), 
+on [how to retrieve dimensioning references](1316_dim_ref_hints.htm), 
 but that basically says you would have to use some type of geometry analysis to figure out if it's the correct one or not.
 
 Unfortunately, it's user (or at least company) specific and varied so there is no way to identify it geometrically, but it would be easy for the user to label the reference plane with a name if I could get that data out...
@@ -61,8 +61,8 @@ A similar question was asked in a previous case, 12730663 *Create dimension for 
 [A] For Revit 2018, we have new capabilities to get the standard references for family instances. I haven’t tested specifically with detail items, but I believe this should work for them as well:
  
 Check out the
-section [API access to `FamilyInstance` references](http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html#3.19)
-in [What's New in the Revit 2018 API](http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html):
+section [API access to `FamilyInstance` references](1551_whats_new_2018.html#3.19)
+in [What's New in the Revit 2018 API](1551_whats_new_2018.html):
 
 > The following new methods have been added to enable easy access to FamilyInstance references that correspond to reference planes and reference lines in the family. Some use the options in the new enumeration FamilyInstanceReferenceType as input to identify "Strong" or "Weak" references or specific positional references in each of the 3 coordinate directions (as determined by the possible values of parameter "Is Reference" of reference planes and parameter "Reference" of reference lines in families).
  

@@ -67,7 +67,7 @@ Today, I'll discuss this morning's work:
 - [Download](#11)
 
 I implemented a suggestion
-for [tracking element modification](http://thebuildingcoder.typepad.com/blog/2016/01/tracking-element-modification.html) a
+for [tracking element modification](1397_track_changes.html) a
 month ago and created
 the [TrackChanges GitHub repository](https://github.com/jeremytammik/TrackChanges) to host its solution and source code.
 
@@ -157,7 +157,7 @@ One way to trigger the snapshots at regular intervals, and probably the cleanest
 #### <a name="4"></a>The TrackChangesCloud External Event
 
 The Building Coder topic group
-on [Idling and external events](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28) is
+on Idling and external events *(link unavailable)* is
 growing pretty large and explains all the background information on this in full detail.
 
 I implemented a skeleton for the external event named `ModificationLogger` that does nothing so far, except get raised when I say so.

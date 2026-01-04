@@ -83,7 +83,7 @@ on [all model elements in project](http://forums.autodesk.com/t5/revit-api/all-m
 
 **Question:** How can I get the model elements?
 This old code from The Building Coder discussion
-on [selecting model elements](http://thebuildingcoder.typepad.com/blog/2009/05/selecting-model-elements.html) does not work anymore.
+on [selecting model elements](0140_select_model_elements.htm) does not work anymore.
 Thank you in advance.
 
 **Answer:** Yes, indeed, the code that you are pointing to is pretty old.
@@ -98,16 +98,16 @@ That material is continuously maintained, and an up-to-date version is available
 You could grab the current version from there, if you like, e.g., directly
 from [XtraCs/Labs2.cs](https://github.com/jeremytammik/AdnRevitApiLabsXtra/blob/master/XtraCs/Labs2.cs#L506-L686).
 
-Furthermore, luckily for you, a number of different other approaches to solve this very issue have been presented by The Building Coder in the topic group on [filtering for all elements](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.9).
+Furthermore, luckily for you, a number of different other approaches to solve this very issue have been presented by The Building Coder in the topic group on filtering for all elements *(link unavailable)*.
 
 I just updated the links under 'Selecting Model Elements or Visible 3D Elements' for you, listing the following possibilities:
 
-- [Valid category and non-empty geometry](http://thebuildingcoder.typepad.com/blog/2009/05/selecting-model-elements.html)
-- [Ditto, and eliminate certain categories](http://thebuildingcoder.typepad.com/blog/2009/11/select-model-elements-2.html)
-- [Valid category and neither category nor element is hidden](http://thebuildingcoder.typepad.com/blog/2009/11/visible-elements.html)
-- [Based on the Category.HasMaterialQuantities property](http://thebuildingcoder.typepad.com/blog/2010/10/selecting-model-elements.html)
-- [Based on the elements visible in a default 3D view](http://thebuildingcoder.typepad.com/blog/2010/10/model-elements-revisited.html)
-- [Using a custom exporter](http://thebuildingcoder.typepad.com/blog/2013/08/determining-absolutely-all-visible-elements.html)
+- [Valid category and non-empty geometry](0140_select_model_elements.htm)
+- [Ditto, and eliminate certain categories](0254_select_model_elements_2.htm)
+- [Valid category and neither category nor element is hidden](0255_visible_elements.htm)
+- [Based on the Category.HasMaterialQuantities property](0453_model_elements.htm)
+- [Based on the elements visible in a default 3D view](0454_model_elements.htm)
+- [Using a custom exporter](1002_custom_exporter_visib.htm)
 
 I hope this helps.
 

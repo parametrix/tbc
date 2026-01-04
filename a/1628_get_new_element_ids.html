@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -6,6 +36,7 @@
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -38,7 +69,7 @@ Now this topic arose again in a couple of cases and brought some other aspects t
 the <a href="http://www.revitapidocs.com/2018.1/b05a17df-3f63-9172-8e49-d2e1e6b8e9e2.htm"><code>PromptForFamilyInstancePlacement</code> method</a> by
 subscribing to the <a href="http://www.revitapidocs.com/2018.1/988dd6cf-fcaa-85d2-622d-c50f13917a13.htm"><code>DocumentChanged</code> event</a> just
 beforehand in the discussion
-on <a href="http://thebuildingcoder.typepad.com/blog/2010/06/place-family-instance.html">placing family instances</a>.</p>
+on <a href="0402_place_family_instance.htm">placing family instances</a>.</p>
 <p>Now this topic arose again in a couple of cases and brought some other aspects to mind:</p>
 <ul>
 <li><a href="#2">Using the element lister</a></li>
@@ -47,7 +78,7 @@ on <a href="http://thebuildingcoder.typepad.com/blog/2010/06/place-family-instan
 <li><a href="#5">AEC job openings in Munich and elsewhere</a></li>
 </ul>
 <h4><a name="2"></a>Using the Element Lister</h4>
-<p>The <a href="http://thebuildingcoder.typepad.com/blog/2014/09/debugging-and-maintaining-the-image-relationship.html#2">element lister</a> provides
+<p>The <a href="1205_image_relationships.htm#2">element lister</a> provides
 an easy way to discover element relationships between related objects that are added to Revit by certain operations.</p>
 <p>It is included
 in <a href="https://github.com/jeremytammik/AdnRevitApiLabsXtra">AdnRevitApiLabsXtra, the ADN Revit API Training Labs including Xtra</a>.</p>
@@ -58,14 +89,14 @@ compare states before and after doing your thing.</p>
 <p>It can be well combined with
 the <a href="https://github.com/jeremytammik/BipChecker">built-in parameter checker BipChecker</a> to explore the properties in further depth.</p>
 <p>Of course,
-the <a href="http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html">most intimate database exploration</a> requires
+the <a href="1057_db_explor_python_sh.htm">most intimate database exploration</a> requires
 a live read-evaluate-print console.</p>
 <h4><a name="3"></a>Consecutive Element Ids</h4>
 <p>Using any of the techniques listed above, you will quickly determine that Revit element ids are basically consecutive numbers.</p>
 <p>There is no guarantee for this, of course, and they can be mixed up by work-sharing operations.</p>
 <p>They can only be used to identify an element within one single Revit document.</p>
 <p>Because they are assigned consecutively, Revit automatically generates
-many <a href="http://thebuildingcoder.typepad.com/blog/2011/11/undocumented-elementid-relationships.html">undocumented <code>ElementId</code> relationships</a>.</p>
+many <a href="0673_elementid_relationships.htm">undocumented <code>ElementId</code> relationships</a>.</p>
 <p>For more persistent identification, a <code>UniqueId</code> is recommended.</p>
 <p>For the sake of completeness, Revit elements have two identifiers:</p>
 <ul>
@@ -73,7 +104,7 @@ many <a href="http://thebuildingcoder.typepad.com/blog/2011/11/undocumented-elem
 <li><a href="http://www.revitapidocs.com/2018.1/f9a9cb77-6913-6d41-ecf5-4398a24e8ff8.htm">Unique id <code>UniqueId</code></a></li>
 </ul>
 <p>We discuss their uses in lots of places, e.g.,
-<a href="http://thebuildingcoder.typepad.com/blog/2015/02/understanding-the-use-of-the-uniqueid.html">understanding the use of the <code>UniqueId</code></a>.</p>
+<a href="1277_uniqueid.htm">understanding the use of the <code>UniqueId</code></a>.</p>
 <p>For connecting with an external database, I would suggest using the UniqueId.</p>
 <p>One simple sample that shows the whole connection strategy is provided by
 the <a href="https://github.com/jeremytammik/FireRatingCloud">FireRatingCloud add-in</a>.</p>
@@ -92,7 +123,7 @@ on <a href="https://stackoverflow.com/questions/48869272/python-revit-part-utils
 <p><strong>Answer:</strong> As said above, you can subscribe to
 the <a href="http://www.revitapidocs.com/2018.1/988dd6cf-fcaa-85d2-622d-c50f13917a13.htm"><code>DocumentChanged</code> event</a> just before calling <code>CreateParts</code>, and unsubscribe just afterwards.</p>
 <p>That will tell you all the element ids added to the database during the call.</p>
-<p>This is demonstrated in the discussion on <a href="http://thebuildingcoder.typepad.com/blog/2010/06/place-family-instance.html">retrieving newly placed family instances</a>.</p>
+<p>This is demonstrated in the discussion on <a href="0402_place_family_instance.htm">retrieving newly placed family instances</a>.</p>
 <p><center>
 <img src="img/road_narrows.png" alt="Merge parts" width="211"/>
 </center></p>
@@ -181,3 +212,11 @@ the <a href="https://autodesk.taleo.net/careersection/adsk_gen/jobsearch.ftl">Au
 <li>Able to act independently while working on a multi-disciplinary and geographically diverse team</li>
 <li>Can effectively communicate with this team, even with remote and international team members</li>
 </ul>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

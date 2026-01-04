@@ -119,7 +119,7 @@ The centre of the bounding box is very easy to obtain.
 `picked` is a `Reference`.
 Get the `ElementId` from that, open it using `doc.GetElement`, and retrieve the bounding box using `get_BoundingBox`,
 cf. this code snippet from the discussion
-of [conduits intersecting a junction box](https://thebuildingcoder.typepad.com/blog/2018/03/create-2d-arc-and-filter-for-intersecting-elements.html#3):
+of [conduits intersecting a junction box](1632_filter_intersect.html#3):
 
 <pre class="code">
 &nbsp;&nbsp;<span style="color:#2b91af;">Element</span>&nbsp;e&nbsp;=&nbsp;<span style="color:#2b91af;">Util</span>.SelectSingleElement(
@@ -130,8 +130,8 @@ of [conduits intersecting a junction box](https://thebuildingcoder.typepad.com/b
 
 For certain elements and certain irregular shapes, you might want to use the centroid instead of the bounding box:
 
-- [Solid centroid and volume calculation](http://thebuildingcoder.typepad.com/blog/2012/12/solid-centroid-and-volume-calculation.html)
-- [GetCentroid on GitHub](https://thebuildingcoder.typepad.com/blog/2015/06/dynamo-centroid-volume-calculation-migration-blitz.html#3)
+- [Solid centroid and volume calculation](0874_centroid.htm)
+- [GetCentroid on GitHub](1334_centroid_migration.htm#3)
 
 
 #### <a name="4"></a> Use Location Point Instead of Bounding Box Centre?

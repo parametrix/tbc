@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 07110970 [How to get an element's Type parameters] -->
@@ -10,7 +41,7 @@
 
 It was declared obsolete, and a new way to access the element type had to be implemented, and we discussed
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/08/get-element-type.html">
+<a href="0421_get_element_type.htm">
 two years back</a>.
 
 This can still raise an issue even today:
@@ -44,19 +75,19 @@ Here is a section of my code containing this obsolete call:
 
 <p>I discussed this
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/08/get-element-type.html">
+<a href="0421_get_element_type.htm">
 two years back</a>.
 
 Since then, another change occurred as well, which Saikat mentioned in his
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/04/migrating-vsta-macros-to-sharpdevelop.html">
+<a href="0744_migrate_vsta_to_csdev.htm">
 macro migration notes</a>:
 
 <p>The Document.Element property taking an element id argument has been converted to a method named GetElement in Revit 2013.
 
 <p>The obsolete Element property was converted to a method with a "get_" prefix in C#, so it had to be accessed by calling get_Element, which sometimes
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/09/document-elements.html">
+<a href="0224_doc_elements.htm">
 caused a bit of confusion</a>.
 
 <p>Anyway, translated to your example code snippet, the new access might look like this in Revit 2013:
@@ -82,7 +113,7 @@ caused a bit of confusion</a>.
 
 <p>We had a look at one of these ways when describing how to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/03/change-element-colour.html">
+<a href="0561_change_element_colour.htm">
 change element colour using ProjColorOverrideByElement</a>.
 
 <!-- <p>The developer guide has little to say about how this can be managed programmatically. -->
@@ -106,3 +137,12 @@ helps understand the various possibilites and how they relate to each other.
 </center>
 
 <p>Good luck and much success with your Revit add-in development efforts and all other important aspects of life, such as love, peace, and happiness for all beings  :-)
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

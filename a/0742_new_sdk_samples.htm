@@ -1,12 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>New Revit 2013 SDK Samples</h3>
 
 <p>Revit 2013 has been released, and I presented an overview of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/revit-2013-and-its-api.html">
+<a href="0740_revit_2013_api.htm">
 Revit 2013 API</a> two
 
 days ago.
@@ -14,10 +45,10 @@ days ago.
 <p>As always, the use of most of the API features is demonstrated by various SDK samples.
 For a better understanding of the use and contents of the Revit SDK in general, please refer to the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/10/getting-started-with-the-revit-2012-api.html">
+<a href="0661_getting_started_2012.htm">
 getting started</a> and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/01/preparing-for-a-hands-on-revit-api-training.html">
+<a href="0703_training_prep.htm">
 self-preparation</a> guides.
 
 <p>Here is an overview of the new samples:
@@ -32,12 +63,12 @@ self-preparation</a> guides.
 
 <p>These samples are all related to the new 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/revit-2013-and-its-api.html#2">
+<a href="0740_revit_2013_api.htm#2">
 add-in integration</a> functionality, 
 
 except for the RoutingPreferenceTools which obviously demonstrate some of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/revit-2013-and-its-api.html#3">
+<a href="0740_revit_2013_api.htm#3">
 MEP related enhancements</a>.
 
 <!-- i.e. use of the new Idling functionality and external events, the progress bar notifications and general -->
@@ -61,8 +92,8 @@ SharpDevelop</a> IDE.
 <p>Both of these display and show how to interact with a modeless form.
 One way to do this is to use the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/idling">
-Idling event</a> initially provided in Revit 2012, 
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/idling">
+Idling event <em>(category page)</em></span> initially provided in Revit 2012, 
 
 which we have discussed so much and in such depth in the past. 
 
@@ -108,7 +139,7 @@ asynchronous interactions and managing modeless UI.
 
 <p>The UIAPI sample demonstrates a number of the new 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/revit-2013-and-its-api.html#2">
+<a href="0740_revit_2013_api.htm#2">
 add-in integration API features</a> that 
 
 I already listed, including embedding a Revit view as WPF control inside its own dialogue, the new drag and drop API, and the Options dialogue support for custom extensions using arbitrary WPF components.
@@ -121,3 +152,12 @@ This sample was also shown at the DevDays 2011 conferences.
 <h4>WorkThread</h4>
 
 <p>The WorkThread sample demonstrates utilizing the Idling event in a multi-threaded application to communicate with the Revit API from an external work thread.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

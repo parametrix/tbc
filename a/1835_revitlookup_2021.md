@@ -64,9 +64,9 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 
 I hope you are happy and healthy and enjoyed your Easter eggs!
 
-[Revit 2021](https://thebuildingcoder.typepad.com/blog/2020/04/revit-2021-cloud-model-api.html#2) was
+[Revit 2021](1834_2021_cloud_model_api.html#2) was
 released last week with
-its [multi-region cloud model API](https://thebuildingcoder.typepad.com/blog/2020/04/revit-2021-cloud-model-api.html#4) and
+its [multi-region cloud model API](1834_2021_cloud_model_api.html#4) and
 numerous other enhancements.
 
 During the holiday, I updated RevitLookup for Revit 2021, and Harry Mattison added his multi-release building enhancements into the main solution as well:

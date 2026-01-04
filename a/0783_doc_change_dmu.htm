@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -16,10 +47,10 @@ If you subscribe to an event or register an updater, it is also important to kee
 
 <p>We discussed both of these repeatedly in the past, e.g. when looking at 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/11/lock-the-model-eg-prevent-deletion.html">
+<a href="0670_lock_model_prevent_delete.htm">
 preventing element deletion</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/01/avoid-idling.html">
+<a href="0702_avoid_idling.htm">
 avoiding Idling</a>.
 
 <p>In this case, the aim is to display a message box to the user when a new elevation view is added.
@@ -350,3 +381,12 @@ The Building Coder samples including the two new commands.
 <p>The DocumentChanged event is not raised until after the transaction causing it has been closed, so the changes made cannot be cancelled.
 If elements were deleted, they are gone by the time you receive the notification; all you receive from the event handler argument is their element ids, and you cannot even find out what type they were.
 The updater is called within the same transaction as the modification causing it, providing much more control.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

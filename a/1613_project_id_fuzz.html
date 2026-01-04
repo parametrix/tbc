@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -6,6 +36,7 @@
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -39,7 +70,7 @@ I bring up two recurring topics, fresh every time around
 <p>Furthermore, even if you could change it, how are you going to guarantee that an end user does not copy an existing project file later on to reuse in another different project, thus again duplicating the existing unique id?</p>
 <p>Therefore, I would suggest that you create your own personal project identifier that you can control as you yourself see fit, in a way that perfectly matches your own requirements.</p>
 <p>I implemented such a system for The Building Coder
-using <a href="http://thebuildingcoder.typepad.com/blog/2016/04/named-guid-storage-for-project-identification.html">named <code>GUID</code> storage for project identification</a>.</p>
+using <a href="1422_named_guid_storage.html">named <code>GUID</code> storage for project identification</a>.</p>
 <p>I am not saying that my solution is perfect.</p>
 <p>Furthermore, it is completely untested, as far as I know.</p>
 <p>If anyone has made using of this or enhanced it in any way, please let us know.</p>
@@ -155,7 +186,7 @@ aka <a href="https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic">arbit
 <p>What result would you consider correct for that case?</p>
 <p>Remember, lines A and A' must be considered completely identical in all respects!</p>
 <p>The only way I see for you to handle your problem properly using inexact floating point arithmetic is to perform
-a <a href="http://thebuildingcoder.typepad.com/blog/2017/06/sensors-bim-ai-revitlookup-and-fuzzy-comparison.html#4">fuzzy comparison</a> of
+a <a href="1564_fuzz_lookup_futur.html#4">fuzzy comparison</a> of
 the edge cases such as these.</p>
 <p>I would say that this is not a bug, and there is no way to decide whether parallel lines that meet in one single point intersect or not.</p>
 <p>Any such attempt would be completely pointless  :-)</p>
@@ -207,3 +238,11 @@ the edge cases such as these.</p>
 &nbsp;&nbsp;&nbsp;&nbsp;&amp;&amp;&nbsp;!(&nbsp;scr&nbsp;==&nbsp;<span style="color:#2b91af;">SetComparisonResult</span>.Subset&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;&amp;&nbsp;ira.Size&nbsp;==&nbsp;1&nbsp;)&nbsp;)
 </pre>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

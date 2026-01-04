@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!--
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -76,7 +107,7 @@ the <a href="https://developer.autodesk.com/api/view-and-data-api">View and Data
 <p>Furthermore, it appears that the Render Appearance is stored in an <code>.adsklib</code> file, and this is a shared format between different Autodesk products.</p>
 <p>Is it not possible to edit the Revit render appearance asset in Revit itself, would it be possible to do so in some other program and then import it into Revit?</p>
 <p><strong>Answer:</strong> Yes, you can edit and create AppearanceAssetElement objects.</p>
-<p>Look at The Building Coder discussion of <a href="http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html">What's New in the Revit 2014 API</a>:</p>
+<p>Look at The Building Coder discussion of <a href="0938_whats_new_2014.htm">What's New in the Revit 2014 API</a>:</p>
 <p><span style="color:green"></p>
 <h4><a name="3.1"></a><span style="color:darkblue">Materials API changes</span></h4>
 <p><strong><span style="color:darkblue">Applying visual materials</span></strong></p>
@@ -104,11 +135,11 @@ the <a href="https://developer.autodesk.com/api/view-and-data-api">View and Data
 <p>B. Unfortunately, as said, we do not have full access to all asset properties, e.g., here is a request that we cannot currently satisfy:</p>
 <p>[Q] My family has a parameter that defines a colour for this component (by default, the parameter is assigned a material with a default colour). I want to create a new material with a specific colour. This works fine. The problem comes when I switch to realistic. The component takes the colour from an Appearance Asset. How can I create and assign a new Asset for a Material? Probably, the fix will come by checking the option 'Use Render Appearance' from the Shading properties and assigning the colour to the created Asset. Does the Revit API provide support for this?</p>
 <p>[A] Unfortunately the API currently does not provide full access to all assets.</p>
-<p>C. You might also want to check out The Building Coder topic group on <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.5">Material Management and Libraries</a>.</p>
+<p>C. You might also want to check out The Building Coder topic group on <span class="unavailable-link">Material Management and Libraries</span>.</p>
 <p>D. If your workflow requires adding a material that is not currently available, one approach might be to copy and paste it from some other Revit file, or loading an asset from some other product like Inventor via an ADSK package:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/12/loading-an-inventor-adsk-component.html">Loading an Inventor ADSK component</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/08/adsk-file-import-and-phase-of-room.html">ADSK file import</a></li>
+<li><a href="0695_load_adsk.htm">Loading an Inventor ADSK component</a></li>
+<li><a href="0811_import_adsk.htm">ADSK file import</a></li>
 </ul>
 <p>E. Furthermore, you might want to check the Revit API discussion forum thread on <a href="http://forums.autodesk.com/t5/revit-api/revit-api-materials-and-textures/m-p/6319370">Revit API materials and textures</a>.</p>
 <p>The latest comment there by Scott Wilson is especially interesting:</p>
@@ -148,3 +179,11 @@ So at least I have a past, and look back, and habit.*
 Sometimes when washing in the morning I face myself in the mirror above the basin and I wonder what would have become of me without this consolation and condemnation.
 Still gummy and puffy, my expression is brutalized and the answer clear: I would be an animal that does not understand itself, caught between a straying present and a non-existent future.
 As it is, at least, I have a past, and re-remember it, and inhabit it.</em></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

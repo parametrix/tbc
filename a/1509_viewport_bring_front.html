@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!--
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -34,8 +65,8 @@ Two topics today, on reordering viewports to determine their respective occlusio
 </ul>
 <h4><a name="2"></a>Bringing a Viewport to the Front</h4>
 <p>Joshua Lumley submitted
-a <a href="http://thebuildingcoder.typepad.com/blog/2014/04/determining-the-size-and-location-of-viewports-on-a-sheet.html#comment-3045289101">comment</a> on
-the discussion on <a href="http://thebuildingcoder.typepad.com/blog/2014/04/determining-the-size-and-location-of-viewports-on-a-sheet.html">Determining the Size and Location of Viewports on a Sheet</a>,
+a <a href="1138_sheet_viewport_loops.htm#comment-3045289101">comment</a> on
+the discussion on <a href="1138_sheet_viewport_loops.htm">Determining the Size and Location of Viewports on a Sheet</a>,
 suggesting:</p>
 <blockquote>
 <p>I made code that will change the draw order of a viewport (bring to front) for cases when you need to use simplified duplicate of the same view for background (ceiling grid for example). Are you interested in it? I was hoping you could make a post and share it with the world (it has impressed my colleagues anyway).</p>
@@ -105,7 +136,7 @@ suggesting:</p>
 <p>Notes:</p>
 <ul>
 <li>Separate code from user interface implementation details. Isolate real functionality in separate methods. <a href="https://en.wikipedia.org/wiki/KISS_principle">Keep it simple</a>!</li>
-<li>Encapsulate <code>Transaction</code> use in a separate <code>using</code> statement. Look at the explanations in The Building Coder topic group on <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.53">handling transactions and transaction groups</a>.</li>
+<li>Encapsulate <code>Transaction</code> use in a separate <code>using</code> statement. Look at the explanations in The Building Coder topic group on <span class="unavailable-link">handling transactions and transaction groups</span>.</li>
 <li>Simplified variable names for better readability and clarity.</li>
 <li>Commented out unused variables.</li>
 </ul>
@@ -122,7 +153,7 @@ the <a href="http://forums.autodesk.com/t5/revit-api/bd-p/160">Revit API discuss
 on <a href="http://forums.autodesk.com/t5/revit-api-forum/looking-for-c-samples-for-revit-2017-addin/m-p/6744704">looking for C++ Samples for Revit 2017 add-in</a>:</p>
 <p><strong>Question:</strong> As I look through the Revit 2017 documentation it looks like C++ has become nearly a first-class citizen.</p>
 <p>I am mostly familiar with starting Revit add-in projects using
-the <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20">add-in wizard for C#</a>.</p>
+the <span class="unavailable-link">add-in wizard for C#</span>.</p>
 <p>Is there something comparable for C++?</p>
 <p>And/or is there sample code or a tutorial on implementing a Revit 2017 add-in using C++ instead of C# or VB? </p>
 <p><strong>Answer:</strong> C++ has always been a first-class citizen in the .NET world, just like any other language supporting .NET, which was added to C++ with the introduction
@@ -137,13 +168,13 @@ a decade ago.</p>
 </ul>
 <p>The files that you create manually through these steps can be packaged into a ZIP file and reused to create a Revit C++ add-in wizard.</p>
 <p>Look at the descriptions
-of <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20">creating, modifying and updating the C# and VB wizards</a> to
+of <span class="unavailable-link">creating, modifying and updating the C# and VB wizards</span> to
 see how the same can be achieved for C++.</p>
 <p>Here is an old description of a C++ Revit add-in and some other discussions on related topics:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/10/c-revit-add-in.html">C++ Revit Add-In</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/03/mixed-mode-c-in-revit-2012.html">Mixed mode C++ in Revit 2012</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/10/using-the-built-in-revit-acge-functionality.html">Using the built-in Revit AcGe functionality</a></li>
+<li><a href="0459_cpp_addin.htm">C++ Revit Add-In</a></li>
+<li><a href="0731_mixed_mode.htm">Mixed mode C++ in Revit 2012</a></li>
+<li><a href="1039_acge_built_in.htm">Using the built-in Revit AcGe functionality</a></li>
 </ul>
 <p><strong>Response:</strong> Thank you! I like the Visual C++ Revit add-in step-by-step article. Regrettably the Visual Studio 2015 "New Project" function no longer includes "Class Library" as one of its options:</p>
 <p><center>
@@ -159,3 +190,11 @@ see how the same can be achieved for C++.</p>
 </ul>
 <p>The Revit 2017 API requires version the .NET framework version 4.5.2.</p>
 <p>I wish you lots of fun and success making use of C++ with the Revit API!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -50,10 +50,10 @@ the [external command `CmdListAllRooms`](https://github.com/jeremytammik/the_bui
 
 It was originally presented in 2011, and enhanced in some further discussions:
 
-- [Accessing room data](http://thebuildingcoder.typepad.com/blog/2011/11/accessing-room-data.html).
-- [How to distinguish redundant rooms](http://thebuildingcoder.typepad.com/blog/2016/04/how-to-distinguish-redundant-rooms.html)
-- [Bounding box `ExpandToContain` and lower left corner of room](http://thebuildingcoder.typepad.com/blog/2016/08/vacation-end-forge-news-and-bounding-boxes.html#6)
-- [2D convex hull algorithm in C# using `XYZ`](http://thebuildingcoder.typepad.com/blog/2016/08/online-revit-api-docs-and-convex-hull.html#3)
+- [Accessing room data](0682_accessing_room_data.htm).
+- [How to distinguish redundant rooms](1417_distinguish_rooms.html)
+- [Bounding box `ExpandToContain` and lower left corner of room](1456_bounding_section_box.html#6)
+- [2D convex hull algorithm in C# using `XYZ`](1457_online_doc_convex_hull.html#3)
 
 I modified its output to generate the required data and export that to CSV in a number of release updates:
 
@@ -67,7 +67,7 @@ I modified its output to generate the required data and export that to CSV in a 
 - [2019.0.144.7](https://github.com/jeremytammik/the_building_coder_samples/releases/tag/2019.0.144.7) &ndash; handle empty boundary curve in GetConvexHullOfRoomBoundary
 
 Next, I might reimplement the external command as a DB-only add-in to be run in the DA4R
-or [Forge Design Automation for Revit](https://thebuildingcoder.typepad.com/blog/2018/11/forge-design-automation-for-revit-at-au-and-in-public.html) environment.
+or [Forge Design Automation for Revit](1701_da4r_au.html) environment.
 
 
 #### <a name="3"></a> Visual Studio WPF MVVM Revit Add-In Template

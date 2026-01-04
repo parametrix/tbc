@@ -26,7 +26,7 @@ Yesterday, I presented the new TraverseAllSystems add-in to traverse all MEP sys
 
 Yesterday, I presented the
 new [TraverseAllSystems](https://github.com/jeremytammik/TraverseAllSystems) add-in
-to [traverse all MEP system graphs](http://thebuildingcoder.typepad.com/blog/2016/06/traversing-and-exporting-all-mep-system-graphs.html) and
+to [traverse all MEP system graphs](1449_traverse_mep_system.html) and
 export their connected hierarchical structure to JSON and XML that I am helping
 the [USC](http://www.usc.edu) team with here at the San Francisco cloud accelerator.
 

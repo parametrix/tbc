@@ -166,9 +166,9 @@ Thanks to Scott and Richard for their input on this.
 ####<a name="3"></a> DIY Add-In Manifest
 
 Joshua Lumley added
-a [comment](https://thebuildingcoder.typepad.com/blog/2021/02/addin-file-learning-python-and-ifcjs.html#comment-5276653852) on
+a [comment](1893_js_ifc_python_rps.html#comment-5276653852) on
 the discussion on
-the [add-in manifest using a relative path](https://thebuildingcoder.typepad.com/blog/2021/02/addin-file-learning-python-and-ifcjs.html#2.1) showing
+the [add-in manifest using a relative path](1893_js_ifc_python_rps.html#2.1) showing
 how to generate your own add-in manifest XML `addin` file on the fly:
 
 > This is the code I use to make the manifest from the CustomMethods of the Deployment Project.

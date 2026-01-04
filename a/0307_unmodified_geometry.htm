@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1256930 [Obtain the coordinates of each element(column, slab, wall, foundation)] -->
@@ -26,19 +57,28 @@ What you are trying to obtain is the original, unmodified geometry.
 
 <p>Probably the most reliable way to solve this problem is to use the doc.Delete approach for temporary element deletion described by Scott Conover on obtaining the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/material-quantity-extraction.html">
+<a href="0296_abg10_material_quantity.htm">
 gross material quantities</a>
 
 of an element.
 
 <p>Some other aspects of mutually intersecting elements in the specific case of family instances are discussed in the post on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/retrieving-column-and-stair-geometry.html">
+<a href="0298_column_stair_geometry.htm">
 column and stair geometry</a>.
 
 <p>If the element2 that you are analysing is a wall, and the element1 cutting off part of it is a column, you might also find the FindReferencesByDirection technique useful to determine the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/findreferencesbydirection.html">
+<a href="0294_abg09_findReferencesByDir.htm">
 columns intersecting the wall</a>, 
 
 i.e. which columns to temporarily delete.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

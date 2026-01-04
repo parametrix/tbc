@@ -145,7 +145,7 @@ It creates a list of `FamilyInstance` elements.
 You can change the type to any desired one.
 
 There are other ways to not apply a filter
-and [get all element types in one go](http://thebuildingcoder.typepad.com/blog/2010/06/filter-for-all-elements.html);
+and [get all element types in one go](0397_filter_all_elements.htm);
 however, I would not recommend that, because you never know beforehand which kind of elements may pass the filter if you do.
 
 **Answer 2:** The first answer uses post-processing in .NET.
@@ -160,10 +160,10 @@ If you don't care, the first solution is fine, of course.
 
 Here are some examples of using parameter filters:
 
-- [Parameter filter](http://thebuildingcoder.typepad.com/blog/2010/06/parameter-filter.html)
-- [Element name parameter filter correction](http://thebuildingcoder.typepad.com/blog/2010/06/element-name-parameter-filter-correction.html)
-- [Parameter filter units](http://thebuildingcoder.typepad.com/blog/2009/12/parameter-filter-units.html)
-- [Finding all possible `ElementId` values for a specific parameter](http://thebuildingcoder.typepad.com/blog/2017/06/finding-an-exit-path-and-elementid-parameter-values.html#3)
+- [Parameter filter](0383_param_filter.htm)
+- [Element name parameter filter correction](0384_elem_name_param_filter.htm)
+- [Parameter filter units](0267_filter_units.htm)
+- [Finding all possible `ElementId` values for a specific parameter](1569_path_elemid_param.html#3)
 
 [The Building Coder](http://thebuildingcoder.typepad.com) provides many more.
 
@@ -182,7 +182,7 @@ Thanks for the insight Jeremy, as always, very helpful! &nbsp; :-)
 
 **Answer:** Thank you for your appreciation and very glad to hear you find it useful.
 
-Years ago, [I benchmarked different filtered element collectors](http://thebuildingcoder.typepad.com/blog/2010/04/collector-benchmark.html) and
+Years ago, [I benchmarked different filtered element collectors](0333_collector_benchmark.htm) and
 found that moving from .NET post-processing to a parameter filter will save at least 50% overhead.
 
 In a large model, it might be more.
@@ -192,7 +192,7 @@ Benchmark first, before you do anything!
 If it works, don't fix it.
 
 Also, the most important thing to start with is to always be aware of the differences between quick and slow filters, and post-processing in .NET,
-cf. [Quick, Slow and LINQ Element Filtering](http://thebuildingcoder.typepad.com/blog/2015/12/quick-slow-and-linq-element-filtering.html).
+cf. [Quick, Slow and LINQ Element Filtering](1382_filter_shortcuts.html).
 
 To start with, apply as many filter shortcuts to the filtered element collector as you can.
 All filter shortcuts are quick filters.

@@ -127,8 +127,8 @@ Calculations are based either on the 2D plan surface views or by filling the ent
 The two different options are selected by settings in the `EnergyAnalysisDetailModelOptions` to base calculations either on spatial elements &ndash; i.e., rooms and spaces, assuming vertical boundaries &ndash; or bounded by actual building elements &ndash; i.e., floors, walls and ceilings, which may be arbitrarily shaped.
 
 For more detail, please refer
-to [What's New in the Revit 2016 API](http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html),
-[Energy Analysis and gbXML API changes](http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html#4.06):
+to [What's New in the Revit 2016 API](1311_whats_new_2016.htm),
+[Energy Analysis and gbXML API changes](1311_whats_new_2016.htm#4.06):
 
 `EnergyModelType`
 

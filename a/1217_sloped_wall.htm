@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="http://thebuildingcoder.typepad.com/google-code-prettify/run_prettify.js"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -59,7 +90,7 @@ It is an easy climb, and was exciting and novel for Nik, being his first alpine 
 
 <p>This functionality was made available programmatically by the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2011-api.html">
+<a href="0902_whats_new_2011.htm">
 Revit 2011 API</a>:</p>
 
 <blockquote style="color: darkblue">
@@ -75,10 +106,10 @@ Revit 2011 API</a>:</p>
 
 <p>We discussed it twice already, looking at
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/03/the-facewall-class-and-slanted-walls.html">
+<a href="0546_slanted_wall.htm">
 the FaceWall class, slanted walls</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/01/create-facewall-on-slanted-mass-face.html">
+<a href="0876_facewall_create.htm">
 creating a FaceWall on a slanted mass face</a>.</p>
 
 <p>It was probably a mistake to use the word 'slanted' instead of 'sloped', I'm afraid.</p>
@@ -122,11 +153,11 @@ creating a FaceWall on a slanted mass face</a>.</p>
 <p>Here is an interesting discussion on creating a slanted wall from a mass element raising and expanding a number of important Revit API aspects, some of which we have touched on in the past, such as
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/03/the-facewall-class-and-slanted-walls.html">The FaceWall class and slanted walls</a></li>
+<li><a href="0546_slanted_wall.htm">The FaceWall class and slanted walls</a></li>
 <li>Creating and inserting a mass family to replace an in-place mass</li>
 <li>Need for intermediate regeneration</li>
 <li>Optimising filtering</li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/05/iteration-and-springtime-change-is-the-only-constant.html">Iteration order</a></li>
+<li><a href="0576_iteration_constancy.htm">Iteration order</a></li>
 </ul>
 
 <p>The answer was originally written by Adam Nagy way back in the Revit 2012 timeframe, and the code in the query is also that old.</p>
@@ -284,8 +315,8 @@ For some reason, however, its geometry always returns null.</p>
 
 <p>The Building Coder defines a whole topic list on the
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33">
-need to regenerate</a>.</p>
+<span class="unavailable-link">
+need to regenerate</span>.</p>
 
 <p>Once I added that call to the code after inserting the mass instance, the desired geometry was returned.</p>
 
@@ -630,5 +661,14 @@ repository.</p>
 
 <p>When you run into a geometrical error message such as the one mentioned above, you can often obtain more detailed error messages and information on the causes by creating intermediate model lines and then trying to make use of those appropriately via the user interface, as described for
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/07/debug-geometric-form-creation.html">
+<a href="0186_debug_form_creation.htm">
 debugging form creation</a>.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

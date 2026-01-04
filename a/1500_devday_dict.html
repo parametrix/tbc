@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!--
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -86,14 +117,14 @@ beginneon()
 </ul>
 <h4><a name="2"></a>DevDay Europe in Munich</h4>
 <p>Autodesk University ended, and all went well,
-including <a href="http://thebuildingcoder.typepad.com/blog/2016/10/au-revit-20171-and-rex-freezedrawing.html#2">the classes I presented</a> and
-the <a href="http://thebuildingcoder.typepad.com/blog/2016/11/devday-conference-at-autodesk-university.html">DevDay conference</a> held
+including <a href="1493_au_2017_1_sdk_freeze.html#2">the classes I presented</a> and
+the <a href="1497_au_devday.html">DevDay conference</a> held
 the day before AU proper started:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/11/devday-conference-at-autodesk-university.html#3">AEC breakout</a><ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/11/devday-conference-at-autodesk-university.html#4">Revit API news, roadmap and idea station</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/11/devday-conference-at-autodesk-university.html#5">BIM 360</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/11/devday-conference-at-autodesk-university.html#6">InfraWorks 360 and Civil 3D</a></li>
+<li><a href="1497_au_devday.html#3">AEC breakout</a><ul>
+<li><a href="1497_au_devday.html#4">Revit API news, roadmap and idea station</a></li>
+<li><a href="1497_au_devday.html#5">BIM 360</a></li>
+<li><a href="1497_au_devday.html#6">InfraWorks 360 and Civil 3D</a></li>
 </ul>
 </li>
 </ul>
@@ -127,7 +158,7 @@ all further details.</p>
 </center></p>
 <h4><a name="4"></a>Embedding a Forge Viewer</h4>
 <p>I repeatedly mentioned
-the recent <a href="http://thebuildingcoder.typepad.com/blog/2016/11/bimtuda-devdays-forge-news-and-more-events.html">BIM and Forge workshop at TuDa</a>.</p>
+the recent <a href="1495_devdays.html">BIM and Forge workshop at TuDa</a>.</p>
 <p>Our hosts at the uni there implemented a web page to share the agenda, <a href="http://www.bim.tu-darmstadt.de">www.bim.tu-darmstadt.de</a>.</p>
 <p>After the single day workshop on Friday, they continued exploring Forge over the weekend and updated the web site to display the university building in an embedded Forge viewer over the weekend.</p>
 <p>You can check it out yourself and view source to see the single line of code to add the <code>iframe</code> tag hosting the embedded A360 viewer.</p>
@@ -148,18 +179,26 @@ accompanying <a href="http://truevis.com/a360-embedder-examples">A360 embedder e
 <p>Sorry, but please stop using the <code>ProjectInfo</code> class in that manner immediately.</p>
 <p>I used to recommend that earlier as well, and have stopped since learning better last year.</p>
 <p>This is extremely important due to issues with worksharing.</p>
-<p>Scott Conover explains that very explicitly in his AU class on <a href="http://thebuildingcoder.typepad.com/blog/2014/10/worksharing-and-duplicating-element-geometry.html#2">add-ins that cooperate with worksharing</a>.</p>
+<p>Scott Conover explains that very explicitly in his AU class on <a href="1227_worksharing_dupl_geom.htm#2">add-ins that cooperate with worksharing</a>.</p>
 <p>At the same time as the introduction of extensible storage, the <code>DataStorage</code> element was introduced.</p>
 <p>That is a new Revit database element class whose sole purpose is to host extensible storage data.</p>
 <p>You can create as many of these as you like, and tag them in any way you like in order to make your one and only or several of them with all the associated element-specific or projectwide data easily accessible.</p>
-<p>The Building Coder defines a dedicated topic group on <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23">extensible storage</a>.</p>
+<p>The Building Coder defines a dedicated topic group on <span class="unavailable-link">extensible storage</span>.</p>
 <p>One of its entries actually points to a discussion quite similar to what you are asking for,
-<a href="http://thebuildingcoder.typepad.com/blog/2016/04/named-guid-storage-for-project-identification.html">named GUID storage for project identification</a>.
+<a href="1422_named_guid_storage.html">named GUID storage for project identification</a>.
 All you would need to do to adapt it to your requirements would be to replace the GUID that is stores by a suitable dictionary.</p>
 <p>Here is some more on
-the <a href="http://thebuildingcoder.typepad.com/blog/2015/02/extensible-storage-in-a-worksharing-environment.html">DataStorage element hosting extensible storage in a worksharing environment</a>.</p>
+the <a href="1278_estorage_worksharing.htm">DataStorage element hosting extensible storage in a worksharing environment</a>.</p>
 <p><strong>Answer 3:</strong> If worksharing is involved, I agree &nbsp; :-) &nbsp; most of the tools we are involved with would have many serious issues with worksharing, i.e., they are by-design used only for a central-model style workflow.</p>
 <p>In any case, if starting from scratch, I agree that <code>DataStorage</code> should be used!</p>
 <p><strong>Answer 4:</strong> If you are certain that Worksharing will not be involved, there’s not much difference between using <code>ProjectInfo</code> and <code>DataStorage</code>, except that using <code>DataStorage</code> provides better encapsulation from another add-in accidentally deleting your data from <code>ProjectInfo</code> when it accesses its own.</p>
 <p>If Worksharing is to be involved, you should definitely avoid using the <code>ProjectInfo</code> instance.</p>
-<p>Please refer to <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23">The Building Coder topic group on extensible storage</a> for more information on it in all its aspects.</p>
+<p>Please refer to <span class="unavailable-link">The Building Coder topic group on extensible storage</span> for more information on it in all its aspects.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

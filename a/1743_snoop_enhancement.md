@@ -68,7 +68,7 @@ That was previously not possible in the Forge DA4R environment, and now it is.
 Many thanks to Ryan and The Factory for this important step forward!
 
 Please refer to The Building Coder topic group
-for [more information on DA4R](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55).
+for more information on DA4R *(link unavailable)*.
 
 ####<a name="3"></a> RevitLookup Snoop Enhancements
 

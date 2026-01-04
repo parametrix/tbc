@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -155,11 +186,11 @@ on <a href="https://forums.autodesk.com/t5/revit-api-forum/automatic-extraction-
 &ndash; ignoring the fact that we don't know what 'revives' might be (reviews?):</p>
 <p><strong>Question:</strong> I am currently working on an internal project that will eventually extract database overviews of all our projects modelled with Revit automatically every night, to be then presented in the form of dashboards to the various members of the company. My IT Director is currently working on the subject but not knowledgeable in the API Revit, and me too. I would like to save some time by asking in this forum who could guide us towards a solution.</p>
 <p><strong>Answer:</strong> Here are some suggestions on various topics:</p>
-<p>First of all, you need to work through the material to help <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#2">getting started with the Revit API</a>.</p>
+<p>First of all, you need to work through the material to help <span class="unavailable-link">getting started with the Revit API</span>.</p>
 <p>Before getting started with the Revit API, you should acquire as much knowledge as possible about Revit from the end user point of view.</p>
 <p>I would assume that you already have that &nbsp; :-)</p>
 <p>Here is one very old analysis
-of <a href="https://thebuildingcoder.typepad.com/blog/2009/01/database-integration.html">integrating Revit with an external database</a>.</p>
+of <a href="0077_db_integration.htm">integrating Revit with an external database</a>.</p>
 <p>Many things have improved significantly since then, and your target is probably quite different (and much simpler than) the one discussed there.</p>
 <p>Still, that article might provide a few useful hints.</p>
 <p>By the way, talking about dashboards and things:</p>
@@ -168,7 +199,7 @@ of <a href="https://thebuildingcoder.typepad.com/blog/2009/01/database-integrati
 samples <a href="https://github.com/jeremytammik/FireRatingCloud">integrating desktop and cloud, provided in the FireRatingCloud overview</a>.</p>
 <p>They are also already pretty dated.</p>
 <p>Since then, Autodesk has made significant progress with <a href="https://autodesk-forge.github.io">Forge</a>,
-and <a href="https://thebuildingcoder.typepad.com/blog/2018/11/forge-design-automation-for-revit-at-au-and-in-public.html">Forge design Automation for Revit is just around the corner</a>.</p>
+and <a href="1701_da4r_au.html">Forge design Automation for Revit is just around the corner</a>.</p>
 <p>Maybe that will provide the most efficient path forward for your project as well?</p>
 <p>Good luck getting started and looking forward very much to continuing this discussion once you have gotten your feet wet.</p>
 <h4><a name="4"></a> When to Regenerate the Document?</h4>
@@ -186,7 +217,7 @@ concerns <a href="https://forums.autodesk.com/t5/revit-api-forum/when-to-use-doc
 <p>In general, I would probably not make any calls to <code>Regenerate</code> until I notice that something is going wrong.</p>
 <p>Just keep in mind what can go wrong when stale data is accessed and used, always check your results, and be ready to add a regen call in case of need.</p>
 <p>If you have read and understood all the examples listed in
-the <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33">topic group on the need to regenerate</a>,
+the <span class="unavailable-link">topic group on the need to regenerate</span>,
 you should be well prepared to address your programming task, at least as far as this aspect is concerned.</p>
 <p>Good luck!</p>
 <p><strong>Response:</strong> Thanks for the confirmation, Jeremy. It is more or less what I expected. I have some experience on AutoCAD programming, where there was also a need to regenerate from time to time (but I was more or less aware about the rules of the game).</p>
@@ -200,3 +231,11 @@ the <a href="https://github.com/jeremytammik/RevitLookup/pull/46">pull request #
 <p>You can examine the exact modifications in
 the <a href="https://github.com/jeremytammik/RevitLookup/compare/2019.0.0.3...2019.0.0.4">diff</a> between
 <a href="https://github.com/jeremytammik/RevitLookup/releases/tag/2019.0.0.4">release 2019.0.0.4</a> containing the fix and the preceding release.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

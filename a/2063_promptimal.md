@@ -172,9 +172,9 @@ Many thanks to Andrzej for sharing this.
 Personally, I continue my quest of making good use of LLMs to help
 answer [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) threads.
 I recently mentioned
-my [impending retirement](https://thebuildingcoder.typepad.com/blog/2025/01/back-again-to-unit-test-icons-viewports-and-more.html#3),
-my [Revit API support prompt](https://thebuildingcoder.typepad.com/blog/2025/01/llm-prompting-rag-ingestion-and-new-projects.html#5), and
-the [Promptimal prompt optimiser](https://thebuildingcoder.typepad.com/blog/2025/01/llm-prompting-rag-ingestion-and-new-projects.html#7).
+my [impending retirement](2061_unittest_viewports.html#3),
+my [Revit API support prompt](2062_gpt_prompt.html#5), and
+the [Promptimal prompt optimiser](2062_gpt_prompt.html#7).
 
 I installed and tested Promptimal locally and asked it to improve the prompt I was using previously.
 This is the prompt I started out with:

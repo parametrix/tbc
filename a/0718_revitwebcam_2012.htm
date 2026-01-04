@@ -1,25 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Revit Webcam 2012</h3>
 
 <p>I recently discussed the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/01/eliminating-compiler-warnings-and-deprecated-calls.html">
+<a href="0713_compiler_warnings.htm">
 elimination of warnings</a> about
 
 use of deprecated API methods from The Building Coder samples.
 
 In a similar vein, and for similar reasons, I also decided to migrate to Revit 2012 and clean up the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/display-webcam-image-on-building-element-face.html">
+<a href="0380_revitwebcam.htm">
 RevitWebcam</a> sample
 
 that I implemented to demonstrate the use of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/idling">
-Idling event</a> when 
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/idling">
+Idling event <em>(category page)</em></span> when 
 
 it was first introduced in the Revit 2011 API.
 
@@ -47,7 +78,7 @@ A real-world example might be displaying the graphical analysis visualisation of
 <p>Instead, I used a different approach that I find more efficient, since it requires less manual steps:
 I created a completely new project using the Visual Studio 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/10/product-and-add-in-wizard-updates.html">
+<a href="0662_addin_wizard_2012_ur2.htm">
 Revit add-in wizard</a> and
 
 then copied the relevant bits of source code that I wished to preserve from the original project to the new one.
@@ -79,10 +110,10 @@ On running it, though, an exception is immediately thrown on the first call to t
 
 <p>I presented a fully transparent method to support both of these versions simultaneously in the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/08/modeless-loose-connector-navigator-update.html#2">
+<a href="0639_modeless_loose_connectors.htm#2">
 modeless loose connector navigator update</a> plus its
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/09/yet-another-modeless-update.html">
+<a href="0652_modeless_loose_connectors.htm">
 subsequent enhancement</a>.
 
 <p>The code is still making use of some obsolete API calls, though, so I continued the migration to remove those as well:
@@ -132,7 +163,7 @@ the cleaned up code with all obsolete API usage removed.
 
 <p><strong>Disclaimer:</strong> This application does not adhere to the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/09/yet-another-modeless-update.html">
+<a href="0652_modeless_loose_connectors.htm">
 recommended rules</a> for 
 
 interacting with an external asynchronous process, e.g. a modeless dialogue, so this code should not be used as is for production use.
@@ -165,7 +196,7 @@ RevitWebcam2013_2_removed_warnings
 
 <p>I went through pretty similar steps to the ones required to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/02/revit-webcam-2012.html">
+<a href="0718_revitwebcam_2012.htm">
 migrate RevitWebcam to 2012</a>
 
 to make the next step from Revit 2012 to 2013:
@@ -202,7 +233,7 @@ the result of the flat migration of the Revit 2012 code.
 
 <p>I created a brand new Revit 2013 add-in using the
 
-<a href="">
+<a href=">
 Revit 2013 add-in wizard</a> and
 
 copied the Revit 2012 source code into it.
@@ -231,7 +262,7 @@ C:\a\src\revit\webcam\RevitWebcam\RevitWebcam2013_2_removed_warnings\RevitWebcam
 The strange naming of this method wth a lower-case first letter and an underscore is due to the fact that it is actually declared as a property named simply 'Element', and is used as such in VB.
 In C#, however, due to the fact that it takes an argument, the property is translated to a method and the 'get_' prefix added.
 
-<p>This is similar to the differences between C# and VB accessing the <a href="http://thebuildingcoder.typepad.com/blog/2009/09/document-elements.html">Document.Elements method</a>.
+<p>This is similar to the differences between C# and VB accessing the <a href="0224_doc_elements.htm">Document.Elements method</a>.
 <p>Here is 
 
 <a href="zip/RevitWebcam2013_2_removed_warnings.zip">
@@ -280,7 +311,7 @@ In the beginning of the OnIdling, I added the following lines:
 
 <p>By far the largest change in this series, and actually the whole point of this exercise, as well as the original moticvation to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/02/revit-webcam-2012.html">
+<a href="0718_revitwebcam_2012.htm">
 port to 2012</a> at all.
 
 <p>I implemented a new WebcamEvent external event class, removed the Idling event handler, and moved most of its code into the new class instead.
@@ -293,6 +324,15 @@ That also provided an opportunity to very simply flip the image upside-down so t
 <pre>
 </pre>
 
-<a href="">
+<a href=">
 </a>
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -18,9 +18,9 @@ We looked at calculating gross and net wall areas last year, with a later enhanc
 ### Determining Wall Cut Area for a Specific Room
 
 We looked
-at [calculating gross and net wall areas](http://thebuildingcoder.typepad.com/blog/2015/03/calculating-gross-and-net-wall-areas.html) last
+at [calculating gross and net wall areas](1296_spatial_calculator.htm) last
 year, with a later enhancement to
-use [IFCExportUtils to determine the door and window area](http://thebuildingcoder.typepad.com/blog/2015/03/ifcexportutils-methods-determine-door-and-window-area.html),
+use [IFCExportUtils to determine the door and window area](1298_door_window_area.htm),
 resulting in the two respective projects and GitHub repositories:
 
 - [SpatialElementGeometryCalculator](https://github.com/jeremytammik/SpatialElementGeometryCalculator)
@@ -36,12 +36,12 @@ Here are some additional aspects brought up by [Arif](#2), [Miroslav](#3) and [H
 #### <a name="2"></a>Arif
 
 Arif Hanif explored the use the spatial geometry calculator and noted in
-a [comment on FindInserts retrieving openings](http://thebuildingcoder.typepad.com/blog/2015/03/findinserts-retrieves-all-openings-in-all-wall-types.html#comment-2424158731) that
+a [comment on FindInserts retrieving openings](1297_host_find_inserts.htm#comment-2424158731) that
 it **does** in fact return the subface linked instance element ids. You have to set the `SpatialElementBoundaryLocation = SpatialElementBoundaryLocation.Center` to close the geometry, and it does not work for Finish.
 
 More significantly, he explored the subface issue in
-a [comment on getting the wall elevation profile](http://thebuildingcoder.typepad.com/blog/2015/01/getting-the-wall-elevation-profile.html#comment-2567466439)
-([image](http://thebuildingcoder.typepad.com/blog/2015/01/getting-the-wall-elevation-profile.html#comment-2570111596)):
+a [comment on getting the wall elevation profile](1271_wall_elevation_profile.htm#comment-2567466439)
+([image](1271_wall_elevation_profile.htm#comment-2570111596)):
 
 **Question:** I am working on an interesting problem, which I have been trying to see if anyone else has been solving. I tried searching your blog and Internet (Revit API forum) but did not see it come up. I need to determine the vertices of an embedded wall returned by FindInserts part of a spatial geometry calculator return. I have the edge and curve loops of the wall in the spaces creating the bounding element. I have used `SpatialElementBoundarySubface` to return the bounding element and determined the id of the embedded wall in this case a curtain wall. The issue I am running into is that the geometry of the embedded wall spans multiple spaces and have not figured out how to determine only the portion of the embedded wall that belongs to the spatial element boundary. As I read more seems maybe the reference intersector class might be something I look at, any recommendations on your end would be greatly appreciated.
 
@@ -53,7 +53,7 @@ Solve for the shaded curtain wall vertices.
 
 **Answer:** It looks to me as if one way to go would be to project all the relevant elements onto the wall plane to convert the problem to a two-dimensional one, and then use 2D Boolean operations on the partial surfaces to determine their intersections and overlap.
 
-Look at The Building Coder topic group on [2D Booleans and Adjacent Areas](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.2).
+Look at The Building Coder topic group on 2D Booleans and Adjacent Areas *(link unavailable)*.
 
 
 #### <a name="3"></a>Miroslav
@@ -79,7 +79,7 @@ A solution for *planar* faces can be implemented but requires some complex geome
 #### <a name="4"></a>Håvard
 
 Håvard Dagsvik explored this issue further and implemented solutions to address several of these needs after raising the issue in
-a [comment on calculating gross and net wall areas](http://thebuildingcoder.typepad.com/blog/2015/03/calculating-gross-and-net-wall-areas.html#comment-2531680684):
+a [comment on calculating gross and net wall areas](1296_spatial_calculator.htm#comment-2531680684):
 
 **Question:** Right now I am getting the opening area from built-in height and width parameters.
 
@@ -116,13 +116,13 @@ Some Boolean subtraction trick using transient solids from the actual wall resid
 **Answer:** Yes, things are a bit complicated.
 
 If you put in enough effort, I think you can catch and
-automatically [handle any kind of warning message that can ever comes up](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.32).
+automatically handle any kind of warning message that can ever comes up *(link unavailable)*.
 
 Regarding bits sticking out from the wall, you can always reduce the problem to a much simpler two-dimensional issue by projecting everything onto the wall plane.
 
-The [ExtrusionAnalyzer class](http://thebuildingcoder.typepad.com/blog/2013/04/extrusion-analyser-and-plan-view-boundaries.html) can help with that.
+The [ExtrusionAnalyzer class](0921_extrusion_analyser.htm) can help with that.
 
-A [2D Boolean library](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.2) might also come in handy.
+A 2D Boolean library *(link unavailable)* might also come in handy.
 
 I assume that the gbXML functionality does use that kind of functionality, since you say it works in the wall centre line.
 
@@ -135,7 +135,7 @@ So I intersect a curtain wall solid with the room solid, where the intersected s
 I also used more of the `IFCUtils` classes from Angel's team, and one of your methods from The Building Coder to retrieve the wall profile.
 
 Modified to include non-visible objects in order
-to [get 'invisible' curtain wall geometry](http://thebuildingcoder.typepad.com/blog/2010/05/curtain-wall-geometry.html),
+to [get 'invisible' curtain wall geometry](0374_curtain_wall_geometry.htm),
 also based on one of your suggestions in another case.
 
 Here is a small example on how I achieve this:

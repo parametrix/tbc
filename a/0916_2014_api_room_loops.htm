@@ -1,13 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Revit 2014 API and Plan View Room Boundary Loops</h3>
 
 <p>I am continuing the research and development for my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/cloud-mobile-extensible-storage-data-use-in-schedules.html#3">
+<a href="0912_cm_estorage_schedule.htm#3">
 cloud-based round-trip 2D Revit model editing project</a>.
 
 <p>At the same time, Revit 2014 has been announced, and I am sure you are eager to hear more about that, especially from the API point of view, so let's have a look at that first.</p>
@@ -57,7 +88,7 @@ cloud-based round-trip 2D Revit model editing project</a>.
 
 <ul>
 <li><a href="file:///a/lib/revit/2014/adn/devdays_online/revit_2014_api_presentation_slides.pdf">Presentation</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/revit_2014_api/index.html">Recording</a>&nbsp;&nbsp;<a href="/a/lib/revit/2014/adn/devdays_online/camtasia/web/revit_2014_api/index.html">^</a></li>
+<li><span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/revit_2014_api/index.html">Recording <em>(resource unavailable)</em></span>&nbsp;&nbsp;<a href="/a/lib/revit/2014/adn/devdays_online/camtasia/web/revit_2014_api/index.html">^</a></li>
 <li><a href="file:///a/lib/revit/2014/adn/devdays_online/revit_2014_api_sample_source_code.zip">Sample code</a></li>
 </ul>
 
@@ -76,17 +107,17 @@ cloud-based round-trip 2D Revit model editing project</a>.
 
 <p>As a first step in that direction, I revamped my code to retrieve and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/08/graphically-display-area-boundary-loops.html">
+<a href="0808_display_area_boundary.htm">
 graphically display area boundary loops</a> and
 
 combined it with the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/obj-model-export-considerations.html#7">
+<a href="0791_obj_export_basics.htm#7">
 integer-based point class</a> that
 
 I implemented for the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/07/obj-model-exporter-with-transparency-support.html">
+<a href="0796_obj_export_transparent.htm">
 OBJ model exporter</a>.</p>
 
 <p>The task I want to achieve for the first part of this first step is to retrieve the room boundary and store the 2D loops in a cloud-based data repository.</p>
@@ -384,7 +415,7 @@ From those, it calculates the outer boundary of the shadow cast by the solid ont
 
 <p>At the same time, I am continuing to explore options for a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/relax-simple-free-cloud-based-data-repository-with-nosql-couchdb-and-iriscouch.html">
+<a href="0914_nosql_couchdb_iris.htm">
 cloud-based data repository</a>.</p>
 
 <p>And I have my day-to-day support tasks to attend to too...</p>
@@ -394,3 +425,12 @@ cloud-based data repository</a>.</p>
 <a href="zip/GetRoomLoops.zip">GetRoomLoops.zip</a> containing
 
 the complete source code, Visual Studio solution and add-in manifest of the current state of this external command.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

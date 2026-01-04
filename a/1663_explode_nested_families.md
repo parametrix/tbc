@@ -73,7 +73,7 @@ Thank you very much for the fruitful discussions!
 Many thanks to Alberto for sharing his experience and workflow!
 
 By the way, in case you are interested in flattening and simplifying, you might also want to check out the more radical approach 
-of [flattening all elements to `DirectShape`](http://thebuildingcoder.typepad.com/blog/2015/11/flatten-all-elements-to-directshape.html).
+of [flattening all elements to `DirectShape`](1375_flatten_to_directshape.html).
 
 <center>
 <img src="img/nesting_matryoshka_dolls.png" alt="Nested matryoshka dolls" width="270"/>

@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!---
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -86,15 +117,15 @@ is more generic and fundamental, I want to clean it up to utter perfection first
 <p>This was actually fixed &ndash; more elegantly, I'm glad to say &ndash; in
 <a href="https://github.com/jeremytammik/RevitLookup/releases/tag/2016.0.0.10">RevitLookup release 2016.0.0.10</a>,
 so please do make sure to download and install the latest version if you encounter this situation.</p>
-<p>I actually already <a href="http://thebuildingcoder.typepad.com/blog/2015/09/family-category-element-ids-transaction-undo-and-updates.html#5">mentioned this</a> two weeks ago...</p>
+<p>I actually already <a href="1353_fam_cat_elem_transact.html#5">mentioned this</a> two weeks ago...</p>
 <h4><a name="4"></a>Retrieving All Model Elements</h4>
 <p>Once again, let's revisit the topic of
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.9">selecting model elements</a>, raised this time by Dale in the Revit API discussion thread on
+<span class="unavailable-link">selecting model elements</span>, raised this time by Dale in the Revit API discussion thread on
 <a href="http://forums.autodesk.com/t5/revit-api/traverse-all-model-elements-in-a-project-top-down-approach/m-p/5815247">traversing all model elements</a>:</p>
 <p><strong>Question:</strong>
 To be clear, "all model elements" could be defined as all objects that exist in the real world: chairs, doors, walls, etc. &ndash; component and system families. Graphic elements such as levels, sheets, views, dimensions, annotation, profiles, etc. would not be included. I have been through all The Building Coder samples (and others) many times, and whilst there are lots of examples to filter for a specific category or feature, I have been unable to come up with a solution that provides all model elements as defined above. Your
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/selecting-model-elements.html">example from 2009</a>
-(<a href="http://thebuildingcoder.typepad.com/blog/2009/11/select-model-elements-2.html">2</a>) may be the best,
+<a href="0140_select_model_elements.htm">example from 2009</a>
+(<a href="0254_select_model_elements_2.htm">2</a>) may be the best,
 but given that it is several years old, I have been looking for more contemporary code. Apologies if I am overlooking something obvious; I thought this would be a five-minute job but I have been unable to come up with a simple, solid solution.</p>
 <p><strong>Answer:</strong>
 Does this fit the bill?</p>
@@ -118,3 +149,11 @@ Does this fit the bill?</p>
 <p>Please try it out, and let's ensure that we really get something up and running that suits your needs.</p>
 <p><strong>Response:</strong>
 If I ever get to AU again, I owe you a beer! Two maybe. Works perfectly. Thanks again, I hope this is helpful for others as I really struggled to resolve it. Dale</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

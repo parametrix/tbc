@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1260577 [where can I set the tag I want] -->
@@ -22,52 +53,52 @@
 
 <p>The code to implement the first six steps has been extracted from the Revit API introduction Lab2_0_CreateLittleHouse external command, which we used repeatedly in the past to demonstrate various aspects, such as
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/09/selecting-all-w.html">
+<a href="0010_selecting_all_walls.htm">
 selecting all walls</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/09/wall-dimensions.html">
+<a href="0014_wall_dimensions.htm">
 determining wall dimensions</a>, 
 
 creating 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/01/walls-and-doors-on-two-levels.html">
+<a href="0079_two_levels.htm">
 walls and doors on two levels</a>, 
 
 and in Revit 2011 showing the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/xyz-immutable.html">
+<a href="0343_xyz_immutable.htm">
 immutability of the XYZ class</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/manual-regeneration-mode-danger.html">
+<a href="0345_manual_regeneration.htm">
 risks of the manual regeneration option</a>,
 
 and a temporary problem requiring an explicit call to the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/autojoinelements.html">
+<a href="0357_autojoinelements.htm">
 AutoJoinElements</a> method.
 
 <p>We already looked at the use of the Duplicate method to create a new family symbol for 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/creating-a-new-family-symbol.html">
+<a href="0034_creating_family_symbol.htm">
 walls and columns</a>,
 
 later again for
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/inserting-a-column.html">
+<a href="0094_insert_column.htm">
 columns</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/inserting-a-beam.html">
+<a href="0096_insert_beam.htm">
 beams</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/revit-api-cases-1.html#3">
+<a href="0119_cases_1.htm#3">
 family instances</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/12/distinguish-different-dimension-types.html">
+<a href="0262_dimension_types.htm">
 dimensioning</a>,
 
 and to create a new 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/new-material.html">
+<a href="0143_new_material.htm">
 material</a>.
 
 <p>The code also demonstrates some neat little element filtering collector usages.
@@ -116,7 +147,7 @@ It executes all of the steps listed in the introduction above, the last four of 
 <p>First of all, we define a conversion unit for converting meters to feet, since all length measurements within the Revit database make use of the latter.
 Our recent exploration of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/voltage-units.html">
+<a href="0382_voltage_units.htm">
 voltage units</a> includes 
 
 an extensive list of back pointers to posts on this subject:
@@ -356,3 +387,12 @@ an extensive list of back pointers to posts on this subject:
 version 2011.0.73.0</a>
 
 of The Building Coder samples including the complete source code and Visual Studio solution and the new command.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

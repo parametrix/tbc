@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Real-World Concrete Corner Coordinates</h3>
@@ -11,12 +42,12 @@ GHD</a>
 
 on a full-blown end-user-capable little application for the automatic creation of setout points for on-site location and construction of structural elements at the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-devlab.html">
+<a href="0738_melbourne_devlab.htm">
 Melbourne DevLab</a>.
 
 <p>Paul provided a 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-devlab.html#3">
+<a href="0738_melbourne_devlab.htm#3">
 description</a> of
 
 the task and the initial idea for an implementation approach.
@@ -40,7 +71,7 @@ the task and the initial idea for an implementation approach.
 
 <p>We already looked at 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/07/retrieve-structural-elements.html">
+<a href="0404_structural_elements.htm">
 retrieving structural elements</a>.
 
 <p>Just like there, we check for certain specific classes like Wall and Floor, and also for generic family instances with categories from our list of interest, including structural columns, framing, foundation, floors and ramps.
@@ -157,19 +188,19 @@ retrieving structural elements</a>.
 
 <p>This goes back to the second day of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-day-two.html">
+<a href="0737_melbourne_day_2.htm">
 Melbourne Revit API training</a>,
 
 where we looked at 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-day-two.html#2">
+<a href="0737_melbourne_day_2.htm#2">
 retrieving unique geometry vertices</a> from 
 
 a selected element.
 
 <p>This involves comparing XYZ points, i.e. 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/05/connector-orientation.html#2">
+<a href="0773_connector_orientation.htm#2">
 real number equality testing</a>.
 
 <p>First of all, we need an equality comparer for points:
@@ -312,11 +343,11 @@ This was both complicated and returned incorrect results.
 <p>The correct solution is very simple and was already discussed a couple of times in the past:
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/01/transformations.html">Transformations</a>
+<li><a href="0290_abg07_transform.htm">Transformations</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/01/project-location.html">Project location</a>
+<li><a href="0292_abg08_project_location.htm">Project location</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/06/get-transformed-family-instance-geometry.html">Transformed family instance geometry</a>
+<li><a href="0605_transformed_geo.htm">Transformed family instance geometry</a>
 </ul>
 
 
@@ -377,3 +408,12 @@ This was both complicated and returned incorrect results.
 </pre>
 
 <p>Now I just need to find some more time to discuss how this can all be put together and wrapped into a useful real-world end-user application.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

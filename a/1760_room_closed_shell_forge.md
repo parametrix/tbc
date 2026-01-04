@@ -173,7 +173,7 @@ Posing for us in the background, you can also admire the table-tennis skills of 
 ####<a name="4"></a> Room Closed Shell in the Forge Viewer
 
 I recently implemented an external command
-that [creates `DirectShape` elements to represent room volumes](https://thebuildingcoder.typepad.com/blog/2019/05/generate-directshape-element-to-represent-room-volume.html).
+that [creates `DirectShape` elements to represent room volumes](1755_room_volume_ds.html).
 The code is available in
 the [RoomVolumeDirectShape GitHub repository](https://github.com/jeremytammik/RoomVolumeDirectShape).
 
@@ -207,7 +207,7 @@ Most of my efforts are preserved in the source code, enclosed in `#if` pragmas.
 ####<a name="5"></a> Triangulate the Solid Face by Face
 
 One reliable way to generate a valid solid to replace the flawed one produced by `GetClosedShell` is to query each face of the solid for its triangulation and use the triangular facets to define the direct shape instead, as described in the discussion
-on [creating a `DirectShape` element from a face mesh](https://thebuildingcoder.typepad.com/blog/2015/09/directshape-from-face-and-sketch-plane-reuse.html).
+on [creating a `DirectShape` element from a face mesh](1355_directshape_face.html).
 
 The following code achieves this:
 

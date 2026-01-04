@@ -114,7 +114,7 @@ of [What's new in .NET 5](https://docs.microsoft.com/en-us/dotnet/core/dotnet-fi
 
 ####<a name="2.1"></a> Using .NET Standard 2.0 for Revit Add-Ins
 
-Thiago Almeida added a [helpful comment clarifying how to proceed](https://thebuildingcoder.typepad.com/blog/2021/01/face-triangulation-lod-net-5-and-core.html#comment-5244565338):
+Thiago Almeida added a [helpful comment clarifying how to proceed](1888_net_5_core.html#comment-5244565338):
 
 It is possible to target projects with .Net Standard to compile shared code between .Net Core and .Net Framework.
 
@@ -173,7 +173,7 @@ We had thought presence or absence of UI would not have an impact for other thin
 If it's reproducible, in particular it might be reproducible without Custom Exporter and just running the same small routines on Revit UI and DA of going to one reasonably complex element, finding a target face, and Triangulating, we should look at it as a Problem Report.
 
 Can you provide
-a [minimal reproducible case](https://thebuildingcoder.typepad.com/blog/about-the-author.html#1b) for
+a minimal reproducible case *(link unavailable)* for
 the development team to analyse?
 
 **Response:** I am using the 2020 version of Revit, both on desktop and in DA.

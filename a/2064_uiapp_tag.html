@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
@@ -10,7 +40,8 @@ https://prismjs.com
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 <style> code[class*=language-], pre[class*=language-] { font-size : 90%; } </style>
 
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!--
 
 - How to get UIApplication from IExternalApplication
@@ -141,9 +172,9 @@ In some cases, I decide to ask the LLM for help.
 Recently, I have mostly been using Gemini 2.0 Flash.</p>
 <p>When  doing so, I prefix the persona prompt that I developed and refined.
 I described my prompt development process in the past few posts, cf.,
-<a href="https://thebuildingcoder.typepad.com/blog/2024/11/devcon-ai-for-revit-api-modeless-add-ins-leave.html#5">first LLM forum solution</a>,
-<a href="https://thebuildingcoder.typepad.com/blog/2025/01/llm-prompting-rag-ingestion-and-new-projects.html#5">Revit API support prompt</a>,
-and <a href="https://thebuildingcoder.typepad.com/blog/2025/01/wall-layer-voodoo-and-prompt-optimisation.html#3">promptimalising my Revit API support prompt</a></p>
+<a href="2060_modeless_tutor.html#5">first LLM forum solution</a>,
+<a href="2062_gpt_prompt.html#5">Revit API support prompt</a>,
+and <a href="2063_promptimal.html#3">promptimalising my Revit API support prompt</a></p>
 <p>My current prompt is this:</p>
 <ul>
 <li>You are a seasoned Revit add-in programmer and .NET expert with deep expertise in BIM principles and the Revit API.
@@ -237,7 +268,7 @@ Here's how I ended up solving it with help from <a href="https://forums.autodesk
 If you are looking for a reference how to switch selection between tags and their hosts, here are my commands to:</p>
 <ul>
 <li><a href="https://0x0.st/8o_A.bin">SelectAssociatedTags</a>, and</li>
-<li><a href="">SelectElementsHostedBySelectedTags</a>(https://0x0.st/8o_T.bin)</li>
+<li><a href=">SelectElementsHostedBySelectedTags</a>(https://0x0.st/8o_T.bin)</li>
 </ul>
 <p>Many thanks to Tom, Mohamed and Daniel for digging in and helping!</p>
 <h4><a name="5"></a> Self-Operating Computer Framework</h4>
@@ -247,7 +278,7 @@ this <a href="https://github.com/OthersideAI/self-operating-computer">Self-Opera
 <p>A framework to enable multimodal models to operate a computer</p>
 </blockquote>
 <h4><a name="6"></a> BigBlueButton  and Conferencing Tools</h4>
-<p>I <a href="https://thebuildingcoder.typepad.com/blog/2024/05/migrating-vb-to-net-core-8-and-ai-news.html#4">recently mentioned</a> a
+<p>I <a href="2037_vb_2025.html#4">recently mentioned</a> a
 couple of video conferencing options; let's expand that list:</p>
 <p><a href="https://bigbluebutton.org/#">BigBlueButton</a> also includes functionality for <a href="https://bbb.m4h.network/b/">conferencing</a>:</p>
 <blockquote>
@@ -286,3 +317,11 @@ with the Marshall Plan added by me:</p>
 <p><center>
 <img src="img/stargate.jpg" alt="Stargate" title="Stargate" width="600"/>
 </center></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

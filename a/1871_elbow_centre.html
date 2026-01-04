@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -106,10 +137,10 @@ Use constant members of the <code>UnitTypeId</code> class to replace uses of spe
 <h4><a name="3"></a> Eliminated TBC Samples Deprecated API Usage</h4>
 <p>Stephen's question and answer prompted me to take another look at and try to eliminate the deprecated API usage warnings
 in <a href="https://github.com/jeremytammik/the_building_coder_samples">The Building Coder samples</a>.
-After the initial <a href="https://thebuildingcoder.typepad.com/blog/2020/04/2021-migration-add-in-language-and-bim360-login.html#4">flat migration to Revit 2021</a>,
+After the initial <a href="1838_cs_python_bim360_login.html#4">flat migration to Revit 2021</a>,
 the compilation still generates <a href="zip/tbc_samples_2021_migr_01.txt">162 warnings</a>,
 all associated with deprecated methods and enumerations caused by 
-the <a href="https://thebuildingcoder.typepad.com/blog/2020/04/whats-new-in-the-revit-2021-api.html#4.1.3">Units API changes</a>.</p>
+the <a href="1836_whats_new_2021.html#4.1.3">Units API changes</a>.</p>
 <p>The resolution was actually quite simple.</p>
 <p>I removed some sections of code completely that dealt exclusively with the Revit Unit API functionality, since they ought to be rewritten from scratch for the new unit handling methods. It would make little sense to migrate them step by step. That left a handful of trivial issues to fix.</p>
 <p>The new <a href="https://github.com/jeremytammik/the_building_coder_samples/releases/tag/2021.0.150.6">release 2021.0.150.6</a> compiles with zero errors and warnings.</p>
@@ -289,7 +320,15 @@ on <a href="https://forums.autodesk.com/t5/revit-api-forum/firerevit-using-revit
 the source code in the <a href="https://github.com/LuhanSheng/Revit_To_Database">LuhanSheng Revit_To_Database GitHub repository</a>.</p>
 <p>Noteworthy related topics:</p>
 <ul>
-<li>Kean Walmsley implemented a <a href="https://thebuildingcoder.typepad.com/blog/2016/09/hololens-escape-path-waypoint-json-exporter.html">HoloLens-based tool for navigating low visibility environments and following an exit path</a></li>
-<li>Revit 2020 enhanced the Analysis API with support for a <a href="https://thebuildingcoder.typepad.com/blog/2019/04/whats-new-in-the-revit-2020-api.html#4.2.19">Path of Travel API</a></li>
-<li>The Revit SDK includes a <a href="https://thebuildingcoder.typepad.com/blog/2019/04/new-revit-2020-sdk-samples.html#5">PathOfTravel SDK sample</a></li>
+<li>Kean Walmsley implemented a <a href="1468_hololens_exitpath.html">HoloLens-based tool for navigating low visibility environments and following an exit path</a></li>
+<li>Revit 2020 enhanced the Analysis API with support for a <a href="1740_whats_new_2020.html#4.2.19">Path of Travel API</a></li>
+<li>The Revit SDK includes a <a href="1744_2020_sdk_samples.html#5">PathOfTravel SDK sample</a></li>
 </ul>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

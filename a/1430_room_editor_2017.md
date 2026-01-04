@@ -63,7 +63,7 @@ I have a large backlog of really exciting BIM and cloud related issues I want to
 - Expand the [FireRatingCloud](https://github.com/jeremytammik/FireRatingCloud) sample, adding real-time live BIM update functionality a la RoomEditorApp
 
 I really need to start getting these tasks done in order to present them at several pretty
-imminent [upcoming events](http://thebuildingcoder.typepad.com/blog/2016/04/forge-devcon-spring-impermanence-and-bim-cloud.html#4):
+imminent [upcoming events](1420_forge_devcon.html#4):
 
 - May 16-20: [Forge Accelerator](http://autodeskcloudaccelerator.com) in Barcelona
 - June 1-2: Forge [meetup](http://www.meetup.com/I-love-3D-Athens/events/230543759)

@@ -116,7 +116,7 @@ Ever so many thanks to NeVeSpl from me too for the careful and efficient impleme
 ####<a name="3"></a> Need for Regen for Read-Only Parameter
 
 A surprising new context to add to
-our [list of situations with a need for regeneration](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33) came up in
+our list of situations with a need for regeneration *(link unavailable)* came up in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 on being [unable to get parameter `AsString` value when the parameter is read-only](https://forums.autodesk.com/t5/revit-api-forum/unable-to-get-parameter-asstring-value-when-the-parameter-is/m-p/10713499):
 
@@ -135,7 +135,7 @@ My read-only params were updated from other elements, that changed those paramet
 But I couldn't see it in the API until I used `doc.Regenerate()`.
 
 Here are some other previous examples that I also already earmarked for inclusion in
-the ['need to regenerate' list](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33):
+the 'need to regenerate' list *(link unavailable)*:
 
 - [`LevelOffset` not working for arc extrusion roof](https://forums.autodesk.com/t5/revit-api-forum/leveloffset-not-working-for-arc-extrusion-roof/m-p/7681949)
 <br/>**Question:** I've encountered a strange result and I'd like to know if it's my fault or if there's an error somewhere or a known issue.

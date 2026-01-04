@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <!-- <script src="run_prettify.js" type="text/javascript"></script> --> 
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -24,7 +55,7 @@ Furthermore, we are proud to present yet more enhancements to the revamped versi
 
 <h3>Q4R4 tbc Import and RevitLookup</h3>
 <p>I started working on the question answering
-system <a href="http://thebuildingcoder.typepad.com/blog/2017/03/q4r4-revit-api-question-answering-system.html">Q4R4 <em>Question Answering for Revit API</em></a>.</p>
+system <a href="1536_q4r4.html">Q4R4 <em>Question Answering for Revit API</em></a>.</p>
 <p>The first step is to import The Building Coder blog posts into Elasticsearch and experiment with full-text queries on them.</p>
 <p>Furthermore, we are proud to present yet more enhancements to the revamped version of RevitLookup:</p>
 <ul>
@@ -51,7 +82,7 @@ system <a href="http://thebuildingcoder.typepad.com/blog/2017/03/q4r4-revit-api-
 </ul>
 <h4><a name="3"></a>Importing <code>tbc</code> Blog Posts into Elasticsearch</h4>
 <p>As mentioned
-in <a href="http://thebuildingcoder.typepad.com/blog/2017/03/q4r4-revit-api-question-answering-system.html">the last post on q4r4</a>,
+in <a href="1536_q4r4.html">the last post on q4r4</a>,
 I should start off implementing a simple but intelligent search engine without worrying about machine learning or AI in any of its forms.</p>
 <p>I am still reading
 about <a href="https://www.elastic.co/products/elasticsearch">Elasticsearch</a> and
@@ -123,10 +154,10 @@ other Revit API related issues remain as vibrant as ever.</p>
 tool <a href="https://github.com/jeremytammik/RevitLookup">RevitLookup</a>.</p>
 <p>In the last few weeks, it was significantly restructured to use <code>Reflection</code> and reduce code duplication:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/02/revitlookup-using-reflection-for-cross-version-compatibility.html">Using <code>Reflection</code> for cross-version compatibility</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/02/revitlookup-with-reflection-cleanup.html">Basic clean-up of the new version</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/02/revitlookup-extensible-storage-restored.html#3">Restore access to extensible storage data</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/03/revitlookup-enhancements-future-revit-and-other-api-news.html#8">Further enhancements</a></li>
+<li><a href="1524_revitlookup_reflect.html">Using <code>Reflection</code> for cross-version compatibility</a></li>
+<li><a href="1529_revitlookup_reflect.html">Basic clean-up of the new version</a></li>
+<li><a href="1531_revitlookup_estore.html#3">Restore access to extensible storage data</a></li>
+<li><a href="1534_revit_api_news.html#8">Further enhancements</a></li>
 </ul>
 <p>Alexander Ignatovich, <a href="https://github.com/CADBIMDeveloper">@CADBIMDeveloper</a>, aka Александр Игнатович,
 now submitted a few new bug fixes in
@@ -169,3 +200,11 @@ the <a href="https://github.com/jeremytammik/RevitLookup">RevitLookup GitHub rep
 from <a href="https://github.com/jeremytammik/RevitLookup/releases/tag/2017.0.0.13">release 2017.0.0.13</a> or earlier.</p>
 <p>I am also happy to restore any other code that was removed and that you would like preserved.
 Simply create a pull request for that, explain your need and motivation, and I will gladly merge it back again.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

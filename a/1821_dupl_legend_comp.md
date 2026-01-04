@@ -59,8 +59,8 @@ Before diving into that, here is yet another interesting discussion related to t
 
 #### <a name="2"></a>Duplicate Legend Component in Python
 
-In a [comment](https://thebuildingcoder.typepad.com/blog/2010/05/duplicate-legend-component.html#comment-4752201924) on
-the workaround to [duplicate a legend component](https://thebuildingcoder.typepad.com/blog/2010/05/duplicate-legend-component.html),
+In a [comment](0377_duplicate_legend_component.htm#comment-4752201924) on
+the workaround to [duplicate a legend component](0377_duplicate_legend_component.htm),
 Oliwer Kulpa demonstrates how to set the `LEGEND_COMPONENT` built-in parameter after copying a legend component:
 
 **Question:** Any news about this Legend Component API?
@@ -250,7 +250,7 @@ Is it possible to have another event `FamilyTypePlacingIntoDocument` for this?
 Or is there a workaround?
 
 **Answer:** As recently discussed, you
-can [use the DocumentChanged event to detect the launching of a command](https://thebuildingcoder.typepad.com/blog/2020/01/torsion-tools-command-event-and-info-in-da4r.html#3).
+can [use the DocumentChanged event to detect the launching of a command](1813_torsion_tools.html#3).
 
 **Response:** It works great to catch the placing FamilyType event triggered by placing type directly from Revit UI.
 

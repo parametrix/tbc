@@ -49,7 +49,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 
 ### Curve Projection, Detach and FBX in DA4R
 
-Two little hints on [Forge Design Automation for Revit or DA4R](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55) issues, 
+Two little hints on Forge Design Automation for Revit or DA4R *(link unavailable)* issues, 
 projecting a curve onto a planar surface and an impressive list of add-in sample videos:
 
 - [DA4R supports FBX and IFC](#2)
@@ -119,8 +119,8 @@ However, that causes a "transform is not conformal" error.
 Is there any way to do this in Revit, or do I need to reinvent the wheel and write the transformations for each curve type myself?
 
 **Answer:** I guess I said most of what I have to say on this in my answers
-to [your](https://thebuildingcoder.typepad.com/blog/2008/12/polygon-transformation.html#comment-4669997409)
-[comments](https://thebuildingcoder.typepad.com/blog/2008/12/polygon-transformation.html#comment-4670106610) on The Building Coder:
+to [your](0057_polygon_transformation.htm#comment-4669997409)
+[comments](0057_polygon_transformation.htm#comment-4670106610) on The Building Coder:
 
 Using such a projection is obviously a good idea, in principle.
 

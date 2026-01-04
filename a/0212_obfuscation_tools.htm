@@ -1,12 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Obfuscation Tools</h3>
 
 <p>We already explained the need for and basics of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/obfuscation.html">
+<a href="0029_obfuscation.htm">
 obfuscation</a>,
 
 and yet developers I meet are often still surprised to discover how easy it is to decompile their .NET application and obtain the original source code back from the released .NET assembly DLL.
@@ -25,12 +56,12 @@ This would include entry points like IExternalCommand and IExternalApplication m
 Virtually any DLL can be obfuscated to the point where it will not run.
 
 <p>I now use {smartassembly} which is working quite well for me. 
-Itís in the medium price range of the tools out there. 
+ItÔøΩs in the medium price range of the tools out there. 
 It does a fairly good job of drilling into the dependencies itself and determining what can and cannot be obfuscated. 
 Setting up the various options in these tools will make all the difference. 
 
 <p>To be honest, what really sold me on {smartassembly} was the fact that their trial software was a fully functional installation of their product. 
-You just canít ship what you obfuscate until you pay for it. 
+You just canÔøΩt ship what you obfuscate until you pay for it. 
 Dotfuscator and another one I tried from Rustemsoft called Skater were both limited versions of their software,
 so it was very difficult to determine how effective they would be. 
 Skater in particular did not do a very good job of string mangling and the result was barely different from the code.
@@ -42,7 +73,7 @@ If you are going to provide an evaluation copy, is it really a good idea to limi
 <li>It can merge in dependent DLLs or embed them. 
 Merging them will improve performance, embedding them just makes it more convenient, because your deliverable can be just one file.
 <li>It will prune code that will never get executed.
-Actually, I find this to be a nice analysis tool for applications that are developed over long periods of time &ndash; Iím amazed at how much code I write that I eventually end up abandoning.
+Actually, I find this to be a nice analysis tool for applications that are developed over long periods of time &ndash; IÔøΩm amazed at how much code I write that I eventually end up abandoning.
 <li>It will add confusing metadata to the DLL so that .NET Reflector and MS IL Disassembler cannot view it. 
 This is a huge advantage because now you need hacking tools even to see what methods are exposed, and this provides a level of protection for even those methods that you could not obfuscate.
 <li>It will sign your assembly with a strong name after obfuscation.
@@ -66,3 +97,12 @@ But a review I read said it had difficulty with complex applications.
 I highly recommend trying out more than one of these tools before making a decision.
 
 <p>Obviously, these are just unofficial personal opinions, like everything else stated in this blog.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

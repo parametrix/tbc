@@ -59,7 +59,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 on [how to get all the outermost walls in the model](https://forums.autodesk.com/t5/revit-api-forum/how-do-i-get-all-the-outermost-walls-in-the-model/m-p/7998948).
 
 We already explored some aspects last week,
-on [retrieving all exterior walls](http://thebuildingcoder.typepad.com/blog/2018/05/drive-revit-via-a-wcf-service-wall-directions-and-parameters.html#8).
+on [retrieving all exterior walls](1652_revit_wcf_service.html#8).
 
 Today, we can present a working solution for an incomplete BIM.
 
@@ -76,10 +76,10 @@ Here is the [sample model `exterior_walls.rvt`](zip/exterior_walls_2018.rvt).
 
 ####<a name="3"></a>Several Possible Approaches
 
-Several approaches to solve this were already brought up [last week](http://thebuildingcoder.typepad.com/blog/2018/05/drive-revit-via-a-wcf-service-wall-directions-and-parameters.html#8):
+Several approaches to solve this were already brought up [last week](1652_revit_wcf_service.html#8):
 
 - The `DirectionCalculation` Revit SDK sample and The Building Coder discussion of it 
-on [south facing walls](http://thebuildingcoder.typepad.com/blog/2010/01/south-facing-walls.html) solves
+on [south facing walls](0281_abg03_south_facing_walls.htm) solves
 using the built-in wall function parameter `FUNCTION_PARAM` to filter for exterior walls.
 However, the function parameter is not always correctly set on the wall type, and the wall type is not always correctly assigned.
 - The Revit API provides a `BuildingEnvelopeAnalyzer` class that will retrieve all exterior walls for you.
@@ -116,17 +116,17 @@ Here is an idea that comes to mind right now on the fly:
 
 You can easily [determine whether a given point lies within a given polygon](https://www.ics.uci.edu/~eppstein/161/960307.html).
 
-I also implemented a [point containment algorithm for the Revit API](http://thebuildingcoder.typepad.com/blog/2010/12/point-in-polygon-containment-algorithm.html),
-and a [room in area predicate using it](http://thebuildingcoder.typepad.com/blog/2012/08/room-in-area-predicate-via-point-in-polygon-test.html).
+I also implemented a [point containment algorithm for the Revit API](0491_point_in_poly.htm),
+and a [room in area predicate using it](0810_room_in_area.htm).
 
 Now, if you have all your walls, their location curves (if they are non-linear, things get trickier), and endpoints, and are sure that they all form closed polygons, you could determine the maximal polygon enclosing all others by choosing the one that contains the maximum number of wall endpoints.
 
 You might also be able to use some library providing 2D polygon or Boolean operations for this.
 
 Some such libraries, other options and helpful ideas are discussed in The Building Coder topic group
-on [2D Booleans and adjacent areas](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.2).
+on 2D Booleans and adjacent areas *(link unavailable)*.
 
-We also recently discussed [determining the outermost loop of a face](http://thebuildingcoder.typepad.com/blog/2017/10/disjunct-outer-loops-from-planar-face-with-separate-parts.html).
+We also recently discussed [determining the outermost loop of a face](1592_disjunct_outer_loops.html).
 
 However, in this case, making use of the built-in Revit room generation functionality is probably the easiest way to go.
 
@@ -158,10 +158,10 @@ Feng Wang implemented a solution based on these suggestions in [CmdGetOutermosWa
 
 Here are my initial comments on his code that I keep repeating again and again, and therefore here now yet again:
 
-- [Encapsulate transactions in a `using` statement](http://thebuildingcoder.typepad.com/blog/2012/04/using-using-automagically-disposes-and-rolls-back.html)
-- You can encapsulate your multiple transactions in a [transaction group](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.53)
+- [Encapsulate transactions in a `using` statement](0753_dispose_transact_2.htm)
+- You can encapsulate your multiple transactions in a transaction group *(link unavailable)*
 - Instead of creating objects in the model, extracting information from them, and then deleting them again, you could roll back the outermost transaction group to revert back to the original, unmodified, state. I nicknamed that
-the ['temporary transaction trick'](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.53).
+the 'temporary transaction trick' *(link unavailable)*.
 
 
 ####<a name="7"></a>Determining Model Extents via Wall Bounding Box

@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="http://thebuildingcoder.typepad.com/google-code-prettify/run_prettify.js"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -27,7 +58,7 @@ Stephen Faust, Revolution Design
 
 <p>I have searched online and I found the UI sample in the SDK as well as
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/devcamp-day-two.html#2">
+<a href="0779_devcamp_day_2.htm#2">
 your class</a> on
 
 this.</p>
@@ -35,7 +66,7 @@ this.</p>
 <p>What I am trying to do to start off is just display the active view in a preview.
 Looking at
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/devcamp-day-two.html#23">
+<a href="0779_devcamp_day_2.htm#23">
 your sample</a> it
 
 looks like it just feeds the active document and active view ID to the form and constructs from there.</p>
@@ -61,31 +92,31 @@ I'm not sure where mine is different in substance than yours, or where else ther
 <p>You mention that you are aware of the UIAPI PreviewControl SDK and my simplified PreviewControlSimple samples.
 Here are pointers to those from the discussion of using a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/08/vacation-time-and-various-notes.html#4">
+<a href="0805_vacation_news.htm#4">
 preview control with linked document</a>:</p>
 
 <p>"One if the new
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/revit-2013-and-its-api.html">
+<a href="0740_revit_2013_api.htm">
 Revit 2013 API</a> features is the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/revit-2013-and-its-api.html#2">
+<a href="0740_revit_2013_api.htm#2">
 preview control</a>,
 
 supporting enhanced integration between Revit and an add-in.
 I presented a minimal sample named
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/devcamp-day-two.html#23">
+<a href="0779_devcamp_day_2.htm#23">
 PreviewControlSimple</a> making
 
 use of it in my DevCamp session on the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/devcamp-day-two.html#2">
+<a href="0779_devcamp_day_2.htm#2">
 Revit 2013 UI API enhancements</a>,
 
 and a more complete and complex one is given by the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/new-revit-2013-sdk-samples.html#4">
+<a href="0742_new_sdk_samples.htm#4">
 UIAPI Revit SDK sample</a>."</p>
 
 <p>I would suggest ensuring that you can successfully compile, execute and debug both of these, to ensure that your system is not causing the problem.</p>
@@ -164,14 +195,14 @@ I am glad that the suggestion to start off by ensuring that the UIAPI sample wor
 
 <p>You say that you are using the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/10/the-temporary-transaction-trick-for-gross-slab-data.html">
+<a href="0851_gross_slab_boundary.htm">
 temporary transaction trick</a>.</p>
 
 <p>Sometimes, though, you need to either regenerate the document, or, even more, commit the transaction, to ensure that the current state actual comes into effect.</p>
 
 <p>This led to Arnost's suggestion to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/11/temporary-transaction-trick-touchup.html">
+<a href="0854_temp_transact.htm">
 encapsulate the transaction in a transaction group</a>.</p>
 
 <p>That would enable you to commit your temporary transaction within a transaction group, ensuring that the changes take effect, and later discard the entire group, reverting the document back to its unchanged original state.</p>
@@ -181,3 +212,12 @@ encapsulate the transaction in a transaction group</a>.</p>
 <p>Thanks for the tip on transaction groups; I will give that a shot.</p>
 
 <p>Many thanks to Steve for sharing this!</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -49,7 +49,7 @@ An exciting discussion on applying minimal adjustments to the model, and yet ano
 #### <a name="2"></a>Adjusting versus Recreating Wall Location Curve
 
 Harald Schmidt pointed out an interesting and important aspect of the old discussion of how
-to [edit wall length](https://thebuildingcoder.typepad.com/blog/2010/08/edit-wall-length.html) in
+to [edit wall length](0422_edit_wall_length.htm) in
 his [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread,
 on [adjusting Wall.LocationCurve.Curve results in unexpected behaviour](https://forums.autodesk.com/t5/revit-api-forum/adjusting-wall-locationcurve-curve-results-in-unexpected/m-p/9328145),
 and once again Frank [@Fair59](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/2083518) Aarssen
@@ -60,7 +60,7 @@ came to the rescue with the final solution:
 Using `wall.Location.Move` and `wall.Location.Rotate` enables adjusting the location and rotation of the walls, but not their length.
 
 So, we decided to follow the approach suggested 10 years ago by The Building Coder to [
-to [edit wall length](https://thebuildingcoder.typepad.com/blog/2010/08/edit-wall-length.html) by
+to [edit wall length](0422_edit_wall_length.htm) by
 creating a completely new wall location line from scratch like this:
 
 <pre class="code">

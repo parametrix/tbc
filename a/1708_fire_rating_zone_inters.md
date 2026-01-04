@@ -30,7 +30,7 @@ Reducing it to 2D makes it much more tractable
 
 ### Fire Rating Zone Intersection
 
-Last week, we looked at some [3D intersection and filtering tasks](https://thebuildingcoder.typepad.com/blog/2018/12/using-an-intersection-filter-for-linked-elements.html).
+Last week, we looked at some [3D intersection and filtering tasks](1707_filter_intersect.html).
 
 Now, let's tackle a 2D intersection one, brought up and solved 
 by [Jack Bird](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/6830764) in
@@ -81,12 +81,12 @@ Here is an image that may help with visualizing the problem:
 
 **Answer:** Here are some discussions dealing with various aspects of voids:
 
-- [Boolean operations and `InstanceVoidCutUtils`](http://thebuildingcoder.typepad.com/blog/2011/06/boolean-operations-and-instancevoidcututils.html)
-- [Beam maker using a void extrusion to cut](http://thebuildingcoder.typepad.com/blog/2010/07/beam-maker-using-a-void-extrusion-to-cut.html)
-- [Transaction group regeneration for `InstanceVoidCutUtils`](http://thebuildingcoder.typepad.com/blog/2014/04/instancevoidcututils-and-need-for-regeneration.html)
-- [Voids in the family editor](https://thebuildingcoder.typepad.com/blog/2014/10/brussels-hackathon-and-determining-pipe-wall-thickness.html#4)
-- [TTT for provision for voids](http://thebuildingcoder.typepad.com/blog/2017/03/wta-mech-and-ttt-for-provision-for-voids.html)
-- [`FindInserts` determines void instances cutting floor](https://thebuildingcoder.typepad.com/blog/2017/06/findinserts-determines-void-instances-cutting-a-floor.html)
+- [Boolean operations and `InstanceVoidCutUtils`](0600_instance_void_cut.htm)
+- [Beam maker using a void extrusion to cut](0412_beam_maker.htm)
+- [Transaction group regeneration for `InstanceVoidCutUtils`](1132_instance_void_cut.htm)
+- [Voids in the family editor](1224_pipe_wall_thickness.htm#4)
+- [TTT for provision for voids](1546_wta_mech_prov_void.html)
+- [`FindInserts` determines void instances cutting floor](1571_void_inst_cut_floor.html)
 
 #### <a name="4"></a> 2D Area Intersection Task
 
@@ -99,7 +99,7 @@ Instead of determining the intersecting volume, I would suggest retaining the ar
 Once you have everything in 2D in the XY plane, you have reduced the problem to a simple 2D Boolean intersection task.
 
 That can be perfectly and completely addressed using a library to
-compute [Boolean Operations for 2D Polygons](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.2).
+compute Boolean Operations for 2D Polygons *(link unavailable)*.
 
 **Response:** That  RvtClipper.zip  was a very useful resource thank you.
 I had a play with the clipperlib on a previous task but did not consider putting it to use here.

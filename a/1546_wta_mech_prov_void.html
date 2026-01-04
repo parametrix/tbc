@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <!-- <script src="run_prettify.js" type="text/javascript"></script> --> 
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -23,7 +54,7 @@ The topics today are mainly related to Revit, though
 
 <h3>WTA Mech and TTT for Provision for Voids</h3>
 <p>Today is the last day of 
-the <a href="http://thebuildingcoder.typepad.com/blog/2017/03/events-uv-coordinates-and-rooms-on-level.html#2">Forge accelerator</a>,
+the <a href="1537_event_uv_room_filt.html#2">Forge accelerator</a>,
 and I am still working on 
 the <a href="https://github.com/jeremytammik/forgefader">ForgeFader</a> project.</p>
 <p>The topics today are mainly related to Revit, though:</p>
@@ -51,14 +82,14 @@ and now lives in GitHub.</p>
 <a href="https://github.com/akseidel">@akseidel</a>
 Seidel made a number of contributions here in the past, including:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/09/stacked-ribbon-button-panel-options.html">Stacked Ribbon Button Panel Options</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/03/wta-firep-and-3d-aimer-tools.html">FireP and 3d Aimer</a><ul>
+<li><a href="1466_split_button_opt.html">Stacked Ribbon Button Panel Options</a></li>
+<li><a href="1543_wta_firep_3d_aimer.html">FireP and 3d Aimer</a><ul>
 <li>Ribbon panel implementation sample</li>
 <li>Fire protection related family placement tools</li>
 <li>3d Aimer that "aims" a special Revit family instance at a target</li>
 </ul>
 </li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/03/wta-firep-and-3d-aimer-tools.html#5">WTA Elec &ndash; another family plunk and concept share</a></li>
+<li><a href="1543_wta_firep_3d_aimer.html#5">WTA Elec &ndash; another family plunk and concept share</a></li>
 </ul>
 <p><a href="https://www.youtube.com/watch?v=_x7yyx4Yk_I">Revit, Add-in, complex family placement using the plunk class</a></p>
 <iframe width="480" height="270" src="https://www.youtube.com/embed/_x7yyx4Yk_I?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -70,7 +101,7 @@ on <a href="https://forums.autodesk.com/t5/revit-api-forum/an-automation-experim
 <p>It provides a similar ribbon panel and tool collection for family instance placement and management for tasks primarily oriented towards the mechanical domain:</p>
 <blockquote>
 <p>Apologizing for beginning to wear out a welcome, here is a video and code share for yet another custom ribbon specific task command involving family placement and tags. The ribbon panel split button control being used is a variant of what is mentioned
-in <a href="http://thebuildingcoder.typepad.com/blog/2016/09/stacked-ribbon-button-panel-options.html">stacked ribbon button panel options</a>.</p>
+in <a href="1466_split_button_opt.html">stacked ribbon button panel options</a>.</p>
 <p>One idea presented is a remote tag. Maybe this is commonly done in Revit practice.
 The remote tag here is simply a tag on item where the tag itself is placed in proximity to a different item that is a system client to the former item. What is really needed is for Revit tags to show values from an indexed object instead of the object the tag tags. Perhaps it does this. Anyway, that is part of what is seen in the video.</p>
 <ul>
@@ -116,7 +147,7 @@ Other tools use add-in application settings as a way to persist settings or comm
 <p>Much of the code is by others. Its mangling and ignorant misuse is my ongoing doing. Much thanks to the professionals like Jeremy Tammik who provided the means directly or by mention one way or another for probably all the code needed.</p>
 <p>Here are some aspects that may be of specific interest:</p>
 <ul>
-<li><strong>Hybrid splitbutton behaviour</strong> &mdash; A splitbutton control with four buttons, where the top two execute one of two types of the same task and the bottom two invoke a settings panel for one of the corresponding task types. The top two buttons, being tasks the user is likely going to repeat, remain as the last button selected. The bottom two buttons are incidental tasks the user would not need to repeat nor want to be the splitbutton's face button. The splitbutton face button reverts back to what is was before the user selected one of the bottom two button. That is the hybrid behaviour. This idea was discussed here: <a href="http://thebuildingcoder.typepad.com/blog/2016/09/stacked-ribbon-button-panel-options.html">thebuildingcoder &ndash; stacked-ribbon-button-panel-options</a></li>
+<li><strong>Hybrid splitbutton behaviour</strong> &mdash; A splitbutton control with four buttons, where the top two execute one of two types of the same task and the bottom two invoke a settings panel for one of the corresponding task types. The top two buttons, being tasks the user is likely going to repeat, remain as the last button selected. The bottom two buttons are incidental tasks the user would not need to repeat nor want to be the splitbutton's face button. The splitbutton face button reverts back to what is was before the user selected one of the bottom two button. That is the hybrid behaviour. This idea was discussed here: <a href="1466_split_button_opt.html">thebuildingcoder &ndash; stacked-ribbon-button-panel-options</a></li>
 <li><strong>Host face normal direction used to drive symbology orientation</strong> &mdash; The HVAC sensor family placed by the tools has two symbology orientations, because Revit does not really support a universal "view independent text". The family's symbology would be wrong 50% of the time it were placed. The code attempts to use the host face normal direction to more correctly pick which of the two orientations to make visible. Each orientation's visibility is controlled by a parameter. Only one parameter needs to be set, because the other parameter is function controlled in the family to be <code>not(the_other)</code>.</li>
 <li><strong>User settings for family names, types and tag parameter names</strong> &mdash; As a way to side step the problem of hard coding family names, types and tag parameter names, the user can set the names to some other values. Not implemented, but planned: an external file text to also house the standard settings.</li>
 <li><strong>Remote equipment tag</strong> &mdash; Sensors, like thermostats, for example, are often the client to a piece of a mechanical system. The mechanical system name the sensor is a client for, an ID number for example, is typically placed next to the sensor on construction plans. That ID number is part of the mechanical equipment properties, but not the sensor properties, unless it is duplicated to the sensor. Therefore, tagging the sensor using the latter method involves more effort and maintenance. The remote equipment tag is a tag to the mechanical equipment placed at the sensor. That is what this add-in is doing. It would be nice if Revit were to support an indirect tag value, like the way a microprocessor does indirect addressing. Then the sensor could be tagged with a tag that gets its value from the parameter values of an indirectly addressed object.</li>
@@ -125,13 +156,13 @@ Other tools use add-in application settings as a way to persist settings or comm
 <h4><a name="4"></a>Provision for Void</h4>
 <p>We discussed numerous examples of the temporary transaction trick in the past,
 the last one just last week, 
-to <a href="http://thebuildingcoder.typepad.com/blog/2017/03/ttt-to-obtain-section-marker-endpoint.html">obtain a section marker endpoint</a>.</p>
+to <a href="1541_section_marker_endp.html">obtain a section marker endpoint</a>.</p>
 <p>That and others are listed in The Building Coder topic group 
-on <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.53">handling transactions and transaction groups</a>.</p>
+on <span class="unavailable-link">handling transactions and transaction groups</span>.</p>
 <p>Here is another clever use to obtain provisions for void, last mentioned in the discussion
-on <a href="http://thebuildingcoder.typepad.com/blog/2015/07/using-referenceintersector-in-linked-files.html">using <code>ReferenceIntersector</code> in linked files</a>.</p>
+on <a href="1339_reference_intersector.htm">using <code>ReferenceIntersector</code> in linked files</a>.</p>
 <p>Håvard Dagsvik of <a href="http://www.symetri.com">Symetri</a>, who contributed to numerous discussions in the past, e.g., 
-<a href="http://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-opening-areas-per-room.html#4">determining wall opening areas per room</a>,
+<a href="1423_wall_opening_areas.html#4">determining wall opening areas per room</a>,
 brought up a new idea:</p>
 <p>Just wanted to share with you something I came across the other day about ProvisionForVoids.
 Those are basically "proposals for openings that are to be coordinated between HVAC and architectural/structural design applications".
@@ -248,7 +279,7 @@ So I use the size of the solid as size for each FamilyInstance.</p>
 <p>These methods can also be used to improve
 the <a href="https://github.com/jeremytammik/SpatialElementGeometryCalculator">SpatialElementGeometryCalculator</a> project
 described
-in <a href="http://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-opening-areas-per-room.html#5">Håvard's SpatialElementGeometryCalculator enhancement</a>.</p>
+in <a href="1423_wall_opening_areas.html#5">Håvard's SpatialElementGeometryCalculator enhancement</a>.</p>
 <p>This add-in shows how you can obtain the opening size you need to request.
 In our final add-in we use the solids it creates as basis for size and rotation when creating FamilyInstances.
 It shows two different ways you can get that size/3D body for Doors/Windows.
@@ -273,3 +304,11 @@ I needed a consistent way of getting that opening request correct in every case.
 <p>Both of them could have been done "the usual way" with a Windows Form.</p>
 <p>This is just so much better, "modeless" but still inside a valid API context.</p>
 <p>No need for <code>OnIdling</code> or external events here, a few others, but not those.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

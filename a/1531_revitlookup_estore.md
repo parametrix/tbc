@@ -33,8 +33,8 @@ here comes the second one, restoring access to view extensible storage data:
 
 Here is an overview of the recent changes so far:
 
-- [Using `Reflection` for cross-version compatibility](http://thebuildingcoder.typepad.com/blog/2017/02/revitlookup-using-reflection-for-cross-version-compatibility.html)
-- [Basic clean-up](http://thebuildingcoder.typepad.com/blog/2017/02/revitlookup-with-reflection-cleanup.html)
+- [Using `Reflection` for cross-version compatibility](1524_revitlookup_reflect.html)
+- [Basic clean-up](1529_revitlookup_reflect.html)
 
 On February 6, I presented a drastic change 
 to [RevitLookup](https://github.com/jeremytammik/RevitLookup) contributed by 

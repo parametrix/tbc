@@ -40,7 +40,7 @@ Several developers recently asked how to export 2D shapes through a custom expor
 
 ### DevDay@AU and Using a Custom Exporter for 2D
 
-Several developers recently asked how to export 2D shapes through a [custom exporter](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.1).
+Several developers recently asked how to export 2D shapes through a custom exporter *(link unavailable)*.
 
 I recently discussed this issue with Arnošt Löbel and below present a summary and combination of several different conversation threads on the topic of [using a custom exporter for 2D](#2).
 
@@ -72,11 +72,11 @@ And now back to the Revit API:
 #### <a name="2"></a>Using a Custom Exporter for 2D
 
 
-**Question:** I'm trying to obtain the 2D representation of a given element in my model. I'm using a CustomExporter object to get all the visible elements in the current 3D view. I've been reading several posts and found in one of them, on the [extrusion analyser and plan view boundaries](http://thebuildingcoder.typepad.com/blog/2013/04/extrusion-analyser-and-plan-view-boundaries.html#6), that I should do something like "switch to a 2D plan view instead, and ask for the view-specific family instance representation". Now I'm stuck in how to get the correct 2D plan view if I actually have several in my model. Could you point me in the right direction?
+**Question:** I'm trying to obtain the 2D representation of a given element in my model. I'm using a CustomExporter object to get all the visible elements in the current 3D view. I've been reading several posts and found in one of them, on the [extrusion analyser and plan view boundaries](0921_extrusion_analyser.htm#6), that I should do something like "switch to a 2D plan view instead, and ask for the view-specific family instance representation". Now I'm stuck in how to get the correct 2D plan view if I actually have several in my model. Could you point me in the right direction?
 
 For instance, to make it really short: Is there any way to export annotation symbols?
 
-**Answer:** Take a look at the [custom exporter](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.1).
+**Answer:** Take a look at the custom exporter *(link unavailable)*.
 
 In Revit 2015 it was 3D only.
 
@@ -116,7 +116,7 @@ Can we somehow view the annotation symbols in a 3D view?
 - You will get text output when exporting a 3D view. Try out and see what kind of annotation is included. Presumably, if you can see it in the 3D view it should make its way to the export context as well.
 
 
-**Response:** Thanks for your reply. I found The Building Coder discussion on [views displaying a given element, SVG and NoSQL](http://thebuildingcoder.typepad.com/blog/2014/05/views-displaying-given-element-svg-and-nosql.html) that was very helpful and  ended up using a similar approach. In the post you use an ElementMulticlassFilter to filter View3D, ViewPlan and ViewSection that can display a certain list of elements. In my case I just need all the plan views in the model. I iterate over that list until I find one that displays the element I need. Once I find the view I send it to an Options object and then send that object to the element  get_Geometry method to get the correct 2D representation of my element.
+**Response:** Thanks for your reply. I found The Building Coder discussion on [views displaying a given element, SVG and NoSQL](1158_views_displaying_elem.htm) that was very helpful and  ended up using a similar approach. In the post you use an ElementMulticlassFilter to filter View3D, ViewPlan and ViewSection that can display a certain list of elements. In my case I just need all the plan views in the model. I iterate over that list until I find one that displays the element I need. Once I find the view I send it to an Options object and then send that object to the element  get_Geometry method to get the correct 2D representation of my element.
 
 Here is the code showing how this can be done:
 

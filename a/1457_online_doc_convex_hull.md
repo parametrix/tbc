@@ -43,14 +43,14 @@ using [Google](https://www.google.com)
 or [DuckDuckGo](https://duckduckgo.com).
 
 With the notable exception
-of [Revit 2014](http://thebuildingcoder.typepad.com/blog/2014/01/revit-api-help-online-and-hiking-on-la-palma.html),
+of [Revit 2014](1092_revit_api_help_online.htm),
 [revitapisearch.com](http://revitapisearch.com),
 implemented by Peter Boyer of the Dynamo team.
 
 Just a few weeks ago, Arif Hanif expressed interest to do the same for Revit 2017 in
-a [couple](http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html#comment-2823075296)
-of [comments](http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html#comment-2824265506)
-on [What's New in the Revit 2017 API](http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html).
+a [couple](1428_whats_new_2017.html#comment-2823075296)
+of [comments](1428_whats_new_2017.html#comment-2824265506)
+on [What's New in the Revit 2017 API](1428_whats_new_2017.html).
 
 Well, someone beat him to it.
 
@@ -112,10 +112,10 @@ Here are some of the challenges and constraints:
 #### <a name="3"></a>2D Convex Hull Algorithm in C# using `XYZ`
 
 Yesterday, I mentioned the convex hull calculation as one option for determining
-the [bounding box of selected elements or entire model](http://thebuildingcoder.typepad.com/blog/2016/08/vacation-end-forge-news-and-bounding-boxes.html#8).
+the [bounding box of selected elements or entire model](1456_bounding_section_box.html#8).
 
 Maxence replied in
-a [comment](http://thebuildingcoder.typepad.com/blog/2016/08/vacation-end-forge-news-and-bounding-boxes.html#comment-2839904399) on
+a [comment](1456_bounding_section_box.html#comment-2839904399) on
 that post and provided a convex hull implementation in C#.
 
 It is a 2D algorithm implementing the [Jarvis march or Gift wrapping algorithm](https://en.wikipedia.org/wiki/Gift_wrapping_algorithm):

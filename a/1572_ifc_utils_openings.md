@@ -73,16 +73,16 @@ Here is Jan's full explanation in all its gory detail:
 > Openings must have an `OpeningCut` object. If not, `GetInstanceCutoutFromWall` will fail!
 
 This helps explain some issues people had with this method in the past, and also fits into several existing topic groups, such as use
-of [the frequently overlooked Revit API utility classes](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.52) on
+of the frequently overlooked Revit API utility classes *(link unavailable)* on
 one hand, determining wall openings in general, gross versus net areas and volumes in particular, on the other:
 
-- [Opening geometry](http://thebuildingcoder.typepad.com/blog/2012/01/opening-geometry.html)
-- [The temporary transaction trick for gross slab data](http://thebuildingcoder.typepad.com/blog/2012/10/the-temporary-transaction-trick-for-gross-slab-data.html)
-- [Retrieving wall openings and sorting points](http://thebuildingcoder.typepad.com/blog/2015/12/retrieving-wall-openings-and-sorting-points.html)
-- [Wall opening profiles](http://thebuildingcoder.typepad.com/blog/2015/12/wall-opening-profiles-and-happy-holidays.html#3)
-- [Determining wall opening areas per room](http://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-opening-areas-per-room.html#4)
-- [More on wall opening areas per room](http://thebuildingcoder.typepad.com/blog/2016/04/more-on-wall-opening-areas-per-room.html)
-- [Two energy model types](http://thebuildingcoder.typepad.com/blog/2017/01/family-category-and-two-energy-model-types.html#3)
+- [Opening geometry](0699_opening_geometry.htm)
+- [The temporary transaction trick for gross slab data](0851_gross_slab_boundary.htm)
+- [Retrieving wall openings and sorting points](1387_wall_openings.html)
+- [Wall opening profiles](1389_wall_opening_profiles.html#3)
+- [Determining wall opening areas per room](1423_wall_opening_areas.html#4)
+- [More on wall opening areas per room](1424_wall_opening_areas.html)
+- [Two energy model types](1521_wall_opening_areas.html#3)
 
 
 #### <a name="3"></a>Setting Copy Local to False Resolves AddIn Manager Issue
@@ -107,5 +107,5 @@ How to disable it, please?
 Many thanks to Fair59 for this solution and important note in general.
 
 We have in fact pointed out the need
-to [set `Copy Local` to `false`](http://thebuildingcoder.typepad.com/blog/2011/08/set-copy-local-to-false.html) numerous
+to [set `Copy Local` to `false`](0634_copy_local_false.htm) numerous
 times in the past...

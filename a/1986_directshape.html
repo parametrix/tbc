@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
@@ -40,7 +70,8 @@
       }
     }
   </style>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
     @keyframes spin {
@@ -123,7 +154,7 @@ Basically, I would like to know how to modify the elements inside the existing D
 <p><strong>Answer:</strong> What is your use case?
 Because, another approach would just be to create a new DirectShapeType to replace the old one and update all existing references to it from the old to the new.
 Here are our articles so far
-on <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.50">various aspects of using direct shapes</a>.</p>
+on <span class="unavailable-link">various aspects of using direct shapes</span>.</p>
 <p><strong>Response:</strong> We are making our doors in the project with DirectShapeType and then instantiating it.
 It's much faster than creating a door family first.
 Creating a new DirectShapeType in our case won't work, because then the name would have to be different.
@@ -187,9 +218,9 @@ They are part of the Revit installation and live in the same folder as Revit.exe
 In your development environment, you should set the 'Copy Local' property on all Revit API assemblies to 'false' to ensure that they are not copied into your distribution package.
 Your add-in should (and must) use the Revit API assemblies provided (and already loaded) by Revit:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/06/export-family-instance-to-gbxml.html" target="_blank" rel="noopener">Export Family Instance to gbXML</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/08/set-copy-local-to-false.html" target="_blank" rel="noopener">Set Copy Local to False</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/06/copy-local-false-and-ifc-utils-for-wall-openings.html" target="_blank" rel="noopener">Copy Local False and IFC Utils for Wall Openings</a></li>
+<li><a href="0159_export_instance_to_gbxml.htm"" target="_blank" rel="noopener">Export Family Instance to gbXML</a></li>
+<li><a href="0634_copy_local_false.htm"" target="_blank" rel="noopener">Set Copy Local to False</a></li>
+<li><a href="1572_ifc_utils_openings.html"" target="_blank" rel="noopener">Copy Local False and IFC Utils for Wall Openings</a></li>
 </ul>
 
 <p>So, it is best practice to not include the <code>RevitAPI.dll</code> or other dll file included in Revit with your release.</p>
@@ -248,3 +279,11 @@ She now attends the University of Dundee, where she studies applied computing.</
 <p></center></p>
 <p>I happened upon it reading the more exhaustive GitHub article
 <a href="https://github.com/readme/featured/open-source-accessibility">from gaming with your eyes to coding with AI: new frontiers for accessibility</a>.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

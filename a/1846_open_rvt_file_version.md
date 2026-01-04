@@ -124,8 +124,8 @@ Actually, what you show in the screen snapshot is the external application RvtSa
 The problem is probably caused by incorrect paths to the samples being specified in `RvtSamples.txt`.
 
 I have run into similar issues many times over in the past, e.g., most lately,
-[compiling the Revit 2021 SDK samples](https://thebuildingcoder.typepad.com/blog/2020/05/compiling-the-revit-2021-sdk-samples.html) and
-[setting up RvtSamples for Revit 2021](https://thebuildingcoder.typepad.com/blog/2020/05/setting-up-rvtsamples-for-revit-2021.html).
+[compiling the Revit 2021 SDK samples](1843_compile_2021_sdk.html) and
+[setting up RvtSamples for Revit 2021](1844_rvtsamples_2021.html).
 
 You can check out those two posts and 
 the [numerous descriptions of various problems encountered compiling the Revit SDK](https://www.google.com/search?q=compiling+sdk+samples&as_sitesearch=thebuildingcoder.typepad.com)
@@ -143,10 +143,10 @@ Determining the Revit version that saved an RVT file stored in the OS file syste
 
 It can be handled using the [BasicFileInfo class](https://www.revitapidocs.com/2020/475edc09-cee7-6ff1-a0fa-4e427a56262a.htm),
 as explained in several places, e.g., the discussion
-on [basic file info and RVT file version](https://thebuildingcoder.typepad.com/blog/2013/01/basic-file-info-and-rvt-file-version.html).
+on [basic file info and RVT file version](0887_rvt_file_version.htm).
 
 Vin Gallo now shared a new utility making use of that functionality in
-his [recent comment](https://thebuildingcoder.typepad.com/blog/2013/01/basic-file-info-and-rvt-file-version.html#comment-4927991760) on
+his [recent comment](0887_rvt_file_version.htm#comment-4927991760) on
 that article:
 
 > I've written a small app that opens any RVT file in the correct Revit version, simply by double-clicking the file in Windows Explorer.
@@ -183,7 +183,7 @@ Finally, a short note on giving and taking:
 
 This doesn't just apply to developers, by the way, but to BIM experts as well,
 cf. [Håvard Vasshaug on Learning Dynamo and Sharing Content
-](https://thebuildingcoder.typepad.com/blog/2015/09/sharing-dynamo-and-a-chinese-book.html#2).
+](1359_share_learn_book.html#2).
 
 I love and believe in sharing and open source, cf. my
-old [Book Recommendation: *The Cathedral and the Bazaar*](https://thebuildingcoder.typepad.com/blog/2011/09/revit-ifc-exporter-released-as-open-source.html#4).
+old [Book Recommendation: *The Cathedral and the Bazaar*](0649_ifc_export_open_src.htm#4).

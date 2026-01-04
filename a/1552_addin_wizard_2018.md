@@ -27,7 +27,7 @@ Just hit F5 to start debugging; the add-in manifest is installed, Revit launched
 ### Revit 2018 Visual Studio .NET Add-in Wizards
 
 I updated
-the [Visual Studio Revit C# and VB add-in templates](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20) for
+the Visual Studio Revit C# and VB add-in templates *(link unavailable)* for
 Revit 2018.
 
 They enable you to create a new C# or VB Revit add-in in Visual Studio with one single click on File &gt; New &gt; Project... &gt; Visual Basic/Visual C# &gt; Revit 2018 Addin:
@@ -47,7 +47,7 @@ You can see it in action in this two-and-a-half-minute [Revit 2018 C# and VB .NE
 </center>
 
 Please refer to 
-the [Visual Studio Revit add-in wizards topic group](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20) for 
+the Visual Studio Revit add-in wizards topic group *(link unavailable)* for 
 further information on usage, customising the templates for your own needs and migrations in previous years.
 
 

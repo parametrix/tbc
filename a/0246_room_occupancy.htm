@@ -1,12 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Room Occupancy</h3>
 
 <p>Shifali asked a 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/new-2010-events.html#comment-6a00e553e1689788330120a6ab278e970c">
+<a href="0129_new_2010_events.htm#comment-6a00e553e1689788330120a6ab278e970c">
 question</a> on 
 
 reading and writing the room occupancy:
@@ -19,7 +50,7 @@ Moreover, we get the Room elements of the document but we need to store the occu
 
 <p><strong>Answer:</strong> I started by looking at the room occupancy issue, and found that this is actually very simple and straightforward and has been covered in numerous previous posts dealing with the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/exploring-element-parameters.html">
+<a href="0042_exploring_param.htm">
 exploration of element parameters</a>.
 
 Still, since this is a very typical and recurring issue, I will happily revisit it.
@@ -31,10 +62,10 @@ I entered an arbitrary string value there in order to start exploring how to acc
 
 <p>Next, I start up 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/rvtmgddbg.html">
+<a href="0101_rvtmgddbg.htm">
 RvtMgdDbg</a>
 
-(<a href="http://thebuildingcoder.typepad.com/blog/2009/10/rvtmgddbg-for-revit-2010.html">for 2010</a>)
+(<a href="0238_rvtmgddbg_2010.htm">for 2010</a>)
 
 and use that to look at the room element parameters through the API via Add-Ins > RvtMgdDbg > Snoop Current Selection... > Parameters > Occupancy.
 It shows the same string I just entered, so I seem to have found the required data.
@@ -44,7 +75,7 @@ The built-in parameter can be determined by using the Built-in Enums Snoop or Bu
 
 <p>I can also look at the element parameters and see the associated built-in parameters using the Revit API introduction labs
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/deeper-parameter-exploration.html">
+<a href="0118_deeper_param_exploration.htm">
 built-in parameter checker</a>.
 
 <p>Both of these tools show me that the parameter is string valued and read-write, so there should be no problem modifying it.
@@ -180,7 +211,7 @@ The former is an object, the latter displays a value kOffice.
 <p>So obviously there is no problem accessing this data either.
 gbXMLParamElem is one of the classes defined by the Revit API and can be accessed using the standard Revit 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/03/filter-for-a-family.html">
+<a href="0115_filter_for_family.htm">
 element filters</a>, 
 
 for instance.
@@ -190,3 +221,12 @@ The desired properties are both members of this class:
 <li>BuildingConstruction returns the Project Information Building Construction object. 
 <li>BuildingType gets or sets the Project Information Building Type.
 </ul>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

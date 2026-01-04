@@ -38,7 +38,7 @@ The Revit 2019 SDK has now been properly and completely published.
 
 I pointed out
 the [direct `REVIT_2019_SDK.msi` download link](http://download.autodesk.com/us/revit-sdk/REVIT_2019_SDK.msi) for the SDK when
-describing [installing the Revit 2019 SDK April update](http://thebuildingcoder.typepad.com/blog/2018/05/installing-the-revit-2019-sdk-april-update.html)
+describing [installing the Revit 2019 SDK April update](1655_revit_2019_sdk_apr.html)
 
 Now it also appears in its proper location in
 the [Revit Developer Centre](http://autodesk.com/developrevit)

@@ -128,7 +128,7 @@ Basically, I would like to know how to modify the elements inside the existing D
 **Answer:** What is your use case?
 Because, another approach would just be to create a new DirectShapeType to replace the old one and update all existing references to it from the old to the new.
 Here are our articles so far
-on [various aspects of using direct shapes](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.50).
+on various aspects of using direct shapes *(link unavailable)*.
 
 **Response:** We are making our doors in the project with DirectShapeType and then instantiating it.
 It's much faster than creating a door family first.

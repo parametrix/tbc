@@ -73,7 +73,7 @@ on an [issue with SDK and Visual Studio](https://forums.autodesk.com/t5/revit-ap
 pointed out that the Visual Studio templates provided with the REX SDK to make use of the Revit Structure Extensions had not yet been updated for Revit 2019.
 
 That was fixed by the development team and
-an [updated set of REX SDK Visual Studio templates for Revit Structure 2019](https://thebuildingcoder.typepad.com/blog/2018/06/rex-sdk-visual-studio-templates-for-revit-structure-2019.html#2) was
+an [updated set of REX SDK Visual Studio templates for Revit Structure 2019](1665_rex_sdk_vs_2019.html#2) was
 shared in the forum and here on the blog.
 
 The same situation arose again with Revit 2020, and here are the updated templates, samples and documentation for Revit 2020:
@@ -95,9 +95,9 @@ Thank you for providing the updates! I'm glad to have begun my journey down this
 #### <a name="3"></a> Revit.Async
 
 Last month, we briefly looked at a
-simple [`async` and `await` external event wrapper](https://thebuildingcoder.typepad.com/blog/2020/02/external-communication-and-async-await-event-wrapper.html#2).
+simple [`async` and `await` external event wrapper](1817_async_await.html#2).
 
-Kennan Chen kindly reacted to that post in a [comment](https://thebuildingcoder.typepad.com/blog/2020/02/external-communication-and-async-await-event-wrapper.html#comment-4813648335),
+Kennan Chen kindly reacted to that post in a [comment](1817_async_await.html#comment-4813648335),
 saying:
 
 > What a coincidence.

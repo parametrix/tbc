@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>RevitLookup and TextNote Alignment</h3>
@@ -11,13 +42,13 @@ While doing so, however, I ran into yet another 2011 related issue concerning Re
 
 <p>Both I and many others have repeatedly extolled the virtues of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/rvtmgddbg.html">RvtMgdDbg</a>,
+<a href="0101_rvtmgddbg.htm">RvtMgdDbg</a>,
 
 the Revit database exploration and snooping tool.
 The in-depth description above is based on the version for Revit 2009.
 A 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/10/rvtmgddbg-for-revit-2010.html">version for Revit 2010</a> is 
+<a href="0238_rvtmgddbg_2010.htm">version for Revit 2010</a> is 
 
 also available.
 One issue with this tool in the past has been that although it is an invaluable and irreplaceable debugging and exploration tool, it has been developed and managed by a separate team.
@@ -61,3 +92,12 @@ TextAlignFlags.TEF_ALIGN_BOTTOM = 2048
 
 <p>You can thus extract the integer value of the TEXT_ALIGN_VERT parameter on the TextNote object and use it to recreate an equivalent new object with the same vertical alignment via the NewTextNote method.
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

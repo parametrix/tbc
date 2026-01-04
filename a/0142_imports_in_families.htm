@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -10,12 +40,12 @@
 <p>I will have left on vacation once again by the time this is posted.
 In case you  wonder why I am on vacation so much, the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/03/back-again.html">
+<a href="0112_back_again.htm">
 trip to Italy</a>
 
 in March and the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/03/more-questions.html">
+<a href="0113_more_questions.htm">
 wonderful experiences</a>
 
 I had there were actually to use up last year's contingent.
@@ -46,14 +76,14 @@ How hard do you think it would be to put together a quick bit of code that would
 
 <ol type="a">
 <li>Iterate over all family definitions in a project.
-<li>For each family definition, identify if there are any ëimport symbolsí, i.e., imported DWG, SAT, DXF and other non-native Revit geometry?
+<li>For each family definition, identify if there are any ÔøΩimport symbolsÔøΩ, i.e., imported DWG, SAT, DXF and other non-native Revit geometry?
 </ol>
 
 <p>The reason I ask is that performance is degraded if very complex geometry is imported.
 Some complaints about performance were caused by such complex imported geometry.
 
-<p>I have an example demonstrating slow graphics generation in a mechanical view with an ëoffendingí family.
-It takes more than 30 seconds to zoom in on the area with the ëbadí family.
+<p>I have an example demonstrating slow graphics generation in a mechanical view with an ÔøΩoffendingÔøΩ family.
+It takes more than 30 seconds to zoom in on the area with the ÔøΩbadÔøΩ family.
 In the family editor, one can see that there is an imported DXF symbol at that location.
 If you return to the project and delete the offending family instances, the zoom is nearly instantaneous.
 
@@ -61,7 +91,7 @@ If you return to the project and delete the offending family instances, the zoom
 I am hoping there is a simple way to check families using the API, instead of the rote manual inspection method I have relied on so far.
 
 <p>Do you think you could bang something together on this?
-Iíve got another large customer dataset to wade through, and was hoping for some help!</p>
+IÔøΩve got another large customer dataset to wade through, and was hoping for some help!</p>
 
 <p><strong>Answer:</strong>
 This is not at all hard to do.
@@ -168,9 +198,9 @@ Here is the source code of its Execute method:</p>
 <p>After some initial testing, Martin came up with two requests for improvement:</p>
 
 <ul>
-<li>One thing Iím wondering about is that a family can have families nested in it. Have you considered that?</li>
-<li>In the attached project, the ëDuplex Receptacleí family has a nested ëAnnotation Symbolí called ëDuplex Annotationí.
-That ëDuplex Annotationí has a DWG nested in it.
+<li>One thing IÔøΩm wondering about is that a family can have families nested in it. Have you considered that?</li>
+<li>In the attached project, the ÔøΩDuplex ReceptacleÔøΩ family has a nested ÔøΩAnnotation SymbolÔøΩ called ÔøΩDuplex AnnotationÔøΩ.
+That ÔøΩDuplex AnnotationÔøΩ has a DWG nested in it.
 How can one inspect the annotation symbol for imports?</li>
 </ul>
 
@@ -331,3 +361,12 @@ Family 'Duplex Receptacle' contains 0 import instances.
 version 1.1.0.33</a>
 
 of the complete Visual Studio solution with the new command.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

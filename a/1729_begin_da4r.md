@@ -38,7 +38,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 
 Several people have recently asked how to get started
 with [Forge](https://forge.autodesk.com)
-[Design Automation for Revit or DA4R](https://thebuildingcoder.typepad.com/blog/2018/11/forge-design-automation-for-revit-at-au-and-in-public.html).
+[Design Automation for Revit or DA4R](1701_da4r_au.html).
 
 I will not get into any nitty-gritty details, since they are well covered by
 the [Forge Design Automation API documentation](https://forge.autodesk.com/api/design-automation-cover-page).
@@ -73,10 +73,10 @@ My goal is to connect my existing structural analysis application with the BIM.
 API [`AnalyticalModel` class](https://apidocs.co/apps/revit/2019/b4466cf0-0fa0-1f67-d442-fdf0fb073fc9.htm).
 
 The Revit SDK includes lots of Revit Structure specific material, e.g., some structure-specific information in the *Revit Structure* subfolder and a bunch of samples in the *Structural Analysis SDK*, including
-the [structural extensions, REX and results builder](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.54).
+the structural extensions, REX and results builder *(link unavailable)*.
 
 Many discussions on Revit Structure specific issues are listed
-in [The Building Coder `rst` tag](https://thebuildingcoder.typepad.com/blog/rst).
+in The Building Coder `rst` tag *(link unavailable)*.
 
 **Response:** Thank you very much for this.
 
@@ -95,9 +95,9 @@ My favourite minimal roundtrip RVT data extraction, cloud storage, and reintegra
 #### <a name="3"></a> Implementing a DA4R RVT Round Trip
 
 **Question:** I am working on a proof of concept for a Forge app providing functionality similar to
-the [RvtMetaProp roundtrip properties](http://thebuildingcoder.typepad.com/blog/2017/09/use-forge-or-spreadsheet-to-create-shared-parameters.html) and
+the [RvtMetaProp roundtrip properties](1583_rvtmetaprop.html) and
 other implementations roundtripping data between a RVT BIM and cloud or Forge, cf. 
-the [sample overview connecting desktop BIM and cloud](http://thebuildingcoder.typepad.com/blog/2017/10/rational-bim-programming-at-au-darmstadt.html#5).
+the [sample overview connecting desktop BIM and cloud](1593_rat_bim_programming.html#5).
 
 This time, however, I would like to use Forge Design Automation for Revit to implement the transforms and the RVT BIM updating step.
 
@@ -118,7 +118,7 @@ Hopefully not :)
 The most important point for you as a programmer is: the Revit API is 100% event driven.
 
 First, take a look at 
-the [getting started material](https://thebuildingcoder.typepad.com/blog/about-the-author.html#2).
+the getting started material *(link unavailable)*.
 
 Then you can check out my
 new [IfcSpaceZoneBoundaries add-in](https://github.com/jeremytammik/IfcSpaceZoneBoundaries).
@@ -180,8 +180,8 @@ To my great despair the error message still shows up ... any suggestions?
 
 **Answer:** The easiest may be to implement a warning swallower like I did for the stairs example:
 
-- [Swallowing StairsAutomation warnings](http://thebuildingcoder.typepad.com/blog/2018/09/swallowing-stairsautomation-warnings.html)
-- [Auto-run an add-in for Design Automation](http://thebuildingcoder.typepad.com/blog/2018/09/auto-run-an-add-in-for-design-automation.html)
+- [Swallowing StairsAutomation warnings](1689_automation_warnings.html)
+- [Auto-run an add-in for Design Automation](1690_convert_addin_da4r.html)
 
 **Response:** This is what I ended up doing.
 

@@ -178,7 +178,7 @@ on [`Document.MakeTransientElements`](https://forums.autodesk.com/t5/revit-api-f
 in case you are interested in taking a further look yourself.
 
 Just for the sake of completeness, some other officially supported approaches to display non-BIM-geometry
-include [AVF](https://thebuildingcoder.typepad.com/blog/avf),
+include AVF *(link unavailable)*,
 DirectContext3D and, new in Revit 2022, 
 the [temporary incanvas graphics API](#4) (below).
 
@@ -206,7 +206,7 @@ I have not explored the direct context 3D functionality myself yet, but here are
 
 Bobby the [3rd Dimension Developer](https://www.youtube.com/channel/UCPCZ59KhJ4XrdkHgzmhZXKA/about) shared a video tutorial on
 making use of
-the new Revit 2022 [temporary in-canvas graphics](https://thebuildingcoder.typepad.com/blog/2021/04/whats-new-in-the-revit-2022-api.html#4.2.8.1) functionality in his thread
+the new Revit 2022 [temporary in-canvas graphics](1903_whats_new_2022.html#4.2.8.1) functionality in his thread
 on [temporary incanvas graphics image colors](https://forums.autodesk.com/t5/revit-api-forum/temporary-incanvas-graphics-image-colors/m-p/10318210)
 
 > I created a [video on the awesome new Temporary InCanvas Graphics API](https://youtu.be/ekLz54hLcHc).
@@ -231,7 +231,7 @@ on [creating project parameter (not shared parameter)](https://forums.autodesk.c
 
 ####<a name="6"></a> Direct PDF Export and DA4R
 
-The Revit 2022 API provides [built-in direct export to PDF functionality](https://thebuildingcoder.typepad.com/blog/2021/04/whats-new-in-the-revit-2022-api.html#4.2.3).
+The Revit 2022 API provides [built-in direct export to PDF functionality](1903_whats_new_2022.html#4.2.3).
 
 This new functionality obviously enables
 the [Forge Design Automation API for Revit 2022 now to support exporting to PDF directly](https://forge.autodesk.com/blog/design-automation-revit-2022-now-support-exporting-pdf-directly),

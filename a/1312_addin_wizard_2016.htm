@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- #revitapi #aecdev #bim #revit #revit2016 -->
@@ -34,13 +65,13 @@
 <p>To ensure that it is also picked up by web searches, I published it here on The Building Coder, together with the analogue information for previous releases:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2010-api.html">What's New in the Revit 2010 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2011-api.html">What's New in the Revit 2011 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2012-api.html">What's New in the Revit 2012 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/03/whats-new-in-the-revit-2013-api.html">What's New in the Revit 2013 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html">What's New in the Revit 2014 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html">What's New in the Revit 2015 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html">What's New in the Revit 2016 API</a></li>
+<li><a href="0901_whats_new_2010.htm">What's New in the Revit 2010 API</a></li>
+<li><a href="0902_whats_new_2011.htm">What's New in the Revit 2011 API</a></li>
+<li><a href="0903_whats_new_2012.htm">What's New in the Revit 2012 API</a></li>
+<li><a href="0904_whats_new_2013.htm">What's New in the Revit 2013 API</a></li>
+<li><a href="0938_whats_new_2014.htm">What's New in the Revit 2014 API</a></li>
+<li><a href="1141_whats_new_2015.htm">What's New in the Revit 2015 API</a></li>
+<li><a href="1311_whats_new_2016.htm">What's New in the Revit 2016 API</a></li>
 </ul>
 
 <!--
@@ -72,10 +103,10 @@ Can you confirm if the 2016 Revit API broke text vertical alignment?</p>
 <p><strong>Answer:</strong> As underlined above, the first place to look for hints on how to resolve migration problems is to search the What's New section of the Revit API help.</p></p>
 
 <p>In this case,
-<a href="http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html">
+<a href="1311_whats_new_2016.htm">
 What's New in the Revit 2016 API</a> provides
 the following information on
-<a href="http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html#4.02">
+<a href="1311_whats_new_2016.htm#4.02">
 TextNote and Leader API behavior and interface changes</a>:</p>
 
 <ul>
@@ -106,11 +137,11 @@ TextNote and Leader API behavior and interface changes</a>:</p>
 </center>
 
 <p>The 2016 versions generate the same boilerplate snippets as the reliable old
-<a href="http://thebuildingcoder.typepad.com/blog/2013/05/add-in-wizards-for-revit-2014-1.html">
+<a href="0944_addin_wizard_2014.htm">
 Revit 2014</a>
-(<a href="http://thebuildingcoder.typepad.com/blog/2013/06/sun-direction-shadow-calculation-and-wizard-update.html#2">updated</a>)
+(<a href="0969_sun_direct_shadow.htm#2">updated</a>)
 and
-<a href="http://thebuildingcoder.typepad.com/blog/2014/05/add-in-wizards-for-revit-2015.html">
+<a href="1151_addin_wizard_2015.htm">
 Revit 2015</a> ones did.
 Simply delete the parts that you do not need.</p>
 
@@ -130,54 +161,54 @@ Simply delete the parts that you do not need.</p>
 
 <ul>
 <li>
-<a href="http://thebuildingcoder.typepad.com/blog/2010/07/devtv-addin-templates.html">
+<a href="0415_devtv_addin_templates.htm">
 Original introduction, benefits, and usage example</a> for C# and VB.
 
 <li>Personalised
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/revit-2011-devtv.html#2">
+<a href="0451_revit_2011_devtv.htm#2">
 minimal C# version</a> for Revit 2011.
 
 <li>A short additional
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/snow-and-woe-with-manifest-files.html">
+<a href="0498_snow_and_woe.htm">
 usage note</a>.
 
 <li>
-<a href="http://thebuildingcoder.typepad.com/blog/2011/01/automate-designoption-and-64-bit-add-in-templates.html#2">
+<a href="0523_ui_auto_design_option.htm#2">
 64-bit versions</a> for C# and VB.
 
 <li>Support for the
-<a href="http://thebuildingcoder.typepad.com/blog/2011/04/visual-studio-add-in-wizards-for-revit-2012.html">
+<a href="0569_addin_wizard.htm">
 Revit 2012 API</a> for
 
 C# and VB.
 
 <li>Updated C# and VB versions placing the
-<a href="http://thebuildingcoder.typepad.com/blog/2011/10/product-and-add-in-wizard-updates.html#3">
+<a href="0662_addin_wizard_2012_ur2.htm#3">
 assembly DLL alongside the add-in manifest</a>.
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/04/add-in-wizard-for-revit-2013.html">
+<li><a href="0749_addin_wizard_2013.htm">
 Revit 2013 C#</a> version including more skeleton code.</li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/06/update-api-assembly-references-and-wizards.html#4">
+<li><a href="0793_update_2013.htm#4">
 Revit 2013 VB</a> version.</li>
 
 <li>C# and VB
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/05/add-in-wizards-for-revit-2014-1.html">
+<a href="0944_addin_wizard_2014.htm">
 add-in wizards for Revit 2014</a>.</li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/sun-direction-shadow-calculation-and-wizard-update.html#2">
+<li><a href="0969_sun_direct_shadow.htm#2">
 Wizard update</a>
 
 suppressing the processor architecture mismatch warning and referring to Revit Onebox instead of the architectural flavour.</li>
 
 <li>Wizard generating a
-<a href="http://thebuildingcoder.typepad.com/blog/2013/11/multi-version-visual-studio-revit-add-in-wizard.html">
+<a href="1059_multi_version_wizard.htm">
 multi-version add-in</a>  supporting
 
 both Revit 2013 and 2014.</li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/05/add-in-wizards-for-revit-2015.html">
+<li><a href="1151_addin_wizard_2015.htm">
 Add-in wizards for Revit 2015</a>.</li>
 
 </ul>
@@ -208,7 +239,7 @@ The add-in is compiled, Revit is started up, the add-in is loaded, you can selec
 
 <p>The new command even executes in zero document state, although the default external command skeleton implementation throws an exception trying to access a property on the current UI document, which is null.
 This is easy to fix in case you need a
-<a href="http://thebuildingcoder.typepad.com/blog/2011/02/enable-ribbon-items-in-zero-document-state.html">
+<a href="0538_zero_doc_ribbon.htm">
 zero document state external command</a>.
 You can use this anyway to immediately check that everything is working correctly.</p>
 
@@ -243,3 +274,12 @@ You can use this anyway to immediately check that everything is working correctl
 <p>I hope you find this useful and look forward to hearing any suggestions for improvements you come up with.</p>
 
 <p>Better still, implement them yourself and let us know where to pick them up  :-)</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

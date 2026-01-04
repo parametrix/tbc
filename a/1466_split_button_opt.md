@@ -30,7 +30,7 @@ Perhaps this idea might be usable for others.
 The `StackButton` ribbon control is a stack of different `PushButton` instances where the last used `PushButton` remains visible to be used again. That visible button is reflected in the stack button's `CurrentButton` property. Imagine if the `StackButton` control always shows the first button in the stack, and the other button(s) are secondary to the first button's purpose.
  
 Using the call-back concept described in The Building Coder suggestion 
-to [roll your own toggle button](http://thebuildingcoder.typepad.com/blog/2012/11/roll-your-own-toggle-button.html), you can have the second `Pushbutton` in a two-button `StackButton` reset the current button property back to that of the first button. Therefore, this `StackButton` item always shows and activates the first button's action on its button face, but also has a secondary option to invoke a settings manager activated by the second button.
+to [roll your own toggle button](0857_toggle_button.htm), you can have the second `Pushbutton` in a two-button `StackButton` reset the current button property back to that of the first button. Therefore, this `StackButton` item always shows and activates the first button's action on its button face, but also has a secondary option to invoke a settings manager activated by the second button.
  
 Set the first button in the button stack to your add-in command of choice. Set the second button in the button stack to show a Windows Forms or WPF window to be the first button's settings manager. Have the settings communicated through the add-in's Properties.Settings. The first button's command reads the current settings prior to acting. The second button's actions reads, sets and saves the settings the first button uses. It ends with a call-back function that resets the StackButton's current button to the first button in the stack. These settings would also persist between Revit sessions.
  
@@ -110,7 +110,7 @@ Many thanks again to Allan, have fun yourself, and please wish me and Kean lots 
 #### <a name="2"></a>Addendum &ndash; Simpler Solution
 
 Please do not overlook the much simpler solution to this task provided directly by the Revit API and pointed out in
-the [comment](http://thebuildingcoder.typepad.com/blog/2016/09/stacked-ribbon-button-panel-options.html#comment-2880240616) below by Ehsan Iran Nejad:
+the [comment](1466_split_button_opt.html#comment-2880240616) below by Ehsan Iran Nejad:
 
 > Or you can just set the `RibbonItem.IsSynchronizedWithCurrentItem` to `False` after creating the `SplitButton`. The first button will be fixed and all the other buttons can only be used from the dropdown menu.
 

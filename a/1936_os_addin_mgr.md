@@ -79,13 +79,13 @@ Comments on LinkedIn:
 - It's great to see advancements on the development of this tool, thank you!
 - Yes, only make the tool support developer better, anyway we still need a tool that programmers all over the world can modify and ask for ideas.
 - Add-in manager became less useful with the hot-reload feature of the latest release of Visual Studio,
-[apply code changes](https://thebuildingcoder.typepad.com/blog/2021/10/localised-forge-intros-and-apply-code-changes.html#4).
+[apply code changes](1920_apply_code_changes.html#4).
 I had some ideas on improving it a while ago, but when the project got bigger it appeared more reasonable an actually not-that-hard to use standard way to debug Revit plugins.
 
 By the way, I have started to use the <i>apply code changes</i> method now as well.
 It works fine and I love it.
 Reminds me of the good all days
-with [edit and continue](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.49),
+with edit and continue *(link unavailable)*,
 which worked just a smoothly back then.
 
 ####<a name="4"></a> FormulaManager and Scripting Support 

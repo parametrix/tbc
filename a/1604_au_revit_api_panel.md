@@ -50,11 +50,11 @@ Interact with a panel of Revit API experts to answer your questions and discuss 
 
 Here are some notes from previous similar Revit API panel sessions:
 
-- [SD5156 &ndash; The Revit API Expert Panel at Autodesk University 2014](http://thebuildingcoder.typepad.com/blog/2014/12/the-revit-api-panel-at-autodesk-university.html#1)
-- [Revit Technology Conference RTC Europe 2015](http://thebuildingcoder.typepad.com/blog/2015/11/rtc-budapest-and-the-revit-api-panel.html#5)
-- [SD10181 &ndash; Revit API Expert Roundtable at Autodesk University 2015](http://thebuildingcoder.typepad.com/blog/2015/12/au-keynote-and-revit-api-panel.html#9)
-- [RTC Revit Technology Conference Europe 2016](http://thebuildingcoder.typepad.com/blog/2016/10/rtc-revit-api-panel-idea-station-edit-and-continue.html)
-- [SD20891 &ndash; Autodesk University 2016](http://thebuildingcoder.typepad.com/blog/2016/11/au-day-two-ifc-and-revit-api-panel.html#4)
+- [SD5156 &ndash; The Revit API Expert Panel at Autodesk University 2014](1254_au_revit_api_panel.htm#1)
+- [Revit Technology Conference RTC Europe 2015](1370_rtc_revit_api_panel.html#5)
+- [SD10181 &ndash; Revit API Expert Roundtable at Autodesk University 2015](1380_au2015_day_1.html#9)
+- [RTC Revit Technology Conference Europe 2016](1488_revit_api_panel.html)
+- [SD20891 &ndash; Autodesk University 2016](1499_au_two_ifc.html#4)
 
  
 ####<a name="4"></a>Panel Members

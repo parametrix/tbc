@@ -76,7 +76,7 @@ If you need to define the identifier yourself, then do so.
 
 You cannot expect Revit or any other software to generate a GUID according to your specification.
 
-An example of generating and storing your own GUID to identify a project that could also be used for individual BIM elements is given by the [named GUID storage for project identification](https://thebuildingcoder.typepad.com/blog/2016/04/named-guid-storage-for-project-identification.html).
+An example of generating and storing your own GUID to identify a project that could also be used for individual BIM elements is given by the [named GUID storage for project identification](1422_named_guid_storage.html).
 
 **Response:** We need it for IFC export.
 In our workflow, we have a master database from which we need to generate and re-generate objects in Revit.
@@ -140,5 +140,5 @@ If then the IFC is exported again later, the exporter should read this instance 
 Many thanks (again and again) to Richard for sharing his inexhaustible experience and providing so many great solutions!
 
 By the way, this was also explained by The Building Coder in 2015,
-on [accessing the IFC GUID of an imported wall](http://thebuildingcoder.typepad.com/blog/2015/06/ifc-guid-access-life-span-and-cloning-of-geometry.html#3).
+on [accessing the IFC GUID of an imported wall](1337_lifespan_clone_face.htm#3).
 

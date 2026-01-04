@@ -115,7 +115,7 @@ If you are only interested in solid geometry, you might compare simple incomplet
 - Use a full-blown Boolean operation to determine exact equality
 
 Long ago, I
-suggested [defining your own key for comparison purposes](https://thebuildingcoder.typepad.com/blog/2012/03/great-ocean-road-and-creating-your-own-key.html#2).
+suggested [defining your own key for comparison purposes](0739_create_own_key.htm#2).
 
 Furthermore, when comparing objects, .NET differentiates between equality operators and sorting comparison operators.
 
@@ -143,7 +143,7 @@ A more useful and powerful comparison method answers the question ‘is one of t
 Such methods are needed for sorting objects, for instance, in order to use them as keys in a dictionary.
 
 I defined a comparison operator for `XYZ` points like this 
-for [tracking element modification](https://thebuildingcoder.typepad.com/blog/2016/01/tracking-element-modification.html#5.1):
+for [tracking element modification](1397_track_changes.html#5.1):
 
 <pre class="code">
   public static bool IsZero(
@@ -188,7 +188,7 @@ for [tracking element modification](https://thebuildingcoder.typepad.com/blog/20
 As you see, you start from the most basic property data types, e.g., int, double, string, and then build up further and further to achieve all you need.
 
 We recently discussed a more complex `IComparer` implementation to compare column marks, `ColumnMarkComparer`, 
-for [replicating schedule sort order](https://thebuildingcoder.typepad.com/blog/2019/11/dll-conflicts-and-replicating-schedule-sort-order.html#4).
+for [replicating schedule sort order](1799_dll_hell_schedule_sort.html#4).
 
 That shows how you can concatenate any number of different comparisons for all the different properties of interest to get a finer and finer distinguishing capability.
 

@@ -95,9 +95,9 @@ That enabled the first successful compilation, still producing a bunch of warnin
   &ndash; [190 projects succeeded, 0 errors and 36 warnings](zip/revit_2021_sdk_samples_errors_warnings_5.txt)
 
 Most of the warnings concern the
-ever-recurring [architecture mismatch issue](http://thebuildingcoder.typepad.com/blog/2013/06/processor-architecture-mismatch-warning.html)
+ever-recurring [architecture mismatch issue](0968_architecture_mismatch.htm)
 and can be resolved using
-my [DisableMismatchWarning.exe utility](http://thebuildingcoder.typepad.com/blog/2013/07/recursively-disable-architecture-mismatch-warning.html)
+my [DisableMismatchWarning.exe utility](0977_architecture_mismatch.htm)
 implemented back in 2013 and available from
 the [DisableMismatchWarning GitHub repository](https://github.com/jeremytammik/DisableMismatchWarning).
 I ran it individually on each of the projects causing the warning. The result is
@@ -113,8 +113,8 @@ I hope that I can persuade the development team to clean up the SDK before their
 ####<a name="3"></a> Reading the Value of a Parameter
 
 Talking about the Revit SDK samples, let's address another (even more) beginner's question, on reading the value of a parameter, raised in
-a [comment](https://thebuildingcoder.typepad.com/blog/2011/09/unofficial-parameters-and-bipchecker.html#comment-4905987898)
-on [unofficial parameters and BipChecker](https://thebuildingcoder.typepad.com/blog/2011/09/unofficial-parameters-and-bipchecker.html):
+a [comment](0656_unofficial_param.htm#comment-4905987898)
+on [unofficial parameters and BipChecker](0656_unofficial_param.htm):
 
 **Question:** I am trying to read the following parameters of a wall: volume and area.
 
@@ -123,7 +123,7 @@ I have been using `getparameter`, `get_parameter` and `lookupparameter`, but the
 Are there any tutorials, examples or links where I may get the answer?
 
 **Answer:** Reading the value of a parameter is a very basic and fundamental task in the Revit API, so it is covered in depth by
-the [getting started material](https://thebuildingcoder.typepad.com/blog/about-the-author.html#2).
+the getting started material *(link unavailable)*.
 
 Please work through that before doing anything else, if you have not done so already.
 
@@ -148,7 +148,7 @@ Once you have completed those preparations, reading those two parameter values c
 </pre>
 
 The age-old article
-discussing [compound wall layer volumes](https://thebuildingcoder.typepad.com/blog/2009/02/compound-wall-layer-volumes.html) shows
+discussing [compound wall layer volumes](0090_compound_wall_layer_volumes.htm) shows
 a practical example of retrieving those two values.
 
 <center>

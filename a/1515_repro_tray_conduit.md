@@ -68,7 +68,7 @@ Oh, yes, and I continued my research into deep learning for a Revit API question
 ####<a name="2"></a>Creating a Reproducible Case May Well Solve the Issue at Hand
 
 As said, I frequently ask for
-a [reproducible test case](http://thebuildingcoder.typepad.com/blog/about-the-author.html#1b) to
+a reproducible test case *(link unavailable)* to
 analyse when researching a problem report.
 
 It normally includes as many of the following items as possible:
@@ -116,9 +116,9 @@ I keep putting together and repeating variations of advice on that and would lik
 
 Here are some recent examples of my attempts so far:
 
-- [Getting started and changing the colour of a wall](http://thebuildingcoder.typepad.com/blog/2016/09/macromanager-materials-kiss-and-getting-started.html#4)
-- [Getting started and using the Visual Studio Revit Add-In wizard auto-installer](http://thebuildingcoder.typepad.com/blog/2016/09/macromanager-materials-kiss-and-getting-started.html#5)
-- [What happened to `LoadCaseArray`; how and where to search for help on a Revit API question?](http://thebuildingcoder.typepad.com/blog/2016/09/trusted-signature-motivation-and-fishing.html#3)
+- [Getting started and changing the colour of a wall](1469_macromanager.html#4)
+- [Getting started and using the Visual Studio Revit Add-In wizard auto-installer](1469_macromanager.html#5)
+- [What happened to `LoadCaseArray`; how and where to search for help on a Revit API question?](1465_trust_sign_fish.html#3)
 - [Access to line-based elements?](http://forums.autodesk.com/t5/revit-api-forum/access-to-line-based-elements/m-p/6569135)
 
 Now for yet another attempt to complete finalise this advice, from
@@ -152,7 +152,7 @@ In addition to these obvious searches, there are indeed several other levels of 
 I keep trying to create the ultimate complete list of them, and have not succeeded to my complete satisfaction so far.
  
 Let me expand
-on [my last attempt](http://thebuildingcoder.typepad.com/blog/2016/09/trusted-signature-motivation-and-fishing.html#3) based on what I recently said there and elsewhere:
+on [my last attempt](1465_trust_sign_fish.html#3) based on what I recently said there and elsewhere:
 
 ####<a name="3.3"></a>How to Research for a Revit API Solution
 
@@ -161,7 +161,7 @@ on [my last attempt](http://thebuildingcoder.typepad.com/blog/2016/09/trusted-si
     - [RevitLookup](https://github.com/jeremytammik/RevitLookup)
     - [BipChecker](https://github.com/jeremytammik/BipChecker)
     - [The element lister](https://github.com/jeremytammik/AdnRevitApiLabsXtra)
-    - [Other, more intimate Revit database exploration tools](http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html),  such as the Revit Python or Ruby shell
+    - [Other, more intimate Revit database exploration tools](1057_db_explor_python_sh.htm),  such as the Revit Python or Ruby shell
 3. Once you know what Revit API objects are required, learn how to access, manipulate and drive them, their relationships and how they interact with each other:
     - Revit API help file `RevitAPI.chm` installed locally or [online at revitapidocs.com](http://www.revitapidocs.com) provides detailed info on classes, properties and methods.
     - [Revit online help](http://help.autodesk.com/view/RVT/2017/ENU) &gt; Developers &gt; [Revit API Developers Guide](http://help.autodesk.com/view/RVT/2017/ENU/?guid=GUID-F0A122E0-E556-4D0D-9D0F-7E72A9315A42) explains the Revit API usage in much more depth and provides invaluable background information.
@@ -186,8 +186,8 @@ Let's round off this discussion by pointing out an easy new solution to a previo
 The development team just pointed out to me that the wish list item I raised for Mark over a year ago has long been fulfilled, so I thought I would share that happy news here with you are well.
 
 Mark asked in
-a [comment](http://thebuildingcoder.typepad.com/blog/2011/09/transfer-project-standards.html#comment-2340822661)
-on [transferring project standards](http://thebuildingcoder.typepad.com/blog/2011/09/transfer-project-standards.html):
+a [comment](0650_transfer_project_standard.htm#comment-2340822661)
+on [transferring project standards](0650_transfer_project_standard.htm):
 
 **Question:** I would like to change or add conduit sizes in the MEP Electrical and Conduit settings through the Revit API.
 The `ElectricalSetting` class does not support Tray or Conduit settings.
@@ -200,18 +200,18 @@ Is there any Revit API that supports this, or any workaround for the issue?
 - `Autodesk.Revit.DB.Electrical.ConduitSettings`
 
 These two classes were also mentioned in the section
-on [Electrical API additions](http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html#3.14)
-in [What's New in the Revit 2017 API](http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html).
+on [Electrical API additions](1428_whats_new_2017.html#3.14)
+in [What's New in the Revit 2017 API](1428_whats_new_2017.html).
 
 
 ####<a name="5"></a>Getting Started Implementing a Question Answering System
 
 As I mentioned last month, I would like to experiment with
-an [automated system to answer the most common recurring questions on the Revit API](http://thebuildingcoder.typepad.com/blog/2016/10/ai-edit-and-continue.html#3),
+an [automated system to answer the most common recurring questions on the Revit API](1492_edit_continue.html#3),
 i.e., a [question answering](https://en.wikipedia.org/wiki/Question_answering) system or QAS.
 
 I started doings some basic fleeting research this week, skimming
-the [Internet literature on deep learning](http://thebuildingcoder.typepad.com/blog/2017/01/au-in-london-and-deep-learning.html#7).
+the [Internet literature on deep learning](1514_deep_learning.html#7).
 
 ####<a name="6"></a>First Impression from IBM Bluemix
 

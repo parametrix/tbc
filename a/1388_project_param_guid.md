@@ -700,7 +700,7 @@ Assuming the above rule holds true, all parameter definitions found within Docum
 That should get you motoring along.
 
 By the way I'd like to thank Jeremy for his blog post and code
-for [adding a category to a shared parameter binding](http://thebuildingcoder.typepad.com/blog/2012/04/adding-a-category-to-a-shared-parameter-binding.htm), which I used to cobble together a quick test rig for the binding.
+for adding a category to a shared parameter binding *(link unavailable)*, which I used to cobble together a quick test rig for the binding.
 
 **Response:** While it's unfortunate that we have to play games like this, the approach sounds utterly brilliant.  I had forgotten that the ProjectInformation object is effectively like a singleton &ndash; always exactly 1 element of it exists.
 

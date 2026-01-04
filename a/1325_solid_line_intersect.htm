@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <style type="text/css">p.en { font-style: italic; }</style>
 <!-- <script src="http://thebuildingcoder.typepad.com/google-code-prettify/run_prettify.js"></script>-->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -24,7 +55,7 @@ akn_include
 <h3>Geometry Creation and Line Intersection Exceptions</h3>
 
 <p>Today, let's look at some geometry related questions, a small enhancement of the
-<a href="http://thebuildingcoder.typepad.com/blog/2015/05/connecting-desktop-cloud-lines-and-grid-segments.html#3">
+<a href="1323_au_line_intersect.htm#3">
 line intersection</a> we discussed two days ago, NURB spline and solid creation:</p>
 
 <ul>
@@ -127,7 +158,7 @@ How can I move / turn solid objects that are formed by methods of the class Geom
 
 Happy to see you are exploring the Revit API.</p>
 
-<p>I hope you are aware that <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.41">the Revit API is very different</a> from many other APIs for non-parametric CAD systems:</p>
+<p>I hope you are aware that <span class="unavailable-link">the Revit API is very different</span> from many other APIs for non-parametric CAD systems:</p>
 
 <p>The most important thing with Revit programming is to understand the product, user workflow and best practices before you even start thinking about programming anything.</p>
 
@@ -152,7 +183,7 @@ Happy to see you are exploring the Revit API.</p>
 <p>You are more lucky with your second question, though.</p>
 
 <p>A possibility to create a copy of an existing solid was just introduced in the
-<a href="http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html#5.03">
+<a href="1311_whats_new_2016.htm#5.03">
 Revit 2016 Geometry API additions</a>:</p>
 
 <span class="darkblue">
@@ -175,7 +206,7 @@ Revit 2016 Geometry API additions</a>:</p>
 
 </span>
 
-<p>Funnily enough, we actually explored the topic of <a href="http://thebuildingcoder.typepad.com/blog/2015/05/cloning-a-solid-angelhack-3d-web-fest-and-dubai.html#6">cloning a solid</a> just three weeks ago.
+<p>Funnily enough, we actually explored the topic of <a href="1315_2016_au_dubai_ah8.htm#6">cloning a solid</a> just three weeks ago.
 The comments on that post also discuss workarounds for achieving this before the advent of the SolidUtils Clone method.</p>
 
 <p>Here is a rather contrived and completely untested code sample snippet demonstrating how to extract and clone the first non-empty solid encountered in a given Revit element:</p>
@@ -209,7 +240,7 @@ The comments on that post also discuss workarounds for achieving this before the
 <h4>Line Intersection Enhancements</h4>
 
 <p>Two days ago, I discussed the
-<a href="http://thebuildingcoder.typepad.com/blog/2015/05/connecting-desktop-cloud-lines-and-grid-segments.html#3">
+<a href="1323_au_line_intersect.htm#3">
 line intersection</a> suggested by Magson Leone.</p>
 
 <p>While editing that text, the thought struck me:</p>
@@ -299,8 +330,8 @@ release 2016.0.120.2</a>.</p>
 <p>Remy van den Bor of ICN Solutions b.v. thanked me for
 <a href="http://forums.autodesk.com/t5/revit-api/revitlookup-for-revit-2016-is-here/m-p/5600976">
 migrating RevitLookup to Revit 2016</a> and asked whether
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.34">
-BipChecker</a>, the built-in parameter checker, is it still being maintained.</p>
+<span class="unavailable-link">
+BipChecker</span>, the built-in parameter checker, is it still being maintained.</p>
 
 <p>That prompted me to migrate it right there and then.</p>
 
@@ -327,3 +358,12 @@ release 2016.0.0.0 of BipChecker for Revit 2016</a> is now available from the
 </center>
 
 <p>:-)</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

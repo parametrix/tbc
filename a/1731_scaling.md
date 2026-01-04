@@ -75,7 +75,7 @@ Let's look at a couple of scaling and triangle orientation issues that recently 
 Konrad Sobon of [@arch_laboratory](https://twitter.com/arch_laboratory) raised a question on scaling and transformation of a Revit model in the Forge viewer:
 
 **Question:** Quick question. I noticed that you recently talked
-about [exporting room boundaries to CSV to be imported into Forge](https://thebuildingcoder.typepad.com/blog/2019/01/room-boundaries-to-csv-and-wpf-template.html#3).
+about [exporting room boundaries to CSV to be imported into Forge](1713_room_boundary_wpf.html#3).
 
 I am curious about the process of actually importing extra geometrical data into Forge, and if you have any samples you can share.
 
@@ -92,7 +92,7 @@ Thoughts?
 **Answer:** Yes, that is an extremely viable theory.
 I think I have indeed heard that exact explanation in the past.
 Origin at the centre, unity scaling, i.e., imperial feet,
-the [internal Revit database units](http://thebuildingcoder.typepad.com/blog/2011/03/internal-imperial-units.html).
+the [internal Revit database units](0553_imperial_units.htm).
 
 
 #### <a name="3"></a> ModPlus and Scaling Text in Dockable Panel
@@ -167,7 +167,7 @@ Therefore, it is not easy to get the right normal directions.
 **Response:** I'm afraid I cannot use the method `OrientationMatchesSurfaceOrientation`, because I am working in the Revit 2017 API.
 
 It was introduced as
-a  [surface and face API enhancement](https://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html#3.23.12) in
+a  [surface and face API enhancement](1551_whats_new_2018.html#3.23.12) in
 Revit 2018.
 
 I tested the code without that method and found that the normal calculated like this always returns the same direction as  `Face.Project`:

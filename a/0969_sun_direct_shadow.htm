@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -20,7 +51,7 @@ A nice change after the rain and cold both here and in New Hampshire and Massach
 
 <p>Before I get to that, though, I present an update of my Revit add-in wizards resulting in part from yesterday's post on the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/processor-architecture-mismatch-warning.html">
+<a href="0968_architecture_mismatch.htm">
 processor architecture mismatch warning</a>:</p>
 
 <ul>
@@ -36,7 +67,7 @@ processor architecture mismatch warning</a>:</p>
 
 <p>I implemented updates of my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/05/add-in-wizards-for-revit-2014-1.html">
+<a href="0944_addin_wizard_2014.htm">
 Visual Studio wizards to generate new C# and VB Revit 2014 add-ins</a> yesterday,
 
 for two reasons:</p>
@@ -44,7 +75,7 @@ for two reasons:</p>
 <ul>
 <li>Suppress the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/processor-architecture-mismatch-warning.html">
+<a href="0968_architecture_mismatch.htm">
 processor architecture mismatch warning</a> by
 
 adding a property group to the Visual Studio project file &ndash; I always try to compile all my projects with zero warnings.</li>
@@ -68,7 +99,7 @@ adding a property group to the Visual Studio project file &ndash; I always try t
 
 <p>For all further details on this, links back to previous versions, other flavours, and tips on how to adapt the wizards for your own use, please refer to the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/05/add-in-wizards-for-revit-2014-1.html">
+<a href="0944_addin_wizard_2014.htm">
 initial 2014 version</a>.</p>
 
 <a name="3"></a>
@@ -81,7 +112,7 @@ initial 2014 version</a>.</p>
 
 <p>In fact, the Revit API provides a dedicated ExtrusionAnalyzer class for this very kind of calculation, which I made use of to determine the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/extrusion-analyser-and-plan-view-boundaries.html">
+<a href="0921_extrusion_analyser.htm">
 plan view furniture and equipment boundary loops</a> for
 
 my 2D cloud-based editor workflow.</p>
@@ -91,7 +122,7 @@ my 2D cloud-based editor workflow.</p>
 <p>That sounds rather complicated.
 You might be able to use
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/boolean-operations-for-2d-polygons.html">
+<a href="0098_booleans_on_polygons.htm">
 Boolean operations for 2D polygons</a> and
 
 paint the shaded areas.</p>
@@ -155,3 +186,12 @@ The sample takes this into account and recalculates shadows when the sun is move
 &nbsp; }
 }
 </pre>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

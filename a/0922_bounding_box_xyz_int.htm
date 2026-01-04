@@ -1,23 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Curve Following Face and Bounding Box Implementation</h3>
 
 <p>Continuing the research and development for my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/cloud-mobile-extensible-storage-data-use-in-schedules.html#3">
+<a href="0912_cm_estorage_schedule.htm#3">
 cloud-based round-trip 2D Revit model editing project</a>,
 
 I looked at using the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/extrusion-analyser-and-plan-view-boundaries.html">
+<a href="0921_extrusion_analyser.htm">
 ExtrusionAnalyzer</a>
 
 to create a plan view boundary profile for the furniture and equipment family instances and implemented a utility method
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/sort-and-orient-curves-to-form-a-contiguous-loop.html">
+<a href="0918_contiguous_curves.htm">
 SortCurvesContiguous</a> to
 
 sort and re-orient the curves it returns into a closed contiguous loop.
@@ -49,12 +80,12 @@ A useful way to determine the size of a boundary loop is to calculate the boundi
 
 <p>I already had one stab at using a built-in Revit API method instead of implementing my own
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/sort-and-orient-curves-to-form-a-contiguous-loop.html">
+<a href="0918_contiguous_curves.htm">
 SortCurvesContiguous</a> solution:
 
 Rudolf Honke suggested testing the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/extrusion-analyser-and-plan-view-boundaries.html#4">
+<a href="0921_extrusion_analyser.htm#4">
 ExporterIFCUtils ValidateCurveLoops</a> method instead, but that did not work.</p>
 
 <p>Now Bettina Zimmermann provided another idea:</p>
@@ -463,13 +494,13 @@ When I use my own, it fails.
 
 <p><strong>Answer:</strong> I discussed some very advanced sweep issues with Bill Adkison, and we published the essence of his results on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/10/sweep-pickpath-tolerance-criteria.html">sweep path tolerance criteria</a>.
+<a href="0843_sweep_path_tolerance.htm">sweep path tolerance criteria</a>.
 
 Normally, sweep issues are nowhere near as hard as the ones he encountered and mastered.
 
 <p>The most recent sample code demonstrating sweep generation was for the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/sweep-family-performance-enhancement.html">
+<a href="0907_sweep_performance.htm">
 sweep family performance enhancement</a>.
 
 <p>Furthermore, the AEC DevBlog discusses a number of sweep creation issues and provides several source code samples to generate them:
@@ -486,7 +517,7 @@ Good luck!
 
 
 <!--
-<a href="">
+<a href=">
 </a>
 
 <hr>
@@ -1000,3 +1031,12 @@ FamilyInstance Furniture Chair - Office <214409 Office Chair>: 2 extrusion analy
 FamilyInstance Furniture Chair - Office <214409 Office Chair> has 1 loop:
   0: (1263,1162), (1263,1142), (1283,1142), (1283,1108), (1823,1108), (1823,1142), (1843,1142), (1843,1162), (1823,1162), (1823,1502), (1843,1502), (1843,1542), (1823,1542), (1823,1577), (1283,1577), (1283,1542), (1263,1542), (1263,1502), (1283,1502), (1283,1162)
 -->
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

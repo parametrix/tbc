@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -57,8 +88,8 @@ Most of all, though, it highlights the fact that you and your customers need to 
 <p>I think it is so important and Jim's ten-minute overview so effective and refreshing I decided to publish it right here and now:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/devday/2013/security_jim_quanci.pdf">Slide deck</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/devday/2013/security_jim_quanci.mp3">Audio</a></li>
+<li><span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/devday/2013/security_jim_quanci.pdf">Slide deck</span></li>
+<li><span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/devday/2013/security_jim_quanci.mp3">Audio</span></li>
 </ul>
 
 <p>Something else happened after the conference, travelling...</p>
@@ -106,11 +137,11 @@ In some cases, it may be pretty simple, since you can check for rectangular and 
 <p><b>1.</b> For structural extrusions, the REX content generator includes a cross section analysis tool providing automatic section recognition functionality:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/04/the-rex-sdk.html">
+<li><a href="0570_rex.htm">
 The REX SDK</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/06/extensions-for-revit-2012.html">
+<li><a href="0601_rex_2012.htm">
 Extensions for Revit 2012</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/12/rex-content-generator.html">
+<li><a href="0691_rex_content_generator.htm">
 REX Content Generator</a></li>
 </ul>
 
@@ -118,13 +149,13 @@ REX Content Generator</a></li>
 <p><b>2.</b> Some families such as gutter, fascia, slab edge, railings, etc., are based on profiles consisting of 2D elements, e.g., lines, arcs, circles, etc.
 You might be able to use some
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/11/undocumented-elementid-relationships.html">
+<a href="0673_elementid_relationships.htm">
 unofficial element id relationships</a> to
 
 access those elements knowing the element id of the family symbol or its profile.
 They can be used, for example, to determine the relationship between a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/curtain-wall-geometry.html">
+<a href="0374_curtain_wall_geometry.htm">
 curtain wall and its panels</a> or
 
 between a stacked wall and it basic wall components.</p>
@@ -137,12 +168,12 @@ I can imagine that the REX content generator does something like this internally
 
 <p><b>4.</b> You can set up a section view cutting the framing element perpendicularly using a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/create-section-view-parallel-to-wall.html">
+<a href="0784_create_section_view.htm">
 view perpendicular to the element location line</a> and
 
 ask the element for its view-specific geometry, the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/08/section-view-geometry.html">
+<a href="0632_section_view_geom.htm">
 section view geometry</a> in
 
 that specific view.
@@ -151,8 +182,8 @@ Then, just ignore all lines that are not lying on the view plane and analyse the
 
 <p><b>5.</b> Use the
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.29">
-ExtrusionAnalyzer</a> &ndash;
+<span class="unavailable-link">
+ExtrusionAnalyzer</span> &ndash;
 
 to do so, grab the FamilyInstance GetOriginalGeometry that returns the member geometry before joins, cuts, etc. are applied.
 For a linear member, using this and then an ExtrusionAnalyzer in the direction of the beam curve yields a reasonably accurate picture of the beam cross-section.
@@ -646,12 +677,12 @@ GeoSnoop.cs:
 
 <p>This is actually the origin of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/geosnoop-net-boundary-curve-loop-visualisation.html">
+<a href="0924_geo_snoop.htm">
 GeoSnoop .NET boundary curve loop visualisation</a>,
 
 later
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-and-furniture-loops-using-symbols.html">
+<a href="0936_room_loops_symbols.htm">
 updated for use with family symbols</a>,
 
 that I make use of in the RoomEditorApp add-in for the simplified cloud-based 2D Revit model editing.</p>
@@ -678,3 +709,12 @@ initial untested migration from Revit 2012 to Revit 2014</li>
 <li><a href="https://github.com/jeremytammik/FramingXsecAnalyzer/releases/tag/2014.0.0.1">2014.0.0.1</a> &ndash;
 verified working functionality in Revit 2014</li>
 </ul>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

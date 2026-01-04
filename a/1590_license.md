@@ -25,11 +25,11 @@ Let me take leave from you for a short vacation.
 
 Before disappearing for the next ten days, I would like to take this opportunity to revisit the topic of licenses for open source software.
 
-I [recently repeated the importance of a license](http://thebuildingcoder.typepad.com/blog/2017/09/extentelem-and-square-face-dimensioning-references.html#3) when sharing source code for reuse by others and pointed to these previous discussions:
+I [recently repeated the importance of a license](1584_dim_inst_face.html#3) when sharing source code for reuse by others and pointed to these previous discussions:
 
-- [A readme is a must](http://thebuildingcoder.typepad.com/blog/2016/10/how-to-create-a-new-line-style.html#4)!
-- [People cannot use the code unless you specify a license](http://thebuildingcoder.typepad.com/blog/2013/10/the-building-coder-samples-on-github.html#2)!
-- [More on licenses](http://thebuildingcoder.typepad.com/blog/2013/10/wall-compound-layer-and-other-geometry.html#2)...
+- [A readme is a must](1490_create_line_style.html#4)!
+- [People cannot use the code unless you specify a license](1036_tbc_samples_github.htm#2)!
+- [More on licenses](1047_wall_geometry.htm#2)...
 
 I myself use the [MIT License](http://opensource.org/licenses/MIT) for my samples, "a lax, permissive non-copyleft free software license. For substantial programs, it is better to use the Apache 2.0 license since it blocks patent treachery".
 

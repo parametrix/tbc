@@ -21,9 +21,9 @@ is there any way to set <i>can vary by group instance</i> (what I need) the defa
 ### Setting Parameter Varies Between Groups
 
 We already looked at the topic of setting the `SetAllowVaryBetweenGroups` flag on a shared parameter
-in Scott Conover's [parameter definition overview](http://thebuildingcoder.typepad.com/blog/2016/12/parameter-definition-overview.html).
+in Scott Conover's [parameter definition overview](1507_parameter_definition.html).
 
-The setting was introduced in the [Revit 2014 API](http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html),
+The setting was introduced in the [Revit 2014 API](0938_whats_new_2014.htm),
 cf. *Parameter variance among group instances*.
 
 Now Miroslav Schonauer raised it again, asking:
@@ -102,7 +102,7 @@ It assumes that `guid` comes from a known shared parameter.
 Further good news: this can be called not only immediately after programmatically binding a new shared param, but also to *silently* change this specific setting for an *existing* shared parameter.
 
 For example, we all typically have our own helper methods to get-or-create a shared parameter binding, cf., e.g., my method
-to [add a category to a shared parameter binding](http://thebuildingcoder.typepad.com/blog/2012/04/adding-a-category-to-a-shared-parameter-binding.html).
+to [add a category to a shared parameter binding](0754_shared_param_add_categ.htm).
 
 Here is a code snippet providing enough to get the gist of how the above can be used (ignore my helper classes and error handling):
 

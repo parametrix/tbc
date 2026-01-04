@@ -34,7 +34,7 @@ Let's take a look at a much simpler approach
 ### Simple DirectShape on Face, RestSharp, PUT and POST
 
 Last Tuesday, I looked at creating a
-[DirectShape from a face and sketch plane reuse](http://thebuildingcoder.typepad.com/blog/2015/09/directshape-from-face-and-sketch-plane-reuse.html).
+[DirectShape from a face and sketch plane reuse](1355_directshape_face.html).
 
 I implemented a convoluted method using the picked face reference and its stable string representation returned by the `ConvertToStableRepresentation` method to navigate the element geometry and determine an appropriate transformation for it into the world coordinate system.
 
@@ -295,7 +295,7 @@ I am also taking a new look at the
 of things, and bringing it all together as quickly and painlessly as possible...
 
 This will be a nice project to take with me to the upcoming
-[cloud accelerator in Prague](http://thebuildingcoder.typepad.com/blog/2015/06/accelerator-appstore-disqus-and-aec-devblog-articles.html#2) next week!
+[cloud accelerator in Prague](1336_accel_disqus_devblog.htm#2) next week!
 
 I christened this project
 *[CompHound](https://github.com/CompHound)*,

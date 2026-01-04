@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- C:\a\src\revit\ning -->
@@ -8,17 +39,17 @@
 
 <p>We recently discussed a comment from Mike King on how to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/08/creating-a-nonrectangular-slab.html?cid=6a00e553e1689788330120a8a1ff3a970b#comment-6a00e553e1689788330120a8a1ff3a970b">
+<a href="0213_non_rectangular_slab.htm">
 specify openings when constructing a slab</a>,
 
 and that reminded me of some interesting sample code I received from Ning in a comment on using the NewWall method and passing in a CurveArray containing its edges to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/creating-a-wall-with-a-sloped-profile.html">
+<a href="0091_wall_with_sloped_profile.htm">
 create a wall with a sloped profile</a>.
 
 Ning's issue was to create a new wall with a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/creating-a-wall-with-a-sloped-profile.html?cid=6a00e553e1689788330120a6cd4ccf970b#comment-6a00e553e1689788330120a6cd4ccf970b">
+<a href="0091_wall_with_sloped_profile.htm">
 CurveArray containing more than one loop</a>.
 
 <p>What Ning's code does is to retrieve the elevation profile from an existing wall and then create a wall siding covering it.
@@ -51,7 +82,7 @@ However, it does demonstrate that it is possible to create a new wall complete w
 <li>Retrieve all walls or just the preselected ones.
 <li>Determine their
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/wall-elevation-profile.html">
+<a href="0039_wall_elevation_profile.htm">
 wall elevation profiles</a> using the GetProfiles method.
 
 </ul>
@@ -130,3 +161,12 @@ The model is almost identical to the first one in terms of wall and window locat
 In spite of this, it requires an additional tweak in WallProfiles.cs, which is initially commented out.
 
 <p>Many thanks to Ning for this very useful sample code which shows how elegantly we can query the model for existing wall geometry and reuse it to create new walls complete with openings!
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

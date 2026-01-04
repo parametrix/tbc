@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -15,19 +46,19 @@
 
 <p>This is part 8 of Scott Conover's AU 2009 class on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/analyse-building-geometry.html">
+<a href="0275_abg.htm">
 analysing building geometry</a>,
 
 dealing with the project location and its effect on element transformations.
 We aready looked at the project location in the discussion on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/10/unrotate-north.html">
+<a href="0230_unrotate_north.htm">
 unrotate north</a>.
 
 However, as Scott pointed out, the results presented there are somewhat misleading and are subsumed by the following discussion.
 The project location obviously also affects the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/azimuth.html">
+<a href="0027_azimuth.htm">
 azimuth</a> of 
 
 an element, i.e. the angle between the element and true north, and our previous discussion on that topic can also be replaced by this post.
@@ -36,10 +67,10 @@ an element, i.e. the angle between the element and true north, and our previous 
 
 <p>Revit projects have another default coordinate system to take into account: the project location. The Document.ActiveProjectLocation provides access to the active ProjectPosition object, which contains:</p>
 
-<li>EastWest ñ east/west offset (X offset).
-<li>NorthSouth ñ the north/south offset (Y offset).
-<li>Elevation ñ the difference in elevation (Z offset).
-<li>Angle ñ the angle from true north.
+<li>EastWest ÔøΩ east/west offset (X offset).
+<li>NorthSouth ÔøΩ the north/south offset (Y offset).
+<li>Elevation ÔøΩ the difference in elevation (Z offset).
+<li>Angle ÔøΩ the angle from true north.
 </ul>
 
 <p>You can use these properties to construct a transform between the default Revit coordinates and the actual coordinates in the project:</p>
@@ -69,10 +100,10 @@ an element, i.e. the angle between the element and true north, and our previous 
 
 <p>In this example we adapt the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/south-facing-walls.html">
+<a href="0281_abg03_south_facing_walls.htm">
 south-facing walls</a> and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/transformations.html#south_facing_windows">
+<a href="0290_abg07_transform.htm#south_facing_windows">
 south-facing windows</a> examples 
 
 to deal with a project where true north is not aligned with the Revit coordinate system. 
@@ -121,3 +152,12 @@ AU class material</a> for
 the full source code of his sample project.
 
 <p>We will continue this series with a look at the powerful FindReferencesByDirection method coming up next.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

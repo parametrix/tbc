@@ -124,7 +124,7 @@ Resources available now:
 <iframe width="480" height="270" src="https://www.youtube.com/embed/eTZcr-Erzew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
-Please refer to the [DA4R topic group for more information and previous discussions on this](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55).
+Please refer to the DA4R topic group for more information and previous discussions on this *(link unavailable)*.
 
 
 ####<a name="4"></a> Easy Solution to Transfer Photos from Android to Mac

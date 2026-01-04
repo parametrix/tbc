@@ -48,13 +48,13 @@ Since Revit is designed as an interactive end user tool, misusing it as a server
 
 Therefore, in many cases, the cleanest (or only clean) solution will involve use of
 the [Forge Design Automation API for Revit](https://forge.autodesk.com/en/docs/design-automation/v3/developers_guide/overview)
-or [DA4R](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55).
+or DA4R *(link unavailable)*.
 
 However, it is also possible to make use of Revit as a server in a limited way via
 an [external event](https://www.revitapidocs.com/2020/05089477-4612-35b2-81a2-89c4f44370ea.htm).
 
 Many aspects of this have been discussed numerous times in the past in the topic group
-on [external events for modeless access and driving Revit from outside](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+on external events for modeless access and driving Revit from outside *(link unavailable)*.
 
 However, people sometimes prefer not to read and research, not to fish, but rather ask repeated questions and be fed, so we return to this topic again (and again).
 
@@ -110,14 +110,14 @@ The external event SDK sample illustrates:
 - SDK/Samples/ModelessDialog/ModelessForm_ExternalEvent/
 
 Many related discussions and solutions are listed by The Building Coder
-on [External Events for Modeless Access and Driving Revit from Outside](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+on External Events for Modeless Access and Driving Revit from Outside *(link unavailable)*.
 
 Also check out some more recent discussions on using IPC:
 
-- [Set Floor Level and Use IPC for Disentanglement](https://thebuildingcoder.typepad.com/blog/2019/04/set-floor-level-and-use-ipc-for-disentanglement.html)
-- [Scaling an Add-In for a 4K High Resolution Screen](https://thebuildingcoder.typepad.com/blog/2019/09/scaling-an-add-in-for-a-4k-high-resolution-screen.html)
-- [Integrating a Web-Based UI](https://thebuildingcoder.typepad.com/blog/2019/09/ui-top-forms-buttons-web-etc.html#4)
-- [Integrating the Helix 3D Viewer with a WPF Add-In](https://thebuildingcoder.typepad.com/blog/2019/11/integrating-the-helix-3d-viewer-with-a-wpf-add-in.html)
+- [Set Floor Level and Use IPC for Disentanglement](1737_ipc.html)
+- [Scaling an Add-In for a 4K High Resolution Screen](1780_4k_hires_scaling.html)
+- [Integrating a Web-Based UI](1783_ui_top_form_button_web.html#4)
+- [Integrating the Helix 3D Viewer with a WPF Add-In](1800_helix_3d_viewer.html)
 
 **Response:** I really appreciate your prompt answer.
 
@@ -151,12 +151,12 @@ The only time the message is sent is when Revit.exe wishes the external command 
 
 **Response:** I want to develop an add-in that can be loaded in Revit that listens to messages from another process (application) as long as Revit is running. Is it possible to implement?
 
-**Answewr:** Yes, using an [external event](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+**Answewr:** Yes, using an external event *(link unavailable)*.
 
 However, Revit is not designed for that purpose and you may violate the license agreement by doing so.
 
 For that purpose,
-a [DA4R application](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55) may
+a DA4R application *(link unavailable)* may
 be a more appropriate choice:
 
 #### <a name="4"></a>Autodesk Open Positions

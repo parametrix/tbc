@@ -126,7 +126,7 @@ Moving more to the nitty-gritty aspects of Revit API programming,
 Richard [RPThomas108](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/1035859) Thomas
 and [Chris Hildebran](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/2814832) exchanged
 some valuable background information based on many man-years of experience working with
-the [Dynamic Model Updater Framework DMU](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.31)
+the Dynamic Model Updater Framework DMU *(link unavailable)*
 and ended up presenting an iterative use of the `SetExecutionOrder` method in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 asking [can `SetExecutionOrder` be used to set the order of more than two IUpdaters?](https://forums.autodesk.com/t5/revit-api-forum/can-the-method-quot-setexecutionorder-quot-by-used-to-set-the/m-p/11683732):

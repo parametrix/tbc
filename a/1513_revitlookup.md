@@ -21,7 +21,7 @@ RevitLookup sports two new useful enhancements since adding support for the NuGe
 
 [RevitLookup](https://github.com/jeremytammik/RevitLookup) sports
 two new useful enhancements 
-since [adding support for the NuGet Revit API package](http://thebuildingcoder.typepad.com/blog/2016/12/nuget-revit-api-package.html#3) in mid-December:
+since [adding support for the NuGet Revit API package](1510_nuget_revit_api.html#3) in mid-December:
 
 - [Close all forms using the `Escape` key](#2)
 - [Support for spot dimension](#3)
@@ -47,8 +47,8 @@ Here is [the diff showing what he added](https://github.com/jeremytammik/RevitLo
 ####<a name="3"></a>Support for Spot Dimension
 
 LeeJaeYoung reported an issue snooping spot dimensions in
-a [comment](http://thebuildingcoder.typepad.com/blog/2016/04/revit-2017-revitlookup-and-sdk-samples.html#comment-3077972791) on 
-the discussion of [Revit 2017, RevitLookup and SDK Samples](http://thebuildingcoder.typepad.com/blog/2016/04/revit-2017-revitlookup-and-sdk-samples.html), saying:
+a [comment](1426_revit_2017.html#comment-3077972791) on 
+the discussion of [Revit 2017, RevitLookup and SDK Samples](1426_revit_2017.html), saying:
 
 > Spot dimension position and text position causes an error in RevitLookup 2017.0.0.8, but works okay in Revit 2015.
 I think the leader and text position properties of spot dimension are causing this.
@@ -66,7 +66,7 @@ Snooping a `SpotDimension` displays the message:
 <img src="img/revitlookup_spot_dimension_error.png" alt="RevitLookup spot dimension error" width="456"/>
 </center>
 
-Here are the [steps to reproduce](http://thebuildingcoder.typepad.com/blog/2016/04/revit-2017-revitlookup-and-sdk-samples.html#comment-3083808853):
+Here are the [steps to reproduce](1426_revit_2017.html#comment-3083808853):
 
 - Create a spot dimension on a slab.
 - Select it.

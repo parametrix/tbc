@@ -82,7 +82,7 @@ Is it always the first one returned by `face.EdgeLoops`?
 If not, how to find it?
  
 **Answer:** The Building Coder discussed how to
-determine [2D polygon areas and outer loop](http://thebuildingcoder.typepad.com/blog/2008/12/2d-polygon-areas-and-outer-loop.html) by area comparison.
+determine [2D polygon areas and outer loop](0053_2d_polygon_area_outer_loop.htm) by area comparison.
 
 Richard presents an alternative solution based on a simple max and min calculation. In his words:
 
@@ -384,8 +384,8 @@ The above-mentioned built-in parameters have changed for consistency; older vers
 
 Finally, for the sake of completeness, here are previous discussions by The Building Coder on some aspects of slanted columns that illuminate further:
  
-- [Creating a slanted column](http://thebuildingcoder.typepad.com/blog/2009/06/creating-a-slanted-column.html)
-- [Slanted column cross section rotation](http://thebuildingcoder.typepad.com/blog/2011/03/slanted-column-cross-section-rotation.html)
+- [Creating a slanted column](0149_slanted_column.htm)
+- [Slanted column cross section rotation](0559_column_xsec_rotation.htm)
 
 
 ####<a name="5"></a>Determining a Reference Plane from a Reference Point
@@ -482,7 +482,7 @@ Many thanks to Fair59 for explaining this and sharing the solution!
 ####<a name="6"></a>Beware of Multiple Outer Loops
 
 Adrian Esdaile added 
-a [warning in his comment below](http://thebuildingcoder.typepad.com/blog/2017/08/edge-loop-point-reference-plane-and-column-line.html#comment-3491949399) that
+a [warning in his comment below](1581_edge_refplane_column.html#comment-3491949399) that
 you should definitely be aware of:
 
 In reference to the question about Outer loops: Unfortunately, the quirky nature of Revit will defeat you here. It is entire possible to create valid geometry in Revit composed of TWO (yes, TWO, or more...) OUTER loops. How this will behave with your code (or indeed ANY code!) is questionable.

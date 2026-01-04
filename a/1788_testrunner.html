@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -57,7 +88,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 </ul>
 <h4><a name="2"></a> Revit.TestRunner &ndash; Run Unit Tests in Revit</h4>
 <p>We mentioned several
-different <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.16">Revit add-in unit testing frameworks</a> in
+different <span class="unavailable-link">Revit add-in unit testing frameworks</span> in
 the past.</p>
 <p>Tobias Flöscher of <a href="https://www.geberit.com">Geberit</a> now
 shares a new implementation based on <a href="https://nunit.org">NUnit 3</a> that looks very promising indeed,
@@ -76,7 +107,7 @@ This code was testable as I knew it, using tests run
 on <a href="https://en.wikipedia.org/wiki/Continuous_integration">continuous integration</a>.
 But a lot of code remained in the project referencing the Revit API.</p>
 <p>I asked Google what to do, but apparently there is not THE way to solve this problem.</p>
-<p>There is some stuff around that seems cool, e.g.,  <a href="https://thebuildingcoder.typepad.com/blog/2018/08/revit-unit-test-framework-improvements.html">RevitTestFramework</a>,
+<p>There is some stuff around that seems cool, e.g.,  <a href="1674_revittestframework.htmml">RevitTestFramework</a>,
 but I was not happy with that.
 Furthermore, all I found uses NUnit 2.6, whereas all my Revit independent code is tested by the NUnit 3.x.
 The build server doesn't like the mix.</p>
@@ -132,3 +163,11 @@ A similar problem occurs if I run the project 2 first.</p>
 on <a href="http://archi-lab.net">archi+lab</a>
 for <a href="https://archi-lab.net/importing-pdfs-made-easy">importing PDFs made easy</a>,
 using and expanding on the Revit 2020 ability to import PDF files and making it a little bit easier to place multi-page documents.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

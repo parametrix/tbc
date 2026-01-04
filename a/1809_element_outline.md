@@ -140,9 +140,9 @@ The approach implemented for the room editor is not based on the 2D view, but on
 the [`ExtrusionAnalyzer` class](https://www.revitapidocs.com/2020/ba9e3283-6868-8834-e8bf-2ea9e7358930.htm) to them,
 creating a vertical projection of the 3D element shape onto the 2D XY plane.
 This approach is described in detail in the discussion on
-the [extrusion analyser and plan view boundaries](https://thebuildingcoder.typepad.com/blog/2013/04/extrusion-analyser-and-plan-view-boundaries.html).
+the [extrusion analyser and plan view boundaries](0921_extrusion_analyser.htm).
 
-The [GeoSnoop .NET boundary curve loop visualisation](https://thebuildingcoder.typepad.com/blog/2013/04/geosnoop-net-boundary-curve-loop-visualisation.html) provides
+The [GeoSnoop .NET boundary curve loop visualisation](0924_geo_snoop.htm) provides
 some example images of the resulting outlines.
 
 As you can see there, the outline generated is more precise and detailed than the standard 2D Revit representation.
@@ -298,10 +298,10 @@ Since it is slower, it would be better to switch to Clipper.
 #### <a name="6"></a>CmdRoomOuterOutline
 
 I implemented the third command `CmdRoomOuterOutline` after an unsuccessful attempt at generating the outer outline of a room including its bounding elements
-by [specifying a list of offsets to `CreateViaOffset`](https://thebuildingcoder.typepad.com/blog/2019/12/dashboards-createviaoffset-and-room-outline-algorithms.html#3).
+by [specifying a list of offsets to `CreateViaOffset`](1807_createviaoffset.html#3).
 
 After that failure, I suggested a number of alternative approaches 
-to [determine the room outline including surrounding walls](https://thebuildingcoder.typepad.com/blog/2019/12/dashboards-createviaoffset-and-room-outline-algorithms.html#4).
+to [determine the room outline including surrounding walls](1807_createviaoffset.html#4).
 
 **Question:** I started to look at the possibility of tracing the outside of the walls several weeks ago, when I was at a loss utilising `CreateViaOffset`.
 

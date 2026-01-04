@@ -83,7 +83,7 @@ Meanwhile, let's take a look at:
 
 ####<a name="2"></a> DA4R Room Support and New Samples
 
-Some recent [Forge Design Automation for Revit or DA4R](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55) news
+Some recent Forge Design Automation for Revit or DA4R *(link unavailable)* news
 and samples:
 
 Most importantly,
@@ -241,7 +241,7 @@ In this case, you can test the parameter values using a parameter filter instead
 
 As Fair59 points out and we have discussed in the past, you can cancel a collector as soon as your target has been reached:
 
-- [Aborting filtered element collection](https://thebuildingcoder.typepad.com/blog/2019/02/cancelling-filtered-element-collection.html)
+- [Aborting filtered element collection](1721_cancel_collector.html)
 
 So, you can save time and space in several ways:
 
@@ -252,19 +252,19 @@ Both of these force the filtered element collector to retrieve and return all re
 
 Here is an explanation of the various types of filters versus post-processing in .NET:
 
-- [Slow, slower still and faster filtering](https://thebuildingcoder.typepad.com/blog/2019/04/slow-slower-still-and-faster-filtering.html)
+- [Slow, slower still and faster filtering](1736_faster_filtering.html)
 
 Here are some discussions and a benchmark of the results of using a parameter filter versus LINQ and .NET post-processing:
 
-- [Filtering for a specific parameter value](https://thebuildingcoder.typepad.com/blog/2018/06/forge-tutorials-and-filtering-for-a-parameter-value.html#3)
-- [Filtered element collector benchmark](https://thebuildingcoder.typepad.com/blog/2019/05/filtered-element-collector-benchmark.html#3)
+- [Filtering for a specific parameter value](1659_param_filter.html#3)
+- [Filtered element collector benchmark](1751_filter_benchmark.html#3)
 
 We also discussed the issue of finding all views displaying an element a couple of times in the past:
 
-- [Views displaying given element](https://thebuildingcoder.typepad.com/blog/2014/05/views-displaying-given-element-svg-and-nosql.html#6)
-- [Determining views showing an element](https://thebuildingcoder.typepad.com/blog/2016/12/determining-views-showing-an-element.html)
-- [Retrieving elements visible in view](https://thebuildingcoder.typepad.com/blog/2017/05/retrieving-elements-visible-in-view.html)
-- [Can you avoid generating graphics?](https://thebuildingcoder.typepad.com/blog/2019/10/generating-graphics-and-collecting-assets.html#2)
+- [Views displaying given element](1158_views_displaying_elem.htm#6)
+- [Determining views showing an element](1504_views_showing_element.html)
+- [Retrieving elements visible in view](1561_elem_visible_view.html)
+- [Can you avoid generating graphics?](1793_generating_graphics.html#2)
 
 <center>
 <img src="img/harvester.png" alt="Harvester" width="321"> <!--642-->
@@ -274,7 +274,7 @@ We also discussed the issue of finding all views displaying an element a couple 
 
 [Mastjaso](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/1058186) adds
 some important professional advice in
-his [comment below](https://thebuildingcoder.typepad.com/blog/2019/12/forge-rooms-effective-filtered-element-collectors.html#comment-4719321388):
+his [comment below](1806_effective_filter.html#comment-4719321388):
 
 > Interesting discussion on filtered element collectors, though I have to say that I have personally spend far too much time worrying about the efficiencies of those collectors when it has turned out to be inconsequential.
 

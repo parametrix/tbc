@@ -47,7 +47,7 @@ More on Revit 2021.1, IFC 21.1, and nearing the end of the AEC Hackathon:
 
 ####<a name="2"></a> Revit 2021.1 Questions
 
-Yesterday, I mentioned [the Revit 2021.1 update](https://thebuildingcoder.typepad.com/blog/2020/07/revit-20211-update-and-normalising-custom-export-uv.html#2).
+Yesterday, I mentioned [the Revit 2021.1 update](1855_rvt_2021_1.html#2).
 
 Two questions arose on that:
 

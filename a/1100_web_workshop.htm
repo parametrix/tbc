@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -23,19 +54,19 @@ a360
 
 rest
   <ul>
-  <<a href="http://thebuildingcoder.typepad.com/blog/2011/11/revit-server-rest-api.html">Revit Server REST API</a></li>
-  <li><a href="http://thebuildingcoder.typepad.com/blog/2011/12/copy-a-model-from-a-revit-server.html">Copy a Model from a Revit Server</a></li>
-  <li><a href="http://thebuildingcoder.typepad.com/blog/2012/12/the-bim-360-glue-viewer-and-rest-api.html">The BIM 360 Glue Viewer and REST API</a></li>
-  <li><a href="http://thebuildingcoder.typepad.com/blog/2012/12/bim-360-glue-rest-api-authentication-using-python.html">BIM 360 Glue REST API Authentication Using Python</a></li>
+  <<a href="0677_rest.htm">Revit Server REST API</a></li>
+  <li><a href="0693_rest_copy_model.htm">Copy a Model from a Revit Server</a></li>
+  <li><a href="0869_bim360_glue_api.htm">The BIM 360 Glue Viewer and REST API</a></li>
+  <li><a href="0870_py_rest_glue.htm">BIM 360 Glue REST API Authentication Using Python</a></li>
   </ul>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/11/revit-server-rest-api.html">Revit Server REST API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/12/copy-a-model-from-a-revit-server.html">Copy a Model from a Revit Server</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/12/the-bim-360-glue-viewer-and-rest-api.html">The BIM 360 Glue Viewer and REST API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/12/bim-360-glue-rest-api-authentication-using-python.html">BIM 360 Glue REST API Authentication Using Python</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/08/the-revit-server-rest-api.html">The Revit Server REST API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/01/rest-post-request-to-revit-server-2014.html">REST POST Request to Revit Server 2014</a></li>
+<li><a href="0677_rest.htm">Revit Server REST API</a></li>
+<li><a href="0693_rest_copy_model.htm">Copy a Model from a Revit Server</a></li>
+<li><a href="0869_bim360_glue_api.htm">The BIM 360 Glue Viewer and REST API</a></li>
+<li><a href="0870_py_rest_glue.htm">BIM 360 Glue REST API Authentication Using Python</a></li>
+<li><a href="0993_revit_server_rest_api.htm">The Revit Server REST API</a></li>
+<li><a href="1095_post_to_revit_server.htm">REST POST Request to Revit Server 2014</a></li>
 </ul>
 
 
@@ -95,12 +126,12 @@ Unfortunately, I had to return to Switzerland already Friday morning, and, unexp
 
 <p>In preparation for this workshop, I put together an
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/01/lots-of-clouds.html#5">
+<a href="1094_clouds.htm#5">
 overview of the A360 web services</a> and
 
 their API coverage last week, mainly gleaned from the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/12/devdayau-chronicle-estorage-view-depth-sound-of-noise.html#4">
+<a href="1069_devday_au.htm#4">
 cloud &amp; mobile platform web service API overview</a> presented
 
 at the DevDay@AU in December 2013.</p>
@@ -118,49 +149,49 @@ pilot programs</a>.</p>
 <p>Here are some of the explorations I made so far in various areas of REST API programming:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/11/revit-server-rest-api.html">
+<li><a href="0677_rest.htm">
 Revit Server REST API</a></li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/12/copy-a-model-from-a-revit-server.html">
+<li><a href="0693_rest_copy_model.htm">
 Copy a model from a Revit Server</a></li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/11/au-classes-on-python-ui-server-and-framework-apis.html#3">
+<li><a href="0865_python_ui_server_api.htm#3">
 AU Class CP3093 &ndash; My first cloud/mobile app with Revit Server &ndash; by Adam Nagy</a></li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/12/the-bim-360-glue-viewer-and-rest-api.html">
+<li><a href="0869_bim360_glue_api.htm">
 The BIM 360 Glue viewer and REST API</a></li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/12/bim-360-glue-rest-api-authentication-using-python.html">
+<li><a href="0870_py_rest_glue.htm">
 BIM 360 Glue REST API authentication using Python</a></li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/01/url-and-other-buttons-xyz-points-and-vectors.html#6">
+<li><a href="0878_button_cmd_url_xyz.htm#6">
 The Green Building Studio GBS REST API</a></li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/03/cloud-mobile-extensible-storage-data-use-in-schedules.html">
+<li><a href="0912_cm_estorage_schedule.htm">
 Cloud &amp; mobile topics</a></li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-editor-project-overview-and-couchdb-configuration.html">
+<li><a href="0932_room_edit_couchdb_conf.htm">
 Room editor project overview and CouchDB configuration</a></li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/05/couchdb-implementation-and-github-repository.html">
+<li><a href="0949_couchdb_views.htm">
 CouchDB implementation</a></li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/08/the-revit-server-rest-api.html">
+<li><a href="0993_revit_server_rest_api.htm">
 The Revit Server REST API</a></li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/08/revit-server-api-access-and-vbscript.html">
+<li><a href="1009_revit_server_soap_vbs.htm">
 Revit Server API access and VBScript</a></li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/10/text-file-driven-automatic-placement-of-family-instances.html#9">
+<li><a href="1038_place_family_inst.htm#9">
 BIM 360 Glue API pilot and updated samples</a></li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/12/devdayau-chronicle-estorage-view-depth-sound-of-noise.html#4">
+<li><a href="1069_devday_au.htm#4">
 Cloud &amp; mobile platform web service APIs</a>  presented at the DevDay@AU</li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/12/au-day-3-recap-cloud-based-round-trip-model-editing.html">
+<li><a href="1072_au_day_3.htm">
 ReCap web service & cloud-based round-trip model editing</a></li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/01/rest-post-request-to-revit-server-2014.html">
+<li><a href="1095_post_to_revit_server.htm">
 REST POST request to Revit Server 2014</a></li>
 </ul>
 
@@ -176,15 +207,15 @@ Pick a service that is useful to you and start exploring!</p>
 <p>Revit is evolving slowly but surely (well, actually not so slowly at all) towards a structure that can be split into separate components, and enables individual bits of functionality to be replaced by custom implementations, which may or may not be remote and cloud based, just as you prefer, e.g.:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/07/user-mep-calculation-sample.html">
+<li><a href="0986_mep_calculation.htm">
 User MEP calculations</a>
 
-(<a href="http://thebuildingcoder.typepad.com/blog/2013/11/user-mep-calculation-sample-on-github.html">on GitHub</a>)</li>
+(<a href="1054_mep_calculation.htm">on GitHub</a>)</li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/12/starting-to-clean-up-for-the-break.html#3">
+<li><a href="1082_au_bpa_daylighting.htm#3">
 Building Performance Analysis</a> web services</li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/12/starting-to-clean-up-for-the-break.html#4">
+<li><a href="1082_au_bpa_daylighting.htm#4">
 Daylighting analysis</a></li>
 </ul>
 
@@ -196,16 +227,16 @@ Daylighting analysis</a></li>
 
 <p>Also in preparation for this workshop, I summarised the available source code and presentation recordings for my RoomEditor, a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/01/lots-of-clouds.html#4">
+<a href="1094_clouds.htm#4">
 cloud-based real-time round-trip simplified 2D BIM model editor</a>.</p>
 
 <p>Most of the work I completed to implement it has been presented extensively by The Building Coder under the
 
-<a href="http://thebuildingcoder.typepad.com/blog/cloud">cloud</a>,
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/cloud">cloud <em>(category page)</em></span>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/desktop">desktop</a> and
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/desktop">desktop <em>(category page)</em></span> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/mobile">mobile</a> categories.</p>
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/mobile">mobile <em>(category page)</em></span> categories.</p>
 
 
 <a name="6"></a>
@@ -339,3 +370,12 @@ WhiteHat Security</a> Application Security Engineer, covering the whole range of
 <li><a href="http://go.whitehatsec.com/675YBI6740001te004F9G00">Webinar recording (38 minutes)</a></li>
 <li><a href="http://go.whitehatsec.com/675YBI6740001tf004F9G00">Presentation slide deck</a></li>
 </ul>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

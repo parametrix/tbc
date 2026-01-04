@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -45,7 +76,7 @@ No need to unzip, just save the following two files in the specified locations o
 <li>Debug features configured and enabled (important for Express version).
 <li>Creates the required .addin including the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/addin-manifest-and-guidize.html">
+<a href="0354_guidizer.htm">
 add-in manifest ClientId</a>, 
 
 copies it to the appropriate Revit\Addins\2011 user specific folder (through post-build events) and deletes it again during Clean (through after-clean event), e.g. on using Visual Studio Build &gt; Clean Solution.
@@ -78,7 +109,7 @@ When you next create a new project, the template is presented for selection:</p>
 <p>It is immediately ready for compilation.
 On successful compilation, the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/addin-manifest-and-guidize.html">
+<a href="0354_guidizer.htm">
 add-in manifest</a>
 
 is created and copied to the proper location:</p>
@@ -101,3 +132,12 @@ copy "C:\a\doc\revit\devtv\test\RevitNETAddin2\RevitNETAddin2\RevitNETAddin2.add
 </pre>
 
 <p>On cleaning the solution, the add-in manifest file is removed again, so that Revit does not complain about the missing add-in assembly DLL.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1253742 [Parameter unit] -->
@@ -15,7 +46,7 @@ follow-up explanation by Jeremy Sawicki of Autodesk on the difference between Di
 
 in continuation of our last discussion on the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/10/unit-suffix-and-the-projectunit-sdk-sample.html">
+<a href="0226_unit_suffix.htm">
 unit suffix</a>.
 
 <p><strong>Question:</strong> What is the exact difference between DisplayUnitType and UnitSymbolType, please?
@@ -37,10 +68,18 @@ In the Format dialog box, DisplayUnitType corresponds to the Units dropdown:
 <img src="img/UnitSymbolType.png" alt="UnitSymbolType"/>
 </center>
 
-<p>In most cases, the DisplayUnitType determines the actual unit, for example feet vs. meters, with a different conversion factor applying to each DisplayUnitType.  UnitSymbolType affects how the units are indicated on the screen, usually with a suffix.  For example, square feet can use a suffix of either SF or ft� or no suffix at all.  UnitSymbolType used to be called UnitSuffixType until we introduced a currency unit type, which uses prefixes in some cases, like $.
+<p>In most cases, the DisplayUnitType determines the actual unit, for example feet vs. meters, with a different conversion factor applying to each DisplayUnitType.  UnitSymbolType affects how the units are indicated on the screen, usually with a suffix.  For example, square feet can use a suffix of either SF or ft� or no suffix at all.  UnitSymbolType used to be called UnitSuffixType until we introduced a currency unit type, which uses prefixes in some cases, like $.
 
 <p>The above applies to most normal units which are displayed as a number followed by a suffix, but there are various special cases.  For example, DisplayUnitType is also used to select certain kinds of units with special formatting, like Feet and fractional inches or Degrees minutes seconds.
 
 <p>I don't believe there is currently any API that can get the names of display unit types or unit symbol types.
 
 <p>Many thanks to Jeremy for this helpful clarification!
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

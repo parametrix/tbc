@@ -1,26 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>GeoSnoop .NET Boundary Curve Loop Visualisation</h3>
 
 <p>Continuing the research and development for my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/cloud-mobile-extensible-storage-data-use-in-schedules.html#3">
+<a href="0912_cm_estorage_schedule.htm#3">
 cloud-based round-trip 2D Revit model editing project</a>,
 
 I explained how I use the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/extrusion-analyser-and-plan-view-boundaries.html">
+<a href="0921_extrusion_analyser.htm">
 ExtrusionAnalyzer</a>
 
 to create a plan view boundary profile for the furniture and equipment family instances,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/sort-and-orient-curves-to-form-a-contiguous-loop.html">
+<a href="0918_contiguous_curves.htm">
 sort and orient its output curves</a>, and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/curve-following-face-and-bounding-box-implementation.html">
+<a href="0922_bounding_box_xyz_int.htm">
 determine their bounding box</a> for
 
 visualisation.
@@ -48,7 +79,7 @@ visualisation.
 
 <p>I introduced this class in the initial discussion on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/revit-2014-api-and-room-plan-view-boundary-polygon-loops.html">
+<a href="0916_2014_api_room_loops.htm">
 retrieving plan view room boundary polygon loops</a>.</p>
 
 <p>The main idea is to have a robust lightweight data container for passing 2D point information back and forth between my Revit add-in, the cloud and mobile devices.</p>
@@ -257,7 +288,7 @@ On the other hand, for the furniture, this class enables me to easily collect al
 
 <p>I discussed the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/curve-following-face-and-bounding-box-implementation.html#4">
+<a href="0922_bounding_box_xyz_int.htm#4">
 2D integer-based bounding box implementation</a> last week.
 
 <p>As you can see there, it already includes a handy constructor taking a collection of loops to return their entire bounding box.</p>
@@ -603,3 +634,12 @@ Who knows what will come, and where this will lead?</p>
 <a href="zip/GeoSnoopLoops.zip">GeoSnoopLoops.zip</a> containing
 
 the complete source code, Visual Studio solution and add-in manifest of the current state of this external command.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

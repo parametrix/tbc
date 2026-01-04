@@ -84,8 +84,8 @@ Thank you so much for your help.
 
 Here are two out of many related discussions of the topic by The Building Coder:
 
-- [Retrieve embedded resource image](http://thebuildingcoder.typepad.com/blog/2012/06/retrieve-embedded-resource-image.html)
-- [Scaling a bitmap for the large and small image icons](http://thebuildingcoder.typepad.com/blog/2018/05/scaling-a-bitmap-for-the-large-and-small-image-icons.html)
+- [Retrieve embedded resource image](0777_embedded_resource.htm)
+- [Scaling a bitmap for the large and small image icons](1650_scale_icon_image.html)
 
 Then you will have no need for any file path at all, and life will be easy and sweet.
 

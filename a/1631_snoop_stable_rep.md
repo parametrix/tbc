@@ -70,18 +70,18 @@ see how elegantly this was achieved.
 ####<a name="3"></a>Project Point on Plane Correction
 
 Alexander also raised some other interesting issues in in the past in comments on
-the [wall graph](http://thebuildingcoder.typepad.com/blog/2008/12/wall-graph.html#comment-3490286732),
-[point in polygon algorithm](http://thebuildingcoder.typepad.com/blog/2010/12/point-in-polygon-containment-algorithm.html#comment-3504414240),
-[wall elevation profile](http://thebuildingcoder.typepad.com/blog/2015/01/getting-the-wall-elevation-profile.html#comment-3759178237) and,
+the [wall graph](0047_wall_graph.htm#comment-3490286732),
+[point in polygon algorithm](0491_point_in_poly.htm#comment-3504414240),
+[wall elevation profile](1271_wall_elevation_profile.htm#comment-3759178237) and,
 most recently and significantly,
-on [projecting](http://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html#comment-3765799540)
-[a point](http://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html#comment-3779858513)
-[onto a plane](http://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html#comment-3779960537),
+on [projecting](1202_plane_proj_pick.htm#comment-3765799540)
+[a point](1202_plane_proj_pick.htm#comment-3779858513)
+[onto a plane](1202_plane_proj_pick.htm#comment-3779960537),
 uncovering an error in The Building Coder samples `ProjectOnto` method that projects a given 3D `XYZ` point onto a plane.
 
 I originally presented this method in the discussion
-on [planes, projections and picking points](http://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html):
-[projecting a 3D point onto a plane](http://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html#12).
+on [planes, projections and picking points](1202_plane_proj_pick.htm):
+[projecting a 3D point onto a plane](1202_plane_proj_pick.htm#12).
 
 Swapping the sign seems to have fixed it, as proved
 by [Alexander's ProjectPointOnPlanetest sample add-in](https://github.com/Pekshev/ProjectPointOnPlanetest):

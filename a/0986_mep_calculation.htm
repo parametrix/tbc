@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -22,17 +53,17 @@ RE: Blog for MEP Calculation Samples
 
 <p>The
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/05/the-revit-2013-mep-api-and-external-services.html#3">
+<a href="0762_mep_2013.htm#3">
 external services framework</a> was introduced in Revit 2013, but
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/08/updated-revit-mep-2013-material.html#7">
+<a href="0812_mep_2013_api.htm#7">
 not used</a> in
 
 that version.</p>
 
 <p>The recent listing of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/revit-2014-obj-exporter-and-new-sdk-samples.html#3">
+<a href="0984_obj_exp_2014_sdk_samp.htm#3">
 Revit 2014 API functionality and SDK samples</a> points
 
 out that this is one of the highlights of the new API, and yet no sample using it has been published yet.</p>
@@ -142,7 +173,7 @@ However, those experts are mostly several steps ahead anyway, having already imp
 
 <p>I applied the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/recursively-disable-architecture-mismatch-warning.html">
+<a href="0977_architecture_mismatch.htm">
 disable architecture mismatch warning utility DisableMismatchWarning.exe</a>, removing the warnings, leaving just <a href="zip/mep_calculations_migr_b.txt">3 errors</a>.</p>
 
 <p>All three are similar, complaining that the three server implementations for pipe plumbing fixture flow and duct and pipe pressure drop, derived from the three interfaces IPipePressureDropServer, IDuctPressureDropServer and IPipePlumbingFixtureFlowServer, are not fulfilling their contract that requires them to implement the GetHtmlDescription member method.</p>
@@ -221,3 +252,12 @@ Calculate pressure drop via Darcy equation, following formula is based on imperi
 f = friction factor (Simplified Altshul-Tsal friction factor equation)  L = length of duct (ft)  Dh = Duct Equivalent Diameter (ft)  ρ = fluid density at mean temperature (lbm/ft3)  v = average velocity (ft/sec)
 
 -->
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

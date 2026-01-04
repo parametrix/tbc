@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>XML Family Usage Report</h3>
@@ -15,24 +46,28 @@ Here it is, behind the fishing boats, seen from the other side of the port, with
 <img src="img/restaurant_container_in_jaffa.jpg" alt="Restaurant Container in Jaffa" width="400"/>
 </center>
 
-<p>I also found out that you can get really good coffee in Israel, and wonderful ice cream, for instance in 'tita', and in 'Anita, la Mamma del Gelato'.
+<p>I also found out that you can get really good coffee in Israel, and wonderful ice cream, for instance in 'tita', and 
+in 'Anita, la Mamma del Gelato'.
 Anita apparently won prizes for the best ice cream here three years running, which is quite something in view of the competition.
 I really like the atmosphere of this city!
 
 <p>Today we move from one extreme to the next, from plus 25 degrees temperature here in Tel Aviv to a similar negative temperature in Moscow...
-
+
+
 <p>Meanwhile, here is another little item from Kevin Vandecar's 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/filtered-element-collectors.html">
+
+<a href="0463_filtered_element_collector.htm">
 filtering and optimisation</a> class
 
 at the AEC DevCamp in June, which I also used in my  
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/11/autodesk-university-2010-class-materials.html">
+<a href="0478_au_2010_material.htm">
 AU class CP234-2</a> on
 
 the same topic.
-
+
+
 <p>As an example of using Revit filtering to retrieve family symbols and instances in conjunction with effective use of LINQ and a .NET framework XML library, Kevin presents an external command which creates a pretty comprehensive family usage report in very few lines of code.
 
 <p>It uses the ElementClassFilter, FamilySymbolFilter, and FamilyInstanceFilter classes to gather information about the families in a project.
@@ -40,11 +75,15 @@ For each family, it iterates over each symbol within the family, and finally ret
 These filters have not previously been discussed here.
 
 <p>This produces an abundance of information in a typical project, so it processes the results using the LINQ to XML functional or "DOM free" approach to produce a family inventory of the model in a nice XML format.
-
-<p>The report also includes the location of each family instance, and makes use of this helper method to return a string representing it.
+
+
+
+<p>The report also includes the location of each family instance, and makes use of this helper method to return a string representing it.
 The string consists of the endpoints of the given family instance location curve, if it has one, otherwise its location point, if it has one, or "&lt;none&gt;" if all else fails:
-
-<pre class="code">
+
+
+
+<pre class="code">
 <span class="blue">static</span> <span class="blue">string</span> LocationString( <span class="teal">FamilyInstance</span> fi )
 {
 &nbsp; <span class="teal">LocationPoint</span> p = fi.Location <span class="blue">as</span> <span class="teal">LocationPoint</span>;
@@ -60,7 +99,8 @@ The string consists of the endpoints of the given family instance location curve
 </pre>
 
 <!--
-
+
+
 <p>I tried to figure out a way to make my first use of the first of the  
 
 
@@ -73,7 +113,7 @@ The string consists of the endpoints of the given family instance location curve
 
 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/11/c-and-net-little-wonders.html">
+<a href="0485_cs_net_wonders.htm">
 C# and .NET little wonders</a> ,
 
 the null coalescing operator '??', to rewrite this more concisely, but the best I can come up with is actually less concise and the use of the operator does not help at all:
@@ -265,3 +305,12 @@ with 61 symbols and 327 instances
 <center>
 <img src="img/family_inventory_2.png" alt="Family inventory instance nodes"/>
 </center>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

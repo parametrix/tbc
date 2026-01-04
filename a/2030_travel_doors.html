@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
@@ -12,7 +42,8 @@
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 <style> code[class*=language-], pre[class*=language-] { font-size : 90%; } </style>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - Feedback Requested - Bowerbird: C# Scripting for Revit
@@ -22,13 +53,13 @@
   https://forums.autodesk.com/t5/revit-api-forum/doors-traversed-on-path-of-travel-lines/td-p/12616109
   % bl 1740 1744 1781 1836 1871 1917 2028
   <ul>
-  <li><a href="https://thebuildingcoder.typepad.com/blog/2019/04/whats-new-in-the-revit-2020-api.html">What's New in the Revit 2020 API</a></li>
-  <li><a href="https://thebuildingcoder.typepad.com/blog/2019/04/new-revit-2020-sdk-samples.html">New Revit 2020 SDK Samples</a></li>
-  <li><a href="https://thebuildingcoder.typepad.com/blog/2019/09/whats-new-in-the-revit-20201-api.html">What's New in the Revit 2020.1 API</a></li>
-  <li><a href="https://thebuildingcoder.typepad.com/blog/2020/04/whats-new-in-the-revit-2021-api.html">What's New in the Revit 2021 API</a></li>
-  <li><a href="https://thebuildingcoder.typepad.com/blog/2020/10/firerevit-deprecated-api-and-elbow-centre-point.html">FireRevit, Deprecated API and Elbow Centre Point</a></li>
-  <li><a href="https://thebuildingcoder.typepad.com/blog/2021/09/view-sheet-from-view-and-select-all-on-level.html">View Sheet from View and Select All on Level</a></li>
-  <li><a href="https://thebuildingcoder.typepad.com/blog/2024/02/interactive-bim-notebook-temporary-graphics-and-ai.html">Interactive BIM Notebook, Temporary Graphics and AI</a></li>
+  <li><a href="1740_whats_new_2020.html">What's New in the Revit 2020 API</a></li>
+  <li><a href="1744_2020_sdk_samples.html">New Revit 2020 SDK Samples</a></li>
+  <li><a href="1781_whats_new_2020_1.html">What's New in the Revit 2020.1 API</a></li>
+  <li><a href="1836_whats_new_2021.html">What's New in the Revit 2021 API</a></li>
+  <li><a href="1871_elbow_centre.html">FireRevit, Deprecated API and Elbow Centre Point</a></li>
+  <li><a href="1917_select_level.html">View Sheet from View and Select All on Level</a></li>
+  <li><a href="2028_bim_notebook.html">Interactive BIM Notebook, Temporary Graphics and AI</a></li>
   </ul>
 
 - We’re excited to introduce Claude 3, our next generation of vision-enabled AI models - now available on claude.ai.
@@ -167,13 +198,13 @@ That sounds pretty fool-proof to me.</p>
 
 % bl 1740 1744 1781 1836 1871 1917 2028
 <ul>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/04/whats-new-in-the-revit-2020-api.html">What's New in the Revit 2020 API</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/04/new-revit-2020-sdk-samples.html">New Revit 2020 SDK Samples</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/09/whats-new-in-the-revit-20201-api.html">What's New in the Revit 2020.1 API</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2020/04/whats-new-in-the-revit-2021-api.html">What's New in the Revit 2021 API</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2020/10/firerevit-deprecated-api-and-elbow-centre-point.html">FireRevit, Deprecated API and Elbow Centre Point</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2021/09/view-sheet-from-view-and-select-all-on-level.html">View Sheet from View and Select All on Level</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2024/02/interactive-bim-notebook-temporary-graphics-and-ai.html">Interactive BIM Notebook, Temporary Graphics and AI</a></li>
+<li><a href="1740_whats_new_2020.html">What's New in the Revit 2020 API</a></li>
+<li><a href="1744_2020_sdk_samples.html">New Revit 2020 SDK Samples</a></li>
+<li><a href="1781_whats_new_2020_1.html">What's New in the Revit 2020.1 API</a></li>
+<li><a href="1836_whats_new_2021.html">What's New in the Revit 2021 API</a></li>
+<li><a href="1871_elbow_centre.html">FireRevit, Deprecated API and Elbow Centre Point</a></li>
+<li><a href="1917_select_level.html">View Sheet from View and Select All on Level</a></li>
+<li><a href="2028_bim_notebook.html">Interactive BIM Notebook, Temporary Graphics and AI</a></li>
 </ul>
 
 -->
@@ -225,3 +256,11 @@ with its <a href="https://github.com/albertan017/LLM4Decompile">LLM4Decompile Gi
 <p>On another ever-present and looming topic of our days,
 BBC shares a nice and simple comprehensive article
 explaining <a href="https://www.bbc.com/news/science-environment-24021772">What is climate change? A really simple guide</a>.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

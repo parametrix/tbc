@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- Rudolf Honke Re: TheBuildingCoder, some contribution -->
@@ -16,7 +47,7 @@
 
 <p>It revisits the never-ending and always popular issue of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/11/launching-a-revit-command.html">
+<a href="0479_launch_command.htm">
 launching a Revit command programmatically</a>, 
 
 but this time based on some much more in-depth analysis of the Revit ribbon internals performed by Rudolf Honke of
@@ -394,7 +425,7 @@ Here is what he discovered and has to say about it:
 
 <p>Rudolf created a stand-alone Windows Forms project 
 
-<a href="">DrivingRevitViaUIAutomation</a> that 
+<a href=">DrivingRevitViaUIAutomation</a> that 
 
 demonstrates the use of this approach.
 Since UIAutomation can drive any application, the mechanism is not restricted to Revit a add-in, but can be used there as well as in any other context.
@@ -405,8 +436,8 @@ This is of course not surprising because it's Autodesk's policy to make the prod
 
 <p>DrivingRevitViaUIAutomation is adjusted to drive a German version of Revit 2011.
 <p>There are about three German literals in the code, describing some dialog titles.
-<p>It includes added comments like this: "÷ffnen" // en-US:"Open"
-<p>These are the parts the user must replace by his own dialog titles if his Revitís language is not German.
+<p>It includes added comments like this: "ÔøΩffnen" // en-US:"Open"
+<p>These are the parts the user must replace by his own dialog titles if his RevitÔøΩs language is not German.
 <p>It may be necessary to adjust some pause intervals in the code.
 
 <p>This example demonstrates three steps:
@@ -431,7 +462,7 @@ This is of course not surprising because it's Autodesk's policy to make the prod
 
 <p>The code uses a mix of the fast Window functions (P/Invoke) with the slow UIAutomation functions; this improves performance and may make a difference in more complex examples.
 
-<p>Regarding the language dependency: For example, the "open file" dialog is found by its title text, and in my example, this is "÷ffnen".
+<p>Regarding the language dependency: For example, the "open file" dialog is found by its title text, and in my example, this is "ÔøΩffnen".
 <p>Open this dialog manually, read the (English) title and replace the German expression in the code.
 <p>Additionally, this part is important:
 
@@ -470,7 +501,7 @@ This is of course not surprising because it's Autodesk's policy to make the prod
 </center>
 
 <p>The LocalizedControlType depends on OS Language; nonetheless, the dialog titles change according to Revit language.
-<p>You need to examine the LocalizedControlType by your own, I think, but itís just one use of UISpy.
+<p>You need to examine the LocalizedControlType by your own, I think, but itÔøΩs just one use of UISpy.
 
 <p>I think there might be a way to do it without any localization issues, but as I explained before, finding the correct AutomationElement is always a compromise between performance and elegance.
 <p>Sometimes there is no property that makes a AutomationElement individual, no AutomationID, just Controltype.Pane, for example.
@@ -478,7 +509,7 @@ This is of course not surprising because it's Autodesk's policy to make the prod
 <p><b>Combining the search conditions in the right way is the thing that matters.</b>
 <p>In Revit 2010, there were less AutomationIDs than in 2011, and some items shared their ID; e.g. there were some buttons with icons and others without icons, both for opening or closing files.
 <p>Getting the button with icon meant to see whether the button had children because all other Properties were identical &ndash; besides position, of course, but this may change...
-<p>Itís "workarounding" at its best.
+<p>ItÔøΩs "workarounding" at its best.
 
 <p>Another last comment or two from Rudolf on this topic:
 
@@ -493,13 +524,22 @@ So I hope.
 
 <p>Once again I have to repeat the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/closing-the-active-document-and-why-not-to.html#2">
+<a href="0456_close_active_doc.htm#2">
 warning about the risks involved</a> with 
 
 using this, though, and also point back to the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/closing-the-active-document-and-why-not-to.html#3">
+<a href="0456_close_active_doc.htm#3">
 disclaimer</a> accompanying 
 
 that warning.
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -40,7 +40,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 ### Room Volume glTF Generator
 
 I travelled home last night from the Barcelona Forge accelerator and continued working on
-the [room volume exporter](https://thebuildingcoder.typepad.com/blog/2019/06/improved-room-closed-shell-directshape-for-forge-viewer.html).
+the [room volume exporter](1760_room_closed_shell_forge.html).
 
 As suggested by [Michael Beale](https://forge.autodesk.com/author/michael-beale),
 I now implemented support

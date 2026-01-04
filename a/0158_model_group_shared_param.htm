@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -45,27 +75,27 @@ Please note that non-user-visible parameters can still be bound to these categor
 
 <p>We already made several forays into the realm of shared parameters in previous posts, e.g. the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/defining-a-new-parameter.html">
+<a href="0043_new_param.htm">
 creation of a new shared parameter</a>
 
 and how to determine whether shared parameters can be added to certain elements, such as an
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/adding-a-shared-parameter-to-a-dwg-file.html">
+<a href="0036_dwg_shared_param.htm">
 inserted DWG file</a> 
 
 and an
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/06/adding-a-shared-parameter-to-an-rfa-file.html">
+<a href="0147_shared_param_rfa.htm">
 RFA file</a>.
 
 Performance issues were also addressed, both for the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/parameter-modification-performance.html">
+<a href="0050_modify_param.htm">
 modification of a parameter value</a>
 
 and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/03/parameter-binding-performance.html">
+<a href="0109_param_binding_performance.htm">
 parameter binding</a>.
 
 <h3>Accessing the Model Groups Category</h3>
@@ -316,7 +346,7 @@ First, we define a couple of pretty arbitrary constants for the shared parameter
 <li>We start with the standard SDK FireRating example, whcih uses BuiltInCategory.OST_Doors.
 <li>We use BuiltInCategory.OST_Walls to demonstrate that the same technique works with system families just as well as with standard ones.
 <li>To attach shared parameters to 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/adding-a-shared-parameter-to-a-dwg-file.html">
+<a href="0036_dwg_shared_param.htm">
 inserted DWG files</a>,
 which generate their own category on the fly, we can also identify the category by category name instead of built-in category enumeration.
 This is commented out here, so we do not have to deal with the additional complexity of mixing strings and built-in enumeration values.
@@ -395,3 +425,12 @@ Are there any other families that you know can be handled via the GetCategory so
 
 <p><strong>Answer:</strong>
 No, I am currently not aware of any other categories that require the special handling I implemented for Model Groups, but possibly more would crop up with extensive testing. You could actually simply loop through all the built-in category enumeration values and try to retrieve a category from the document categories collection for each.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -16,9 +47,9 @@ Stephen FaustRevolution Design, Inc.
 <p>We already took a couple of looks at the Failure API in the past, e.g.:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/04/failure-api.html">Failure API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/11/failure-api-take-two.html">Failure API Take Two</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/04/failure-rollback.html">Failure Rollback</a></li>
+<li><a href="0350_failure_api.htm">Failure API</a></li>
+<li><a href="0484_failure_api.htm">Failure API Take Two</a></li>
+<li><a href="0752_failure_rollback.htm">Failure Rollback</a></li>
 </ul>
 
 <p>Here is a slightly more convoluted situation that motivates revisiting the topic from a new angle, raised and solved by Stephen Faust of
@@ -108,3 +139,12 @@ What do I need to do to just handle the dialog and tell it to remove those floor
 
 <p>Basically I separated out warnings from errors.
 Then warnings can be deleted, errors can be processed and delete elements can be directly called for specific elements causing the error.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -116,10 +116,10 @@ Many thanks to Stephen for sharing this!
 
 Stephen's question and answer prompted me to take another look at and try to eliminate the deprecated API usage warnings
 in [The Building Coder samples](https://github.com/jeremytammik/the_building_coder_samples).
-After the initial [flat migration to Revit 2021](https://thebuildingcoder.typepad.com/blog/2020/04/2021-migration-add-in-language-and-bim360-login.html#4),
+After the initial [flat migration to Revit 2021](1838_cs_python_bim360_login.html#4),
 the compilation still generates [162 warnings](zip/tbc_samples_2021_migr_01.txt),
 all associated with deprecated methods and enumerations caused by 
-the [Units API changes](https://thebuildingcoder.typepad.com/blog/2020/04/whats-new-in-the-revit-2021-api.html#4.1.3).
+the [Units API changes](1836_whats_new_2021.html#4.1.3).
 
 The resolution was actually quite simple.
 
@@ -336,7 +336,7 @@ the source code in the [LuhanSheng Revit_To_Database GitHub repository](https://
 
 Noteworthy related topics:
 
-- Kean Walmsley implemented a [HoloLens-based tool for navigating low visibility environments and following an exit path](https://thebuildingcoder.typepad.com/blog/2016/09/hololens-escape-path-waypoint-json-exporter.html)
-- Revit 2020 enhanced the Analysis API with support for a [Path of Travel API](https://thebuildingcoder.typepad.com/blog/2019/04/whats-new-in-the-revit-2020-api.html#4.2.19)
-- The Revit SDK includes a [PathOfTravel SDK sample](https://thebuildingcoder.typepad.com/blog/2019/04/new-revit-2020-sdk-samples.html#5)
+- Kean Walmsley implemented a [HoloLens-based tool for navigating low visibility environments and following an exit path](1468_hololens_exitpath.html)
+- Revit 2020 enhanced the Analysis API with support for a [Path of Travel API](1740_whats_new_2020.html#4.2.19)
+- The Revit SDK includes a [PathOfTravel SDK sample](1744_2020_sdk_samples.html#5)
 

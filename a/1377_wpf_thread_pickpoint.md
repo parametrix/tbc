@@ -50,7 +50,7 @@ The first publication of [Calvin and Hobbes](https://en.wikipedia.org/wiki/Calvi
 Thank you, Miles, for the notice.
 
 Last year, Saied already shared with us how
-to [create topography contours and building masses](http://thebuildingcoder.typepad.com/blog/2014/11/creating-topography-contours-and-building-masses.html).
+to [create topography contours and building masses](1236_data_topo_building.htm).
 
 Here is the new topic:
 
@@ -260,8 +260,8 @@ I cannot say off-hand what the problem is.
 
 I can say off-hand that the Revit API is absolutely never thread safe:
 
-- [No multithreading in Revit](http://thebuildingcoder.typepad.com/blog/2011/06/no-multithreading-in-revit.html)
-- [The Revit API is never ever thread safe](http://thebuildingcoder.typepad.com/blog/2014/11/the-revit-api-is-never-ever-thread-safe.html)
+- [No multithreading in Revit](0603_no_multithreading.htm)
+- [The Revit API is never ever thread safe](1244_no_multithreading.htm)
 
 Can you reconsider your approach under this assumption?
 
@@ -269,7 +269,7 @@ Have you read and understood the approach you need to take to drive Revit from o
 
 Do you understand that the Revit API can never be used except in a valid Revit API context, and such a context is exclusively provided within event handler callback functions that you notify Revit about and that it then calls back?
 
-This is extensively documented by The Building Coder topic group on [Idling and External Events for Modeless Access and Driving Revit from Outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+This is extensively documented by The Building Coder topic group on Idling and External Events for Modeless Access and Driving Revit from Outside *(link unavailable)*.
 
 The best way to drive Revit from outside is via external events.
 

@@ -13,9 +13,9 @@
 - [Incorrect face normal](https://forums.autodesk.com/t5/revit-api-forum/incorrect-face-normal/m-p/7108787)
   Family instance geometry in LCS or WCS
   Fair59 presents another brilliant solution, reminding me of the lessons learned 
-  using [voodoo magic to retrieve global instance edges](http://thebuildingcoder.typepad.com/blog/2016/08/voodoo-magic-retrieves-global-instance-edges.html),
-  including [snooping the family instance geometry](http://thebuildingcoder.typepad.com/blog/2016/08/voodoo-magic-retrieves-global-instance-edges.html#3) and
-  also demonstrated by the [structural concrete setout point add-in](http://thebuildingcoder.typepad.com/blog/2016/08/voodoo-magic-retrieves-global-instance-edges.html#7).
+  using [voodoo magic to retrieve global instance edges](1464_instance_geom_coord.html),
+  including [snooping the family instance geometry](1464_instance_geom_coord.html#3) and
+  also demonstrated by the [structural concrete setout point add-in](1464_instance_geom_coord.html#7).
 
 - Another example describing the symptoms well:
   13047044 [Arcadis DEVR6076 - Revit API pointOnEdge]
@@ -45,22 +45,22 @@ A number of people have run into issues retrieving geometry from interactively p
 Depending on circumstances, the geometry may be returned in the global Revit world coordinate system WCS, or in the family instance definition local coordinate system LCS.
 
 My first encounter with that effect was
-when [retrieving a solid from an element](http://thebuildingcoder.typepad.com/blog/2012/06/obj-model-exporter-take-one.html#7)
+when [retrieving a solid from an element](0792_obj_export_v1.htm#7)
 during the implementation of the OBJ exporter, then expanding that
-to [handle elements with multiple solids](http://thebuildingcoder.typepad.com/blog/2012/07/obj-model-exporter-with-multiple-solid-support.html#3):
+to [handle elements with multiple solids](0795_obj_export_solids.htm#3):
 
 > The `GetSolid` helper method retrieves the first non-empty solid found for a given element. In case it is a family instance, it may have its own non-empty solid, in which case we use that. Otherwise we search the symbol geometry. If we use the symbol geometry, we might have to keep track of the instance transform to map it to the actual instance project location. Instead, we ask for transformed geometry to be returned, so the resulting solid is already in place...
 
 I also used this approach in
-the [structural concrete setout point add-in](http://thebuildingcoder.typepad.com/blog/2016/08/voodoo-magic-retrieves-global-instance-edges.html#7).
+the [structural concrete setout point add-in](1464_instance_geom_coord.html#7).
 
 The issue is even more confusing when combined with interactive picking, and keeps coming up from time to  time, most recently in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread on
 an [incorrect face normal](https://forums.autodesk.com/t5/revit-api-forum/incorrect-face-normal/m-p/7108787).
 
 Once again, Fair59 presented a brilliant solution and explanation of this issue, making use of some of the lessons learned 
-using [Voodoo magic to retrieve global instance edges](http://thebuildingcoder.typepad.com/blog/2016/08/voodoo-magic-retrieves-global-instance-edges.html)
-and [snooping the family instance geometry](http://thebuildingcoder.typepad.com/blog/2016/08/voodoo-magic-retrieves-global-instance-edges.html#3):
+using [Voodoo magic to retrieve global instance edges](1464_instance_geom_coord.html)
+and [snooping the family instance geometry](1464_instance_geom_coord.html#3):
 
 - [Question on Incorrect Face Normal](#2)
 - [Working Plane has no Effect](#3)

@@ -14,15 +14,15 @@
   13551712 [CF-1201 Purge unused objects]
 
 - https://forums.autodesk.com/t5/revit-api-forum/purge-unused-via-the-api/m-p/7525966
-  [Determining purgeable elements](http://thebuildingcoder.typepad.com/blog/2013/03/determining-purgeable-elements.html) and the thread 
+  [Determining purgeable elements](0910_purge.htm) and the thread 
   [Writing a purge utility](http://forums.autodesk.com/t5/revit-api/writing-a-purge-utility/m-p/2735359/highlight/true)
 
 - purge:
-[Types, Families and Materials](http://thebuildingcoder.typepad.com/blog/2017/04/forgefader-ui-lookup-builds-purge-and-room-instances.html#4)
-[Text Note Types](http://thebuildingcoder.typepad.com/blog/2010/11/purge-unused-text-note-types.html)
-[Determining Purgeable Elements](http://thebuildingcoder.typepad.com/blog/2013/03/determining-purgeable-elements.html)
-[Reference Planes Not Hosting Any Elements](http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-devlab.html#2)
-[Unnamed Non-Hosting Reference Planes](http://thebuildingcoder.typepad.com/blog/2014/02/deleting-unnamed-non-hosting-reference-planes.html)
+[Types, Families and Materials](1548_room_instance_purge.html#4)
+[Text Note Types](0476_purge_text_note_types.htm)
+[Determining Purgeable Elements](0910_purge.htm)
+[Reference Planes Not Hosting Any Elements](0738_melbourne_devlab.htm#2)
+[Unnamed Non-Hosting Reference Planes](1098_delete_unused_ref_plane.htm)
 09095866 [How to truly purge Project (Shared) Parameters](http://forums.autodesk.com/t5/Revit-API/How-to-truly-purge-Project-Shared-Parameters/m-p/4719271)
 13551712 [CF-1201 Purge unused objects](https://forums.autodesk.com/t5/revit-api-forum/cf-1201-purge-unused-objects/m-p/7507455)
 CF-1201 [Purge unused objects]
@@ -66,11 +66,11 @@ One topic that keeps cropping up is how to purge different kinds of Revit databa
 
 The topic of purging various elements came up repeatedly in the past:
 
-- [Text note types](http://thebuildingcoder.typepad.com/blog/2010/11/purge-unused-text-note-types.html)
-- [Reference planes not hosting any elements](http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-devlab.html#2)
-- [Determining purgeable elements](http://thebuildingcoder.typepad.com/blog/2013/03/determining-purgeable-elements.html)
-- [Unnamed non-hosting reference planes](http://thebuildingcoder.typepad.com/blog/2014/02/deleting-unnamed-non-hosting-reference-planes.html)
-- [Types, families and materials](http://thebuildingcoder.typepad.com/blog/2017/04/forgefader-ui-lookup-builds-purge-and-room-instances.html#4)
+- [Text note types](0476_purge_text_note_types.htm)
+- [Reference planes not hosting any elements](0738_melbourne_devlab.htm#2)
+- [Determining purgeable elements](0910_purge.htm)
+- [Unnamed non-hosting reference planes](1098_delete_unused_ref_plane.htm)
+- [Types, families and materials](1548_room_instance_purge.html#4)
 
 Two recent Revit API discussion threads re-raise the topic of programmatic access to the purge functionality:
 
@@ -80,14 +80,14 @@ Two recent Revit API discussion threads re-raise the topic of programmatic acces
 In the latter, Thomas the Coder asks:
 
 **Question:** So I've read The Building Coder article
-on [determining purgeable elements](http://thebuildingcoder.typepad.com/blog/2013/03/determining-purgeable-elements.html) and
+on [determining purgeable elements](0910_purge.htm) and
 the discussion forum thread 
 on [writing a purge utility](http://forums.autodesk.com/t5/revit-api/writing-a-purge-utility/m-p/2735359).
  
 They both say that triggering the 'Purge Unused' button under the 'Manage' tab via code isn't possible and that you have to write your own code to handle the not so small task of doing it manually.
 
 **Answer by Ali [@imaliasad](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/5242763) Asad:**
-I've come up with the solution, using [PostCommand](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.3) to launch the built-in Revit command:
+I've come up with the solution, using PostCommand *(link unavailable)* to launch the built-in Revit command:
 
 <pre class="code">
 &nbsp;&nbsp;<span style="color:#2b91af;">UIApplication</span>&nbsp;uiapp&nbsp;=&nbsp;commandData.Application;
@@ -110,13 +110,13 @@ The limitation I'm facing: I can't run the Revit command button instantly; it ru
 **Question:** How do I run the Revit command instantly within my add-in external command, before it terminates?
 
 **Answer:** `PostCommand` launches a Revit command. The command cannot run in parallel with your add-in,
-because there is [no multithreading support in the Revit API](http://thebuildingcoder.typepad.com/blog/2011/06/no-multithreading-in-revit.html)
-and [the Revit API is never ever thread safe](http://thebuildingcoder.typepad.com/blog/2014/11/the-revit-api-is-never-ever-thread-safe.html).
+because there is [no multithreading support in the Revit API](0603_no_multithreading.htm)
+and [the Revit API is never ever thread safe](1244_no_multithreading.htm).
 
 Therefore, your add-in must terminate before the next command can run.
 
 You can add another `PostCommand` to call a second add-in command to be executed afterwards to continue the process, or use other means, such
-as [Idling and external events for modeless access and driving Revit from outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+as Idling and external events for modeless access and driving Revit from outside *(link unavailable)*.
 
 Also note 
 Ali's [list of `PostCommand` limitations](https://stackoverflow.com/questions/47151567/how-to-call-revit-purge-button-from-the-revit-api) on

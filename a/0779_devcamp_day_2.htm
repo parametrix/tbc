@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>DevCamp Day Two</h3>
@@ -21,7 +52,7 @@ Here then are my sessions of today, in chronological order:
 
 <h4>Revit 2013 UI API Enhancements</h4>
 
-<p><a href="http://thebuildingcoder.typepad.com/blog/2012/03/revit-2013-and-its-api.html#2">
+<p><a href="0740_revit_2013_api.htm#2">
 Enhanced add-in integration</a> is
 
 an important topic in the Revit 2013 API.
@@ -36,11 +67,11 @@ This session discusses four of the add-in integration topics in more depth, buil
 
 <p>All four of these are covered by existing SDK samples, the first by 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/new-revit-2013-sdk-samples.html#2">ProgressNotifier</a> (Events), 
+<a href="0742_new_sdk_samples.htm#2">ProgressNotifier</a> (Events), 
 
 the others by the comprehensive 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/new-revit-2013-sdk-samples.html#4">UIAPI</a> sample.
+<a href="0742_new_sdk_samples.htm#4">UIAPI</a> sample.
 
 <p>For someone like me, feeling a strong affinity to 
 
@@ -142,7 +173,7 @@ It also provides properties to both get and set the cancel and 'restore defaults
 
 <p>The 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/new-revit-2013-sdk-samples.html#4">UIAPI</a> SDK 
+<a href="0742_new_sdk_samples.htm#4">UIAPI</a> SDK 
 
 sample adds several custom tabs demonstrating most available features.
 
@@ -249,7 +280,7 @@ The visibility and graphical settings of the view are effective and respected by
 
 <p>The 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/new-revit-2013-sdk-samples.html#4">UIAPI</a> SDK 
+<a href="0742_new_sdk_samples.htm#4">UIAPI</a> SDK 
 
 sample proves a demonstration of this as well, which allows you to interactively select any of the open documents to view, or even open a new one, and secondly presents a list of all the documents views for you to switch between.
 Each time you change any of these two selections, the current preview control is discarded and a new one is instantiated with the updated input arguments.
@@ -339,7 +370,7 @@ This defines an appropriate relationship between the two as far as the Windows O
 <p>Please note that correct disposal of the preview control is ensured by the 'using' statement.
 This is similar to Arno&scaron;t's strong recommendation to always 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/04/using-using-automagically-disposes-and-rolls-back.html">
+<a href="0753_dispose_transact_2.htm">
 encapsulate Revit Transactions in a 'using' statement</a>.
 
 <p>Calling this method from the external command mainline with the current document view is trivial.
@@ -374,7 +405,7 @@ I add one line of code to access the Revit main window:
 
 <p>I recently discussed the new 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/04/drag-and-drop-api.html">
+<a href="0748_drag_drop_2.htm">
 drag and drop functionality</a> and 
 
 the UIAPI sample command demonstrating it.
@@ -444,22 +475,22 @@ used.
 
 <a href="http://au.autodesk.com/?nd=event_class&session_id=9879&jid=1725932">CP5381</a> 'Asynchronous Interactions and Managing Modeless UI with the Autodesk Revit API', as mentioned in the overview of the AU 2011
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/09/revit-and-aec-api-classes-at-autodesk-university.html">
+<a href="0651_au_2011_revit_classes.htm">
 Revit and AEC API sessions</a>.
 
 <p>In this class, Arno&scaron;t also covered the new 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/04/idling-enhancements-and-external-events.html">
+<a href="0743_external_event.htm">
 external events</a> and
 
 demonstrated his 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/new-revit-2013-sdk-samples.html#1">
+<a href="0742_new_sdk_samples.htm#1">
 ModelessForm_ExternalEvent, ModelessForm_IdlingEvent</a> (ModelessDialog)
 
 and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/new-revit-2013-sdk-samples.html#5">
+<a href="0742_new_sdk_samples.htm#5">
 WorkThread</a> (MultiThreading)
 
 SDK samples.
@@ -519,20 +550,20 @@ CP4453</a> 'Everything
 
 in Place with Autodesk Revit MEP Programming', as mentioned in the overview of the AU 2011
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/09/revit-and-aec-api-classes-at-autodesk-university.html">
+<a href="0651_au_2011_revit_classes.htm">
 Revit and AEC API sessions</a>.
 
 The AU materials and the sample code that I use there was already 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/08/mep-sample-code-for-revit-2012.html">
+<a href="0627_mep_2012_material.htm">
 published and discussed</a>.
 
 <p>In preparation for the sessions here in Waltham, I also discussed the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/05/the-revit-2013-mep-api-and-external-services.html">
+<a href="0762_mep_2013.htm">
 Revit 2013 MEP API</a> and completed the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/05/the-adn-mep-sample-adnrme-for-revit-mep-2013.html">
+<a href="0763_adnrme_mep_2013.htm">
 migration of the ADN MEP sample code</a> to Revit 2013.
 
 <p>Here is the 
@@ -559,3 +590,12 @@ These events are always great, and I'm looking forward to it a lot.
 
 <pre class="code">
 </pre>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

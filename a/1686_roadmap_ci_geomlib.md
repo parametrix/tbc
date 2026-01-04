@@ -12,7 +12,7 @@
 - Sasha Crotty updated the [Revit Public Roadmap &ndash; September 2018](http://blogs.autodesk.com/revit/2018/09/14/revit-public-roadmap-september-2018)
 
 &ndash; Configuring CI to use the RevittestFramework](https://github.com/upcodes/RevitTestFramework/blob/mark/Revit2019/docs/using_with_ci.md)
-We recently discussed some [Revit Unit Test Framework Improvements](http://thebuildingcoder.typepad.com/blog/2018/08/revit-unit-test-framework-improvements.html).
+We recently discussed some [Revit Unit Test Framework Improvements](1674_revittestframework.htmml).
 Mark Vulfson now added some very informative additional notes on [Configuring CI to use the RevittestFramework](https://github.com/upcodes/RevitTestFramework/blob/mark/Revit2019/docs/using_with_ci.md).
 Check them out if you have any ioterest in this topic.
 
@@ -61,7 +61,7 @@ There is a tag for [API related wishes](https://forums.autodesk.com/t5/revit-ide
 #### <a name="3"></a> Configuring CI to use the RevitTestFramework RTF
 
 We recently discussed
-some [Revit Unit Test Framework Improvements](http://thebuildingcoder.typepad.com/blog/2018/08/revit-unit-test-framework-improvements.html).
+some [Revit Unit Test Framework Improvements](1674_revittestframework.htmml).
 
 Mark Vulfson now added additional notes to that,
 on [configuring CI to use the RevitTestFramework RTF](https://github.com/upcodes/RevitTestFramework/blob/mark/Revit2019/docs/using_with_ci.md).

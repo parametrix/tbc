@@ -46,7 +46,7 @@ Please be aware that the Revit API does not support the creation of in-place mas
 As suggested by
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 on [creating components in mode 'Model In-Place'](https://forums.autodesk.com/t5/revit-api-forum/creation-components-in-mode-model-in-place/m-p/3822639),
-the alternative is to create a [direct shape](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.50) instead.
+the alternative is to create a direct shape *(link unavailable)* instead.
 Unfortunately, you will still not end up with a mass.
 
 However, if you have already created a mass element by some other means, you can use it to generate face walls and mass floors programmatically.

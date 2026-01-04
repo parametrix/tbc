@@ -225,7 +225,7 @@ Best of luck and much success with your blog and other projects!
 
 In the last post,
 I mentioned [Chuong Ho](https://chuongmep.com/)'s
-[BIM interactive notebooks](https://thebuildingcoder.typepad.com/blog/2024/02/interactive-bim-notebook-temporary-graphics-and-ai.html#2).
+[BIM interactive notebooks](2028_bim_notebook.html#2).
 
 Now you can see how he put them to use in his newest project,
 the [APS Toolkit](https://github.com/chuongmep/aps-toolkit):

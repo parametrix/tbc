@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <!-- <script src="run_prettify.js" type="text/javascript"></script> --> 
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -35,7 +66,7 @@ the past day or two.</p>
 <p>In a rather simplified manner, it calculates and displays signal attenuation caused by distance and obstacles, specifically walls.</p>
 <p>That provided an opportunity for me to dive in again into two very interesting pieces of Revit API functionality:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/avf">AVF, the Analysis Visualisation Framework</a>, for displaying graphical data in a transient manner directly in the BIM.</li>
+<li><span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/avf">AVF, the Analysis Visualisation Framework <em>(category page)</em></span>, for displaying graphical data in a transient manner directly in the BIM.</li>
 <li>The <code>ReferenceIntersector</code> ray tracing functionality to detect walls and other obstacles between two points.</li>
 </ul>
 <p>In the course of implementing the AVF part of things, I also resuscitated my trusty
@@ -59,7 +90,7 @@ AVF and an external event to display a live webcam image on a selected element f
 <p>Back to <code>RvtFader</code>, though:</p>
 <h4><a name="3"></a> RvtFader</h4>
 <p>RvtFader is a Revit C# .NET API add-in to calculate and display signal attenuation using 
-the <a href="http://thebuildingcoder.typepad.com/blog/avf">analysis visualisation framework</a> AVF
+the <span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/avf">analysis visualisation framework <em>(category page)</em></span> AVF
 and <code>ReferenceIntersector</code> ray tracing.</p>
 <p><center>
 <img src="img/rvtfader_command_icon.png" alt="RvtFader" width="32"/>
@@ -86,9 +117,9 @@ and <code>ReferenceIntersector</code> ray tracing.</p>
 </ul>
 <p>Summary of the steps towards achieving this:</p>
 <ul>
-<li>Skeleton add-in using the <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20">Visual Studio Revit Add-In Wizards</a>.</li>
+<li>Skeleton add-in using the <span class="unavailable-link">Visual Studio Revit Add-In Wizards</span>.</li>
 <li>External command for the settings user interface displaying a Windows form and storing data in JSON as developed for
-the <a href="http://thebuildingcoder.typepad.com/blog/2016/09/hololens-escape-path-waypoint-json-exporter.html">HoloLens escape path waypoint JSON exporter</a>:<ul>
+the <a href="1468_hololens_exitpath.html">HoloLens escape path waypoint JSON exporter</a>:<ul>
 <li>Display modal Windows form.</li>
 <li>Implement form validation using <code>ErrorProvider</code> class, <code>Validating</code> and <code>Validated</code> events.</li>
 <li>Store add-in option settings in JSON using the <code>JavaScriptSerializer</code> class.</li>
@@ -120,14 +151,14 @@ and <a href="https://github.com/jeremytammik/RvtFader/commits">commits</a>.</p>
 <li>An introduction to AVF programming basics is provided by Matt Mason's Autodesk University
 class <a href="http://aucache.autodesk.com/au2011/sessions/5229/class_handouts/v1_CP5229-SeeingDataAndMore-TheAVFinRevitAPI.pdf">CP5229 Seeing Data and More &ndash; The Analysis Visualization Framework</a>
 (<a href="doc/cp5229_matt_mason_avf.pdf">^</a>)</li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/avf">Discussion of AVF by The Building Coder</a></li>
+<li><span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/avf">Discussion of AVF by The Building Coder <em>(category page)</em></span></li>
 </ul>
 </li>
 <li><strong><code>ReferenceIntersector</code> ray tracing</strong>:<ul>
-<li>The <code>ReferenceIntersector</code> was previously named <a href="http://thebuildingcoder.typepad.com/blog/2010/01/findreferencesbydirection.html"><code>FindReferencesByDirection</code></a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/02/dimension-walls-using-findreferencesbydirection.html">Dimension walls using <code>FindReferencesByDirection</code></a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/07/intersect-solid-filter-avf-and-directshape-for-debugging.html">Intersect Solid Filter, AVF vs DirectShape Debugging</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/07/using-referenceintersector-in-linked-files.html">Using <code>ReferenceIntersector</code> in linked files</a></li>
+<li>The <code>ReferenceIntersector</code> was previously named <a href="0294_abg09_findReferencesByDir.htm"><code>FindReferencesByDirection</code></a></li>
+<li><a href="0540_dim_walls_find_refs.htm">Dimension walls using <code>FindReferencesByDirection</code></a></li>
+<li><a href="1340_inters_solid_filt.htm">Intersect Solid Filter, AVF vs DirectShape Debugging</a></li>
+<li><a href="1339_reference_intersector.htm">Using <code>ReferenceIntersector</code> in linked files</a></li>
 </ul>
 </li>
 <li><strong>Signal attenuation</strong>:<ul>
@@ -143,3 +174,11 @@ class <a href="http://aucache.autodesk.com/au2011/sessions/5229/class_handouts/v
 <li>External application with custom ribbon panel, custom tab, split button with main command and settings, always defaulting to main command.</li>
 <li>Settings storage in external JSON text file, displayed to user in Windows form, validated with detailed feedback.</li>
 </ul>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

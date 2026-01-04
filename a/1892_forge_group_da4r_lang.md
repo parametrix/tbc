@@ -141,8 +141,8 @@ determine the language used in the current session of Revit, so that part is eas
 However, the API does not provide any method to control the language being used.
 
 On the desktop, you can use the language switch in the Revit.exe command line, cf. the discussions
-on [Revit command-line switches](https://thebuildingcoder.typepad.com/blog/2017/01/distances-switches-kiss-ing-and-a-dino.html#3)
-and [multiple language RESX resource files](https://thebuildingcoder.typepad.com/blog/2017/02/multiple-language-resx-resource-files.html)
+on [Revit command-line switches](1512_kiss.html#3)
+and [multiple language RESX resource files](1523_multi_lang_resource.html)
 
 Now, trying to apply this insight to the DA4R environment, there are two questions:
 
@@ -171,7 +171,7 @@ Thanks also to Rahul Bhobe for helpful advice.
 ####<a name="4"></a> RevitLookup Supports ScheduleDefinition GetField
 
 Following up on his enhancement
-enabling [RevitLookup to handle split region offsets](https://thebuildingcoder.typepad.com/blog/2021/02/splits-persona-collector-region-tag-modification.html#4) last
+enabling [RevitLookup to handle split region offsets](1890_multiple_filter.html#4) last
 week, Michael [@RevitArkitek](https://github.com/RevitArkitek) Coffey submitted a
 new [issue #70 &ndash; `ScheduleDefinition.GetField` method not showing](https://github.com/jeremytammik/RevitLookup/issues/70) and
 the subsequent [pull request #71  adds handler for GetSplitRegionOffsets](), saying:

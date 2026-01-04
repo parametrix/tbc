@@ -96,13 +96,13 @@ Every database element has a unique identifier.
 So, theoretically, you could use the `ProjectInformation` unique identifier to uniquely identify a project.
 
 Unfortunately, if I create a project A, and then copy it for reuse in project B, the two ProjectInformation elements will have the same unique id, so this solution only works if you can guarantee that no such copy will ever be created,
-cf. [project identifier](https://thebuildingcoder.typepad.com/blog/2017/12/project-identifier-and-fuzzy-comparison.html#2).
+cf. [project identifier](1613_project_id_fuzz.html#2).
 
 Here is some further analysis of the task
 to [identify a project](https://the3dwebcoder.typepad.com/blog/2015/07/implementing-mongo-database-relationships.html#2).
 
 To address this, I suggested a different and safer solution using an extensible storage schema and a named GUID storage for project identification instead
-using [named guid storage for project identification](https://thebuildingcoder.typepad.com/blog/2016/04/named-guid-storage-for-project-identification.html).
+using [named guid storage for project identification](1422_named_guid_storage.html).
 
 **Response:** Indeed, I searched before without a satisfying result.
 
@@ -152,8 +152,8 @@ and [how to raise an external event from a WPF app](https://stackoverflow.com/qu
 
 The Revit API cannot be used outside a valid Revit API context:
 
-- [Use of the Revit API Requires a Valid Context](http://thebuildingcoder.typepad.com/blog/2015/12/external-event-and-10-year-forum-anniversary.html#2)
-- [Revit API Context Summary](http://thebuildingcoder.typepad.com/blog/2015/08/revit-api-context-and-form-creation-errors.html#2)
+- [Use of the Revit API Requires a Valid Context](1383_external_event_10_year.html#2)
+- [Revit API Context Summary](1344_api_context_form_err.htm#2)
 
 You can work around this limitation, though:
 the Revit API enables you to define an external event that can be triggered from outside a valid Revit API context.
@@ -200,8 +200,8 @@ Can I use this data to determine the Revit file version before passing it to DA?
 **Answer:** This question is answered in full in the following blog posts:
 
 - [Check the version of a Revit file hosted on the cloud](https://forge.autodesk.com/blog/check-version-revit-file-hosted-cloud)
-- [Basic File Info and RVT File Version](https://thebuildingcoder.typepad.com/blog/2013/01/basic-file-info-and-rvt-file-version.html)
-- [Automatically Open Correct RVT File Version](https://thebuildingcoder.typepad.com/blog/2020/05/automatically-open-correct-rvt-file-version.html)
+- [Basic File Info and RVT File Version](0887_rvt_file_version.htm)
+- [Automatically Open Correct RVT File Version](1846_open_rvt_file_version.html)
 
 Furthermore, this recent discussion on StackOverflow addresses your exact requirements more precisely still:
 
@@ -215,8 +215,8 @@ Thank you so much!
 
 The implementation and use of external events can be perfected and simplified, as proven by Igor Serdyukov, aka Игорь Сердюков or WhiteSharq, and Kennan Chen:
 
-- [External Communication and Async Await Event](https://thebuildingcoder.typepad.com/blog/2020/02/external-communication-and-async-await-event-wrapper.html)
-- [Revit.Async](https://thebuildingcoder.typepad.com/blog/2020/03/another-async-await-rex-and-structural-analysis-sdk.html#3)
+- [External Communication and Async Await Event](1817_async_await.html)
+- [Revit.Async](1826_rex_2020_async_await.html#3)
 
 Gregor Vilkner of [Microdesk](https://www.microdesk.com) makes use of that in his exciting class at
 the [AEC Tech Hackathon 2020](https://www.aectech.us) in October:

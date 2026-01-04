@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Snow and Woe with Manifest Files</h3>
@@ -37,7 +68,7 @@ from left to right, Marat Mirgaleev, Philippe Leefsma, Adam Nagy, Karl Osti, Jim
 
 <p>I updated the list of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/the-revit-api-track-at-au-2010.html">
+<a href="0490_au_2010_revit_api_track.htm">
 Revit API related classes at Autodesk University 2010</a>,
 
 adding new classes and uploading more materials for direct download.
@@ -56,15 +87,15 @@ One Russian developer says he has been struggling with these problems for months
 Section 2.2.5 'Create a .addin manifest file' describes the simple case for the Hello World walkthrough, and 3.4 'Add-in Registration' provides the full detailed description.
 We already discussed these issues when looking at the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/addin-manifest-and-guidize.html#1">
+<a href="0354_guidizer.htm#1">
 manifest file in general</a> and specifically for the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/pipe-to-conduit-converter.html#3">
+<a href="0360_p2c.htm#3">
 pipe to conduit converter</a>.
 
 An overview of other manifest related topics is given in the discussion of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/08/network-access-to-add-in-manifest-and-icons.html">
+<a href="0434_addin_manifest_folder.htm">
 network access and ribbon icons</a>.
 
 <p>Some of the problems people seem to be running into and that are not highlighted in the documentation:
@@ -93,7 +124,7 @@ Alternatively, you can use ANSI encoding, if you have no need for non-ASCII char
 Whatever you do, please ensure that the encoding used matches the one you specify in the XML encoding attribute.
 Several people ran into this issue right in the beginning, when add-in manifest files were first introduced, and I discussed it in detail in the post on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/addin-manifest-and-guidize.html#3">
+<a href="0354_guidizer.htm#3">
 manifest files and Guidize</a>.
 
 <h4>Assembly Path</h4>
@@ -112,7 +143,16 @@ Here again, please use copy and paste, do not try to type things in manually.
 
 <p>Actually, the simplest way to avoid all these problems is to use the Visual Studio
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/revit-2011-devtv.html#template_update">
+<a href="0451_revit_2011_devtv.htm#template_update">
 DevTV add-in template</a>,
 
 which creates a valid add-in manifest file for you and automatically adds a post-build event to the generated Visual Studio solution which copies it to the right destination folder and also ensures that it remains up to date.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

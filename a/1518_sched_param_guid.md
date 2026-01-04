@@ -48,7 +48,7 @@ The problem is rather old and known, and he found an elegant new way to solve it
 I wanted to get shared parameters GUIDs directly from project parameters.
 
 Of course I found the solution demonstrated by 
-the [shared project parameter GUID reporter](http://thebuildingcoder.typepad.com/blog/2015/12/shared-project-parameter-guid-reporter.html), where you need to attach the parameter to the project information (for instance parameters) and wall (for type parameters) categories.
+the [shared project parameter GUID reporter](1388_project_param_guid.html), where you need to attach the parameter to the project information (for instance parameters) and wall (for type parameters) categories.
 
 I also found another blog post on [parameter of Revit API 30 &ndash; project parameter information](http://spiderinnet.typepad.com/blog/2011/05/parameter-of-revit-api-30-project-parameter-information.html), but this solution did not work for me, because all definitions in `doc.ParameterBindings` are `InternalDefinition` objects in Revit 2017.
 
@@ -141,10 +141,10 @@ That will probably answer your question.
 It is statically compiled, however, so it mainly displays properties. It does not dynamically evaluate all methods available on all classes.
 
 For that, you can use other,
-even [more powerful and interactive database exploration tools](http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html).
+even [more powerful and interactive database exploration tools](1057_db_explor_python_sh.htm).
 
 Also, my discussion
-on [how to research to find a Revit API solution](http://thebuildingcoder.typepad.com/blog/2017/01/virtues-of-reproduction-research-mep-settings-ontology.html#3) might
+on [how to research to find a Revit API solution](1515_repro_tray_conduit.html#3) might
 come in handy for you at this point.
 
 **Response:** I have installed RevitLookup for Revit 2015 (the version I'm developing as our development needs to be backward compatible with our current projects).

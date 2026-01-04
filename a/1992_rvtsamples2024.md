@@ -397,7 +397,7 @@ Pixel Width: 2,096
 ####<a name="3"></a> Configuring RvtSamples 2024
 
 Now that I completed installing Revit 2024,
-[successfully compiled the Revit 2024 SDK samples](https://thebuildingcoder.typepad.com/blog/2023/04/nice-accelerator-and-compiling-the-revit-2024-sdk.html)
+[successfully compiled the Revit 2024 SDK samples](1991_rvt2024sdk.html)
 and updated the [RevitSdkSamples repository](https://github.com/jeremytammik/RevitSdkSamples),
 the time is ripe to configure the RvtSamples external application to load all 246 Revit 2024 SDK sample external commands.
 Yes, 246 of them.
@@ -407,25 +407,25 @@ Mainly, this consists of editing RvtSamples.txt, the input text file specifying 
 
 Here is an overview of (most of) the history of RvtSamples, including its initial implementation and similar migration efforts in the past:
 
-- [Loading SDK Samples](https://thebuildingcoder.typepad.com/blog/2008/09/loading-sdk-sam.html)
-- [Adding <code>&#35;include</code> functionality](https://thebuildingcoder.typepad.com/blog/2008/11/loading-the-building-coder-samples.html)
-- [RvtSamples Conversion from 2009 to 2010](http://thebuildingcoder.typepad.com/blog/2009/05/porting-the-building-coder-samples.html)
-- [Debugging with Visual Studio 2010 and RvtSamples](http://thebuildingcoder.typepad.com/blog/2010/04/debugging-with-visual-studio-2010-and-rvtsamples.html)
-- [Migrating the Building Coder Samples to Revit 2012](http://thebuildingcoder.typepad.com/blog/2011/04/migrating-the-building-coder-samples-to-revit-2012.html)
-- [Compiling the Revit 2014 SDK](http://thebuildingcoder.typepad.com/blog/2013/04/compiling-the-revit-2014-sdk.html)
-- [Compiling the Revit 2015 SDK and Migrating Bc Samples](http://thebuildingcoder.typepad.com/blog/2014/04/compiling-the-revit-2015-sdk-and-migrating-bc-samples.html)
-- [Migrating The Building Coder Samples to Revit 2016](http://thebuildingcoder.typepad.com/blog/2015/05/migrating-the-building-coder-samples-to-revit-2016.html)
-- [RvtSamples for Revit 2017](http://thebuildingcoder.typepad.com/blog/2016/04/rvtsamples-for-revit-2017.html)
-- [The Building Coder Samples 2017](http://thebuildingcoder.typepad.com/blog/2016/05/the-building-coder-samples-2017.html)
-- [RvtSamples for Revit 2018](http://thebuildingcoder.typepad.com/blog/2017/05/sdk-update-rvtsamples-and-modifying-grid-end-point.html)
-- [RvtSamples 2019](http://thebuildingcoder.typepad.com/blog/2018/04/rvtsamples-2019.html)
-- [RvtSamples 2019 Update](http://thebuildingcoder.typepad.com/blog/2018/05/installing-the-revit-2019-sdk-april-update.html)
-- [RvtSamples 2020](https://thebuildingcoder.typepad.com/blog/2019/04/the-revit-2020-fcs-api-and-sdk.html)
-- [Close Doc and Zero Doc RvtSamples](https://thebuildingcoder.typepad.com/blog/2019/04/close-doc-and-zero-doc-rvtsamples.html)
-- [RvtSamples 2020.1](https://thebuildingcoder.typepad.com/blog/2019/09/whats-new-in-the-revit-20201-api.html#4)
-- [Setting up RvtSamples for Revit 2021](https://thebuildingcoder.typepad.com/blog/2020/05/setting-up-rvtsamples-for-revit-2021.html)
-- [Revit 2022 SDK and The Building Coder Samples](https://thebuildingcoder.typepad.com/blog/2021/04/revit-2022-sdk-and-the-building-coder-samples.html)
-- [Compiling the Revit 2023 SDK Samples](https://thebuildingcoder.typepad.com/blog/2022/04/compiling-the-revit-2023-sdk-samples.html)
+- [Loading SDK Samples](0007_loading_sdk_samples.htm)
+- [Adding <code>&#35;include</code> functionality](0035_loading_bc_samples.htm)
+- [RvtSamples Conversion from 2009 to 2010](0141_port_bc.htm)
+- [Debugging with Visual Studio 2010 and RvtSamples](0342_visual_studio_2010.htm)
+- [Migrating the Building Coder Samples to Revit 2012](0574_port_bc_2012.htm)
+- [Compiling the Revit 2014 SDK](0937_compile_2014_sdk.htm)
+- [Compiling the Revit 2015 SDK and Migrating Bc Samples](1136_tbc_sdk_2015.htm)
+- [Migrating The Building Coder Samples to Revit 2016](1321_tbc_samples_2016.htm)
+- [RvtSamples for Revit 2017](1427_rvtsamples.html)
+- [The Building Coder Samples 2017](1436_tbc_samples_2017.html)
+- [RvtSamples for Revit 2018](1562_mod_grid_point.html)
+- [RvtSamples 2019](1646_rvtsamples_2019.html)
+- [RvtSamples 2019 Update](1655_revit_2019_sdk_apr.html)
+- [RvtSamples 2020](1738_rvt2020.html)
+- [Close Doc and Zero Doc RvtSamples](1741_rvtsamp_zero_close.html)
+- [RvtSamples 2020.1](1781_whats_new_2020_1.html#4)
+- [Setting up RvtSamples for Revit 2021](1844_rvtsamples_2021.html)
+- [Revit 2022 SDK and The Building Coder Samples](1902_2022_sdk_tbc.html)
+- [Compiling the Revit 2023 SDK Samples](1946_compile_sdk_2023.html)
 
 <!--
 
@@ -540,7 +540,7 @@ on how to [draw a line visible on screen](https://forums.autodesk.com/t5/revit-a
 several useful ideas on how to generate and display transient graphics for rubber banding functionality similar to AutoCAD jigs.
 
 It also raised the question of generating (and consuming) huge amounts of element ids, since each transient element in a loop consumes a new element id, even if the transaction is never commited.
-Luckily, Revit 2024 [upgraded `ElementId` storage to 64-bit](https://thebuildingcoder.typepad.com/blog/2023/04/whats-new-in-the-revit-2024-api.html#4.1.2).
+Luckily, Revit 2024 [upgraded `ElementId` storage to 64-bit](1989_whats_new_2024.html#4.1.2).
 
 Anyway, that question led to the following amusing discussion:
 

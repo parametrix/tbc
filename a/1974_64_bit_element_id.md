@@ -137,7 +137,7 @@ Here is a table showing the deprecated and replacement members:
 
 We have an amendment to add to the original post.
 One of the things we originally said above has actually changed, and I think it also helps
-address [cadferret’s question below](https://thebuildingcoder.typepad.com/blog/2022/11/64-bit-element-ids-maybe.html#comment-6054377627):
+address [cadferret’s question below](1974_64_bit_element_id.html#comment-6054377627):
  
 With the caveat that anything we say here might change, we want to amend the initially published proposal.
  
@@ -199,7 +199,7 @@ Thank you, Hernan!
 ####<a name="4"></a> Beyond Dynamo: Python Manual for Revit
 
 I avoid advertising commercial products, but I made an exception
-for [Más Allá de Dynamo](https://thebuildingcoder.typepad.com/blog/2020/12/dynamo-book-and-texture-bitmap-uv-coordinates.html#3),
+for [Más Allá de Dynamo](1880_texture_uv_coord.html#3),
 the Spanish-Language Python manual focused on Dynamo and the Revit API.
 
 It is now also available in English
@@ -215,7 +215,7 @@ If you know how to program in Python, it will be equally useful, as it explains 
 </center>
 
 Note that we also discussed lots of other resources
-for [learning Python and Dynamo](https://thebuildingcoder.typepad.com/blog/2021/02/addin-file-learning-python-and-ifcjs.html#3).
+for [learning Python and Dynamo](1893_js_ifc_python_rps.html#3).
 
 ####<a name="5"></a> Web-Based Family Management Showroom
 

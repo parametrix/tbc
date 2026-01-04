@@ -168,9 +168,9 @@ Would it be a good idea to log the unique ID of element instead of Element ID ?
 The affected element ids are provided.
 However, as noted above, no further data is available for the deleted ones.
 More on `DocumentChanged` and the more complex and powerful DMU framework in
-the [Dynamic Model Updater framework topic group](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.31)
+the Dynamic Model Updater framework topic group *(link unavailable)*
 More thoughts and a PoC on tracking model modifications in general is provided by
-the [TrackChangesCloud sample](https://thebuildingcoder.typepad.com/blog/2016/03/implementing-the-trackchangescloud-external-event.html).
+the [TrackChangesCloud sample](1411_external_event.html).
 
 **Answer 2:** In practical terms you would be using either one of:
 

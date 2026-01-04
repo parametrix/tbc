@@ -118,7 +118,7 @@ These references will include the element instances themselves, their types, pha
 Then you will have to test and see what Revit can do to try to avoid creating duplicates of them in the target database and map them to existing target objects instead.
 
 This behaviour is hinted at in the list
-of [extensible storage features](https://thebuildingcoder.typepad.com/blog/2011/06/extensible-storage-features.html#7).
+of [extensible storage features](0604_estorage_element_id.htm#7).
 
 **Answer 2:** That’s standard behaviour for the Revit User Interface.
 Elements that are pasted into a view do not get their phases from the copied elements.

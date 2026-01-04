@@ -68,7 +68,7 @@ We currently have two [upcoming Forge accelerators](https://forge.autodesk.com/a
 - Waldspirale, Virtual Accelerator, February 22-26, 2021 &ndash; [apply now](https://www.eventbrite.com/e/acc-focused-autodesk-virtual-accelerator-waldspirale-feb-22-26-2021-registration-131597280007)
 
 Joining a Forge accelerator is the most effective way to get up to speed on Forge in general and also
-to [answer any and all BIM360 related questions](https://thebuildingcoder.typepad.com/blog/2020/04/2021-migration-add-in-language-and-bim360-login.html#2) you
+to [answer any and all BIM360 related questions](1838_cs_python_bim360_login.html#2) you
 may be pondering.
 
 As a knowledgeable and architecturally interested person might guess, the February event is AEC oriented.
@@ -102,7 +102,7 @@ In addition, the [Data Connector](https://help.autodesk.com/view/BIM360D/ENU/?gu
 This API will allow you to schedule extraction jobs and access extracted data.   
 
 In case of interest, here are 
-more [full articles and video recordings of the Forge classes at AU classes](https://thebuildingcoder.typepad.com/blog/2021/01/forge-at-au-and-open-source-property-access.html#3).
+more [full articles and video recordings of the Forge classes at AU classes](1883_forge_props.html#3).
 
 Please submit your proposal
 to [forge.autodesk.com/accelerator-program](https://forge.autodesk.com/accelerator-program).

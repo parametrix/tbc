@@ -600,7 +600,7 @@ Here is sample code from my script:
 
 **Answer:** Well, first of all you need to understand how to implement such a constraint manually in the end user interface.
 I believe you define a dimension between the two objects to do so, and constrain it to a zero distance.
-The [Family API samples](https://thebuildingcoder.typepad.com/blog/2009/08/the-revit-family-api.html) demonstrate
+The [Family API samples](0199_family_api.htm) demonstrate
 how such a constraint can be set up programmatically.
 
 Reading that myself, I discover that

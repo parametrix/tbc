@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- RE: GeometryObject::Intersect() with linked elements - Geometry API - Revit Galaxy -->
@@ -8,7 +39,7 @@
 
 <p>I just arrived in Greece to give a Revit API training here during the next few days.
 I am in a pleasant place called &Kappa;&eta;&phi;&iota;&sigma;&iota;&alpha; (Kifissia), a suburb of Athens.
-<!-- ��ƹù� --> 
+<!-- ��ƹù� --> 
 I still need to get the training material set up properly...
 
 <p>Meanwhile, here are some notes on a different topic that I have been sitting on for a while:
@@ -17,10 +48,10 @@ I still need to get the training material set up properly...
 
 <p>Certain basic information is actually easily accessible, as shown by the discussion on 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/list-linked-elements.html">
+<a href="0106_list_linked_elements.htm">
 listing elements in linked documents</a> and the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/list-linked-elements.html">
+<a href="0106_list_linked_elements.htm">
 CmdLinkedFileElements</a> command.
 
 <p>More intense geometric analysis is not so easy, however. 
@@ -35,7 +66,7 @@ GetTotalTransform provides the transform modified with the true north transform,
 
 <p>We had a look at this method recently to analyse 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/06/get-transformed-family-instance-geometry.html">
+<a href="0605_transformed_geo.htm">
 getting the transformed family instance geometry</a> and
 
 taking into account the transformation already built into the GetTransformed method.
@@ -56,3 +87,12 @@ You can now get the transformation into the current project using the inherited 
 <p>Hopefully, by applying the appropriate transform retrieved from the link instance to the target curve, e.g. using Curve.Transformed, you will then be able to correctly detect the intersection.  
 
 <p>There are other potential differences regarding filters applied by the host document on the link which would not necessarily be reflected in the geometry of the document which is linked in.  So when we say that the geometry of the link is not truly available this is accurate; the geometry you can find from the document in memory doesn't know how the host modifies the link.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

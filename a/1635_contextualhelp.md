@@ -82,10 +82,10 @@ $ lb ContextualHelp
 $ blbare 0800 0904 1114 1283
 ---->
 
-- [Multi-Version Add-in](http://thebuildingcoder.typepad.com/blog/2012/07/multi-version-add-in.html)
-- [What's New in the Revit 2013 API](http://thebuildingcoder.typepad.com/blog/2013/03/whats-new-in-the-revit-2013-api.html) &gt; Contextual help support
-- [Using Balloon Tips in Revit](http://thebuildingcoder.typepad.com/blog/2014/03/using-balloon-tips-in-revit.html)
-- [From Hack to App &ndash; OBJ Mesh Import to DirectShape](http://thebuildingcoder.typepad.com/blog/2015/02/from-hack-to-app-obj-mesh-import-to-directshape.htm...)
+- [Multi-Version Add-in](0800_multi_version_addin.htm)
+- [What's New in the Revit 2013 API](0904_whats_new_2013.htm) &gt; Contextual help support
+- [Using Balloon Tips in Revit](1114_balloon_tip.htm)
+- From Hack to App &ndash; OBJ Mesh Import to DirectShape *(link unavailable)*
  
 Unfortunately, all of these date rather far back, so I cannot guarantee that they behave as expected nowadays.
 

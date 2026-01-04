@@ -57,7 +57,7 @@ Another overly busy week so far:
 ####<a name="2"></a> Loading all Revit 2021 SDK Samples
 
 On Monday, I discussed my struggles
-to [successfully compile the Revit 2021 SDK samples](https://thebuildingcoder.typepad.com/blog/2020/05/compiling-the-revit-2021-sdk-samples.html).
+to [successfully compile the Revit 2021 SDK samples](1843_compile_2021_sdk.html).
 
 The next step for me is always the installation of RvtSamples to load all the SDK samples into Revit for easier access for testing.
 

@@ -53,7 +53,7 @@ Today we have two ever-recurring topics to revisit: a discussion on how to react
 
 #### <a name="2"></a>Idling and external events, DMU and DocumentChanged
 
-We have repeatedly compared the various ways of reacting to Revit model changes, e.g. in the discussion on [DocumentChanged versus Dynamic Model Updater](http://thebuildingcoder.typepad.com/blog/2012/06/documentchanged-versus-dynamic-model-updater.html).
+We have repeatedly compared the various ways of reacting to Revit model changes, e.g. in the discussion on [DocumentChanged versus Dynamic Model Updater](0783_doc_change_dmu.htm).
 
 Let's take a fresh look at this, with some important input once again from Arnošt Löbel:
 
@@ -149,7 +149,7 @@ We have already looked at a large number of examples of how important it is to b
 
 If you change anything in the model, beware of querying the model afterwards without forcing a regeneration, or you will receive stale and possibly conflicting data.
 
-The Building Coder dedicates a whole topic group to the [need to regenerate](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33).
+The Building Coder dedicates a whole topic group to the need to regenerate *(link unavailable)*.
 
 Now we have another entry to add to it, prompted
 by [Amr](http://forums.autodesk.com/t5/user/viewprofilepage/user-id/3289713)'s

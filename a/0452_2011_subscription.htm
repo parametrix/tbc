@@ -1,12 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Subscription Release and Updated SDK</h3>
 
 <p>Lots of really important news coming in right now, both because the mid-year updates of the Revit family products are now available and because we just released the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/09/revit-2011-web-update-2.html">
+<a href="0449_2011_wu2.htm">
 Revit 2011 DevTV</a> recordings that we are so excited about.
 
 <p>Similar to last year, Autodesk provides two types of mid-year updates to Revit:
@@ -14,7 +45,7 @@ Revit 2011 DevTV</a> recordings that we are so excited about.
 <ul>
 <li>The
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/09/revit-2011-web-update-2.html">
+<a href="0449_2011_wu2.htm">
 Web Update 2 (WU2)</a> that I recently discussed.
 
 <li>The Subscription Release.
@@ -135,7 +166,7 @@ Note that the properties, SiteLocation.Latitude and SiteLocation.Longitude, do n
 The following new methods are added to allow you to access the settings related to the stored document preview image for a given document: 
 
 <ul>
-<li>Document.GetDocumentPreviewSettings ñ this returns a DocumentPreviewSettings object 
+<li>Document.GetDocumentPreviewSettings ÔøΩ this returns a DocumentPreviewSettings object 
 <li>DocumentPreviewSettings.PreviewViewId - the id of the view to use for the preview 
 <li>DocumentPreviewSettings.ForceViewUpdate() - sets the document to update the view before saving (useful when the document is never displayed)
 </ul>      
@@ -168,8 +199,8 @@ The following code snippet shows a sample use of the enhancement described above
 <ul>
 <li>RevitAPI.chm
 <li>SDK sample ArchSample is updated: due to category length beyond the limitation of excel sheet name length. - Samples/ArchSample/VB.NET/Command.vb
-<li>SDK sample MaterialQuantities ñ did not calculate Gross material quantities correctly - Samples/MaterialQuantities/CS/MaterialQuantities.cs
-<li>SDK sample RaytraceBounce ñ updated to generate curves properly. - Samples/FindReferencesByDirection/RaytraceBounce/CS/RayTraceBounceForm.cs
+<li>SDK sample MaterialQuantities ÔøΩ did not calculate Gross material quantities correctly - Samples/MaterialQuantities/CS/MaterialQuantities.cs
+<li>SDK sample RaytraceBounce ÔøΩ updated to generate curves properly. - Samples/FindReferencesByDirection/RaytraceBounce/CS/RayTraceBounceForm.cs
 <li>Fixed sample bugs and correct typos, formats
 <ul>
 <li>Samples/DirectionCalculation/CS/DirectionCalculation.addin#2 integrate
@@ -194,3 +225,12 @@ The following code snippet shows a sample use of the enhancement described above
 <li>Add sfm.Clear() and GetChangeTypeElementDeletion trigger
 Samples/AnalysisVisualizationFramework/DistanceToSurfaces/CS/Command.cs
 </ul>      
+
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

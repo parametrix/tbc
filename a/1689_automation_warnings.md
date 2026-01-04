@@ -75,10 +75,10 @@ Two of them generate Revit warning messages:
 - Stair #4 generates [1 warning about a missing riser](zip/StairsAutomation_warnings_stair_4_1.html).
 
 Happily, Revit warnings can easily be handled automatically making use of
-the [Failure API](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.32).
+the Failure API *(link unavailable)*.
 
 Specifically, we presented
-a [generic warning swallower](http://thebuildingcoder.typepad.com/blog/2016/09/warning-swallower-and-roomedit3d-viewer-extension.html#2) that
+a [generic warning swallower](1476_roomedit3d_forge_warn.html#2) that
 can handle just about any warning message that crops up.
 
 For the StairsAutomation sample, nothing much is required.
@@ -128,7 +128,7 @@ Now, all five stair variations are created without any warning messages being di
 Of course, in your own more complex add-ins, you may need to handle other failures beside simple warnings that can be ignored.
 
 For the most general case, you can make use of
-the [generic warning swallower](http://thebuildingcoder.typepad.com/blog/2016/09/warning-swallower-and-roomedit3d-viewer-extension.html#2) mentioned
+the [generic warning swallower](1476_roomedit3d_forge_warn.html#2) mentioned
 above.
 
 To document the steps I took to achieve this and track all the changes I made, I extracted the sample to an

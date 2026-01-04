@@ -134,7 +134,7 @@ Here is [the bundle folder to `Test C# Script.pushbutton`](https://github.com/ei
 ####<a name="3"></a>Selecting all Physical Elements in Model
 
 Here is yet another new solution 
-for [using `FilteredElementCollector` to select model elements, i.e., visible 3D elements](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.9b),
+for using `FilteredElementCollector` to select model elements, i.e., visible 3D elements *(link unavailable)*,
 from the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api/bd-p/160) thread 
 on [selecting all physical items in model](http://forums.autodesk.com/t5/revit-api-forum/select-all-physical-items-in-model/m-p/6822940):
 
@@ -175,11 +175,11 @@ on [selecting all physical items in model](http://forums.autodesk.com/t5/revit-a
 
 Please note that the conversion from the `familyInstanceCollector` to the generic list `elementsCollection` is unnecessary and inefficient, as explained numerous times in the past, e.g.
 in the discussions 
-of [`ToElementIds` performance](http://thebuildingcoder.typepad.com/blog/2012/12/toelementids-performance.html)
-and [use of LINQ with filtered element collectors](http://thebuildingcoder.typepad.com/blog/2015/12/quick-slow-and-linq-element-filtering.html#2).
+of [`ToElementIds` performance](0872_toelementids_perf.htm)
+and [use of LINQ with filtered element collectors](1382_filter_shortcuts.html#2).
  
 Please also look at The Building Coder topic group
-on [using `FilteredElementCollector` to select model elements, i.e., visible 3D elements](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.9b).
+on using `FilteredElementCollector` to select model elements, i.e., visible 3D elements *(link unavailable)*.
 
 **Answer 2:** When you  use a `FamilyInstance` filter, you only find user created families, i.e., RFA-based, and not the built-in system families.
  
@@ -212,7 +212,7 @@ Try:
 **Answer 3:** I'd probably use `.WhereElementIsViewIndependent` in there somewhere also.
 
 Faster than some of the iteration/LINQ methods, cf. the comparison
-of [quick, slow and LINQ element filtering](http://thebuildingcoder.typepad.com/blog/2015/12/quick-slow-and-linq-element-filtering.html).
+of [quick, slow and LINQ element filtering](1382_filter_shortcuts.html).
 
 Extracting element data from Revit to .NET and checking it there, e.g., with LINQ, costs at least twice as much time as leaving it on the Revit side and applying some kind of filter instead.
  
@@ -220,7 +220,7 @@ Therefore, whenever possible, it pays off hugely to analyse all the element prop
  
 The parameter values can be filtered using a filtered element collector parameter filter.
  
-[50% speed improvement over using LINQ post-processing guaranteed](http://thebuildingcoder.typepad.com/blog/2010/06/element-name-parameter-filter-correction.html)!
+[50% speed improvement over using LINQ post-processing guaranteed](0384_elem_name_param_filter.htm)!
 
 I added these new model element selection methods 
 to [The Building Coder samples](https://github.com/jeremytammik/the_building_coder_samples),
@@ -241,7 +241,7 @@ Many thanks to Frank 'Fair59' and Matt Taylor for the good suggestions!
 ####<a name="4"></a>Vertical TextNote Alignment
 
 This is a continuation of
-the [`TextNote` rotation issue](http://thebuildingcoder.typepad.com/blog/2017/01/textnote-rotation-forge-devcon-tensorflow-and-keras.html#3) discussed
+the [`TextNote` rotation issue](1517_text_rotat.html#3) discussed
 last week, raised in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api/bd-p/160) thread 
 on [`TextNote` vertical alignment on line in Revit 2016](http://forums.autodesk.com/t5/revit-api-forum/textnote-vertical-alignment-on-line-i-revit-2016/m-p/6810367):
@@ -282,10 +282,10 @@ Here are some other examples of people running into this issue:
 
 2016 issues: vertical text alignment missing and setbarresults modification 
 
-- [Comments by David Rushforth](http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html#comment-6a00e553e16897883301bb08261e9a970d)
-on [What's New in the Revit 2016 API](http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html)
-- [Comment by ... ](http://thebuildingcoder.typepad.com/blog/2015/04/add-in-migration-to-revit-2016-and-updated-wizards.html?cid=6a00e553e16897883301bb08264ea1970d#comment-6a00e553e16897883301bb08264ea1970d)
-on [xxx](http://thebuildingcoder.typepad.com/blog/2015/04/add-in-migration-to-revit-2016-and-updated-wizards.html)
+- [Comments by David Rushforth](1311_whats_new_2016.htm#comment-6a00e553e16897883301bb08261e9a970d)
+on [What's New in the Revit 2016 API](1311_whats_new_2016.htm)
+- Comment by ...  *(link unavailable)*
+on [xxx](1312_addin_wizard_2016.htm)
 - [creating-a-textnote-with-the-2016-api-changes](http://forums.autodesk.com/t5/revit-api/creating-a-textnote-with-the-2016-api-changes/m-p/5629284)
 - [text-alignments](http://forums.autodesk.com/t5/revit-api/text-alignments/m-p/6272246)
  
@@ -317,7 +317,7 @@ Apparently, as far as the development team is concerned, the vertical alignment 
 Arnošt Löbel explained that in detail in a discussion thread
 on [creating a text note with the 2016 API changes](http://forums.autodesk.com/t5/revit-api/creating-a-textnote-with-the-2016-api-changes/m-p/5629284).
  
-Please also refer to the comments by David Rushforth on [What's New in the Revit 2016 API](http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html).
+Please also refer to the comments by David Rushforth on [What's New in the Revit 2016 API](1311_whats_new_2016.htm).
  
 Can you check these out and see whether they help?
  

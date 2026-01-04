@@ -103,7 +103,7 @@ When I checked the thread of the main window and the `Command` class, they were 
 What's the magic? I created the class for resetting event in `Command` class.
 
 **Answer:** Look at the Revit SDK sample *ModelessDialog/ModelessForm_ExternalEvent*
-and [The Building Coder samples implementing external events](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+and The Building Coder samples implementing external events *(link unavailable)*.
 
 Sean Page adds a helpful pointer, saying:
 

@@ -56,7 +56,7 @@ It is perfect in every way.
 And yet, it also provides an opportunity for me to share one slightly crazy aspect of my personality: exaggerated perfectionism.
 
 Before getting to the exaggerated perfectionism, let me point out
-the more important [blogging tips and tricks](https://thebuildingcoder.typepad.com/blog/2014/07/wishlist-blogging-smartgeometry-dynamo-and-formit.html) that
+the more important [blogging tips and tricks](1184_survey_blog_sg_dynamo.htm) that
 I listed for earlier colleagues getting started with this.
 
 I checked the post in advance before publication and gave it my OK.
@@ -145,8 +145,8 @@ Example 2, using both FilteredElementCollector and ToElements to iterate over al
 </pre>
 
 More details and links to further related discussions are provided in the analysis of
-the [performance](https://thebuildingcoder.typepad.com/blog/2016/04/how-to-distinguish-redundant-rooms.html#2)
-in [how to distinguish redundant rooms](https://thebuildingcoder.typepad.com/blog/2016/04/how-to-distinguish-redundant-rooms.html).
+the [performance](1417_distinguish_rooms.html#2)
+in [how to distinguish redundant rooms](1417_distinguish_rooms.html).
 
 <hr/>
 
@@ -155,7 +155,7 @@ Here is a link to the markdown source code for this blog post,
 where you can see the Markdown text I edited to produce this.
 
 I have used a variety
-of [tools for C&#35;, Python and VB code colourisation](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.36) in
+of tools for C&#35;, Python and VB code colourisation *(link unavailable)* in
 the past.
 
 In this post, I just employed the [Google JavaScript code prettifier `code-prettify`](https://github.com/googlearchive/code-prettify) instead.

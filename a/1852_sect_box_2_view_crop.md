@@ -62,7 +62,7 @@ originally asked six years ago, in 2014, and now finally resolved:
 **Question:** A simple question: how do I set a 3D view crop box to match (the outer corners of) a section box?
 
 **Answer:** The Building Coder discussed how
-to [set view section box to match scope box](http://thebuildingcoder.typepad.com/blog/2012/08/set-view-section-box-to-match-scope-box.html).
+to [set view section box to match scope box](0816_view_section_to_scope.htm).
 
 In this different situation, the two boxes have different coordinate systems, so one has to transformed into the other.
 Also consider below that the maximum and minimum points of the section box are not enough alone to properly frame the section box with a crop box.

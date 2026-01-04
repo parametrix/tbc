@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -44,8 +75,8 @@
 
 <p>They had also had a month to digest the Revit API
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#2">
-getting started</a> material.</p>
+<span class="unavailable-link">
+getting started</span> material.</p>
 
 <p>On that basis, we were able to cover absolutely all aspects of the Revit API in full depth in just two days, including creating new little samples to explore programmatic section view creation and positioning, Idling and external event handling, and the dynamic model updater framework DMU.
 I hope to be able to clean up and discuss these nice new minimal samples soon.</p>
@@ -73,12 +104,12 @@ I hope to be able to clean up and discuss these nice new minimal samples soon.</
 
 <p>This rather poignant verdict was submitted last week by Adrian Hodos in his
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/01/no-inheritance-and-no-strong-naming.html?cid=6a00e553e16897883301a73d77a325970d#comment-6a00e553e16897883301a73d77a325970d">
+<a href="1086_inherit_strong_name.htm">
 comment</a> on
 
 the lack of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/01/no-inheritance-and-no-strong-naming.html">
+<a href="1086_inherit_strong_name.htm">
 inheritance and strongly named .NET assemblies</a>:
 
 <blockquote>
@@ -161,12 +192,12 @@ in the Revit API discussion forum by Terry Dotson of
 <a href="http://www.marcandangel.com/2013/09/02/5-things-you-should-know-about-letting-go">
 let go of the expectations</a> that working with AutoCAD APIs has fostered ...
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/02/bim-versus-free-geometry-and-product-training.html">
+<a href="0723_spark_learning.htm">
 Revit is a different animal</a> and
 
 the experience and expectations coming from any other CAD system can be just as much a hindrance as an asset, especially when thinking about
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/10/porting-an-autocad-application.html">
+<a href="0842_port_acad_app.htm">
 porting an AutoCAD application</a>.
 
 Basically, the workflows are so different that a straight port will almost never make any sense whatsoever.</p>
@@ -178,14 +209,14 @@ An experienced programmer should be able to get going within a few hours, and un
 
 <p>Oh yes, yet another last thing: an example of setting up a Visual Studio project to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/11/multi-version-visual-studio-revit-add-in-wizard.html">
+<a href="1059_multi_version_wizard.htm">
 target multiple versions</a> of
 
 Revit simultaneously.
 Actually, it provides even more, namely a flavour of
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20">
-The Building Coder Visual Studio add-in wizard</a> to
+<span class="unavailable-link">
+The Building Coder Visual Studio add-in wizard</span> to
 
 automatically do it for you.</p>
 
@@ -208,7 +239,7 @@ What might be the problem, please?</p>
 
 <p><strong>Answer:</strong> I am glad to report that I updated to the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/11/revit-2014-update-release-2.html">
+<a href="1056_2014_ur2.htm">
 Revit 2014 update release 2</a>,
 
 UR2, and it works fine now.</p>
@@ -223,7 +254,7 @@ UR2, and it works fine now.</p>
 
 <p>In general, most of them can easily be avoided completely by ensuring that your code compiles on the current version without generating any warnings before starting to migrate it to the next version, as demonstrated by
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/02/eliminating-compiler-warnings-and-deprecated-calls.html">
+<a href="0898_compiler_warnings.htm">
 eliminating compiler warnings and deprecated calls</a> for
 
 <a href="https://github.com/jeremytammik/the_building_coder_samples">
@@ -231,12 +262,12 @@ The Building Coder samples</a>,
 
 once
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/01/eliminating-compiler-warnings-and-deprecated-calls.html">
+<a href="0713_compiler_warnings.htm">
 at the beginning of the Revit 2014 release cycle</a> and
 
 again
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/02/eliminating-compiler-warnings-and-deprecated-calls.html">
+<a href="0898_compiler_warnings.htm">
 later on</a>,
 
 to clean up.</p>
@@ -366,7 +397,7 @@ which states that only certain Revit dialogues trigger events that can be subscr
 
 <p>I described the three possible levels of catching and handling dialogues in Revit several times, e.g. in the post on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/10/dismiss-dialogue-using-windows-api.html">
+<a href="0229_dialogue_clicker.htm">
 dismissing a dialogue using the Windows API</a>.</p>
 
 <p>The third and most hard-core method uses the Windows API and a Windows hook, enabling you to catch absolutely any dialogue whatsoever on your system.</p>
@@ -375,8 +406,8 @@ dismissing a dialogue using the Windows API</a>.</p>
 
 <p>Here are a bunch of pointers to other
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.32">
-posts related to the DialogBoxShowing event</a> with
+<span class="unavailable-link">
+posts related to the DialogBoxShowing event</span> with
 
 examples and other ways to handle dialogues programmatically, but they will not provide much in the way of customisation of the save as dialogue.</p>
 
@@ -412,3 +443,12 @@ Michael Dunn, 29 Dec 2006</li>
 </ul>
 
 <p>I hope this helps, that the discussions above help you understand some new aspects of the Revit API and its philosophy, and that in turns helps you get started or continue using it happily and productively.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

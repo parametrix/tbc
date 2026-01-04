@@ -50,17 +50,17 @@ Exciting news from Russia, and some mundane updates on other repetitive topics:
 ####<a name="2"></a>Driving Revit from a Modeless Context via a WCF Service
 
 Over the years, we explored numerous different ways
-to [drive Revit from outside, from a modeless context, via the `Idling` and external events](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+to drive Revit from outside, from a modeless context, via the `Idling` and external events *(link unavailable)*.
 
 The need for this kind of approach is diminishing as
 the [Forge platform](https://autodesk-forge.github.io) gets closer towards adding support for Revit to
 its [Design Automation API](https://developer.autodesk.com/en/docs/design-automation/v2/overview),
 sometimes referred to
-as [Revit I/O](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28b).
+as Revit I/O *(link unavailable)*.
 
 One popular method, widely used in Russian-speaking areas of the world, is
 Victor Chekalin's solution
-to [drive Revit through a WCF service](http://thebuildingcoder.typepad.com/blog/2012/11/drive-revit-through-a-wcf-service.html),
+to [drive Revit through a WCF service](0853_revit_wcf_service.htm),
 cf. his [RevitExternalAccessDemo on GitHub](https://github.com/chekalin-v/RevitExternalAccessDemo),
 originally implemented for Revit 2013.
 
@@ -318,7 +318,7 @@ You can assume I am inside the room and I am looking at the wall.
 I need to get this direction.
 
 **Answer:** To start with, you can look at the `DirectionCalculation` Revit SDK sample and The Building Coder discussion of it 
-on [south facing walls](http://thebuildingcoder.typepad.com/blog/2010/01/south-facing-walls.html).
+on [south facing walls](0281_abg03_south_facing_walls.htm).
 
 Benoit provides some further suggestions on:
 
@@ -345,7 +345,7 @@ Here is a picture showing what I mean:
 </center>
 
 **Answer:** Just as in the previous answer, the `DirectionCalculation` Revit SDK sample and The Building Coder discussion of it 
-on [south facing walls](http://thebuildingcoder.typepad.com/blog/2010/01/south-facing-walls.html) will
+on [south facing walls](0281_abg03_south_facing_walls.htm) will
 provide a good starting point for you.
 
 It uses the built-in wall function parameter `FUNCTION_PARAM` to filter for exterior walls.
@@ -392,7 +392,7 @@ With that, you can retrieve all exterior walls with a filtered element collector
 </pre>
 
 Since the wall function filter is just checking a parameter value, the performance of this filtering process could be significantly enhanced by using
-a [parameter filter](http://thebuildingcoder.typepad.com/blog/2010/06/parameter-filter.html) instead
+a [parameter filter](0383_param_filter.htm) instead
 of the slow .NET based `IsExterior` method post-processing.
 
 Unfortunately, the wall function parameter is not always correctly set. In that case, of course, the GIGO principle applies:
@@ -406,7 +406,7 @@ The Revit API also provides a `BuildingEnvelopeAnalyzer` class that should help 
 - [Filtering exterior walls](https://forums.autodesk.com/t5/revit-api-forum/filtering-exterior-walls/m-p/5677706)
 
 Some related challenges and solutions that might help here are discussed in The Building Coder topic group
-on [2D Booleans and adjacent areas](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.2).
+on 2D Booleans and adjacent areas *(link unavailable)*.
 
 Yet another workaround was suggested: Place some room separation lines outside the building envelope and create a huge room around the entire building.
 Then, it’s just a matter of getting room boundaries, filtering out the RSLs, appending the remaining elements to your list, deleting the room and RSLs, and moving up to the next level.
@@ -433,7 +433,7 @@ Here is a screenshot of the parameter I want to change:
 </center>
 
 **Answer:** Reading and writing to a shared parameter is a very basic operation and is covered by
-the [Revit API getting started material](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2).
+the Revit API getting started material *(link unavailable)*.
 Please work through the video tutorials first of all, so you get an understanding of the basics.
 
 After that, you can also take a look at

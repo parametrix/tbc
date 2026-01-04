@@ -29,7 +29,7 @@ We'll celebrate by discussing the pretty fundamental issue of XYZ points versus 
 
 Today is The Building Coder's ninth birthday.
 
-The first [welcome](http://thebuildingcoder.typepad.com/blog/2008/08/welcome.html) post was published August 22, 2008.
+The first [welcome](0001_welcome.htm) post was published August 22, 2008.
 
 We'll celebrate by discussing the pretty fundamental issue of `XYZ` points versus vectors, and how to distinguish different points:
 
@@ -237,8 +237,8 @@ However, it is easy to implement, and I have done so several times in different 
 
 Here are the first and last mentions so far:
 
-- [Nested instance geometry](http://thebuildingcoder.typepad.com/blog/2009/05/nested-instance-geometry.html)
-- [Fuzzy comparison](http://thebuildingcoder.typepad.com/blog/2017/06/sensors-bim-ai-revitlookup-and-fuzzy-comparison.html#4)
+- [Nested instance geometry](0134_nested_instance_geo.htm)
+- [Fuzzy comparison](1564_fuzz_lookup_futur.html#4)
 
 Furthermore, you can take a look
 at [The Building Coder samples](https://github.com/jeremytammik/the_building_coder_samples) class

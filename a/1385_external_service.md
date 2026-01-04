@@ -48,15 +48,15 @@ It's been a while since I talked about External Services. The External Services 
 It's been a while since I talked about External Services.
 
 The External Services framework was initially introduced and used sparingly in
-the [Revit 2013 MEP API](http://thebuildingcoder.typepad.com/blog/2012/05/the-revit-2013-mep-api-and-external-services.html).
+the [Revit 2013 MEP API](0762_mep_2013.htm).
 
 In Revit 2014,
-the [IFC export was moved to an external service](http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html) and
+the [IFC export was moved to an external service](0938_whats_new_2014.htm) and
 I presented
-the [user-defined MEP calculation sample](http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html),
-later [moved to GitHub](http://thebuildingcoder.typepad.com/blog/2013/11/user-mep-calculation-sample-on-github.html).
+the [user-defined MEP calculation sample](0938_whats_new_2014.htm),
+later [moved to GitHub](1054_mep_calculation.htm).
 
-The framework for handling [referenced file resources](http://thebuildingcoder.typepad.com/blog/2014/07/referenced-files-as-a-service.html) is
+The framework for handling [referenced file resources](1176_extern_resource_serv.htm) is
 also implemented as an external service, using an implementation called the ExternalResourceService.
 
 The motivation to continue this discussion now was given by Arnošt Löbel's class SD10752 on Revit External Services at Autodesk University 2015 in Las Vegas.

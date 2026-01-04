@@ -37,16 +37,16 @@ We are currently being flooded with questions about a topic that has already bee
 Possibly, the cause is the growing interest in implementing web driven solutions to generate RFA and RVT files.
 
 It is in fact possible to implement a web server driving Revit in the background to execute such tasks, as demonstrated by the old sample showing how
-to [drive Revit through a WCF service](http://thebuildingcoder.typepad.com/blog/2012/11/drive-revit-through-a-wcf-service.html) and
+to [drive Revit through a WCF service](0853_revit_wcf_service.htm) and
 other examples listed in The Building Code topic group
-on [Idling and external events for modeless access and driving Revit from outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+on Idling and external events for modeless access and driving Revit from outside *(link unavailable)*.
 
 However, this kind of access is currently unreliable, since Revit is designed for interactive use, not batch processing.
 
 Furthermore, it is not supported by the Revit desktop product license.
 
 If you are interested in official support for this kind of service, please share
-your [requirements, thoughts and input on Revit I/O](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28b) with
+your requirements, thoughts and input on Revit I/O *(link unavailable)* with
 us.
 
 Future support for generating `RVT` and/or `RFA` files through a web service has already been announced as part of
@@ -121,12 +121,12 @@ You can also use the Revit API to set up an external event that can be raised fr
 This is demonstrated by the ModelessDialog/ModelessForm_ExternalEvent Revit SDK sample.
 
 For more information on the Revit SDK, please refer to
-the [getting started with the Revit API learning material](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2).
+the getting started with the Revit API learning material *(link unavailable)*.
  
 This specific question has been answered and discussed in depth numerous times in the past, both in the Revit API discussion forum and by The Building Coder.
  
 Many examples and further explanations are provided in The Building Code topic group
-on [Idling and External Events for Modeless Access and Driving Revit from Outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+on Idling and External Events for Modeless Access and Driving Revit from Outside *(link unavailable)*.
  
 Here are some other recent Revit API forum discussion threads addressing similar issues:
 

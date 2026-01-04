@@ -84,9 +84,9 @@ for [migration 2023](https://www.google.com/search?q=migration+2023&as_sitesearc
 ####<a name="4"></a> Disable Failure with Error Severity
 
 We discussed numerous solutions 
-for [detecting and automatically handling dialogues and failures](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.32).
+for detecting and automatically handling dialogues and failures *(link unavailable)*.
 The Failure API is a great help in many cases.
-Handling warnings can be achieved using a [warning swallower](http://thebuildingcoder.typepad.com/blog/2016/09/warning-swallower-and-roomedit3d-viewer-extension.html#2).
+Handling warnings can be achieved using a [warning swallower](1476_roomedit3d_forge_warn.html#2).
 Alexander [@aignatovich](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/1257478) [@CADBIMDeveloper](https://github.com/CADBIMDeveloper) Ignatovich, aka Александр Игнатович,
 explains how non-warning errors can also be handled in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread

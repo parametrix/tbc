@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="http://thebuildingcoder.typepad.com/google-code-prettify/run_prettify.js"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -41,15 +72,15 @@
 
 <p>Revit is
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.41">
-significantly different from most traditional CAD systems</a>,
+<span class="unavailable-link">
+significantly different from most traditional CAD systems</span>,
 
 and this is thoroughly reflected in the Revit API as well.</p>
 
 <p>Once that is understood, the next and obvious step is to work through the
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#2">
-Revit API getting started material</a>.</p>
+<span class="unavailable-link">
+Revit API getting started material</span>.</p>
 
 <p>It provides both a 'My First Revit Plug-in' and DevTV tutorials discussing all the basics of add-in development and leading you through the entire process step by step, including setting up the development environment, SDK, basic tools, understanding the add-in architecture, installation, coding, compilation and main API principles.</p>
 
@@ -77,10 +108,10 @@ The sample solution file enables compilation and debugging of all samples in one
 
 <p>In addition to this brief overview, please do not miss this
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/getting-started-with-the-revit-api.html">
+<a href="0923_getting_started.htm">
 more detailed explanation</a> and the recommendations on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/01/preparing-for-a-hands-on-revit-api-training.html">
+<a href="0703_training_prep.htm">
 preparing for a hands-on Revit API training</a>.</p>
 
 <p>Even with all the documentation in place and at your disposal, there are a number of undocumented areas and workflows.</p>
@@ -102,7 +133,7 @@ preparing for a hands-on Revit API training</a>.</p>
 <p>You absolutely must install and understand the usage of this tool.
 It is actually also pretty useful for end users.</p>
 
-<p>Here are a number of discussions of various <a href="http://thebuildingcoder.typepad.com/blog/revitlookup">uses of RevitLookup</a>.</p>
+<p>Here are a number of discussions of various <span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/revitlookup">uses of RevitLookup <em>(category page)</em></span>.</p>
 
 <p>It is a simple interactive dialogue based tool that enables you to navigate the Revit database, its elements, their properties and relationships with each other.</p>
 
@@ -112,7 +143,7 @@ It is actually also pretty useful for end users.</p>
 
 <p>Once you have acquainted yourself with that static interactive exploration method and understand the database structure, you can move on to more powerful
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html">
+<a href="1057_db_explor_python_sh.htm">
 interactive, dynamic, interpreted API interaction</a>, e.g. using the <b>Revit Python or Ruby shells</b>.</p>
 
 <p>Both RevitLookup and the interactive shells will enable you to explore elements and list their parameters. The shells will also allow you to manually set up transactions and modify the database from the command line in real time.</p>
@@ -120,10 +151,10 @@ interactive, dynamic, interpreted API interaction</a>, e.g. using the <b>Revit P
 <p>Another statically compiled tool specifically developed for exploring the parameters attached to elements is <b>BipChecker</b>, the built-in parameter checker:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/01/built-in-parameter-enumeration-duplicates-and-bipchecker-update.html">Duplicate Built-in parameter values and BipChecker update</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/09/10000000000th-post-and-element-type-parameters.html#2">
+<li><a href="0888_bip_checker_5.htm">Duplicate Built-in parameter values and BipChecker update</a></li>
+<li><a href="1024_elem_type_bip_params.htm#2">
 Retrieving ElementType parameters and BipChecker</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/05/bipchecker-for-revit-2015-on-github.html">BipChecker for Revit 2015 on GitHub</a></li>
+<li><a href="1153_bipchecker_2015_git.htm">BipChecker for Revit 2015 on GitHub</a></li>
 </ul>
 
 <!--
@@ -139,7 +170,7 @@ That gives you total control and flexibility, allowing you to call methods and c
 
 <p>I recently described its use and pointed to other discussions of it while determining the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/09/debugging-and-maintaining-the-image-relationship.html">
+<a href="1205_image_relationships.htm">
 relationship between an image element and the associated ImageType</a>.</p>
 
 
@@ -151,11 +182,11 @@ relationship between an image element and the associated ImageType</a>.</p>
 <p>The element lister is part of my ADN Xtra labs:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/04/xtra-adn-revit-2013-api-training-labs.html">Xtra ADN Revit 2013 API Training Labs</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/09/exporting-parameter-data-to-excel.html">Exporting Parameter Data to Excel, and Re-importing</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/09/10000000000th-post-and-element-type-parameters.html#2">
+<li><a href="0756_xtra_adn_labs.htm">Xtra ADN Revit 2013 API Training Labs</a></li>
+<li><a href="0828_export_param_excel.htm">Exporting Parameter Data to Excel, and Re-importing</a></li>
+<li><a href="1024_elem_type_bip_params.htm#2">
 ADN Xtra Labs and BipChecker for Revit 2014</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/10/revit-2013-api-developer-guide-pdf.html#3">ADN Revit API Training Material on GitHub</a></li>
+<li><a href="1029_developer_guide.htm#3">ADN Revit API Training Material on GitHub</a></li>
 </ul>
 
 <p>Answering one of these cases, I noted that I had not yet migrated them to Revit 2015, and finally got around to doing so.</p>
@@ -187,7 +218,7 @@ It lives in its own ADN DevTech
 
 <p>I recently mentioned the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/08/threejs-aec-viewer-progress-on-two-fronts.html#4">
+<a href="1195_adva_hack_va3c.htm#4">
 significant progress on the vA3C project</a>
 
 (<a href="https://va3c.github.io">home</a>, <a href="https://github.com/va3c">git</a>),
@@ -200,7 +231,7 @@ the generic three.js based AEC viewer.</p>
 
 <p>I modified
 
-<a href="http://thebuildingcoder.typepad.com/blog/va3c">RvtVa3c</a>,
+<span class="unavailable-link" title="Category: http://thebuildingcoder.typepad.com/blog/va3c">RvtVa3c</span>,
 
 the Revit vA3C JSON model exporter to produce such a JSON file and tried to add it to the official
 
@@ -295,3 +326,12 @@ $ git push
 <p>I agree that this is simpler, of course, and more suitable, considering the facts stated above.</p>
 
 <p>As an added advantage, I am getting the hang of this now...</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

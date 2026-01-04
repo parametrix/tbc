@@ -48,13 +48,13 @@ This list also highlights some the most exciting areas of enhancement...
 
 So far, we looked at the following aspects of the Revit 2020 API enhancements:
 
-- [Revit 2020 DevDays Online presentation recording](https://thebuildingcoder.typepad.com/blog/2019/04/the-revit-2020-fcs-api-and-sdk.html#3)
-- [Compiling the Revit 2020 SDK samples](https://thebuildingcoder.typepad.com/blog/2019/04/the-revit-2020-fcs-api-and-sdk.html#7) 
-- [Setting up RvtSamples](https://thebuildingcoder.typepad.com/blog/2019/04/the-revit-2020-fcs-api-and-sdk.html#8)
-- [RevitLookup for Revit 2020](https://thebuildingcoder.typepad.com/blog/2019/04/revitlookup-and-sdk-for-revit-2020.html#2) 
-- [Revit 2020 SDK posted to Revit Developer Centre](https://thebuildingcoder.typepad.com/blog/2019/04/revitlookup-and-sdk-for-revit-2020.html#3)
-- [What's New in the Revit 2020 API](https://thebuildingcoder.typepad.com/blog/2019/04/whats-new-in-the-revit-2020-api.html)
-- [Migration of The Building Coder samples](https://thebuildingcoder.typepad.com/blog/2019/04/close-doc-and-zero-doc-rvtsamples.html#3)
+- [Revit 2020 DevDays Online presentation recording](1738_rvt2020.html#3)
+- [Compiling the Revit 2020 SDK samples](1738_rvt2020.html#7) 
+- [Setting up RvtSamples](1738_rvt2020.html#8)
+- [RevitLookup for Revit 2020](1739_rvt2020.html#2) 
+- [Revit 2020 SDK posted to Revit Developer Centre](1739_rvt2020.html#3)
+- [What's New in the Revit 2020 API](1740_whats_new_2020.html)
+- [Migration of The Building Coder samples](1741_rvtsamp_zero_close.html#3)
 
 The next obvious question is:
 
@@ -79,7 +79,7 @@ The other four implement just one external command each.
 ####<a name="2"></a> AttachedDetailGroup
 
 Revit 2020 boasts
-several [attached detail group API additions](https://thebuildingcoder.typepad.com/blog/2019/04/whats-new-in-the-revit-2020-api.html#4.2.1).
+several [attached detail group API additions](1740_whats_new_2020.html#4.2.1).
 
 The AttachedDetailGroup sample shows how to use these to show and hide the attached detail groups of a model group in the active view.
 
@@ -105,7 +105,7 @@ Demonstration instructions:
 ####<a name="3"></a> CreateTrianglesTopography
 
 Revit 2020 supports the creation of concave topography surfaces using
-the [new `TopographySurface` API additions](https://thebuildingcoder.typepad.com/blog/2019/04/whats-new-in-the-revit-2020-api.html#4.2.12.1).
+the [new `TopographySurface` API additions](1740_whats_new_2020.html#4.2.12.1).
 
 The CreateTrianglesTopography SDK sample creates a new topography surface element from triangle points and triangle facets using the new overload of the `TopographySurface` `Create` API method,
 
@@ -130,7 +130,7 @@ These points and facets are passed to Revit API method to create the topography 
 ####<a name="4"></a> Custom2DExporter
 
 In Revit 2020,
-the [`CustomExporter` supports some 2D views](https://thebuildingcoder.typepad.com/blog/2019/04/whats-new-in-the-revit-2020-api.html#4.2.16.1).
+the [`CustomExporter` supports some 2D views](1740_whats_new_2020.html#4.2.16.1).
 
 The Custom2DExporter SK sample demonstrates its use to export 2D views using various exporter options, enabling the user to export and visualise 2D model and annotation geometry.
 
@@ -177,7 +177,7 @@ Instructions:
 ####<a name="5"></a> PathOfTravel
 
 Revit 2020 enhances the Analysis API with support for
-a new [Path of Travel API](https://thebuildingcoder.typepad.com/blog/2019/04/whats-new-in-the-revit-2020-api.html#4.2.19).
+a new [Path of Travel API](1740_whats_new_2020.html#4.2.19).
 
 The PathOfTravel SDK sample demonstrates how to use it to create `PathOfTravel` elements from rooms to doors in a plan view and:
 
@@ -198,7 +198,7 @@ Instructions:
 ####<a name="6"></a> ViewTemplateCreation
 
 The Revit 2020 API includes
-some [View Template API additions](https://thebuildingcoder.typepad.com/blog/2019/04/whats-new-in-the-revit-2020-api.html#4.2.10.1).
+some [View Template API additions](1740_whats_new_2020.html#4.2.10.1).
 
 The ViewTemplateCreation SDK sample shows how to use them to create and configure a new view template from a regular view and a view template settings configuration, including:
 

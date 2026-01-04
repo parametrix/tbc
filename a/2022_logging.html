@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
@@ -6,7 +36,8 @@
 <p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"></p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - logging:
@@ -111,9 +142,9 @@ Despite efforts to utilize Regular Expressions (Regex) for parsing the Journal F
 In spite of that, The Building Coder has occasionally performed some research in this area and also shared numerous results from other developers in the <a href="https://thebuildingcoder.typepad.com/blog/journal/">category <em>Journal</em></a>.</p>
 <p>Possibly, the most complete documentation for interpreting journals is provided by
 the <a href="https://github.com/andydandy74/Journalysis/wiki">Journalysis project</a>, cf.
-The Building Coder not on <a href="https://thebuildingcoder.typepad.com/blog/2022/05/analysis-of-macros-journals-and-add-in-manager.html#4">Journal File Analysis</a>.</p>
+The Building Coder not on <a href="1952_manager_journal_macro.html#4">Journal File Analysis</a>.</p>
 <p>I would like to point out the possible use
-of <a href="https://thebuildingcoder.typepad.com/blog/2021/12/logging-and-monitoring-deleted-data.html"><code>SLOG</code> files for monitoring purposes</a>,
+of <a href="1931_log_and_monitor.html"><code>SLOG</code> files for monitoring purposes</a>,
 so it might be interesting to take a look at those also.</p>
 <p>A related question was raised
 by Samuel Arsenault-Brassard of <a href="https://www.vimaec.com/">VIM AEC</a> in
@@ -130,7 +161,7 @@ We want to obtain the name of the users and when they saved or interacted with t
 I also suspect that if no Revit API access, then even less so in more removed environments such as BIM 360 or ACC.
 However, you can certainly obtain the required information in various ways without any explicit API access to this specific functionality.</p>
 <p>A pretty direct approach might be to
-use <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.3"><code>PostCommand</code></a> to
+use <span class="unavailable-link"><code>PostCommand</code></span> to
 launch the built-in <code>Show History</code> command and then use the Windows API to harvest the data displayed in the UI form that you show in the screen snapshot.</p>
 <p>You can certainly also scrape the required into from the journal or SLOG files, if you prefer, cf. above.</p>
 <p>The development team adds:</p>
@@ -189,10 +220,10 @@ for <a href="https://forums.autodesk.com/t5/revit-api-forum/intercepting-command
 on <a href="https://forums.autodesk.com/t5/revit-api-forum/can-anyone-share-a-working-implementation-of-wpf-progress-bar/m-p/12427800">a working implementation of WPF progress bar with abort button</a>.
 A promising one is provided by
 the <a href="https://github.com/SpeedCAD/SCADtools.Revit.UI.ProgressMeter">SpeedCAD ProgressMeter</a>
-that <a href="https://thebuildingcoder.typepad.com/blog/2023/11/net-core-preview-and-open-source-add-in-projects.html#7">we recently discussed</a>.</p>
+that <a href="2017_os_projects.html#7">we recently discussed</a>.</p>
 <h4><a name="4"></a> Sublime Text</h4>
 <p>I mentioned a year ago that I switched to
-the <a href="https://thebuildingcoder.typepad.com/blog/2023/02/pyramid-builder-commandloader-et-al.html#8">Sublime Text</a> editor.</p>
+the <a href="1982_builder_loader.html#8">Sublime Text</a> editor.</p>
 <p>I am still using it and am perfectly satisfied with my choice.
 It was nice to note that I am in the good company of <a href="https://thume.ca/">Tristan Hume</a>,
 who documented his own experiences
@@ -245,3 +276,11 @@ the École Polytechnique Fédérale de Lausanne, one of the main Swiss technical
 Is our perception accurate?
 Take our quiz to develop an intuition about how to reduce your carbon footprint, and to help us understand how people perceive the impact of their actions.</p>
 </blockquote>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

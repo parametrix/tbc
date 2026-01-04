@@ -74,7 +74,7 @@ on [tags without overlapping](https://forums.autodesk.com/t5/revit-api-forum/tag
 and [auto tagging without overlap](https://forums.autodesk.com/t5/revit-api-forum/auto-tagging-without-overlap/td-p/9996808).
 
 A hard-coded algorithm to achieve partial success was presented in the latter and reproduced 
-in [Python and Dynamo autotag without overlap](https://thebuildingcoder.typepad.com/blog/2021/02/splits-persona-collector-region-tag-modification.html#5).
+in [Python and Dynamo autotag without overlap](1890_multiple_filter.html#5).
 A more complete solution using a more advanced algorithm is now available commercially,
 called [Smart Annotation](https://bimlogiq.com/products/smart-annotataion) by [BIMLOGiQ](https://bimlogiq.com).
 

@@ -59,7 +59,7 @@
   I tried setting the level like such usng the placed instance `LevelId` property and also tried setting its `BuiltInParameter` `FAMILY_LEVEL_PARAM`.
   Both throw an error saying the parameter is read-only.
   [A] On some elements, the element level can only be set during the creation of the element. For that, I would assume that you need to use a different [overload of the `NewFamilyInstance` method](https://www.revitapidocs.com/2017/0c0d640b-7810-55e4-3c5e-cd295dede87b.htm). Please refer to this explanation by The Building Coder and a few recent discussions of related topics in the Revit API discussion forum:
-  - [Change level of existing element](https://thebuildingcoder.typepad.com/blog/2020/06/creating-material-texture-and-retaining-pixels.html#4)
+  - [Change level of existing element](1850_material_level_pixel.html#4)
   - [LevelId is null](https://forums.autodesk.com/t5/revit-api-forum/levelid-is-null/m-p/11392692)
   - [Change level on line based family](https://forums.autodesk.com/t5/revit-api-forum/change-level-on-line-based-family/m-p/10307454)
 
@@ -195,38 +195,38 @@ $ tbcsh_search.py level
 
 0079 0107 0301 0333 0340 0346 0383 0464 0525 0716 0830 0840 0860 0903 0904 0938 1093 1107 1158 1246 1311 1406 1429 1529 1537 1551 1728 1732 1737 1828 1850 1917
 
-- [Walls and Doors on Two Levels](http://thebuildingcoder.typepad.com/blog/2009/01/walls-and-doors-on-two-levels.html)
-- [Create Room on Level in Phase](http://thebuildingcoder.typepad.com/blog/2009/03/create-room-on-level-in-phase.html)
-- [Detail Curve on Level](http://thebuildingcoder.typepad.com/blog/2010/02/detail-curve-on-level.html)
-- [Collector Benchmark](http://thebuildingcoder.typepad.com/blog/2010/04/collector-benchmark.html)
-- [Element Level Events](http://thebuildingcoder.typepad.com/blog/2010/04/element-level-events.html)
-- [Retrieve Stairs on Level](http://thebuildingcoder.typepad.com/blog/2010/04/retrieve-stairs-on-level.html)
-- [Parameter Filter](http://thebuildingcoder.typepad.com/blog/2010/06/parameter-filter.html)
-- [Level Filter Benchmark](http://thebuildingcoder.typepad.com/blog/2010/10/level-filter-benchmark.html)
-- [Family Instance Missing Level Property](http://thebuildingcoder.typepad.com/blog/2011/01/family-instance-missing-level-property.html)
-- [Level Generator ADN Plugin of the Month](http://thebuildingcoder.typepad.com/blog/2012/02/level-generator-adn-plugin-of-the-month.html)
-- [Mobile Device Room Location](http://thebuildingcoder.typepad.com/blog/2012/09/mobile-device-room-location.html)
-- [UIView, Windows Coordinates, ReferenceIntersector and My Own Tooltip](http://thebuildingcoder.typepad.com/blog/2012/10/uiview-windows-coordinates-referenceintersector-and-my-own-tooltip.html)
-- [Building Performance Analysis and Face Tessellation](http://thebuildingcoder.typepad.com/blog/2012/11/building-performance-analysis-and-face-tessellation.html)
-- [What's New in the Revit 2012 API](http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2012-api.html)
-- [What's New in the Revit 2013 API](http://thebuildingcoder.typepad.com/blog/2013/03/whats-new-in-the-revit-2013-api.html)
-- [What's New in the Revit 2014 API](http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html)
-- [Final Rolling Offset Using Pipe.Create](http://thebuildingcoder.typepad.com/blog/2014/01/final-rolling-offset-using-pipecreate.html)
-- [Different Revit API Aspects and Features](http://thebuildingcoder.typepad.com/blog/2014/02/different-revit-api-aspects-and-features.html)
-- [Views Displaying Given Element, SVG and NoSQL](http://thebuildingcoder.typepad.com/blog/2014/05/views-displaying-given-element-svg-and-nosql.html)
-- [WebGL Goes Mobile and Sorted Level Retrieval](http://thebuildingcoder.typepad.com/blog/2014/11/webgl-goes-mobile-and-sorted-level-retrieval.html)
-- [What's New in the Revit 2016 API](http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html)
-- [IFC Import Levels and MEP Element Shapes](http://thebuildingcoder.typepad.com/blog/2016/02/ifc-import-levels-and-mep-element-shapes.html)
-- [Reference Stable Representation Magic Voodoo](http://thebuildingcoder.typepad.com/blog/2016/04/stable-reference-string-magic-voodoo.html)
-- [RevitLookup with Reflection Cleanup](http://thebuildingcoder.typepad.com/blog/2017/02/revitlookup-with-reflection-cleanup.html)
-- [Events, UV Coordinates and Rooms on Level](http://thebuildingcoder.typepad.com/blog/2017/03/events-uv-coordinates-and-rooms-on-level.html)
-- [What's New in the Revit 2018 API](http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html)
-- [Assigning a Level to an Element Missing It](https://thebuildingcoder.typepad.com/blog/2019/03/assigning-a-level-to-an-element-missing-it.html)
-- [Forge Picture, Debugging, Snooping Appearances](https://thebuildingcoder.typepad.com/blog/2019/03/-architecture-edit-and-continue-snooping-appearance-assets.html)
-- [Set Floor Level and Use IPC for Disentanglement](https://thebuildingcoder.typepad.com/blog/2019/04/set-floor-level-and-use-ipc-for-disentanglement.html)
-- [Panel Schedule Slots and Changing Room Level](https://thebuildingcoder.typepad.com/blog/2020/03/panel-schedule-slots-and-change-room-level.html)
-- [Creating Material Texture and Retaining Pixels](https://thebuildingcoder.typepad.com/blog/2020/06/creating-material-texture-and-retaining-pixels.html)
-- [View Sheet from View and Select All on Level](https://thebuildingcoder.typepad.com/blog/2021/09/view-sheet-from-view-and-select-all-on-level.html)
+- [Walls and Doors on Two Levels](0079_two_levels.htm)
+- [Create Room on Level in Phase](0107_room_on_level_in_phase.htm)
+- [Detail Curve on Level](0301_detail_curve_level.htm)
+- [Collector Benchmark](0333_collector_benchmark.htm)
+- [Element Level Events](0340_element_events.htm)
+- [Retrieve Stairs on Level](0346_stairs_on_level.htm)
+- [Parameter Filter](0383_param_filter.htm)
+- [Level Filter Benchmark](0464_level_filter_benchmark.htm)
+- [Family Instance Missing Level Property](0525_fam_inst_missing_level.htm)
+- [Level Generator ADN Plugin of the Month](0716_level_generator_potm.htm)
+- [Mobile Device Room Location](0830_room_loc_web_serv.htm)
+- [UIView, Windows Coordinates, ReferenceIntersector and My Own Tooltip](0840_wincoord_tooltip.htm)
+- [Building Performance Analysis and Face Tessellation](0860_build_perf_analysis.htm)
+- [What's New in the Revit 2012 API](0903_whats_new_2012.htm)
+- [What's New in the Revit 2013 API](0904_whats_new_2013.htm)
+- [What's New in the Revit 2014 API](0938_whats_new_2014.htm)
+- [Final Rolling Offset Using Pipe.Create](1093_pipe_create.htm)
+- [Different Revit API Aspects and Features](1107_api_features.htm)
+- [Views Displaying Given Element, SVG and NoSQL](1158_views_displaying_elem.htm)
+- [WebGL Goes Mobile and Sorted Level Retrieval](1246_webgl_sorted_level.htm)
+- [What's New in the Revit 2016 API](1311_whats_new_2016.htm)
+- [IFC Import Levels and MEP Element Shapes](1406_mep_element_shape_4.html)
+- [Reference Stable Representation Magic Voodoo](1429_stable_references.html)
+- [RevitLookup with Reflection Cleanup](1529_revitlookup_reflect.html)
+- [Events, UV Coordinates and Rooms on Level](1537_event_uv_room_filt.html)
+- [What's New in the Revit 2018 API](1551_whats_new_2018.html)
+- [Assigning a Level to an Element Missing It](1728_assign_level.html)
+- [Forge Picture, Debugging, Snooping Appearances](1732_snoop_appearance_asset.html)
+- [Set Floor Level and Use IPC for Disentanglement](1737_ipc.html)
+- [Panel Schedule Slots and Changing Room Level](1828_change_room_level.html)
+- [Creating Material Texture and Retaining Pixels](1850_material_level_pixel.html)
+- [View Sheet from View and Select All on Level](1917_select_level.html)
 
 -->
 
@@ -239,7 +239,7 @@ Both throw an error saying the parameter is read-only.
 For that, I would assume that you need to use a different [overload of the `NewFamilyInstance` method](https://www.revitapidocs.com/2017/0c0d640b-7810-55e4-3c5e-cd295dede87b.htm).
 Please refer to this explanation by The Building Coder and a few recent discussions of related topics in the Revit API discussion forum:
 
-- [Change level of existing element](https://thebuildingcoder.typepad.com/blog/2020/06/creating-material-texture-and-retaining-pixels.html#4)
+- [Change level of existing element](1850_material_level_pixel.html#4)
 - [LevelId is null](https://forums.autodesk.com/t5/revit-api-forum/levelid-is-null/m-p/11392692)
 - [Change level on line based family](https://forums.autodesk.com/t5/revit-api-forum/change-level-on-line-based-family/m-p/10307454)
 
@@ -248,8 +248,8 @@ Another potentially helpful suggestion came up on the blog:
 ####<a name="6"></a> Set Level in NewFamilyInstance
 
 Xikes shared a valuable observation in
-their [comment](https://thebuildingcoder.typepad.com/blog/2011/01/family-instance-missing-level-property.html#comment-5925189938)
-on [family instance missing `Level` property](https://thebuildingcoder.typepad.com/blog/2011/01/family-instance-missing-level-property.html):
+their [comment](0525_fam_inst_missing_level.htm#comment-5925189938)
+on [family instance missing `Level` property](0525_fam_inst_missing_level.htm):
 
 For those who are still stuck with this problem even when using the correct overload:
 

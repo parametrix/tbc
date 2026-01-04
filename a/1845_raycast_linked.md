@@ -137,7 +137,7 @@ My solution worked well with non-linked walls, using filters to make the `Refere
 However, when I started preparing the solution for linked walls, I faced a problem: references from the list `ReferenceWithContext` contain the id of a `RevitLinkInstance` and not the id of the target wall, so I couldn't gather the linked walls. 
 
 I looked through the post
-on [using `ReferenceIntersector` in linked files](https://thebuildingcoder.typepad.com/blog/2015/07/using-referenceintersector-in-linked-files.html) and
+on [using `ReferenceIntersector` in linked files](1339_reference_intersector.htm) and
 found that we can't get the references from a linked file.
 
 Debugging my code further, I realized a solution.

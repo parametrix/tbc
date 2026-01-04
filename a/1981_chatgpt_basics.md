@@ -168,7 +168,7 @@ def get_panel_schedule_sheet_instances(sort_by_name = False):
 
 **Answer:** First, I think you can completely eliminate the call to `ToElements`. 
 It is a waste of memory and computation time, as I have pointed out repeatedly in the past, e.g., 
-in [How to Distinguish Redundant Rooms](https://thebuildingcoder.typepad.com/blog/2016/04/how-to-distinguish-redundant-rooms.html#2). 
+in [How to Distinguish Redundant Rooms](1417_distinguish_rooms.html#2). 
 
 Now, to address your question, you can simply implement a common method `get_elements_of_category_and_class` taking a category and a class argument. 
 Pass in either one or the other or both and execute `OfClass` and `OfCategory` checks on the filtered element collector, either one or the other or both, skipping evaluation of `null`-valued arguments.
@@ -285,7 +285,7 @@ Jeremy: Do you know The Building Coder blog?
 ChatGPT: I'm sorry, but I am not aware of The Building Coder blog. As a large language model trained by OpenAI, my knowledge is based on the text that has been fed into my training data. I do not have the ability to browse the internet or access additional information outside of what has been provided to me during my training. I apologize if I am unable to provide you with the information you are looking for. Is there anything else I may be able to assist you with?
 
 Jeremy: Can you read The Building Coder blog 
-at [thebuildingcoder.typepad.com](https://thebuildingcoder.typepad.com/) so 
+at thebuildingcoder.typepad.com *(link unavailable)* so 
 that you later have access to that information?
 
 ChatGPT: As a language model trained by OpenAI, I do not have the ability to browse the internet or access information outside of what has been provided to me during my training. I am only able to provide information and respond to questions based on the text that has been fed into my training data. I apologize if I am unable to provide you with the information you are looking for. Is there anything else I may be able to assist you with?

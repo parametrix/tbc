@@ -60,10 +60,10 @@ Joshua Lumley shares video #2 in his secret series, access to the CAD link statu
 ####<a name="2"></a> Secrets of Revit API Coding Part 2
 
 Last year, Joshua Lumley shared the recording he made for his BILT submission
-on [five secrets of Revit API C# coding](https://thebuildingcoder.typepad.com/blog/2018/09/five-secrets-of-revit-api-coding.html).
+on [five secrets of Revit API C# coding](1682_5_secrets.html).
 
-In his [comment](https://thebuildingcoder.typepad.com/blog/2019/08/zero-touch-node-element-wrapper-and-load-from-stream.html#comment-4646680624)
-on [Loading a .NET assembly from a memory stream](https://thebuildingcoder.typepad.com/blog/2019/08/zero-touch-node-element-wrapper-and-load-from-stream.html#3),
+In his [comment](1770_dynztcs_wrapper.html#comment-4646680624)
+on [Loading a .NET assembly from a memory stream](1770_dynztcs_wrapper.html#3),
 he points out part two, for this year's event:
 
 > What really gets really tricky is when your add-in references another DLL not provided by Microsoft's .net framework.
@@ -116,7 +116,7 @@ Is there a way to get the Status string?
 </center>
 
 **Answer:** I believe that the solution can be found in the discussion
-on [automatically reloading links after migration](https://thebuildingcoder.typepad.com/blog/2016/08/automatically-reload-links-after-migration.html).
+on [automatically reloading links after migration](1460_reload_links.html).
 
 It includes statements like, *It took a bit of time to find the right classes as there are no less than four levels of indirection to get from RevitLinkType to the 'Saved Path' and then use that in the call to LoadFrom.*
 
@@ -230,7 +230,7 @@ One other easy'ish question: What do the other xdata index values indicate?
 </center>
 
 **Answer:** Here are the codes that we use, cf.
-the [DWG and DXF export `Xdata` specification](https://thebuildingcoder.typepad.com/blog/2010/08/dwg-and-dxf-export-xdata-specification.html):
+the [DWG and DXF export `Xdata` specification](0420_dwf_dxf_export_xdata.htm):
 
 <pre class="code">
   // XData Identifiers

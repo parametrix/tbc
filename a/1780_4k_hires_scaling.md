@@ -136,7 +136,7 @@ I am convinced that this can be solved without rewriting all your UI code.
 For instance, if all else fails, simply disconnect your UI completely from your Revit add-in, run it in a separate process and use IPC to pass the information back and forth, as discussed and successfully implemented in
 these [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) threads:
  
-- [Use IPC for disentanglement](https://thebuildingcoder.typepad.com/blog/2019/04/set-floor-level-and-use-ipc-for-disentanglement.html)
+- [Use IPC for disentanglement](1737_ipc.html)
 - [Using a geometry viewer in a Revit add-in to preview results](https://forums.autodesk.com/t5/revit-api-forum/using-a-geometry-viewer-in-a-revit-addin-to-preview-results/m-p/8868232)
  
 This assumes, of course, that you have not unnecessarily mixed up your UI code with Revit API stuff.
@@ -295,7 +295,7 @@ Many thanks to CoderBoy for the in-depth research and precise and complete docum
 ####<a name="9"></a> Call to Move to WPF
 
 Jason Masters added several relevant thoughts to this topic in
-the [comments below](https://thebuildingcoder.typepad.com/blog/2019/09/scaling-an-add-in-for-a-4k-high-resolution-screen.html#comment-4619001048),
+the [comments below](1780_4k_hires_scaling.html#comment-4619001048),
 a wish list entry
 to [update the SDK and developer documentation to WPF](https://forums.autodesk.com/t5/revit-ideas/update-sdk-developer-documentation-to-wpf/idi-p/9030473) in
 the Revit Idea Station, and 

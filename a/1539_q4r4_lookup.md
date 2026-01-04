@@ -26,7 +26,7 @@ Furthermore, we are proud to present yet more enhancements to the revamped versi
 ### Q4R4 tbc Import and RevitLookup 
 
 I started working on the question answering
-system [Q4R4 *Question Answering for Revit API*](http://thebuildingcoder.typepad.com/blog/2017/03/q4r4-revit-api-question-answering-system.html).
+system [Q4R4 *Question Answering for Revit API*](1536_q4r4.html).
 
 The first step is to import The Building Coder blog posts into Elasticsearch and experiment with full-text queries on them.
 
@@ -62,7 +62,7 @@ Given a query, return the most relevant results separately from several differen
 #### <a name="3"></a>Importing `tbc` Blog Posts into Elasticsearch
 
 As mentioned
-in [the last post on q4r4](http://thebuildingcoder.typepad.com/blog/2017/03/q4r4-revit-api-question-answering-system.html),
+in [the last post on q4r4](1536_q4r4.html),
 I should start off implementing a simple but intelligent search engine without worrying about machine learning or AI in any of its forms.
 
 I am still reading
@@ -162,10 +162,10 @@ tool [RevitLookup](https://github.com/jeremytammik/RevitLookup).
 
 In the last few weeks, it was significantly restructured to use `Reflection` and reduce code duplication:
 
-- [Using `Reflection` for cross-version compatibility](http://thebuildingcoder.typepad.com/blog/2017/02/revitlookup-using-reflection-for-cross-version-compatibility.html)
-- [Basic clean-up of the new version](http://thebuildingcoder.typepad.com/blog/2017/02/revitlookup-with-reflection-cleanup.html)
-- [Restore access to extensible storage data](http://thebuildingcoder.typepad.com/blog/2017/02/revitlookup-extensible-storage-restored.html#3)
-- [Further enhancements](http://thebuildingcoder.typepad.com/blog/2017/03/revitlookup-enhancements-future-revit-and-other-api-news.html#8)
+- [Using `Reflection` for cross-version compatibility](1524_revitlookup_reflect.html)
+- [Basic clean-up of the new version](1529_revitlookup_reflect.html)
+- [Restore access to extensible storage data](1531_revitlookup_estore.html#3)
+- [Further enhancements](1534_revit_api_news.html#8)
 
 Alexander Ignatovich, [@CADBIMDeveloper](https://github.com/CADBIMDeveloper), aka Александр Игнатович,
 now submitted a few new bug fixes in

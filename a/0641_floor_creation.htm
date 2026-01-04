@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1271155 [Floor creation] -->
@@ -8,20 +39,20 @@
 
 <p>I already presented examples on using the NewFloor method to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/editing-a-floor-profile.html">
+<a href="0037_editing_floor_profile.htm">
 edit a floor profile</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/boolean-operations-for-2d-polygons.html">
+<a href="0098_booleans_on_polygons.htm">
 perform Boolean operations on two-dimensional polygons</a>.
 
 <p>Now Guming submitted a 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/08/modeless-loose-connector-navigator-update.html?cid=6a00e553e168978833015391044035970b#comment-6a00e553e168978833015391044035970b">
+<a href="0639_modeless_loose_connectors.htm">
 simpler question</a>, on 
 
 how to use the NewFloor method to create a floor from scratch, 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/08/modeless-loose-connector-navigator-update.html?cid=6a00e553e168978833015434f762a5970c#comment-6a00e553e168978833015434f762a5970c">
+<a href="0639_modeless_loose_connectors.htm">
 twice</a> in 
 
 fact, so let's have a look at that: 
@@ -45,7 +76,7 @@ Here are the argument lists of the three NewFloor overloads:
 
 <p>The Building Coder samples include the command 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/editing-a-floor-profile.html">
+<a href="0037_editing_floor_profile.htm">
 CmdEditFloor</a> which 
 
 exercises the second one of the NewFloor overloads, and so does the Revit SDK sample application GenerateFloor.
@@ -191,3 +222,12 @@ It performs the following steps:
 <a href="zip/CreateFloors.zip">CreateFloors.zip</a> containing 
 
 the complete Visual Studio solution, C# source code, and add-in manifest file of the CreateFloors external command.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

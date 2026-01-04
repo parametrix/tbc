@@ -101,7 +101,7 @@ by [My First Revit Plugin](https://knowledge.autodesk.com/support/revit-products
 
 The API documentation is provided in the *RevitAPI.chm* help file in the Revit SDK and also available online at  [revitapidocs](https://www.revitapidocs.com).
 
-For more information, you can work through the [Revit API getting started material](https://thebuildingcoder.typepad.com/blog/about-the-author.html#2).
+For more information, you can work through the Revit API getting started material *(link unavailable)*.
 
 If you wish to start with programming from zero, you may want to first learn some 
 
@@ -167,7 +167,7 @@ Link:
 
 On a different topic, a literary work, exploring philosophical aspects of AI interaction.
 
-As [planned](https://thebuildingcoder.typepad.com/blog/2019/06/revit-camera-settings-project-plasma-da4r-and-ai.html#5),
+As [planned](1758_camera_plasma_da4r_ai.html#5),
 I just finished reading [*Machines like me and People like you*](https://en.wikipedia.org/wiki/Machines_Like_Me)
 by [Ian McEwan](https://en.wikipedia.org/wiki/Ian_McEwan).
 
@@ -175,8 +175,8 @@ He is one of my favourite authors.
 Very loving, caring and compassionate with his characters and humanity in general, deeply interested in scientific and technical detail.
 
 His new book is inspired by recent advances in deep learning, such
-as [AlphaGo](http://thebuildingcoder.typepad.com/blog/2017/10/au-recording-books-education-and-units.html#6),
-[AlphaZero](https://thebuildingcoder.typepad.com/blog/2019/03/ai-trends-and-yearly-deprecated-api-usage-cleanup.html#2) and
+as [AlphaGo](1594_record_book_edu_unit.html#6),
+[AlphaZero](1727_tbc_cleanup.html#2) and
 how they are affecting human game strategy, 
 cf. [Game Changer &ndash; AlphaZero's ground-breaking chess strategies and the promise of AI](https://www.goodreads.com/review/show/2731237101) by
 Matthew Sadler, among many other things.

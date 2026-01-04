@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -7,16 +37,16 @@
 
 <h3>2D Polygon Areas and Outer Loop</h3>
 
-<p>When I started writing this post I was sitting in McCallan airport in Las Vegas enjoying a delay due to a faulty part added to the already delayed flight back to Europe. By now we have passed through London, G�teborg and Franfurt on the DevDays tour since then.
+<p>When I started writing this post I was sitting in McCallan airport in Las Vegas enjoying a delay due to a faulty part added to the already delayed flight back to Europe. By now we have passed through London, G�teborg and Franfurt on the DevDays tour since then.
 Anyway, I had a chance to explore some more interesting geometrical issues in Revit here.
 We already discussed determining the profile boundary loop polygons for
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/slab-boundary.html">
+<a href="0031_slab_boundary.htm">
 floor slabs</a>
 
 and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/wall-elevation-profile.html">
+<a href="0039_wall_elevation_profile.htm">
 walls</a>.
 
 In most cases, the outermost boundary loop is listed first in the array of edge loops provided by the face element.
@@ -107,7 +137,7 @@ Unfortunately I am still working in Visual Studio 2005, so I do not have the lat
 <p>I implemented a new command CmdSlabBoundaryArea for testing this area calculation.
 It is very similar to the previous
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/slab-boundary.html">
+<a href="0031_slab_boundary.htm">
 CmdSlabBoundary</a>
 
 command, with additional code to calculate the area of each polygonal loop and the maximum area.
@@ -180,3 +210,12 @@ However, the Face.Area property also estimates the face area by integrating its 
 The vertices of the outer face loop are oriented counter clockwise when looking at the solid from outside.
 Since the edge loops we are examining stem from the bottom face of the slab, we should actually be looking at them from below to obtain the correct vertex ordering.
 Since our area calculation algorithm is only two-dimensional, it assumes that we are looking down on the XY plane from the positive Z direction, so the winding directions of all loops are reversed.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

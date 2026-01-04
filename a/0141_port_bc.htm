@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -44,7 +74,7 @@ Compile complete -- 8 errors, 0 warnings
 
 <p>The first error CS0029 is reporting that an 'Autodesk.Revit.ElementArray' cannot be converted to a generic list of elements in
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/wall-graph.html">
+<a href="0047_wall_graph.htm">
 CmdWallNeighbours</a>.
 
 This makes perfect sense, because get_ElementsAtJoin now returns an instance of the custom Revit API collection class ElementArray instead of a standard generic collection class provided by .NET.
@@ -53,19 +83,19 @@ Actually, the only change required is to replace the property Count by Size.</p>
 
 <p>The next four errors are trivial to fix, CS1502 and CS1620 in
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/inserting-a-beam.html">
+<a href="0096_insert_beam.htm">
 CmdNewBeamTypeInstance</a>
 
 and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/inserting-a-column.html">
+<a href="0094_insert_column.htm">
 CmdNewColumnTypeInstance</a>.
 
 They are all four caused by the second argument of one of the overloads of the LoadFamily method changing from a reference to an output argument, so the keyword 'ref' needs to be replaced by 'out'.</p>
 
 <p>The two CS1061 errors in
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/cylindrical-column.html">
+<a href="0124_cylindrical_column.htm">
 CmdColumnRound</a>
 
 occur in the method IsColumnRound, which was written to demonstrate an approach that can only be used in the Revit 2009 API.
@@ -74,7 +104,7 @@ Since it is not used anyway, I can simply comment it out.</p>
 
 <p>The only serious change is required to fix the error CS1061 in
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/nested-instance-geometry.html">
+<a href="0134_nested_instance_geo.htm">
 CmdNestedInstanceGeo</a>.
 
 There we use the Revit 2009 API property FamilyInstance.Symbol.Family.Components to obtain the nested family instances within the top level family instance.
@@ -114,20 +144,20 @@ This is the first version for Revit 2010, and the first one using Visual Studio 
 
 <p>As you probably know by now, I use
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/09/loading-sdk-sam.html">
+<a href="0007_loading_sdk_samples.htm">
 RvtSamples</a>
 
 to load the external commands defined by the Revit SDK samples into Revit.
 I also use it to provide access to all my additional sample commands by making use of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/loading-the-building-coder-samples.html">
+<a href="0035_loading_bc_samples.htm">
 include functionality</a>
 
 I implemented, which is now part of the standard SDK distribution.</p>
 
 <p>The format used in the text file RvtSamples.txt used to drive RvtSamples changed from Revit 2009 to 2010 in order to add support for the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/revit-2010-ribbon-api.html">
+<a href="0139_ribbon_api.htm">
 ribbon Add-Ins tab</a>
 
 and button images.</p>
@@ -178,3 +208,12 @@ ADN Bc\n\1\n\2\nLargeImage:\nImage:\n
 <p>That splits the menu entry text and description onto separate lines, followed by two additional lines for the optional large and small images.</p>
 
 <p>Applying this search and replace action to the example shown above achieves the desired conversion, making it easy and comfortable to reliably convert the entire list of entries.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

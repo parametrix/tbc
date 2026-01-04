@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1259590 [Support Multiple Verticals with New .addin Install Feature] -->
@@ -8,7 +39,7 @@
 
 <p>We recently discussed the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/addin-visibility-mode.html">
+<a href="0373_addin_visibility_mode.htm">
 add-in visibility mode</a>,
 
 which only applies to external commands.
@@ -25,7 +56,7 @@ who very friendlily is sharing his solution to this lack with us here:
 
 <p>As a follow-up on and complement to the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/addin-visibility-mode.html">
+<a href="0373_addin_visibility_mode.htm">
 Add-In Visibility Mode</a> posting, 
 
 our company faces a different issue. We have multiple Revit products installed on our workstations and use IExternalApplication custom applications to load our applications and commands. I use a modified version of the RvtSamples menu system included with the SDK to load our custom commands and build the Ribbon panels. Moving to the new .addin manifest installation process in Revit 2011 caused some initial concern.  Our custom applications are organized by major discipline and each discipline is contained in its own class within out ApplicationLoader assembly. All the applications defined in the .addin file were being loaded in all three Revit products. As a result of this new organization, MEP Ribbon panels and commands were visible in the Architecture and Structural products. Our .addin manifest is shown below.
@@ -160,3 +191,12 @@ The code below should only create the Ribbon panel and load the commands if the 
 <p>By making the above changes in our custom application code and using the functionality in the new RevitAddInUtility.dll, I was able to create a single install script for all three Revit products and control the installation and uninstallation of our applications in a seamless manner.
 
 <p>Thank you very much, Dave, for sharing this solution with us!
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

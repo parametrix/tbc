@@ -77,7 +77,7 @@ elsewhere in the past day or two:
 #### <a name="2"></a>The Building Coder Blog Source Text and Index
 
 As you may have noticed, I published
-[The Building Coder entire source text and complete index on GitHub](http://thebuildingcoder.typepad.com/blog/2016/02/tbc-the-building-coder-source-and-index-on-github.html) last week.
+[The Building Coder entire source text and complete index on GitHub](1408_tbc_github.html) last week.
 
 If you look now at the right hand side bar or the navigation bar at the bottom, you will see the two new
 entries [index](https://jeremytammik.github.io/tbc/a)
@@ -93,7 +93,7 @@ I hope you find the complete index and full source text access useful!
 #### <a name="3"></a>Reloading Add-in DLL for Debugging Without Restart
 
 We have often dealt here with topics
-around [edit and continue, debug without restart and 'live development'](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.49).
+around edit and continue, debug without restart and 'live development' *(link unavailable)*.
 
 This note is just to point out another contribution to that series, a StackOverflow question
 on [Revit API load command &ndash; auto reload](http://stackoverflow.com/questions/33525908/revit-api-load-command-auto-reload),
@@ -119,10 +119,10 @@ Note that some existing samples create a new sketch plane for each individual cu
 
 The Building Coder provides a number of samples, e.g.:
 
-- [Model and Detail Curve Colour](http://thebuildingcoder.typepad.com/blog/2010/01/model-and-detail-curve-colour.html)
-- [Detail Curve Must Indeed lie in Plane](http://thebuildingcoder.typepad.com/blog/2010/05/detail-curve-must-indeed-lie-in-plane.html)
-- [Model Curve Creator](http://thebuildingcoder.typepad.com/blog/2010/05/model-curve-creator.html)
-- [Generating a MidCurve Between Two Curve Elements](http://thebuildingcoder.typepad.com/blog/2013/08/generating-a-midcurve-between-two-curve-elements.html)
+- [Model and Detail Curve Colour](0282_change_detail_curve_colour.htm)
+- [Detail Curve Must Indeed lie in Plane](0358_detail_curve_plane.htm)
+- [Model Curve Creator](0375_model_curve_creator.htm)
+- [Generating a MidCurve Between Two Curve Elements](0999_midcurve.htm)
 
 A `Creator` model curve helper class is also included in [The Building Coder samples](https://github.com/jeremytammik/the_building_coder_samples),
 in the module [Creator.cs](https://github.com/jeremytammik/the_building_coder_samples/blob/master/BuildingCoder/BuildingCoder/Creator.cs).

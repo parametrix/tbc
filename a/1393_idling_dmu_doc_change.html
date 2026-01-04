@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!---
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -48,7 +79,7 @@ Today we have two ever-recurring topics to revisit: a discussion on how to react
 <li><a href="#3">Need for regen in an updater</a></li>
 </ul>
 <h4><a name="2"></a>Idling and external events, DMU and DocumentChanged</h4>
-<p>We have repeatedly compared the various ways of reacting to Revit model changes, e.g. in the discussion on <a href="http://thebuildingcoder.typepad.com/blog/2012/06/documentchanged-versus-dynamic-model-updater.html">DocumentChanged versus Dynamic Model Updater</a>.</p>
+<p>We have repeatedly compared the various ways of reacting to Revit model changes, e.g. in the discussion on <a href="0783_doc_change_dmu.htm">DocumentChanged versus Dynamic Model Updater</a>.</p>
 <p>Let's take a fresh look at this, with some important input once again from Arnošt Löbel:</p>
 <p><strong>Question:</strong> Is there any way to quickly retrieve an <code>ApplicationServices.Application</code> object when I don't have a Document to work with? I don't see a way to it in the <code>OnStartUp</code> event such that I could just cache it somewhere. I also assume using the following is bad:</p>
 <pre class="code">
@@ -115,7 +146,7 @@ Today we have two ever-recurring topics to revisit: a discussion on how to react
 <h4><a name="3"></a>Need for Regen in an Updater</h4>
 <p>We have already looked at a large number of examples of how important it is to be aware of the Revit model modifications your add-in causes.</p>
 <p>If you change anything in the model, beware of querying the model afterwards without forcing a regeneration, or you will receive stale and possibly conflicting data.</p>
-<p>The Building Coder dedicates a whole topic group to the <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33">need to regenerate</a>.</p>
+<p>The Building Coder dedicates a whole topic group to the <span class="unavailable-link">need to regenerate</span>.</p>
 <p>Now we have another entry to add to it, prompted
 by <a href="http://forums.autodesk.com/t5/user/viewprofilepage/user-id/3289713">Amr</a>'s
 Revit API discussion thread asking why on earth
@@ -204,3 +235,11 @@ and answered by Amr himself:</p>
 
 <p><strong>Answer:</strong> After various trials and errors I found out that the problem is that Revit doesn't update and reflect the changes instantly, so adding the <code>NewOpening</code> method right after <code>NewFloor</code> didn't work because somehow the floor wasn't yet written to the model. You have to write it manually by adding a call to <code>doc.Regenerate</code> between the calls to <code>NewFloor</code> and <code>NewOpening</code>. This will reflect the latest changes to the model and therefore the <code>NewOpening</code> method will work nicely.</p>
 <p>Thank you very much, Amr, for discovering this the hard way and sharing it with us.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -86,7 +86,7 @@ on [how to get coordinates of an existing Revit View, then use them for placing 
 #### <a name="2.1"></a>Addendum &ndash; NuGet Package and .NET Framework Version
 
 Jason Masters adds some important notes to this in
-his [comment below](https://thebuildingcoder.typepad.com/blog/2020/01/devdays-online-and-add-in-migration.html#comment-4774664575):
+his [comment below](1815_devdays_migrate.html#comment-4774664575):
 
 In terms of upgrading Revit API versions, I'd highly recommend switching from references to the SDK to referencing
 the [NuGet package published by Matthew Taylor (Revit_All_Main_Versions_API_x64)](https://www.nuget.org/packages/Revit_All_Main_Versions_API_x64):

@@ -1,12 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Great Ocean Road and Creating Your Own Key</h3>
 
 <p>The 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-devlab.html">
+<a href="0738_melbourne_devlab.htm">
 post-DevLab evening</a> I 
 
 spent with Paul and Nick on Friday night turned into something of a pub crawl and one of the most pleasant post-training evenings for a long time.
@@ -141,17 +172,17 @@ Possibly you can attach that kind of information as a sort of label to each elem
 
 <p>I showed how to define a comparison algorithm for points when looking at 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/nested-instance-geometry.html">
+<a href="0134_nested_instance_geo.htm">
 nested instance geometry</a>  and 
 
 revisited it in depth during the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-day-two.html#2">
+<a href="0737_melbourne_day_2.htm#2">
 Melbourne Revit API training</a>.
 
 <p>I implemented a related sort order and sorting algorithm for points based on this for the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/03/toposurface-interior-and-boundary-points.html">
+<a href="0556_toposurf_points.htm">
 toposurface point classification</a>.
 
 <p>This allows me to use a standard generic .NET Dictionary class and the Revit API XYZ insertion point as a key into that dictionary.
@@ -162,7 +193,7 @@ If a line from A to B is considered identical to the one from B to A, which make
 
 <p>My toposurface point analysis shows how to implement and use a generic .NET dictionary key class
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/03/toposurface-interior-and-boundary-points.html">
+<a href="0556_toposurf_points.htm">
 JtEdge</a> for 
 
 undirected line segments.
@@ -187,3 +218,12 @@ For an arced beam, you might use three points, etc.
 normalisation</a>.
 
 In this case, I just mean that every element that you want to compare equal to another really generates the same key.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

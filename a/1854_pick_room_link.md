@@ -260,7 +260,7 @@ Weird corruptions and crashes; it's totally against the way Revit runs.
 It can be quite easy to accidentally let some code call Revit API from a non-main thread.
 I think it can happen when you have timers and UI containers that update asynchronously and need to update something in Revit.
 Here is an explantion of
-why [the Revit API is never ever thread safe](https://thebuildingcoder.typepad.com/blog/2014/11/the-revit-api-is-never-ever-thread-safe.html).
+why [the Revit API is never ever thread safe](1244_no_multithreading.htm).
 
 **Response:** Okay, I understand the thread-safety and critical section ideas.
 I think 'process' and 'thread' are different concepts.
@@ -287,7 +287,7 @@ In fact, there can be several such transitions.
 Could you rephrase?
 
 **Answer:** What is being attempted or prevented?
-Again, note that there is [no multithreading in Revit](https://thebuildingcoder.typepad.com/blog/2011/06/no-multithreading-in-revit.html).
+Again, note that there is [no multithreading in Revit](0603_no_multithreading.htm).
 
 **Question:** We are trying to understand the exact relationship between Revit and its addins, so we ask experts if an addin can snoop on Revit's memory and find secrets like service credentials.
 

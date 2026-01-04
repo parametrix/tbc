@@ -1,18 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Extrusion Analyser and Plan View Boundaries</h3>
 
 <p>Continuing the research and development for my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/cloud-mobile-extensible-storage-data-use-in-schedules.html#3">
+<a href="0912_cm_estorage_schedule.htm#3">
 cloud-based round-trip 2D Revit model editing project</a>,
 
 I looked at using the ExtrusionAnalyzer to create a plan view boundary profile for the furniture and equipment family instances and implemented a utility method
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/sort-and-orient-curves-to-form-a-contiguous-loop.html">
+<a href="0918_contiguous_curves.htm">
 SortCurvesContiguous</a> to
 
 sort and re-orient the curves it returns into a closed contiguous loop.
@@ -229,12 +260,12 @@ I also added code to report how many failures occur:</p>
 
 <p>Rudolf Honke added a very valid
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/sort-and-orient-curves-to-form-a-contiguous-loop.html#comment-6a00e553e168978833017c384939c3970b">
+<a href="0918_contiguous_curves.htm#comment-6a00e553e168978833017c384939c3970b">
 suggestion</a> to
 
 my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/sort-and-orient-curves-to-form-a-contiguous-loop.html">
+<a href="0918_contiguous_curves.htm">
 SortCurvesContiguous implementation</a>: <i>You may have a look at ExporterIFCUtils.ValidateCurveLoops method. RevitApi.chm says:
 
 "Does validity checks on a list of curve loops to ensure that they are all co-planar, closed, and properly oriented."
@@ -474,7 +505,7 @@ As said, the end goal is:</p>
 <li>Upload the boundary loop and other data to the cloud.</li>
 <li>Visualise and manipulate the loops in the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/02/2d-svg-editing-on-mobile-device-with-rapha%C3%ABl.html">
+<a href="0896_svg_raphael_edit.htm">
 room layout editor</a>.</li>
 </ul>
 
@@ -514,3 +545,12 @@ points out his
 <a href="http://www2.ofcdesk.com/tools">ofctools</a>,
 
 providing advanced maintenance commands to optimise and streamline work, e.g. creating, editing or deleting large numbers of elements.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

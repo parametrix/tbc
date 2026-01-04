@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 07223180 [Get PipeInsulation and Pipe material] -->
@@ -8,15 +39,15 @@
 
 <p>I recently looked at the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/05/the-revit-2013-mep-api-and-external-services.html">
+<a href="0762_mep_2013.htm">
 Revit MEP 2013 API</a> and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/05/the-adn-mep-sample-adnrme-for-revit-mep-2013.html">
+<a href="0763_adnrme_mep_2013.htm">
 migrated the AdnRme sample to it</a>.
 
 <p>To follow up on that, here is an unexpectedly hard Revit MEP 2013 question by Victor Chekalin, who recently created the nice 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/05/devblog-devcamp-element-and-project-wide-data.html">
+<a href="0765_estorage_single.htm">
 DataStorage sample</a>.
 
 The new question leads to some tricky and interesting aspects on how to access data or database elements through the Revit API that are not immediately accessible via the expected route or "normal" channels.
@@ -39,7 +70,7 @@ Why?
 
 <p>I looked at the API help, API Reference Guide and read the post on the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/06/the-revit-mep-2012-api.html">
+<a href="0594_mep_2012_api.htm">
 Revit MEP 2012 API</a> describing
 
 the new pipe and duct insulations, but I didn't find the answer how to retrieve PipeInsulation material via API. 
@@ -283,3 +314,12 @@ It takes the pipe element id and returns all pipe insulation element ids associa
 <p>Not so easy to find, though  :-)
 
 <p>I updated the code in the zip file above to take this approach into account as well, simply adding an assertion to verify that the result is the same.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

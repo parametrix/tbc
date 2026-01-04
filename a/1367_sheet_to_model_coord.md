@@ -39,8 +39,8 @@ Are you aware of a workaround? ...
 
 
 James Carroll raised
-a [question](http://thebuildingcoder.typepad.com/blog/2013/10/exact-viewport-positioning-conceptual-design-automation-and-graitec.html#comment-2296469077) on the discussion
-of [exact viewport positioning](http://thebuildingcoder.typepad.com/blog/2013/10/exact-viewport-positioning-conceptual-design-automation-and-graitec.html):
+a [question](1031_viewport_position.htm#comment-2296469077) on the discussion
+of [exact viewport positioning](1031_viewport_position.htm):
 
 
 **Question:**

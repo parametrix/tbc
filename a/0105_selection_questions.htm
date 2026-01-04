@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -24,7 +54,7 @@ Here are a few of them:</p>
 <!-- 1247912 [Modeless Dialogues and Driving Revit from outside] -->
 <li>In the discussion of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/revit-window-handle-and-modeless-dialogues.html">
+<a href="0088_revit_window_handle.htm">
 Revit window handle and modeless dialogues</a>
 
 you list selected elements in a modeless dialogue box. 
@@ -34,7 +64,7 @@ Could the reverse operation be implemented, displaying the selected elements in 
 <!-- 1248047 [Get coordinates of mouse click in drawing] -->
 <li>I'd like to be able to click at a point on a drawing and get its coordinates.
 Is this possible without actually selecting an existing element?
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/picking-a-point.html">
+<a href="0022_picking_a_point.htm">
 Answer...</a></li>
 
 <!-- 1248049 [PickOne Selection Order] -->
@@ -54,17 +84,17 @@ Two interactive user selection methods can be used while an external command is 
 You can call PickOne in a loop until the user selects the specific element that you require.
 The basics of using PickOne are discussed in 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/pickone.html">
+<a href="0059_pickone.htm">
 this post</a>.
 
 We also provide an example demonstrating how to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/01/verona-revit-api-training.html">
+<a href="0087_verona.htm">
 pick a specific element type</a>.
 
 Finally, here is a more complex example 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/revit-window-handle-and-modeless-dialogues.html">
+<a href="0088_revit_window_handle.htm">
 presenting the current contents of the selection set in a modeless dialogue</a>
 
 and discussing how more complex analysis of the current selection could be added.
@@ -83,17 +113,17 @@ Please note that both of these approaches are completely unsupported and must be
 For example, to invoke the Room command, you could simulate selecting the Revit menu entry Drafting > Room or typing in the keyboard shortcut RM. 
 This is discussed in the post on 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/driving-revit-from-outside.html">
+<a href="0051_driving_revit.htm">
 driving Revit from outside</a>.
 
 An alternative method to using Win32 API calls directly yourself to simulate user input is also available:
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/01/autohotkey.html">
+<a href="0080_autohotkey.htm">
 AutoHotKey</a>.
 
 If you do decide to use the Win32 API, you may also be interested in the discussion on the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/revit-window-handle-and-modeless-dialogues.html">
+<a href="0088_revit_window_handle.htm">
 Revit window handle and modeless dialogues</a>.
 
 
@@ -102,7 +132,7 @@ Revit window handle and modeless dialogues</a>.
 
 <p>Yes, that is perfectly possible. In the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/revit-window-handle-and-modeless-dialogues.html">
+<a href="0088_revit_window_handle.htm">
 modeless dialogue</a>
 
 we presented, the selected elements are simply listed in a text label. 
@@ -121,7 +151,7 @@ I might try it out as soon as I have some time.</p>
 
 <p>This issue and the meagre workarounds I can think of were already discussed in the post on 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/picking-a-point.html">
+<a href="0022_picking_a_point.htm">
 picking a point</a>.</p>
 
 
@@ -132,3 +162,12 @@ picking a point</a>.</p>
 If you wish to keep track of the original selection order, you would have to do so yourself. You could achieve this by iterating over the entire selection set after each call to PickOne and determining which new element has been added by the last call. You could then keep track of the elements added in an own ordered list, in parallel with the unordered set maintained by Revit.</p>
 
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

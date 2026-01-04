@@ -78,19 +78,19 @@ on [how to draw transient graphics in Revit](https://forums.autodesk.com/t5/revi
 These texts draw upon all model elements and will not adapt their size when scaling the view.
 This can be applied to a situation such as when the grid names are outside of the view, the texts representing the grids display at the edge of view, so the user can easily know the current position while modelling.
 
-**Answer:** Two pieces of Revit API functionality come to mind: the older [Analysis Visualisation Framework or AVF](https://thebuildingcoder.typepad.com/blog/avf) and the more recent DirectContext3D.
+**Answer:** Two pieces of Revit API functionality come to mind: the older Analysis Visualisation Framework or AVF *(link unavailable)* and the more recent DirectContext3D.
 
 AVF is designed for displaying structural and other analysis results on the BIM element faces.
-The Building Coder has presented numerous examples in the past, starting with the decade-old [Revit webcam](https://thebuildingcoder.typepad.com/blog/2012/02/revit-webcam-2012.html).
+The Building Coder has presented numerous examples in the past, starting with the decade-old [Revit webcam](0718_revitwebcam_2012.htm).
 
 DirectContext3D is for displaying external graphics in the context of a Revit model:
 
 - The [`IDirectContext3DServer` interface](https://www.revitapidocs.com/2020/7709521d-9954-ef80-1f13-3bc6ee660d5d.htm) for
-displaying arbitrary 3D graphics in Revit, [introduced in Revit 2018](https://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html#3.26)
-- The [DuplicateGraphics SDK sample](https://thebuildingcoder.typepad.com/blog/2017/05/revit-2017-and-2018-sdk-samples.html#4.2) demonstrates
+displaying arbitrary 3D graphics in Revit, [introduced in Revit 2018](1551_whats_new_2018.html#3.26)
+- The [DuplicateGraphics SDK sample](1560_2018_sdk_samples.html#4.2) demonstrates
 basic usage
 - How to [draw or render over the active view](https://forums.autodesk.com/t5/revit-api-forum/draw-render-over-the-activeview/m-p/7074503)
-- [DirectContext Rectangle Jig](https://thebuildingcoder.typepad.com/blog/2020/10/onbox-directcontext-jig-and-no-cdn.html#3) example
+- [DirectContext Rectangle Jig](1872_rect_jig.html#3) example
 - [IDirectContext3DServer and scene size](https://forums.autodesk.com/t5/revit-api-forum/idirectcontext3dserver-and-scene-size/m-p/9939322)
 
 For your use case, however, I can well imagine that a simpler and more effective solution can be implemented independently of Revit and its API, by making use of the native Windows API or .NET libraries.

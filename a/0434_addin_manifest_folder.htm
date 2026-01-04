@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1262436 [Document Macro and Ribbon panel] -->
@@ -8,7 +39,7 @@
 
 <p>We already discussed quite a few aspects of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/addin-manifest-and-guidize.html">
+<a href="0354_guidizer.htm">
 add-in manifest files</a>, 
 
 including:
@@ -27,30 +58,30 @@ including:
 <ul>
 <li>A simple example of creating one for my first Revit 2011 plug-in, the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/pipe-to-conduit-converter.html">
+<a href="0360_p2c.htm">
 pipe to conduit converter</a>.
 
-<li>The <a href="http://thebuildingcoder.typepad.com/blog/2010/04/revitaddinutility.html">
+<li>The <a href="0336_addinutility.htm">
 RevitAddInUtility</a> which 
 
 can be used to read and write add-in manifest files.
 
-<li>My <a href="http://thebuildingcoder.typepad.com/blog/2010/04/addin-manifest-and-guidize.html">
+<li>My <a href="0354_guidizer.htm">
 Guidize utility</a> which
 
 can populate the add-in manifest ClientId GUID.
 
-<li>A <a href="http://thebuildingcoder.typepad.com/blog/2010/04/addin-manifest-and-guidize.html">
+<li>A <a href="0354_guidizer.htm">
 Guidize update</a> which 
 
 also handles the AddInId tag.
 
-<li>The <a href="http://thebuildingcoder.typepad.com/blog/2010/05/addin-visibility-mode.html">
+<li>The <a href="0373_addin_visibility_mode.htm">
 visibility mode</a> which 
 
 controls which in which Revit editor contexts an external command add-in appears.
 
-<li>How to handle <a href="http://thebuildingcoder.typepad.com/blog/2010/06/addin-applications-for-multiple-revit-products.html">
+<li>How to handle <a href="0378_multi_flavour_apps.htm">
 external applications for multiple flavours</a> of Revit.
 
 </ul>
@@ -62,7 +93,7 @@ I have a client that would like to place them on a server rather than distribute
 
 <p><strong>Answer:</strong> As you say, add-in manifest files are automatically picked up and processed by Revit simply by placing them in 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/addin-manifest-and-guidize.html#1">
+<a href="0354_guidizer.htm#1">
 specific folders</a> in
 
 the local file system.
@@ -115,3 +146,12 @@ code access security policy (caspol.exe) GUI utility</a>,
 which includes the following note on when one might need to modify the policy: 'I want to run some .NET apps off a network share, and the machine I'm using doesn't have .NET 3.5 SP1.'
 
 <p>From that statement, one might possibly also infer that a simple upgrade of the .NET framework may help?
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -267,7 +267,7 @@ Walls and doors added along cube horizontal contours after running command:
 </center>
 
 If you prefer the other approach, explore
-the [Transform](http://thebuildingcoder.typepad.com/blog/2009/03/transform.html) class
+the [Transform](0110_transform.htm) class
 and related concepts.
 
 You can get the transform of your family instance using the `familyInstance.GetTotalTransform` method.

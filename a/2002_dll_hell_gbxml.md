@@ -156,7 +156,7 @@ This is a common approach to programmatically drive processes in batch mode that
 You can also search The Building Coder for further hints
 on [batch processing Revit documents](https://www.google.com/search?q=batch+processing&as_sitesearch=thebuildingcoder.typepad.com).
 Alternatively, you could generate your 18000 models online
-using [APS and DA4R](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55).
+using APS and DA4R *(link unavailable)*.
 
 Furthermore, based on the code snippet provided, it appears that only R-values are manipulated and not the underlying model geometry.
 If that's the case, it might be best to use Revit to export a single gbXML seed file.
@@ -214,7 +214,7 @@ opt.Tier=Analysis.EnergyAnalysisDetailModelTier.SecondLevelBoundaries
 ####<a name="5"></a> Automate FBX Export with SendKeys
 
 We already shared a C# solution
-to [handle a Revit dialogue using `Idling`, `DialogBoxShowing` and `SendKeys`](https://thebuildingcoder.typepad.com/blog/2021/02/birthday-devdays-postcommand-sendkeys.html#4) to
+to [handle a Revit dialogue using `Idling`, `DialogBoxShowing` and `SendKeys`](1891_postcommand_sendkeys.html#4) to
 implement
 the [TwinMotion dynamic link export FBX automatically](https://forums.autodesk.com/t5/revit-api-forum/twinmotion-dynamic-link-export-fbx-automatically/m-p/12123438).
 
@@ -340,7 +340,7 @@ Here is his useful list of assets:
 - [Revit SDK](https://aps.autodesk.com/developer/overview/revit)
 - [My First Revit Plug-in Overview](https://www.autodesk.com/support/technical/article/caas/tsarticles/ts/7I2bC1zUr4VjJ3U31uM66K.html)
 - [Create account in GitHub](https://github.com/)
-- [The Builder Coder](https://thebuildingcoder.typepad.com/)
+- The Builder Coder *(link unavailable)*
   [Visual Studio Revit Add-in Templates](https://github.com/jeremytammik/VisualStudioRevitAddinWizard)
   &ndash; recommendation: clone the repository
 

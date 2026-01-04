@@ -248,7 +248,7 @@ In the course of revamping the Revit API, the development team also took a look 
 Support for .NET Core will obviously affect that as well.
 Last year, they asked for feedback from the add-in developer community
 on [how you use Revit macros](https://forums.autodesk.com/t5/revit-api-forum/research-how-do-you-use-revit-macros/m-p/11158305)
-and [shared back the results](https://thebuildingcoder.typepad.com/blog/2022/05/analysis-of-macros-journals-and-add-in-manager.html#2).
+and [shared back the results](1952_manager_journal_macro.html#2).
 
 As a result of this and other usage analysis, the current plan is to drop support for document macros.
 Converting a document macro to an application macro is easy, and I hope to share some simple instructions on that anon.
@@ -265,8 +265,8 @@ I cannot delete any object.
 
 **Answer:** You can delete an object temporarily inside a transaction that is never committed, so the changes are never stored in the database:
 
-- [Calculating gross and net wall areas](http://thebuildingcoder.typepad.com/blog/2015/03/calculating-gross-and-net-wall-areas.html)
-- [Gross and net wall area calculation enhancement](https://thebuildingcoder.typepad.com/blog/2015/04/gross-and-net-wall-area-calculation-enhancement-and-events.html)
+- [Calculating gross and net wall areas](1296_spatial_calculator.htm)
+- [Gross and net wall area calculation enhancement](1309_spatial_calculator.htm)
 
 **Response:** I cannot delete elements, even transitory.
 

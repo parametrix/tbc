@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -100,7 +130,7 @@ Structural_ID Module 2: Export Parameters &ndash; derived from FireRating:
 </p>
 
 <ul>
-<li>Export Structural_ID_Frame and Structural_ID_Column shared parameters. As noted before, these parameters hold a value to define the project category identification such as 'Proj-1F' or 'Proj-1C'. From this we can tell its project origin. You could have duplication of the Revit Element ID amongst the 4 separate projects, so using Structural_IDís and Element ID as dual validation will effectively provide data integrity.</li>
+<li>Export Structural_ID_Frame and Structural_ID_Column shared parameters. As noted before, these parameters hold a value to define the project category identification such as 'Proj-1F' or 'Proj-1C'. From this we can tell its project origin. You could have duplication of the Revit Element ID amongst the 4 separate projects, so using Structural_IDÔøΩs and Element ID as dual validation will effectively provide data integrity.</li>
 <li>Export Sequence Number shared parameter. This user entered value is utilized for establishing a grouping of structural elements for construction sequence which is later interpreted in Navisworks and used for sorting purposes.</li>
 <li>Export predefined parameters Element ID, Mark, and Level.</li>
 <li>End result is Database1, a tabulated spreadsheet defining each row by Revit Element ID, Level, Mark, and Structural ID.</li>
@@ -135,7 +165,7 @@ Structural_ID Module 2: Export Parameters &ndash; derived from FireRating:
 
 <h4>Summary</h4>
 
-<p>There is obviously a lot going on here, but if kept regimented it works well. Time as always, will dictate how much effort is put in making a program practical, clean, accurate, and deliver the scope intended. Within one weeks time (We stopped counting the hours) we were able to complete this overall team effort. As I look in hind sight, I am grateful that I had the required information and support by Autodesk and its professional staff. Without it, it would have been a grave disappointment. I am now aware of my available resources to further our development and utilization of the Revit API. Itís amazing how much you can learn from the various samples provided in the SDK with supported documentation. Just imagine the possibilities for the upcoming future. I intend to bring this program example to a more consolidated level and transform it to an internal Revit Auto Mark Numbering validation program with various user select export options ranging from shared parameters, predefined parameters, and XYZ coordinates.</p>
+<p>There is obviously a lot going on here, but if kept regimented it works well. Time as always, will dictate how much effort is put in making a program practical, clean, accurate, and deliver the scope intended. Within one weeks time (We stopped counting the hours) we were able to complete this overall team effort. As I look in hind sight, I am grateful that I had the required information and support by Autodesk and its professional staff. Without it, it would have been a grave disappointment. I am now aware of my available resources to further our development and utilization of the Revit API. ItÔøΩs amazing how much you can learn from the various samples provided in the SDK with supported documentation. Just imagine the possibilities for the upcoming future. I intend to bring this program example to a more consolidated level and transform it to an internal Revit Auto Mark Numbering validation program with various user select export options ranging from shared parameters, predefined parameters, and XYZ coordinates.</p>
 
 <p>Thanks to Jeremy Tammik
 
@@ -158,3 +188,12 @@ for all your help and sharing the knowledge.</p>
 <p>Thank you very much Dan, for this contribution.
 I would like to express my appreciation and respect for your hard work and enthusiasm, and gratitude for documenting and sharing the end result, hopefully as an inspiration for others as well.
 It was an honour and a pleasure to work with Dan and see with him make such efficient use of every little snippet of information provided.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

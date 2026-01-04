@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -162,7 +193,7 @@ That gives you the following important benefits:</p>
 
 <p>An overview and examples of several different approaches is provided by the analysis of how to determine
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/supporting-columns.html">supporting columns</a>.</p>
+<a href="0915_2014_supporting_columns.htm">supporting columns</a>.</p>
 
 
 
@@ -178,7 +209,7 @@ That gives you the following important benefits:</p>
 
 <p>You can load a family, either entirely with all its symbols or just one specific type, using the LoadFamily and LoadFamilySymbol methods. Here are some thoughts and background information on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/05/loading-only-selected-family-types.html">loading selected family types</a>.</p>
+<a href="0586_load_selected_types.htm">loading selected family types</a>.</p>
 
 <p>By type catalogue, I assume you mean the text file specifying a list of possible dimension combinations?</p>
 
@@ -196,7 +227,7 @@ That gives you the following important benefits:</p>
 
 <p>I can successfully retrieve what looks like the correct information via GetAllProjectRevisionIds, but the PROJECT_REVISION_REVISION_NUM parameter contains no information, and PROJECT_REVISION_REVISION_ENUMERATION always appears to contain '0' (zero) regardless of the Numeric or Alphabetic selection in Sheet Issues/Revisions.</p>
 
-<p>I used a modified version of <a href="http://thebuildingcoder.typepad.com/blog/2013/09/max-revision-wrapper-class.html">Max' revision wrapper class</a> for my tests.</p>
+<p>I used a modified version of <a href="1027_revision.htm">Max' revision wrapper class</a> for my tests.</p>
 
 <p>The test sheet in question contains 4 revisions, two of which are alphabetic, and two numeric. The output when I retrieve data using the sample code is:</p>
 
@@ -213,17 +244,17 @@ That gives you the following important benefits:</p>
 
 <p>One of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html#3">
+<a href="1141_whats_new_2015.htm#3">
 major Revit 2015 API additions</a> is
 
 access to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html#3.04">
+<a href="1141_whats_new_2015.htm#3.04">
 revision information</a>.</p>
 
 <p>I recently implemented a sample application showing how to use this access to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/06/the-revision-api-and-a-form-on-the-fly.html">read revision data</a> and
+<a href="1168_revision_api.htm">read revision data</a> and
 
 display it in a dynamically generated Windows form on the fly.</p>
 
@@ -234,17 +265,17 @@ display it in a dynamically generated Windows form on the fly.</p>
 
 <p>The best way to understand how to install a Revit add-in is to read the
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#2">Revit API getting started material</a>.</p>
+<span class="unavailable-link">Revit API getting started material</span>.</p>
 
 <p>However, this material is targeted at developers.</p>
 
 <p>I wrote a shorter and simpler answer addressing the minimal basics answering a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/auto-pdf-print-from-revit-2014.html?cid=6a00e553e16897883301a73dec94c3970d#comment-6a00e553e16897883301a73dec94c3970d">comment</a> by
+<a href="0957_auto_pdf_print.htm">comment</a> by
 
 Frédéric on the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/auto-pdf-print-from-revit-2014.html">AutoPDF print utility</a>:</p>
+<a href="0957_auto_pdf_print.htm">AutoPDF print utility</a>:</p>
 
 <blockquote>
 <p>All Revit add-ins are installed in the same way.</p>
@@ -270,7 +301,7 @@ Frédéric on the
 
 Arnost Lobel Collecting "Frequently Asked Questions"
 
-<a name=""></a>
+<a name="></a>
 
 <h4></h4>
 
@@ -278,10 +309,10 @@ We, at the Revit API group we are currently in process of collecting users’ qu
 
 We already have some questions we think may be important (and we know they are asked on API forums quite frequently), but I am not giving it away yet, because I am interested in your first reaction. Certainly each of you have some questions you feel are those your users ask most often. Please, if you have some we would appreciate if you could send it over to me, even if some of the questions are trivial. We will take a look at each one of them and will sort them out for the final list. Questions are to be about Revit API, not general Revit features.
 
-<a href="">
+<a href=">
 </a>
 
-<a name=""></a>
+<a name="></a>
 
 <h4></h4>
 
@@ -290,3 +321,12 @@ We already have some questions we think may be important (and we know they are a
 </pre>
 
 -->
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

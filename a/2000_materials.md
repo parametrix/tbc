@@ -99,8 +99,8 @@ on [Material Takeoff shows incorrect values of areas and/or volumes in Revit](ht
 
 As far as the API goes, check out these 2 resources from The Building Coder and Scott Conover that may help confirm the API designed behaviour:
 
-- [Material Quantity Extraction](https://thebuildingcoder.typepad.com/blog/2010/02/material-quantity-extraction.html)
-- [Analyse Geometry of Buildings Using the Revit API](https://thebuildingcoder.typepad.com/au/2009/AU09_CP222-3_Analyze_Geometry_Revit_API.pdf) at AU 2009 by Scott Conover, Autodesk
+- [Material Quantity Extraction](0296_abg10_material_quantity.htm)
+- Analyse Geometry of Buildings Using the Revit API *(link unavailable)* at AU 2009 by Scott Conover, Autodesk
 
 This is from Scott's presentation:
 

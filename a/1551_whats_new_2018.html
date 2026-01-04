@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <!-- <script src="run_prettify.js" type="text/javascript"></script> --> 
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -18,10 +49,10 @@ If you encounter any issues migrating your existing add-ins between different ve
 <h3>What's New in the Revit 2018 API</h3>
 <p>The Revit 2018 API includes numerous exciting enhancements for add-in developers.</p>
 <p>The highlights were pointed out in
-the <a href="http://thebuildingcoder.typepad.com/blog/2017/03/revitlookup-enhancements-future-revit-and-other-api-news.html">DevDays Online API news</a> presentation
+the <a href="1534_revit_api_news.html">DevDays Online API news</a> presentation
 and video recording.</p>
 <p>That information is based on the contents of the <em>Revit Platform API Changes and Additions.docx</em> document included with
-the <a href="http://thebuildingcoder.typepad.com/blog/2017/04/revitlookup-2018-and-forge-devcon-cfp.html#2">Revit 2018 software developers kit</a> or 
+the <a href="1550_2018_devcon_cfp.html#2">Revit 2018 software developers kit</a> or 
 SDK available from 
 the <a href="http://www.autodesk.com/developrevit">Revit Developer Centre</a>.</p>
 <p>It is also provided in the section on <em>What's New</em> in the Revit 2018 API help file <code>RevitAPI.chm</code> included with the SDK:</p>
@@ -44,15 +75,15 @@ in the <a href="http://help.autodesk.com/view/RVT/2018/ENU">Revit 2018 Help</a>.
 <h4><a name="0"></a>What's New in Previous Versions</h4>
 <p>Here are links to discussions of <em>What's New in the Revit API</em> for previous versions:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2010-api.html">What's New in the Revit 2010 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2011-api.html">What's New in the Revit 2011 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2012-api.html">What's New in the Revit 2012 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/03/whats-new-in-the-revit-2013-api.html">What's New in the Revit 2013 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html">What's New in the Revit 2014 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html">What's New in the Revit 2015 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html">What's New in the Revit 2016 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html">What's New in the Revit 2017 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/11/whats-new-in-the-revit-20171-api.html">What's New in the Revit 2017.1 API</a></li>
+<li><a href="0901_whats_new_2010.htm">What's New in the Revit 2010 API</a></li>
+<li><a href="0902_whats_new_2011.htm">What's New in the Revit 2011 API</a></li>
+<li><a href="0903_whats_new_2012.htm">What's New in the Revit 2012 API</a></li>
+<li><a href="0904_whats_new_2013.htm">What's New in the Revit 2013 API</a></li>
+<li><a href="0938_whats_new_2014.htm">What's New in the Revit 2014 API</a></li>
+<li><a href="1141_whats_new_2015.htm">What's New in the Revit 2015 API</a></li>
+<li><a href="1311_whats_new_2016.htm">What's New in the Revit 2016 API</a></li>
+<li><a href="1428_whats_new_2017.html">What's New in the Revit 2017 API</a></li>
+<li><a href="1496_whats_new_2017_1.html">What's New in the Revit 2017.1 API</a></li>
 </ul>
 <h3><a name="1"></a>Table of Contents</h3>
 <p>I implemented
@@ -1743,3 +1774,11 @@ the <a href="#1">table of contents</a> above.</p>
 the <a href="zip/Revit_Platform_API_Changes_and_Additions_2018_03.htm">input file <code>Revit_Platform_API_Changes_and_Additions_2018_03.htm</code></a>, generating
 the <a href="zip/Revit_Platform_API_Changes_and_Additions_2018_04.htm">output file <code>Revit_Platform_API_Changes_and_Additions_2018_04.htm</code></a>.</p>
 <p>It will gladden me if you can make use of this as well.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

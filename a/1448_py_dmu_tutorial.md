@@ -23,7 +23,7 @@ The [Forge DevCon](http://forge.autodesk.com/conference) is over and was a great
 
 I am really excited to see where our paths will lead us in the near future as we continue to improve the connections between the desktop, Revit and BIM to the cloud and move forward towards freeing our BIM data.
 
-I published pointers to all the [Free your BIM data resources](http://thebuildingcoder.typepad.com/blog/2016/06/free-your-bim-data-and-roomedit3d-thee-legged-forge-oauth.html) yesterday.
+I published pointers to all the [Free your BIM data resources](1447_devcon_roomedit3dv2.html) yesterday.
 
 <center>
 <img src="img/jeremy_freeing_bim_data.jpg" alt="Jeremy freeing BIM data" width="450">
@@ -44,10 +44,10 @@ Our main topics today are completely different and purely Revit API related:
 #### <a name="2"></a>Updated Visual Studio Revit Add-in Wizards
 
 I updated
-the [Visual Studio Revit Add-in Wizards](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20)
+the Visual Studio Revit Add-in Wizards *(link unavailable)*
 to suppress
-the [architecture mismatch warning](http://thebuildingcoder.typepad.com/blog/2013/06/processor-architecture-mismatch-warning.html)
-(cf. the corresponding [command line utility](http://thebuildingcoder.typepad.com/blog/2013/07/recursively-disable-architecture-mismatch-warning.html)).
+the [architecture mismatch warning](0968_architecture_mismatch.htm)
+(cf. the corresponding [command line utility](0977_architecture_mismatch.htm)).
 
 The most up-to-date version is always available from
 the [VisualStudioRevitAddinWizard GitHub repository](https://github.com/jeremytammik/VisualStudioRevitAddinWizard),
@@ -58,7 +58,7 @@ in [release 2017.0.0.1](https://github.com/jeremytammik/VisualStudioRevitAddinWi
 #### <a name="3"></a>RevitPythonShell Dynamic Model Updater Tutorial
 
 [Pierre Moureu](https://github.com/PMoureu) created a very helpful tutorial on using
-the [Dynamic Model Updater framework DMU](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.31) in the context
+the Dynamic Model Updater framework DMU *(link unavailable)* in the context
 of [Daren Thomas](https://github.com/daren-thomas)'
 [RevitPythonShell](https://github.com/architecture-building-systems/revitpythonshell):
 

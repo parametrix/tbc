@@ -1,9 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equicenter="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <style type="text/css">p.en { font-style: italic; }</style>
 <script src="google-code-prettify/run_prettify.js"></script>
 <!-- <script src="http://thebuildingcoder.typepad.com/google-code-prettify/run_prettify.js"></script> -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -27,10 +58,10 @@ Revit API, Jeremy Tammik, akn_include
 <h3>Intersect Solid Filter, AVF vs DirectShape Debugging</h3>
 
 <p>We already discussed the important topics of the
-<a href="http://thebuildingcoder.typepad.com/blog/avf">analysis visualisation framework AVF</a>,
-<a href="http://thebuildingcoder.typepad.com/blog/2014/11/directshape-versus-families-category-and-texture.html">DirectShape</a>
-(<a href="http://thebuildingcoder.typepad.com/blog/2015/02/from-hack-to-app-obj-mesh-import-to-directshape.html">mesh import</a>,
-<a href="http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html#4.16">new functionality</a>),
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/avf">analysis visualisation framework AVF <em>(category page)</em></span>,
+<a href="1239_directshape.htm">DirectShape</a>
+(<a href="1283_directobjloader.htm">mesh import</a>,
+<a href="1311_whats_new_2016.htm#4.16">new functionality</a>),
 and the ElementIntersectsSolidFilter.</p>
 
 <p>Today, let's look at a little-know restriction on the latter and how to work around it, raised and solved by Miroslav Schonauer, Solution Architect in Autodesk Consulting, and Scott Conover, Software Development Manager of the Revit API team:</p>
@@ -66,7 +97,7 @@ I have a problem with the results of ElementIntersectsSolidFilter.</p>
 
 <p>I suspected I was doing something wrong with my transforms, due to the complex workflow.</p>
 
-<p>However, adding code to <a href="http://thebuildingcoder.typepad.com/blog/2012/09/sphere-creation-for-avf-and-filtering.html">display the solid using AVF</a> and the sphere creation code provided there prove that in both cases everything really is spot-on:</p>
+<p>However, adding code to <a href="0822_create_sphere.htm">display the solid using AVF</a> and the sphere creation code provided there prove that in both cases everything really is spot-on:</p>
 
 <center>
 <img src="img/1340_inters_solid_filt_01.png" alt="A sphere intersecting a wall" width="406"/>
@@ -185,7 +216,7 @@ Thank you.</p>
 <li>One wall in RVT.</li>
 <li>Code creates 3 solids: sphere with a radius &lt; wall width, sphere with radius &gt; wall width, cube with side &lt; wall width, each with their centre *exactly* on one of wall side surfaces.</li>
 <ul>
-<li>Spheres created using the <a href="http://thebuildingcoder.typepad.com/blog/2012/09/sphere-creation-for-avf-and-filtering.html">sphere creation for AVF and filtering</a> code.</li>
+<li>Spheres created using the <a href="0822_create_sphere.htm">sphere creation for AVF and filtering</a> code.</li>
 <li>For each solid, create the Intersect filter with wall; the first one should result in NO hits, the latter two OK.</li>
 <li>For visualization, use AVF to show the solids.</li>
 </ul>
@@ -362,3 +393,11 @@ So hard to keep up with all the great improvements for all products and APIs &nb
 <a href="https://github.com/jeremytammik/the_building_coder_samples">The Building Coder samples</a> in
 <a href="https://github.com/jeremytammik/the_building_coder_samples/releases/tag/2016.0.120.3">
 release 2016.0.120.3</a>.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

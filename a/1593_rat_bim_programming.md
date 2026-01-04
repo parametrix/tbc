@@ -35,7 +35,7 @@ Here are the slides and the handout document in their current state in PDF forma
 
 - [Slide deck (English)](/a/doc/au/2017/doc/au_de_2_3_tammik_forge_revit_api_slides.pdf)
 - [Handout document (English)](/a/doc/au/2017/doc/au_de_2_3_tammik_forge_revit_api_handout.pdf)
-- [Recording (German)](http://thebuildingcoder.typepad.com/blog/2017/10/au-recording-books-education-and-units.html)
+- [Recording (German)](1594_record_book_edu_unit.html)
 
 For your convenience, here is the full handout document text as well, omitting all images:
 
@@ -659,7 +659,7 @@ A custom viewer add-in can be optionally activated. It supports selection and in
 
 - [roomedit3d GitHub repository](https://github.com/jeremytammik/roomedit3d)
 - [Live sample URL](https://roomedit3dv3.herokuapp.com)
-- [Discussion and demo recording](http://thebuildingcoder.typepad.com/blog/2016/10/roomedit3dv3-up-and-running-with-demo-recording.html)
+- [Discussion and demo recording](1479_roomedit3d_running.html)
 
 
 ####<a name="6.8"></a>Conclusion
@@ -740,7 +740,7 @@ My underlying research is extensively documented in blog posts, so it should hel
 ####<a name="7.3"></a>Recordings
 
 An earlier incarnation of this document, the accompanying slide deck and a live 75-minute recording of the RTC presentation on *Connecting Desktop and Cloud* are available from The Building Coder post sharing
-the [Connecting Desktop and Cloud RTC Material](http://thebuildingcoder.typepad.com/blog/2016/10/connecting-desktop-and-cloud-at-rtc-material.html).
+the [Connecting Desktop and Cloud RTC Material](1487_roomedit3d_material.html).
 
 
 ####<a name="7.4"></a>Learning More
@@ -757,8 +757,8 @@ the [Connecting Desktop and Cloud RTC Material](http://thebuildingcoder.typepad.
 - [DevHelp Online for ADN members](http://adn.autodesk.com)
 - NoSQL: [nosql-database.org](http://nosql-database.org), [Wikipedia](https://en.wikipedia.org/wiki/NoSQL), [mongodb.com/nosql-explained](http://www.mongodb.com/nosql-explained)
 - Autodesk University 2013 session DV1736 &ndash; Cloud-Based, Real-Time, Round-Trip, 2D Revit Model Editing on Any Mobile Device
-- [Connecting desktop and cloud presentation at RTC Europe 2015](http://thebuildingcoder.typepad.com/blog/2015/11/connecting-desktop-and-cloud-room-editor-update.html) 
-- [Connecting desktop and cloud recording at the AU 2015 AEC booth](http://thebuildingcoder.typepad.com/blog/2015/11/connecting-desktop-and-cloud-at-au-and-devdays.html)
+- [Connecting desktop and cloud presentation at RTC Europe 2015](1372_rtc_roomedit.html) 
+- [Connecting desktop and cloud recording at the AU 2015 AEC booth](1376_au_cloud_devday.html)
 - [LmvNav sample synchronizing 2D and 3D](https://calm-inlet-4387.herokuapp.com/)
 - [Autodesk Forge](https://forge.autodesk.com)
 - [Forge API overview, documentation, and your own apps](https://developer.autodesk.com)

@@ -77,7 +77,7 @@ I continued alone from there up to Fumadiga and through the upper part of Bocche
 ####<a name="3"></a> Revit Element Ids in Forge via Navisworks and IFC
 
 This question prompted me to create a new topic group
-on [element identification using `ElementId` and `UniqueId` RVT, IFC, NW and Forge](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.56):
+on element identification using `ElementId` and `UniqueId` RVT, IFC, NW and Forge *(link unavailable)*:
 
 **Question:** I created a Navisworks file from a Revit file and submitted it to Forge.
 The returning translated JSON looks like this:
@@ -118,7 +118,7 @@ The `Name` property contains the `Element.Id`.
 **Answer:** Yes, I know they are different, which you would expect, really, as you are converting different types of files.
 
 Revit creates a unique id by appending together
-the [document-level EpisodeId GUID with the Element ID in hex](https://thebuildingcoder.typepad.com/blog/2009/02/uniqueid-dwf-and-ifc-guid.html#2):
+the [document-level EpisodeId GUID with the Element ID in hex](0104_uniqueid_dwf_ifc_guid.htm#2):
 
 <pre>
   0088CA1F hex = 8964639 decimal
@@ -172,7 +172,7 @@ shows [how trees could save the climate](https://ethz.ch/en/news-and-events/eth-
 ####<a name="6"></a> Holidays Ahead
 
 Similar to last year, I am heading off to France for some camping and a meditation retreat
-in [Plum Village](http://thebuildingcoder.typepad.com/blog/2018/07/mindful-living-and-smiling-to-myself.html),
+in [Plum Village](1671_plumvillage.html),
 a Buddhist monastery near Bordeaux.
 
 On the way there, I'm also visiting my friend George in a camping ground on the beach of the Atlantic for a few days.

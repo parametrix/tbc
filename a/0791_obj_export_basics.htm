@@ -1,12 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>OBJ Model Export Considerations</h3>
 
 <p>As I already said, I am 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/getting-going-with-the-cloud.html">
+<a href="0790_getting_going_cloud.htm">
 getting going with the cloud</a>,
 
 and my first project is to export a Revit model to the 
@@ -55,10 +86,10 @@ Kean's announcement</a>.
 
 <p>We took a couple of stabs at this in the past; an early one was
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/selecting-model-elements.html">
+<a href="0140_select_model_elements.htm">
 for Revit 2010</a>
 
-(<a href="http://thebuildingcoder.typepad.com/blog/2009/06/category-comparison-and-model-element-selection-revisited.html">revisited</a>), 
+(<a href="0155_category_comparison_2.htm">revisited</a>), 
 
 selecting each element that:
 
@@ -70,15 +101,15 @@ selecting each element that:
 
 <p>This proved to be too simple, and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/11/select-model-elements-2.html">
+<a href="0254_select_model_elements_2.htm">
 further tests</a> were required to eliminate unwanted elements.
 
 <p>We revisited the topic using filtered element collectors to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/selecting-model-elements.html">
+<a href="0453_model_elements.htm">
 retrieve all model elements in Revit 2011</a> 
 
-(<a href="http://thebuildingcoder.typepad.com/blog/2010/10/model-elements-revisited.html">updated</a>).
+(<a href="0454_model_elements.htm">updated</a>).
 
 <p>Here are some other possible criteria to apply besides the three listed above:
 
@@ -176,15 +207,15 @@ It probably simply iterated over all six cube faces and output a new vertex defi
 <p>This is very wasteful.
 In Revit it also incurs the additional risk of defining vertices which are supposed to specify corners of adjacent faces, but may be slightly off, as we discussed in obtaining the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/07/top-faces-of-wall.html">
+<a href="0620_top_faces_of_wall.htm">
 top faces of sloped walls</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-day-two.html#2">
+<a href="0737_melbourne_day_2.htm#2">
 retrieving unique geometry vertices</a> from 
 
 a selected element, and most recently in the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/real-world-concrete-corner-coordinates.html#3">
+<a href="0787_real_world_corners.htm#3">
 geometry traversal to retrieve unique vertices</a> from 
 
 concrete structural elements.
@@ -386,3 +417,12 @@ still in mono-chrome, I'm afraid:</p>
 
 <p>It will be interesting to see where this leads us.
 As always, feedback and suggestions are more than welcome.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

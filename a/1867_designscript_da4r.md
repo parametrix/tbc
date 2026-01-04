@@ -134,20 +134,20 @@ Right now, I am in the process of learning the Revit API by reading
 the [developer guide](http://help.autodesk.com/view/RVT/2021/ENU/?guid=Revit_API_Revit_API_Developers_Guide_html).
 
 **Answer:** You might begin by checking out the pointers
-to [further advice and Revit API getting started material](https://thebuildingcoder.typepad.com/blog/about-the-author.html#2).
+to further advice and Revit API getting started material *(link unavailable)*.
 
 To implement your extraction, I would suggest installing Revit desktop and using that as a basis for research and implementation.
 
 First, implement your functionality as an external command.
 Once it does everything you need and completely fulfils all requirements, you
-can [easily migrate it to DA4R](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55).
+can easily migrate it to DA4R *(link unavailable)*.
 
 **Response:** Thanks for the information.
 
 Can you provide a  quick pointer in DA4R how to write a json output as the OSS output file of the workitem? 
 
 **Answer:** Maybe the discussion
-of [DA4R Input and Output Files](https://thebuildingcoder.typepad.com/blog/2020/04/da4r-io-logging-updater-and-custom-properties.html#5) will
+of [DA4R Input and Output Files](1839_da4r_cesium.html#5) will
 help?
 
 

@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -26,7 +57,7 @@ Aaarrr!
 
 <p>Miro put together a whole collection of useful samples, which survived time and changes extraordinarily well and made it through to become the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/04/xtra-adn-revit-2013-api-training-labs.html">
+<a href="0756_xtra_adn_labs.htm">
 Xtra Revit API training labs</a>.
 
 <p>I received several queries lately on how to export data to Excel, with various follow-up options such as later including data from linked files as well, and enabling a re-import of modified data.
@@ -48,16 +79,16 @@ The FireRating SDK sample demonstrates:
 <p>I mentioned this important sample a number of times, ever since the early beginnings of the blog, often to demonstrate how to add a shared parameter to various element types in the model:
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/11/adding-a-shared-parameter-to-a-dwg-file.html">Adding a shared parameter to a DWG file</a>.
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/11/defining-a-new-parameter.html">Defining a new parameter</a>.
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/06/adding-a-shared-parameter-to-an-rfa-file.html">Adding a shared parameter to an RFA file</a>.
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/06/model-group-shared-parameter.html">Model group shared parameter</a>.
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/05/parameter-access-and-scheduling.html">Parameter access and scheduling</a>.
+<li><a href="0036_dwg_shared_param.htm">Adding a shared parameter to a DWG file</a>.
+<li><a href="0043_new_param.htm">Defining a new parameter</a>.
+<li><a href="0147_shared_param_rfa.htm">Adding a shared parameter to an RFA file</a>.
+<li><a href="0158_model_group_shared_param.htm">Model group shared parameter</a>.
+<li><a href="0372_param_scheduling.htm">Parameter access and scheduling</a>.
 </ul>
 
 <p>One very special use of this sample was in the special 100<sup>th</sup> anniversary description of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/utilizing-revit-api-resources.html">
+<a href="0100_utilizing_resources.htm">
 utilizing Revit API resources</a> to
 
 get a beginner up to speed and running.
@@ -88,7 +119,7 @@ get a beginner up to speed and running.
 
 <p>Of course, the importance of shared parameters for add-in was greatly diminished by the introduction of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/04/extensible-storage.html">
+<a href="0567_extensible_storage.htm">
 extensible storage</a>.
 
 
@@ -105,7 +136,7 @@ extensible storage</a>.
 An attempt is made to export the values of the parameters returned in this collection, and others are ignored.
 Many elements do have other parameters associated with them as well, as demonstrated by
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/09/unofficial-parameters-and-bipchecker.html">
+<a href="0656_unofficial_param.htm">
 BipChecker, the built-in parameter explorer</a>.
 
 They could easily be added to the export as well, of course.
@@ -113,13 +144,13 @@ They could easily be added to the export as well, of course.
 <p>Furthermore, there are of course a multitude of other important data items not stored in parameters that might be interesting to export and potentially modify and re-import as well.
 It might be worthwhile checking whether 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/11/adding-a-column-to-rdblink-export.html">
+<a href="0240_rdblink.htm">
 RDBLink</a> does 
 
 anything like that...
 RDBLink was originally part of the Revit 2008, 2009 and 2010 SDKs, then matured into a 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/06/subscription-packs.html">
+<a href="0592_subscription_packs.htm">
 subscription pack product</a>.
 
 <p>The choice of Excel as an export target is not mine, nor would it normally be so.
@@ -133,12 +164,12 @@ Each element is identified in the export by its element id, and a flag is added 
 <p>The original implementation exported only model elements.
 Support for 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/filter-for-all-elements.html">
+<a href="0397_filter_all_elements.htm">
 all elements</a> was 
 
 implemented by creating a union of two complementary filtered element collectors, which is easily possible and normally 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/filter-for-all-elements.html">
+<a href="0397_filter_all_elements.htm">
 not recommended</a>.
 
 <p>The elements are sorted by category, and elements with no valid category are ignored.
@@ -450,3 +481,12 @@ It takes about two minutes to complete, produces this
 
 the complete source code, Visual Studio solution and RvtSamples include file of the ADN training labs with the updated Lab4_2_ExportParametersToExcel external command.
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

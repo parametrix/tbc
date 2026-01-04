@@ -16,7 +16,7 @@
 I believe I just answered a very similar question in the Revit API discussion forum thread on [how to get a merged part after merging with some parts](https://forums.autodesk.com/t5/revit-api-forum/how-to-get-a-merged-part-after-merging-with-some-parts/td-p/7772648):
 You can subscribe to [the DocumentChanged event](http://www.revitapidocs.com/2018.1/988dd6cf-fcaa-85d2-622d-c50f13917a13.htm) just before calling CreateParts, and unsubscribe just afterwards.
 That will tell you all the element ids added to the database during the call.
-This is demonstrated in the discussion on [retrieving newly placed family instances](http://thebuildingcoder.typepad.com/blog/2010/06/place-family-instance.html).
+This is demonstrated in the discussion on [retrieving newly placed family instances](0402_place_family_instance.htm).
 
 Retrieving newly created element ids in #RevitAPI @AutodeskRevit #bim #dynamobim @AutodeskForge #ForgeDevCon http://bit.ly/new_element_ids
 
@@ -43,7 +43,7 @@ We already discussed a simple and effective method to retrieve all newly created
 the [`PromptForFamilyInstancePlacement` method](http://www.revitapidocs.com/2018.1/b05a17df-3f63-9172-8e49-d2e1e6b8e9e2.htm) by
 subscribing to the [`DocumentChanged` event](http://www.revitapidocs.com/2018.1/988dd6cf-fcaa-85d2-622d-c50f13917a13.htm) just
 beforehand in the discussion
-on [placing family instances](http://thebuildingcoder.typepad.com/blog/2010/06/place-family-instance.html).
+on [placing family instances](0402_place_family_instance.htm).
 
 Now this topic arose again in a couple of cases and brought some other aspects to mind:
 
@@ -55,7 +55,7 @@ Now this topic arose again in a couple of cases and brought some other aspects t
 
 ####<a name="2"></a>Using the Element Lister
 
-The [element lister](http://thebuildingcoder.typepad.com/blog/2014/09/debugging-and-maintaining-the-image-relationship.html#2) provides
+The [element lister](1205_image_relationships.htm#2) provides
 an easy way to discover element relationships between related objects that are added to Revit by certain operations.
 
 It is included
@@ -71,7 +71,7 @@ It can be well combined with
 the [built-in parameter checker BipChecker](https://github.com/jeremytammik/BipChecker) to explore the properties in further depth.
 
 Of course,
-the [most intimate database exploration](http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html) requires
+the [most intimate database exploration](1057_db_explor_python_sh.htm) requires
 a live read-evaluate-print console.
 
 ####<a name="3"></a>Consecutive Element Ids
@@ -83,7 +83,7 @@ There is no guarantee for this, of course, and they can be mixed up by work-shar
 They can only be used to identify an element within one single Revit document.
 
 Because they are assigned consecutively, Revit automatically generates
-many [undocumented `ElementId` relationships](http://thebuildingcoder.typepad.com/blog/2011/11/undocumented-elementid-relationships.html).
+many [undocumented `ElementId` relationships](0673_elementid_relationships.htm).
 
 For more persistent identification, a `UniqueId` is recommended.
 
@@ -93,7 +93,7 @@ For the sake of completeness, Revit elements have two identifiers:
 - [Unique id `UniqueId`](http://www.revitapidocs.com/2018.1/f9a9cb77-6913-6d41-ecf5-4398a24e8ff8.htm)
 
 We discuss their uses in lots of places, e.g.,
-[understanding the use of the `UniqueId`](http://thebuildingcoder.typepad.com/blog/2015/02/understanding-the-use-of-the-uniqueid.html).
+[understanding the use of the `UniqueId`](1277_uniqueid.htm).
 
 For connecting with an external database, I would suggest using the UniqueId.
 
@@ -126,7 +126,7 @@ the [`DocumentChanged` event](http://www.revitapidocs.com/2018.1/988dd6cf-fcaa-8
 
 That will tell you all the element ids added to the database during the call.
 
-This is demonstrated in the discussion on [retrieving newly placed family instances](http://thebuildingcoder.typepad.com/blog/2010/06/place-family-instance.html).
+This is demonstrated in the discussion on [retrieving newly placed family instances](0402_place_family_instance.htm).
 
 <center>
 <img src="img/road_narrows.png" alt="Merge parts" width="211"/>

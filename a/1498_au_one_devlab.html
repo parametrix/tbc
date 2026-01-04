@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!--
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -61,8 +92,8 @@ For me personally, the morning was occupied with booth preparation, the exciting
 </center></p>
 <h4><a name="3"></a>Jeff Kowalski, CTO</h4>
 <p>My favourite presentation, as you can well understand if you paid attention to my recent ponderings
-on <a href="http://thebuildingcoder.typepad.com/blog/2016/01/bim-programming-madrid-and-spanish-connectivity.html#7">AlphaGo</a> and how
-to <a href="http://thebuildingcoder.typepad.com/blog/2016/10/ai-edit-and-continue.html#3">replace myself by artificial intelligence</a>:</p>
+on <a href="1398_bim_programming.html#7">AlphaGo</a> and how
+to <a href="1492_edit_continue.html#3">replace myself by artificial intelligence</a>:</p>
 <ul>
 <li><a href="#3.1">Machine learning</a></li>
 <li><a href="#3.2">Generative design</a></li>
@@ -195,28 +226,28 @@ There are also several Revit Idea Station requests related to access to referenc
 <p><b>[Q]</b> How can I refresh the graphics after updating the element from a modeless WPF form?</p>
 <p><b>[A]</b> Check out these two posts on refreshing graphics:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/07/refresh-element-graphics-display.html">2011-07</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/06/refresh-element-graphics-display.html">2014-06</a></li>
+<li><a href="0611_refresh_graphics.htm">2011-07</a></li>
+<li><a href="1173_refresh_graphics.htm">2014-06</a></li>
 </ul>
 <p>You should also explore The Building Coder topic
-group <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33">5.33</a> on
-the <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33">need to regenerate</a>.</p>
+group <span class="unavailable-link">5.33</span> on
+the <span class="unavailable-link">need to regenerate</span>.</p>
 <p><b>[Q]</b> Do you have any suggestions for an open source IFC toolkit?</p>
 <p><b>[A]</b> Yes, please refer to
-the <a href="http://thebuildingcoder.typepad.com/blog/2016/07/ifc-import-and-open-source.html#4">y GeometryGymIFC Open Source C# Library</a>.</p>
+the <a href="1455_ifc_issues.html#4">y GeometryGymIFC Open Source C# Library</a>.</p>
 <p><b>[Q]</b> I have a Revit API wish list item. How can I ensure that it is given the attention it deserves?</p>
 <p><b>[A]</b> Submit it to the <a href="http://forums.autodesk.com/t5/revit-ideas/idb-p/302/label-name/api/tab/most-recent">Revit Idea Station</a>,</p>
 <p><b>[Q]</b> I am creating a Revit plugin to bulk upgrade old version RVT files to new version. I need to run this process in the background so that other tasks can be performed during this upgrade process. Can you please guide us to how to run this upgrade process in the background?</p>
-<p><b>[A]</b> The topic of driving Revit from outside or other background threads has been discussed extensively in the <a href="http://forums.autodesk.com/t5/revit-api/bd-p/160">Revit API discussion forum</a> and in the posts listed in The Building Coder topic group on <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28">Idling and External events for modeless access and driving Revit from outside</a>. Please explore that material in some depth to begin with. I would recommend starting at the end, since the last two entries in that topic list provide a good overview. Regarding the bulk upgrade, you will probably also be interested in taking a look at Saikat Bhattacharya's <a href="http://thebuildingcoder.typepad.com/blog/2011/06/file-upgrader-plugin-of-the-month.html">File Upgrader add-in</a>. It may be outdated, though. It was originally written for Revit 2012 and updated several later Revit versions. For a while, it was also available from the Autodesk Exchange AppStore. The last version that I have stored locally is <a href="zip/FileUpgrader_2015-08-27.zip">FileUpgrader_2015-08-27.zip</a>.</p>
+<p><b>[A]</b> The topic of driving Revit from outside or other background threads has been discussed extensively in the <a href="http://forums.autodesk.com/t5/revit-api/bd-p/160">Revit API discussion forum</a> and in the posts listed in The Building Coder topic group on <span class="unavailable-link">Idling and External events for modeless access and driving Revit from outside</span>. Please explore that material in some depth to begin with. I would recommend starting at the end, since the last two entries in that topic list provide a good overview. Regarding the bulk upgrade, you will probably also be interested in taking a look at Saikat Bhattacharya's <a href="0590_file_upgrader_potm.htm">File Upgrader add-in</a>. It may be outdated, though. It was originally written for Revit 2012 and updated several later Revit versions. For a while, it was also available from the Autodesk Exchange AppStore. The last version that I have stored locally is <a href="zip/FileUpgrader_2015-08-27.zip">FileUpgrader_2015-08-27.zip</a>.</p>
 <p><b>[Q]</b> I am interested in tracking and logging element modification.</p>
-<p><b>[A]</b> Check out the posts on <a href="http://thebuildingcoder.typepad.com/blog/2016/01/tracking-element-modification.html">tracking element modification</a> and <a href="http://thebuildingcoder.typepad.com/blog/2016/03/implementing-the-trackchangescloud-external-event.html">TrackChangesCloud</a>.</p>
+<p><b>[A]</b> Check out the posts on <a href="1397_track_changes.html">tracking element modification</a> and <a href="1411_external_event.html">TrackChangesCloud</a>.</p>
 <p><b>[Q]</b> Do you have any suggestions on using extensible storage in a worksharing environment?</p>
 <p><b>[A]</b> Yes. They are included in The Building Coder topic
-group <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23">5.23</a>
-on <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23">extensible storage</a>.</p>
+group <span class="unavailable-link">5.23</span>
+on <span class="unavailable-link">extensible storage</span>.</p>
 <h4><a name="7"></a>Forge Pricing</h4>
 <p>As Jim Quanci announced yesterday at
-the <a href="http://thebuildingcoder.typepad.com/blog/2016/11/devday-conference-at-autodesk-university.html#2">DevDay conference general session</a>,
+the <a href="1497_au_devday.html#2">DevDay conference general session</a>,
 <a href="https://developer.autodesk.com/en/pricing">Forge subscriptions</a> successfully launched.</p>
 <p>You can now take your apps to production
 with <a href="http://adndevblog.typepad.com/cloud_and_mobile/2016/11/forge-update-take-your-apps-to-production-flexible-cloud-credits-and-more-cost-efficient-services.html">flexible cloud credits and more cost-efficient services</a>.</p>
@@ -232,3 +263,11 @@ with <a href="http://adndevblog.typepad.com/cloud_and_mobile/2016/11/forge-updat
 create <a href="https://www.chaosgroup.com/vray/revit">V-Ray for Revit</a> and
 are now partnering with the AEC presentation start-up <a href="https://www.cl3ver.com">CL3VER</a>.
 For more details, please refer to the <a href="http://www.prweb.com/releases/2016/11/prweb13851266.htm">press release</a>.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

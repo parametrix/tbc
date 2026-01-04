@@ -91,13 +91,13 @@ the [Design Automation API for Revit on Forge](https://youtu.be/PkdBM0cFrN4):
 
 To learn more on this topic, visit 
 the [Forge Design Automation API docs](https://forge.autodesk.com/en/docs/design-automation/v3/developers_guide/overview)
-and [The Building Coder DA4R topic group](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55).
+and The Building Coder DA4R topic group *(link unavailable)*.
 
 
 ####<a name="3"></a> Design Automation for Revit Supports IFC
 
 As we already mentioned briefly last month,
-[DA4R now supports both FBX and IFC](https://thebuildingcoder.typepad.com/blog/2019/11/curve-projection-add-in-videos-da4r-detach-and-fbx.html#2).
+[DA4R now supports both FBX and IFC](1798_da4r_curve_project.html#2).
 Once again:
 
 **Question:** Does Revit Design Automation support IFC import and export?
@@ -148,7 +148,7 @@ In that case, Revit will cut an opening on the other joined wall, as you can see
 </center>
 
 For this API &ndash; `FindInserts`, here is
-a [short demo recording](https://thebuildingcoder.typepad.com/files/findinserts_include_shadow.gif) &ndash;
+a short demo recording *(link unavailable)* &ndash;
 i try to find the inserts on the joined wall but not the wall with the window:
 
 <center>
@@ -289,7 +289,7 @@ When I choose a button below in `mySplitButton`, it will always become the new d
 
 **Answer:** That is easy to achieve.
 
-I show you how in my [HoloLens Escape Path Waypoint JSON Exporter](https://thebuildingcoder.typepad.com/blog/2016/09/hololens-escape-path-waypoint-json-exporter.html).
+I show you how in my [HoloLens Escape Path Waypoint JSON Exporter](1468_hololens_exitpath.html).
 
 The add-in displays the following ribbon panel:
 

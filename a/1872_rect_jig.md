@@ -148,16 +148,16 @@ Many thanks to Thiago for sharing and documenting this powerful framework!
 
 ####<a name="3"></a> DirectContext Rectangle Jig
 
-The [DuplicateGraphics SDK sample](https://thebuildingcoder.typepad.com/blog/2017/05/revit-2017-and-2018-sdk-samples.html#4.2) demonstrates
+The [DuplicateGraphics SDK sample](1560_2018_sdk_samples.html#4.2) demonstrates
 basic usage of
 the [`IDirectContext3DServer` interface](https://www.revitapidocs.com/2020/7709521d-9954-ef80-1f13-3bc6ee660d5d.htm) for
-displaying arbitrary 3D graphics in Revit [introduced in Revit 2018](https://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html#3.26), also discussed in
+displaying arbitrary 3D graphics in Revit [introduced in Revit 2018](1551_whats_new_2018.html#3.26), also discussed in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 on how to [draw or render over the active view](https://forums.autodesk.com/t5/revit-api-forum/draw-render-over-the-activeview/m-p/7074503).
 
 So far, I have not seen any other examples making use of this, so I was very glad to see Kailas Dhage's sample to
 implement a plan view rectangle input jig in
-his recent [comment](https://thebuildingcoder.typepad.com/blog/2012/06/uiview-and-windows-device-coordinates.html#comment-5115824205), saying:
+his recent [comment](0785_windows_device_coords.htm#comment-5115824205), saying:
 
 I am working with a feature in which user would like to pick two corner points of rectangle and would like to see jig of rectangle while picking points. 
 It works correctly in structural plan views like Level 1 and Level 2, but does not work correctly in a 3D view.
@@ -215,11 +215,11 @@ Gui Talarico has put in a lot of work in recent years providing and maintaining 
 
 <!-- 1484 1586 1747 1779 -->
 
-- [Online Revit API Documentation](https://thebuildingcoder.typepad.com/blog/2016/08/online-revit-api-docs-and-convex-hull.html#2)
-- [Updated Online Revit API Docs](http://thebuildingcoder.typepad.com/blog/2016/10/token-expiry-and-online-revit-api-docs.html#2)
-- [Revit 2018.1 API Documentation Online](http://thebuildingcoder.typepad.com/blog/2017/09/revit-201811-fixes-cropbox-setting.html#5)
-- [RevitApiDocs Updated with the Revit 2020 API](https://thebuildingcoder.typepad.com/blog/2019/05/ai-boundaries-loops-and-revitapidocs-2020.html#2)
-- [RevitApiDocs versus ApiDocs](https://thebuildingcoder.typepad.com/blog/2019/09/pyrevit-relocation-and-apidocs-code-sample-collection.html)
+- [Online Revit API Documentation](1457_online_doc_convex_hull.html#2)
+- [Updated Online Revit API Docs](1484_revitapidocs.html#2)
+- [Revit 2018.1 API Documentation Online](1586_2018_1_1.html#5)
+- [RevitApiDocs Updated with the Revit 2020 API](1747_apidocs_2020.html#2)
+- [RevitApiDocs versus ApiDocs](1779_pyrevit_apidocs_samples.html)
 
 I just asked him about support for the Revit 2021 API and future releases, and it seems like Gui is happy to help with that.
 

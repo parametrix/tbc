@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -15,7 +45,7 @@
 
 <p>To recreate a floor from the existing one, one can determine the topmost horizontal face of the floor solid, using an algorithm very similar to the one we looked at for determining the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/slab-boundary.html">
+<a href="0031_slab_boundary.htm">
 slab boundary</a>.
 
 We can extract the top face edges, create line elements from them to assemble the floor profile, and generate the new floor from that. In case the existing floor has holes in it, the face will have several loops. The largest loop is the outer perimeter. In my tests so far, this was also the first loop in the EdgeArrayArray, but that may not always be true.</p>
@@ -152,6 +182,15 @@ If this assumption is not true, we would have to iterate over the array and anal
 
 <p>I am adding a new version 1.0.0.11 of the complete Visual Studio solution
 
-<a href="http://thebuildingcoder.typepad.com/blog/files/bc10011.zip">here</a>,
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/files/bc10011.zip">here <em>(file no longer available)</em></span>,
 
 including the new CmdEditFloor and all other commands discussed so far.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

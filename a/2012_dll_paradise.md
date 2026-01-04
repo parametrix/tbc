@@ -133,7 +133,7 @@ on [Interprocess Communication: Strategies and Best Practices](https://github.co
 - [CIS version](https://github.com/Nice3point/InterprocessCommunication)
 
 Please be aware that the Revit development team is looking at
-possible [options for moving the Revit API forward from .NET 4.8](https://thebuildingcoder.typepad.com/blog/2023/08/15-years-polygon-areas-and-net-core.html#3) as
+possible [options for moving the Revit API forward from .NET 4.8](2005_net_core.html#3) as
 we speak.
 With the approach described here, you can move ahead today and address other DLL conflicts as well.
 

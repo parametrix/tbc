@@ -118,10 +118,10 @@ For information on the current implantation entitlement API implementation, plea
 - [Implementing copy protection in your apps](http://usa.autodesk.com/adsk/servlet/item?siteID=123112&id=24243607)
 - [Entitlement API for desktop apps](http://usa.autodesk.com/adsk/servlet/item?siteID=123112&id=24243865)
 
-I mentioned some additional resources in the recent discussion of the [Autodesk reorganisation and Kean's move to Octo](http://thebuildingcoder.typepad.com/blog/2016/02/reorg-fomt-devcon-ted-qr-custom-exporter-quality.html#2):
+I mentioned some additional resources in the recent discussion of the [Autodesk reorganisation and Kean's move to Octo](1405_quality_custom_export.html#2):
 
 - [Entitlement API for Revit Exchange Store Apps](http://adndevblog.typepad.com/aec/2015/04/entitlement-api-for-revit-exchange-store-apps.html)
-- [Exchange Apps resources &ndash; Entitlement API information](http://thebuildingcoder.typepad.com/blog/2014/05/exchange-apps-webinar-recording-and-resources.html#3)
+- [Exchange Apps resources &ndash; Entitlement API information](1164_exchange_apps.htm#3)
 - [Securing your AutoCAD app using .NET](http://through-the-interface.typepad.com/through_the_interface/2016/02/securing-your-autocad-app-using-net.html) &ndash; Kean's sample showing how to use a REST API to check the user entitlement for your application via the Autodesk AppStore.
 
 I hope that this helps and provides a final, complete and comprehensive overview.
@@ -131,7 +131,7 @@ I hope that this helps and provides a final, complete and comprehensive overview
 #### <a name="3"></a>SketchUp Plugin for Grevit
 
 Last year,
-I [mentioned](http://thebuildingcoder.typepad.com/blog/2015/07/grevit-firerating-in-the-cloud-demo-deployment-vacation.html#3) the
+I [mentioned](1342_firerating_cloud.htm#3) the
 exciting open source project [Grevit](http://grevit.net),
 a [Rhino](http://www.rhino3d.com) and [Grasshopper](http://www.grasshopper3d.com) app
 that enables assembling a BIM in Grasshopper, sending it to Revit or AutoCAD Architecture, and later dynamically updating it.

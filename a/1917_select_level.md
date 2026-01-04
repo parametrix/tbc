@@ -9,7 +9,7 @@
 - eliminated deprecated API usage of `NewFloor` and `NewSlab` methods
   https://github.com/jeremytammik/the_building_coder_samples/releases/tag/2022.0.151.4
   making use of
-  the [Floor Creation API Clarification](https://thebuildingcoder.typepad.com/blog/2021/08/triangle-count-floor-and-slab-creation.html#3)
+  the [Floor Creation API Clarification](1914_create_floor.html#3)
   [diff](https://github.com/jeremytammik/the_building_coder_samples/compare/2022.0.151.3...2022.0.151.4)
 
 - Select all content on level
@@ -94,12 +94,12 @@ Here are some of them, and a final deprecated API clean-up:
 ####<a name="2"></a> The Building Coder Samples Clean
 
 Before diving into the Python oriented topics, I'll mention in passing that the deprecated Revit API usage remaining after
-the [initial migration](https://thebuildingcoder.typepad.com/blog/2021/04/revit-2022-sdk-and-the-building-coder-samples.html#5) to
+the [initial migration](1902_2022_sdk_tbc.html#5) to
 the Revit 2022 API has now been removed.
 
 The deprecated API usage was caused by calls to the `NewFloor` and `NewSlab` methods.
 
-The recent [floor creation API clarification](https://thebuildingcoder.typepad.com/blog/2021/08/triangle-count-floor-and-slab-creation.html#3) explained
+The recent [floor creation API clarification](1914_create_floor.html#3) explained
 how to easily address this,
 and [The Building Coder samples](https://github.com/jeremytammik/the_building_coder_samples)
 [release 2022.0.151.4](https://github.com/jeremytammik/the_building_coder_samples/releases/tag/2022.0.151.4) implements
@@ -143,11 +143,11 @@ In a post-processing step, you could check that the value of their `ReferenceLev
 These two separate filtered element collectors can be combined into one using a Boolean operation.
 
 I used this technique to put together such combinations of filters
-to [retrieve structural elements](http://thebuildingcoder.typepad.com/blog/2010/07/retrieve-structural-elements.html)
-and [MEP elements and their connectors](http://thebuildingcoder.typepad.com/blog/2010/06/retrieve-mep-elements-and-connectors.html), respectively.
+to [retrieve structural elements](0404_structural_elements.htm)
+and [MEP elements and their connectors](0398_retrieve_mep_elements.htm), respectively.
 
 You can check out The Building Coder topic group
-on [filtering for elements](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.9) to
+on filtering for elements *(link unavailable)* to
 see many more examples.
 
 **Response:** I didn't realize there was so much diversity in the way Revit handles the different type categories behind the scenes until I downloaded the RevitLookup snoop tool yesterday.
@@ -413,7 +413,7 @@ Many thanks to Perry for all his research and documentation of this work.
 ####<a name="4"></a> Get ViewSheet from View
 
 We already discussed and documented
-how to [retrieve a `ViewSheet` from a `View`](https://thebuildingcoder.typepad.com/blog/2020/02/get-title-block-data-and-viewsheet-from-view.html) based on
+how to [retrieve a `ViewSheet` from a `View`](1820_sheet_from_view.html) based on
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 [get ViewSheet from View](https://forums.autodesk.com/t5/revit-api-forum/get-viewsheet-from-view/m-p/10491156).
 

@@ -115,14 +115,14 @@ Despite efforts to utilize Regular Expressions (Regex) for parsing the Journal F
 How can we interpret Journal Files effectively?
 
 **Answer:** As you may know, Autodesk provides no official support for any use whatsoever of journal files, so you are basically on you own there.
-In spite of that, The Building Coder has occasionally performed some research in this area and also shared numerous results from other developers in the [category *Journal*](https://thebuildingcoder.typepad.com/blog/journal/).
+In spite of that, The Building Coder has occasionally performed some research in this area and also shared numerous results from other developers in the category *Journal* *(link unavailable)*.
 
 Possibly, the most complete documentation for interpreting journals is provided by
 the [Journalysis project](https://github.com/andydandy74/Journalysis/wiki), cf.
-The Building Coder not on [Journal File Analysis](https://thebuildingcoder.typepad.com/blog/2022/05/analysis-of-macros-journals-and-add-in-manager.html#4).
+The Building Coder not on [Journal File Analysis](1952_manager_journal_macro.html#4).
 
 I would like to point out the possible use
-of [`SLOG` files for monitoring purposes](https://thebuildingcoder.typepad.com/blog/2021/12/logging-and-monitoring-deleted-data.html),
+of [`SLOG` files for monitoring purposes](1931_log_and_monitor.html),
 so it might be interesting to take a look at those also.
 
 A related question was raised
@@ -145,7 +145,7 @@ I also suspect that if no Revit API access, then even less so in more removed en
 However, you can certainly obtain the required information in various ways without any explicit API access to this specific functionality.
 
 A pretty direct approach might be to
-use [`PostCommand`](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.3) to
+use `PostCommand` *(link unavailable)* to
 launch the built-in `Show History` command and then use the Windows API to harvest the data displayed in the UI form that you show in the screen snapshot.
 
 You can certainly also scrape the required into from the journal or SLOG files, if you prefer, cf. above.
@@ -229,7 +229,7 @@ Various solutions are discussed in the question
 on [a working implementation of WPF progress bar with abort button](https://forums.autodesk.com/t5/revit-api-forum/can-anyone-share-a-working-implementation-of-wpf-progress-bar/m-p/12427800).
 A promising one is provided by
 the [SpeedCAD ProgressMeter](https://github.com/SpeedCAD/SCADtools.Revit.UI.ProgressMeter)
-that [we recently discussed](https://thebuildingcoder.typepad.com/blog/2023/11/net-core-preview-and-open-source-add-in-projects.html#7).
+that [we recently discussed](2017_os_projects.html#7).
 
 Ricaun adds: I created
 the package [ricaun.Revit.UI.StatusBar](https://www.nuget.org/packages/ricaun.Revit.UI.StatusBar) last year
@@ -242,7 +242,7 @@ Here is a 17-minute [video with an example](https://youtu.be/oxD2XDxGL2U):
 ####<a name="4"></a> Sublime Text
 
 I mentioned a year ago that I switched to
-the [Sublime Text](https://thebuildingcoder.typepad.com/blog/2023/02/pyramid-builder-commandloader-et-al.html#8) editor.
+the [Sublime Text](1982_builder_loader.html#8) editor.
 
 I am still using it and am perfectly satisfied with my choice.
 It was nice to note that I am in the good company of [Tristan Hume](https://thume.ca/),

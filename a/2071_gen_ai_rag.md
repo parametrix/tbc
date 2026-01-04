@@ -75,7 +75,7 @@ I originally had some non-AI-related items in my plan for today's post, but AI-r
 ####<a name="2"></a> Revit Vibe: Generative AI in the BIM
 
 In the last post, I mentioned the
-[Local Ollama LLM APS metadata querying project](https://thebuildingcoder.typepad.com/blog/2025/03/docs-local-aps-llm-and-parallel-task-orchestration.html#4) by
+[Local Ollama LLM APS metadata querying project](2070_orchestration.html#4) by
 [Chuong Ho](https://chuongmep.com/).
 
 Just a week later, Chuong Ho
@@ -163,10 +163,10 @@ Caoduro, Cesare <cesare.caoduro@aecom.com>
 
 In fact, I looked at similar ideas myself already, e.g.:
 
-- [Q4R4 with LLM and RAG](https://thebuildingcoder.typepad.com/blog/2024/07/aps-accelerator-and-q4r4-chunking-with-claude.html#3)
-- [Claude.ai helped chunk TBC blog posts](https://thebuildingcoder.typepad.com/blog/2024/07/aps-accelerator-and-q4r4-chunking-with-claude.html#4)
-- [LLM prompting and RAG ingestion](https://thebuildingcoder.typepad.com/blog/2025/01/llm-prompting-rag-ingestion-and-new-projects.html)
-- [Docling Markdown Generator](https://thebuildingcoder.typepad.com/blog/2025/02/tools-for-extensible-storage-and-oauth-auth0.html#5)
+- [Q4R4 with LLM and RAG](2047_aps_accel_vacat.html#3)
+- [Claude.ai helped chunk TBC blog posts](2047_aps_accel_vacat.html#4)
+- [LLM prompting and RAG ingestion](2062_gpt_prompt.html)
+- [Docling Markdown Generator](2066_schema_migrat.html#5)
 
 Cesare explains:
 
@@ -443,7 +443,7 @@ Thank you!
 Some further thoughts and questions that come to mind (most probably automatically answered by such a tutorial):
 
 - Have you tried using
-  the [Docling Markdown Generator](https://thebuildingcoder.typepad.com/blog/2025/02/tools-for-extensible-storage-and-oauth-auth0.html#5)?
+  the [Docling Markdown Generator](2066_schema_migrat.html#5)?
   Does it handle CHM?
 - What is you use case for the RAG? How do you feed this into your processing system? What system are you using it for?
 - LangChain provides several integrated CHM reader libraries, I believe, and can also generate a vector database right out of the box, afaik. How does this compare to your approach?

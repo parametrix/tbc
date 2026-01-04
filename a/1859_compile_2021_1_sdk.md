@@ -55,7 +55,7 @@ In the last couple of years, happily, it became much easier.
 This time around, it was a bit trickier again.
 
 Happily, I documented the hassle involved
-in [compiling the initial Revit 2021 SDK samples](https://thebuildingcoder.typepad.com/blog/2020/05/compiling-the-revit-2021-sdk-samples.html) in
+in [compiling the initial Revit 2021 SDK samples](1843_compile_2021_sdk.html) in
 full detail and was able to quite easily repeat those steps.
 
 The main problem is very basic and not hard to fix at all: the references to the Revit API assemblies in each of the 190 sample projects is set up for different developers' specific environments using local file paths instead of an absolute path.
@@ -89,9 +89,9 @@ That enabled the first successful compilation, still producing a bunch of warnin
 ####<a name="3"></a> Architecture Mismatch Warning and RvtSamples.txt
 
 Most of the warnings concern the
-ever-recurring [architecture mismatch issue](http://thebuildingcoder.typepad.com/blog/2013/06/processor-architecture-mismatch-warning.html)
+ever-recurring [architecture mismatch issue](0968_architecture_mismatch.htm)
 and can be resolved using
-my [DisableMismatchWarning.exe utility](http://thebuildingcoder.typepad.com/blog/2013/07/recursively-disable-architecture-mismatch-warning.html)
+my [DisableMismatchWarning.exe utility](0977_architecture_mismatch.htm)
 implemented back in 2013 and available from
 the [DisableMismatchWarning GitHub repository](https://github.com/jeremytammik/DisableMismatchWarning).
 

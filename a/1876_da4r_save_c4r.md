@@ -59,7 +59,7 @@ Today, let's address a resurfacing question in the Forge Design Automation for R
 
 As is well known and clearly documented,
 [Forge Design Automation for Revit](https://forge.autodesk.com/api/design-automation-cover-page) or
-[DA4R](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55) currently
+DA4R *(link unavailable)* currently
 does not enable any Internet access whatsoever to the running workitem.
 
 This obviously also prevents the ability to store an RVT BIM straight to BIM360 or C4R, Collaboration for Revit, or anywhere else in the cloud.
@@ -100,16 +100,16 @@ You are creating and passing in new, arbitrary GUIDs for the BIM 360 account id 
 This will not work. The GUIDs are pre-defined by the system.
 
 They can be obtained as described
-in [how to save a local file to a non-workshared cloud model](https://thebuildingcoder.typepad.com/blog/2020/04/revit-2021-cloud-model-api.html#4.5).
+in [how to save a local file to a non-workshared cloud model](1834_2021_cloud_model_api.html#4.5).
 
 Here are some further, related discussions that I have been collecting and that may also be of interest:
 
 - [Save RVT from cloud to local file](https://forums.autodesk.com/t5/revit-api-forum/doc-saveas-on-active-cloudmodel/m-p/9059906)
-- [Accessing BIM360 Models](https://thebuildingcoder.typepad.com/blog/2018/12/forge-devcon-keynote-and-bim360-model-access.html#3)
+- [Accessing BIM360 Models](1706_keynote_bim360.html#3)
 - [How to create URN for Revit file from Revit plugin or using Forge APIs](https://stackoverflow.com/questions/53538382/how-to-create-urn-for-revit-file-from-revit-plugin-or-using-forge-apis)
 - Forge blog post on [accessing BIM 360 design models on Revit](https://forge.autodesk.com/blog/accessing-bim-360-design-models-revit)
-- [`IOpenFromCloudCallback` and the `DefaultOpenFromCloudCallback` class](https://thebuildingcoder.typepad.com/blog/2019/05/precast-api-and-cloud-open-callback.html#3) &ndash; using the Revit 2019 API to detach a model from BIM360
-- [Accessing BIM360 cloud links](https://thebuildingcoder.typepad.com/blog/2019/06/accessing-bim360-cloud-links-thumbnail-and-dynamo.html#2)
+- [`IOpenFromCloudCallback` and the `DefaultOpenFromCloudCallback` class](1752_precast_cloud_open.html#3) &ndash; using the Revit 2019 API to detach a model from BIM360
+- [Accessing BIM360 cloud links](1756_bim360_links.html#2)
 - [Update Revit custom properties by web API](https://stackoverflow.com/questions/54788232/update-revit-custom-properties-by-web-api)
 - [Open Revit BIM360 Model via command line](https://stackoverflow.com/questions/57806330/open-revit-bim360-model-via-command-line)
 - [Do we have API access to C4R (Collaboration for Revit) functionalities in Forge API/Revit API?](https://stackoverflow.com/questions/58483626/do-we-have-api-access-to-c4rcollaboration-for-revit-functionalities-in-forge-a)
@@ -128,7 +128,7 @@ The last one pretty exactly matches the question you have as well.
 </pre>
 
 These GUIDs and IDs were determined as described
-in [how to save a local file to a non-workshared cloud model](https://thebuildingcoder.typepad.com/blog/2020/04/revit-2021-cloud-model-api.html#4.5).
+in [how to save a local file to a non-workshared cloud model](1834_2021_cloud_model_api.html#4.5).
 
 However, the result was the same (log of DA WorkItem):
 

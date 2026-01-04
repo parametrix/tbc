@@ -75,7 +75,7 @@
 </ul>
 
 /Users/jta/a/doc/revit/tbc/git/a % blmd 0188 0799 0946 1347 1368 1792
-- [A .NET Language Learning Resource](http://thebuildingcoder.typepad.com/blog/2009/07/a-net-language-learning-resource.html) == - [Running Language Code and More Exporters](http://thebuildingcoder.typepad.com/blog/2012/07/determine-running-language-code.html) == - [Removing Unused Mac Architectures, Languages and Files](http://thebuildingcoder.typepad.com/blog/2013/05/removing-extreneous-mac-architectures-and-languages.html) == - [Revit Future and Saving User Configuration Settings](http://thebuildingcoder.typepad.com/blog/2015/08/revit-future-and-saving-user-configuration-settings.html) == - [RTC Classes and Getting Started with Revit Macros](http://thebuildingcoder.typepad.com/blog/2015/10/rtc-classes-and-getting-started-with-revit-macros.html) == - [DevCon Invitation and Dynamo for Infrastructure](https://thebuildingcoder.typepad.com/blog/2019/10/invitation-to-devcon-visual-programming-in-infrastructure.html)
+- [A .NET Language Learning Resource](0188_learning_net.htm) == - [Running Language Code and More Exporters](0799_running_language.htm) == - [Removing Unused Mac Architectures, Languages and Files](0946_monolingual.htm) == - [Revit Future and Saving User Configuration Settings](1347_user_config.htm) == - [RTC Classes and Getting Started with Revit Macros](1368_revit_macros.html) == - [DevCon Invitation and Dynamo for Infrastructure](1792_dynamo_infrastructure.html)
 
 twitter:
 
@@ -193,15 +193,15 @@ In short, I would say:
 
 Here are some other thoughts on this topic:
 
-- [What Language to choose for a Revit Add-In?](https://thebuildingcoder.typepad.com/blog/2020/04/2021-migration-add-in-language-and-bim360-login.html)
-- [A .NET Language Learning Resource](http://thebuildingcoder.typepad.com/blog/2009/07/a-net-language-learning-resource.html)
-- [Running Language Code and More Exporters](http://thebuildingcoder.typepad.com/blog/2012/07/determine-running-language-code.html)
-- [Revit Future and Saving User Configuration Settings](http://thebuildingcoder.typepad.com/blog/2015/08/revit-future-and-saving-user-configuration-settings.html)
-- [RTC Classes and Getting Started with Revit Macros](http://thebuildingcoder.typepad.com/blog/2015/10/rtc-classes-and-getting-started-with-revit-macros.html)
-    - [Choose a Programming Language](http://thebuildingcoder.typepad.com/blog/2015/10/rtc-classes-and-getting-started-with-revit-macros.html#15)
-    - [Converting Code from One Language to Another](http://thebuildingcoder.typepad.com/blog/2015/10/rtc-classes-and-getting-started-with-revit-macros.html#16)
-- [Most Popular Programming Languages 1965-2019](https://thebuildingcoder.typepad.com/blog/2019/10/invitation-to-devcon-visual-programming-in-infrastructure.html#5)
-- [The Most Popular Programming Languages 2015](http://thebuildingcoder.typepad.com/blog/2013/05/removing-extreneous-mac-architectures-and-languages.html#3)
+- [What Language to choose for a Revit Add-In?](1838_cs_python_bim360_login.html)
+- [A .NET Language Learning Resource](0188_learning_net.htm)
+- [Running Language Code and More Exporters](0799_running_language.htm)
+- [Revit Future and Saving User Configuration Settings](1347_user_config.htm)
+- [RTC Classes and Getting Started with Revit Macros](1368_revit_macros.html)
+    - [Choose a Programming Language](1368_revit_macros.html#15)
+    - [Converting Code from One Language to Another](1368_revit_macros.html#16)
+- [Most Popular Programming Languages 1965-2019](1792_dynamo_infrastructure.html#5)
+- [The Most Popular Programming Languages 2015](0946_monolingual.htm#3)
 
 ####<a name="4"></a> Agency by William Gibson
 

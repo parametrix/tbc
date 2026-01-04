@@ -25,8 +25,8 @@ After the significant struggle I had to compile the initial release of the Revit
 ### Installing the Revit 2019 SDK April Update
 
 After the significant struggle I had
-to [compile the initial release of the Revit 2019 SDK samples](http://thebuildingcoder.typepad.com/blog/2018/04/compiling-the-revit-2019-sdk-samples.html)
-and [set up RvtSamples 2019](http://thebuildingcoder.typepad.com/blog/2018/04/rvtsamples-2019.html),
+to [compile the initial release of the Revit 2019 SDK samples](1643_revit_2019_sdk.html)
+and [set up RvtSamples 2019](1646_rvtsamples_2019.html),
 I am happy to report that installing and compiling the Revit 2019 SDK April 27 update is a lot easier:
 
 - [Downloading the April 27 SDK update](#2) 
@@ -66,7 +66,7 @@ Almost all the warnings are related to the processor architecture mismatch:
 
 These warnings can easily be suppressed using
 my [`DisableMismatchWarning.exe` command line utility](https://github.com/jeremytammik/DisableMismatchWarning) 
-to [recursively disable architecture mismatch warnings](http://thebuildingcoder.typepad.com/blog/2013/07/recursively-disable-architecture-mismatch-warning.html).
+to [recursively disable architecture mismatch warnings](0977_architecture_mismatch.htm).
 
 ####<a name="4"></a>Eliminated Processor Architecture Mismatch Warnings &ndash; 5 Warnings
 

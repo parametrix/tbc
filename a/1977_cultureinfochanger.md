@@ -86,11 +86,11 @@ Topics to begin the new year:
 
 ####<a name="2"></a> Copy as HTML 2022
 
-After [moving to the new Mac and switching to Visual Studio 2022](https://thebuildingcoder.typepad.com/blog/2022/12/exploring-arm-chatgpt-nairobi-and-the-tsp.html#11),
+After [moving to the new Mac and switching to Visual Studio 2022](1976_chatgpt_arm_tsp.html#11),
 I also needed to update my C# source code colouriser.
 
 The last time was the
-[Copy as HTML update](https://thebuildingcoder.typepad.com/blog/2021/11/revit-20221-sdk-revitlookup-build-and-install.html#7) in November 2021 using the Productivity Power Tools 2017/2019.
+[Copy as HTML update](1925_2022_1_bld_inst_dev.html#7) in November 2021 using the Productivity Power Tools 2017/2019.
 
 This time around, I switched to a new extension, Copy as HTML 2022 by Tim Mathias:
 
@@ -252,7 +252,7 @@ on [journal step by step](https://forums.autodesk.com/t5/revit-api-forum/journal
 **Question:** Any idea how to run a journal file step by step to debug a problem running it?
 
 **Answer:** Nope. It is all or nothing.
-For more info, please check The Building Coder articles in the [Journal category](https://thebuildingcoder.typepad.com/blog/journal).
+For more info, please check The Building Coder articles in the Journal category *(link unavailable)*.
 
 You could look at the Autodesk University class 
 on [Revit Journal files: they aren’t just for Autodesk support](https://www.autodesk.com/autodesk-university/class/Revit-Journal-Files-They-Arent-Just-Autodesk-Support-2018#video).
@@ -289,7 +289,7 @@ Many thanks to Chuong Ho for implementing this!
 
 ####<a name="6.1"></a> IronPython3 in pyRevit
 
-Ehsan Iran Nejad added in his [comment below](https://thebuildingcoder.typepad.com/blog/2023/01/cultureinfochanger-and-ironpython3.html#comment-6080745754):
+Ehsan Iran Nejad added in his [comment below](1977_cultureinfochanger.html#comment-6080745754):
 
 > We added [IronPython3 to pyRevit work-in-progress](https://discourse.pyrevitlabs.io/t/ironpython-3-4-0/1310) as well...
 

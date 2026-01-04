@@ -97,7 +97,7 @@ the [`UIDocument` `UpdateAllOpenViews` method](https://www.revitapidocs.com/2024
 It forces a redraw, which may be one step higher than a refresh.
 Refresh triggers a redraw only if a change is detected and may failing to detect some changes.
 `UpdateAllOpenViews` was introduced in Revit 2018 to force
-a [view update for DirectContext3D](https://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html#3.26.15).
+a [view update for DirectContext3D](1551_whats_new_2018.html#3.26.15).
 It sounds really powerful:
 
 > Updates all open views in this document after elements have been changed, deleted, selected or de-selected. Graphics in the views are fully redrawn regardless of which elements have changed. This function should only rarely be needed, but might be required when working with graphics drawn from outside of Revit's transactions and elements, for example, when using DirectContext3D.
@@ -109,7 +109,7 @@ Well worth taking a look at!
 ####<a name="2"></a> Refreshing Spot Elevation Prefix
 
 Unfortunately, there is no silver bullet for all graphics refresh cases,
-and the [need to regenerate](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33) comes
+and the need to regenerate *(link unavailable)* comes
 in many different flavours.
 For this issue, a different and simpler solution was required:
 

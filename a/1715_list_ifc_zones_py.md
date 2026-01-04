@@ -37,7 +37,7 @@ Since we have not reached a final conclusion yet, however, I'll postpone the dis
 Instead, I present a little exploration of how to access zones defined in an IFC file in Revit.
 
 If you are following this blog closely, you might guess that this is related to
-the [room boundary CSV exporter project](https://thebuildingcoder.typepad.com/blog/2019/01/room-boundaries-to-csv-and-wpf-template.html) that
+the [room boundary CSV exporter project](1713_room_boundary_wpf.html) that
 I recently discussed.
 
 For this exploration, I installed and used RevitPythonShell.
@@ -112,7 +112,7 @@ Based on that discussion, I linked in an IFC file containing zones representing 
 I started out exploring the model using [RevitLookup](https://github.com/jeremytammik/RevitLookup).
 
 Since the objects of interest resided in the linked IFC file, however, I soon had to take recourse
-to [another, more flexible, advanced and intimate database exploration tool](http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html).
+to [another, more flexible, advanced and intimate database exploration tool](1057_db_explor_python_sh.htm).
 
 I visited the [RevitPythonShell home page](https://github.com/architecture-building-systems/revitpythonshell) and
 downloaded the installer for Revit 2019.

@@ -108,7 +108,7 @@ Yes, the IFC id just has to be unique within the context of the IFC file itself,
 [Q]: Are there any situations where several different IFC files cross reference each other and refer to their respective internal ids?
 
 I recently summarised all I know about
-the [consistency of IFC GUID and `UniqueId`](http://thebuildingcoder.typepad.com/blog/2016/08/consistency-of-ifc-guid-and-uniqueid.html),
+the [consistency of IFC GUID and `UniqueId`](1459_ifc_guid_uniqueid.html),
 including links to earlier discussions.
 
 If the answer to [Q] is no, then you can assign any id you like, of course.
@@ -193,7 +193,7 @@ This script replaces and improves on the
 previous [forgeauth](https://github.com/jeremytammik/forge_python_script/blob/master/forgeauth)
 and [forgeformats](https://github.com/jeremytammik/forge_python_script/blob/master/forgeformats) Unix
 shell cURL scripts documented in the discussion of
-the [`cURL` wrapper scripts to list Forge file formats](http://thebuildingcoder.typepad.com/blog/2016/10/forge-intro-formats-webinars-and-fusion-360-client-api.html#3).
+the [`cURL` wrapper scripts to list Forge file formats](1486_webgl_forge_intro.html#3).
 
 For the sake of completeness, those two scripts have been added to this repository as well.
 
@@ -236,6 +236,6 @@ Now you should be all set to run as shown above.
 
 ### Forge Formats Python Scripts
 
-By [Jeremy Tammik](http://thebuildingcoder.typepad.com/blog/about-the-author.html).
+By Jeremy Tammik *(link unavailable)*.
 
 

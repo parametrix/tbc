@@ -1,13 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>RoomEditorApp Architecture and External Application</h3>
 
 <p>A couple of days ago, I wrote about
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/10/roomeditorapp-for-revit-2014-on-github.html">
+<a href="1045_roomeditorapp.htm">
 creating the RoomEditorApp GitHub repository</a> for
 
 the Revit add-in part of my cloud-based real-time round-trip 2D Revit model editing application on any mobile device and promised to discuss its implementation details anon.</p>
@@ -120,23 +151,23 @@ three out of the top ten mobile apps for architects are developed by Autodesk</a
 
 <p>I already discussed all the aspects of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-and-furniture-loops-using-symbols.html">
+<a href="0936_room_loops_symbols.htm">
 boundary loop determination, GeoSnoop graphical debugging display and database representation</a> in
 
 pretty good detail back in April:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-and-furniture-loops-using-symbols.html#2">Database structure</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-and-furniture-loops-using-symbols.html#3">Database upload</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-and-furniture-loops-using-symbols.html#4">Integer based 2D placement</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-and-furniture-loops-using-symbols.html#5">Populating symbols and instances</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-and-furniture-loops-using-symbols.html#6">Retrieving the boundary loops</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-and-furniture-loops-using-symbols.html#7">GeoSnoop loop display</a></li>
+<li><a href="0936_room_loops_symbols.htm#2">Database structure</a></li>
+<li><a href="0936_room_loops_symbols.htm#3">Database upload</a></li>
+<li><a href="0936_room_loops_symbols.htm#4">Integer based 2D placement</a></li>
+<li><a href="0936_room_loops_symbols.htm#5">Populating symbols and instances</a></li>
+<li><a href="0936_room_loops_symbols.htm#6">Retrieving the boundary loops</a></li>
+<li><a href="0936_room_loops_symbols.htm#7">GeoSnoop loop display</a></li>
 </ul>
 
 <p>Actually, that was the last time I discussed anything at all related to this add-in until migrating it to Revit 2014 last week, so all the items I listed as
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-and-furniture-loops-using-symbols.html#10">
+<a href="0936_room_loops_symbols.htm#10">
 next steps</a> back
 
 then and that have now been implemented remain to be discussed.</p>
@@ -342,7 +373,7 @@ then and that have now been implemented remain to be discussed.</p>
 
 <p>I presented the principles to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/11/roll-your-own-toggle-button.html#3">
+<a href="0857_toggle_button.htm#3">
 implement your own toggle button</a>
 
 a year ago, and we simply make use of that here.</p>
@@ -480,3 +511,12 @@ the version discussed above is
 
 <a href="https://github.com/jeremytammik/RoomEditorApp/releases/tag/2014.0.0.15">
 release 2014.0.0.15</a>.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

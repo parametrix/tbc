@@ -40,12 +40,12 @@ Returning to programming issues, we discussed several approaches to read the `Ba
 aka [COM Structured Storage](https://en.wikipedia.org/wiki/COM_Structured_Storage),
 to retrieve stuff like the file version and preview image, and, more lately, alternative access to BIM data via Forge:
 
-- [RVT file version using Python `rvtver.py`](http://thebuildingcoder.typepad.com/blog/2008/10/rvt-file-version.html)
-- [RFA file version using Python `rvtver.py`](http://thebuildingcoder.typepad.com/blog/2009/06/rfa-version-grey-commands-family-context-and-rdb-link.html#1)
-- [C# Revit OLE Storage viewer](http://thebuildingcoder.typepad.com/blog/2010/06/open-revit-ole-storage.html)
-- [Basic File Info and RVT file version via C# console application](http://thebuildingcoder.typepad.com/blog/2013/01/basic-file-info-and-rvt-file-version.html#5)
-- [Reading an RVT File without Revit](http://thebuildingcoder.typepad.com/blog/2016/02/reading-an-rvt-file-without-revit.html)
-- [External Access to the Revit API](http://thebuildingcoder.typepad.com/blog/2017/05/external-access-to-the-revit-api.html)
+- [RVT file version using Python `rvtver.py`](0023_rvt_file_version.htm)
+- [RFA file version using Python `rvtver.py`](0157_rvtver_grey_rfa_rdb.htm#1)
+- [C# Revit OLE Storage viewer](0391_open_ole_storage.htm)
+- [Basic File Info and RVT file version via C# console application](0887_rvt_file_version.htm#5)
+- [Reading an RVT File without Revit](1407_read_rvt_without_revit.html)
+- [External Access to the Revit API](1555_modeless.html)
 
 <!---
 0887_rvt_file_version.htm
@@ -57,7 +57,7 @@ to retrieve stuff like the file version and preview image, and, more lately, alt
 </center>
 
 Frederic now presented another more efficient Python solution for accessing the RVT file version in
-his [comment](http://thebuildingcoder.typepad.com/blog/2008/10/rvt-file-version.html#comment-3378524407) on the first post above:
+his [comment](0023_rvt_file_version.htm#comment-3378524407) on the first post above:
 
 > I recently needed the same functionality, but in a large project file the `BasicFileInfo` was in line 900000 of 3000000 if I remember correctly.
 

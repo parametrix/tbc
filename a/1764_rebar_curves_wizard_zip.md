@@ -181,7 +181,7 @@ Many thanks to Manuel for his helpful explanation!
 
 ####<a name="4"></a> Built-In Zip Utility for Add-In Wizard
 
-The [Visual Studio Revit add-in wizards](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20) provide
+The Visual Studio Revit add-in wizards *(link unavailable)* provide
 Visual Studio templates for generating C# and VB .NET Revit add-ins.
 They enable the instantaneous automatic generation, installation and debugging of a new Revit add-in skeleton with one single click.
 
@@ -244,7 +244,7 @@ So, you should be able to use a detail view to achieve what you require.
 
 ####<a name="6"></a> Displaying an RFA Family Instance in DA4R
 
-[Forge Design Automation for Revit or DA4R](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55) supports RVT file processing, but not RFA.
+Forge Design Automation for Revit or DA4R *(link unavailable)* supports RVT file processing, but not RFA.
 
 This begs the question:
 

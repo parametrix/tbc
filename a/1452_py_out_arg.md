@@ -74,7 +74,7 @@ not related to Revit.
 #### <a name="3"></a>ETH Zurich Sandstone Vault at the Venice Architecture Biennale
 
 I recently mentioned
-my [visit to the Block Research Group at ETHZ](http://thebuildingcoder.typepad.com/blog/2016/03/adn-becomes-forge-and-barcelona-accelerator.html#4) and
+my [visit to the Block Research Group at ETHZ](1414_adn_becomes_forge.html#4) and
 the fascinating architectural research they are practicing there, on building extremely efficient material-saving vaults.
 
 Now they are [exhibiting custom beautiful vaults at the Venice Architecture Biennale](http://www.designboom.com/architecture/venice-architecture-biennale-beyond-bending-eth-zurich-block-research-group-05-26-2016):

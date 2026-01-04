@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -9,7 +39,7 @@
 
 <p>I continued the discussion on the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/01/room-and-wall-adjacency.html">
+<a href="0076_room_wall_adjacency.htm">
 room and wall adjacency</a>
 
 with Massimiliano Revelli of 
@@ -35,12 +65,12 @@ For instance, let us look at the upper wall in this floor plan of a simple examp
 <p>To determine the exact adjacent area, we need to determine the inner face of the wall and determine which part of it overlaps the room boundary segments.
 We can make use of the solutions on how to determine the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/wall-elevation-profile.html">
+<a href="0039_wall_elevation_profile.htm">
 inner face of the wall</a>
 
 and its
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/3d-polygon-areas.html">
+<a href="0055_3d_polygon_area.htm">
 area</a> from previous discussions.
 
 <p>Here are three different suggestions on how to approach the problem:</p>
@@ -73,7 +103,7 @@ Unfortunately, the Revit API does not provide such a Boolean operation out of th
 
 <p>One might possibly be able to use the some of the functionality provided by various AutoCAD APIs such as AModeler or regions, by 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/running-autocad-inside-revit.html">
+<a href="0045_autocad_in_revit.htm">
 running AutoCAD in the background</a>
 
 and calling a helper application.
@@ -91,3 +121,12 @@ Generic Polygon Clipper (gpc)</a>
 
 as well as the C# wrapper GpcWrapper for it, and that looks promising.
 Please let me know if you already have any experience making use of this or any other Boolean libraries within Revit.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

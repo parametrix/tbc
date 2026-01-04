@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -19,7 +50,7 @@ Before we do so, however, here is an overview of some of the Boolean operation f
 
 <p>The standard approach to perform a Boolean operation within a family is to use the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/07/beam-maker-using-a-void-extrusion-to-cut.html">
+<a href="0412_beam_maker.htm">
 Document.CombineElements</a> method. 
 
 Its use is limited to certain element types.
@@ -27,7 +58,7 @@ Its use is limited to certain element types.
 <p>Another possibility to perform Boolean operation within the family context was provided by the SolidSolidCutUtils class introduced in the Revit 2011 API.
 It use is demonstrated by the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/devcamp-session-on-whats-new.html">
+<a href="0385_devcamp_whats_new.htm">
 SolidSolidCut SDK sample</a>, 
 
 which is hardcoded to run in the SolidSolidCut.rfa family sample file.
@@ -144,3 +175,12 @@ Parameter name: cuttingInstance".
 <p>I trust this will help understand the options available and help you get started using the InstanceVoidCutUtils.
 
 <p>Next one coming up: use of the Document.CombineElements method to create the window frame joinery using extruded profiles in a programmatically generated window family.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

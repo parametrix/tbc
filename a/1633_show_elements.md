@@ -76,7 +76,7 @@ Sometimes you get the dialogue 'No good view found', which is odd, considering y
 I don't know the implications of changing the `ActiveDocument` this way or why the API has no ability to directly change the `ActiveDocument` directly, but I suspect if it were easy in terms of how the API works, it would have been done by now.
 
 This workaround was also mentioned in The Building Coder discussion
-on [mirroring in a new family and changing active view](http://thebuildingcoder.typepad.com/blog/2010/11/mirroring-in-a-new-family-and-changing-active-view.html):
+on [mirroring in a new family and changing active view](0488_mirror_in_new_family.htm):
 
 > The first issue that arises is that the mirror command requires a current active view, which is not automatically present in the family document. Joe discovers a workaround for that issue using the `ShowElements` method. It generates an unwanted warning message, so a second step is required to deal with eliminating that as well.
 

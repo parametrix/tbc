@@ -17,7 +17,7 @@ As I discussed last week, the translation tool emits info about its activity via
 ### Retrieving and Broadcasting the Roomedit3dv3 Translation
 
 As I discussed last week,
-[the translation tool emits info on its activity](http://thebuildingcoder.typepad.com/blog/2016/09/warning-swallower-and-roomedit3d-viewer-extension.html#3) via
+[the translation tool emits info on its activity](1476_roomedit3d_forge_warn.html#3) via
 `socket.io`.
 
 Now I want to pick up that information higher up, in the viewer transform extension, and relay it to the node.js web server or broadcast it to the rest of the world.

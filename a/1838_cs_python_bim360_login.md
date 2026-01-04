@@ -185,4 +185,4 @@ the [diff to the previous version](https://github.com/jeremytammik/the_building_
 
 The result of this flat migration generates [162 warnings](zip/tbc_samples_2021_migr_01.txt),
 all associated with obsolete and deprecated methods and enumerations caused by 
-the [Units API changes](https://thebuildingcoder.typepad.com/blog/2020/04/whats-new-in-the-revit-2021-api.html#4.1.3).
+the [Units API changes](1836_whats_new_2021.html#4.1.3).

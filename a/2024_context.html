@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
@@ -6,7 +36,8 @@
 <p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"></p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - valid api context
@@ -78,14 +109,14 @@ The best-known event is the external command <code>Execute</code> that is trigge
 Within the event handler, Revit provides a valid Revit API context.
 Most Revit API methods can only be used within such a context, and nowhere else, cf.:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/12/external-event-and-10-year-forum-anniversary.html#2">Use of the Revit API requires a valid context</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2015/08/revit-api-context-and-form-creation-errors.html#2">Revit API context summary</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2020/11/document-session-id-api-context-and-external-events.html#3">Valid Revit API context and external events</a></li>
+<li><a href="1383_external_event_10_year.html#2">Use of the Revit API requires a valid context</a></li>
+<li><a href="1344_api_context_form_err.htm#2">Revit API context summary</a></li>
+<li><a href="1874_doc_session_id.html#3">Valid Revit API context and external events</a></li>
 </ul>
 <p>When automating Revit, one often wishes to trigger some action in the BIM from outside.
 This can be achieved by implementing an external event that can be raised from a non-modal context.
 This are has been discussed in depth by The Building Coder, cf. the topic group
-on <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28"><code>Idling</code> and external events for modeless access and driving Revit from outside</a>.</p>
+on <span class="unavailable-link"><code>Idling</code> and external events for modeless access and driving Revit from outside</span>.</p>
 <p>Here are some other aspects of this theme, from an internal Revit developers point of view:</p>
 <p><strong>Question:</strong> What is the correct and efficient way to validate one's execution of code is in a Revit API context?
 I can see in the internal C++ code of Revit that Revit API objects perform checks &ndash; how does one do this equivalent check in C#?</p>
@@ -172,7 +203,7 @@ Always helpful to have these needs confirmed too!</p>
 <p><strong>Question:</strong> Is Extensible Storage supported by <code>SVF</code>?</p>
 <p><strong>Answer:</strong> SVF is an efficient compressed representation of the BIM geometry and selected metadata resulting from a translation of the original BIM CAD seed file for
 the <a href="https://aps.autodesk.com/">Autodesk Platform Services APS</a> environment.</p>
-<p>Revit <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23">Extensible Storage</a> is
+<p>Revit <span class="unavailable-link">Extensible Storage</span> is
 a feature that lets add-ins store custom data inside Revit elements.</p>
 <p>The extensible storage data is only accessible to the add-in that creates it.
 Therefore, the Revit translation process has no access to it, so it cannot be translated to SVF.</p>
@@ -248,3 +279,11 @@ The authors back then did differentiate between different scenarios, mainly "bus
 So far, after fifty years of discussion, we remain very close indeed to the "business as usual" predictions.
 It seems that industry, including agricultural industry, and thus lobbies, and thus politics, are all still in favour of "business a usual" (for obvious reasons).
 So, it becomes the responsibility of the remaining part of humanity to take responsibility and do something, e.g., change patterns of consumption.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

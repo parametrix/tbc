@@ -96,18 +96,18 @@ The question on using .NET Core with the Revit API came up repeatedly, both in
 the [discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) and
 here in the blog, e.g.:
 
-- [.NET 5 and Core](https://thebuildingcoder.typepad.com/blog/2021/01/face-triangulation-lod-net-5-and-core.html#2)
-- [.NET Core](https://thebuildingcoder.typepad.com/blog/2023/08/15-years-polygon-areas-and-net-core.html#3)
-- [.NET Core Preview and Open Source Add-In Projects](https://thebuildingcoder.typepad.com/blog/2023/11/net-core-preview-and-open-source-add-in-projects.html)
+- [.NET 5 and Core](1888_net_5_core.html#2)
+- [.NET Core](2005_net_core.html#3)
+- [.NET Core Preview and Open Source Add-In Projects](2017_os_projects.html)
 
 Up until today, the Revit API system requirements still require the pre-Core .NET framework 4.8.
 
 Roman [Nice3point](https://github.com/Nice3point) Karpovich
 of [atomatiq](https://www.linkedin.com/company/atomatiq/), aka Роман Карпович, presented
-a [solution using IPC to connect components using different .NET frameworks](https://thebuildingcoder.typepad.com/blog/2023/10/dll-paradise-and-a-fall.html).
+a [solution using IPC to connect components using different .NET frameworks](2012_dll_paradise.html).
 
 The development team is thinking about upgrading the Revit API to .NET Core and held
-the [.NET Core webinar](https://thebuildingcoder.typepad.com/blog/2023/12/parameters-and-net-core-webinar.html#2) on
+the [.NET Core webinar](2020_net_core_webinar.html#2) on
 January 30, 2024, to discuss the current state of things and migration issues.
 
 The [.NET Core migration webinar recording](https://feedback.autodesk.com/project/article/item.html?cap=cb0fd5af18bb49b791dfa3f5efc47a72&arttypeid={16363613-34f6-4dfa-9b97-3857dbbe9ade}&)
@@ -122,8 +122,8 @@ the UI, cf. also the official Revit online help on how
 to [publish cloud Models](https://help.autodesk.com/view/RVT/2024/ENU/?guid=GUID-A2444193-FCE8-4219-A590-62CA2B8B5C5D).
 
 However, I am not aware of any official support to select them programmatically through the API, even though we did look at the issue
-of [selecting RVT 3D views for Forge translation](https://thebuildingcoder.typepad.com/blog/2016/07/selecting-views-for-forge-translation.html)
-and [selecting rooms and views to publish to the cloud](https://thebuildingcoder.typepad.com/blog/2017/09/revit-20181-nuget-packages-rooms-and-views-in-forge.html#2) years ago.
+of [selecting RVT 3D views for Forge translation](1453_exportviewselector.html)
+and [selecting rooms and views to publish to the cloud](1582_forge_view_nuget.html#2) years ago.
 
 The question was also raised in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
@@ -189,7 +189,7 @@ Thanks for a great blog!
 I’ve read it for many years and I’ve been at Autodesk University a couple of times!
 
 Reading your latest post
-about [valid Revit API context](https://thebuildingcoder.typepad.com/blog/2024/01/valid-revit-api-context-llm-and-ltg.html#2) inspired
+about [valid Revit API context](2024_context.html#2) inspired
 me to share a personal project I’ve been working on that touches this topic.
 
 I have been experimenting

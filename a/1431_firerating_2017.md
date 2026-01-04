@@ -23,9 +23,9 @@ Here is the updated FireRatingCloud custom ribbon tab with its new set of comman
 ### Real-Time BIM Update with FireRatingCloud 2017
 
 Yesterday,
-I [migrated RoomEditorApp to Revit 2017](http://thebuildingcoder.typepad.com/blog/2016/04/room-editor-first-revit-2017-addin-migration.html#3) and
+I [migrated RoomEditorApp to Revit 2017](1430_room_editor_2017.html#3) and
 mentioned
-the [BIM and cloud related projects](http://thebuildingcoder.typepad.com/blog/2016/04/room-editor-first-revit-2017-addin-migration.html#1) I am working on.
+the [BIM and cloud related projects](1430_room_editor_2017.html#1) I am working on.
 
 Next, let's focus on
 the [FireRatingCloud](https://github.com/jeremytammik/FireRatingCloud) sample.

@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>DevCamp Session on What's New</h3>
@@ -14,12 +45,12 @@ Several of the areas I cover have already been discussed here in the blog.
 My main topics in that session will be:
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/05/pipe-to-conduit-converter.html">My first Revit 2011 add-in</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/04/plugin-migration-steps.html">Migration of Revit 2010 add-ins</a>
+<li><a href="0360_p2c.htm">My first Revit 2011 add-in</a>
+<li><a href="0349_migration_steps.htm">Migration of Revit 2010 add-ins</a>
 <li>New Revit SDK sample applications
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/04/idling-event.html">Idling event</a> and samples
+<li><a href="0352_idling.htm">Idling event</a> and samples
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/06/display-webcam-image-on-building-element-face.html">RevitWebcam</a>
+<li><a href="0380_revitwebcam.htm">RevitWebcam</a>
 <li>RST live link
 <li>RME loose connectors
 </ul>
@@ -39,8 +70,8 @@ The following samples are completely new:
 <ul>
 <li>AnalysisVisualizationFramework
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/04/element-level-events.html">DistanceToSurfaces</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/06/display-webcam-image-on-building-element-face.html">SpatialFieldGradient</a>
+<li><a href="0340_element_events.htm">DistanceToSurfaces</a>
+<li><a href="0380_revitwebcam.htm">SpatialFieldGradient</a>
 </ul>
 <li>ConceptualDesign
 <ul>
@@ -50,10 +81,10 @@ The following samples are completely new:
 <ul>
 <li>ViewFilters
 </ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/01/findreferencesbydirection.html">FindReferencesByDirection</a>
+<li><a href="0294_abg09_findReferencesByDir.htm">FindReferencesByDirection</a>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/01/findreferencesbydirection.html">FindColumns</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/01/findreferencesbydirection.html">MeasureHeight</a>
+<li><a href="0294_abg09_findReferencesByDir.htm">FindColumns</a>
+<li><a href="0294_abg09_findReferencesByDir.htm">MeasureHeight</a>
 </ul>
 <li>Massing
 <ul>
@@ -61,15 +92,15 @@ The following samples are completely new:
 <li>PointCurveCreation
 </ul>
 <li>DirectionCalculation
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/04/element-level-events.html">DocumentChanged</a>
+<li><a href="0340_element_events.htm">DocumentChanged</a>
 <ul>
 <li>Also known as ChangesMonitor
 </ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/04/element-level-events.html">DynamicModelUpdate</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/04/failure-api.html">ErrorHandling</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/04/revitaddinutility.html">ExternalCommand2011</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/02/material-quantity-extraction.html">MaterialQuantities</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/05/the-revit-mep-2011-api.html">PanelSchedule</a>
+<li><a href="0340_element_events.htm">DynamicModelUpdate</a>
+<li><a href="0350_failure_api.htm">ErrorHandling</a>
+<li><a href="0336_addinutility.htm">ExternalCommand2011</a>
+<li><a href="0296_abg10_material_quantity.htm">MaterialQuantities</a>
+<li><a href="0362_mep_2011_api.htm">PanelSchedule</a>
 <li>Selections
 <li>SolidSolidCut
 </ul>
@@ -95,14 +126,14 @@ provides an overview and classification of all SDK samples into various categori
 
 I initially created it to keep track of all the external command registration data required for Revit.ini entries to load the samples, and to automatically generate the text file read by the first incarnation of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/09/loading-sdk-sam.html">
+<a href="0007_loading_sdk_samples.htm">
 RvtSamples</a>
 
 to handle all of them in one go.
 Nowadays RvtSamples in included in the SDK itself, and the development team creates the text file to drive it, but I still keep my spreadsheet up to date.
 I also used this way back for the DE101-3 Revit SDK Sample Sm&ouml;rg&aring;sbord presentation at
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/au-2008.html">
+<a href="0018_au_2008.htm">
 AU 2008</a>.
 Anyway, here is the updated
 
@@ -111,3 +142,12 @@ Anyway, here is the updated
 <p>Time for breakfast.
 I am on the nineteenth floor looking out at another wonderful day outside the window with a beautiful view northward over the Charles River, Cambridge and the MIT, a huge and completely cloudless blue sky after heavy thunderstorms in the past days.
 Painful to spend a day like this cooped up in a convention centre, however exciting the topic may be...</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

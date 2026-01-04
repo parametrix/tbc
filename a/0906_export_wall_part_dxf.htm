@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 ﻿<html>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 <body>
 
@@ -182,7 +184,7 @@ We encapsulate the isolate and export method in a transaction that is later roll
 
 <p>I repeatedly discussed how to automatically handle messages like this in the past, e.g. to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/10/detach-workset-and-taskdialog-command-link-order.html">
+<a href="0837_detach_workset.htm">
 detach a workset</a>.</p>
 
 <p>To be notified of this message, we subscribe to the DialogShowing event:</p>
@@ -469,7 +471,7 @@ ExportWallboard03.zip</a> including the complete source code, Visual Studio solu
 <li>Commit the transaction to temporaily isolate each part before calling Export.</li>
 <li>This requires encapsulating all the temporary transactions in a group and rolling back the entire group instead of the individual transactions, as described for the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/11/temporary-transaction-trick-touchup.html">temporary transaction trick touchup</a>.</li>
+<a href="0854_temp_transact.htm">temporary transaction trick touchup</a>.</li>
 
 <li>Separate the code to switch off the last temporary isolation and applying the new one into separate transactions.</li>
 </ul>
@@ -569,5 +571,7 @@ Maybe the part unique id would be better, or the parent element id needs checkin
 
 <p>Anyway, for a first stab, this implementation now looks pretty good to me.</p>
 
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
 </body>
 </html>

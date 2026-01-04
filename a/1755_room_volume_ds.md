@@ -128,8 +128,8 @@ performs the following simple steps:
 the [ClosedShell API call](https://www.revitapidocs.com/2020/1a510aef-63f6-4d32-c0ff-a8071f5e23b8.htm)
 - Generate a [DirectShape element](https://www.revitapidocs.com/2020/bfbd137b-c2c2-71bb-6f4a-992d0dcf6ea8.htm) representing the room volume geometry
 - Query the room for all its properties, stored in parameters
-(cf., [getting all parameter values](https://thebuildingcoder.typepad.com/blog/2018/05/getting-all-parameter-values.html)
-and [retrieving parameter values from an element](https://thebuildingcoder.typepad.com/blog/2018/05/getting-all-parameter-values.html#5))
+(cf., [getting all parameter values](1654_get_all_param_val.html)
+and [retrieving parameter values from an element](1654_get_all_param_val.html#5))
 - Generate a JSON string representing a dictionary of the room properties
 - Store the room property JSON string in the `DirectShape` element `Comment` property
 
@@ -299,7 +299,7 @@ With the element parameter property retrieval and JSON formatting helper methods
 We gather all the rooms in the BIM using a filtered element collector, aware of the fact that the `Room` class only exists in the Revit API, not internally in Revit.
 
 The filtered element collector therefore has to retrieve `SpatialElement` objects instead and use .NET post-processing to extract the rooms,
-cf. [accessing room data](http://thebuildingcoder.typepad.com/blog/2011/11/accessing-room-data.html).
+cf. [accessing room data](0682_accessing_room_data.htm).
 
 Once we have the rooms, we can process each one as follows:
 
@@ -539,7 +539,7 @@ In the API, however, the value is a GUID, e.g., "3bf616f9-6b98-4a21-80ff-da1120c
 How can I convert the API GUID value, "3bf616f9-6b98-4a21-80ff-da1120c8f6d6", into the UI value, "Use Definition on Type"?
 
 **Answer:** The loss method can be programmed, so the GUID you see might be something like the add-in identifier, c.f. this discussion on
-the [pipe fitting K factor](https://thebuildingcoder.typepad.com/blog/2017/12/pipe-fitting-k-factor-archilab-and-installer.html).
+the [pipe fitting K factor](1611_pipe_k_factor.html).
 
 **Response:** Problem solved. This problem is solved in 2 cases:
 

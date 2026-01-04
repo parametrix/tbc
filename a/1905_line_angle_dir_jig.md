@@ -98,7 +98,7 @@ However, I see no way to display any useful graphical feedback while picking the
 **Answer:** You could try to launch the built-in Revit command together with the built-in user interface by using `PostCommand`.
 
 Another option might be to implement some kind of
-own [jig, e.g., using the `IDirectContext3DServer`](https://thebuildingcoder.typepad.com/blog/2020/10/onbox-directcontext-jig-and-no-cdn.html#3).,
+own [jig, e.g., using the `IDirectContext3DServer`](1872_rect_jig.html#3).,
 
 Maybe you could also use some kind of Windows tooltip to display the required real-time information.
 
@@ -190,7 +190,7 @@ the [diff to the previous release](https://github.com/jeremytammik/the_building_
 The [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 asking [why `GroupType.Groups` contains ungrouped groups](https://forums.autodesk.com/t5/revit-api-forum/why-does-grouptype-groups-contain-ungrouped-groups/m-p/10291256) demonstrates
 another example of
-the [need to regenerate](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33)
+the need to regenerate *(link unavailable)*
 and shows that sometimes more than just regenerating the model is required to avoid accessing stale data.
 Committing the transaction is the next level up after regeneration:
 

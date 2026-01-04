@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -15,18 +46,18 @@
 
 <p>This is part 7 of Scott Conover's AU 2009 class on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/analyse-building-geometry.html">
+<a href="0275_abg.htm">
 analysing building geometry</a>, 
 
 exploring coordinate transformations and the placement and orientation of family instances.
 For completeness sake, here are some back pointers to previous blog posts dealing with transforms and related issues:
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/03/transform.html">The Transform class</a>.</li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/12/polygon-transformation.html">Polygon transformation</a>.</li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/03/transform-instance-coordinates.html">Instance coordinate transformation</a>.</li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/05/transform-an-element.html">Transforming an element</a>.</li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/07/scale-a-curve.html">Scaling a curve</a>.</li>
+<li><a href="0110_transform.htm">The Transform class</a>.</li>
+<li><a href="0057_polygon_transformation.htm">Polygon transformation</a>.</li>
+<li><a href="0111_transform_instance_coords.htm">Instance coordinate transformation</a>.</li>
+<li><a href="0133_transform_element.htm">Transforming an element</a>.</li>
+<li><a href="0183_scale_curve.htm">Scaling a curve</a>.</li>
 </ul>
 
 <p>So now I hand the word back to Scott:
@@ -82,7 +113,7 @@ It also provides a Transform instance to convert the local coordinate system to 
 
 <p>Similarly to the example selecting all 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/south-facing-walls.html">
+<a href="0281_abg03_south_facing_walls.htm">
 south facing walls</a>,
 
 we can use the transform of the Instance stored in a window FamilyInstance to find south facing windows:</p>
@@ -160,3 +191,12 @@ Here is the GetWindowDirection method implementing this:</p>
 <p>Note that instances may be nested inside other instances. Each instance has a Transform which represents the transformation from the coordinates of the symbol geometry to the coordinates of the instance. In order to get the coordinates of the geometry of one of these nested instances in the coordinates of the document, you will need to concatenate the transforms together using Transform.Multiply().</p>
 
 <p>Next, we look at the Revit project location, which also affects the location and transformations of the elements in the project.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

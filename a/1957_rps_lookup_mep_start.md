@@ -98,7 +98,7 @@ Do you have any related examples to share with me?
 **Answer:** Welcome to the Revit API!
 
 The Building Coder shares a wealth of information
-on [getting started with the Revit API](https://thebuildingcoder.typepad.com/blog/about-the-author.html#2).
+on getting started with the Revit API *(link unavailable)*.
 
 However, before you start even thinking about programming, it is important to gain some fundamental understanding of the BIM, the BIM paradigm and BIM processes.
 
@@ -124,12 +124,12 @@ System traversal is also demonstrated by some of the SDK samples.
 
 In addition to the official sample material from Autodesk, you can also check out The Building Coder blog.
 My favourite articles from there on connecting pipes is
-the series exploring [how to create a rolling offset](http://thebuildingcoder.typepad.com/blog/2014/01/final-rolling-offset-using-pipecreate.html).
+the series exploring [how to create a rolling offset](1093_pipe_create.htm).
 
 Here are two other articles from The Building Coder on system traversal:
 
-- [Simple MEP system traversal](http://thebuildingcoder.typepad.com/blog/2013/02/simple-mep-system-traversal.html)
-- [Traversing and exporting all MEP system graphs](http://thebuildingcoder.typepad.com/blog/2016/06/traversing-and-exporting-all-mep-system-graphs.html)
+- [Simple MEP system traversal](0893_mep_system_traversal.htm)
+- [Traversing and exporting all MEP system graphs](1449_traverse_mep_system.html)
 
 ####<a name="3"></a> RevitPythonShell RevitLookup Nuptials
 

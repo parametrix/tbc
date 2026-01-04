@@ -45,8 +45,8 @@ It went by so fast!
 I attended a bunch of brilliant classes, took notes during Cyrille Fauvel's
 [cloud and mobile expert panel](http://the3dwebcoder.typepad.com/blog/2015/12/autodesk-uni-cloud-and-mobile-expert-panel-qa.html),
 and successfully presented my own two,
-the [SD10181 &ndash; Revit API expert panel](http://thebuildingcoder.typepad.com/blog/2015/12/au-keynote-and-revit-api-panel.html#9)
-and [SD11048 &ndash; connecting desktop and cloud](http://thebuildingcoder.typepad.com/blog/2015/11/connecting-desktop-and-cloud-room-editor-update.html).
+the [SD10181 &ndash; Revit API expert panel](1380_au2015_day_1.html#9)
+and [SD11048 &ndash; connecting desktop and cloud](1372_rtc_roomedit.html).
 
 That led to a completely different topic... here are a couple of them:
 
@@ -63,9 +63,9 @@ The Revit API added a check to prevent deletion of database elements during the 
 Here it crops up again.
 
 Arif Hanif attended the class SD11048 on connecting desktop and cloud, and we were able to take time off together afterwards to analyse and fix the issue with
-the [SpatialElementGeometryCalculator](http://thebuildingcoder.typepad.com/blog/2015/03/findinserts-retrieves-all-openings-in-all-wall-types.html) that
+the [SpatialElementGeometryCalculator](1297_host_find_inserts.htm) that
 he reported in
-his [comment](http://thebuildingcoder.typepad.com/blog/2015/03/findinserts-retrieves-all-openings-in-all-wall-types.html#comment-2380592080) last week:
+his [comment](1297_host_find_inserts.htm#comment-2380592080) last week:
 
 > I am finding an issue with the temp delete. I implemented the code as on GitHub. The problem appears in both Revit 2015 and 2016. I went through the code and the issue is in the temp delete...
 
@@ -114,13 +114,13 @@ Fixing this problem is very easy: just extract the element ids from the collecto
 
 Please take note, Håkon &nbsp; :-)
 
-Accordingly, here is my updated [answer](http://thebuildingcoder.typepad.com/blog/2015/03/findinserts-retrieves-all-openings-in-all-wall-types.html#comment-2391775373) to Arif's problem report:
+Accordingly, here is my updated [answer](1297_host_find_inserts.htm#comment-2391775373) to Arif's problem report:
 
 > Thank you for sitting down together with me at Autodesk University today and exploring this issue further.
 
-> First of all, by 'follow-up article', I actually meant this one on [wall area calculation handling multiple openings in multiple walls in multiple rooms](http://thebuildingcoder.typepad.com/blog/2015/04/gross-and-net-wall-area-calculation-enhancement-and-events.html#6).
+> First of all, by 'follow-up article', I actually meant this one on [wall area calculation handling multiple openings in multiple walls in multiple rooms](1309_spatial_calculator.htm#6).
 
-> Another interesting take on this topic is using [IFCExportUtils to determine door and window area](http://thebuildingcoder.typepad.com/blog/2015/03/ifcexportutils-methods-determine-door-and-window-area.html).
+> Another interesting take on this topic is using [IFCExportUtils to determine door and window area](1298_door_window_area.htm).
 
 > Secondly, we succeeded in finding and resolving the issue.
 

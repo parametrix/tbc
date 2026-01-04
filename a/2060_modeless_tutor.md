@@ -163,7 +163,7 @@ Happily, during that time, new growing capabilities offered by the AI LLMs may e
 ####<a name="4"></a> ChatGPT for Q4R4
 
 Back in 2017, I pondered a question answering system for Revit API.
-I called it [Q4R4](https://thebuildingcoder.typepad.com/blog/r4q4/), short for `QA` `4` `RA`, aiming for a short yet globally unique term.
+I called it Q4R4 *(link unavailable)*, short for `QA` `4` `RA`, aiming for a short yet globally unique term.
 Here are some notes on that project:
 
 <ul>

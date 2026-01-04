@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Xtra ADN Revit 2013 API Training Labs</h3>
@@ -62,11 +93,11 @@ In my trainings, however, I also include the old labs predating the new stream-l
 who joined ADN DevTech team a couple of years ago, very actively supporting the AutoCAD APIs, and recently started providing support for the Revit API as well, e.g. for a
 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/updating-wall-compound-layer-structure.html">
+<a href="0727_balaji_setcompoundstr.htm">
 wall compound layer structure issue</a>.
 Balaji will also be the main presenter of the upcoming 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/04/failure-rollback.html">
+<a href="0752_failure_rollback.htm">
 Revit API webcast</a>.
 
 Many thanks to Balaji for diving in so fast and deep and all his hard and productive Revit API related work!
@@ -114,7 +145,7 @@ Compile complete -- 0 errors, 4 warnings
 <li>The NewWall method on the creation document, which is replaced by a static Create method on the Wall class. The creation document is being gradually phased out.
 <li>The obsolete GeometryElement Objects property, which can be removed, since the class itself is now enumerable, as we 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/04/migrate-building-coder-samples-to-revit-2013.html">
+<a href="0751_bc_migr_2013.htm">
 recently discussed</a>.
 
 <li>The Element.PhaseCreated property, which can be replaced by using CreatedPhaseId instead.
@@ -149,3 +180,12 @@ which you can use as an include file in RvtSamples.txt to load all the standard 
 <p>Almost all the built-in category enum values come equipped with an "OST_" prefix.
 I asked the development team what these three letters stand for and learned that it is short for <b>o</b>bject <b>st</b>yle.
 Just in case you ever wondered.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

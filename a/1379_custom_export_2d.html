@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!---
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -38,7 +69,7 @@ Several developers recently asked how to export 2D shapes through a custom expor
 -->
 
 <h3>DevDay@AU and Using a Custom Exporter for 2D</h3>
-<p>Several developers recently asked how to export 2D shapes through a <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.1">custom exporter</a>.</p>
+<p>Several developers recently asked how to export 2D shapes through a <span class="unavailable-link">custom exporter</span>.</p>
 <p>I recently discussed this issue with Arnošt Löbel and below present a summary and combination of several different conversation threads on the topic of <a href="#2">using a custom exporter for 2D</a>.</p>
 <p>First, let me mention that I arrived safe and sound at Autodesk University.</p>
 <p>I travelled on my birthday last week, so I was upgraded to fly in style &ndash; in a sledge!</p>
@@ -56,9 +87,9 @@ Several developers recently asked how to export 2D shapes through a custom expor
 </center></p>
 <p>And now back to the Revit API:</p>
 <h4><a name="2"></a>Using a Custom Exporter for 2D</h4>
-<p><strong>Question:</strong> I'm trying to obtain the 2D representation of a given element in my model. I'm using a CustomExporter object to get all the visible elements in the current 3D view. I've been reading several posts and found in one of them, on the <a href="http://thebuildingcoder.typepad.com/blog/2013/04/extrusion-analyser-and-plan-view-boundaries.html#6">extrusion analyser and plan view boundaries</a>, that I should do something like "switch to a 2D plan view instead, and ask for the view-specific family instance representation". Now I'm stuck in how to get the correct 2D plan view if I actually have several in my model. Could you point me in the right direction?</p>
+<p><strong>Question:</strong> I'm trying to obtain the 2D representation of a given element in my model. I'm using a CustomExporter object to get all the visible elements in the current 3D view. I've been reading several posts and found in one of them, on the <a href="0921_extrusion_analyser.htm#6">extrusion analyser and plan view boundaries</a>, that I should do something like "switch to a 2D plan view instead, and ask for the view-specific family instance representation". Now I'm stuck in how to get the correct 2D plan view if I actually have several in my model. Could you point me in the right direction?</p>
 <p>For instance, to make it really short: Is there any way to export annotation symbols?</p>
-<p><strong>Answer:</strong> Take a look at the <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.1">custom exporter</a>.</p>
+<p><strong>Answer:</strong> Take a look at the <span class="unavailable-link">custom exporter</span>.</p>
 <p>In Revit 2015 it was 3D only.</p>
 <p>In Revit 2016 it also supports 2D (1).</p>
 <p>Take a look at my <a href="https://github.com/jeremytammik/RoomEditorApp">room editor add-in</a>.</p>
@@ -79,7 +110,7 @@ Several developers recently asked how to export 2D shapes through a custom expor
 <li>I do not think you can create a 3D view that will look exactly like a 2D, but it greatly depends on the view and what's in it.</li>
 <li>You will get text output when exporting a 3D view. Try out and see what kind of annotation is included. Presumably, if you can see it in the 3D view it should make its way to the export context as well.</li>
 </ul>
-<p><strong>Response:</strong> Thanks for your reply. I found The Building Coder discussion on <a href="http://thebuildingcoder.typepad.com/blog/2014/05/views-displaying-given-element-svg-and-nosql.html">views displaying a given element, SVG and NoSQL</a> that was very helpful and  ended up using a similar approach. In the post you use an ElementMulticlassFilter to filter View3D, ViewPlan and ViewSection that can display a certain list of elements. In my case I just need all the plan views in the model. I iterate over that list until I find one that displays the element I need. Once I find the view I send it to an Options object and then send that object to the element  get_Geometry method to get the correct 2D representation of my element.</p>
+<p><strong>Response:</strong> Thanks for your reply. I found The Building Coder discussion on <a href="1158_views_displaying_elem.htm">views displaying a given element, SVG and NoSQL</a> that was very helpful and  ended up using a similar approach. In the post you use an ElementMulticlassFilter to filter View3D, ViewPlan and ViewSection that can display a certain list of elements. In my case I just need all the plan views in the model. I iterate over that list until I find one that displays the element I need. Once I find the view I send it to an Options object and then send that object to the element  get_Geometry method to get the correct 2D representation of my element.</p>
 <p>Here is the code showing how this can be done:</p>
 <pre class="code">
 <span class="blue">internal</span> <span class="blue">class</span> <span class="teal">YBExporteContext</span> : <span class="teal">IExportContext</span>
@@ -164,3 +195,11 @@ Several developers recently asked how to export 2D shapes through a custom expor
 <p>There are lots of different approaches, and you will have to try out for yourself which one works best for you.</p>
 <p>Please let us know what you end up using.</p>
 <p>Good luck and have fun!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -60,7 +60,7 @@ A new Revit add-in unit testing framework, a short note on support assembly loca
 ####<a name="2"></a> Revit.TestRunner &ndash; Run Unit Tests in Revit
 
 We mentioned several
-different [Revit add-in unit testing frameworks](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.16) in
+different Revit add-in unit testing frameworks *(link unavailable)* in
 the past.
 
 Tobias Flöscher of [Geberit](https://www.geberit.com) now
@@ -85,7 +85,7 @@ But a lot of code remained in the project referencing the Revit API.
 
 I asked Google what to do, but apparently there is not THE way to solve this problem.
 
-There is some stuff around that seems cool, e.g.,  [RevitTestFramework](https://thebuildingcoder.typepad.com/blog/2018/08/revit-unit-test-framework-improvements.html),
+There is some stuff around that seems cool, e.g.,  [RevitTestFramework](1674_revittestframework.htmml),
 but I was not happy with that.
 Furthermore, all I found uses NUnit 2.6, whereas all my Revit independent code is tested by the NUnit 3.x.
 The build server doesn't like the mix.

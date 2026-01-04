@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -28,29 +59,29 @@ I can use WhereElementIsElementType filter to return all types, and WhereElement
 
 <p>For example, I implemented a method DeleteUnnamedNonHostingReferencePlanes to find and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-devlab.html#2">
+<a href="0738_melbourne_devlab.htm#2">
 delete all reference planes not hosting any elements</a>.
 
 <p>An explicit reference to the term purge is used in the post on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/11/purge-unused-text-note-types.html">
+<a href="0476_purge_text_note_types.htm">
 removing unused text note types</a>.
 
 <p>One way to determine whether a certain element A is required by another one B is to delete A and check the return value of the Delete method, which provides a list of deleted element ids. In some cases, B is deleted as well, and its element id is included the resulting list of deleted element ids. This is used by the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/object-relationships.html">
+<a href="0314_object_relationship.htm">
 object relationship analyser</a>
 
-(<a href="http://thebuildingcoder.typepad.com/blog/2010/03/object-relationships-in-vb.html">VB</a>).
+(<a href="0319_object_relationship_vb.htm">VB</a>).
 
 <p>The deletion can be made temporary by encapsulating it in a transaction that is later rolled back. Here is a discussion of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/10/the-temporary-transaction-trick-for-gross-slab-data.html">
+<a href="0851_gross_slab_boundary.htm">
 the temporary transaction trick</a> including
 
 a list of numerous usage examples, and later
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/11/temporary-transaction-trick-touchup.html">
+<a href="0854_temp_transact.htm">
 touched up slightly</a>.
 
 <p>Unfortunately, of course, this method becomes extremely slow in a large model with each deletion taking place in its own transaction and then rolled back.
@@ -58,7 +89,7 @@ Wrapping it all in one single transaction will essentially deleting the entire m
 
 <p>When you do have access to a one-way relationship between two classes of objects, e.g. pointers from doors, windows and openings hosted in walls to their respective wall host elements, you can easily invert the relationship to determine the list of hosted object for each host. This is demonstrated in my discussion of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/relationship-in.html">
+<a href="0016_relationship_inverter.htm">
 relationship inverter</a> in
 
 one of the very first blog posts.
@@ -83,3 +114,12 @@ one of the very first blog posts.
 
 <p>For example, there are no instance placements of materials, so you have to search through instances placed in the model and for each element determine whether the material is used by it or not.
 This also leaves out materials that are set for type parameters on types that have not been used but are loaded into the model.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

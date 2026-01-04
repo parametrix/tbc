@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!--
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -63,7 +94,7 @@ Oh, and I continued my research into deep learning for a Revit API question answ
 </ul>
 <h4><a name="2"></a>Creating a Reproducible Case May Well Solve the Issue at Hand</h4>
 <p>As said, I frequently ask for
-a <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#1b">reproducible test case</a> to
+a <span class="unavailable-link">reproducible test case</span> to
 analyse when researching a problem report.</p>
 <p>It normally includes as many of the following items as possible:</p>
 <ul>
@@ -99,9 +130,9 @@ on <a href="http://forums.autodesk.com/t5/revit-api-forum/different-coordinate-s
 <p>I keep putting together and repeating variations of advice on that and would like to consolidate my efforts at some point.</p>
 <p>Here are some recent examples of my attempts so far:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/09/macromanager-materials-kiss-and-getting-started.html#4">Getting started and changing the colour of a wall</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/09/macromanager-materials-kiss-and-getting-started.html#5">Getting started and using the Visual Studio Revit Add-In wizard auto-installer</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/09/trusted-signature-motivation-and-fishing.html#3">What happened to <code>LoadCaseArray</code>; how and where to search for help on a Revit API question?</a></li>
+<li><a href="1469_macromanager.html#4">Getting started and changing the colour of a wall</a></li>
+<li><a href="1469_macromanager.html#5">Getting started and using the Visual Studio Revit Add-In wizard auto-installer</a></li>
+<li><a href="1465_trust_sign_fish.html#3">What happened to <code>LoadCaseArray</code>; how and where to search for help on a Revit API question?</a></li>
 <li><a href="http://forums.autodesk.com/t5/revit-api-forum/access-to-line-based-elements/m-p/6569135">Access to line-based elements?</a></li>
 </ul>
 <p>Now for yet another attempt to complete finalise this advice, from
@@ -122,7 +153,7 @@ or <a href="https://duckduckgo.com/?q=thebuildingcoder+familyinstance+connectors
 <p>In addition to these obvious searches, there are indeed several other levels of information that are worthwhile checking out.</p>
 <p>I keep trying to create the ultimate complete list of them, and have not succeeded to my complete satisfaction so far.</p>
 <p>Let me expand
-on <a href="http://thebuildingcoder.typepad.com/blog/2016/09/trusted-signature-motivation-and-fishing.html#3">my last attempt</a> based on what I recently said there and elsewhere:</p>
+on <a href="1465_trust_sign_fish.html#3">my last attempt</a> based on what I recently said there and elsewhere:</p>
 <h4><a name="3.3"></a>How to Research for a Revit API Solution</h4>
 <ol>
 <li>Determine the optimal solution manually through the end user interface. Make sure you follow best practices and make use of existing built-in Revit functionality. If you skip this step or do not research deeply enough, you run a large risk of programming something that will be painful both to implement, maintain, debug and use.</li>
@@ -130,7 +161,7 @@ on <a href="http://thebuildingcoder.typepad.com/blog/2016/09/trusted-signature-m
 <li><a href="https://github.com/jeremytammik/RevitLookup">RevitLookup</a></li>
 <li><a href="https://github.com/jeremytammik/BipChecker">BipChecker</a></li>
 <li><a href="https://github.com/jeremytammik/AdnRevitApiLabsXtra">The element lister</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html">Other, more intimate Revit database exploration tools</a>,  such as the Revit Python or Ruby shell</li>
+<li><a href="1057_db_explor_python_sh.htm">Other, more intimate Revit database exploration tools</a>,  such as the Revit Python or Ruby shell</li>
 </ul>
 </li>
 <li>Once you know what Revit API objects are required, learn how to access, manipulate and drive them, their relationships and how they interact with each other:<ul>
@@ -150,8 +181,8 @@ on <a href="http://thebuildingcoder.typepad.com/blog/2016/09/trusted-signature-m
 <p>Let's round off this discussion by pointing out an easy new solution to a previously intractable requirement:</p>
 <p>The development team just pointed out to me that the wish list item I raised for Mark over a year ago has long been fulfilled, so I thought I would share that happy news here with you are well.</p>
 <p>Mark asked in
-a <a href="http://thebuildingcoder.typepad.com/blog/2011/09/transfer-project-standards.html#comment-2340822661">comment</a>
-on <a href="http://thebuildingcoder.typepad.com/blog/2011/09/transfer-project-standards.html">transferring project standards</a>:</p>
+a <a href="0650_transfer_project_standard.htm#comment-2340822661">comment</a>
+on <a href="0650_transfer_project_standard.htm">transferring project standards</a>:</p>
 <p><strong>Question:</strong> I would like to change or add conduit sizes in the MEP Electrical and Conduit settings through the Revit API.
 The <code>ElectricalSetting</code> class does not support Tray or Conduit settings.
 Conduit settings can be modified from the GUI.
@@ -162,14 +193,14 @@ Is there any Revit API that supports this, or any workaround for the issue?</p>
 <li><code>Autodesk.Revit.DB.Electrical.ConduitSettings</code></li>
 </ul>
 <p>These two classes were also mentioned in the section
-on <a href="http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html#3.14">Electrical API additions</a>
-in <a href="http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html">What's New in the Revit 2017 API</a>.</p>
+on <a href="1428_whats_new_2017.html#3.14">Electrical API additions</a>
+in <a href="1428_whats_new_2017.html">What's New in the Revit 2017 API</a>.</p>
 <h4><a name="5"></a>Getting Started Implementing a Question Answering System</h4>
 <p>As I mentioned last month, I would like to experiment with
-an <a href="http://thebuildingcoder.typepad.com/blog/2016/10/ai-edit-and-continue.html#3">automated system to answer the most common recurring questions on the Revit API</a>,
+an <a href="1492_edit_continue.html#3">automated system to answer the most common recurring questions on the Revit API</a>,
 i.e., a <a href="https://en.wikipedia.org/wiki/Question_answering">question answering</a> system or QAS.</p>
 <p>I started doings some basic fleeting research this week, skimming
-the <a href="http://thebuildingcoder.typepad.com/blog/2017/01/au-in-london-and-deep-learning.html#7">Internet literature on deep learning</a>.</p>
+the <a href="1514_deep_learning.html#7">Internet literature on deep learning</a>.</p>
 <h4><a name="6"></a>First Impression from IBM Bluemix</h4>
 <p>Based on a quick skim of the literature, my first impression was that the best system might be the IBM Watson one used by Ashok Goel for his automated teaching assistant, which does a similar job.</p>
 <p>I registered to the <a href="www.IBM.com/bluemix">IBM Bluemix</a> platform and started exploring that.</p>
@@ -209,11 +240,11 @@ The documentation is a bit scant and bumpy, though.</p>
 <ul>
 <li>The Revit API help file <code>RevitAPI.chm</code> contents, now accessible <a href="http://www.revitapidocs.com">online at <code>revitapidocs.com</code></a>.</li>
 <li>The Revit <a href="http://help.autodesk.com/view/RVT/2017/ENU/?guid=GUID-F0A122E0-E556-4D0D-9D0F-7E72A9315A42">Developer Guide</a>.</li>
-<li><a href="http://thebuildingcoder.typepad.com">The Building Coder</a> and other blog content.</li>
+<li><span class="unavailable-link">The Building Coder</span> and other blog content.</li>
 <li>Existing Q &amp; A:<ul>
 <li>The <a href="http://forums.autodesk.com/t5/revit-api-forum/bd-p/160">Revit API discussion forum</a>.</li>
 <li>StackOverflow questions tagged with <a href="http://stackoverflow.com/questions/tagged/revit-api"><code>revit-api</code></a> and <a href="http://stackoverflow.com/questions/tagged/revitpythonshell"><code>revitpythonshell</code></a>.</li>
-<li><a href="http://thebuildingcoder.typepad.com">The Building Coder</a> comments and posts explicitly listing Q &amp; A.</li>
+<li><span class="unavailable-link">The Building Coder</span> comments and posts explicitly listing Q &amp; A.</li>
 <li>Revit API related ADN cases. Luckily, I even have all my cases stored locally in text files...</li>
 <li>Email.</li>
 </ul>
@@ -227,3 +258,11 @@ The documentation is a bit scant and bumpy, though.</p>
 <li>Experience or advice in this or related areas.</li>
 <li>Anything else you would like to contribute that you think might help.</li>
 </ul>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

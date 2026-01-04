@@ -90,7 +90,7 @@ It also fills me with dread. What else is going to throw an exception unexpected
 What other changes are there?
 
 (Yes, I know that this item
-is [*vaguely* alluded to in the 'what's new' document](http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html#2.7),
+is [*vaguely* alluded to in the 'what's new' document](1551_whats_new_2018.html#2.7),
 but it's not documented anywhere.)
  
 Have you found any hidden 'treasures' that you want to share?
@@ -133,8 +133,8 @@ I'm a bit of minimalist when it comes to the use of exceptions.
 Many thanks to Matt for pointing this out!
  
 I would say that this change in behaviour is *precisely* alluded to, not *vaguely*, in the documentation
-of [What's New in the Revit 2018 API](http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html) section 
-on [UIDocument.PromptForFamilyInstancePlacement() behavioral change](http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html#2.7):
+of [What's New in the Revit 2018 API](1551_whats_new_2018.html) section 
+on [UIDocument.PromptForFamilyInstancePlacement() behavioral change](1551_whats_new_2018.html#2.7):
 
 > The behavior for UIDocument.PromptForFamilyInstancePlacement() was changed to be same as that of PickObject() methods...
  
@@ -149,15 +149,15 @@ Expected behaviour should not be communicated using exceptions.
  
 I have been preaching this for years to little avail:
 
-- [Fixing RvtMgdDbg for MEP Connectors](http://thebuildingcoder.typepad.com/blog/2009/08/fixing-rvtmgddbg-for-mep-connectors.html)
-- [Duplicate Mark Values](http://thebuildingcoder.typepad.com/blog/2010/03/duplicate-mark-values.html)
-- [Selecting Model Elements](http://thebuildingcoder.typepad.com/blog/2010/10/selecting-model-elements.html)
-- [Language Independent Subcategory Creation](http://thebuildingcoder.typepad.com/blog/2011/01/language-independent-subcategory-creation.html)
-- [Exporting Parameter Data to Excel, and Re-importing](http://thebuildingcoder.typepad.com/blog/2012/09/exporting-parameter-data-to-excel.html)
-- [Parameter DisplayUnitType, Bretagne and Decompilers](http://thebuildingcoder.typepad.com/blog/2013/03/parameter-displayunittype-and-decompilers.html)
-- [External Command Lister and Adding Ribbon Commands](http://thebuildingcoder.typepad.com/blog/2013/05/external-command-lister-and-adding-ribbon-commands.html)
-- [The Pick Point Methods Throw an Exception on Cancel](http://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html#07)
-- [Never Catch All Exceptions](http://thebuildingcoder.typepad.com/blog/2017/02/revitlookup-using-reflection-for-cross-version-compatibility.html#12)
+- [Fixing RvtMgdDbg for MEP Connectors](0204_rvtmgddbg_mep_connectors.htm)
+- [Duplicate Mark Values](0323_duplicate_mark_values.htm)
+- [Selecting Model Elements](0453_model_elements.htm)
+- [Language Independent Subcategory Creation](0512_lang_indep_subcat.htm)
+- [Exporting Parameter Data to Excel, and Re-importing](0828_export_param_excel.htm)
+- [Parameter DisplayUnitType, Bretagne and Decompilers](0911_displayunittype.htm)
+- [External Command Lister and Adding Ribbon Commands](0947_external_cmd_lister.htm)
+- [The Pick Point Methods Throw an Exception on Cancel](1202_plane_proj_pick.htm#07)
+- [Never Catch All Exceptions](1524_revitlookup_reflect.html#12)
 
 To answer the original [question](#3) raised above: You need to catch and handle (or ignore) the `OperationCanceledException` as shown by Matt.
 
@@ -178,7 +178,7 @@ in [The Building Coder samples](https://github.com/jeremytammik/the_building_cod
 exercise the `PromptForFamilyInstancePlacement` method when it was originally introduced.
 
 It also includes code using the `DocumentChanged` event
-to [retrieve the newly created elements](http://thebuildingcoder.typepad.com/blog/2010/06/place-family-instance.html).
+to [retrieve the newly created elements](0402_place_family_instance.htm).
 
 I updated it to handle the `OperationCanceledException` as shown by Matt 
 in [release 2018.0.132.2](https://github.com/jeremytammik/the_building_coder_samples/releases/tag/2018.0.132.2).

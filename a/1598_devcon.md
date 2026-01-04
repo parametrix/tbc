@@ -62,7 +62,7 @@ My plans changed. For the first time since 2005, I will not be visiting Las Vega
 The most important participants in the Revit API session that I was preparing to host are the members of the Revit development team, anyway.
 
 I very strongly urge you to not miss the chance to attend both AU and the preceding Forge developer conference, though, for all the reasons already pointed out in the article
-on the [Forge DevCon at AU in Darmstadt and Las Vegas](http://thebuildingcoder.typepad.com/blog/2017/09/forge-devcon-at-au-in-darmstadt-and-las-vegas.html).
+on the [Forge DevCon at AU in Darmstadt and Las Vegas](1585_forge_devcon.html).
 
 Here is the latest news to provide that final kick, plus a very few pictures I took during the Forge accelerator last week in Lyon, France:
 

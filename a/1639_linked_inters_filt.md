@@ -28,7 +28,7 @@ Here is a closely related issue with an additional twist
 ### Using Intersection Filter with Linked File
 
 We recently 
-discussed [filtering for intersecting elements](http://thebuildingcoder.typepad.com/blog/2018/03/create-2d-arc-and-filter-for-intersecting-elements.html).
+discussed [filtering for intersecting elements](1632_filter_intersect.html).
 
 Here is a closely related issue with an additional twist that I discussed
 with Gustav Blom, structural engineer at [Rambøll](http://www.ramboll.no) in Norway:
@@ -177,9 +177,9 @@ Is there a simpler way to achieve what I am trying to do, like the `geometry.Doe
 **Answer:** I'll begin with a comment or two on your sample code:
 
 First, it is cleaner and safer and easier to encapsulate transactions in a `using` clause:
-[using `using` automagically disposes and rolls back](http://thebuildingcoder.typepad.com/blog/2012/04/using-using-automagically-disposes-and-rolls-back.html).
+[using `using` automagically disposes and rolls back](0753_dispose_transact_2.htm).
 Refer to The Building Coder topic group for more
-on [handling transactions and transaction groups](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.53).
+on handling transactions and transaction groups *(link unavailable)*.
 
 Secondly, you can access a parameter on an element directly by name.
 
@@ -227,7 +227,7 @@ It is interesting to hear that the intersection works in some cases, but not in 
 
 Maybe that is affecting their transformation in some way.
 
-I recently discussed [filtering for intersecting elements](http://thebuildingcoder.typepad.com/blog/2018/03/create-2d-arc-and-filter-for-intersecting-elements.html) in
+I recently discussed [filtering for intersecting elements](1632_filter_intersect.html) in
 general.
 
 Another, even more relevant discussion

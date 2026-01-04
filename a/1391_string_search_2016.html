@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!---
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -57,14 +88,14 @@ Get in touch if you are interested.</p>
 </li>
 </ol>
 <p>We have already discussed the second question in other threads, and it is addressed in full by The Building Coder topic group
-on <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28">Idling and External Events for Modeless Access and Driving Revit from Outside</a>.</p>
+on <span class="unavailable-link">Idling and External Events for Modeless Access and Driving Revit from Outside</span>.</p>
 <p>The first question is initially very simple, so I can leave it up to you to flesh out.</p>
 <p>Start off by implementing, testing and debugging it in a macro or a simple external command before you even think of driving it programmatically, i.e. addressing question 2.</p>
 <p>I would use one or several filtered element collectors to retrieve all the elements you are interested in and their properties that you wish to extract.</p>
 <p>In the simplest case, it might just be text notes and their visible text strings.</p>
 <p>Possibly you are also interested in other strings that can be found in specific element parameters or elsewhere.</p>
 <p>That should all be pretty simple to determine and access, e.g. using RevitLookup or other,
-more <a href="http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html">intimate database exploration tools</a>.</p>
+more <a href="1057_db_explor_python_sh.htm">intimate database exploration tools</a>.</p>
 <p>Once you have the extraction functionality up and running to your satisfaction, it should be easy to encapsulate that in a stand-alone function and call it from an external event.</p>
 <p><strong>Response</strong> I know how to drive from outside &ndash; I only included that information so that I did not get a solution that provided user interaction.</p>
 <p>I think the RevitLookup may help me &ndash; my biggest issue is that I don't know all the element types that can have visible text.</p>
@@ -82,9 +113,9 @@ more <a href="http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-da
 <p>To determine all element types that have visible text appearing on the display, all I can suggest is creating a collection of a number of super simple sample models that demonstrate and enable you to test the cases that you are aware of up front, and then adding new sample files to that collection as you come across examples of test that they do now cover.</p>
 <p>Trial and error, basically, and gathering experience as you go along.</p>
 <p>You might also be interested in
-the <a href="http://thebuildingcoder.typepad.com/blog/2011/10/string-search-adn-plugin-of-the-month.html">StringSearch Plug-in of the Month utility</a> that
+the <a href="0667_string_search_potm.htm">StringSearch Plug-in of the Month utility</a> that
 I implemented as the  a couple of years ago.</p>
-<p>I later <a href="http://thebuildingcoder.typepad.com/blog/2014/12/devdays-github-stl-and-obj-model-import.html#4">updated and created a GitHub repository</a> for
+<p>I later <a href="1258_devday_git_stl_obj.htm#4">updated and created a GitHub repository</a> for
 it as well.</p>
 <p>It searches for all strings in the model.</p>
 <p>It does not differentiate whether the strings it finds are displayed graphically, though.</p>
@@ -131,3 +162,11 @@ as <a href="https://github.com/jeremytammik/StringSearch/releases/tag/2016.0.0.0
 <img src="img/string_search_2016_result.png" alt="StringSearch results" width="700">
 </center></p>
 <p>I hope you find this useful as well.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

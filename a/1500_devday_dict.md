@@ -91,14 +91,14 @@ Today I discuss upcoming events, new simple samples to embed a Forge viewer in a
 ####<a name="2"></a>DevDay Europe in Munich
 
 Autodesk University ended, and all went well,
-including [the classes I presented](http://thebuildingcoder.typepad.com/blog/2016/10/au-revit-20171-and-rex-freezedrawing.html#2) and
-the [DevDay conference](http://thebuildingcoder.typepad.com/blog/2016/11/devday-conference-at-autodesk-university.html) held
+including [the classes I presented](1493_au_2017_1_sdk_freeze.html#2) and
+the [DevDay conference](1497_au_devday.html) held
 the day before AU proper started:
 
-- [AEC breakout](http://thebuildingcoder.typepad.com/blog/2016/11/devday-conference-at-autodesk-university.html#3)
-    - [Revit API news, roadmap and idea station](http://thebuildingcoder.typepad.com/blog/2016/11/devday-conference-at-autodesk-university.html#4)
-    - [BIM 360](http://thebuildingcoder.typepad.com/blog/2016/11/devday-conference-at-autodesk-university.html#5)
-    - [InfraWorks 360 and Civil 3D](http://thebuildingcoder.typepad.com/blog/2016/11/devday-conference-at-autodesk-university.html#6)
+- [AEC breakout](1497_au_devday.html#3)
+    - [Revit API news, roadmap and idea station](1497_au_devday.html#4)
+    - [BIM 360](1497_au_devday.html#5)
+    - [InfraWorks 360 and Civil 3D](1497_au_devday.html#6)
 
 The next DevDay conference is coming up fast, the one and only European one this year, followed by four days of joint hacking, research and learning, in Munich, Germany:
 
@@ -142,7 +142,7 @@ all further details.
 ####<a name="4"></a>Embedding a Forge Viewer
 
 I repeatedly mentioned
-the recent [BIM and Forge workshop at TuDa](http://thebuildingcoder.typepad.com/blog/2016/11/bimtuda-devdays-forge-news-and-more-events.html).
+the recent [BIM and Forge workshop at TuDa](1495_devdays.html).
 
 Our hosts at the uni there implemented a web page to share the agenda, [www.bim.tu-darmstadt.de](http://www.bim.tu-darmstadt.de).
 
@@ -183,7 +183,7 @@ I used to recommend that earlier as well, and have stopped since learning better
  
 This is extremely important due to issues with worksharing.
  
-Scott Conover explains that very explicitly in his AU class on [add-ins that cooperate with worksharing](http://thebuildingcoder.typepad.com/blog/2014/10/worksharing-and-duplicating-element-geometry.html#2).
+Scott Conover explains that very explicitly in his AU class on [add-ins that cooperate with worksharing](1227_worksharing_dupl_geom.htm#2).
  
 At the same time as the introduction of extensible storage, the `DataStorage` element was introduced.
  
@@ -191,14 +191,14 @@ That is a new Revit database element class whose sole purpose is to host extensi
  
 You can create as many of these as you like, and tag them in any way you like in order to make your one and only or several of them with all the associated element-specific or projectwide data easily accessible.
  
-The Building Coder defines a dedicated topic group on [extensible storage](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23).
+The Building Coder defines a dedicated topic group on extensible storage *(link unavailable)*.
 
 One of its entries actually points to a discussion quite similar to what you are asking for,
-[named GUID storage for project identification](http://thebuildingcoder.typepad.com/blog/2016/04/named-guid-storage-for-project-identification.html).
+[named GUID storage for project identification](1422_named_guid_storage.html).
 All you would need to do to adapt it to your requirements would be to replace the GUID that is stores by a suitable dictionary.
 
 Here is some more on
-the [DataStorage element hosting extensible storage in a worksharing environment](http://thebuildingcoder.typepad.com/blog/2015/02/extensible-storage-in-a-worksharing-environment.html).
+the [DataStorage element hosting extensible storage in a worksharing environment](1278_estorage_worksharing.htm).
 
 **Answer 3:** If worksharing is involved, I agree &nbsp; :-) &nbsp; most of the tools we are involved with would have many serious issues with worksharing, i.e., they are by-design used only for a central-model style workflow.
 
@@ -208,5 +208,5 @@ In any case, if starting from scratch, I agree that `DataStorage` should be used
  
 If Worksharing is to be involved, you should definitely avoid using the `ProjectInfo` instance.
 
-Please refer to [The Building Coder topic group on extensible storage](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23) for more information on it in all its aspects.
+Please refer to The Building Coder topic group on extensible storage *(link unavailable)* for more information on it in all its aspects.
 

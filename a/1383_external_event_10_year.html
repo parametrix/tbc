@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!---
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -49,13 +80,13 @@ the <a href="http://forums.autodesk.com/t5/revit-api/bd-p/160">Revit API discuss
 <p>The number of my forum posts right now is 1366, so it has not yet quite overtaken the number of blog posts, 1383, but it certainly will really soon.</p>
 <h4><a name="2"></a>Use of the Revit API Requires a Valid Context</h4>
 <p>One of the most frequently raised questions around the Revit API
-is <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28">how to drive Revit from outside</a>,
+is <span class="unavailable-link">how to drive Revit from outside</span>,
 e.g., from a separate thread, a modeless dialogue, or a stand-alone executable.</p>
 <p>As an indication of this, The Building Coder defines four different related categories,
-<a href="http://thebuildingcoder.typepad.com/blog/events">events</a>,
-<a href="http://thebuildingcoder.typepad.com/blog/external">external</a>,
-<a href="http://thebuildingcoder.typepad.com/blog/idling">Idling</a> and
-<a href="http://thebuildingcoder.typepad.com/blog/modeless">modeless</a>.</p>
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/events">events <em>(category page)</em></span>,
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/external">external <em>(category page)</em></span>,
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/idling">Idling <em>(category page)</em></span> and
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/modeless">modeless <em>(category page)</em></span>.</p>
 <p>It was raised again just yesterday by Sizy458 in the query on how
 to [call Revit's API from an external thread]:</p>
 <p><strong>Question:</strong> I created a transaction in the event handler for <code>ComponentManager_UIElementActivated</code> raised by a ribbon button.</p>
@@ -69,7 +100,7 @@ to [call Revit's API from an external thread]:</p>
 <p>Such a context is only available within callback methods that you provide to Revit and that Revit calls back when it is ready to accept your input.</p>
 <p>A typical example of such a callback method is the Execute method of an external command.</p>
 <p>The Building Coder provides an overview of the main discussions and explanations related
-to <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28">Idling and external events for modeless access and driving Revit from outside</a>.</p>
+to <span class="unavailable-link">Idling and external events for modeless access and driving Revit from outside</span>.</p>
 <p>You might want to start exploring the links provided there beginning at the end.</p>
 <h4><a name="3"></a>Driving Revit from Outside through an External Event</h4>
 <p>Size458 replied just a few hours later with a perfect summary of a perfect solution:</p>
@@ -117,7 +148,7 @@ to <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28"
 <p>Many thanks Sizy458 for sharing this nice and succinct example of how to address this need.</p>
 <h4><a name="4"></a>Addendum &ndash; Idling versus External Event</h4>
 <p>I added this a day later, prompted
-by <a href="http://thebuildingcoder.typepad.com/blog/2013/12/replacing-an-idling-event-handler-by-an-external-event.html#comment-2402180196">Michael's comment</a>:</p>
+by <a href="1074_roomedit_extern_event.htm#comment-2402180196">Michael's comment</a>:</p>
 <p><strong>Question:</strong> I have an Idling function that checks to see if Revit links have been updated so that I can prompt the user to reload the link if its newer. It works great when there are only a couple of links. More than that and it appears the Idling event will stop and start over, in which case the first idling event never finished so I get a repeating dialog. Do you think this is a problem with the Idling event that it could end and fire again without completing the rest of the code in it? If so I can try changing it to an external event. Thanks.</p>
 <p><strong>Answer:</strong> In general, I recommend not to use the Idling event at all, except for a one-off call.</p>
 <p>If you want to use it for continuous polling, it gives you absolutely no control over the frequency.</p>
@@ -125,6 +156,14 @@ by <a href="http://thebuildingcoder.typepad.com/blog/2013/12/replacing-an-idling
 <p>An external event will give you much more control and flexibility.</p>
 <p>Therefore, I definitely recommend you switch to an external event instead of using Idling.</p>
 <p>That is why I did this myself, as described in the description
-on <a href="http://thebuildingcoder.typepad.com/blog/2013/12/replacing-an-idling-event-handler-by-an-external-event.html">replacing an Idling event handler by an external event</a>.
+on <a href="1074_roomedit_extern_event.htm">replacing an Idling event handler by an external event</a>.
 You can explore
 the <a href="https://github.com/jeremytammik/RoomEditorApp">RoomEditorApp</a> for more details on that.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

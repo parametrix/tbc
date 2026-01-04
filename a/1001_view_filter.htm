@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>View Filter API</h3>
@@ -34,10 +65,10 @@ In Revit 2013 and before, that can only be done manually through the Graphics/Vi
 
 <p><strong>Question 2:</strong> Benson submitted a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/11/visible-elements.html?cid=6a00e553e1689788330133f558bdcc970b#comment-6a00e553e1689788330133f558bdcc970b">
+<a href="0255_visible_elements.htm">
 comment</a> on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/11/visible-elements.html">
+<a href="0255_visible_elements.htm">
 visible elements</a> asking for the same thing:</p>
 
 <p>I can select an element, right click it, select Hide in View &gt; By Filter from the pop-up menu and add a filter to hide it.</p>
@@ -56,7 +87,7 @@ The method FilterRule.ElementPasses can be used to determine if the element is h
 <p><strong>Question 3:</strong> I would like to export only visible objects.
 Using the element IsHidden method reports whether it was hidden using the Hide in View &gt; Elements menu option, but ignores Hide in View filters, and so does the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/11/visible-elements.html">
+<a href="0255_visible_elements.htm">
 IsHiddenElementOrCategory</a> method.</p>
 
 <p>How can my application determine exactly what the user actually sees on the screen?
@@ -79,7 +110,7 @@ Our customers obviously expect this functionality for the export.</p>
 
 <p>This gap was addressed in the Revit 2014 API, and the documentation highlights the new functionality like this in the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html">
+<a href="0938_whats_new_2014.htm">
 What's New</a> section:</p>
 
 <h4 style="color: darkblue">View Filters</h4>
@@ -94,3 +125,12 @@ Filters can be created using the ParameterFilterElement class and its Create met
 <li>View.SetFilterVisibility()</li>
 <li>View.SetFilterOverrides()</li>
 </ul>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

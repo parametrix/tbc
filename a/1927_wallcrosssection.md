@@ -38,7 +38,7 @@ Breaking news from the Revit development team:
 ####<a name="2"></a> WallCrossSection versus WallCrossSectionDefinition
 
 Last week, we mentioned the unfortunate breaking change inadvertently introduced with the Revit 2022.1 API update
-by [renaming `WallCrossSection` to `WallCrossSectionDefinition`](https://thebuildingcoder.typepad.com/blog/2021/11/revit-20221-sdk-revitlookup-build-and-install.html#3) and
+by [renaming `WallCrossSection` to `WallCrossSectionDefinition`](1925_2022_1_bld_inst_dev.html#3) and
 suggested a fix for the `BuiltInParameterGroup` enumeration value.
 
 Here is the workaround suggested by the development team to also address the `ForgeTypeId` modification to support both versions of the API:

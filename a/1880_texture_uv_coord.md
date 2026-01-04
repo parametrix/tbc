@@ -61,7 +61,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 on [`IExportContext` converting `UV` to the range (0,1)](https://forums.autodesk.com/t5/revit-api-forum/revit-api-iexportcontext-converting-uv-to-the-range-0-1/m-p/9908386).
 
 Back then, I summarised and preserved the initial part of this discussion in the blog post discussion
-on [normalising UVs in custom exporter](https://thebuildingcoder.typepad.com/blog/2020/07/revit-20211-update-and-normalising-custom-export-uv.html#3).
+on [normalising UVs in custom exporter](1855_rvt_2021_1.html#3).
 
 Now Jason expanded on the question, the Revit development team admitted to the dearth of information in this area,
 provided some hints, and, above all,
@@ -78,7 +78,7 @@ My questions are:
 To give a concrete example: say I have a texture of size 4096x4096, the corresponding UV data I read in IExportContext is around 25, and the RealWorldScale from the UnifiedBitmapAsset is about 141.
 I cannot seem to be able to discern a formula or something...
 
-The Building Coder article on [Faces](https://thebuildingcoder.typepad.com/blog/2010/01/faces.html) helps somewhat.
+The Building Coder article on [Faces](0286_abg05_faces.htm) helps somewhat.
 
 However, it explains UV as two variables that parameterize a face, but they are related to the structure of the face in 3D space, not how each vertex of the face is mapped to the bitmap.
 I'd appreciate it very much if you can elaborate on this, that is, how can I convert the `UV` coordinates returned by `PolymeshTopology.GetUV` to pixel coordinate on the image or in the range (0,1).
@@ -101,7 +101,7 @@ The AssetPropertyDistance class actually has a DisplayUnitType property, which s
 
 After that, the UV coordinates can be scaled to the range [0,1] or whatever.
 
-This approach was preserved by The Building Coder in the note  on [normalising UVs in custom exporter](https://thebuildingcoder.typepad.com/blog/2020/07/revit-20211-update-and-normalising-custom-export-uv.html#3).
+This approach was preserved by The Building Coder in the note  on [normalising UVs in custom exporter](1855_rvt_2021_1.html#3).
 
 **Question:** Jason's follow-up request for more details that Richard helps resolve:
 

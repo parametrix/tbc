@@ -115,8 +115,8 @@ the [Structured Storage Viewer](http://www.mitec.cz/ssv.html).
 The Revit API does not support them in any way whatsoever.
 
 The Building Coder showed how to access them using other means, e.g., Python and .NET, respectively, in the discussions
-on [RVT File Version](http://thebuildingcoder.typepad.com/blog/2008/10/rvt-file-version.html)
-and [Open Revit OLE Storage](http://thebuildingcoder.typepad.com/blog/2010/06/open-revit-ole-storage.html).
+on [RVT File Version](0023_rvt_file_version.htm)
+and [Open Revit OLE Storage](0391_open_ole_storage.htm).
 
 Rod Howarth published a more extensive example
 on [how to set custom file properties and attributes in C# .NET](http://blog.rodhowarth.com/2008/06/how-to-set-custom-attributes-file.html).

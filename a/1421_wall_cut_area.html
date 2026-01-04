@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!--
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -16,9 +47,9 @@ We looked at calculating gross and net wall areas last year, with a later enhanc
 
 <h3>Determining Wall Cut Area for a Specific Room</h3>
 <p>We looked
-at <a href="http://thebuildingcoder.typepad.com/blog/2015/03/calculating-gross-and-net-wall-areas.html">calculating gross and net wall areas</a> last
+at <a href="1296_spatial_calculator.htm">calculating gross and net wall areas</a> last
 year, with a later enhancement to
-use <a href="http://thebuildingcoder.typepad.com/blog/2015/03/ifcexportutils-methods-determine-door-and-window-area.html">IFCExportUtils to determine the door and window area</a>,
+use <a href="1298_door_window_area.htm">IFCExportUtils to determine the door and window area</a>,
 resulting in the two respective projects and GitHub repositories:</p>
 <ul>
 <li><a href="https://github.com/jeremytammik/SpatialElementGeometryCalculator">SpatialElementGeometryCalculator</a></li>
@@ -29,18 +60,18 @@ resulting in the two respective projects and GitHub repositories:</p>
 <p>Here are some additional aspects brought up by <a href="#2">Arif</a>, <a href="#3">Miroslav</a> and <a href="#4">Håvard</a>:</p>
 <h4><a name="2"></a>Arif</h4>
 <p>Arif Hanif explored the use the spatial geometry calculator and noted in
-a <a href="http://thebuildingcoder.typepad.com/blog/2015/03/findinserts-retrieves-all-openings-in-all-wall-types.html#comment-2424158731">comment on FindInserts retrieving openings</a> that
+a <a href="1297_host_find_inserts.htm#comment-2424158731">comment on FindInserts retrieving openings</a> that
 it <strong>does</strong> in fact return the subface linked instance element ids. You have to set the <code>SpatialElementBoundaryLocation = SpatialElementBoundaryLocation.Center</code> to close the geometry, and it does not work for Finish.</p>
 <p>More significantly, he explored the subface issue in
-a <a href="http://thebuildingcoder.typepad.com/blog/2015/01/getting-the-wall-elevation-profile.html#comment-2567466439">comment on getting the wall elevation profile</a>
-(<a href="http://thebuildingcoder.typepad.com/blog/2015/01/getting-the-wall-elevation-profile.html#comment-2570111596">image</a>):</p>
+a <a href="1271_wall_elevation_profile.htm#comment-2567466439">comment on getting the wall elevation profile</a>
+(<a href="1271_wall_elevation_profile.htm#comment-2570111596">image</a>):</p>
 <p><strong>Question:</strong> I am working on an interesting problem, which I have been trying to see if anyone else has been solving. I tried searching your blog and Internet (Revit API forum) but did not see it come up. I need to determine the vertices of an embedded wall returned by FindInserts part of a spatial geometry calculator return. I have the edge and curve loops of the wall in the spaces creating the bounding element. I have used <code>SpatialElementBoundarySubface</code> to return the bounding element and determined the id of the embedded wall in this case a curtain wall. The issue I am running into is that the geometry of the embedded wall spans multiple spaces and have not figured out how to determine only the portion of the embedded wall that belongs to the spatial element boundary. As I read more seems maybe the reference intersector class might be something I look at, any recommendations on your end would be greatly appreciated.</p>
 <p><center>
 <img src="img/room_surface_area_02.png" alt="Subfaces in different spaces" width="400">
 </center></p>
 <p>Solve for the shaded curtain wall vertices.</p>
 <p><strong>Answer:</strong> It looks to me as if one way to go would be to project all the relevant elements onto the wall plane to convert the problem to a two-dimensional one, and then use 2D Boolean operations on the partial surfaces to determine their intersections and overlap.</p>
-<p>Look at The Building Coder topic group on <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.2">2D Booleans and Adjacent Areas</a>.</p>
+<p>Look at The Building Coder topic group on <span class="unavailable-link">2D Booleans and Adjacent Areas</span>.</p>
 <h4><a name="3"></a>Miroslav</h4>
 <p>Miroslav Schonauer adds:</p>
 <p>I’ve been playing with <code>SpatialElementGeometryCalculator</code> and <code>SpatialElementGeometryResults</code> in order to retrieve room bounding surfaces for a project to apply finishes.</p>
@@ -53,7 +84,7 @@ My aim is to get the <em>net</em> wall face geometries rather than <em>gross</em
 <p>A solution for <em>planar</em> faces can be implemented but requires some complex geometrical manipulation based on the full wall geometry and the subfaces obtainable via <code>SpatialElement*</code>.</p>
 <h4><a name="4"></a>Håvard</h4>
 <p>Håvard Dagsvik explored this issue further and implemented solutions to address several of these needs after raising the issue in
-a <a href="http://thebuildingcoder.typepad.com/blog/2015/03/calculating-gross-and-net-wall-areas.html#comment-2531680684">comment on calculating gross and net wall areas</a>:</p>
+a <a href="1296_spatial_calculator.htm#comment-2531680684">comment on calculating gross and net wall areas</a>:</p>
 <p><strong>Question:</strong> Right now I am getting the opening area from built-in height and width parameters.</p>
 <p>But it's not ideal, as doors are made in different ways.</p>
 <p>In theory the opening could be any kind of family instance. And sometimes it only partially cuts the wall, e.g. in a stacked wall.
@@ -75,17 +106,17 @@ But I think gbXML only calculates at the wall centreline. (Fine for opening area
 <p>Some Boolean subtraction trick using transient solids from the actual wall residing in the family document. A bit like the temp transaction only using transient family document geometry. But as I realize just now you would also have to set the correct family symbol active first.</p>
 <p><strong>Answer:</strong> Yes, things are a bit complicated.</p>
 <p>If you put in enough effort, I think you can catch and
-automatically <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.32">handle any kind of warning message that can ever comes up</a>.</p>
+automatically <span class="unavailable-link">handle any kind of warning message that can ever comes up</span>.</p>
 <p>Regarding bits sticking out from the wall, you can always reduce the problem to a much simpler two-dimensional issue by projecting everything onto the wall plane.</p>
-<p>The <a href="http://thebuildingcoder.typepad.com/blog/2013/04/extrusion-analyser-and-plan-view-boundaries.html">ExtrusionAnalyzer class</a> can help with that.</p>
-<p>A <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.2">2D Boolean library</a> might also come in handy.</p>
+<p>The <a href="0921_extrusion_analyser.htm">ExtrusionAnalyzer class</a> can help with that.</p>
+<p>A <span class="unavailable-link">2D Boolean library</span> might also come in handy.</p>
 <p>I assume that the gbXML functionality does use that kind of functionality, since you say it works in the wall centre line.</p>
 <p><strong>Response:</strong> I found that using solid manipulation worked better for me than temporary transactions.</p>
 <p>Especially when the opening is an embedded curtain wall spanning multiple rooms and stories.</p>
 <p>So I intersect a curtain wall solid with the room solid, where the intersected solid holds the opening area for that specific room.</p>
 <p>I also used more of the <code>IFCUtils</code> classes from Angel's team, and one of your methods from The Building Coder to retrieve the wall profile.</p>
 <p>Modified to include non-visible objects in order
-to <a href="http://thebuildingcoder.typepad.com/blog/2010/05/curtain-wall-geometry.html">get 'invisible' curtain wall geometry</a>,
+to <a href="0374_curtain_wall_geometry.htm">get 'invisible' curtain wall geometry</a>,
 also based on one of your suggestions in another case.</p>
 <p>Here is a small example on how I achieve this:</p>
 <pre class="code">
@@ -186,3 +217,11 @@ and it is integrated into the current <a href="https://github.com/jeremytammik/S
 <p>Please feel free to fork, explore, enhance and issue pull requests back.</p>
 <p>Many thanks to everybody for their valuable contributions, especially Håvard for sharing this solution!</p>
 <p>Happy weekend to all!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

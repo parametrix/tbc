@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>OBJ Model Exporter Take One</h3>
@@ -32,7 +63,7 @@ In the summer of 2003, the firn fields, which can be seen from far away, became 
 Right now they are covered again  :-)
 
 <p>The weather was fantastic on the summit, although it looked as if all the rest of the country including all other mountains were covered in clouds.
-Here is a view of the descent afterwards back down over the Gl�rnischfirn glacier
+Here is a view of the descent afterwards back down over the Gl�rnischfirn glacier
 
 (<a href="https://plus.google.com/photos/104316998805199988071/albums/5757979017881867041?authkey=CJjvrdzk5LCbwgE">more photos</a>):</p>
 
@@ -67,9 +98,9 @@ the final version of the AEC DevCamp 2012 material is now available and has been
 <p>For more information on the content, please refer to 
 
 <ul>
-<li>The <a href="http://thebuildingcoder.typepad.com/blog/2012/06/aec-devcamp-2012-material.html">overview of the five tracks and the classes in each</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/06/devcamp-day-one.html">Day one</a> of the Revit advanced track
-<li>Most of <a href="http://thebuildingcoder.typepad.com/blog/2012/06/devcamp-day-two.html">day two</a> of the Revit advanced track
+<li>The <a href="0786_aec_devcamp_mat.htm">overview of the five tracks and the classes in each</a>
+<li><a href="0778_devcamp_day_1.htm">Day one</a> of the Revit advanced track
+<li>Most of <a href="0779_devcamp_day_2.htm">day two</a> of the Revit advanced track
 <li>The <a href="http://adndevblog.typepad.com/files/aec-devcamp-2012---list-of-classes-final2-1.pdf">complete list of classes and course descriptions</a>
 </ul>
 
@@ -93,7 +124,7 @@ No big surprise, of course.
 
 <p>To 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/04/migrate-building-coder-samples-to-revit-2013.html">
+<a href="0751_bc_migr_2013.htm">
 obtain a one-box version</a>, 
 
 I went for the ultimate design suite, which requires downloading seven 4 GB files for a grand total of 27.3 GB.
@@ -136,7 +167,7 @@ Very time consuming business, this.
 
 <p>As I explained yesterday in the basic
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/getting-going-with-the-cloud.html">
+<a href="0790_getting_going_cloud.htm">
 Revit model export considerations</a>,
 
 the purpose of this exercise is to push Revit model data up to the cloud and provide access to it from mobile devices.
@@ -199,17 +230,17 @@ I would have liked to define the count methods as simple properties instead, but
 
 <p>The OBJ exporter class implementing this interface makes use of the vertex lookup dictionaries that I discussed yesterday to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/obj-model-export-considerations.html#5">
+<a href="0791_obj_export_basics.htm#5">
 eliminate duplicate vertices</a>.
 
 Initially I used the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/obj-model-export-considerations.html#6">
+<a href="0791_obj_export_basics.htm#6">
 XYZ-based lookup class</a>, and 
 
 later I switched to the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/obj-model-export-considerations.html#7">
+<a href="0791_obj_export_basics.htm#7">
 integer-based one</a> instead.
 
 <p>The exported implements the four methods required by the interface definition plus a fifth method to save the resulting file:
@@ -689,3 +720,12 @@ Again, using rac_advanced_sample_project.rvt, the result looks like this:</p>
 <p>As you can see in both of these cases, the number of faces is significantly higher than the number of vertices.
 Just imagine what the number of vertices and resulting file size would be like if I had not gone to the effort of eliminating duplicate vertices.
 The vertex count would simply have been three times the triangle count in both cases, i.e. 82 * 3 = 246 instead of 43, a factor of 5.72, and 163964 * 3 = 491892 instead of 86527, a factor of 5.68.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

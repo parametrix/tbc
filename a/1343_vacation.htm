@@ -1,9 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equicenter="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <style type="text/css">p.en { font-style: italic; }</style>
 <script src="google-code-prettify/run_prettify.js"></script>
 <!-- <script src="http://thebuildingcoder.typepad.com/google-code-prettify/run_prettify.js"></script> -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -73,19 +104,19 @@ The Revit API does not provide any specific support for this.</p>
 <p>Also, I am not sure whether it will help you users if you modify the behaviour of the standard Revit user interface.
 I would suggest always working with the system, not against it.
 Note that
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.41">
-Revit has a very clear idea of best practice and optimal workflows</a>.</p>
+<span class="unavailable-link">
+Revit has a very clear idea of best practice and optimal workflows</span>.</p>
 
 <p>Still, there is nothing to stop you from using the Windows and .NET API to determine the single and double clicks and doing whatever you like with them.</p>
 
 <p>However, always be aware that you need to be inside a valid Revit API context to make calls to the Revit API.</p>
 
 <p>If you use the Windows API to determine a mouse click, you will not be in a valid Revit API context; you will basically be in a
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28">
-modeless context and driving Revit from outside</a> if you wish to access the API.</p>
+<span class="unavailable-link">
+modeless context and driving Revit from outside</span> if you wish to access the API.</p>
 
 <p>It is possible to determine what element is under the mouse cursor, once you have access to Revit API functionality, e.g., using the
-<a href="http://thebuildingcoder.typepad.com/blog/2012/10/uiview-windows-coordinates-referenceintersector-and-my-own-tooltip.html">UIView, Windows coordinates and ReferenceIntersector</a>.</p>
+<a href="0840_wincoord_tooltip.htm">UIView, Windows coordinates and ReferenceIntersector</a>.</p>
 
 <p>Good luck playing with this!</p>
 
@@ -111,8 +142,8 @@ I think you are absolutely on the right track.</p>
 <p>You are apparently missing one really fundamental important piece, though:</p>
 
 <p>The
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.31">
-dynamic model updater or DMU</a> interaction
+<span class="unavailable-link">
+dynamic model updater or DMU</span> interaction
 happens in the same transaction as the operation that triggers it.</p>
 
 <p>The document changed event is called after the transaction has been closed.</p>
@@ -122,13 +153,13 @@ happens in the same transaction as the operation that triggers it.</p>
 <p>If you need to collect information from both of these events &ndash; which you apparently do &ndash; you certainly can, no problem whatsoever.</p>
 
 <p>One possibility to afterwards process and save this info in parameters on the modified and copied elements would be to temporarily subscribe to the
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28">
-Idling event</a>.</p>
+<span class="unavailable-link">
+Idling event</span>.</p>
 
 <p>In the Idling event handler, you can modify the model again as you wish, i.e., save your data, and also immediately unsubscribe from the Idling event again.</p>
 
 <p>Here is a dedicated discussion on
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/documentchanged-versus-dynamic-model-updater.html">
+<a href="0783_doc_change_dmu.htm">
 DocumentChanged versus dynamic model updater</a>.</p>
 
 
@@ -179,11 +210,11 @@ Here is a solution for create a floor from points:</p>
 </pre>
 
 <p>Note that the document modification happens within a transaction, and the transaction is encapsulated in and handled by a <code>using</code> statement, because
-<a href="http://thebuildingcoder.typepad.com/blog/2012/04/using-using-automagically-disposes-and-rolls-back.html">
+<a href="0753_dispose_transact_2.htm">
 using <code>using</code> automagically disposes and rolls back</a>.</p>
 
 <p>The Building Coder provides a similar method to
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/create-a-filled-region-to-use-as-a-mask.html">
+<a href="0978_create_filled_region.htm">
 create a FilledRegion</a>.</p>
 
 <p>You have a quite large number of options, really.</p>
@@ -191,17 +222,17 @@ create a FilledRegion</a>.</p>
 <p>It depends on what you really need, of course.</p>
 
 <p>You can also start by looking at the
-<a href="http://thebuildingcoder.typepad.com/blog/2009/07/revit-form-creation-api.html">
+<a href="0179_form_creation.htm">
 form creation API</a>.</p>
 
 <p>That is pretty old, though.</p>
 
 <p>The newest and maybe easiest option might be
-<a href="http://thebuildingcoder.typepad.com/blog/2015/02/from-hack-to-app-obj-mesh-import-to-directshape.htm">
-using the DirectShape element</a>.</p>
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/2015/02/from-hack-to-app-obj-mesh-import-to-directshape.htm">
+using the DirectShape element <em>(post unavailable)</em></span>.</p>
 
 <p>Nowadays,
-<a href="http://thebuildingcoder.typepad.com/blog/2015/07/intersect-solid-filter-avf-and-directshape-for-debugging.html#5">
+<a href="1340_inters_solid_filt.htm#5">
 DirectShape is one of the easiest methods to create and visualise geometry</a> in a Revit model.</p>
 
 <p>So maybe I would actually start by looking at that.</p>
@@ -220,7 +251,7 @@ DirectShape is one of the easiest methods to create and visualise geometry</a> i
 <a href="https://twitter.com/jeremytammik">@jeremytammik</a>
 <a href="https://twitter.com/hashtag/revit">#Revit</a> API
 example for automating door fire rating parameters from a database
-<a href="http://thebuildingcoder.typepad.com/blog/2015/07/grevit-firerating-in-the-cloud-demo-deployment-vacation.html#2">
+<a href="1342_firerating_cloud.htm#2">
 FireRating in the Cloud</a></p>
 <p>@jeremytammik your fire rating db gives me so many ideas for future api projects, thanks!!</p>
 </blockquote>
@@ -242,3 +273,12 @@ FireRating in the Cloud</a></p>
 <p>I'll be away on vacation for the next few weeks, relaxing in Switzerland and climbing another mountain or two, hopefully.</p>
 
 <p>I wish you a wonderful summer!</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

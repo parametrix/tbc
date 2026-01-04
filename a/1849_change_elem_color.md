@@ -51,7 +51,7 @@ The question of how to change the colour and material of individual elements has
 ####<a name="2"></a> Change Element Colour in a View
 
 We discussed
-how to [change element colour](https://thebuildingcoder.typepad.com/blog/2011/03/change-element-colour.html) way
+how to [change element colour](0561_change_element_colour.htm) way
 back in 2011.
 The principle remains unchanged, but some API details have changed a bit since then.
 

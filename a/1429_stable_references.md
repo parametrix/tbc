@@ -455,7 +455,7 @@ I am currently using the active view's detail level in my geometry options. For 
 #### <a name="6"></a>Reformat Stable Representation String for Dimensioning
 
 Joshua Lumley added an important note on using the stable references to create dimensioning in
-his [comment below](http://thebuildingcoder.typepad.com/blog/2016/04/stable-reference-string-magic-voodoo.html#comment-4068022721):
+his [comment below](1429_stable_references.html#comment-4068022721):
 
 When creating dimensions based on objects from linked files, you may see an error message saying *Invalid number of references*.
 
@@ -476,7 +476,7 @@ Many thanks to Joshua for pointing it out!
 #### <a name="7"></a>Handle Element Category Override
 
 Mustafa Khalil invested some research in this and added
-another [comment below](https://thebuildingcoder.typepad.com/blog/2016/04/stable-reference-string-magic-voodoo.html#comment-4710182554),
+another [comment below](1429_stable_references.html#comment-4710182554),
 explaining:
 
 I played with this for a while and was impressed with this detailed study.

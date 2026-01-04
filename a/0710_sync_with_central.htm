@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">â† Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 05911610 [Synchronize with central through API?] -->
@@ -15,7 +46,7 @@ White Arkitketer AB</a>,
 
 and he tested and verified that yet another risky workaround can be used to achieve this, as always 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/closing-the-active-document-and-why-not-to.html#3">
+<a href="0456_close_active_doc.htm#3">
 at your own peril</a>.
 
 <p><strong>Question:</strong> I have a worksharing project in which I am trying to open a file, make changes, synchronize the changes to the central file and then close the file. 
@@ -33,7 +64,7 @@ But that doesn't relinquish the elements changed.
 
 <p>I looked at your two year old post on auto-confirming a save dialogue by 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/06/autoconfirm-save-using-dialogboxshowing-event.html">
+<a href="0151_auto_confirm_save.htm">
 subscribing to the DialogboxShowingEvent</a>. 
 
 <p>Could this also be used to auto-confirm the synchronize with central dialog box that I can bring up using the API?
@@ -42,12 +73,12 @@ subscribing to the DialogboxShowingEvent</a>.
 
 <p>The old method that was already available in Revit 2010 was to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/06/autoconfirm-save-using-dialogboxshowing-event.html">
+<a href="0151_auto_confirm_save.htm">
 use the DialogBoxShowing event</a>, as you discovered, which can be used to dismiss a dialogue programmatically.
 
 <p>The Revit 2011 API also includes a comprehensive 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/failure-api.html">
+<a href="0350_failure_api.htm">
 failure processing API</a> which 
 
 can used to do much more than reacting to the DialogBoxShowing event.
@@ -55,7 +86,7 @@ can used to do much more than reacting to the DialogBoxShowing event.
 
 <p>If all else fails and you just want to get rid of the dialogue box by any means, you can also use the Windows API to detect when it is displayed and dismiss it using my 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/10/dismiss-dialogue-using-windows-api.html">
+<a href="0229_dialogue_clicker.htm">
 dialogue clicker application</a>.
 
 <p>In all three cases, you have to invest some research of your own to discover (in the debugger) what exact conditions you can use to reliably determine that the dialogue that is popping up really is the one you are interested in. 
@@ -66,21 +97,21 @@ The approaches for that are described in the blog posts.
 <p><strong>Response:</strong> Success!
 
 <!--
-<p>Tänkte bara uppdatera dig om mitt ärende med att utföra en "synchronize with central" via ett externt commando i APIt.
+<p>Tï¿½nkte bara uppdatera dig om mitt ï¿½rende med att utfï¿½ra en "synchronize with central" via ett externt commando i APIt.
 
-<p>Jag äntligen lyckats! Jag snubblade på lösningen på din blogg. Även om du då beskrev hur man skulle kunna stänga det aktiva dokumenet genom att använda SendKeys-klassen i en separat tråd.
+<p>Jag ï¿½ntligen lyckats! Jag snubblade pï¿½ lï¿½sningen pï¿½ din blogg. ï¿½ven om du dï¿½ beskrev hur man skulle kunna stï¿½nga det aktiva dokumenet genom att anvï¿½nda SendKeys-klassen i en separat trï¿½d.
 
-<p>I princip så kör jag detta och lyckas trigga igång en synchronisering:
+<p>I princip sï¿½ kï¿½r jag detta och lyckas trigga igï¿½ng en synchronisering:
 
-<p>Frågan är nu bara vad du tror om det? 
-Eftersom man egentligen bara använder "UI-funktionalitet" så borde det väl vara ganska säkert?
+<p>Frï¿½gan ï¿½r nu bara vad du tror om det? 
+Eftersom man egentligen bara anvï¿½nder "UI-funktionalitet" sï¿½ borde det vï¿½l vara ganska sï¿½kert?
 
-<p>Allt är väl mer eller mindre relativt osäkert när man "lurar" APIt såhär?
+<p>Allt ï¿½r vï¿½l mer eller mindre relativt osï¿½kert nï¿½r man "lurar" APIt sï¿½hï¿½r?
 -->
 
 I used your solution to close the active document by 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/closing-the-active-document-and-why-not-to.html">
+<a href="0456_close_active_doc.htm">
 executing a SendKeys call</a> in 
 
 a separate thread.
@@ -100,7 +131,7 @@ a separate thread.
 
 <p><strong>Answer:</strong> Well, you should definitely pay close attention to the warnings of Arno&scaron;t L&ouml;bel, voiced in various blog posts, including the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/closing-the-active-document-and-why-not-to.html#3">
+<a href="0456_close_active_doc.htm#3">
 disclaimer</a> on
 
 the very post you found, and yet again in all clarity in his class on this topic at Autodesk University 2011,
@@ -112,8 +143,8 @@ on asynchronous interactions and managing modeless UI, which would be well worth
 
 <p>Maybe using 
 
-<a href="http://thebuildingcoder.typepad.com/blog/automation">
-UI Automation</a> instead 
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/automation">
+UI Automation <em>(category page)</em></span> instead 
 
 might possibly be a slightly safer bet, since I heard rumours that the addressee of the SendKeys messages may sometimes get confused.
 
@@ -122,3 +153,12 @@ In order to make this as safe as possible, I execute it during an idling event t
 I also subscribe to the DocumentSynchronizedWithCentral to make sure that the document was synchronized. 
 
 <p>I attended Arno&scaron;t's class during AU so I am very cautious with non-supported API-calls.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">â† Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

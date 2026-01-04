@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <title>The Building Coder</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" type="text/css" href="3dwc.css"/>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true" defer="defer"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -67,19 +98,19 @@ the <a href="http://autodeskforge.devpost.com">Autodesk App Store Forge and Fusi
 adding a few simple enhancements in order to demonstrate interactive movement of BIM element instances in the Forge viewer and updating the Revit model accordingly in real time via a <code>socket.io</code> broadcast.</p>
 <p>The additional enhancements include:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/09/warning-swallower-and-roomedit3d-viewer-extension.html#3">Adding a viewer <code>transform</code> extension</a>.</li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/10/retrieving-and-broadcasting-the-roomedit3dv3-translation.html">Retrieving and broadcasting the affected element <code>UniqueId</code> and translation</a> via <code>socket.io</code>.</li>
+<li><a href="1476_roomedit3d_forge_warn.html#3">Adding a viewer <code>transform</code> extension</a>.</li>
+<li><a href="1478_roomedit3d_broadcast.html">Retrieving and broadcasting the affected element <code>UniqueId</code> and translation</a> via <code>socket.io</code>.</li>
 </ul>
 <p>I created a new Forge app for the production version, set up its <code>PROD</code> environment and deployed to <a href="http://heroku.com">Heroku</a> with no major issues.</p>
 <p>Everything went well, as you can see below in my description of the <a href="#3">Revit add-in adaptation</a> and <a href="#4">test run</a>.</p>
 <p>Here is are all the nitty-gritty details on choosing a suitable starting point and adapting the boilerplate code for my needs:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/09/roomedit3d-update-for-connecting-desktop-and-forge.html">Roomedit3d Update for Connecting Desktop and Forge</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/09/forge-webinar-series-and-more-roomedit-starting-point-samples.html#2">More Roomedit3dv3 Starting Points</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/09/the-birth-of-roomedit3dv3-and-forge-webinar-series.html#2">The Birth of Roomedit3dv3</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/09/roomedit3d-broadcast-teigha-bim-and-forge-webinar-3.html#2">REST vs WebSocket and Roomedit3dv3 Broadcast Architecture</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/09/warning-swallower-and-roomedit3d-viewer-extension.html#3">Roomedit3dv3 Transform Viewer Extension</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/10/retrieving-and-broadcasting-the-roomedit3dv3-translation.html">Retrieving and Broadcasting the Roomedit3dv3 Translation</a></li>
+<li><a href="1471_roomedit3d_forge.html">Roomedit3d Update for Connecting Desktop and Forge</a></li>
+<li><a href="1472_roomedit3d_forge.html#2">More Roomedit3dv3 Starting Points</a></li>
+<li><a href="1473_roomedit3d_forge.html#2">The Birth of Roomedit3dv3</a></li>
+<li><a href="1475_roomedit3d_forge.html#2">REST vs WebSocket and Roomedit3dv3 Broadcast Architecture</a></li>
+<li><a href="1476_roomedit3d_forge_warn.html#3">Roomedit3dv3 Transform Viewer Extension</a></li>
+<li><a href="1478_roomedit3d_broadcast.html">Retrieving and Broadcasting the Roomedit3dv3 Translation</a></li>
 </ul>
 <p>Now that the web server part is complete, let's test it from Revit:</p>
 <h4><a name="3"></a>RoomEditorApp Revit Add-in Update</h4>
@@ -149,7 +180,7 @@ version <a href="https://github.com/jeremytammik/Roomedit3dApp/releases/tag/2017
  <img alt="roomedit3dv3 demonstration" src="http://thebuildingcoder.typepad.com/.a/6a00e553e16897883301b8d2249fe3970c-800wi" width="640" height="360" title="No video playback capabilities, please download the video below" />
 </video>
 <p>
- <strong>Download video:</strong> <a href="http://thebuildingcoder.typepad.com/roomedit3dv3.mp4">MP4 format</a> | <a href="http://thebuildingcoder.typepad.com/roomedit3dv3.ogv">Ogg format</a> | <a href="http://thebuildingcoder.typepad.com/roomedit3dv3.webm">WebM format</a>
+ <strong>Download video:</strong> <span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/roomedit3dv3.mp4">MP4 format</span> | <span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/roomedit3dv3.ogv">Ogg format</span> | <span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/roomedit3dv3.webm">WebM format</span>
 </p>
 -->
 
@@ -191,3 +222,11 @@ each consisting of two components, a C# .NET Revit API desktop add-in and a web 
   to demonstrate translation of BIM element instances in the viewer and updating the Revit model in real time via a <code>socket.io</code> broadcast.</li>
 </ul>
 <p>All is still looking good so far.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

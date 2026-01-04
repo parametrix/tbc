@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -51,7 +82,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 <p>In Revit 2019, this method no longer works.</p>
 <ul>
 <li><code>TransmissionData</code> <code>GetAllExternalFileReferenceIds</code>, used in the sample
-to <a href="http://thebuildingcoder.typepad.com/blog/2011/05/list-linked-files-and-transmissiondata.html">list linked files and <code>TransmissionData</code></a>,
+to <a href="0583_list_links.htm">list linked files and <code>TransmissionData</code></a>,
 does not report links hosted in BIM360.
 It reports local files that are linked only.
 This is an old sample.</li>
@@ -172,9 +203,9 @@ command <a href="https://github.com/jeremytammik/the_building_coder_samples/blob
 in <a href="https://github.com/jeremytammik/the_building_coder_samples/releases/tag/2020.0.146.0">release 2020.0.146.0</a></p>
 <h4><a name="3"></a> Retrieve RVT Preview Thumbnail Image with Python</h4>
 <p>Franco Tonutti researched and solved how to retrieve the RVT preview thumbnail image with Python
-in <a href="https://thebuildingcoder.typepad.com/blog/2017/06/determining-rvt-file-version-using-python.html#comment-4484205626">his</a>
-<a href="https://thebuildingcoder.typepad.com/blog/2017/06/determining-rvt-file-version-using-python.html#comment-4486812442">comments</a>
-on <a href="https://thebuildingcoder.typepad.com/blog/2017/06/determining-rvt-file-version-using-python.html">determining the RVT file version using Python</a></p>
+in <a href="1570_rvt_version_py.html#comment-4484205626">his</a>
+<a href="1570_rvt_version_py.html#comment-4486812442">comments</a>
+on <a href="1570_rvt_version_py.html">determining the RVT file version using Python</a></p>
 <p><strong>Question:</strong> Hi Jeremy, how can I get the preview image of a .rfa file?</p>
 <p>I'm trying the following without success:</p>
 <pre class="prettyprint">
@@ -199,11 +230,11 @@ on <a href="https://thebuildingcoder.typepad.com/blog/2017/06/determining-rvt-fi
 <p><strong>Answer:</strong> I have not looked into this for a while.</p>
 <p>Please take a look at the other explorations reading RVT files without using the Revit API:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/06/open-revit-ole-storage.html">Open Revit OLE Storage</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/01/basic-file-info-and-rvt-file-version.html">Basic File Info and RVT File Version</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2015/09/lunar-eclipse-and-custom-file-properties.html#3">Custom File Properties</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/02/reading-an-rvt-file-without-revit.html">Reading an RVT File without Revit</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/06/determining-rvt-file-version-using-python.html">Determining RVT File Version Using Python</a></li>
+<li><a href="0391_open_ole_storage.htm">Open Revit OLE Storage</a></li>
+<li><a href="0887_rvt_file_version.htm">Basic File Info and RVT File Version</a></li>
+<li><a href="1363_custom_file_prop.html#3">Custom File Properties</a></li>
+<li><a href="1407_read_rvt_without_revit.html">Reading an RVT File without Revit</a></li>
+<li><a href="1570_rvt_version_py.html">Determining RVT File Version Using Python</a></li>
 </ul>
 <p><strong>Response:</strong> Thank you very much.</p>
 <p>I solved the problem by looking for
@@ -239,7 +270,7 @@ def get_rvt_preview(rvt_file, png_path):
 <h4><a name="4"></a> Paolo's Dynamo Primer and Slide Deck Compendium</h4>
 <p>I already mentioned
 Paolo Serra's <a href="https://primer.dynamobim.org">Dynamo Primer</a>
-discussing <a href="https://thebuildingcoder.typepad.com/blog/2018/12/dynamo-symbol-vs-type-and-exporter-exception.html#2">Revit API versus Dynamo for Revit</a>.</p>
+discussing <a href="1710_dynamo_type_inst_except.html#2">Revit API versus Dynamo for Revit</a>.</p>
 <p>Here is another very valuable and extensive related resource of his, covering numerous aspects of Dynamo, its features, Python, the Revit API and the relationships between them.</p>
 <blockquote>
 <p>In terms of Dynamo for Revit you can refer to my <a href="https://primer.dynamobim.org">Dynamo Primer</a>,
@@ -300,3 +331,11 @@ have been driving the planet to the brink of catastrophe, ignoring all scientifi
 </center></p>
 <p>I tested the auto-translated English subtitles for this video.
 Sorry to say, they do not make much sense in this case.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

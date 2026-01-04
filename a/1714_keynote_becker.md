@@ -54,7 +54,7 @@ I think my problem is here:
 When I debug it, `symbolId` always equals `-1`.
 
 **Answer:** Work through
-the [Revit API getting started material](https://thebuildingcoder.typepad.com/blog/about-the-author.html#2) and
+the Revit API getting started material *(link unavailable)* and
 all will be explained.
 That will save you and others many further questions and answers.
 
@@ -72,7 +72,7 @@ To retrieve an arbitrary (not default) wall type, use a filtered element collect
 Here is a code snippet that retrieves all wall types with a filtered element collector and applies .NET LINQ post-processing to that to pick the first one with a specific name,
 from [The Building Coder](https://thebuildingcoder.typepad.com) discussion
 on [creating face wall and mass floor
-](https://thebuildingcoder.typepad.com/blog/2017/12/creating-face-wall-and-mass-floor.html):
+](1608_create_mass_floor.html):
 
 <pre class="code">
 &nbsp;&nbsp;<span style="color:#2b91af;">WallType</span>&nbsp;wType&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;<span style="color:#2b91af;">FilteredElementCollector</span>(&nbsp;doc&nbsp;)
@@ -82,7 +82,7 @@ on [creating face wall and mass floor
 </pre>
 
 When you start getting deeper into the use of filtered element collectors, be aware of the significant performance difference
-between [quick and slow filters versus .NET post-processing](http://thebuildingcoder.typepad.com/blog/2015/12/quick-slow-and-linq-element-filtering.html).
+between [quick and slow filters versus .NET post-processing](1382_filter_shortcuts.html).
 
 **Response:** I solved the problem and created many different types of walls already after reading
 the [Revit online help](http://help.autodesk.com/view/RVT/2019/ENU) &gt;

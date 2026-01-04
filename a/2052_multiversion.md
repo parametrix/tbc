@@ -73,8 +73,8 @@ an LLM and a cultural colour topic:
 
 Managing an add-in code base to support multiple releases of the Revit API is a recurring and constantly evolving issue.
 In 2021, we discussed how to implement
-a [multi-version Revit add-in](https://thebuildingcoder.typepad.com/blog/2021/10/dll-as-resource-and-multi-version-add-ins.html#4),
-and in 2023 [managing multiple Revit API versions](https://thebuildingcoder.typepad.com/blog/2023/11/net-core-preview-and-open-source-add-in-projects.html#8)
+a [multi-version Revit add-in](1922_multiversion.html#4),
+and in 2023 [managing multiple Revit API versions](2017_os_projects.html#8)
 
 The issue was raised again half a year ago in preparation of the non-trivial migration for Revit 2025 from .NET 4.8 to .NET core, in a quest for
 an [optimal add-in code base approach to target multiple Revit releases](https://forums.autodesk.com/t5/revit-api-forum/optimal-add-in-code-base-approach-to-target-multiple-revit/m-p/12982599).
@@ -239,7 +239,7 @@ Regardless of whether or not I use the `FilteredElementCollector` and pass the v
 
 **Answer:**
 Does the article
-on [retrieving elements visible in view](https://thebuildingcoder.typepad.com/blog/2017/05/retrieving-elements-visible-in-view.html) help?
+on [retrieving elements visible in view](1561_elem_visible_view.html) help?
 
 **Response:**
 I tested that approach and these are the results.
@@ -279,7 +279,7 @@ The `UIView` may know that and provides the current zoom corners from which you 
 However, for non-planar views, you will have some interesting calculations to perform.
 
 I used the `UIView` to implement
-a [tooltip that detects which elements are visible under the cursor](https://thebuildingcoder.typepad.com/blog/2012/10/uiview-windows-coordinates-referenceintersector-and-my-own-tooltip.html).
+a [tooltip that detects which elements are visible under the cursor](0840_wincoord_tooltip.htm).
 It also uses the `ReferenceIntersector`, like one of the solutions I pointed out above.
 
 **Response:**

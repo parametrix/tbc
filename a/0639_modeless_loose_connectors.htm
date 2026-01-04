@@ -1,12 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Modeless Loose Connector Navigator Update</h3>
 
 <p>Here is an update to my 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/07/modeless-loose-connectors.html">
+<a href="0407_modeless_loose_connectors.htm">
 modeless loose connector navigator</a>,
 
 which I created as a sample application to demonstrate how to set up a modeless dialogue to drive Revit using the 
@@ -38,14 +69,14 @@ Also, the subscription was never revoked.
 
 <p>The external command already makes use of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/addin-visibility-mode.html">
+<a href="0373_addin_visibility_mode.htm">
 VisibilityMode tag</a> to 
 
 appear only in the MEP product, but that tag is not supported for external applications.
 
 <p>Therefore, I implemented a check in the OnStartup method to refuse to load the application unless it is being loaded into Revit MEP, as described in
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/addin-applications-for-multiple-revit-products.html">
+<a href="0378_multi_flavour_apps.htm">
 add-in applications for multiple Revit products</a>:
 
 <pre class="code">
@@ -88,7 +119,7 @@ The application OnIdling method simply forwards the notification to the existing
 
 <p>One thing that changed between the Revit 2011 and Revit 2012 API is the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/05/cascaded-events-and-renaming-the-active-document.html">
+<a href="0577_idling_event_rename_doc.htm">
 type of the Idling event sender argument</a>.
 
 It used to be an Application instance, and was changed in 2012 to be a UIApplication instance instead.
@@ -141,7 +172,7 @@ updated version using an external application to subscribe to the Idling event.
 <p>The ElementMulticlassFilter allows us to check for multiple types of elements using one single filtered element collector.
 We can use this in the GetConnectorElements method for
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/retrieve-mep-elements-and-connectors.html">
+<a href="0398_retrieve_mep_elements.htm">
 retrieving all elements which may have some kind of MEP connector</a>.
 
 It selects all elements which are family instances belonging to one of a given list of categories, which are retrieved by a filter named 'familyInstanceFilter', OR are one of a given list of types, which is defined like this in the Revit 2011 code:
@@ -224,3 +255,12 @@ C:\a\src\revit\loose_connectors\zip\loose_connectors_7_2010.zip
 C:\a\src\revit\loose_connectors\zip\loose_connectors_8.zip
 -->
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

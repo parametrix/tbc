@@ -46,13 +46,13 @@ Each of them lives in an own GitHub repository with its own documentation pointi
 the new Forge-based sample, a viewer extension to demonstrate translation of BIM element instances in the viewer and updating the Revit model in real time via a `socket.io` broadcast, adding the option to select any Revit model hosted on A360, again using the [Roomedit3dApp](https://github.com/jeremytammik/Roomedit3dApp) Revit add-in.
     - [GitHub](https://github.com/jeremytammik/roomedit3dv3)
     - [Live sample URL](https://roomedit3dv3.herokuapp.com)
-    - [Discussion and first demo recording](http://thebuildingcoder.typepad.com/blog/2016/10/roomedit3dv3-up-and-running-with-demo-recording.html)
+    - [Discussion and first demo recording](1479_roomedit3d_running.html)
 
 #### <a name="2"></a>Other Topics
 
 - [Forge for BIM Programming](https://github.com/jeremytammik/forge_bim_programming)
 &ndash; [online presentation](http://jeremytammik.github.io/forge_bim_programming)
-- [Requesting input on Revit I/O](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28b)
+- Requesting input on Revit I/O *(link unavailable)*
 - [LmvNav](https://calm-inlet-4387.herokuapp.com)
 
 <center>

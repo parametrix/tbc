@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <title>The Building Coder</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" type="text/css" href="3dwc.css"/>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true" defer="defer"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -24,7 +55,7 @@ on using <a href="http://forums.autodesk.com/t5/revit-api/a-stackbutton-can-be-a
 <p>Perhaps this idea might be usable for others.</p>
 <p>The <code>StackButton</code> ribbon control is a stack of different <code>PushButton</code> instances where the last used <code>PushButton</code> remains visible to be used again. That visible button is reflected in the stack button's <code>CurrentButton</code> property. Imagine if the <code>StackButton</code> control always shows the first button in the stack, and the other button(s) are secondary to the first button's purpose.</p>
 <p>Using the call-back concept described in The Building Coder suggestion 
-to <a href="http://thebuildingcoder.typepad.com/blog/2012/11/roll-your-own-toggle-button.html">roll your own toggle button</a>, you can have the second <code>Pushbutton</code> in a two-button <code>StackButton</code> reset the current button property back to that of the first button. Therefore, this <code>StackButton</code> item always shows and activates the first button's action on its button face, but also has a secondary option to invoke a settings manager activated by the second button.</p>
+to <a href="0857_toggle_button.htm">roll your own toggle button</a>, you can have the second <code>Pushbutton</code> in a two-button <code>StackButton</code> reset the current button property back to that of the first button. Therefore, this <code>StackButton</code> item always shows and activates the first button's action on its button face, but also has a secondary option to invoke a settings manager activated by the second button.</p>
 <p>Set the first button in the button stack to your add-in command of choice. Set the second button in the button stack to show a Windows Forms or WPF window to be the first button's settings manager. Have the settings communicated through the add-in's Properties.Settings. The first button's command reads the current settings prior to acting. The second button's actions reads, sets and saves the settings the first button uses. It ends with a call-back function that resets the StackButton's current button to the first button in the stack. These settings would also persist between Revit sessions.</p>
 <p>For example, this is what a second button might invoke:</p>
 <pre class="code">
@@ -85,7 +116,7 @@ part of his <a href="http://through-the-interface.typepad.com/through_the_interf
 <p>Many thanks again to Allan, have fun yourself, and please wish me and Kean lots of luck, fun and success in our hackathon efforts during the next two days.</p>
 <h4><a name="2"></a>Addendum &ndash; Simpler Solution</h4>
 <p>Please do not overlook the much simpler solution to this task provided directly by the Revit API and pointed out in
-the <a href="http://thebuildingcoder.typepad.com/blog/2016/09/stacked-ribbon-button-panel-options.html#comment-2880240616">comment</a> below by Ehsan Iran Nejad:</p>
+the <a href="1466_split_button_opt.html#comment-2880240616">comment</a> below by Ehsan Iran Nejad:</p>
 <blockquote>
 <p>Or you can just set the <code>RibbonItem.IsSynchronizedWithCurrentItem</code> to <code>False</code> after creating the <code>SplitButton</code>. The first button will be fixed and all the other buttons can only be used from the dropdown menu.</p>
 </blockquote>
@@ -94,3 +125,11 @@ the <a href="http://thebuildingcoder.typepad.com/blog/2016/09/stacked-ribbon-but
 <blockquote>
 <p>Not so fast. Perhaps that is missing the forest because of the trees. The example is just a two button split button where the second button is the settings button. Consider that split button having three or more buttons where the last button is the settings button and you want the split button to show the last button activated, but never the settings button. The other method no longer works, but the same concepts used in the roll your own method do work. One way, and there may be better ones, takes advantage of the splitbutton's current button value not yet having changed when the newly selected settings button is activated. That name can be saved and then used just before the command return to reset the split button back to what was showing when the used pulled the split button down to select the settings button.</p>
 </blockquote>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,0 +1,478 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="bc.css">
+
+<!--
+https://prismjs.com
+<pre><code class="language-cs">
+-->
+<link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<style> code[class*=language-], pre[class*=language-] { font-size : 90%; } </style>
+
+</head>
+
+<!--
+
+- Chuong Ho new Revit Vibe Revit Gen AI
+
+- Cesare Caoduro
+  [@CaoduroC](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/6036188)
+  Convert Revit SDK documentation for local RAG (aka use it with a LLM)
+  https://forums.autodesk.com/t5/revit-api-forum/convert-revit-sdk-documentation-for-local-rag-aka-use-it-with-a/td-p/13384246
+  email Re: Agentic RAG tool
+  Caoduro, Cesare <cesare.caoduro@aecom.com>
+
+twitter:
+
+Vibe programming, generative AI, and MCP connector and RAG docs for @AutodeskRevit #RevitAPI @AutodeskAPS #BIM @DynamoBIM https://thebuildingcoder.typepad.com/blog/2025/03/revit-gen-ai-mcp-rag-and-vibe.html
+
+AI-related news keeps piling in fast
+&ndash; Revit Vibe: generative AI in the BIM
+&ndash; Revit MCP connector
+&ndash; Convert Revit API help file to RAG for LLM
+&ndash; AI effect on programming jobs
+&ndash; Nice Jupyter interactive graph
+&ndash; Art is theft...
+
+linkedin:
+
+Vibe programming, generative AI, and MCP connector and RAG docs for #RevitAPI
+
+https://thebuildingcoder.typepad.com/blog/2025/03/revit-gen-ai-mcp-rag-and-vibe.html
+
+- Revit Vibe: generative AI in the BIM
+- Revit MCP connector
+- Convert Revit API help file to RAG for LLM
+- AI effect on programming jobs
+- Nice Jupyter interactive graph
+- Art is theft...
+
+#BIM #DynamoBIM #AutodeskAPS #Revit #API #IFC #SDK #Autodesk #AEC #adsk
+
+the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
+
+<center>
+<img src="img/" alt="" title="" width="600"/>
+<p style="font-size: 80%; font-style:italic"></p>
+<a href="img/.gif"><p style="font-size: 80%; font-style:italic">Click for animation</p></a>
+</center>
+
+-->
+
+### Revit Gen AI: MCP, RAG and Vibe
+
+I originally had some non-AI-related items in my plan for today's post, but AI-related news kept piling in so fast, I took them out again for a future one:
+
+- [Revit Vibe: generative AI in the BIM](#2)
+- [Revit MCP connector](#3)
+- [Convert Revit API help file to RAG for LLM](#4)
+- [AI effect on programming jobs](#5)
+- [Nice Jupyter interactive graph](#6)
+- [Art is theft](#7)
+
+####<a name="2"></a> Revit Vibe: Generative AI in the BIM
+
+In the last post, I mentioned the
+[Local Ollama LLM APS metadata querying project](https://thebuildingcoder.typepad.com/blog/2025/03/docs-local-aps-llm-and-parallel-task-orchestration.html#4) by
+[Chuong Ho](https://chuongmep.com/).
+
+Just a week later, Chuong Ho
+presents [Revit Gen AI (Alpha)](https://revitai.chuongmep.com) enabling you to transform your Revit workflow with AI-powered automation:
+
+> Revit Vibe Coding with AI is now in beta! 😊
+
+> We’re expanding features and super excited about what’s coming next! Here’s what you can expect:
+
+> - AI-Powered Coding Assistance &ndash; Generate and refine Revit code effortlessly using natural language prompts.
+- Edit & Execute Code Seamlessly &ndash; Modify and run scripts directly in Revit to automate your tasks.
+- One-Click Execution & Results &ndash; Instantly run scripts and see results with just a click.
+- Full Control Over Execution &ndash; Choose exactly what your script runs in your model.
+- Customizable Workflows &ndash; Save and reuse automation scripts tailored to your project.
+
+####<a name="3"></a> Revit MCP Connector
+
+The [Model Context Protocol (MCP)](https://en.wikipedia.org/wiki/Model_Context_Protocol) is
+an open framework introduced by Anthropic to standardize the way artificial intelligence (AI) models like large language models LLMs integrate and share data from diverse sources.
+It was announced in November 2024 and provides guidelines and structures for handling the contextual data used in AI-driven applications, e.g., specifications for:
+
+- Data ingestion and transformation
+- Contextual metadata tagging
+- Model interoperability across platforms
+
+Just now, 2025-03-26,
+also [OpenAI announced MCP support](https://openai.github.io/openai-agents-python/mcp/):
+
+> Sam [@sama](https://x.com/sama) Altman says,
+... people love MCP and we are excited to add support across our products.
+available today in the agents SDK and support for chatgpt desktop app + responses api coming soon!
+
+Jean-Marc [@jmcouffin](https://github.com/jmcouffin) Couffin, aka [jmco](https://www.youtube.com/@jmco1045), shared a 90-second YouTube video demonstrating
+a [Revit MCP Test](https://youtu.be/mUJGSjQHBm8),
+showing a Revit API enabled MCP connector interactively manipulating the BIM.
+He gives credits for most of the code
+to [revit-mcp-plugin](https://github.com/revit-mcp/revit-mcp-plugin)
+and [revit-mcp](https://github.com/revit-mcp/revit-mcp).
+Jean-Marc added the ColorSplash capability as well as the WallTag.
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mUJGSjQHBm8?si=GSDcxLLruEgPwEkK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</center>
+
+> Q: What are your MCP capabilities?
+
+> A: I'm a Revit Al assistant and can help with various modeling. analysis, and documentation tasks within Revit. Here are my key capabilities:
+
+> 1. Element Creation: I can create line-based elements (walls, beams, pipes), point-based elements (doors, windows, furniture), and surface-based elements (floors, ceilings, roofs).
+2. Element Management: I can get information about currently selected elements or elements in the active view, and delete elements by their IDs.
+3. Information Retrieval: I can get details about the current view and available family types in your project.
+4. Visual Analysis: I can color elements based on parameter values to create visual analytics of your model.
+5. Documentation: I can create tags for walls to help with documentation.
+6. Advanced Operations: I can execute custom C# code for specialized operations not covered by the built-in functions.
+
+> Would you like me to help you with any specific modeling or documentation task in your Revit project?
+
+####<a name="4"></a> Convert Revit API Help File to RAG for LLM
+
+Superficially less exciting than the Revit Gen AI and MCP project listed above, but possibly similarly important in the long run,
+Cesare [@CaoduroC](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/6036188) Caoduro
+shared a Python script
+to [convert Revit SDK documentation for local RAG (aka use it with a LLM)](https://forums.autodesk.com/t5/revit-api-forum/convert-revit-sdk-documentation-for-local-rag-aka-use-it-with-a/td-p/13384246):
+
+<!--
+
+email Re: Agentic RAG tool
+Caoduro, Cesare <cesare.caoduro@aecom.com>
+  Hi Jeremy hope to find you well.
+  I am reaching out as I am thinking to create a tutorial on how to create an agentic RAG that is an expert in Revit APIs. As one of the sources for that RAG, I was hoping I could use your blog as a source.
+  Before I go and do that, I wanted to. let you know and get your permission. If that’s ok, I will publish the entire process and cite you of course.
+  After that the idea is to add more knowledge using the SDK documentation, and finally build a Revit addin that consumes that local model. Everything will be leveraging opensource or free for commercial use tools.
+  What do you think? There is sooo much knowledge embedded in your work, that would just be nice to be able to access it at your fingertips 😊
+  Cheers,
+  Cesare Caoduro
+  Development & Integration Director, Enterprise Capabilities
+  M +61 483 191 342
+  cesare.caoduro@aecom.com
+  AECOM
+  L21 420, George Street
+  Address Line 2
+  Sydney, 2000, Australia
+  T +61 02 893 40000
+-->
+
+In fact, I looked at similar ideas myself already, e.g.:
+
+- [Q4R4 with LLM and RAG](https://thebuildingcoder.typepad.com/blog/2024/07/aps-accelerator-and-q4r4-chunking-with-claude.html#3)
+- [Claude.ai helped chunk TBC blog posts](https://thebuildingcoder.typepad.com/blog/2024/07/aps-accelerator-and-q4r4-chunking-with-claude.html#4)
+- [LLM prompting and RAG ingestion](https://thebuildingcoder.typepad.com/blog/2025/01/llm-prompting-rag-ingestion-and-new-projects.html)
+- [Docling Markdown Generator](https://thebuildingcoder.typepad.com/blog/2025/02/tools-for-extensible-storage-and-oauth-auth0.html#5)
+
+Cesare explains:
+
+With all the hype around LLMs, MCPs, RAG, and everything else you read in your LinkedIn feed, I also wanted to give my 2 cents.
+I was looking at an automated way to pull the SDK documentation into a vector database, in a way that was useful.
+As you know, the documentation comes as a `CHM` file that is basically a zip file with a lot of `HTML` in it.
+Unfortunately, HTML files are very verbose and full of unwanted tags.
+Markdown (`md`) files, on the other hand, are just text files with some unique syntax to apply styles.
+They turn to be very good for embeddings.
+So, I started to use out of the box Python libraries to convert HTML to markdown, but the problem is that the results were absolute rubbish.
+One major issue (specifically with the Revit SDK documentation) is that it includes JavaScript that will be executed when you click on certain things in the page.
+An example with the Revit documentation is the availability of multiple examples depending on the programming language of your choice (C#, VB, F#, etc.).
+It took me a bit of sweating and a good amount of Cursor (if you don't know what it is,
+check out [Cursor &ndash; The AI Code Editor](https://www.cursor.com/)),
+to come up with an approach to properly parse the `html` into `md` and maintain a decent format.
+Without further ado, here is the code.
+Test it and let me know!
+If you like it, I can also publish a quick tutorial on how to get this to work with an LLM locally.
+
+<pre><code class="language-py">import os
+import re
+import shutil
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
+from bs4 import BeautifulSoup
+import html2text
+import aiofiles
+
+# Lists to customize removals.
+tags_to_remove = [
+  "iframe",
+  "object",
+  "script",
+  "br",
+  "img"
+]
+
+classes_to_remove = [
+  "collapsibleAreaRegion",
+  "collapsibleRegionTitle",
+  "collapseToggle",
+  "codeSnippetContainerTab",
+  "codeSnippetToolBar",
+  "codeSnippetContainerTabs",
+]
+
+ids_to_remove = [
+  "PageFooter",
+]
+
+def update_links(soup):
+  for a in soup.find_all('a', href=True):
+    if a['href'] == "#PageHeader":
+      a.decompose()
+    elif a['href'].lower().endswith(('.htm', '.html')):
+      base, _ = os.path.splitext(a['href'])
+      a['href'] = base + ".md"
+  return soup
+
+def remove_unwanted_elements(soup):
+  for script in soup.find_all("script"):
+    script.decompose()
+  for tag in tags_to_remove:
+    for element in soup.find_all(tag):
+      element.decompose()
+  for tag in soup.find_all(lambda tag: tag.has_attr("class") and any(cls in tag.get("class") for cls in classes_to_remove)):
+    tag.decompose()
+  for element_id in ids_to_remove:
+    for tag in soup.find_all(id=element_id):
+      tag.decompose()
+  return soup
+
+def replace_code_snippets(soup):
+  id_to_lang = {
+    "IDAB_code_Div1": "csharp",
+    "IDAB_code_Div2": "vb",
+    "IDAB_code_Div3": "cpp",
+    "IDAB_code_Div4": "fsharp"
+  }
+  code_blocks = {}
+  counter = 0
+  for div_id, lang in id_to_lang.items():
+    for code_div in soup.find_all("div", id=div_id):
+      counter += 1
+      pre_tag = code_div.find("pre")
+      if pre_tag:
+        code_text = pre_tag.get_text()
+      else:
+        code_text = code_div.get_text()
+      placeholder = f"&lt;&lt;CODE_BLOCK_{counter}&gt;&gt;"
+      code_block_markdown = f"```{lang}\n{code_text}\n```\n"
+      code_blocks[placeholder] = code_block_markdown
+      new_node = soup.new_string(placeholder)
+      code_div.replace_with(new_node)
+  return soup, code_blocks
+
+def convert_html_to_markdown(html_content):
+  soup = BeautifulSoup(html_content, "html.parser")
+  soup = remove_unwanted_elements(soup)
+  soup = update_links(soup)
+  soup, code_blocks = replace_code_snippets(soup)
+  modified_html = str(soup)
+  h = html2text.HTML2Text()
+  h.body_width = 0
+  markdown_text = h.handle(modified_html)
+  for placeholder, code_block in code_blocks.items():
+    markdown_text = markdown_text.replace(placeholder, code_block)
+  markdown_text = fix_tables(markdown_text)
+  return markdown_text
+
+def fix_tables(markdown_text):
+  lines = markdown_text.splitlines()
+  fixed_lines = []
+  i = 0
+  while i &lt; len(lines):
+    if '|' in lines[i] and i+1 &lt; len(lines) and re.match(r'^[\s\-\|:]+$', lines[i+1]):
+      table_lines = []
+      while i &lt; len(lines) and '|' in lines[i]:
+        table_lines.append(lines[i])
+        i += 1
+      table_lines = fix_table_block(table_lines)
+      fixed_lines.extend(table_lines)
+    else:
+      fixed_lines.append(lines[i])
+      i += 1
+  return "\n".join(fixed_lines)
+
+def fix_table_block(table_lines):
+  split_lines = [[cell.strip() for cell in line.split("|")] for line in table_lines]
+  header = split_lines[0]
+  if header and header[0] == "":
+    header = header[1:]
+  remove_first = header and (header[0] == "-" or header[0] == "")
+  if remove_first:
+    new_split_lines = []
+    for row in split_lines:
+      if row and row[0] == "":
+        row = row[1:]
+      new_split_lines.append(row[1:])
+  else:
+    new_split_lines = split_lines
+  new_lines = []
+  for row in new_split_lines:
+    new_line = "| " + " | ".join(row) + " |"
+    new_lines.append(new_line)
+  return new_lines
+
+def clear_folder(folder_path):
+  """Delete all files and folders within the specified folder."""
+  if os.path.exists(folder_path):
+    for filename in os.listdir(folder_path):
+      file_path = os.path.join(folder_path, filename)
+      try:
+        if os.path.isfile(file_path) or os.path.islink(file_path):
+          os.unlink(file_path)
+        elif os.path.isdir(file_path):
+          shutil.rmtree(file_path)
+      except Exception as e:
+        print(f'Failed to delete {file_path}. Reason: {e}')
+  else:
+    os.makedirs(folder_path)
+
+async def export_chm_to_htm(chm_path, export_folder):
+  """
+  Export HTML files from a CHM file using 7-Zip asynchronously.
+  """
+  if not os.path.exists(export_folder):
+    os.makedirs(export_folder)
+  clear_folder(export_folder)
+
+  seven_zip = r"C:\Program Files\7-Zip\7z.exe"
+  if not os.path.exists(seven_zip):
+    print("7z.exe not found. Please install 7-Zip and update the seven_zip path accordingly.")
+    return
+
+  try:
+    process = await asyncio.create_subprocess_exec(
+      seven_zip, "x", chm_path, f"-o{export_folder}",
+      stdout=asyncio.subprocess.PIPE,
+      stderr=asyncio.subprocess.PIPE
+    )
+    stdout, stderr = await process.communicate()
+    print(stdout.decode())
+    if stderr:
+      print(stderr.decode())
+  except Exception as e:
+    print(f"Error extracting CHM file using 7z.exe: {e}")
+
+async def process_file(executor, input_path, output_path, semaphore):
+  """Process a single HTML file asynchronously using a semaphore to limit concurrent file I/O."""
+  loop = asyncio.get_running_loop()
+  try:
+    async with semaphore:
+      async with aiofiles.open(input_path, "r", encoding="utf-8") as f:
+        html_content = await f.read()
+    markdown_content = await loop.run_in_executor(executor, convert_html_to_markdown, html_content)
+    async with semaphore:
+      async with aiofiles.open(output_path, "w", encoding="utf-8") as f:
+        await f.write(markdown_content)
+  except Exception as e:
+    print(f"Error processing {input_path}: {e}")
+
+async def process_folder_async(input_folder, output_folder, max_workers=4, semaphore_limit=20, batch_size=10):
+  """
+  Asynchronously process HTML files in batches.
+
+  For each batch, processes 'batch_size' files concurrently, waits for them to finish,
+  then prints a summary showing the batch number, how many files were processed,
+  and how many remain.
+  """
+  html_folder = os.path.join(input_folder, "html")
+  if not os.path.exists(html_folder):
+    print(f"HTML folder does not exist: {html_folder}")
+    return
+
+  if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
+
+  file_list = [f for f in os.listdir(html_folder) if f.lower().endswith((".htm", ".html"))]
+  total_files = len(file_list)
+  print(f"Found {total_files} HTML files to process in {html_folder}")
+
+  semaphore = asyncio.Semaphore(semaphore_limit)
+  with ThreadPoolExecutor(max_workers=max_workers) as executor:
+    for i in range(0, total_files, batch_size):
+      batch_files = file_list[i:i + batch_size]
+      batch_tasks = []
+      for filename in batch_files:
+        input_path = os.path.join(html_folder, filename)
+        base, _ = os.path.splitext(filename)
+        output_filename = base + ".md"
+        output_path = os.path.join(output_folder, output_filename)
+        batch_tasks.append(process_file(executor, input_path, output_path, semaphore))
+      await asyncio.gather(*batch_tasks)
+      batch_number = (i // batch_size) + 1
+      processed_in_batch = len(batch_files)
+      remaining = total_files - (i + processed_in_batch)
+      print(f"Batch {batch_number}: Processed {processed_in_batch} files. {remaining} files remaining.")
+
+async def main():
+  # --- Configuration ---
+  input_folder = r"C:\Revit 2025.3 SDK\extracted"
+  output_folder = r"C:\Revit 2025.3 SDK\extracted\output"
+  chm_file_path = r"C:\Revit 2025.3 SDK\RevitAPI.chm"  # Set your CHM file path here
+
+  print("Clearing existing folders...")
+  clear_folder(input_folder)
+  clear_folder(output_folder)
+
+
+  if chm_file_path and os.path.exists(chm_file_path) and chm_file_path.lower().endswith(".chm"):
+    print(f"Exporting CHM file {chm_file_path} to HTML...")
+    await export_chm_to_htm(chm_file_path, input_folder)
+  elif chm_file_path:
+    print("Provided CHM file does not exist or is not a CHM file.")
+
+  print("Converting HTML files to Markdown asynchronously in batches...")
+  await process_folder_async(input_folder, output_folder, max_workers=8, semaphore_limit=20, batch_size=50)
+
+if __name__ == "__main__":
+  asyncio.run(main())</code></pre>
+
+p.s.: I have also a version of the script that works in C# is someone is interested.
+
+p.p.s: I have also a script to pulls the entire "The Building Coder" blog into RAG.
+I did ask permission from @jeremytammik for this 🙂
+
+Congratulations to Cesare on this nice project, and many thanks for sharing it.
+
+I would definitely like to take you up on your offer to 'publish a quick tutorial on how to get this to work with an LLM locally'.
+That would be brilliant!
+Thank you!
+
+Some further thoughts and questions that come to mind (most probably automatically answered by such a tutorial):
+
+- Have you tried using
+  the [Docling Markdown Generator](https://thebuildingcoder.typepad.com/blog/2025/02/tools-for-extensible-storage-and-oauth-auth0.html#5)?
+  Does it handle CHM?
+- What is you use case for the RAG? How do you feed this into your processing system? What system are you using it for?
+- LangChain provides several integrated CHM reader libraries, I believe, and can also generate a vector database right out of the box, afaik. How does this compare to your approach?
+
+####<a name="5"></a> AI Effect on Programming Jobs
+
+An interesting question for developers and a pretty convincing answer to it is discussed by the article
+on [AI effect on programming jobs](https://seldo.com/posts/ai-effect-on-programming-jobs),
+very clearly and convincingly discussing addition and consequences of LLM prompts the continuously evolving development stack:
+
+<center>
+<img src="img/full_stack_develop_2025.png" alt="Evolving development stack 2025" title="Evolving development stack 2025" width="500"/>
+</center>
+
+I love the caption explaining the source of this chart data: 'I made this up. There is no data.''
+
+####<a name="6"></a> Jupyter Interactive Graphs
+
+Just for my own notes, I also like this nice article with interactive graphs explaining
+[how fast the days are getting longer](https://joe-antognini.github.io/astronomy/daylight) showing how to make beautiful use of
+a [Sunrise.ipynb Jupyter notebook](https://github.com/joe-antognini/joe-antognini.github.io/blob/master/assets/posts/daylight/Sunrise.ipynb).
+
+####<a name="7"></a> Art is Theft
+
+Closing words:
+
+Pablo Picasso is widely quoted as having said that good artists borrow, great artists steal.
+
+This quote was also a favourite of Steve Jobs who said he stole the concept of the Macintosh computer from a similar device shown at Xerox’s Palo Alto Research Center.
+
+Just an interesting thought in the current context of AI and LLM training.
+

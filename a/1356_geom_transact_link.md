@@ -72,20 +72,20 @@ The geometry objects are therefore more or less a read-only view of the elements
 Yes, you can retrieve geometry without prompting the user, e.g. traversing all elements or a subset via a filtered element collector and querying each for its geometry.
 
 My most recent foray into this area was published yesterday, on
-[creating a DirectShape from a selected face](http://thebuildingcoder.typepad.com/blog/2015/09/directshape-from-face-and-sketch-plane-reuse.html).
+[creating a DirectShape from a selected face](1355_directshape_face.html).
 
 It demonstrates picking an element on the screen, retrieving the picked geometrical face, querying the same element for its geometry programmatically as well, then traversing that to find the picked face within it.
 
 The Building Coder has discussed hundreds of other examples of
-[geometry retrieval and analysis](http://thebuildingcoder.typepad.com/blog/geometry).
+geometry retrieval and analysis *(link unavailable)*.
 
 Some of the more interesting discussions are listed in various
-[topic groups](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5).
+topic groups *(link unavailable)*.
 
 One related area is exporting element geometry in various ways.
 
 The easiest way to do so nowadays is to use a
-[custom exporter](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.1).
+custom exporter *(link unavailable)*.
 
 That hooks directly into the graphics pipeline and eliminates the need to query each individual element for its geometry.
 

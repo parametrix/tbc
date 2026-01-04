@@ -1,13 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>RoomEditorApp Idling and Benchmarking Timer</h3>
 
 <p>I solved my two RoomEditorApp
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/11/roomeditorapp-architecture-and-external-application.html#4">
+<a href="1049_roomeditorapp.htm#4">
 Idling issues</a>!</p>
 
 <p>They were especially worrying due to the fact that I am planning to present this application in my Autodesk university class DV1736 on <i>Cloud-Based, Real-Time, Round-Trip, 2D Revit Model Editing on Any Mobile Device</i>.</p>
@@ -23,7 +54,7 @@ sign in, click 'View All Classes', use the filters or keyword search to locate a
 
 <p>Here are my four classes, updated from the AU
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/08/open-mep-connector-warning.html#2">
+<a href="1008_loose_connector.htm#2">
 class catalogue preview</a> version:</p>
 
 <ul>
@@ -60,15 +91,15 @@ Are you an Autodesk Revit-based software developer who has run into issues suppo
 
 <p>I recently wrote about my updated Revit 2014 version of the RoomEditorApp, the Revit add-in part of my cloud-based real-time round-trip 2D Revit model editing application, the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/10/roomeditorapp-for-revit-2014-on-github.html">
+<a href="1045_roomeditorapp.htm">
 RoomEditorApp GitHub repository</a> and its
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/11/roomeditorapp-architecture-and-external-application.html">
+<a href="1049_roomeditorapp.htm">
 architecture and external application</a> implementation.</p>
 
 <p>In closing, I mentioned two worrying
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/11/roomeditorapp-architecture-and-external-application.html#4">
+<a href="1049_roomeditorapp.htm#4">
 Idling related problems</a>:</p>
 
 <ul>
@@ -106,7 +137,7 @@ Idling related problems</a>:</p>
 <p>My attempts to unsubscribe from the Idling event were failing due to the fact that each new external command invocation generates a new different class instance.
 The unsubscribing instance was therefore providing a different member method to unsubscribe than the original one used to subscribe, so the original just kept going, as explained in the discussion on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/11/singleton-application-versus-multiple-command-instances.html">
+<a href="1055_app_single_cmd_multi.htm">
 singleton application versus multiple command instances</a>.</p>
 
 <p>That was really easy to fix, since I only had to modify the external application to keep track of the handler used to subscribe, and reuse that specific stored method delegate when unsubscribing again.</p>
@@ -128,7 +159,7 @@ singleton application versus multiple command instances</a>.</p>
 
 <p>To do so, I looked at my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/01/timer-code-for-benchmarking.html">
+<a href="0704_benchmarking.htm">
 timer code for benchmarking</a> and
 
 the JtTimer class that I used to create some
@@ -595,7 +626,7 @@ the versions discussed above are:
 
 the unsubscription fixed as described in the discussion of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/11/singleton-application-versus-multiple-command-instances.html">
+<a href="1055_app_single_cmd_multi.htm">
 singleton application versus multiple command instances</a>.
 </li>
 
@@ -610,3 +641,12 @@ added benchmarking timer and code, new JtTimer class, RoomEditorDb.LastSequenceN
 <p>I hope that this is of interest to you for numerous reasons.</p>
 
 <p>The most important lesson should be: please benchmark your code!</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

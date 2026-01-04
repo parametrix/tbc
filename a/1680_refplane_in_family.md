@@ -41,7 +41,7 @@ Today I highlight two of Fair59's numerous solutions in the Revit API forum, and
 
 ####<a name="2"></a> Fadaesen on Racism versus Realism
 
-As I [recently mentioned](http://thebuildingcoder.typepad.com/blog/2018/08/revit-20191-cefsharp-forge-accelerator-in-rome.html),
+As I [recently mentioned](1673_2019_1.html),
 I visited Sweden in the beginning of August for a week's hiking.
 
 Before getting to the Revit API stuff, let me share this little cartoon that I enjoyed in the train there.

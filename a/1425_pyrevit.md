@@ -33,7 +33,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api/bd-p/16
 on [RevitLookup for Revit 2016](http://forums.autodesk.com/t5/revit-api/revitlookup-for-revit-2016-is-here/m-p/6258933).
 
 I am not aware of any Python version of RevitLookup, but you can
-certainly [call into RevitLookup from RevitPythonShell](http://thebuildingcoder.typepad.com/blog/2015/05/copyelements-revit-2016-scalability-python-and-ruby-shells.html#4).
+certainly [call into RevitLookup from RevitPythonShell](1318_2016_scalability.htm#4).
 
 In his question, Maltezc pointed out
 the [pyRevit IronPython script library](https://github.com/eirannejad/pyRevit) that

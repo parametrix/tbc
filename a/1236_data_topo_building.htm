@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="http://thebuildingcoder.typepad.com/google-code-prettify/run_prettify.js"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -66,9 +97,9 @@ Turn on visibility for Mass and Topography in the View &gt; Visibility/Graphics 
 
 <p>After diving deep into both Revit
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/10/newcrossfitting-connection-order.html">MEP</a> and
+<a href="1233_newcrossfitting.htm">MEP</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/11/concrete-setout-points-for-revit-structure-2015.html">Structure</a>
+<a href="1234_setout_points.htm">Structure</a>
 
 API issues in the past few days, let's round it of with a GIS related topic:</p>
 
@@ -214,7 +245,7 @@ We also worked with a couple of other external libraries but when simplifying th
 
 
 <p><u>Later:</u>
-To address the problem at hand, I now found The Building Coder discussion on <a href="http://thebuildingcoder.typepad.com/blog/2011/07/section-view-creation.html">section view creation</a>.</p>
+To address the problem at hand, I now found The Building Coder discussion on <a href="0612_create_section_view.htm">section view creation</a>.</p>
 
 <p>The Revit 2014 API doc.Create.NewViewSection method is now replaced by a static member of ViewSection class.
 I guess viewSection is what we need to use.
@@ -233,17 +264,17 @@ We even did not need to generate any new views.</p>
 Here are some samples of using that:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/05/change-section-view-type-and-hide-cut-line.html">Change Section View Type and Hide Cut Line</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/06/create-section-view-parallel-to-wall.html">Create Section View Parallel to Wall</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/08/set-view-section-box-to-match-scope-box.html">Set View Section Box to Match Scope Box</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/08/language-independent-view-type-id-retrieval.html">Language Independent Section View Type Id Retrieval</a></li>
+<li><a href="0771_sect_view_type_hide.htm">Change Section View Type and Hide Cut Line</a></li>
+<li><a href="0784_create_section_view.htm">Create Section View Parallel to Wall</a></li>
+<li><a href="0816_view_section_to_scope.htm">Set View Section Box to Match Scope Box</a></li>
+<li><a href="0998_section_view_type_id.htm">Language Independent Section View Type Id Retrieval</a></li>
 </ul>
 
 <p>I later put together dedicated topic lists on
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.45">creating dimensioning</a> and
+<span class="unavailable-link">creating dimensioning</span> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.38">creating and setting up section views</a>.</p>
+<span class="unavailable-link">creating and setting up section views</span>.</p>
 
 <p><strong>Response:</strong> Here is the updated and somewhat polished Visual Studio solution.</p>
 
@@ -277,7 +308,7 @@ a snapshot of that.</p>
 
 <p>Finally, I cleaned it up a bit further, mainly by encapsulating all transactions in 'using' statements, because
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/04/using-using-automagically-disposes-and-rolls-back.html">
+<a href="0753_dispose_transact_2.htm">
 using using automagically disposes and rolls back</a>,
 
 to create the current
@@ -288,3 +319,12 @@ release 2015.0.0.1</a>.</p>
 <p>Don't forget to turn on visibility for Mass and Topography in the View &gt; Visibility/Graphics overrides when testing.</p>
 
 <p>Many thanks to Saied, Mohammad and Chengde for all their work and research on this!</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
@@ -5,7 +35,8 @@
 <p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"></p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - refresh spot elevation prefix
@@ -94,7 +125,7 @@ the <a href="https://www.revitapidocs.com/2024/5cc3231e-ee7e-e1fc-2bd6-d164da617
 It forces a redraw, which may be one step higher than a refresh.
 Refresh triggers a redraw only if a change is detected and may failing to detect some changes.
 <code>UpdateAllOpenViews</code> was introduced in Revit 2018 to force
-a <a href="https://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html#3.26.15">view update for DirectContext3D</a>.
+a <a href="1551_whats_new_2018.html#3.26.15">view update for DirectContext3D</a>.
 It sounds really powerful:</p>
 <blockquote>
 <p>Updates all open views in this document after elements have been changed, deleted, selected or de-selected. Graphics in the views are fully redrawn regardless of which elements have changed. This function should only rarely be needed, but might be required when working with graphics drawn from outside of Revit's transactions and elements, for example, when using DirectContext3D.</p>
@@ -103,7 +134,7 @@ It sounds really powerful:</p>
 <p>Well worth taking a look at!</p>
 <h4><a name="2"></a> Refreshing Spot Elevation Prefix</h4>
 <p>Unfortunately, there is no silver bullet for all graphics refresh cases,
-and the <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33">need to regenerate</a> comes
+and the <span class="unavailable-link">need to regenerate</span> comes
 in many different flavours.
 For this issue, a different and simpler solution was required:</p>
 <p><strong>Question:</strong> How can I make Revit refresh spot elevation prefix automatically?
@@ -251,3 +282,11 @@ How fast can it turn around?</p>
 <p><center>
 <img src="img/2024_pv_panel_price_trend.png" alt="PV panel price trend" title="PV panel price trend" width="600"/> <!-- Pixel Height: 1,556 Pixel Width: 1,676 -->
 </center></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

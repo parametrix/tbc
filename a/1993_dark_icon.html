@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - Dark Theme Icons - a couple of hacks
@@ -91,9 +122,9 @@ meanwhile, the AI revolution acceleration continues growing:</p>
 <p>Matthew Taylor, associate and CAD developer at <a href="https://www.wsp.com">WSP</a> shared
 two <a href="https://forums.autodesk.com/t5/revit-api-forum/dark-theme-icons-a-couple-of-hacks/m-p/11935167">dark theme icon hacks</a>,
 useful time- and labour-saving tips and tricks to support
-the <a href="https://thebuildingcoder.typepad.com/blog/2023/01/dark-theme-possibility-looming.html">dark theme in Revit 2024</a>.
+the <a href="1979_dark_theme.html">dark theme in Revit 2024</a>.
 The new API functionality to support theme switching is listed in
-the <a href="https://thebuildingcoder.typepad.com/blog/2023/04/whats-new-in-the-revit-2024-api.html#4.2.25">Revit API news section on UI API additions</a>.
+the <a href="1989_whats_new_2024.html#4.2.25">Revit API news section on UI API additions</a>.
 Says Matt:</p>
 <h4><a name="2.1"></a> Hack 1 &ndash; Dark Icons by ImageMagick</h4>
 <p>I've long used .bmp files as my raw ribbon icon images.</p>
@@ -175,7 +206,7 @@ This means that <code>ItemFactoryBase.NewFamilyInstance</code> is invoked undern
 </center></p>
 <p>In previous versions of Revit, the "same" method is defined directly in <code>Autodesk.Revit.Creation.Document</code> class.</p>
 <p>The Revit API news highlights this change in the section
-<a href="https://thebuildingcoder.typepad.com/blog/2023/04/whats-new-in-the-revit-2024-api.html#4.1.4.1">1.4.1. Placement of Level based instances in family documents</a>.</p>
+<a href="1989_whats_new_2024.html#4.1.4.1">1.4.1. Placement of Level based instances in family documents</a>.</p>
 <p>The use of the method looks the same, but they result in different compiled code when linked with different releases of RevitAPI.dll, which means the DLL compiled against Revit 2024 cannot be used in Revit 2023 if you use this method.</p>
 <p>This is an API compatibility issue. The standard solution is to build different Revit add-in DLLs targeting the different versions of Revit.</p>
 <p>For full details of this discussion, please refer to the original discussion thread
@@ -211,7 +242,7 @@ Now, <a href="https://www.vice.com/en/article/4a3w3g/scientists-use-gpt-ai-to-pa
 </blockquote>
 <h4><a name="7"></a> AI Emergent Abilities May Not Be Emergent After All</h4>
 <p>In March, scientists were surprised comparing ChatGPT using GPT 3.5 with some greater capabilities exhibited by GPT 4,
-hypothesising <a href="https://thebuildingcoder.typepad.com/blog/2023/03/uv-emergence-fuzz-and-the-get_-prefix.html#9">sparks of artificial general intelligence in the LLM</a>.</p>
+hypothesising <a href="1987_uv_fuzz_get_prop.html#9">sparks of artificial general intelligence in the LLM</a>.</p>
 <p>A more recent paper questions this, instead
 asking <a href="https://arxiv.org/abs/2304.15004">are emergent abilities of large language models a mirage?</a></p>
 <blockquote>
@@ -227,5 +258,13 @@ Soon, it will be almost impossible to distinguish deep fake from reality.</p>
 in <a href="https://en.wikipedia.org/wiki/21_Lessons_for_the_21st_Century">21 Lessons for the 21st Century</a>,
 on meditation.
 He shares his own very personal answer on how to reconnect with reality: retreat into myself and feel it through my own senses, cutting off myself for a while from all external input.
-I love that book, as I mentioned discussing <a href="https://thebuildingcoder.typepad.com/blog/2023/02/back-to-basics-and-chatgpt.html#9">generative AI and multi-modal learning</a> back in February this year.
+I love that book, as I mentioned discussing <a href="1981_chatgpt_basics.html#9">generative AI and multi-modal learning</a> back in February this year.
 Highly recommended.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

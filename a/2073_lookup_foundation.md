@@ -273,7 +273,7 @@ with [vibe coding](https://en.wikipedia.org/wiki/Vibe_coding) to
 generate from scratch and execute Revit API macros.
 
 Michael has been working with the Revit API and macros for a long time, cf. his 2015 tutorial
-on [getting started with Revit macros](https://thebuildingcoder.typepad.com/blog/2015/10/rtc-classes-and-getting-started-with-revit-macros.html#7).
+on [getting started with Revit macros](1368_revit_macros.html#7).
 
 ####<a name="6"></a> Direwolf Fast Revit Data Extraction
 

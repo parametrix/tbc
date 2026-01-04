@@ -69,7 +69,7 @@ Sometimes, that is not set either.
 In that case, you can use the category of the family's first symbol.
 
 That is mentioned in the discussion
-on [Changing Element Type](http://thebuildingcoder.typepad.com/blog/2015/09/change-type-iterate-elements-create-family.html#2),
+on [Changing Element Type](1361_rfa_api_iterate.html#2),
 and the workaround querying the family's first symbol for its category is demonstrated in
 the [ADN Xtra labs](https://github.com/jeremytammik/AdnRevitApiLabsXtra)
 module [Labs3.cs](https://github.com/jeremytammik/AdnRevitApiLabsXtra/blob/master/XtraCs/Labs3.cs)
@@ -195,8 +195,8 @@ Jaco Kemp confirms that this helps and shares the corresponding C# code:
 
 This topic also arose in a follow-up conversation after the extensive discussion on determining wall opening areas per room, when some of the walls may not be vertical:
 
-- [Determining wall cut area for a specific room](http://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-cut-area-for-a-specific-room.html)
-- [More on wall opening areas per room](http://thebuildingcoder.typepad.com/blog/2016/04/more-on-wall-opening-areas-per-room.html)
+- [Determining wall cut area for a specific room](1421_wall_cut_area.html)
+- [More on wall opening areas per room](1424_wall_opening_areas.html)
 
 Sample code handling room volumes extending sideways at different elevations was presented at AU 2014.
 
@@ -210,8 +210,8 @@ The choice between the two methods is made by setting the `EnergyAnalysisDetailM
 - `BuildingElement` &ndash; The building element based energy analytical model.
 
 You can see this switch in the Export gbXML dialogue, and the enhancement is mentioned in 
-the [What's New in the Revit 2015 API](http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html) documentation on
-[Energy analysis API additions](http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html#3.12):
+the [What's New in the Revit 2015 API](1141_whats_new_2015.htm) documentation on
+[Energy analysis API additions](1141_whats_new_2015.htm#3.12):
 
 #### <a name="4"></a>gbXML Export Options
 
@@ -230,8 +230,8 @@ The new class `BuildingEnvelopeAnalyzer` analyses which elements are part of the
 
 #### <a name="6"></a>EnergyAnalysisDetailModel Creation from Building Elements and Volumes
 
-[What's New in the Revit 2016 API](http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html) mentions 
-further [energy analysis and gbXML API changes](http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html#4.06):
+[What's New in the Revit 2016 API](1311_whats_new_2016.htm) mentions 
+further [energy analysis and gbXML API changes](1311_whats_new_2016.htm#4.06):
 
 The function `EnergyAnalysisDetailModel.Create` now offers the ability to create energy model based on analysis of building element boundaries and volumes (set `EnergyAnalysisDetailModelOptions.EnergyModelType` to `BuildingElement`). This option matches the default energy model creation used by Revit's user interface.
 
@@ -255,13 +255,13 @@ I would really appreciate some guidance on which system to start working serious
 
 Here are some systems I took a look at so far:
 
-- [Jill Watson](http://thebuildingcoder.typepad.com/blog/2017/01/au-in-london-and-deep-learning.html#7)
-- [IBM Watson and Bluemix](http://thebuildingcoder.typepad.com/blog/2017/01/virtues-of-reproduction-research-mep-settings-ontology.html#6)
-- [Microsoft QnA Maker](http://thebuildingcoder.typepad.com/blog/2017/01/vertical-dimensioning-and-revit-api-qas-research.html#4)
-- [Open Source QAS Options](http://thebuildingcoder.typepad.com/blog/2017/01/virtues-of-reproduction-research-mep-settings-ontology.html#7)
-- [Stanford DARPA DeepDive](http://thebuildingcoder.typepad.com/blog/2017/01/vertical-dimensioning-and-revit-api-qas-research.html#5)
-- [YodaQA and DL-Learner](http://thebuildingcoder.typepad.com/blog/2017/01/vertical-dimensioning-and-revit-api-qas-research.html#6)
-- [TensorFlow and Keras](http://thebuildingcoder.typepad.com/blog/2017/01/textnote-rotation-forge-devcon-tensorflow-and-keras.html#4)
+- [Jill Watson](1514_deep_learning.html#7)
+- [IBM Watson and Bluemix](1515_repro_tray_conduit.html#6)
+- [Microsoft QnA Maker](1516_dim_vert.html#4)
+- [Open Source QAS Options](1515_repro_tray_conduit.html#7)
+- [Stanford DARPA DeepDive](1516_dim_vert.html#5)
+- [YodaQA and DL-Learner](1516_dim_vert.html#6)
+- [TensorFlow and Keras](1517_text_rotat.html#4)
 
 Watson and QnA Maker looks simplest to get started with.
 
@@ -269,12 +269,12 @@ I would much prefer to use an open source system, though, and avoid everything p
 
 I summarised my thoughts on what I would like to achieve and what material I can use to build a knowledge base and teach the system:
 
-- [More Research on a Revit QAS](http://thebuildingcoder.typepad.com/blog/2017/01/vertical-dimensioning-and-revit-api-qas-research.html#3)
-- [Building a Revit API Ontology](http://thebuildingcoder.typepad.com/blog/2017/01/virtues-of-reproduction-research-mep-settings-ontology.html#8)
+- [More Research on a Revit QAS](1516_dim_vert.html#3)
+- [Building a Revit API Ontology](1515_repro_tray_conduit.html#8)
 
 Here are my main open questions ten days ago:
 
-- [My Current Open Questions on Question Answering Systems](http://thebuildingcoder.typepad.com/blog/2017/01/vertical-dimensioning-and-revit-api-qas-research.html#7)
+- [My Current Open Questions on Question Answering Systems](1516_dim_vert.html#7)
 
 Nothing much has changed since then.
 

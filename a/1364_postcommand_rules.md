@@ -47,7 +47,7 @@ Inscrutable are the ways of the Lord, and innumerable the illegal usage examples
 For the past few years now, the development team has been adding various checks to prevent illegal use of Revit API entry points from outside a valid Revit API context.
 
 Read all about the valid Revit API context and how to access it in The Building Coder topic group
-on [Idling and External Events for modeless access and driving Revit from outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+on Idling and External Events for modeless access and driving Revit from outside *(link unavailable)*.
 
 Apparently, some new checks were just added in the Revit 2016 service pack 2 which uncovered more long-standing illegal API calls, addressed below by our resident Revit API expert Arnošt Löbel:
 
@@ -158,7 +158,7 @@ There are several ways to access a valid Revit API context from a modeless conte
 The best place to start is to study the two ModelessDialog SDK samples, ModelessForm_ExternalEvent and ModelessForm_IdlingEvent.
 
 As said, this topic has been extensively discussed by The Building Coder. Some posts are listed in the topic group
-on [Idling and External Events for modeless access and driving Revit from outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+on Idling and External Events for modeless access and driving Revit from outside *(link unavailable)*.
 
 You might want to start at the end.
 

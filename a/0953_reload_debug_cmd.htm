@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 ﻿<head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -11,17 +42,17 @@
 
 <p>After publishing the little sample code snippet yesterday showing how to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/05/load-your-own-external-command-on-the-fly.html">
+<a href="0952_load_cmd_in_vb.htm">
 load and reload an external Revit command</a> from
 
 a byte stream to avoid locking the .NET assembly DLL, I realised that this can be combined rather nicely with my own
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/05/external-command-lister-and-adding-ribbon-commands.html">
+<a href="0947_external_cmd_lister.htm">
 external command lister</a>.
 
 <p>The combination of these two enables loading, debugging, reloading and re-debugging any simple external command on the fly, which has been a subject of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/12/reload-add-in-for-debug-without-restart.html">
+<a href="0868_debug_without_restart.htm">
 regular discussion in the past</a>.</p>
 
 <p>By 'simple', I mean commands that do not have external dependencies or special loading requirements that make it difficult to load them lacking additional information beyond the .NET assembly path name.</p>
@@ -377,3 +408,12 @@ You thus see what you have at your disposal, whereas the flexible new loader req
 the complete source code, Visual Studio solution and add-in manifest of the updated version 2014.0.0.2 of this external command.</p>
 
 <p>I hope you find this useful, instructive and inspiring.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

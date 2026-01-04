@@ -71,10 +71,10 @@ I need to create a Solid with a single `PlanarFace` using `BRepBuilder`.
 The `PlanarFace` edges are based on a curves from sketch of a slab.
 
 **Answer:**
-To start with, you can Look at the [BRepBuilderExample Revit SDK sample](https://thebuildingcoder.typepad.com/blog/2017/05/revit-2017-and-2018-sdk-samples.html#4.4).
+To start with, you can Look at the [BRepBuilderExample Revit SDK sample](1560_2018_sdk_samples.html#4.4).
 It includes a creation of a non-planar face, with no solid.
 The [BRepBuilder class API documentation](https://www.revitapidocs.com/2024/94c1fef4-2933-ce67-9c2d-361cbf8a42b4.htm) demonstrates in detail the creation of faces, edges, coedges, including arcs.
-Additional background information is provided by The Building Coder discussing [BRepBuilder organisation](https://thebuildingcoder.typepad.com/blog/2023/06/brepbuilder-and-toposurface-interior.html#2).
+Additional background information is provided by The Building Coder discussing [BRepBuilder organisation](1997_sdk_brep.html#2).
 
 BRepBuilder can still be tricky to work with.
 In your case, to create an open shell, you need to set the target `BRepType` in the constructor to `BRepType.OpenShell` to allow the builder to return a solid without a volume.

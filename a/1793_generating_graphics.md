@@ -119,8 +119,8 @@ It can be any type of element.
 
 **Answer:** Here are some previous related discussions:
 
-- [Determining Views Showing an Element](https://thebuildingcoder.typepad.com/blog/2016/12/determining-views-showing-an-element.html)
-- The inverse, [Retrieving Elements Visible in View](https://thebuildingcoder.typepad.com/blog/2017/05/retrieving-elements-visible-in-view.html)
+- [Determining Views Showing an Element](1504_views_showing_element.html)
+- The inverse, [Retrieving Elements Visible in View](1561_elem_visible_view.html)
 
 **Response:** The problem is that the first call to `FilteredElementCollector( doc, viewId )` shows `generating graphics` in the progress bar.
 Only the first-time search does so.
@@ -192,9 +192,9 @@ The appearance asset also has a built-in category `OST_AppearanceAsset`, while t
 
 The links below are our references to date:
 
-- [Filtering for a non-native class](http://thebuildingcoder.typepad.com/blog/2010/08/filtering-for-a-nonnative-class.html)
-- [`GetElement` method and get element type](http://thebuildingcoder.typepad.com/blog/2012/04/getelement-method-and-get-element-type.html)
-- [Rendering assets](https://thebuildingcoder.typepad.com/blog/2016/05/roomedit3d-console-test-and-rendering-assets.html#3)
+- [Filtering for a non-native class](0426_filter_non_native_class.htm)
+- [`GetElement` method and get element type](0745_get_element_type.htm)
+- [Rendering assets](1441_accel_render_asset.html#3)
 - [How to get asset properties of material I want?](https://adndevblog.typepad.com/aec/2015/03/revitapi-how-to-get-asset-properties-of-material-i-want.html)
 - [General Material Information](https://knowledge.autodesk.com/search-result/caas/CloudHelp/cloudhelp/2016/ENU/Revit-API/files/GUID-F0C7BA6A-8C58-45B4-8639-1E08CBC6781D-htm.html)
 - [`ElementCategoryFilter` class](http://www.revitapidocs.com/2016/b492ddf4-3058-8f9b-dfcc-8d5c4abb3605.htm)
@@ -298,13 +298,13 @@ In our company, we have administrator restriction rights, so we can't easily ins
 multiple versions of the Add-in Manager from the Revit SDK, for Revit 2015, 2016, 2017 and 2018.
 
 Please also note that the Revit 2020 SDK was lacking the add-in manager,
-but [the version from the Revit 2019 SDK still works in Revit 2020](https://thebuildingcoder.typepad.com/blog/2019/05/spatial-geometry-add-in-manager-and-show-reels.html#3) as
+but [the version from the Revit 2019 SDK still works in Revit 2020](1748_spatial_geo_2020.html#3) as
 well.
 
 ####<a name="5"></a> Compiling an Add-In Without Revit Installed
 
-[Question by Armand](https://thebuildingcoder.typepad.com/blog/2018/06/multi-targeting-revit-versions-cad-terms-texture-maps.html#comment-4668774970)
-on [multi-targeting Revit versions using TargetFrameworks](https://thebuildingcoder.typepad.com/blog/2018/06/multi-targeting-revit-versions-cad-terms-texture-maps.html):
+[Question by Armand](1668_multi_target_addin.html#comment-4668774970)
+on [multi-targeting Revit versions using TargetFrameworks](1668_multi_target_addin.html):
 
 **Question:** Is it possible to write/compile Revit add-ins without having the specific version of Revit installed on your development machine?
 I am currently supporting add-ins that I have written for Revit versions 2016 thru 2020.

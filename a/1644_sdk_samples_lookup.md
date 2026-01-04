@@ -22,7 +22,7 @@ Next, I compared the directory contents to discover the new SDK samples
 ### RevitLookup 2019 and New SDK Samples
 
 Last week, I described how I installed Revit 2019
-and [compiled the Revit 2019 SDK samples](http://thebuildingcoder.typepad.com/blog/2018/04/compiling-the-revit-2019-sdk-samples.html).
+and [compiled the Revit 2019 SDK samples](1643_revit_2019_sdk.html).
 
 On Sunday, I migrated RevitLookup to Revit 2019, which was very easy.
 
@@ -52,8 +52,8 @@ from [lookupbuilds.com](https://lookupbuilds.com).
 
 Comparing the Revit SDK directory contents, I discovered the following new samples:
 
-- [AppearanceAssetEditing](http://thebuildingcoder.typepad.com/blog/2017/11/modifying-material-visual-appearance.html) &ndash; added
-in [Revit 2018.1](http://thebuildingcoder.typepad.com/blog/2017/08/revit-20181-and-the-visual-materials-api.html).
+- [AppearanceAssetEditing]( ) &ndash; added
+in [Revit 2018.1](1576_sdk_2018_1.html).
 - RebarFreeForm &ndash; external command to create a Rebar FreeForm element and external application to implement the custom server used to regenerate the rebar geometry based on constraints.
 - SampleCommandsSteelElements &ndash; sample commands for steel elements demonstrating creation, modification and deletion of them.
 

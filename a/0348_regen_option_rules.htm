@@ -1,17 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Regeneration Option Best Practices</h3>
 
 <p>Our discussion of the risks of using the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/manual-regeneration-mode-danger.html">
+<a href="0345_manual_regeneration.htm">
 manual regeneration option</a> triggered 
 
 several very interesting 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/manual-regeneration-mode-danger.html#comments">
+<a href="0345_manual_regeneration.htm#comments">
 comments and suggestions</a>.
 
 Here are some important fundamental things to note about the regeneration modes:
@@ -26,7 +57,7 @@ Here are some important fundamental things to note about the regeneration modes:
 
 <p>Here is a first take at some best practices for dealing with the regeneration option, suggested by Harry Mattison and Arno&scaron;t Lobel of the Revit development team and based on the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/manual-regeneration-mode-danger.html?cid=6a00e553e1689788330133ecc9ca6a970b#comment-6a00e553e1689788330133ecc9ca6a970b">
+<a href="0345_manual_regeneration.htm">
 suggestion by David</a>:
 
 <p><strong>Suggestion:</strong> If automatic regeneration will be going away in a future release, one would think the only thing a responsible developer whose code will need to work beyond Revit 2011 can do is to deal with this issue NOW, while the code is as small and simple as it is likely to ever be, compared to the future.
@@ -114,3 +145,12 @@ It turned out that there is no reasonable default: automatic is what existing co
 So there is no default value for this attribute, and you must apply the Automatic value explicitly and endure the compiler warning.  
 
 <p>I hope that this helps clarify the issue and look forward to hearing what performance improvements can be achieved with the new option.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1268468 [Wall with sloping top edge] -->
@@ -8,23 +39,23 @@
 
 <p>In the distant past, I discussed retrieving specific floor and wall faces based on their face normal, e.g. the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/slab-boundary.html">
+<a href="0031_slab_boundary.htm">
 bottom face and boundary of a horizontal floor slab</a>, the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/wall-elevation-profile.html">
+<a href="0039_wall_elevation_profile.htm">
 exterior face of a vertical wall</a>, and finally the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/08/bottom-face-of-a-wall.html">
+<a href="0203_wall_bottom_face.htm">
 bottom face of a wall</a>.
 
 <p>But what if the normal is not exactly horizontal or vertical?
 
 <p>For instance, how about retrieving the top face of a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/creating-a-wall-with-a-sloped-profile.html">
+<a href="0091_wall_with_sloped_profile.htm">
 wall with a sloped profile</a> or the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/07/create-gable-wall.html">
+<a href="0616_create_gable_wall.htm">
 gable wall</a> that we just looked at a few days ago?
 
 <p>That can get a bit complicated, and has an infinite number of solutions.
@@ -64,14 +95,14 @@ If you are analysing something like a gable wall, you expect to have multiple fa
 <p>One possible approach is to iterate through each face of the wall and determine its normal vector. 
 Such an approach was used to find the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/08/bottom-face-of-a-wall.html">
+<a href="0203_wall_bottom_face.htm">
 bottom face of a wall</a>.
 
 You can extend this to calculate the sloped top faces for your gable wall. 
 
 <p>To extract the slope of the top most wall faces, you can start by 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/wall-elevation-profile.html">
+<a href="0039_wall_elevation_profile.htm">
 identifying the wall elevation profile</a>.
 
 The approach described accesses each of the faces of a wall and determines the exterior one. 
@@ -190,12 +221,12 @@ You can test this code first with a simple gable wall with no doors or windows a
 
 <p>Saikat mentioned my implementation to determine the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/2d-polygon-areas-and-outer-loop.html">
+<a href="0053_2d_polygon_area_outer_loop.htm">
 outer loop of a 2D polygon</a> using the method GetSignedPolygonArea.
 
 <p>I also already implemented the method 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/3d-polygon-areas.html">
+<a href="0055_3d_polygon_area.htm">
 GetPolygonPlane</a> which 
 
 returns the plane properties of a given 3D polygon placed and oriented arbitrarily in space, i.e. the plane normal, area, and its distance from the origin.
@@ -374,10 +405,10 @@ For instance, this is the wall '140204 Generic - 200' which is reported to have 
 <p>The only explanation I can offer for this is that some faces are counted multiple times. 
 One approach to debug this better and try to track down the cause would be to paint the faces like I did for the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/wall-elevation-profile.html">
+<a href="0039_wall_elevation_profile.htm">
 exterior face of a wall</a> and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/2d-polygon-areas-and-outer-loop.html">
+<a href="0053_2d_polygon_area_outer_loop.htm">
 bottom outer loop of a floor slab</a>.
 
 <p>Another idea that comes to mind is to iterate over the faces instead of the edges.
@@ -388,7 +419,7 @@ Obviously, like all comparisons of real numbers, that requires us to add a fuzz 
 
 <p>I already implemented an XYZ equality comparer incorporating such a fuzz factor in 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/nested-instance-geometry.html">
+<a href="0134_nested_instance_geo.htm">
 CmdNestedInstanceGeo.XyzEqualityComparer</a>.
 
 <p>Unfortunately, that equality comparer uses the native Revit API XYZ comparison member method IsAlmostEqualTo, which apparently uses a built-in tolerance that is too fine for our purposes and does not recognise points that we need to identify as equal.
@@ -660,3 +691,12 @@ I also look forward very much to hearing about your more effective solutions to 
 version 2012.0.89.0</a> of
 
 The Building Coder samples including the new command CmdWallTopFaces.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

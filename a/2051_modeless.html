@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
@@ -25,7 +55,8 @@ th, td {
 }
 </style>
 
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - Background Processes
@@ -112,7 +143,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 
 <h3>API Context, Background Process, PostCommand</h3>
 <p>We recently addressed aspects of interacting with
-the <a href="https://thebuildingcoder.typepad.com/blog/2024/08/modeless-add-ins-and-pdf-printing-speed.html">Revit API from a modeless context</a>.
+the <a href="2050_modeless.html">Revit API from a modeless context</a>.
 Let's continue in the same vein, and also look at AI and nuclear power news bites:</p>
 <ul>
 <li><a href="#2">Background process and Revit API</a></li>
@@ -155,7 +186,7 @@ like <a href="https://duckduckgo.com/?q=.net+background+thread">.NET background 
 </blockquote>
 <p>I disagree.
 The Building Coder has discussed related issues with great frequency, and they have also come up a lot in previous discussions here in the forum; a background process is basically a modeless context, so the interaction between those and the BIM are covered by the discussions
-on <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28">Idling and external events for modeless access and driving Revit from outside</a>.</p>
+on <span class="unavailable-link">Idling and external events for modeless access and driving Revit from outside</span>.</p>
 <h4><a name="3"></a> Revit Background Processor</h4>
 <p>Christopher Diggins of <a href="https://ara3d.com/">Ara 3D</a> is looking for feedback on <a href="https://forums.autodesk.com/t5/revit-api-forum/performing-long-running-background-computations-using-idling/td-p/12963194">performing long running background computations using <code>Idling</code> event</a>:</p>
 <p><strong>Question:</strong>
@@ -175,12 +206,12 @@ If the code is fast, the user will never notice, and if the code takes a long ti
 <p><strong>Answer 2:</strong>
 I did quite a lot of work implementing similar functionality for
 my <a href="https://github.com/jeremytammik/RoomEditorApp">RoomEditorApp</a> way back in 2013.</p>
-<p>There, I did indeed encounter and analyse certain <a href="https://thebuildingcoder.typepad.com/blog/2013/11/roomeditorapp-idling-and-benchmarking-timer.html">RoomEditorApp Idling issues</a>.</p>
+<p>There, I did indeed encounter and analyse certain <a href="1062_roomeditorapp.htm">RoomEditorApp Idling issues</a>.</p>
 <p>I hit some limitations of the <code>Idling</code> event, especially controlling the timing and frequency of interaction with Revit, affecting how strongly the external code affected and blocked the Revit UI.
-In the end, I resolved them by <a href="https://thebuildingcoder.typepad.com/blog/2013/12/replacing-an-idling-event-handler-by-an-external-event.html">replacing an Idling event handler by an external event</a>.</p>
+In the end, I resolved them by <a href="1074_roomedit_extern_event.htm">replacing an Idling event handler by an external event</a>.</p>
 <p>You may be able to implement significant improvements to your approach by following suit.</p>
 <p>I suggest you check out some of the other discussions on this topic in The Building Coder topic group
-on <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28"><code>Idling</code> and external events for modeless access and driving Revit from outside</a>
+on <span class="unavailable-link"><code>Idling</code> and external events for modeless access and driving Revit from outside</span>
 and the related posts listed in
 the <a href="https://github.com/jeremytammik/FireRatingCloud">FireRatingCloud documentation</a>.</p>
 <p>Maybe things have changed nowadays, but I suspect Revit still decides internally how often to call the <code>Idling</code> event handler, whereas an external event enables you to control the frequency yourself.
@@ -204,7 +235,7 @@ https://forums.autodesk.com/t5/revit-api-forum/performing-long-running-backgroun
 <p>Roman <a href="https://t.me/nice3point">@Nice3point</a> Karpovich, aka Роман Карпович, shared a new effective solution
 on <a href="https://forums.autodesk.com/t5/revit-api-forum/how-to-know-if-revit-api-is-in-context/m-p/12964099#M80866n">how to know if Revit API is in context</a>:</p>
 <p>The previously suggested solutions
-for <a href="https://thebuildingcoder.typepad.com/blog/2024/03/api-context-aps-toolkit-and-da4r-debugging.html#2">determining Revit API context</a> throw an exception when the API context is not available.</p>
+for <a href="2029_check_context.html#2">determining Revit API context</a> throw an exception when the API context is not available.</p>
 <p>The preview version
 of <a href="https://github.com/Nice3point/RevitToolkit">RevitToolkit</a> provides
 a new way to do this more efficiently without throwing an exception.</p>
@@ -276,3 +307,11 @@ on <a href="https://fusor.net/board/viewtopic.php?t=14933">plasma achieved!</a>.
 <p><center>
 <img src="img/cm_plasma.jpg" alt="High school nuclear fusion reactor" title="High school nuclear fusion reactor" width="450"/> <!-- Pixel Height: 369 Pixel Width: 450 -->
 </center></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!---
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -45,7 +76,7 @@ the thread safety of the Selection.PickPoint method in Revit 2014 and 2015, resu
 </center></p>
 <p>Thank you, Miles, for the notice.</p>
 <p>Last year, Saied already shared with us how
-to <a href="http://thebuildingcoder.typepad.com/blog/2014/11/creating-topography-contours-and-building-masses.html">create topography contours and building masses</a>.</p>
+to <a href="1236_data_topo_building.htm">create topography contours and building masses</a>.</p>
 <p>Here is the new topic:</p>
 <h4><a name="2"></a>Question</h4>
 <p>I have developed a library for some spatial analysis tasks (crowd simulation, Isovist calculation, etc.) which works with BIM data in Revit. I wanted my library to have minimum dependency to any external library, including Revit API libraries, to be able to use it for IFC and other data schemes. Therefore, I designed a series of interface and abstract classes in C# for getting data and sometimes for visualization. The main platform for visualization is however a WPF window. I have difficulties with the uidoc.Selection.PickPoint function in Revit API library. Is it thread safe?</p>
@@ -239,13 +270,13 @@ to <a href="http://thebuildingcoder.typepad.com/blog/2014/11/creating-topography
 <p>I cannot say off-hand what the problem is.</p>
 <p>I can say off-hand that the Revit API is absolutely never thread safe:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/06/no-multithreading-in-revit.html">No multithreading in Revit</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/11/the-revit-api-is-never-ever-thread-safe.html">The Revit API is never ever thread safe</a></li>
+<li><a href="0603_no_multithreading.htm">No multithreading in Revit</a></li>
+<li><a href="1244_no_multithreading.htm">The Revit API is never ever thread safe</a></li>
 </ul>
 <p>Can you reconsider your approach under this assumption?</p>
 <p>Have you read and understood the approach you need to take to drive Revit from outside?</p>
 <p>Do you understand that the Revit API can never be used except in a valid Revit API context, and such a context is exclusively provided within event handler callback functions that you notify Revit about and that it then calls back?</p>
-<p>This is extensively documented by The Building Coder topic group on <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28">Idling and External Events for Modeless Access and Driving Revit from Outside</a>.</p>
+<p>This is extensively documented by The Building Coder topic group on <span class="unavailable-link">Idling and External Events for Modeless Access and Driving Revit from Outside</span>.</p>
 <p>The best way to drive Revit from outside is via external events.</p>
 <p>A good sample on how to architecture an add-in to use them is the ModelessDialog &gt; ModelessForm_ExternalEvent Revit SDK sample.</p>
 <p>Once you can confirm understanding and implementing all the above, if the problem persists, I will pass on your query to the development team.</p>
@@ -273,3 +304,11 @@ to <a href="http://thebuildingcoder.typepad.com/blog/2014/11/creating-topography
 <p>Oh and regarding your question on "illegal connection to Revit is not an unlawful action, is it?" &ndash; nope, it will just hurt you and your customers if you crash Revit and corrupt the model. Nothing worse than that, though &nbsp; :-)</p>
 <p>Maybe others can chip in and help with further explanations?</p>
 <p>Thank you!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

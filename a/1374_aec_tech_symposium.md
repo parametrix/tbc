@@ -60,7 +60,7 @@ Here is something interesting to keep all you enthusiastic AEC BIM developers ha
 
 #### <a name="3"></a>AEC Technology Symposium Videos
 
-I loved the [AEC Hackathon in New York](http://thebuildingcoder.typepad.com/blog/2014/05/aec-hackathon-from-the-midst-of-the-fray.html) that I participated in last summer.
+I loved the [AEC Hackathon in New York](1156_aec_hackathon.htm) that I participated in last summer.
 
 Unfortunately, I was unable to make it to
 the [AEC Technology Symposium and Hackathon 2015](http://core.thorntontomasetti.com/event/aec-technology-symposium-2015),

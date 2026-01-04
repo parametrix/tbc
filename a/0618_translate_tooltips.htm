@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Translate Revit Tooltips</h3>
@@ -27,8 +58,8 @@ improved implementation</a> including caching and other features.
 
 <p>As Rudolf Honke already pointed out in a 
 
-<a href="http://thebuildingcoder.typepad.com/blog/automation">
-number of posts on UI Automation</a>, the .NET framework provides a lot of powerful functionality for manipulating and hooking into the ribbon.
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/automation">
+number of posts on UI Automation <em>(category page)</em></span>, the .NET framework provides a lot of powerful functionality for manipulating and hooking into the ribbon.
 
 <p>To catch the tooltips being displayed, we can subscribe to the Autodesk.Windows.ComponentManager.ToolTipOpened event, which is fired for all tooltips.
 
@@ -189,3 +220,12 @@ Subject: RE: Automatic tooltip translation in the AIR products
 <p>I'd be interested to see this becoming a core feature, but there are alternative distribution mechanisms to consider, in case (Labs or the Exchange Stores, as they come online for our various products).
 
 -->
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

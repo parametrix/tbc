@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -14,18 +45,18 @@
 
 <p>On Monday I presented a new Building Coder sample command
 
-<a href="">
+<a href=">
 CmdDimensionWallsIterateFaces</a>
 
 demonstrating how to create dimensioning between two opposing wall faces by explicitly iterating over their solid geometry and its faces, asking the Revit geometry library to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/geometry-options.html">
+<a href="0278_abg01_geometry_options.htm">
 compute stable references</a> to 
 
 attach the dimensioning elements to.
 The explicit iteration over geometry, searching for the right faces, and extraction of their references can all be simplified by making use of the higher-level specialised 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/findreferencesbydirection.html">
+<a href="0294_abg09_findReferencesByDir.htm">
 FindReferencesByDirection</a> method
 
 provided for this purpose by the Revit API.
@@ -358,3 +389,12 @@ We assume that a suitable 3D view exists in the document and implement the follo
 version 2011.0.86.0</a>
 
 of The Building Coder samples including the complete source code and Visual Studio solution with both of the two new commands.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

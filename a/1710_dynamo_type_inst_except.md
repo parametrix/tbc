@@ -239,7 +239,7 @@ final [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum
 on [mesh data export to json](https://forums.autodesk.com/t5/revit-api-forum/mesh-data-export-to-json/m-p/8459164):
 
 **Question:** I try to retrieve the geometry info from a Revit model to JSON data that I can load to draw geometry by three.js like in
-the [ADN mesh data custom exporter to JSON](https://thebuildingcoder.typepad.com/blog/2013/07/adn-mesh-data-custom-exporter-to-json.html).
+the [ADN mesh data custom exporter to JSON](0981_custom_exporter_json.htm).
 
 Of course, the demo is right and works well with some changes from Revit 2015 or 2016 to 2019.
 
@@ -263,7 +263,7 @@ Thank you very much, and thanks for your demo about the use of `CustomExportCont
 **Answer:** Glad to hear you resolved your problem.
 
 By the way, rather belatedly, may I point out
-that [others ran into the same problem in the past](https://thebuildingcoder.typepad.com/blog/2016/07/exporting-rvt-bims-to-webgl-and-forge.html#3).
+that [others ran into the same problem in the past](1451_custom_export_adn_2017.html#3).
 
 The [exception thrown by the internal custom exporter implementation can simply be caught and ignored](https://github.com/jeremytammik/CustomExporterAdnMeshJson/commit/23a95aad8f4a3cca85a72b32e2b699bde1d46bcb).
 

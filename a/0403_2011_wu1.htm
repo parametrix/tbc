@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Revit 2011 Web Update 1</h3>
@@ -23,7 +54,7 @@
 <li>Improves stability when using selection APIs to pick grid elements.
 <li>Dynamic Model Update: GetChangeTypeGeometry() now triggers properly when active type is changed.
 <li>Improves stability for Dynamic Model Update: when registering updaters and more than one application is registered.
-<li>The new API SunAndShadowSettings.CalculateTimeZone() uses Revit�s mechanism to calculate the time zone value for a given latitude and longitude. This calculation is more accurate than the results obtained from City.TimeZone.
+<li>The new API SunAndShadowSettings.CalculateTimeZone() uses Revit�s mechanism to calculate the time zone value for a given latitude and longitude. This calculation is more accurate than the results obtained from City.TimeZone.
 <li>Improves performance of display of Analysis Visualization framework when Hardware Acceleration is on.
 <li>VSTA is now allowed for multiple concurrent sessions of Revit; editing the same module by two sessions is prohibited.
 <li>VSTA: Document-level macros no longer become corrupted when the document is workshared and the macro is edited by more than one concurrent session.
@@ -31,3 +62,12 @@
 <li>VSTA: Revit no longer prematurely exits when opening a project containing corrupted macros.
 <li>The Idling event no longer generates a journal comment for each invocation.
 </ul>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

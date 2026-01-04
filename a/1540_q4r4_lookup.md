@@ -26,7 +26,7 @@ I ran the first query on the collection of tbc blog posts imported into Elastics
 I ran the first query on the collection
 of [tbc](https://github.com/jeremytammik/tbc) blog
 posts imported into Elasticsearch to experiment for the question answering
-system [Q4R4 *Question Answering for Revit API*](http://thebuildingcoder.typepad.com/blog/2017/03/q4r4-revit-api-question-answering-system.html).
+system [Q4R4 *Question Answering for Revit API*](1536_q4r4.html).
 
 No spectacular results to report so far, but at least it works.
 
@@ -49,7 +49,7 @@ including a nice little filtering sample that I picked up:
 #### <a name="2"></a>Elasticsearch Text Field Mapping
 
 Yesterday, I described
-the [q4r4 tbc import script `tbcimport.py`](http://thebuildingcoder.typepad.com/blog/2017/03/q4r4-tbc-import-and-revitlookup.html) that
+the [q4r4 tbc import script `tbcimport.py`](1539_q4r4_lookup.html) that
 I implemented to import all The Building Coder blog posts
 into [Elasticsearch](https://www.elastic.co/products/elasticsearch) to
 start experimenting with queries on them.
@@ -264,8 +264,8 @@ Here's the code for a little test to get the areas that are on the 'Gross Buildi
 
 There is no need for the `Cast<>`, and more importantly, `ToList` adds no value for this use case and consumes both time and memory, cf.:
 
-- [FindElement and collector optimisation](http://thebuildingcoder.typepad.com/blog/2012/09/findelement-and-collector-optimisation.html)
-- [Collect all rooms on a given level](http://thebuildingcoder.typepad.com/blog/2017/03/events-uv-coordinates-and-rooms-on-level.html#6)
+- [FindElement and collector optimisation](0832_find_element_optimise.htm)
+- [Collect all rooms on a given level](1537_event_uv_room_filt.html#6)
  
 I refactored the parameter accessing code as a separate little method to retrieve the area scheme name from the area element like this:
  

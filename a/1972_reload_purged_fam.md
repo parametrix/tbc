@@ -163,7 +163,7 @@ Thanks to Angel Velez, Ivan Dobrianov, Jacob Small, Lejla Secerbegovic, Mariah H
 ####<a name="4"></a> The CSS OKLCH Colour Space
 
 Moving to a completely different topic: just half a year ago, I pointed out
-the [advantages of the HSL colour space in CSS](https://thebuildingcoder.typepad.com/blog/2022/05/analysis-of-macros-journals-and-add-in-manager.html#5).
+the [advantages of the HSL colour space in CSS](1952_manager_journal_macro.html#5).
 
 That can be yet further improved on, cf. [OKLCH in CSS: why we moved from RGB and HSL](https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl).
 

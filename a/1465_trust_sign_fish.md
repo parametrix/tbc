@@ -37,7 +37,7 @@ Topics for today:
 #### <a name="2"></a>How Does Code Signing of Revit Add-Ins Increase Security?
 
 I talked about
-the [trusted add-in signature](http://thebuildingcoder.typepad.com/blog/2016/08/trusted-signature-and-updated-revit-2017-api-resources.html#2) requirement 
+the [trusted add-in signature](1462_trust_sign_2017_update.html#2) requirement 
 introduced with the Revit 2017 API last week.
 
 Neil Smithline, Revit Software Security Architect, added an in-depth explanation on why this requirement was introduced at all, answering a new question from Ken on
@@ -95,10 +95,10 @@ As far as I can see, they were not marked as obsolete; they were working OK with
 I performed a simple Internet search for "Revit API LoadCaseArray". 
  
 One of the first hits is The Building Coder article
-on [What's New in the Revit 2017 API](http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html).
+on [What's New in the Revit 2017 API](1428_whats_new_2017.html).
  
 Searching that for `LoadCaseArray`, you first see it listed in the section
-on [Obsolete API removal](http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html#2.22).
+on [Obsolete API removal](1428_whats_new_2017.html#2.22).
  
 It does not refer to the `LoadCaseArray` class, though, but the `NewLoadCombination` method that was previously using it.
  
@@ -120,7 +120,7 @@ What method is it?
 What argument does it take?
  
 I performed a new Internet search for "Revit API NewLoadCombination", which turns up The Building Coder article
-on [What's New in the Revit 2016 API](http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html).
+on [What's New in the Revit 2016 API](1311_whats_new_2016.htm).
  
 It includes this section:
  
@@ -148,7 +148,7 @@ Always perform the following searches before asking anyone else for help:
  
 In this case, I see lots of results searching the Revit SDK samples for `LoadCombination`.
  
-I much more hope that you are not only fed, but also in the process of being [transformed into a competent fisherman](http://thebuildingcoder.typepad.com/blog/2009/02/creating-a-group-and-how-to-fish.html) &nbsp; :-)
+I much more hope that you are not only fed, but also in the process of being [transformed into a competent fisherman](0089_create_group.htm) &nbsp; :-)
  
 Good luck with your further searches.
 

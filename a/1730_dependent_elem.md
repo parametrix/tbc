@@ -42,7 +42,7 @@ Now he raises another exciting topic on using the the `GetDependentElements` met
 
 Some previous related discussions include use of the temporary transaction trick to 
 the [change the boundary of floor slabs](https://adndevblog.typepad.com/aec/2013/10/change-the-boundary-of-floorsslabs.html)
-and [editing a floor profile](https://thebuildingcoder.typepad.com/blog/2008/11/editing-a-floor-profile.html).
+and [editing a floor profile](0037_editing_floor_profile.htm).
  
 In Håvard's own words:
 
@@ -60,8 +60,8 @@ The Revit 2019 API provides a new helpful method for this:
 The `Element` class has a method `GetDependentElements` taking an `ElementFilter` argument that returns 'elements which will be deleted along with this element'.
 
 It is listed
-in [What's New in the Revit 2019 API](https://thebuildingcoder.typepad.com/blog/2018/04/whats-new-in-the-revit-2019-api.html)
-under [Find Element Dependencies](https://thebuildingcoder.typepad.com/blog/2018/04/whats-new-in-the-revit-2019-api.html#4.2.3):
+in [What's New in the Revit 2019 API](1647_whats_new_2019.html)
+under [Find Element Dependencies](1647_whats_new_2019.html#4.2.3):
 
 > The new method `Element.GetDependentElements` returns a list of ids of elements which are 'children' of this element; that is, those elements which will be deleted along with this element. The method optionally takes an `ElementFilter` which can be used to reduce the output list to the collection of elements matching specific criteria.
 

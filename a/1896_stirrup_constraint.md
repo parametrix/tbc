@@ -379,7 +379,7 @@ Thank you.
 
 Jason [@mastjaso](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/1058186) Masters
 very kindly jumped in with some experienced advice
-on [exterior walls and room bounding elements](https://thebuildingcoder.typepad.com/blog/2021/03/exterior-walls-and-room-bounding-elements.html) in
+on [exterior walls and room bounding elements](1895_exterior_walls.html) in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 on how to [get the walls, ceiling and floor of a room](https://forums.autodesk.com/t5/revit-api-forum/get-the-walls-ceiling-and-floor-of-a-room/m-p/9915923), saying:
 
@@ -473,7 +473,7 @@ Can you suggest some reference materials which would help us better understand p
 
 **Answer:** Sure:
  
-1. [Getting started with the Revit API](https://thebuildingcoder.typepad.com/blog/about-the-author.html#2), including
+1. Getting started with the Revit API *(link unavailable)*, including
 the [My First Revit Plug-In video tutorial](https://www.autodesk.com/developer-network/platform-technologies/revit)
 2. Ribbon definition is discussed in the [Revit API training labs](https://github.com/ADN-DevTech/RevitTrainingMaterial), specifically part 2, Revit UI API
 3. Db read-write is included in the getting started material

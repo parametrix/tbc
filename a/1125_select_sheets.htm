@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Selecting Sheets instead of Views for the Simplified BIM Editor</h3>
@@ -18,7 +49,7 @@ by
 
 including my own visionary idea to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/04/automating-large-scale-waste-recycling-and-sustainability.html">
+<a href="1124_waste_sustainabilty.htm">
 recycle waste as insulation and curtain wall material</a> around
 
 the building producing it.
@@ -31,7 +62,7 @@ Autodesk Toilet Design Suite</a> product much better  :-)</p>
 
 <p>This is the third instalment of implementing the new RoomEditorApp features required for my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/03/back-from-desert-and-two-happy-events.html#3">
+<a href="1110_tech_summit.htm#3">
 generic 2D simplified BIM editor</a> Tech
 
 Summit presentation, including a change of plan and some additional complexity, as we shall see below.</p>
@@ -40,7 +71,7 @@ Summit presentation, including a change of plan and some additional complexity, 
 
 <p>Steps 1, 2 and 3 in the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/03/using-generic-collections-with-filters-and-forms.html">
+<a href="1117_generic_select_form.htm">
 previous tentative workflow</a> refer
 
 to plan views, and actually floor plans, to be specific.</p>
@@ -77,7 +108,7 @@ to plan views, and actually floor plans, to be specific.</p>
 
 <p>The steps 5, 6 and 7 correspond to the steps 4 and 5 in the previous tentative workflow, were addressed
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/03/selecting-visible-categories-from-a-set-of-views.html">
+<a href="1119_select_categories.htm">
 selecting visible categories from a set of views</a>,
 
 and can easily be adapted to the new workflow.</p>
@@ -110,7 +141,7 @@ and can easily be adapted to the new workflow.</p>
 
 <p>This is obviously very similar to the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/03/selecting-visible-categories-from-a-set-of-views.html#3">
+<a href="1119_select_categories.htm#3">
 CategoryEqualityComparer</a> introduced
 
 in the last instalment.
@@ -124,7 +155,7 @@ The similarity lies in the fact that categories also have an Id property, but ar
 
 <p>I edited the previous
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/03/using-generic-collections-with-filters-and-forms.html#2">
+<a href="1117_generic_select_form.htm#2">
 FrmSelectViews</a> to
 
 select view sheets instead of floor plan views,
@@ -169,7 +200,7 @@ stackoverflow.com</a>:</p>
 
 <p>The previous
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/03/using-generic-collections-with-filters-and-forms.html#3">
+<a href="1117_generic_select_form.htm#3">
 CmdUploadViews</a> is
 
 also renamed, and this is obviously the place where the interesting changes need to be applied.</p>
@@ -180,7 +211,7 @@ also renamed, and this is obviously the place where the interesting changes need
 
 <p>For details on the rest, please refer to the initial
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/03/using-generic-collections-with-filters-and-forms.html#3">
+<a href="1117_generic_select_form.htm#3">
 CmdUploadViews description</a>.</p>
 
 <p>Here is the entire implementation of the external command Execute method:</p>
@@ -368,3 +399,12 @@ They are listed together with the views and count of floor plans they contain:</
 <p>The version discussed above is stored as
 
 <a href="https://github.com/jeremytammik/RoomEditorApp/releases/tag/2014.0.2.3">release 2014.0.2.3</a>.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

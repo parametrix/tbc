@@ -295,7 +295,7 @@ The [Hubs Browser tutorial](https://tutorials.autodesk.io/tutorials/hubs-browser
 References:
 
 - [Accessing BIM 360 design models on Revit](https://aps.autodesk.com/blog/accessing-bim-360-design-models-revit)
-- [How to open a cloud model](https://thebuildingcoder.typepad.com/blog/2020/04/revit-2021-cloud-model-api.html#4.4)
+- [How to open a cloud model](1834_2021_cloud_model_api.html#4.4)
 - [Developer's guide online help on cloud models](https://help.autodesk.com/view/RVT/2023/ENU/?guid=Revit_API_Revit_API_Developers_Guide_Introduction_Application_and_Document_CloudFiles_html)
 
 Many thanks to Eason for this comprehensive answer!

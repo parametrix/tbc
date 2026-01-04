@@ -55,16 +55,16 @@ Today, Valerii Nozdrenkov shares a powerful solution to save and restore the com
 ####<a name="2"></a> Serialising 3D View Camera Settings
 
 Valerii Nozdrenkov shared a powerful solution for serialising the 3D view camera settings
-[in](https://thebuildingcoder.typepad.com/blog/2020/04/revit-camera-fov-forge-partner-talks-and-jobs.html#comment-4929308181)
-[a](https://thebuildingcoder.typepad.com/blog/2020/04/revit-camera-fov-forge-partner-talks-and-jobs.html#comment-5106250525)
-[series](https://thebuildingcoder.typepad.com/blog/2020/04/revit-camera-fov-forge-partner-talks-and-jobs.html#comment-5107042312)
-[of](https://thebuildingcoder.typepad.com/blog/2020/04/revit-camera-fov-forge-partner-talks-and-jobs.html#comment-5107053457)
-[comments](https://thebuildingcoder.typepad.com/blog/2020/04/revit-camera-fov-forge-partner-talks-and-jobs.html#comment-5107690269), 
+[in](1840_camera_fov.html#comment-4929308181)
+[a](1840_camera_fov.html#comment-5106250525)
+[series](1840_camera_fov.html#comment-5107042312)
+[of](1840_camera_fov.html#comment-5107053457)
+[comments](1840_camera_fov.html#comment-5107690269), 
 nicely complementing previous explorations on:
 
-- [Setting up your `ViewOrientation3D`](http://thebuildingcoder.typepad.com/blog/2013/04/setting-up-your-vieworientation3d.html)
-- [Exporting image and setting a default 3D view orientation](http://thebuildingcoder.typepad.com/blog/2013/08/setting-a-default-3d-view-orientation.html)
-- [Mapping Forge viewer camera settings back to Revit](https://thebuildingcoder.typepad.com/blog/2019/06/revit-camera-settings-project-plasma-da4r-and-ai.html#2)
+- [Setting up your `ViewOrientation3D`](0926_vieworientation3d.htm)
+- [Exporting image and setting a default 3D view orientation](1006_3d_view_orientation.htm)
+- [Mapping Forge viewer camera settings back to Revit](1758_camera_plasma_da4r_ai.html#2)
 
 **Question:** I have a question about `View3D` camera settings.
 I want to serialize view 3D camera orientation.

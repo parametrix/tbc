@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1272158 [Get geometry of wall Layers] -->
@@ -26,16 +57,16 @@ I hope  this helps keep you occupied while I am gone  :-)
 
 <p>It is easy to determine the wall layer locations and their corner points individually for unconnected walls, as I demonstrated by analysing and drawing model lines to represent the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/wall-compound-layers.html">
+<a href="0038_wall_layers.htm">
 wall compound layers</a> way 
 
 back in 2008.
 Some additional information on working with wall layers was provided when discussing
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/compound-wall-layer-volumes.html">
+<a href="0090_compound_wall_layer_volumes.htm">
 compound wall layer volumes</a> and the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/06/core-structural-layer.html">
+<a href="0145_core_structural_layer.htm">
 core structural layer</a>.
 
 <p>However, it is a bit harder to determine the exact wall layer corners for connected walls, where the join type affects the layer geometry, e.g. for 'abut' or 'miter'.
@@ -58,7 +89,7 @@ hsbSOFT</a>.
 
 <p>The technique of using a temporary transaction for geometry analysis purposes was originally suggested by Scott Conover of the Revit API development team and already mentioned several times here in the past, e.g. for 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/material-quantity-extraction.html">
+<a href="0296_abg10_material_quantity.htm">
 gross material quantity extraction</a>.
 
 <p><strong>Question:</strong> I need to get the geometric information of the layers of a wall. 
@@ -138,12 +169,12 @@ Then you can access the geometry of each part individually.
 
 <p>Marcelo's ModelLineCreator is a simplified version of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/model-curve-creator.html">
+<a href="0375_model_curve_creator.htm">
 model curve creator</a> I 
 
 maintain in The Building Coder samples and last used to display model lines representing the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/07/top-faces-of-wall.html">
+<a href="0620_top_faces_of_wall.htm">
 top faces of all walls</a>.
 
 <p>The WallSelectionFilter is a trivial selection filter to ensure that only walls can be selected.
@@ -324,3 +355,12 @@ It makes use of the helper method GetBottomFacePoints to retrieve a list of poin
 GeometryPartsAnalyzer.zip</a> including the complete source code and Visual Studio solution of this command.
 
 <p>Many thanks to Marcelo for his exploration and nice implementation!
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

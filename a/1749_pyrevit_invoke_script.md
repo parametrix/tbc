@@ -10,8 +10,8 @@
 
 - Rapid Debugging, Testing and Network Deployment using pyRevit
   Ali Tehami posted a very enthusiastic and inspiring
-  [comment](https://thebuildingcoder.typepad.com/blog/2018/09/five-secrets-of-revit-api-coding.html#comment-4447694964) on
-  Joshua Lumley's [Five Secrets of Revit API Coding](https://thebuildingcoder.typepad.com/blog/2018/09/five-secrets-of-revit-api-coding.html) that
+  [comment](1682_5_secrets.html#comment-4447694964) on
+  Joshua Lumley's [Five Secrets of Revit API Coding](1682_5_secrets.html) that
   is certainly of interest to many others, extolling the virtues of
   the [pyRevit rapid application development](https://github.com/eirannejad/pyRevit):
 I successfully managed to implement invoking an external command defined in a stand-alone Revit plugin assembly from [pyRevit](https://github.com/eirannejad/pyRevit)!
@@ -56,8 +56,8 @@ The [pyRevit rapid application development environment](https://github.com/eiran
 be used for the entire add-in lifecycle, supporting rapid debugging, testing and deployment as well.
 
 Here is a very short post to highlight Ali Tehami's enthusiastic and
-inspiring [comment](https://thebuildingcoder.typepad.com/blog/2018/09/five-secrets-of-revit-api-coding.html#comment-4447694964) on
-Joshua Lumley's [five secrets of Revit API coding](https://thebuildingcoder.typepad.com/blog/2018/09/five-secrets-of-revit-api-coding.html) that
+inspiring [comment](1682_5_secrets.html#comment-4447694964) on
+Joshua Lumley's [five secrets of Revit API coding](1682_5_secrets.html) that
 is certainly of interest to many others, extolling the virtues of `pyRevit`:
 
 > I successfully implemented invoking an external command defined in a stand-alone Revit plugin assembly from [pyRevit](https://github.com/eirannejad/pyRevit)!

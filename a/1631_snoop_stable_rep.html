@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -6,6 +36,7 @@
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -60,17 +91,17 @@ the <a href="https://github.com/jeremytammik/RevitLookup/compare/2018.0.0.6...20
 see how elegantly this was achieved.</p>
 <h4><a name="3"></a>Project Point on Plane Correction</h4>
 <p>Alexander also raised some other interesting issues in in the past in comments on
-the <a href="http://thebuildingcoder.typepad.com/blog/2008/12/wall-graph.html#comment-3490286732">wall graph</a>,
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/point-in-polygon-containment-algorithm.html#comment-3504414240">point in polygon algorithm</a>,
-<a href="http://thebuildingcoder.typepad.com/blog/2015/01/getting-the-wall-elevation-profile.html#comment-3759178237">wall elevation profile</a> and,
+the <a href="0047_wall_graph.htm#comment-3490286732">wall graph</a>,
+<a href="0491_point_in_poly.htm#comment-3504414240">point in polygon algorithm</a>,
+<a href="1271_wall_elevation_profile.htm#comment-3759178237">wall elevation profile</a> and,
 most recently and significantly,
-on <a href="http://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html#comment-3765799540">projecting</a>
-<a href="http://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html#comment-3779858513">a point</a>
-<a href="http://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html#comment-3779960537">onto a plane</a>,
+on <a href="1202_plane_proj_pick.htm#comment-3765799540">projecting</a>
+<a href="1202_plane_proj_pick.htm#comment-3779858513">a point</a>
+<a href="1202_plane_proj_pick.htm#comment-3779960537">onto a plane</a>,
 uncovering an error in The Building Coder samples <code>ProjectOnto</code> method that projects a given 3D <code>XYZ</code> point onto a plane.</p>
 <p>I originally presented this method in the discussion
-on <a href="http://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html">planes, projections and picking points</a>:
-<a href="http://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html#12">projecting a 3D point onto a plane</a>.</p>
+on <a href="1202_plane_proj_pick.htm">planes, projections and picking points</a>:
+<a href="1202_plane_proj_pick.htm#12">projecting a 3D point onto a plane</a>.</p>
 <p>Swapping the sign seems to have fixed it, as proved
 by <a href="https://github.com/Pekshev/ProjectPointOnPlanetest">Alexander's ProjectPointOnPlanetest sample add-in</a>:</p>
 <pre class="code">
@@ -161,3 +192,11 @@ In the absence of a directory, it will be created.</p>
 <img src="img/ap_rvt_to_xml_to_acad_2.png" alt="Export result rendered in AutoCAD" width="400"/>
 </center></p>
 <p>Many thanks again to Alexander for sharing this!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

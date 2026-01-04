@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!--
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -26,8 +57,8 @@
 <p>That functionality can be combined with the <code>ReferenceIntersector</code> to shoot a ray through the model to determine what Revit database element is located under the current cursor position and display a custom tooltip presenting information about it or anything else you please.</p>
 <p>I explained the principles of doing so and the nitty-gritty implementation details of the <code>WinTooltip</code> sample add-in back in 2012:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/06/uiview-and-windows-device-coordinates.html">UIView and Windows Device Coordinates</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/10/uiview-windows-coordinates-referenceintersector-and-my-own-tooltip.html">UIView, Windows Coordinates, ReferenceIntersector and My Own Tooltip</a></li>
+<li><a href="0785_windows_device_coords.htm">UIView and Windows Device Coordinates</a></li>
+<li><a href="0840_wincoord_tooltip.htm">UIView, Windows Coordinates, ReferenceIntersector and My Own Tooltip</a></li>
 </ul>
 <p>Hosted on GitHub and migrated to Revit 2017, <a href="https://github.com/jeremytammik/WinTooltip">WinTooltip</a> now
 displays Revit database element information in a very rough custom tooltip like this:</p>
@@ -41,7 +72,7 @@ displays Revit database element information in a very rough custom tooltip like 
 <p>By the way, you might be surprised what minimal modifications were required for the migration.</p>
 <p>The code was not modified at all.</p>
 <p>I only changed the .NET framework version, updated the Revit API references
-and <a href="http://thebuildingcoder.typepad.com/blog/2014/09/architecture-mismatch-warning-disabler-update.html">eliminated the architecture mismatch warning using <code>DisableMismatchWarning.exe</code></a>.</p>
+and <a href="1208_architecture_mismatch.htm">eliminated the architecture mismatch warning using <code>DisableMismatchWarning.exe</code></a>.</p>
 <p>You can examine the exact changes made by looking at the GitHub diffs:</p>
 <ul>
 <li><a href="https://github.com/jeremytammik/WinTooltip/compare/2013.0.0.0...2017.0.0.0">Update Revit API references</a></li>
@@ -49,9 +80,17 @@ and <a href="http://thebuildingcoder.typepad.com/blog/2014/09/architecture-misma
 </ul>
 <p>Please note that several important improvements on handling the <code>Idling</code> event properly that have been learned since 2012 have <b><i>not</i></b> been incorporated into this sample.</p>
 <p>For more information about those, especially the recommendation
-to <a href="http://thebuildingcoder.typepad.com/blog/2013/12/replacing-an-idling-event-handler-by-an-external-event.html">avoid <code>Idling</code> in favour of external events except for one-off calls</a>,
+to <a href="1074_roomedit_extern_event.htm">avoid <code>Idling</code> in favour of external events except for one-off calls</a>,
 please refer to The Building Coder topic group
-on <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28"><code>Idling</code> and external events for modeless access and driving Revit from outside</a>.</p>
+on <span class="unavailable-link"><code>Idling</code> and external events for modeless access and driving Revit from outside</span>.</p>
 <p>In its current form, WinTooltip for Revit 2017 is still just a flat migration of the original Revit 2013 implementation with all its flaws, just as a proof of concept, and not suitable for production use.</p>
 <p>I hope you find it interesting and useful despite this caveat.</p>
 <p>Check it out in its new <a href="https://github.com/jeremytammik/WinTooltip">WinTooltip GitHub repository</a>.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

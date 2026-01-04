@@ -315,7 +315,7 @@ Solution: reinitialize the collector in every pass:
 Many thanks to Fair59 for yet another invaluable hint.
 
 By the way, you might also want
-to [simplify your transaction handling by wrapping it in a `using` statement](https://thebuildingcoder.typepad.com/blog/2012/04/using-using-automagically-disposes-and-rolls-back.html).
+to [simplify your transaction handling by wrapping it in a `using` statement](0753_dispose_transact_2.htm).
 However, I also wonder whether you need any transaction at all for this read-only operation.
 
 This misunderstanding caused a similar initial problem in another recent case involving 
@@ -324,9 +324,9 @@ a [material assets collector for appearance, structural (physical) and thermal](
 ####<a name="5"></a> Use CreateReferenceInLink to Select a Face in a Linked File
 
 Back in 2012, we discussed a pretty convoluted solution 
-for [selecting a face in a linked file](https://thebuildingcoder.typepad.com/blog/2012/05/selecting-a-face-in-a-linked-file.html#comment-4704876157).
+for [selecting a face in a linked file](0766_sel_face_linked_file.htm#comment-4704876157).
 
-Joshua Lumley added a [comment](https://thebuildingcoder.typepad.com/blog/2012/05/selecting-a-face-in-a-linked-file.html#comment-4704877758) to
+Joshua Lumley added a [comment](0766_sel_face_linked_file.htm#comment-4704877758) to
 that old post, pointing out that:
 
 > The `CreateReferenceInLink` was added after that discussion, in Revit 2014.

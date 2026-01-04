@@ -46,8 +46,8 @@ Today, we proudly present:
 #### <a name="2"></a>NuGet Revit Server REST API Library
 
 Eric Anastas posted
-a [comment](http://thebuildingcoder.typepad.com/blog/2016/12/nuget-revit-api-package.html#comment-3133102375) on
-the discussion of Andrey Bushman's [NuGet Revit API package](http://thebuildingcoder.typepad.com/blog/2016/12/nuget-revit-api-package.html):
+a [comment](1510_nuget_revit_api.html#comment-3133102375) on
+the discussion of Andrey Bushman's [NuGet Revit API package](1510_nuget_revit_api.html):
 
 > I created another Revit related Nuget package you and your readers may be interested in.
 It's a .NET library that wraps the Revit Server REST API:

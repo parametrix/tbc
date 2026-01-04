@@ -28,7 +28,7 @@ Using Design Automation for Revit, you can create, edit, and extract data from R
 
 For a high-level introduction, watch the [AU class recording](https://www.autodesk.com/autodesk-university/class/Revit-Data-Forge-How-Can-Design-Automation-Revit-API-Help-Me-2018).
 
-Our previous discussion of [Design Automation for Revit at AU and in public](https://thebuildingcoder.typepad.com/blog/2018/11/forge-design-automation-for-revit-at-au-and-in-public.html) highlights
+Our previous discussion of [Design Automation for Revit at AU and in public](1701_da4r_au.html) highlights
 both that class, FDC226894, by the Autodesk Revit API development team, and another, AS226079, on managing Revit digital content using DA4R, by external alpha phase developers.
 
 The official [Forge Design Automation documentation](https://forge.autodesk.com/en/docs/design-automation/v3/developers_guide/overview) has

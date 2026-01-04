@@ -60,7 +60,7 @@ Inundated with interesting topics, let's skim a few topmost ones off:
 Morten Bastue Jacobsen, Senior BIM Specialist of [Ramboll](https://ramboll.com),
 discovered a way to pass in Custom Command Line Parameters to Revit.exe to be picked up by an add-in.
 
-[Revit implements built-in support for certain command line arguments](https://thebuildingcoder.typepad.com/blog/2017/01/distances-switches-kiss-ing-and-a-dino.html#3),
+[Revit implements built-in support for certain command line arguments](1512_kiss.html#3),
 and their meaning obviously cannot be changed or customised.
 
 If you specify a command line argument that is not one of the 'switches' listed, then the first one must be the path to a Revit model to open, and the second one must be the path to a journal file to replay.
@@ -137,10 +137,10 @@ If so, could you point me to any Revit API training you know of?
 
 **Answer:** Yes, it is.
 
-First, look at the [Revit API getting started material](https://thebuildingcoder.typepad.com/blog/about-the-author.html#2).
+First, look at the Revit API getting started material *(link unavailable)*.
 
 Once you have a grasp of that, you can turn straight to
-the [Revit SDK sample FamilyCreation/CreateAirHandler](https://thebuildingcoder.typepad.com/blog/2010/11/connector-direction-and-createairhandler.html) &ndash;
+the [Revit SDK sample FamilyCreation/CreateAirHandler](0482_createairhandler_connector.htm) &ndash;
 it creates an air handler and adds air and water piping and ductwork connectors to it.
 
 <center>

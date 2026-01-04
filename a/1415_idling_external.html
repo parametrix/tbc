@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!---
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -67,8 +98,8 @@ of <a href="#4">Idling versus external events for modeless dialogues and dockabl
 <p>Time and space, listening inwards.</p>
 <p>I already participated in the same ten-day course taught by <a href="http://en.wikipedia.org/wiki/S._N._Goenka">S. N. Goenka</a> and organised
 by <a href="http://www.dhamma.org">www.dhamma.org</a>
-after <a href="http://thebuildingcoder.typepad.com/blog/2009/12/uk-electrical-schedule-sample.html">Christmas 2009</a>
-and in <a href="http://thebuildingcoder.typepad.com/blog/2010/01/happy-new-year-2010.html">January 2010</a>.</p>
+after <a href="0272_uk_elec_panel_schedule.htm">Christmas 2009</a>
+and in <a href="0274_happy_new_year.htm">January 2010</a>.</p>
 <p>It was by far the most relaxing thing I have ever done.</p>
 <p><a href="http://www.dhamma.org">Dhamma.org</a> organises absolutely identical courses over the entire world, completely free of charge, completely volunteer driven.</p>
 <h4><a name="3"></a>Jon Kabat-Zinn Mindfulness</h4>
@@ -86,12 +117,12 @@ and <a href="https://en.wikipedia.org/wiki/Mindfulness#Government">government</a
 <h4><a name="4"></a>Idling versus External Events for Modeless Dialogues and Dockable Panels</h4>
 <p>This question was raised by Miroslav Schonauer, Solution Architect for Autodesk Consulting, and answered by Arnošt Löbel, Senior Principal Engineer of the Revit development team.</p>
 <p><strong>Miro:</strong> For the first time I need to use a complex Modeless dialog in Revit. Eventually I will be using a RVT-docking dialog, as in the Revit SDK DockableDialogs sample or
-the <a href="http://thebuildingcoder.typepad.com/blog/2013/05/a-simpler-dockable-panel-sample.html">simpler dockable panel sample</a>,
+the <a href="0942_dockable_panel.htm">simpler dockable panel sample</a>,
 but for the time being I'm only prototyping the 'communication' between the dialogue and Revit, so exploring two options: external events vs. the Idling event, as implemented in the ModelessDialog projects in the Revit SDK Samples.</p>
 <p>Can you please confirm:</p>
 <p><strong>Q1)</strong> As far as just the 'communication' between a modeless dialog and Revit is concerned, there is not really anything that IDockablePaneProvider additionally provides compared to a simple modeless Form, i.e., we still have the 2 options: External Event or Idling Event.</p>
 <p>I've done some research on External event vs Idling Event and read Jeremy's analysis
-on <a href="http://thebuildingcoder.typepad.com/blog/2013/12/replacing-an-idling-event-handler-by-an-external-event.html">replacing an Idling event handler by an external event</a>.</p>
+on <a href="1074_roomedit_extern_event.htm">replacing an Idling event handler by an external event</a>.</p>
 <p><strong>Q2)</strong> Can you please comment or expand on my conclusions:</p>
 <ol type="a">
 <li>If one needs to be periodically checking external sources for whatever, an external event is much better than an Idling event.</li>
@@ -110,7 +141,7 @@ on <a href="http://thebuildingcoder.typepad.com/blog/2013/12/replacing-an-idling
 <p>When clicking a button in the dockable dialog, the active view will lose focus because the focus is on the dockable dialog, causing the exception to be thrown.</p>
 <p><strong>Arnošt:</strong> Naturally, this is not a problem directly related to either EE or IE. A dockable palette could easily experience the same problem when trying to pick something at a time of any other event (or any API context, in fact). I would qualify this as an issue with the picking functions.  It seems to me that the methods should be either extended by allowing the caller to specify a graphic window in which picking is to occur, or at the very least it should realize that the current view is not a graphic one and should thus automatically switch to the previously active graphic view instead.</p>
 <p>Many thanks to Miro, Aaron and Arnošt for this clarification!</p>
-<p>By the way, numerous previous discussions and a lot more background information and examples on this area are provided by The Building Coder topic group on <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28">Idling and external events for modeless access and driving Revit from outside</a>.</p>
+<p>By the way, numerous previous discussions and a lot more background information and examples on this area are provided by The Building Coder topic group on <span class="unavailable-link">Idling and external events for modeless access and driving Revit from outside</span>.</p>
 <p>Now I wish you a happy relaxing weekend, with both aliveness and idling time:</p>
 <p><center>
 <img src="img/367_jeremy_idling_400x306.jpg" alt="Idling event" width="400">
@@ -119,3 +150,11 @@ on <a href="http://thebuildingcoder.typepad.com/blog/2013/12/replacing-an-idling
 <p><center>
 <img src="img/377_jeremy_sitting_250x400.jpg" alt="External sitting event" width="250">
 </center></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

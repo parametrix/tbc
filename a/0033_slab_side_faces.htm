@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -9,14 +39,14 @@
 
 <p>In the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/model-line-creation.html">
+<a href="0032_model_lines.htm">
 preceding post</a>,
 
 we discussed the creation of model lines to graphically display certain polygons in space for debugging purposes.
 
 The polygons we display are
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/slab-boundary.html">
+<a href="0031_slab_boundary.htm">
 slab boundaries</a>
 
 calculated by iterating over all the horizontal faces of the slab and choosing the lowest one to extract its edge loops from, which represent the polygonal slab boundary loops.
@@ -169,5 +199,14 @@ For each floor, the geometry is extracted and the solid is passed into the GetSi
 <p>The little green lines are the face normals. Each rectangular face has two of them, since its triangulation returns two mesh triangles. Note that the circular hole is also handled successfully by this algorithm, although its face is not planar. Its mesh approximation obviously has many triangles. Also note that the triangle vertices are consistently oriented, so that the normal vector is always pointing out of the face, i.e. out of the solid that the face belongs to.</p>
 
 <p>I am adding a new version 1.0.0.10 of the complete Visual Studio solution
-<a href="http://thebuildingcoder.typepad.com/blog/files/bc10010.zip">here</a>,
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/files/bc10010.zip">here <em>(file no longer available)</em></span>,
 including the new CmdSlabSides and updated Creator classes, as well as all other commands discussed so far.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

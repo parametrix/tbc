@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -11,6 +41,7 @@
     list-style-type: none;
   }
 </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -77,9 +108,9 @@ The Revit 2019 API includes numerous exciting enhancements for add-in developers
 </ul>
 <h4><a name="1"></a>Information Sources</h4>
 <p>The highlights were pointed out in
-the <a href="http://thebuildingcoder.typepad.com/blog/2018/02/devdays-keynote-manager-and-rex-extensions.html#2">DevDays Online Revit API news video recording</a>.</p>
+the <a href="1627_keynote_rex.html#2">DevDays Online Revit API news video recording</a>.</p>
 <p>The information below is based on the contents of the <em>Revit Platform API Changes and Additions.docx</em> document included with
-the <a href="http://thebuildingcoder.typepad.com/blog/2018/04/compiling-the-revit-2019-sdk-samples.html#3">Revit 2019 SDK</a>
+the <a href="1643_revit_2019_sdk.html#3">Revit 2019 SDK</a>
 &ndash; software developers kit &ndash; available from the Revit installation package and 
 the <a href="https://www.autodesk.com/developer-network/platform-technologies/revit">Revit Developer Centre</a> (not posted yet, but coming soon).</p>
 <p>It is also provided in the section on <em>What's New</em> in the Revit 2019 API help file <code>RevitAPI.chm</code> included with the SDK:</p>
@@ -105,30 +136,30 @@ in the <a href="http://help.autodesk.com/view/RVT/2019/ENU">Revit 2019 Help</a>.
 <h4><a name="2"></a>Installation and Migration From Previous Versions</h4>
 <p>Here are the steps I performed so far setting up the Revit 2019 SDK and samples:</p>
 <ul>
-<li>The <a href="http://thebuildingcoder.typepad.com/blog/2018/04/compiling-the-revit-2019-sdk-samples.html">Revit 2019 SDK samples</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2018/04/revitlookup-2019-and-new-sdk-samples.html">RevitLookup</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2018/04/forge-rvt-to-ifc-adn-xtra-tbc-and-adnrme-updates.html#2">The Building Coder samples</a></li>
-<li>The <a href="http://thebuildingcoder.typepad.com/blog/2018/04/forge-rvt-to-ifc-adn-xtra-tbc-and-adnrme-updates.html#3">AdnRme MEP HVAC and electrical samples</a></li>
-<li>The <a href="http://thebuildingcoder.typepad.com/blog/2018/04/forge-rvt-to-ifc-adn-xtra-tbc-and-adnrme-updates.html#4">AdnRevitApiLabsXtra training labs</a></li>
-<li>The <a href="http://thebuildingcoder.typepad.com/blog/2018/04/rvtsamples-2019.html">RvtSamples add-in</a></li>
+<li>The <a href="1643_revit_2019_sdk.html">Revit 2019 SDK samples</a></li>
+<li><a href="1644_sdk_samples_lookup.html">RevitLookup</a></li>
+<li><a href="1645_tbc_2019_forge_ifc.html#2">The Building Coder samples</a></li>
+<li>The <a href="1645_tbc_2019_forge_ifc.html#3">AdnRme MEP HVAC and electrical samples</a></li>
+<li>The <a href="1645_tbc_2019_forge_ifc.html#4">AdnRevitApiLabsXtra training labs</a></li>
+<li>The <a href="1646_rvtsamples_2019.html">RvtSamples add-in</a></li>
 </ul>
 <h4><a name="3"></a>What's New in Previous Versions</h4>
 <p>Here are links to previous discussions of <em>What's New in the Revit API</em>:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2010-api.html">What's New in the Revit 2010 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2011-api.html">What's New in the Revit 2011 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2012-api.html">What's New in the Revit 2012 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/03/whats-new-in-the-revit-2013-api.html">What's New in the Revit 2013 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html">What's New in the Revit 2014 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html">What's New in the Revit 2015 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html">What's New in the Revit 2016 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html">What's New in the Revit 2017 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/11/whats-new-in-the-revit-20171-api.html">What's New in the Revit 2017.1 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html">What's New in the Revit 2018 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/08/revit-20181-and-the-visual-materials-api.html">Revit 2018.1 and the Visual Materials API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/09/revit-201811-fixes-cropbox-setting.html">Revit 2018.1.1 and 2018.1 API Docs Online</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/11/modifying-material-visual-appearance.html">Revit 2018.1 Visual Materials API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/12/whats-new-in-the-revit-20182-api.html">What's New in the Revit 2018.2 API</a></li>
+<li><a href="0901_whats_new_2010.htm">What's New in the Revit 2010 API</a></li>
+<li><a href="0902_whats_new_2011.htm">What's New in the Revit 2011 API</a></li>
+<li><a href="0903_whats_new_2012.htm">What's New in the Revit 2012 API</a></li>
+<li><a href="0904_whats_new_2013.htm">What's New in the Revit 2013 API</a></li>
+<li><a href="0938_whats_new_2014.htm">What's New in the Revit 2014 API</a></li>
+<li><a href="1141_whats_new_2015.htm">What's New in the Revit 2015 API</a></li>
+<li><a href="1311_whats_new_2016.htm">What's New in the Revit 2016 API</a></li>
+<li><a href="1428_whats_new_2017.html">What's New in the Revit 2017 API</a></li>
+<li><a href="1496_whats_new_2017_1.html">What's New in the Revit 2017.1 API</a></li>
+<li><a href="1551_whats_new_2018.html">What's New in the Revit 2018 API</a></li>
+<li><a href="1576_sdk_2018_1.html">Revit 2018.1 and the Visual Materials API</a></li>
+<li><a href="1586_2018_1_1.html">Revit 2018.1.1 and 2018.1 API Docs Online</a></li>
+<li><a href=" ">Revit 2018.1 Visual Materials API</a></li>
+<li><a href="1609_whats_new_2018_2.html">What's New in the Revit 2018.2 API</a></li>
 </ul>
 <h4><a name="4"></a>What's New in the Revit 2019 API &ndash; Detailed ToC</h4>
 <p>Table of Contents:</p>
@@ -899,3 +930,11 @@ For a free form rebar set the distance between two consecutive bars may be diffe
 <li>BeforeExecutedEventArgs.Cancel</li>
 </ul>
 <p>is now permitted to be set to true. This allows the call-back to cancel the execution of the impending command. This can be useful if an add-in wishes to selectively allow the command to proceed based on interactions which take place in this call-back. The property should also report the cancellation status if it has been cancelled by a different subscriber.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

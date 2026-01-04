@@ -45,13 +45,13 @@ We will soon have no choice but to abandon this idea and move on to something el
 **Answer:** The development team responds:
 
 The Building Coder article
-on [texture bitmap and `UV` coordinates](http://thebuildingcoder.typepad.com/blog/2013/07/texture-bitmap-and-uv-coordinates.html) part 1
-on [obtaining texture `UV` coordinates](http://thebuildingcoder.typepad.com/blog/2013/07/texture-bitmap-and-uv-coordinates.html#2) covers the `CustomExporter`, which is still the best way to extract information on materials and their mapping onto faces.
+on [texture bitmap and `UV` coordinates](0980_texture_uv_coord.htm) part 1
+on [obtaining texture `UV` coordinates](0980_texture_uv_coord.htm#2) covers the `CustomExporter`, which is still the best way to extract information on materials and their mapping onto faces.
 
 If you are trying to export an actual representation of an actual Revit model, you really should start with `CustomExporter`, regardless of the target format.  
  
 Part 2
-on [texture bitmap access](http://thebuildingcoder.typepad.com/blog/2013/07/texture-bitmap-and-uv-coordinates.html#2) says 'the texture `UV` coordinates are available, and the bitmap is not.'
+on [texture bitmap access](0980_texture_uv_coord.htm#2) says 'the texture `UV` coordinates are available, and the bitmap is not.'
  
 I now realize that we have a problem here.  We've long been able to read the properties of assets, including the associated bitmaps.  The Revit API provides access to a relative path for any bitmap asset in any material. Here is a code sample demonstrating this:
 
@@ -155,6 +155,6 @@ I think that, to actually make this work, you will need some additional logic in
 
 For the sake of completeness, here are pointers to some related issues:
  
-- [Listing material asset textures and sub-textures](http://thebuildingcoder.typepad.com/blog/2016/10/list-material-asset-texture-and-forge-webinar-recordings.html#3)
-- [Retrieve and map texture `UV` coordinates exporting geometry and material](http://thebuildingcoder.typepad.com/blog/2017/03/events-uv-coordinates-and-rooms-on-level.html#5)
-- [The new Visual Materials API in Revit 2018.1](http://thebuildingcoder.typepad.com/blog/2017/08/revit-20181-and-the-visual-materials-api.html)
+- [Listing material asset textures and sub-textures](1482_material_asset_texture.html#3)
+- [Retrieve and map texture `UV` coordinates exporting geometry and material](1537_event_uv_room_filt.html#5)
+- [The new Visual Materials API in Revit 2018.1](1576_sdk_2018_1.html)

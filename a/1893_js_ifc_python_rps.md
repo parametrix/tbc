@@ -174,7 +174,7 @@ Does that mean something like a PowerShell script?
 **Answer:** You mean the RevitAddInUtility.dll?
 
 The answer is Yes, cf. The Building Coder article
-on [RevitAddInUtility](https://thebuildingcoder.typepad.com/blog/2010/04/revitaddinutility.html).
+on [RevitAddInUtility](0336_addinutility.htm).
 
 ####<a name="2.1"></a> Addin Manifest Using a Relative Path
 

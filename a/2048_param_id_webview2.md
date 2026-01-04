@@ -63,7 +63,7 @@ Embedded browser plans are maturing further, and what to use for stable paramete
 ####<a name="2"></a> Move from CefSharp to WebView2
 
 The heads-up on thoughts that we shared in the beginning of July
-on [CefSharp versus WebView2 embedded browser](https://thebuildingcoder.typepad.com/blog/2024/07/material-assets-chromium-and-sorting-schedules.html#3) is
+on [CefSharp versus WebView2 embedded browser](2046_mat_asset.html#3) is
 stabilising to the extent that the development team has decided to announce a plan to migrate CefSharp to WebView2 in the next major release:
 
 > Revit is removing all CefSharp binaries from its distribution package starting in the next major release.

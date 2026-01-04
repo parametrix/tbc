@@ -71,23 +71,23 @@ In the process, it creates an Excel workbook to store the data, and, for each ca
 
 Here are some discussions of it:
 
-- [Exporting parameter data to Excel, and re-importing](http://thebuildingcoder.typepad.com/blog/2012/09/exporting-parameter-data-to-excel.html)
-- [ArchSample and retrieving element properties](http://thebuildingcoder.typepad.com/blog/2015/06/archsample-active-transaction-and-adnrme-for-revit-mep-2016.html#2)
+- [Exporting parameter data to Excel, and re-importing](0828_export_param_excel.htm)
+- [ArchSample and retrieving element properties](1329_adnrme_2016.htm#2)
 
 Another sample that goes about it even more professionally is RDBLink. It was originally included in the Revit SDK sample collection, and later removed to be maintained as a separate proprietary subscription product:
 
-- [Integration with a database or ERP system](http://thebuildingcoder.typepad.com/blog/2009/07/integration-with-a-database-or-erp-system.html)
-- [Adding a column to RDBLink export](http://thebuildingcoder.typepad.com/blog/2009/11/adding-a-column-to-rdblink-export.html)
-- [Parameter access and scheduling](http://thebuildingcoder.typepad.com/blog/2010/05/parameter-access-and-scheduling.html)
-- [ODBC export](http://thebuildingcoder.typepad.com/blog/2012/11/survey-and-project-base-point.html#3)
-- [RDBLink and exporting data from Revit](http://thebuildingcoder.typepad.com/blog/2016/02/reorg-fomt-devcon-ted-qr-custom-exporter-quality.html#6)
+- [Integration with a database or ERP system](0187_db_integration_2.htm)
+- [Adding a column to RDBLink export](0240_rdblink.htm)
+- [Parameter access and scheduling](0372_param_scheduling.htm)
+- [ODBC export](0861_survey_base_pnt.htm#3)
+- [RDBLink and exporting data from Revit](1405_quality_custom_export.html#6)
 
 When an RVT file is translated by [Forge](https://autodesk-forge.github.io), the process also captures all the BIM element parameters.
 Since it is easy to modify them and add new ones in the Forge viewer, I implemented an add-in to support a full read-write round-trip
 workflow, [RvtMetaProp](https://github.com/jeremytammik/rvtmetaprop):
 
-- [Forge meta property editor and RvtMetaProp Revit add-in &ndash; executive summary](http://thebuildingcoder.typepad.com/blog/2017/10/rational-bim-programming-at-au-darmstadt.html#5.5)
-- [Use Forge or spreadsheet to create shared parameters](http://thebuildingcoder.typepad.com/blog/2017/09/use-forge-or-spreadsheet-to-create-shared-parameters.html) 
+- [Forge meta property editor and RvtMetaProp Revit add-in &ndash; executive summary](1593_rat_bim_programming.html#5.5)
+- [Use Forge or spreadsheet to create shared parameters](1583_rvtmetaprop.html) 
 
 Today, I thought I would isolate the most basic and generic functionality conceivable to support this kind of workflow, by implementing a simple black box that takes a very specific input and returns a specific output for that:
 
@@ -213,7 +213,7 @@ Before we can retrieve the parameter data from the elements, we need to retrieve
 As always, this is achieved using a filtered element collector.
 
 Just last week,
-we [clarified the use of the `FilterCategoryRule` class](http://thebuildingcoder.typepad.com/blog/2018/05/how-to-use-filtercategoryrule.html).
+we [clarified the use of the `FilterCategoryRule` class](1651_filtercategoryrule.html).
 
 That discussion led me to believe that it could be used to achieve exactly what I need, filtering for all elements belonging to a given list of categories.
 

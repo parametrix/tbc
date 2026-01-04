@@ -29,8 +29,8 @@ Today, we focus on two pure programming questions from the Revit API discussion 
 Today, let's take a break from the last two
 day's [Forge](https://autodesk-forge.github.io)
 [Design Automation API](https://forge.autodesk.com/en/docs/design-automation/v2/overview) for Revit explorations
-on [swallowing warnings](http://thebuildingcoder.typepad.com/blog/2018/09/swallowing-stairsautomation-warnings.html)
-and [auto-running an add-in](http://thebuildingcoder.typepad.com/blog/2018/09/auto-run-an-add-in-for-design-automation.html) and
+on [swallowing warnings](1689_automation_warnings.html)
+and [auto-running an add-in](1690_convert_addin_da4r.html) and
 focus on two pure programming questions from
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread instead:
 
@@ -64,14 +64,14 @@ Perhaps you can figure out some better solutions?
 For a completely generic solution, it seems to me that you will require a 2D Boolean operation.
 
 The Revit geometry API does not provide that built-in, but you can
-easily [integrate an external 2D Boolean operations library](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.2).
+easily integrate an external 2D Boolean operations library *(link unavailable)*.
 
 Once you have the 2D Boolean operations in place, you can easily create two overlapping horizontal polygons:
 
 - Retrieving the room boundary curves and creating a contiguous curve loop from them.
 - Projecting the floor boundary curves, projecting them onto the room top surface, and creating a contiguous curve loop from them.
 
-Here is an example of [projecting and transforming a polygon in Revit](http://thebuildingcoder.typepad.com/blog/2008/12/polygon-transformation.html).
+Here is an example of [projecting and transforming a polygon in Revit](0057_polygon_transformation.htm).
 
 This assumes your wall segments are straight, and not curved.
 
@@ -112,7 +112,7 @@ This seems really dumb and simple.  Does anyone have a simple portion of Revit A
 
 I've coded in CATIA, Rhino, AutoCAD, and Maya for years without any issues, but I've never had such trouble than when I want to do the simplest things in Revit.
 
-**Answer:** Yes, indeed, it can help a lot if you can manage to forget what you know about programming other CAD systems before diving into the Revit API... [Revit and its API is different](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.41).
+**Answer:** Yes, indeed, it can help a lot if you can manage to forget what you know about programming other CAD systems before diving into the Revit API... Revit and its API is different *(link unavailable)*.
 
 First of all, you might want to make a list of the error elements to see the Revit classes to which they belong:
 

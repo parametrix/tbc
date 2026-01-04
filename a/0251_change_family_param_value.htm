@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1255063 [How can I change the value of a shared parameter in a family?] -->
@@ -8,12 +39,12 @@
 
 <p>Here is another issue dealing with family parameters, after the notes on how to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/11/family-parameter-value.html">
+<a href="0245_family_param_value.htm">
 read the values of family parameters</a> and
 
 looking at the family parameter values via the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/11/extract-part-atoms.html">
+<a href="0248_extract_part_atoms.htm">
 part atom export</a>.
 
 <p><strong>Question:</strong> I'm using the AutoParameter SDK example to add parameters to my families. 
@@ -26,10 +57,11 @@ I am using C#.
 
 <p><strong>Answer:</strong> Do the parameters you have added in the family appear checked in the user interface of the project after being loaded into the document environment? 
 In that case, I assume that the parameters you have added have a Boolean data type and an initial value of True. 
-If so, the check mark should be removed if you set their initial value to False. 
+If so, the check mark should be removed if you set their initial value to False. 
+
 For instance, in the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/10/revit-family-creation-api-labs.html">
+<a href="0237_rfa_labs.htm">
 RFA family labs</a>, 
 
 the addParameter method adds two real-values parameters:
@@ -69,3 +101,12 @@ the addParameter method adds two real-values parameters:
 </pre>
 
 <p><strong>Response:</strong> Thanks! that's exactly what I needed.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

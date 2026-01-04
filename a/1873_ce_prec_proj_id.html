@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -176,11 +207,11 @@ on <a href="https://forums.autodesk.com/t5/revit-api-forum/customexporter-export
 </center></p>
 <p>Is there a way to improve this?</p>
 <p><strong>Answer:</strong> Check out The Building Coder topic group on
-the <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.1">custom exporter</a>.</p>
+the <span class="unavailable-link">custom exporter</span>.</p>
 <p>Especially, please read these two posts:</p>
 <ul>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2015/06/angelhack-athens-sustainability-and-export-precision.html#4">Revit export precision and tolerance</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2016/02/reorg-fomt-devcon-ted-qr-custom-exporter-quality.html#8">Controlling the quality of the geometry on custom export</a></li>
+<li><a href="1330_hack_export_tolerance.htm#4">Revit export precision and tolerance</a></li>
+<li><a href="1405_quality_custom_export.html#8">Controlling the quality of the geometry on custom export</a></li>
 </ul>
 <p>I all else fails, you will have to access the real element geometry instead of using the custom exporter.</p>
 <p>That is normally a lot more work, though.</p>
@@ -191,15 +222,15 @@ Currently, I use <code>Face.Project</code> to approximate a set of <code>UV</cod
 <p>I also tried to set the <code>LevelOfDetail</code> property on <code>ViewNode</code>, and it also works.</p>
 <h4><a name="3"></a> Dismissing a Windows Dialogue with JtClicker</h4>
 <p>Another topic group is dedicated
-to <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.32">detecting and handling dialogues and failures</a>.</p>
+to <span class="unavailable-link">detecting and handling dialogues and failures</span>.</p>
 <p>It started out before the <a href="https://www.revitapidocs.com/2020/cb46ea4c-2b80-0ec2-063f-dda6f662948a.htm">DialogBoxShowing event</a> and
 <a href="https://www.revitapidocs.com/2020/c03bb2e5-f679-bf24-4e87-08b3c3a08385.htm">Failure handling APIs</a> were implemented, using a Windows hook to determine that a dialogue was being shown:</p>
 <p><strong>Question:</strong> You explained how to use the native Windows API hook
-to <a href="https://thebuildingcoder.typepad.com/blog/2009/10/dismiss-dialogue-using-windows-api.html">dismiss a dialogue</a>.
+to <a href="0229_dialogue_clicker.htm">dismiss a dialogue</a>.
 Is there a complete sample project and solution available to understand how to use it to dismiss the dialogue box in Revit?</p>
 <p><strong>Answer:</strong> Whenever searching for such information, one of the first places to go
-are <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5">The Building Coder topic groups</a>.
-In this case, you can look at <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.32">detecting and handling dialogues and failures</a>.
+are <span class="unavailable-link">The Building Coder topic groups</span>.
+In this case, you can look at <span class="unavailable-link">detecting and handling dialogues and failures</span>.
 The Windows hook functionality is not really used 'in Revit', as far as I can remember.
 It is independent functionality that can interact with a Revit add-in, if you like.
 The complete project is available in
@@ -359,3 +390,11 @@ It is a collaborative audio and video editor that includes transcription, a scre
 <p><center>
 <iframe width="480" height="270" src="https://www.youtube.com/embed/Bl9wqNe5J8U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

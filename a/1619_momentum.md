@@ -56,7 +56,7 @@ In his own words:
 I am a Master's degree student at TUM in Germany.
 
 As part of a project, I developed a Revit Plugin that uses
-the [Revit Analysis Visualization Framework AVF](http://thebuildingcoder.typepad.com/blog/avf) to
+the Revit Analysis Visualization Framework AVF *(link unavailable)* to
 display (arbitrary) analytical results.
 
 In order to do so, your blog posts and the forum were a big help. And if it is of any help, I would like to share my solution to do so.

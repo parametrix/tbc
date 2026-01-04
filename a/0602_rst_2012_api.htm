@@ -1,18 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>The Revit Structure 2012 API</h3>
 
 <p>Sangsen recently submitted a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/05/set-preview-image.html?cid=6a00e553e16897883301538e695543970b#comment-6a00e553e16897883301538e695543970b
-">
+<a href="0579_set_preview_image.htm">
 couple</a>
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/03/revit-2012-api-features.html?cid=6a00e553e16897883301538e97d1a4970b#comment-6a00e553e16897883301538e97d1a4970b">of</a>
+<a href="0560_revit_2012_api.htm">of</a>
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/05/revit-2012-api-webcast.html?cid=6a00e553e168978833014e889b37e1970d#comment-6a00e553e168978833014e889b37e1970d">comments</a> which
+<a href="0580_revit_2012_api_webcast.htm">comments</a> which
 
 made it clear that a short overview of the new features of the Revit Structure 2012 API is overdue
 (see <a href="#2">below</a> for the <a href="#2">Q & A</a>).
@@ -284,7 +314,7 @@ Please refer to those for more information about the usage of individual classes
 
 <p>Some of the Revit Structure API changes were also discussed in the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/06/the-revit-mep-2012-api.html#2">Revit 2012 API webcast</a> and the associated materials.
+<a href="0594_mep_2012_api.htm#2">Revit 2012 API webcast</a> and the associated materials.
 
 
 <a name="2"></a>
@@ -294,17 +324,17 @@ Please refer to those for more information about the usage of individual classes
 <p>Last but not least, Joe also took the time to answer Sangsen's questions:
 
 <ul>
-<li><b><a href="http://thebuildingcoder.typepad.com/blog/2011/05/set-preview-image.html?cid=6a00e553e16897883301538e695543970b#comment-6a00e553e16897883301538e695543970b">Q:</a></b>
+<li><b><a href="0579_set_preview_image.htm">Q:</a></b>
 In Revit Structure 2012, BoundaryConditions.HostElement returns analytical model instead of family instance. 
 Can you help me how to obtain the host element family instance?
 
-<p><b><a href="http://thebuildingcoder.typepad.com/blog/2011/05/set-preview-image.html?cid=6a00e553e168978833014e894193b5970d#comment-6a00e553e168978833014e894193b5970d">A:</a></b>
+<p><b><a href="0579_set_preview_image.htm">A:</a></b>
 After getting the analytical model from the BoundaryConditions instance, you can call the AnalyticalModel.GetElementId method to retrieve the id of the Host element family instance.
 
-<li><b><a href="http://thebuildingcoder.typepad.com/blog/2011/03/revit-2012-api-features.html?cid=6a00e553e16897883301538e97d1a4970b#comment-6a00e553e16897883301538e97d1a4970b">Q:</a></b>
+<li><b><a href="0560_revit_2012_api.htm">Q:</a></b>
 Please explain the details about Analytical Changes option in Analytical Alignment property.
 
-<p><b><a href="http://thebuildingcoder.typepad.com/blog/2011/03/revit-2012-api-features.html?cid=6a00e553e1689788330154332192dc970c#comment-6a00e553e1689788330154332192dc970c">A:</a></b>
+<p><b><a href="0560_revit_2012_api.htm">A:</a></b>
 The big change to the analytical model in RST 2012 is the split of analytical model and its host physical model. 
 The latter are now standalone elements.
 
@@ -321,10 +351,10 @@ GetAlignmentMethod, HasAlighment and SetAlignmentMethod.
 
 <p>The alignment option should work for a 2011 model opened in RST 2012.
 
-<li><b><a href="http://thebuildingcoder.typepad.com/blog/2011/05/revit-2012-api-webcast.html?cid=6a00e553e168978833014e889b37e1970d#comment-6a00e553e168978833014e889b37e1970d">Q:</a></b>
+<li><b><a href="0580_revit_2012_api_webcast.htm">Q:</a></b>
 In Revit 2012, how can I access an entity with its Analytical model details. Please post changes to the analytical model class.
 
-<p><b><a href="http://thebuildingcoder.typepad.com/blog/2011/05/revit-2012-api-webcast.html?cid=6a00e553e168978833014e89419b39970d#comment-6a00e553e168978833014e89419b39970d">A:</a></b>
+<p><b><a href="0580_revit_2012_api_webcast.htm">A:</a></b>
 The host physical component of a given analytical model can be obtained by the AnalyticalModel.GetElementId method. 
 It returns the element id of the physical component.
 
@@ -332,3 +362,12 @@ It returns the element id of the physical component.
 
 <p>Thank you very much again, Joe!
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

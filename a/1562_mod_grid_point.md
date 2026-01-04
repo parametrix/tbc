@@ -40,7 +40,7 @@ the [Revit Developer Centre](http://www.autodesk.com/developrevit):
 - [Revit 2018 SDK (Update May 19, 2017)](http://download.autodesk.com/us/revit-sdk/REVIT_2018_SDK_1.msi) (msi - 355088Kb)
 
 It includes the
-new [DuplicateGraphics](http://thebuildingcoder.typepad.com/blog/2017/05/revit-2017-and-2018-sdk-samples.html#4.2) sample
+new [DuplicateGraphics](1560_2018_sdk_samples.html#4.2) sample
 that was omitted in the first customer shipment of the Revit 2018 SDK.
 
 
@@ -49,15 +49,15 @@ that was omitted in the first customer shipment of the Revit 2018 SDK.
 I use the Revit SDK external application `RvtSamples` to load all the SDK samples for testing and debugging purposes.
 
 I first described it in The Building Coder's fifth blog post
-on [Managing SDK Samples](http://thebuildingcoder.typepad.com/blog/2008/08/managing-sdk-sa.html).
+on [Managing SDK Samples](0005_managing_sdk_samples.htm).
 
 I soon implemented
-the [include file functionality](http://thebuildingcoder.typepad.com/blog/2008/11/loading-the-building-coder-samples.html) to
+the [include file functionality](0035_loading_bc_samples.htm) to
 also use it to load all other sample commands that I regularly use,
 including [The Building Coder samples](https://github.com/jeremytammik/the_building_coder_samples).
 
 Last year, Dan Tartaglia raised and I addressed several issues setting
-up [RvtSamples for Revit 2017](http://thebuildingcoder.typepad.com/blog/2016/04/rvtsamples-for-revit-2017.html).
+up [RvtSamples for Revit 2017](1427_rvtsamples.html).
 
 This year, I went through a similar process.
 

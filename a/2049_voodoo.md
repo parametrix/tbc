@@ -70,7 +70,7 @@ Fresh looks at dimensioning voodoo with stable representations, accessing and fi
 ####<a name="2"></a> Stable Representation Voodoo for Hatch Dimensions
 
 Fair59 shared some powerful stable representation voodoo for obtaining references to hatch pattern lines on a floor slab
-to programmatically [dimension on hatch pattern](https://thebuildingcoder.typepad.com/blog/2017/06/hatch-line-dimensioning-voodoo.html#4) way
+to programmatically [dimension on hatch pattern](1565_dim_hatch.html#4) way
 back in 2017, in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) threads
 on [dimension on hatch pattern slab](https://forums.autodesk.com/t5/revit-api-forum/dimension-on-hatch-pattern-slab/td-p/7063302)
@@ -359,10 +359,10 @@ Many thanks to Mauricio for sharing this.
 
 More transient graphics and jig examples:
 
-- [DirectContext rectangle jig](https://thebuildingcoder.typepad.com/blog/2020/10/onbox-directcontext-jig-and-no-cdn.html#3)
-- [Transient graphics](https://thebuildingcoder.typepad.com/blog/2021/01/transient-graphics-humane-ai-basic-income-and-lockdown.html#2)
-- [Line angle and direction jig](https://thebuildingcoder.typepad.com/blog/2021/05/refreshment-cloud-model-path-angle-and-direction.html)
-- [Transient elements for jig](https://thebuildingcoder.typepad.com/blog/2023/03/lookup-ideas-jigs-and-acc-docs-access.html#3)
-- [Transient `DirectShape` jig](https://thebuildingcoder.typepad.com/blog/2023/03/lookup-ideas-jigs-and-acc-docs-access.html#3.1)
+- [DirectContext rectangle jig](1872_rect_jig.html#3)
+- [Transient graphics](1884_transient_graphics.html#2)
+- [Line angle and direction jig](1905_line_angle_dir_jig.html)
+- [Transient elements for jig](1984_transient.html#3)
+- [Transient `DirectShape` jig](1984_transient.html#3.1)
 
 

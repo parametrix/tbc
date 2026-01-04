@@ -120,7 +120,7 @@ Many thanks to Benoit for the interesting pointer!
 ####<a name="4"></a> New APS Landing Page
 
 As you may have heard,
-[Autodesk Forge was renamed to Autodesk Platform Services, APS](https://thebuildingcoder.typepad.com/blog/2022/09/aps-au-and-miter-wall-join-for-full-face.html#2).
+[Autodesk Forge was renamed to Autodesk Platform Services, APS](1966_miter_full_face.html#2).
 
 Now, we are glad and proud to announce the new [APS landing page](https://aps.autodesk.com) went live.
 

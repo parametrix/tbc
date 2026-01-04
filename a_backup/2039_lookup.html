@@ -1,0 +1,168 @@
+<p><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="bc.css"></p>
+<!-- https://highlightjs.org/#usage
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+-->
+
+<!-- https://prismjs.com -->
+<p><link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css" rel="stylesheet" /></p>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<style> code[class*=language-], pre[class*=language-] { font-size : 90%; } </style>
+<p></head></p>
+<!---
+
+- bimrras
+  email [Re: [BIMrras] Interview Publication Tomorrow] Evelio E. Sánchez Juncal <eveliosanchez@spaplaneamento.com>
+  https://www.bimrras.com/episodio/157-building-with-code-with-jeremy-tammik/?utm_source=newsletter&utm_medium=tuit&utm_campaign=episodio
+  https://bit.ly/BIMrras157Bol
+  2024-05-06_bimrras_157a.pdf
+  /Users/jta/a/doc/revit/tbc/git/a/doc/2024-05-06_bimrras_157b.txt
+
+twitter:
+
+New releases of RevitLookup vastly expand coverage to include numerous new classes and properties, BIMrras podcast interview, linking Revit files in BIM360 Docs and Outline versus BoundingBox in the @AutodeskRevit #RevitAPI #BIM @DynamoBIM https://autode.sk/bimrras
+
+New releases of RevitLookup vastly expand coverage to include numerous new classes and properties
+&ndash; BIMrras podcast interview
+&ndash; RevitLookup 2025.0.3
+&ndash; RevitLookup 2025.0.4
+&ndash; <code>Outline</code> versus <code>BoundingBox</code>
+&ndash; Linking Revit files in BIM360 Docs...
+
+linkedin:
+
+New releases of RevitLookup vastly expand coverage to include numerous new classes and properties, BIMrras podcast interview, linking Revit files in BIM360 Docs and Outline versus BoundingBox in the #RevitAPI
+
+https://autode.sk/bimrras
+
+- BIMrras podcast interview
+- RevitLookup 2025.0.3
+- RevitLookup 2025.0.4
+- Outline versus BoundingBox
+- Linking Revit files in BIM360 Docs...
+
+#BIM #DynamoBIM #AutodeskAPS #Revit #API #IFC #SDK #Autodesk #AEC #adsk
+
+the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
+
+<center>
+<img src="img/" alt="" title="" width="600"/>
+<p style="font-size: 80%; font-style:italic"></p>
+</center>
+
+-->
+
+<h3>RevitLookup Updates, Bounding Boxes and Podcast</h3>
+<p>A quick heads-up on a podcast interview, new releases of RevitLookup vastly expanding coverage to include numerous new classes and properties, and other notes of interest:</p>
+<ul>
+<li><a href="#2">BIMrras podcast interview</a></li>
+<li><a href="#3">RevitLookup 2025.0.3</a></li>
+<li><a href="#4">RevitLookup 2025.0.4</a></li>
+<li><a href="#5"><code>Outline</code> versus <code>BoundingBox</code></a></li>
+<li><a href="#6">Linking Revit files in BIM360 Docs</a></li>
+</ul>
+<h4><a name="2"></a> BIMrras Podcast Interview</h4>
+<p>Evelio Sánchez y Rogelio Carballo invited me to participate in
+their <a href="https://www.bimrras.com/">BIMrras Podcast</a>:</p>
+<blockquote>
+<p>El Primer Podcast BIM Colaborativo
+<br/>¡El podcast sobre BIM que Chuck Norris no se atreve a escuchar!</p>
+</blockquote>
+<p>I joined them last week for a very pleasant chat in
+episode <a href="https://www.bimrras.com/episodio/157-building-with-code-with-jeremy-tammik/">157 Building with code, with Jeremy Tammik</a>.</p>
+<h4><a name="3"></a> RevitLookup 2025.0.3</h4>
+<p>Roman <a href="https://t.me/nice3point">@Nice3point</a> Karpovich, aka Роман Карпович,
+published <a href="https://github.com/jeremytammik/RevitLookup/releases/tag/2025.0.3">RevitLookup release 2025.0.3</a>,
+integrating extensive work
+by <a href="https://github.com/SergeyNefyodov">Sergey Nefyodov</a> to expand coverage to numerous new classes, properties and contexts.</p>
+<p>Sergey packaged his enhancements in pull requests
+<a href="https://github.com/jeremytammik/RevitLookup/pull/227">227 (<code>ConnectorManager</code>)</a>,
+<a href="https://github.com/jeremytammik/RevitLookup/pull/228">228 (<code>Wire</code>)</a>,
+<a href="https://github.com/jeremytammik/RevitLookup/pull/229">229 (<code>IndependentTag</code>)</a>,
+<a href="https://github.com/jeremytammik/RevitLookup/pull/230">230 (<code>CurveElement</code>)</a>,
+<a href="https://github.com/jeremytammik/RevitLookup/pull/231">231 (<code>TableView</code>)</a>,
+<a href="https://github.com/jeremytammik/RevitLookup/pull/232">232 (<code>DatumPlane</code>)</a>
+and <a href="https://github.com/jeremytammik/RevitLookup/pull/233">233 (extensions)</a>.</p>
+<p>Specific improvement include:</p>
+<p>Memory diagnoser:</p>
+<p><center>
+<img src="img/revitlookup_memory.png" alt="Memory diagnoser" title="Memory diagnoser" width="800"/> <!-- Pixel Height: 555 Pixel Width: 1,016 -->
+</center></p>
+<ul>
+<li>The <code>Memory</code> column shows the size of allocated <strong>managed memory</strong></li>
+<li>Native ETW and allocations in C++ code are not included to avoid severe performance degradation</li>
+</ul>
+<p>Different method overload variations now displayed in a <code>Variants</code> collection:</p>
+<ul>
+<li>Previously: <code>GeometryElement</code></li>
+<li>Now: <code>Variants&lt;GeometryElement&gt;</code></li>
+</ul>
+<p><center>
+<img src="img/revitlookup_variants.png" alt="Overload variations" title="Overload variations" width="800"/> <!-- Pixel Height: 555 Pixel Width: 1,016 -->
+</center></p>
+<p>More:</p>
+<ul>
+<li>ConnectorManager class support
+  &ndash; Added <code>ConnectorManager.Lookup</code></li>
+<li>Wire class support
+  &ndash; Added <code>Wire.GetVertex</code></li>
+<li>IndependentTag class support
+  &ndash; Added <code>IndependentTag.CanLeaderEndConditionBeAssigned</code>, <code>IndependentTag.GetLeaderElbow</code>, <code>IndependentTag.GetLeaderEnd</code>, <code>IndependentTag.HasLeaderElbow</code>, <code>IndependentTag.IsLeaderVisible</code></li>
+<li>CurveElement class support
+  &ndash; Added <code>CurveElement.GetAdjoinedCurveElements</code>, <code>CurveElement.HasTangentLocks</code>, <code>CurveElement.GetTangentLock</code>, <code>CurveElement.HasTangentJoin</code>, <code>CurveElement.IsAdjoinedCurveElement</code></li>
+<li>TableView class support
+  &ndash; Added <code>TableView.GetAvailableParameters</code>, <code>TableView.GetCalculatedValueName</code>, <code>TableView.GetCalculatedValueText</code>, <code>TableView.IsValidSectionType</code>, <code>TableView.GetCellText</code></li>
+<li>DatumPlane class support
+  &ndash; Added <code>DatumPlane.CanBeVisibleInView</code>, <code>DatumPlane.GetPropagationViews</code>, <code>DatumPlane.CanBeVisibleInView</code>, <code>DatumPlane.GetPropagationViews</code>, <code>DatumPlane.GetDatumExtentTypeInView</code>, <code>DatumPlane.HasBubbleInView</code>, <code>DatumPlane.IsBubbleVisibleInView</code>, <code>DatumPlane.GetCurvesInView</code>, <code>DatumPlane.GetLeader</code></li>
+<li>Extensions
+  &ndash; Added Family class extension <code>FamilySizeTableManager.GetFamilySizeTableManager</code>, FamilyInstance class extension <code>AdaptiveComponentInstanceUtils.GetInstancePlacementPointElementRefIds</code>, FamilyInstance class extension <code>AdaptiveComponentInstanceUtils.IsAdaptiveComponentInstance</code>, Solid class extension <code>SolidUtils.SplitVolumes</code>, Solid class extension <code>SolidUtils.IsValidForTessellation</code></li>
+<li><a href="https://github.com/jeremytammik/RevitLookup/compare/2025.0.2...2025.0.3">Full changelog 2025.0.2...2025.0.3</a></li>
+<li><a href="https://github.com/jeremytammik/RevitLookup/wiki/Versions">RevitLookup versioning</a></li>
+</ul>
+<h4><a name="4"></a> RevitLookup 2025.0.4</h4>
+<p>As if that were not enough, Roman and Sergey immediately followed up
+with <a href="https://github.com/jeremytammik/RevitLookup/releases/tag/2025.0.4">RevitLookup release 2025.0.4</a>,
+integrating the further pull requests
+<a href="https://github.com/jeremytammik/RevitLookup/pull/235">235</a>
+and <a href="https://github.com/jeremytammik/RevitLookup/pull/236">236</a>,
+focused on improving core functionalities and robustness of the product.</p>
+<ul>
+<li>Introducing a preview feature for <strong>Family Size Table</strong>, making it easier to manage and visualize family sizes</li>
+</ul>
+<p><center>
+<img src="img/revitlookup_family_size_table.png" alt="Family size table" title="Family size table" width="800"/> <!-- Pixel Height: 555 Pixel Width: 1,016 -->
+</center></p>
+<p>To access it:</p>
+<ul>
+<li>Enable <strong>Show Extensions</strong> in the view menu</li>
+<li>Select any <strong>FamilyInstance</strong></li>
+<li>Navigate to the <strong>Symbol</strong></li>
+<li>Navigate to the <strong>Family</strong> (or just search for Family class objects in the <strong>Snoop database</strong> command)</li>
+<li>Navigate to the <strong>GetFamilySizeTableManager</strong> method</li>
+<li>Navigate to the <strong>GetSizeTable</strong> method</li>
+<li>Right-click on one of the tables and select the <strong>Show table</strong> command</li>
+<li>Note: Family size table is currently in read-only mode</li>
+</ul>
+<p>More:</p>
+<ul>
+<li>Added new context menu item for selecting elements without showing</li>
+<li>Added new fresh, intuitive icons to the context menu for a more user-friendly interface.</li>
+<li>Refined labels, class names, and exception messages</li>
+<li>Resolved an issue where the delete action was not displayed in the context menu for ElementType classes</li>
+<li>Fixed the context menu display issue for Element classes, broken in previous release</li>
+<li>Fixed the order of descriptors to prevent missing extensions and context menu items in some classes, broken in previous release</li>
+<li><a href="https://github.com/jeremytammik/RevitLookup/compare/2025.0.3...2025.0.4">Full changelog</a></li>
+<li><a href="https://github.com/jeremytammik/RevitLookup/wiki/Versions">RevitLookup versioning</a></li>
+</ul>
+<p>Ever so many thanks to Roman and Sergey for their impressive and untiring implementation and maintenance work!</p>
+<h4><a name="5"></a> Outline Versus BoundingBox</h4>
+<p>Interesting aspects of different kinds of bounding boxes and their uses in intersection filters are discussed in the thread
+on <a href="https://forums.autodesk.com/t5/revit-api-forum/outline-vs-boundingboxxyz-in-revit-api/m-p/12670522"><code>Outline</code> vs <code>BoundingBoxXYZ</code> in Revit API</a>.</p>
+<h4><a name="6"></a> Linking Revit Files in BIM360 Docs</h4>
+<p>Several users asked whether it is possible to link Revit projects directly in ACC and BIM360 Docs.
+Luckily, Eason Kang has covered that topic extensively in his article
+on <a href="https://aps.autodesk.com/blog/bim360-docs-setting-external-references-between-files-upload-linked-files">BIM360 Docs: Setting up external references between files (Upload Linked Files)</a>.</p>

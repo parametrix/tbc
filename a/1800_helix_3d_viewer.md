@@ -110,7 +110,7 @@ Here are some pointers to a more .NET related resource:
 Here is a detailed discussion of making use of it in WPF context, [display 3D model using Window Presentation Foundation](https://www.codeproject.com/tips/882885/display-d-model-using-window-presentation-foundat).
 
 Quite a while back, I implemented my own simple 2D polygon preview using Windows Forms,
-the [GeoSnoop .NET boundary curve loop visualisation](https://thebuildingcoder.typepad.com/blog/2013/04/geosnoop-net-boundary-curve-loop-visualisation.html).
+the [GeoSnoop .NET boundary curve loop visualisation](0924_geo_snoop.htm).
 
 That shows how to set up a minimal Windows form for geometric viewing, with no user interaction, no zoom, no pan, only 2D, so no orbit or anything. It might help provide a simple starting point if you wish to DIY.
 
@@ -167,7 +167,7 @@ On the other hand, I have repeatedly heard of special WPF related issues interac
 Maybe either or both of those aspects are affecting the responsiveness.
 
 One option to resolve that issue would be to decouple the viewer from the Revit API completely, as described in the article
-on [using IPC for disentanglement of CEFSharp from Revit](https://thebuildingcoder.typepad.com/blog/2019/04/set-floor-level-and-use-ipc-for-disentanglement.html).
+on [using IPC for disentanglement of CEFSharp from Revit](1737_ipc.html).
 
 How important is it for you to have the viewer tightly integrated with Revit?
 
@@ -186,7 +186,7 @@ The example of IPC for disentanglement of CEFSharp was based on a Windows Forms 
 
 Now that I can launch a viewer from within the Revit context, and can communicate with it from my Revit command/application, the next step is to get geometry from Revit to the viewer.
 I already successfully tested to generate an OBJ file using
-your [OBJ exporter for Revit 2014](https://thebuildingcoder.typepad.com/blog/2013/07/revit-2014-obj-exporter-and-new-sdk-samples.html) (upgraded
+your [OBJ exporter for Revit 2014](0984_obj_exp_2014_sdk_samp.htm) (upgraded
 to 2018) and display it in the viewer.
 However, as I was reading, I found your ideas on creating an improved version of your exporter using the custom exporter framework.
 Is this something you already implemented, or have planned to do?
@@ -203,7 +203,7 @@ When the user is satisfied, he can click ok, the preview will close, and the add
 
 **Answer:** I am very glad to hear that you are able to use the OBJ viewer.
 
-Here are some examples of [implementing custom exporters](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.1).
+Here are some examples of implementing custom exporters *(link unavailable)*.
 
 It is pretty straightforward, actually.
 

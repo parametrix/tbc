@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -35,12 +66,12 @@ REVIT-52648 [API: ElementIntersectsSolidFilter and ElementIntersectsElementFilte
 
 <p>I continue in my battle against the obsolete API usage warnings after the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/04/compiling-the-revit-2015-sdk-and-migrating-bc-samples.html#5">
+<a href="1136_tbc_sdk_2015.htm#5">
 initial migration to Revit 2015</a> and
 
 subsequently finally
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/11/migrating-deprecated-api-and-2d-boolean-operations.html#3">
+<a href="1238_booleans_migration.htm#3">
 getting started migrating deprecated API</a>.</p>
 
 <p>I now removed the following ten warnings, all of them with the number CS0618, leaving
@@ -341,8 +372,8 @@ For more information on these, please refer to the Revit API help file RevitAPI.
 </center>
 
 <p>In the original implementation of this sample, described in
-<a href="http://thebuildingcoder.typepad.com/blog/2011/12/using-avf-to-display-intersections-and-highlight-rooms.html">AVF displays intersections</a> and
-<a href="http://thebuildingcoder.typepad.com/blog/2011/12/using-avf-to-display-intersections-and-highlight-rooms.html#2">FindColumns Using Geometry Creation and Booleans</a>,
+<a href="0694_avf_hilite_rooms.htm">AVF displays intersections</a> and
+<a href="0694_avf_hilite_rooms.htm#2">FindColumns Using Geometry Creation and Booleans</a>,
 the resulting intersections are graphically highlighted using the Analysis Visualisation Framework for easy interactive comparison.</p>
 
 <center>
@@ -416,8 +447,8 @@ release 2015.0.116.5</a>.</p>
 
 <p>I covered this in my geometry class at Autodesk University 2012, cf. the following quote from the
 
-<a href="http://thebuildingcoder.typepad.com/files/cp4011_conover.pdf">
-handout document</a>:</p>
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/files/cp4011_conover.pdf">
+handout document <em>(file unavailable: cp4011_conover.pdf)</em></span>:</p>
 
 <!--
 <a href="http://au.autodesk.com/?nd=event_class&amp;session_id=9124&amp;jid=1725932">CP4011</a> 'Geometric Progression: Further Analysis of Geometry Using the Autodesk Revit 2012 API',
@@ -460,3 +491,11 @@ handout document</a>:</p>
 <p>In this case, it is recommended to use the ElementIntersectsSolidFilter instead, passing in the column's original geometry solid.</p>
 
 <p>See you soon in Las Vegas!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

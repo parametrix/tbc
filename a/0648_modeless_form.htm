@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <!-- 
 
 Find all "http://thebuildingcoder.typepad.com/blog/2010/04/asynchronous-api-calls-and-idling.html", Subfolders, Find Results 1, "C:\a\j\adn\case\bsd", "*.txt"
@@ -65,10 +95,10 @@ I need to be able to switch back and forth between Revit and my form without clo
 
 <p>The reasons and more background information on the current situation are given in the discussions of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/asynchronous-api-calls-and-idling.html">
+<a href="0353_asynchronous.htm">
 asynchronous API calls and idling</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/01/modeless-door-lister-flaws.html">
+<a href="0509_list_project_doors_flaws.htm">
 modeless door lister flaws</a>, and
 
 the further posts that they point to.
@@ -80,25 +110,34 @@ It enables you to drive Revit from outside indirectly by posting an event to you
 
 <p>To use this, subscribe to the Revit Idling event and raise a signal from your external application or modeless dialogue. In the Idling event handler, check for the raised signal and execute whatever functionality you need. How this can be done is demonstrated and described in full detail in my sample to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/display-webcam-image-on-building-element-face.html">
+<a href="0380_revitwebcam.htm">
 display a live webcam image on a building element face</a>.
 
 <p>Another example, where Revit is driven from a modeless dialogue box, e.g. from a context outside of any Revit API call-back, also using the Idling event to "get back in" to the Revit API context, is given by my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/07/modeless-loose-connectors.html">
+<a href="0407_modeless_loose_connectors.htm">
 modeless loose connector navigator</a> sample.
 
 <p>The original version was written for Revit 2011. I recently 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/08/modeless-loose-connector-navigator-update.html">
+<a href="0639_modeless_loose_connectors.htm">
 updated and improved it for Revit 2012</a> as 
 
 well.
 
 <p>Additionally, a generic pattern for this process is described in 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/11/pattern-for-semi-asynchronous-idling-api-access.html">
+<a href="0487_async_idling_pattern.htm">
 pattern for semi asynchronous idling API access</a>.
 
 <p>Unfortunately, like any other call-back, Idling costs time and should therefore obviously be used with great care.
 Use it sparingly and cautiously.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

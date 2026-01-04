@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <title>The Building Coder</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" type="text/css" href="3dwc.css"/>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true" defer="defer"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -47,8 +78,8 @@ and developer cases like crazy.</p>
 <p>Next, I address
 the <a href="http://forums.autodesk.com/t5/revit-api/bd-p/160">Revit API discussion forum</a> thread
 on <a href="http://forums.autodesk.com/t5/revit-api-forum/can-t-obtain-macromanager/m-p/6557705">obtaining the MacroManager</a>
-as well as <a href="http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html#comment-2842394984">Frederic's comment</a>
-on <a href="http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html">What's New in the Revit 2014 API</a>:</p>
+as well as <a href="0938_whats_new_2014.htm#comment-2842394984">Frederic's comment</a>
+on <a href="0938_whats_new_2014.htm">What's New in the Revit 2014 API</a>:</p>
 <p><strong>Question:</strong> I'm stuck with getting MacroManager object.
 There are much more class members listed in API reference then really available.
 What am I doing wrong?</p>
@@ -57,7 +88,7 @@ What am I doing wrong?</p>
 </center></p>
 <p>Or is there any other way to delete all macros from document?</p>
 <p><strong>Jeremy says:</strong> I should think this can be done quite easily. Look
-at <a href="http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html">What's New in the Revit 2014 API</a> and
+at <a href="0938_whats_new_2014.htm">What's New in the Revit 2014 API</a> and
 search for <strong>MacroManager API</strong>.</p>
 <p><strong>Revitalizer answers:</strong> Add <code>RevitAPIMacros.dll</code> to your VS project.</p>
 <p><strong>Response:</strong> Revitalizer, thank you very much! It's got to be that easy I knew it :-)</p>
@@ -174,12 +205,12 @@ in <a href="https://github.com/jeremytammik/the_building_coder_samples/releases/
 </center></p>
 <h4><a name="4"></a>Getting Started and Changing the Colour of a Wall</h4>
 <p>Next, let's look
-at <a href="http://thebuildingcoder.typepad.com/blog/2010/06/display-webcam-image-on-building-element-face.html#comment-2890199050">Nalika's comment</a>
-on <a href="http://thebuildingcoder.typepad.com/blog/2010/06/display-webcam-image-on-building-element-face.html">displaying a webcam image on a building element face</a>:</p>
+at <a href="0380_revitwebcam.htm#comment-2890199050">Nalika's comment</a>
+on <a href="0380_revitwebcam.htm">displaying a webcam image on a building element face</a>:</p>
 <p><strong>Question:</strong> I'm very new to Revit and very much grateful if you could help me in solving my problem.</p>
 <p>Currently I'm trying to change the colour of a wall according to a certain value. For example: value 20 will make the wall red when I click on it and if I click on the wall again it will be green according to a new value. The values are stored in an array and currently have 4 values. I use the sample library project <code>WorkThread</code> and it uses the same <code>SetupDisplayStyle</code> function to set the display style. There I pick the colour from array values. However, the wall is coloured in 4th colour when I click on the wall for the 4th time, and the first three times the wall isn't coloured at all. Could you please tell me in which function/method should I change/iterate through in order to have different colours (defined from array values) every time I click on a wall.</p>
 <p><strong>Answer:</strong> If you are new to the Revit API, I would strongly suggest that you work through
-the <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#2">Revit API getting started material</a> first
+the <span class="unavailable-link">Revit API getting started material</span> first
 of all, especially the DevTV and My First Revit Plugin video tutorials.</p>
 <p>If you want to dive in deeper, go through the ADN Revit API Training Labs after that.</p>
 <p>Then start implementing your own add-ins.</p>
@@ -193,7 +224,7 @@ of all, especially the DevTV and My First Revit Plugin video tutorials.</p>
 <p>Take heed, have fun, and good luck!</p>
 <h4><a name="5"></a>Getting Started and Using the Visual Studio Revit Add-In Wizard Auto-Installer</h4>
 <p>While we are at it, we might as well also
-reproduce <a href="http://thebuildingcoder.typepad.com/blog/2016/05/visual-studio-vb-and-c-net-revit-2017-add-in-wizards.html#comment-2890797869">Juan E. Calvo Ferrándiz' comment</a> on
+reproduce <a href="1438_addin_wizard_2017.html#comment-2890797869">Juan E. Calvo Ferrándiz' comment</a> on
 the wizard auto-installation:</p>
 <p><strong>Question:</strong> Thanks for this work! Is amazing.</p>
 <p>The add-in wizard setting exports the <code>.dll</code> to the <code>bin</code> folder and the <code>users/xxx/AppData...</code> folder, right?</p>
@@ -211,3 +242,11 @@ the <a href="http://help.autodesk.com/view/RVT/2017/ENU">Revit online help</a> &
 &gt; <a href="http://help.autodesk.com/view/RVT/2017/ENU/?guid=GUID-C574D4C8-B6D2-4E45-93A5-7E35B7E289BE">Introduction</a>
 &gt; <a href="http://help.autodesk.com/view/RVT/2017/ENU/?guid=GUID-4BE74935-A15C-4536-BD9C-7778766CE392">Add-In Integration</a>
 &gt; <a href="http://help.autodesk.com/view/RVT/2017/ENU/?guid=GUID-4FFDB03E-6936-417C-9772-8FC258A261F7">Add-in Registration</a>.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

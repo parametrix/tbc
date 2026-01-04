@@ -64,7 +64,7 @@ Revit 2014 to Revit 2015 and Revit 2016.
 EstoreFile is a C# .NET Revit add-in that stores arbitrary binary files into extensible storage on any selected elements in the Revit project.
 
 To read in more depth about it, please refer to The Building Coder topic group
-on [extensible storage](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23).
+on extensible storage *(link unavailable)*.
 
 Here are the changes I made to migrate between the different versions:
 
@@ -114,10 +114,10 @@ This is why GetPreviewImage has nothing it can return.
 There are various workarounds to achieve what you want anyway:
 
 You could create a temporary view, place an instance, and create a snapshot of that, similar to the approach described
-to [export an element to a SAT file](http://thebuildingcoder.typepad.com/blog/2013/09/saving-a-solid-to-a-sat-file-implementation.html).
+to [export an element to a SAT file](1026_save_solid_to_file.htm).
 
 Here is a vaguely related post
-on [setting the background colour](http://thebuildingcoder.typepad.com/blog/2013/12/setting-the-view-display-background.html) for
+on [setting the background colour](1081_set_view_background.htm) for
 such a snapshot.
 
 Regarding your other question on the PreviewControl:

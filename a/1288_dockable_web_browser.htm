@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -12,15 +43,15 @@
 
 <p>The Revit API supports add-ins defining their own dockable panels, similar to the built-in Revit project browser and element properties panels.</p>
 
-<p>Here is The Building Coder topic list of <a href="http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html">Dockable Panel</a> related discussions:</p>
+<p>Here is The Building Coder topic list of <a href="0938_whats_new_2014.htm">Dockable Panel</a> related discussions:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html">What's New in the Revit 2014 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/05/a-simpler-dockable-panel-sample.html">A Simpler Dockable Panel Sample</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/05/revitrubyshell-for-revit-2014.html">RevitRubyShell for Revit 2014</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/08/revit-2014-update-release-1.html">Revit 2014 Update Release 1</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/08/open-mep-connector-warning.html">Open MEP Connector Warning</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/11/revit-2014-update-release-2.html">Revit 2014 Update Release 2</a></li>
+<li><a href="0938_whats_new_2014.htm">What's New in the Revit 2014 API</a></li>
+<li><a href="0942_dockable_panel.htm">A Simpler Dockable Panel Sample</a></li>
+<li><a href="0955_revitrubyshell.htm">RevitRubyShell for Revit 2014</a></li>
+<li><a href="0995_2014_ur1.htm">Revit 2014 Update Release 1</a></li>
+<li><a href="1008_loose_connector.htm">Open MEP Connector Warning</a></li>
+<li><a href="1056_2014_ur2.htm">Revit 2014 Update Release 2</a></li>
 </ul>
 
 <p>I have repeatedly been asked bow to host a web browser in a dockable panel, and this query yesterday finally prompted me to take the plunge:</p>
@@ -30,7 +61,7 @@
 I am working on a project for Revit learning content and I would like to implement an add-in that opens a dockable window and basically opens a browser in that window that points to a URL (local or internet based).
 I found this post on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/05/a-simpler-dockable-panel-sample.html">a simpler dockable panel sample</a>.</p>
+<a href="0942_dockable_panel.htm">a simpler dockable panel sample</a>.</p>
 
 <p>Through a little bit of hacking I figured out how to make it work for Revit 2015.
 I thought maybe by looking at it I could figure out how the dockable window was populated and figure out how to launch a browser in there, but no luck.
@@ -55,7 +86,7 @@ That should open the browser on that page.</p>
 
 <p>The use of <code>Process.Start</code> in a Revit add-in is described in
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/07/launching-a-stand-alone-executable.html">launching a stand-alone executable</a>.</p>
+<a href="1187_launch_exe.htm">launching a stand-alone executable</a>.</p>
 
 <p>Oh dear, I see that you want the browser in your own window.</p>
 
@@ -79,7 +110,7 @@ e.g. as described by CodeProject on
 
 <p>Since you went to the effort to migrate the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/05/a-simpler-dockable-panel-sample.html">original DockableDialog sample</a> to
+<a href="0942_dockable_panel.htm">original DockableDialog sample</a> to
 
 Revit 2015, others will probably be interested in that as well.
 I therefore created a
@@ -170,7 +201,7 @@ which is exactly what I need.</p>
 
 <p>I added two URL definitions to the add-in XAML code, pointing to
 
-<a href="http://thebuildingcoder.typepad.com">The Building Coder</a> and this
+<span class="unavailable-link">The Building Coder</span> and this
 
 <a href="https://github.com/jeremytammik/DockableDialog">DockableDialog sample GitHub repository</a>:</p>
 
@@ -266,3 +297,12 @@ and the version described here is
 
 <a href="https://github.com/jeremytammik/DockableDialog/releases/tag/2015.0.0.3">
 release 2015.0.0.3</a>.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

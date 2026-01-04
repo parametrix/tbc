@@ -79,7 +79,7 @@ Welcoming my new colleague Carol leads to a renewed look at getting started:
 ####<a name="2"></a> Access Permission to Load my First Add-In
 
 I probably pointed beginners to
-the [Revit API getting started material](https://thebuildingcoder.typepad.com/blog/about-the-author.html#2) several
+the Revit API getting started material *(link unavailable)* several
 thousand times already, and sincerely hope that it provides a couple of useful pointers for them.
 
 Still, people keep running into problems anyway.
@@ -153,7 +153,7 @@ Looking at the list of namespaces that you reference in your source code `using`
 So, they should all be present and accessible.
 Are you using anything else elsewhere in your code that is not obvious from that list?
 You might be able to use tools like `fuslogv` to analyse your add-in dependencies during load time, as suggested in the note
-on [exploring assembly reference DLL hell with Fuslogvw](https://thebuildingcoder.typepad.com/blog/2021/05/revitlookup-update-fuslogvw-and-override-joins.html#6).
+on [exploring assembly reference DLL hell with Fuslogvw](1906_lookup_2022.html#6).
 
 **Response:** Looks like I'm getting some XAML Binding errors during debug.
 

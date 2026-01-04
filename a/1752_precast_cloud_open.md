@@ -86,8 +86,8 @@ Its software installation folder *%programfiles%/Autodesk/Structural Precast for
 ####<a name="3"></a> IOpenFromCloudCallback and the DefaultOpenFromCloudCallback Class
 
 Next, let's highlight a question raised in
-a [comment](https://thebuildingcoder.typepad.com/blog/2018/04/whats-new-in-the-revit-2019-api.html#comment-4464470775)
-on [What's New in the Revit 2019 API](https://thebuildingcoder.typepad.com/blog/2018/04/whats-new-in-the-revit-2019-api.html) and
+a [comment](1647_whats_new_2019.html#comment-4464470775)
+on [What's New in the Revit 2019 API](1647_whats_new_2019.html) and
 also in 
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 on [how to implement `IOpenFromCloudCallback` interface](https://forums.autodesk.com/t5/revit-api-forum/how-to-implement-iopenfromcloudcallback-interface/m-p/8794693):
@@ -167,8 +167,8 @@ That is probably not a good choice.
 You can use the default implementation provided by the `DefaultOpenFromCloudCallback` class that will always use the latest version for an open conflict.
 
 Here is the introduction for this callback in the *Revit API 2019 What's New* sections
-on [Existing APIs now support open from cloud paths (Collaboration for Revit)](https://thebuildingcoder.typepad.com/blog/2018/04/whats-new-in-the-revit-2019-api.html#4.1.5)
-and [Callback for conflict cases when opening from a cloud path](https://thebuildingcoder.typepad.com/blog/2018/04/whats-new-in-the-revit-2019-api.html#4.1.5.2):
+on [Existing APIs now support open from cloud paths (Collaboration for Revit)](1647_whats_new_2019.html#4.1.5)
+and [Callback for conflict cases when opening from a cloud path](1647_whats_new_2019.html#4.1.5.2):
 
 <font color="darkblue">
 

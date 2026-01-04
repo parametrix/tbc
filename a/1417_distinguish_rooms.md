@@ -172,9 +172,9 @@ I hope this helps... systematically!
 I hope you can eliminate a thousand calls to `ToElements` all over all your projects.
 
 I discussed this and other similar issues many times here in the past, e.g.
-for [FindElement and filtered element collector optimisation](http://thebuildingcoder.typepad.com/blog/2012/09/findelement-and-collector-optimisation.html)
+for [FindElement and filtered element collector optimisation](0832_find_element_optimise.htm)
 and
-[ToElementIds performance](http://thebuildingcoder.typepad.com/blog/2012/12/toelementids-performance.html).
+[ToElementIds performance](0872_toelementids_perf.htm).
 
 
 #### <a name="3"></a>Exception Handling

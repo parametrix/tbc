@@ -10,9 +10,9 @@
 
 <!---
 
-- [Retrieving All Family Instances in a Room](http://thebuildingcoder.typepad.com/blog/2017/04/forgefader-ui-lookup-builds-purge-and-room-instances.html#5)
-  [Filter for Family Instances in a Room](http://thebuildingcoder.typepad.com/blog/2013/03/filter-for-family-instances-in-a-room.html)
-  [irregular room shape](http://thebuildingcoder.typepad.com/blog/2013/03/filter-for-family-instances-in-a-room.html#comment-3781548196)
+- [Retrieving All Family Instances in a Room](1548_room_instance_purge.html#5)
+  [Filter for Family Instances in a Room](0917_filter_fam_inst_in_room.htm)
+  [irregular room shape](0917_filter_fam_inst_in_room.htm#comment-3781548196)
 
 - Find Intersecting Elements
   http://thebuildingcoder.typepad.com/blog/2010/12/find-intersecting-elements.html#comment-3783584153
@@ -51,8 +51,8 @@ This can be addressed in various ways, e.g., post-processing the bounding box re
 ####<a name="2"></a>Family Instances in a Diagonal Room
 
 Kavitha asked the question in
-his [comment](http://thebuildingcoder.typepad.com/blog/2013/03/filter-for-family-instances-in-a-room.html#comment-3781548196)
-on [filtering for family instances in a room](http://thebuildingcoder.typepad.com/blog/2013/03/filter-for-family-instances-in-a-room.html):
+his [comment](0917_filter_fam_inst_in_room.htm#comment-3781548196)
+on [filtering for family instances in a room](0917_filter_fam_inst_in_room.htm):
 
 **Question:** Can someone explain for me: if the room is diagonal, then the bounding box value will be wrong; in that case, how can I get the elements properly?
 
@@ -70,7 +70,7 @@ If you are interested in the 2D plan view only, you could also implement a more 
 
 My [RoomEditorApp](https://github.com/jeremytammik/RoomEditorApp) exports
 rooms and the family instances they contain to a cloud database; for that, it obviously determines which instances lie within which room, as mentioned in the note
-on [retrieving all family instances in a room](http://thebuildingcoder.typepad.com/blog/2017/04/forgefader-ui-lookup-builds-purge-and-room-instances.html#5) elsewhere,
+on [retrieving all family instances in a room](1548_room_instance_purge.html#5) elsewhere,
 
 It just uses a filtered element collector based on the room bounding box, though, in the
 method [`GetFurniture( Room room )`](https://github.com/jeremytammik/RoomEditorApp/blob/master/RoomEditorApp/CmdUploadRooms.cs#L157-L217),
@@ -83,13 +83,13 @@ an [`ElementIntersectsSolidFilter`](http://www.revitapidocs.com/2018.1/19276b94-
 ####<a name="3"></a>Conduits Intersecting a Junction Box
 
 Right after that, I started out discussing another intersection and containment issue with Tiago Cerqueria
-in [his](http://thebuildingcoder.typepad.com/blog/2010/12/find-intersecting-elements.html#comment-3783584153)
-[comments](http://thebuildingcoder.typepad.com/blog/2010/12/find-intersecting-elements.html#comment-3783587401)
-on [finding intersecting elements](http://thebuildingcoder.typepad.com/blog/2010/12/find-intersecting-elements.html)
+in [his](0494_find_intersecting.htm#comment-3783584153)
+[comments](0494_find_intersecting.htm#comment-3783587401)
+on [finding intersecting elements](0494_find_intersecting.htm)
 and StackOverflow question on [bounding box intersection](https://stackoverflow.com/questions/49070566/bounding-box-intersection):
 
 **Question:** To find elements that are intersecting a geometry, I am using the example
-to [find intersecting elements](http://thebuildingcoder.typepad.com/blog/2010/12/find-intersecting-elements.html).
+to [find intersecting elements](0494_find_intersecting.htm).
 
 The main goal of my add-in was find conduits clashing with a junction box and access all the elements connected with it to insert information.
 
@@ -208,7 +208,7 @@ One is quick and compares the axis-aligned bounding box.
 The other is slow and intersects the exact element geometry.
 
 It is important to realise and always have in mind
-the [important difference between quick and slow filters](http://thebuildingcoder.typepad.com/blog/2015/12/quick-slow-and-linq-element-filtering.html#3).
+the [important difference between quick and slow filters](1382_filter_shortcuts.html#3).
 
 You may want to try them out yourself:
 

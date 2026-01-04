@@ -118,7 +118,7 @@ Related references:
 - [BIM 360 "Linked document is not found" error](https://forums.autodesk.com/t5/revit-api-forum/bim-360-quot-linked-document-is-not-found-quot-error/m-p/10638072)
 - [BIM 360 Links issue](https://forums.autodesk.com/t5/revit-api-forum/bim-360-links-issue/m-p/10536461)
 - [archi+lab DLL Hell is Real](https://archi-lab.net/dll-hell-is-real/)
-- [Newtonsoft Json.dll Version Conflict](https://thebuildingcoder.typepad.com/blog/2022/02/getting-started-once-again.html#6)
+- [Newtonsoft Json.dll Version Conflict](1937_get_started.html#6)
 
 Many thanks to Luiz Henrique for documenting and sharing this important solution!
 

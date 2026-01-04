@@ -60,7 +60,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 
 ### BIM365 Getting Started, Materials API, CPU Voltage
 
-As mentioned, [I am on vacation](https://thebuildingcoder.typepad.com/blog/2019/07/element-identifiers-in-rvt-ifc-nw-and-forge.html#6) right now,
+As mentioned, [I am on vacation](1762_forge_rvt_nw_ifc_id.html#6) right now,
 enjoying splendid weather camping on the coast of the Atlantic.
 
 Meanwhile, here are a few items that cropped up in the past few days:
@@ -96,7 +96,7 @@ For the sake of completeness, here is the official link to the information prese
 - [New API to Modify Visual Appearance of Materials in Revit](https://www.autodesk.com/autodesk-university/class/New-API-Modify-Visual-Appearance-Materials-Revit-2017)
 
 The Building Coder presented some of the material in the discussion
-on [modifying material visual appearance](https://thebuildingcoder.typepad.com/blog/2017/11/modifying-material-visual-appearance.html).
+on [modifying material visual appearance]( ).
 
 This new link includes the full collection of class materials:
 
@@ -109,10 +109,10 @@ This new link includes the full collection of class materials:
 ####<a name="4"></a> Improving Performance by Optimising CPU Voltage
 
 Daniel Gijsbers noticed the description and solution to
-my [MacBook Pro overheating problem](https://thebuildingcoder.typepad.com/blog/2019/06/accessing-bim360-cloud-links-thumbnail-and-dynamo.html#5) and
+my [MacBook Pro overheating problem](1756_bim360_links.html#5) and
 very kindly responded:
 
-> I read your [blog post](https://thebuildingcoder.typepad.com/blog/2019/06/accessing-bim360-cloud-links-thumbnail-and-dynamo.html#4).
+> I read your [blog post](1756_bim360_links.html#4).
 Regarding your mac book having heat problems, it’s good you cleaned the fans.
 
 > What you could also look into is

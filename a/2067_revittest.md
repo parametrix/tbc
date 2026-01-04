@@ -134,7 +134,7 @@ The entire world seems to be in upheaval, politically, technologically, in polar
 I’m fine myself, physically.
 
 The largest global upheaval that I see looming is the projection by
-the [1972 study on the limits to growth](https://thebuildingcoder.typepad.com/blog/2024/01/valid-revit-api-context-llm-and-ltg.html#7) that
+the [1972 study on the limits to growth](2024_context.html#7) that
 I pointed out in January.
 
 One sliver of hope on possibly handling the collapse that it predicts in the coming decades is offered
@@ -144,7 +144,7 @@ He compares the development of AI
 with [Moore's law](https://en.wikipedia.org/wiki/Moore%27s_law),
 which notes that computing power increased exponentially by a factor of 2 every 18 months.
 In AI development, Altman notes that the cost to use a given level of AI falls about 10x every 12 months, and lower prices lead to much more use, cf.,
-[Jevons Paradox](https://thebuildingcoder.typepad.com/blog/2024/10/determine-rvt-version-and-add-data-from-exe.html#10).
+[Jevons Paradox](2058_rvt_file_version.html#10).
 He concludes:
 
 > Anyone in 2035 should be able to marshal the intellectual capacity equivalent to everyone in 2025; everyone should have access to unlimited genius to direct however they can imagine. There is a great deal of talent right now without the resources to fully express itself, and if we change that, the resulting creative output of the world will lead to tremendous benefits for us all.

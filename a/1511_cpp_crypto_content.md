@@ -146,7 +146,7 @@ That may cause problems.
 Furthermore, it might not be easy to equip the CAD-import-based parts with all the dimensions that drive their different sizes, aka family types aka symbols.
  
 Here is a recommendation
-to [think twice before importing CAD into RFA](http://thebuildingcoder.typepad.com/blog/2016/09/avoid-cad-import-in-rfa-aag16-and-endtrip.html#2).
+to [think twice before importing CAD into RFA](1470_dwg_rfa_aacg16_endtrip.html#2).
  
 Good luck finding an efficient and viable solution for your task!
  

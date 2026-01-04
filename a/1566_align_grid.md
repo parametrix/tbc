@@ -24,7 +24,7 @@ In the Revit API discussion forum thread on off-axis grids causing warnings in R
 ### Aligning a Slightly Off-Axis Grid
 
 Here is a follow-up on the recent discussion on how
-to [modify a grid curve end point](http://thebuildingcoder.typepad.com/blog/2017/05/sdk-update-rvtsamples-and-modifying-grid-end-point.html#4) using
+to [modify a grid curve end point](1562_mod_grid_point.html#4) using
 `Grid.SetCurveInView`.
 
 In the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
@@ -40,7 +40,7 @@ I have been unsuccessful in changing the `XYZ` `Direction`, which is read-only.
 Is it possible to adjust the direction vector, or the start and end points, to resolve the off-axis error? 
 
 **Answer:** The solution
-to  [modify a grid curve end point](http://thebuildingcoder.typepad.com/blog/2017/05/sdk-update-rvtsamples-and-modifying-grid-end-point.html#4) might
+to  [modify a grid curve end point](1562_mod_grid_point.html#4) might
 be exactly what you need.
 
 **Response:** That looks like precisely what is required.

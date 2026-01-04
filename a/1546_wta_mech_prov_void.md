@@ -25,7 +25,7 @@ The topics today are mainly related to Revit, though
 ### WTA Mech and TTT for Provision for Voids
 
 Today is the last day of 
-the [Forge accelerator](http://thebuildingcoder.typepad.com/blog/2017/03/events-uv-coordinates-and-rooms-on-level.html#2),
+the [Forge accelerator](1537_event_uv_room_filt.html#2),
 and I am still working on 
 the [ForgeFader](https://github.com/jeremytammik/forgefader) project.
 
@@ -60,12 +60,12 @@ Allan
 [@akseidel](https://github.com/akseidel)
 Seidel made a number of contributions here in the past, including:
 
-- [Stacked Ribbon Button Panel Options](http://thebuildingcoder.typepad.com/blog/2016/09/stacked-ribbon-button-panel-options.html)
-- [FireP and 3d Aimer](http://thebuildingcoder.typepad.com/blog/2017/03/wta-firep-and-3d-aimer-tools.html)
+- [Stacked Ribbon Button Panel Options](1466_split_button_opt.html)
+- [FireP and 3d Aimer](1543_wta_firep_3d_aimer.html)
     - Ribbon panel implementation sample
     - Fire protection related family placement tools
     - 3d Aimer that "aims" a special Revit family instance at a target
-- [WTA Elec &ndash; another family plunk and concept share](http://thebuildingcoder.typepad.com/blog/2017/03/wta-firep-and-3d-aimer-tools.html#5)
+- [WTA Elec &ndash; another family plunk and concept share](1543_wta_firep_3d_aimer.html#5)
 
 [Revit, Add-in, complex family placement using the plunk class](https://www.youtube.com/watch?v=_x7yyx4Yk_I)
 
@@ -80,7 +80,7 @@ on [an automation experiment, family placement, its tag and then a remote tag](h
 It provides a similar ribbon panel and tool collection for family instance placement and management for tasks primarily oriented towards the mechanical domain:
 
 > Apologizing for beginning to wear out a welcome, here is a video and code share for yet another custom ribbon specific task command involving family placement and tags. The ribbon panel split button control being used is a variant of what is mentioned
-in [stacked ribbon button panel options](http://thebuildingcoder.typepad.com/blog/2016/09/stacked-ribbon-button-panel-options.html).
+in [stacked ribbon button panel options](1466_split_button_opt.html).
 
 > One idea presented is a remote tag. Maybe this is commonly done in Revit practice.
 The remote tag here is simply a tag on item where the tag itself is placed in proximity to a different item that is a system client to the former item. What is really needed is for Revit tags to show values from an indexed object instead of the object the tag tags. Perhaps it does this. Anyway, that is part of what is seen in the video.
@@ -132,7 +132,7 @@ Much of the code is by others. Its mangling and ignorant misuse is my ongoing do
 
 Here are some aspects that may be of specific interest:
 
-- **Hybrid splitbutton behaviour** &mdash; A splitbutton control with four buttons, where the top two execute one of two types of the same task and the bottom two invoke a settings panel for one of the corresponding task types. The top two buttons, being tasks the user is likely going to repeat, remain as the last button selected. The bottom two buttons are incidental tasks the user would not need to repeat nor want to be the splitbutton's face button. The splitbutton face button reverts back to what is was before the user selected one of the bottom two button. That is the hybrid behaviour. This idea was discussed here: [thebuildingcoder &ndash; stacked-ribbon-button-panel-options](http://thebuildingcoder.typepad.com/blog/2016/09/stacked-ribbon-button-panel-options.html)
+- **Hybrid splitbutton behaviour** &mdash; A splitbutton control with four buttons, where the top two execute one of two types of the same task and the bottom two invoke a settings panel for one of the corresponding task types. The top two buttons, being tasks the user is likely going to repeat, remain as the last button selected. The bottom two buttons are incidental tasks the user would not need to repeat nor want to be the splitbutton's face button. The splitbutton face button reverts back to what is was before the user selected one of the bottom two button. That is the hybrid behaviour. This idea was discussed here: [thebuildingcoder &ndash; stacked-ribbon-button-panel-options](1466_split_button_opt.html)
 - **Host face normal direction used to drive symbology orientation** &mdash; The HVAC sensor family placed by the tools has two symbology orientations, because Revit does not really support a universal "view independent text". The family's symbology would be wrong 50% of the time it were placed. The code attempts to use the host face normal direction to more correctly pick which of the two orientations to make visible. Each orientation's visibility is controlled by a parameter. Only one parameter needs to be set, because the other parameter is function controlled in the family to be `not(the_other)`.
 - **User settings for family names, types and tag parameter names** &mdash; As a way to side step the problem of hard coding family names, types and tag parameter names, the user can set the names to some other values. Not implemented, but planned: an external file text to also house the standard settings.
 - **Remote equipment tag** &mdash; Sensors, like thermostats, for example, are often the client to a piece of a mechanical system. The mechanical system name the sensor is a client for, an ID number for example, is typically placed next to the sensor on construction plans. That ID number is part of the mechanical equipment properties, but not the sensor properties, unless it is duplicated to the sensor. Therefore, tagging the sensor using the latter method involves more effort and maintenance. The remote equipment tag is a tag to the mechanical equipment placed at the sensor. That is what this add-in is doing. It would be nice if Revit were to support an indirect tag value, like the way a microprocessor does indirect addressing. Then the sensor could be tagged with a tag that gets its value from the parameter values of an indirectly addressed object.
@@ -143,16 +143,16 @@ Here are some aspects that may be of specific interest:
 
 We discussed numerous examples of the temporary transaction trick in the past,
 the last one just last week, 
-to [obtain a section marker endpoint](http://thebuildingcoder.typepad.com/blog/2017/03/ttt-to-obtain-section-marker-endpoint.html).
+to [obtain a section marker endpoint](1541_section_marker_endp.html).
 
 That and others are listed in The Building Coder topic group 
-on [handling transactions and transaction groups](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.53).
+on handling transactions and transaction groups *(link unavailable)*.
 
 Here is another clever use to obtain provisions for void, last mentioned in the discussion
-on [using `ReferenceIntersector` in linked files](http://thebuildingcoder.typepad.com/blog/2015/07/using-referenceintersector-in-linked-files.html).
+on [using `ReferenceIntersector` in linked files](1339_reference_intersector.htm).
 
 Håvard Dagsvik of [Symetri](http://www.symetri.com), who contributed to numerous discussions in the past, e.g., 
-[determining wall opening areas per room](http://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-opening-areas-per-room.html#4),
+[determining wall opening areas per room](1423_wall_opening_areas.html#4),
 brought up a new idea:
 
 Just wanted to share with you something I came across the other day about ProvisionForVoids.
@@ -283,7 +283,7 @@ So I use the size of the solid as size for each FamilyInstance.
 These methods can also be used to improve
 the [SpatialElementGeometryCalculator](https://github.com/jeremytammik/SpatialElementGeometryCalculator) project
 described
-in [Håvard's SpatialElementGeometryCalculator enhancement](http://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-opening-areas-per-room.html#5).
+in [Håvard's SpatialElementGeometryCalculator enhancement](1423_wall_opening_areas.html#5).
  
 This add-in shows how you can obtain the opening size you need to request.
 In our final add-in we use the solids it creates as basis for size and rotation when creating FamilyInstances.

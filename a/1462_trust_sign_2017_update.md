@@ -84,7 +84,7 @@ Next, here is the rather overdue publication of the Revit 2017 API news presenta
     - [DevDays Online 2015/2016](http://adn.autodesk.com/adn/servlet/item?siteID=4814862&id=25207102)
     - [Revit and Project Expo presentation recording](http://adn.autodesk.com/adn/servlet/file/developer_days_online_revit_and_project_expo.wmv?siteID=4814862&id=25214065) (wmv &ndash; 82440 Kb)
 - For non-ADN-members
-    - [Revit and Project Expo presentation recording](http://thebuildingcoder.typepad.com/revit_2017_api_news/developer_days_online_revit_and_project_expo.wmv) (wmv &ndash; 84418611 bytes)
+    - Revit and Project Expo presentation recording *(link unavailable)* (wmv &ndash; 84418611 bytes)
 
 
 #### <a name="4"></a>ADN Training Labs for Revit 2017

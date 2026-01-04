@@ -69,7 +69,7 @@ Jim adds a word of warning about my samples connecting desktop and cloud that I 
 
 I fully agree with this warning!
 
-If anyone is interested in serious web based interaction with RVT files, they should read about our [thoughts on Revit I/O](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28b) and get in touch to discuss their needs with us.
+If anyone is interested in serious web based interaction with RVT files, they should read about our thoughts on Revit I/O *(link unavailable)* and get in touch to discuss their needs with us.
 
 Since this question comes up at all, I should probably be clearer about my intentions:
  

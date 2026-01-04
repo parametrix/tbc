@@ -63,7 +63,7 @@ This issue has already been logged as REVIT-71373 *As a Revit add-in developer, 
 **Response:** Thank you.
 
 Here is my current workaround making use of
-the [unsupported](http://thebuildingcoder.typepad.com/blog/about-the-author.html#4) `AdWindows.dll` functionality:
+the unsupported *(link unavailable)* `AdWindows.dll` functionality:
 
 <pre class="code">
 &nbsp; <span class="blue">var</span> bd0 = <span class="blue">new</span> <span class="teal">PulldownButtonData</span>( <span class="maroon">&quot;A&quot;</span>, <span class="maroon">&quot;A&quot;</span> );

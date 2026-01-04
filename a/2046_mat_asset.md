@@ -167,7 +167,7 @@ the [Revit Preview Project](https://feedback.autodesk.com/key/LHMJFVHGJK085G2M).
 
 [Twentytwo](https://twentytwo.space), written by Min Naung, provides a place and resources for BIM Programming enthusiasts.
 Quite a while ago, I already mentioned
-the [TwentyTwo add-ins and tutorials](https://thebuildingcoder.typepad.com/blog/2022/10/element-level-and-ifc-properties-.html#2).
+the [TwentyTwo add-ins and tutorials](1968_level_ifc_prop.html#2).
 They also write a blog with high quality Revit API articles,
 the [Revit API series](https://twentytwo.space/revit-api-series/).
 

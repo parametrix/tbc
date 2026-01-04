@@ -57,8 +57,8 @@ Real soon now!
 Next, I address
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api/bd-p/160) thread
 on [obtaining the MacroManager](http://forums.autodesk.com/t5/revit-api-forum/can-t-obtain-macromanager/m-p/6557705)
-as well as [Frederic's comment](http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html#comment-2842394984)
-on [What's New in the Revit 2014 API](http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html):
+as well as [Frederic's comment](0938_whats_new_2014.htm#comment-2842394984)
+on [What's New in the Revit 2014 API](0938_whats_new_2014.htm):
 
 **Question:** I'm stuck with getting MacroManager object.
 There are much more class members listed in API reference then really available.
@@ -71,7 +71,7 @@ What am I doing wrong?
 Or is there any other way to delete all macros from document?
 
 **Jeremy says:** I should think this can be done quite easily. Look
-at [What's New in the Revit 2014 API](http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html) and
+at [What's New in the Revit 2014 API](0938_whats_new_2014.htm) and
 search for **MacroManager API**.
 
 **Revitalizer answers:** Add `RevitAPIMacros.dll` to your VS project.
@@ -205,15 +205,15 @@ After doing its dirty deed, it confesses and reports in full:
 #### <a name="4"></a>Getting Started and Changing the Colour of a Wall
 
 Next, let's look
-at [Nalika's comment](http://thebuildingcoder.typepad.com/blog/2010/06/display-webcam-image-on-building-element-face.html#comment-2890199050)
-on [displaying a webcam image on a building element face](http://thebuildingcoder.typepad.com/blog/2010/06/display-webcam-image-on-building-element-face.html):
+at [Nalika's comment](0380_revitwebcam.htm#comment-2890199050)
+on [displaying a webcam image on a building element face](0380_revitwebcam.htm):
 
 **Question:** I'm very new to Revit and very much grateful if you could help me in solving my problem.
 
 Currently I'm trying to change the colour of a wall according to a certain value. For example: value 20 will make the wall red when I click on it and if I click on the wall again it will be green according to a new value. The values are stored in an array and currently have 4 values. I use the sample library project `WorkThread` and it uses the same `SetupDisplayStyle` function to set the display style. There I pick the colour from array values. However, the wall is coloured in 4th colour when I click on the wall for the 4th time, and the first three times the wall isn't coloured at all. Could you please tell me in which function/method should I change/iterate through in order to have different colours (defined from array values) every time I click on a wall.
 
 **Answer:** If you are new to the Revit API, I would strongly suggest that you work through
-the [Revit API getting started material](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2) first
+the Revit API getting started material *(link unavailable)* first
 of all, especially the DevTV and My First Revit Plugin video tutorials.
 
 If you want to dive in deeper, go through the ADN Revit API Training Labs after that.
@@ -240,7 +240,7 @@ Take heed, have fun, and good luck!
 #### <a name="5"></a>Getting Started and Using the Visual Studio Revit Add-In Wizard Auto-Installer
 
 While we are at it, we might as well also
-reproduce [Juan E. Calvo Ferrándiz' comment](http://thebuildingcoder.typepad.com/blog/2016/05/visual-studio-vb-and-c-net-revit-2017-add-in-wizards.html#comment-2890797869) on
+reproduce [Juan E. Calvo Ferrándiz' comment](1438_addin_wizard_2017.html#comment-2890797869) on
 the wizard auto-installation:
 
 **Question:** Thanks for this work! Is amazing.

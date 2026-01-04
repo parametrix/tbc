@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -111,8 +142,8 @@ So, I can just call <code>imageType.GetImage().Save(filepath)</code>.</p>
 <p>I conversed with Bernhard Van Renssen in the past few days, in 
 the <a href="http://forums.autodesk.com/t5/revit-api-forum/bd-p/160">Revit API discussion forum</a> thread
 on <a href="https://forums.autodesk.com/t5/revit-api-forum/export-to-dae-file-format/m-p/9004878">export to DAE file format</a> and
-in a <a href="https://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html#comment-4598898712">comment</a> on
-the <a href="https://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html">article on <em>Graphics Pipeline Custom Exporter</em></a>.</p>
+in a <a href="0979_custom_exporter.htm#comment-4598898712">comment</a> on
+the <a href="0979_custom_exporter.htm">article on <em>Graphics Pipeline Custom Exporter</em></a>.</p>
 <p>That prompted me to migrate
 the <a href="https://github.com/jeremytammik/CustomExporterCollada">Collada custom exporter</a> to
 Revit 2020, including some minor enhancements that ended up resolving a larger problem:</p>
@@ -121,7 +152,7 @@ Revit 2020, including some minor enhancements that ended up resolving a larger p
 <p>When debugging, it calls the <code>exporter.Export</code> function in the Command.cs file, but that always throws <code>ExternalApplicationException</code>.</p>
 <p>By the way, is Collada still the best format to export to if you need the materials, uvs and textures?</p>
 <p><strong>Answer:</strong> Are you talking about
-the <a href="https://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html#5">Custom Exporter to Collada</a> for
+the <a href="0979_custom_exporter.htm#5">Custom Exporter to Collada</a> for
 Revit 2014, published in July 2013?</p>
 <p>I would assume it should work pretty much unchanged.</p>
 <p>Regarding the exception that it may throw, that issue has come up a couple of times in the past and is surprisingly easy to handle.</p>
@@ -129,7 +160,7 @@ Revit 2014, published in July 2013?</p>
 <p>In spite of throwing the exception, the custom exporter seems to work perfectly all right.</p>
 <p>Here is a more detailed discussion and example of this:</p>
 <ul>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2018/12/dynamo-symbol-vs-type-and-exporter-exception.html#5">Custom exporter execute may throw</a></li>
+<li><a href="1710_dynamo_type_inst_except.html#5">Custom exporter execute may throw</a></li>
 <li><a href="https://github.com/jeremytammik/CustomExporterAdnMeshJson/commit/23a95aad8f4a3cca85a72b32e2b699bde1d46bcb">Wrap call to <code>exporter.Export</code> in an exception handler and all is well</a></li>
 </ul>
 <p>Can you confirm that this solves the issue in your case as well?</p>
@@ -141,7 +172,7 @@ Revit 2014, published in July 2013?</p>
 <p>I am anything but an expert on this, but I would probably go for the
 new <a href="https://en.wikipedia.org/wiki/GlTF">glTF or GL Transmission Format</a> nowadays.</p>
 <p>Afaik, it supports everything that Collada does and more, plus is more modern, streamlined, simple and efficient.</p>
-<p>In fact, I recently implemented a <a href="https://thebuildingcoder.typepad.com/blog/2019/06/room-volume-gltf-generator.html">room volume exporter that creates data for use in a glTF visualisation</a>.</p>
+<p>In fact, I recently implemented a <a href="1761_room_volume_gltf.html">room volume exporter that creates data for use in a glTF visualisation</a>.</p>
 <p><strong>Response:</strong> I use the GitHub version, both the one with the exception handler (2017.0.0.1) and the 2018.0.0.0 releases, and both of them for some reason do not work neither on Revit 2018 nor 2019 (it does nothing after I click the custom add-in in a 3D view). </p>
 <p>Here are the steps that I took to recreate the scenario:</p>
 <ul>
@@ -202,3 +233,11 @@ new <a href="https://en.wikipedia.org/wiki/GlTF">glTF or GL Transmission Format<
 <p><strong>Answer:</strong> Thank you for the confirmation.</p>
 <p>I just did what came to mind as you described your debugging observation and the weird jump from the stream writer initialisation to the end of processing.</p>
 <p>What luck!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

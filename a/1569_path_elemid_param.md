@@ -56,7 +56,7 @@ I noticed that Revit has provided coordinates in floats number which cannot be u
 The path finding aspect is much more interesting and challenging, of course.
 
 I implemented
-a [Revit add-in that prompts the user to select a model curve representing the optimal exit path](http://thebuildingcoder.typepad.com/blog/2016/09/hololens-escape-path-waypoint-json-exporter.html) for
+a [Revit add-in that prompts the user to select a model curve representing the optimal exit path](1468_hololens_exitpath.html) for
 a specific project of Kean Walmsley's.
 
 That is not what you are asking for, but might help with inspiration or other aspects of your task.
@@ -65,7 +65,7 @@ Do you know what a [Voronoi diagram](https://en.wikipedia.org/wiki/Voronoi_diagr
  
 It might be used to generate the optimal path automatically.
  
-Check out Max Thumfart's sample using the C++ Boost library [Voronoi implementation in a Revit add-in](http://thebuildingcoder.typepad.com/blog/2015/07/grevit-firerating-in-the-cloud-demo-deployment-vacation.html#3).
+Check out Max Thumfart's sample using the C++ Boost library [Voronoi implementation in a Revit add-in](1342_firerating_cloud.htm#3).
  
 Furthermore, I heard that Adam Sheather presented an example of wrapping the A* algorithm in a Dynamo node at AU 2016; I don't see it mentioned in his class
 material [SD21181-L &ndash; Coding New Nodes with Dynamo](http://au.autodesk.com/au-online/classes-on-demand/class-catalog/classes/year-2016/dynamo-studio/sd21181-l), though.
@@ -229,11 +229,11 @@ I am quite happy with this approach!
 </pre>
 
 This differs significantly from
-the [combo box dropdown workarounds](http://thebuildingcoder.typepad.com/blog/2015/11/drop-down-enumerated-parameter-values.html),
+the [combo box dropdown workarounds](1378_dropdown_param_combo.html),
 because it touches on how to mimic contextual content of the Element Properties Panel using Revit API; more specifically, how to get a list of available `ElementId` values for a given `Parameter` whose Storage Type = ElementId and has an existing value to use as reference. Mostly revolving around use of 'ElementType.GetSimilarTypes' method.
 
 To get available values for a parameter that does not have an existing value for reference, you might be able to create a suitable template element in a temporary transaction, grab the data you require from it, and roll back the transaction without committing, also known as
-the ['temporary transaction trick' TTT](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.53).
+the 'temporary transaction trick' TTT *(link unavailable)*.
  
 Even then, I don't see a way to determine what a "suitable template element" might be. Given a parameter with <null> ElementID value, the only helpful information looks like BuiltInParameter Id, but that doesn't get me very far. Worst case, I make exceptions for my favourite BuiltInParameter Id's to assist in determining "suitable template element".
  

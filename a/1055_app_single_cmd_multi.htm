@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -13,7 +44,7 @@ REVIT-24299 [unsubscribing from Idling event has no effect]
 
 <p>I recently discussed the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/11/roomeditorapp-architecture-and-external-application.html">
+<a href="1049_roomeditorapp.htm">
 RoomEditorApp</a> external
 
 application, the Revit add-in part of my cloud-based real-time round-trip 2D Revit model editing application, while creating the
@@ -25,7 +56,7 @@ migrating it to Revit 2014.</p>
 
 <p>I also mentioned that I was mysteriously
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/11/roomeditorapp-architecture-and-external-application.html#4">
+<a href="1049_roomeditorapp.htm#4">
 unable to unsubscribe from the Idling event</a>.</p>
 
 <p>I raised this <a href="#2">mystifying question</a> with the development team and received a very <a href="#3">satisfying answer</a>, which includes some important information on how external applications and commands are handled and instantiated by the Revit API.</p>
@@ -295,3 +326,12 @@ So another approach would be to use an instance method of the app (but this prob
 <a href="https://github.com/jeremytammik/TestIdlingUnsubscribe/releases/tag/2014.0.0.1">release 2014.0.0.1</a>.</p>
 
 <p>I hope you find this as interesting and illuminating as I do.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

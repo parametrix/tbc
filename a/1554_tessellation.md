@@ -23,7 +23,7 @@ Why does the tessellation segmentation differ in this manner? The levelOfDetail 
 ### Wall and Opening Tessellation
 
 Let's turn to a geometric question on tessellation, expanding on the discussion
-on [TessellateSolidOrShell &ndash; holes versus wholes](http://thebuildingcoder.typepad.com/blog/2014/05/tessellatesolidorshell-holes-versus-wholes.html).
+on [TessellateSolidOrShell &ndash; holes versus wholes](1160_tessellatesolidorshell.htm).
 
 #### <a name="2"></a>Question
 
@@ -48,7 +48,7 @@ Note that the segmentations of the exported wall and opening solids differ:
 </center>
 
 I also tried to use the method `TessellateSolidOrShell(Solid, SolidOrShellTessellationControls)`, but the result is similar and the segmentation of the exported wall and opening solids differs there too, cf. the discussion
-on [TessellateSolidOrShell &ndash; holes versus wholes](http://thebuildingcoder.typepad.com/blog/2014/05/tessellatesolidorshell-holes-versus-wholes.html).
+on [TessellateSolidOrShell &ndash; holes versus wholes](1160_tessellatesolidorshell.htm).
  
 #### <a name="3"></a>Answer
 
@@ -60,11 +60,11 @@ The user wants to calculate wall areas (and other quantities) of a wall with and
 
 The Building Coder published a whole series of blog posts on that topic:
 
-- [Retrieving wall openings and sorting points](http://thebuildingcoder.typepad.com/blog/2015/12/retrieving-wall-openings-and-sorting-points.html)
-- [Wall opening profiles](http://thebuildingcoder.typepad.com/blog/2015/12/wall-opening-profiles-and-happy-holidays.html)
-- [Determining wall opening areas per room](http://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-opening-areas-per-room.html)
-- [More on wall opening areas per room](http://thebuildingcoder.typepad.com/blog/2016/04/more-on-wall-opening-areas-per-room.html)
-- [Two energy model types](http://thebuildingcoder.typepad.com/blog/2017/01/family-category-and-two-energy-model-types.html)
+- [Retrieving wall openings and sorting points](1387_wall_openings.html)
+- [Wall opening profiles](1389_wall_opening_profiles.html)
+- [Determining wall opening areas per room](1423_wall_opening_areas.html)
+- [More on wall opening areas per room](1424_wall_opening_areas.html)
+- [Two energy model types](1521_wall_opening_areas.html)
 
 
 To calculate these areas, they subtract the wall with openings from the wall without openings to get solids representing the shapes of the openings. Their application requires faceted shapes, so they triangulate these various 3D shapes. The wall with an opening, triangulated looks like this:

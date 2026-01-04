@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -6,6 +36,7 @@
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -18,8 +49,8 @@ is there any way to set <i>can vary by group instance</i> (what I need) the defa
 
 <h3>Setting Parameter Varies Between Groups</h3>
 <p>We already looked at the topic of setting the <code>SetAllowVaryBetweenGroups</code> flag on a shared parameter
-in Scott Conover's <a href="http://thebuildingcoder.typepad.com/blog/2016/12/parameter-definition-overview.html">parameter definition overview</a>.</p>
-<p>The setting was introduced in the <a href="http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html">Revit 2014 API</a>,
+in Scott Conover's <a href="1507_parameter_definition.html">parameter definition overview</a>.</p>
+<p>The setting was introduced in the <a href="0938_whats_new_2014.htm">Revit 2014 API</a>,
 cf. <em>Parameter variance among group instances</em>.</p>
 <p>Now Miroslav Schonauer raised it again, asking:</p>
 <p><strong>Question:</strong> Is the following option for group behaviour of shared param <em>instance</em> bindings exposed to API?</p>
@@ -84,7 +115,7 @@ which explains that it is kind-of possible.</p>
 <p>It assumes that <code>guid</code> comes from a known shared parameter.</p>
 <p>Further good news: this can be called not only immediately after programmatically binding a new shared param, but also to <em>silently</em> change this specific setting for an <em>existing</em> shared parameter.</p>
 <p>For example, we all typically have our own helper methods to get-or-create a shared parameter binding, cf., e.g., my method
-to <a href="http://thebuildingcoder.typepad.com/blog/2012/04/adding-a-category-to-a-shared-parameter-binding.html">add a category to a shared parameter binding</a>.</p>
+to <a href="0754_shared_param_add_categ.htm">add a category to a shared parameter binding</a>.</p>
 <p>Here is a code snippet providing enough to get the gist of how the above can be used (ignore my helper classes and error handling):</p>
 <pre class="code">
 &nbsp;&nbsp;<span style="color:green;">//&nbsp;Assumes&nbsp;outer&nbsp;transaction</span>
@@ -164,3 +195,11 @@ to <a href="http://thebuildingcoder.typepad.com/blog/2012/04/adding-a-category-t
 to <a href="https://github.com/jeremytammik/the_building_coder_samples/releases/tag/2018.0.134.11">The Building Coder samples release 2018.0.134.11</a> in
 the module <a href="https://github.com/jeremytammik/the_building_coder_samples/blob/master/BuildingCoder/BuildingCoder/CmdCreateSharedParams.cs#L441-L470">CmdCreateSharedParams.cs L441-L470</a>.</p>
 <p>Many thanks to Miro for raising this issue and sharing his approach to solve it!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

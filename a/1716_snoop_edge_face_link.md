@@ -115,7 +115,7 @@ The new pick options helped guide me to my target face.
 I suspect I will use it quite a bit when debugging interaction with linked elements.
 
 Seems to me you could have used "Pick Linked Element..." yourself in your latest discussion
-on [retrieving linked `IfcZone` elements using Python](https://thebuildingcoder.typepad.com/blog/2019/01/retrieving-linked-ifczone-elements-using-python.html).
+on [retrieving linked `IfcZone` elements using Python](1715_list_ifc_zones_py.html).
 
 <center>
 <img src="img/hl_revitlookup_04.jpg" alt="Snooping linked elements" width="685">

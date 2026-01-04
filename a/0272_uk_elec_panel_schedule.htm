@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <style type="text/css">
@@ -19,6 +49,7 @@ td.jtb, th.jtb
 }
 </style>
 
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>UK Electrical Schedule Sample</h3>
@@ -63,11 +94,11 @@ Here is the resulting output spreadsheet for Panel 1 in this model using the sam
 
 <h4>Revit MEP UK DB Schedule Sample</h4>
 
-<p><i>By Simon Jones, Autodesk UK ñ December 2009</i></p>
+<p><i>By Simon Jones, Autodesk UK ÔøΩ December 2009</i></p>
 
 <p>This is a far as I got for generating a UK Style Panel Schedule from Revit MEP.
 
-<p>The first problem to get over is to match the RME circuit numbers with the conventions. Consider the simple panel below that has 18 slots. In Revit MEP the odd number circuits (1,3,5,Ö) are listed on the left side of the panel, whilst the even number circuits (2,4,6,Ö) are listed on the right. In the UK the convention is to use circuit codes that group in threeís the match the phasing, and are typically named: 1L1, 1L2, 1L3, 2L1, 2L2, 2L3, 3L1... and a 3 phase circuit example would be 6L123 for circuits 14, 16 & 18, as illustrated below:</p>
+<p>The first problem to get over is to match the RME circuit numbers with the conventions. Consider the simple panel below that has 18 slots. In Revit MEP the odd number circuits (1,3,5,ÔøΩ) are listed on the left side of the panel, whilst the even number circuits (2,4,6,ÔøΩ) are listed on the right. In the UK the convention is to use circuit codes that group in threeÔøΩs the match the phasing, and are typically named: 1L1, 1L2, 1L3, 2L1, 2L2, 2L3, 3L1... and a 3 phase circuit example would be 6L123 for circuits 14, 16 & 18, as illustrated below:</p>
 
 <!--
 <table border="thin" cellpadding="5px" cellspacing="0px">
@@ -107,7 +138,7 @@ id="ukborder"
 
 <p>After running the command you will simply be asked to select the appropriate panel.
 
-<p>If youíre using the supplied dataset, this shared parameter has already been added to circuits and light fittings through the Project Parameters, but if you use an alternative Revit project, youíll have to add this parameter manually.
+<p>If youÔøΩre using the supplied dataset, this shared parameter has already been added to circuits and light fittings through the Project Parameters, but if you use an alternative Revit project, youÔøΩll have to add this parameter manually.
 
 <p>For this to work, the panel needs to have an even number of circuits that is also divisible by 3, for example 6, 12, 18, 24, 48 etc.
 
@@ -115,7 +146,7 @@ id="ukborder"
 
 <h4>Panel Schedule Export</h4>
 
-<p>Once the circuit references have been set-up, you can then use the ëPanel Schedule Exportí command to extract the data to an Excel spreadsheet. As with the ëAdd Circuit Referencesí command, you will be prompted to select the appropriate panel.
+<p>Once the circuit references have been set-up, you can then use the ÔøΩPanel Schedule ExportÔøΩ command to extract the data to an Excel spreadsheet. As with the ÔøΩAdd Circuit ReferencesÔøΩ command, you will be prompted to select the appropriate panel.
 
 <p>After picking the panel, you will then be prompted to select an Excel spreadsheet.
 This sample is hard coded to use the cell positions in the PanelSchedule.xls that is included with the sample. For example, the following cell positions are used:
@@ -166,3 +197,12 @@ It has nothing at all to do with religion or esoteric beliefs, it is a purely pr
 <p>And forget about the Revit API blogging for a while  &nbsp;:-)&nbsp;&nbsp;
 I will be back in the second week of January.
 I wish you all the best until then.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

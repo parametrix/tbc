@@ -9,10 +9,10 @@
 - Get Revit Camera FOV
   Many people have asked how you can retrieve the Revit camera field of view or FOV.
   As Valerii Nozdrenkov points out in
-  his [comment](https://thebuildingcoder.typepad.com/blog/2019/06/revit-camera-settings-project-plasma-da4r-and-ai.html#comment-4891620499)
-  on [mapping the Revit camera settings to the Forge viewer](https://thebuildingcoder.typepad.com/blog/2019/06/revit-camera-settings-project-plasma-da4r-and-ai.html),
+  his [comment](1758_camera_plasma_da4r_ai.html#comment-4891620499)
+  on [mapping the Revit camera settings to the Forge viewer](1758_camera_plasma_da4r_ai.html),
   The Building Coder already published a solution suggested by Arno&scaron;t L&ouml;bel reading the required data from
-  the [custom exporter `GetCameraInfo`](https://thebuildingcoder.typepad.com/blog/2014/09/custom-exporter-getcamerainfo.html):
+  the [custom exporter `GetCameraInfo`](1203_custom_exporter_camera.htm):
   > When a view is processed and run through a custom exporter context, its properties are used to populate a `ViewNode` instance.
   > One of its methods is `GetCameraInfo`, which provides information that ought to cover everything you need to know about the view's camera.
   search for and answer other question on this on the web...
@@ -77,10 +77,10 @@ Today we resuscitate a five-year old Revit API answer, still as fresh and useful
 Many people have asked how you can retrieve the Revit camera field of view or FOV.
 
 As Valerii Nozdrenkov points out in
-his [comment](https://thebuildingcoder.typepad.com/blog/2019/06/revit-camera-settings-project-plasma-da4r-and-ai.html#comment-4891620499)
-on [mapping the Revit camera settings to the Forge viewer](https://thebuildingcoder.typepad.com/blog/2019/06/revit-camera-settings-project-plasma-da4r-and-ai.html),
+his [comment](1758_camera_plasma_da4r_ai.html#comment-4891620499)
+on [mapping the Revit camera settings to the Forge viewer](1758_camera_plasma_da4r_ai.html),
 The Building Coder already published a solution suggested by Arno&scaron;t L&ouml;bel reading the required data from
-the [custom exporter `GetCameraInfo`](https://thebuildingcoder.typepad.com/blog/2014/09/custom-exporter-getcamerainfo.html):
+the [custom exporter `GetCameraInfo`](1203_custom_exporter_camera.htm):
 
 > When a view is processed and run through a custom exporter context, its properties are used to populate a `ViewNode` instance.
 

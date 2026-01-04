@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!--
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -27,16 +58,16 @@ at <a href="http://www.dwaravati.com">Dwaravati</a>:</p>
 <p>As per API documentation, this operation should not be invalid: no open transactions; <code>IsModifiable</code> is ok; <code>IsReadOnly</code> is ok; No pre-action events around.</p>
 <p>However, trying to do so throws an <code>InvalidOperationException</code> with the message "Setting active view is temporarily disabled". </p>
 <p>Closest explanation I could reach to is
-Jeremy's <a href="http://thebuildingcoder.typepad.com/blog/2011/09/activate-a-3d-view.html#comment-2097342515">casual reply</a> "the system may be busy with something else"
-to a <a href="http://thebuildingcoder.typepad.com/blog/2011/09/activate-a-3d-view.html#comment-2097342519">blog comment</a>
-on <a href="http://thebuildingcoder.typepad.com/blog/2011/09/activate-a-3d-view.html">activating a 3D View</a>.</p>
+Jeremy's <a href="0653_activate_3d_view.htm#comment-2097342515">casual reply</a> "the system may be busy with something else"
+to a <a href="0653_activate_3d_view.htm#comment-2097342519">blog comment</a>
+on <a href="0653_activate_3d_view.htm">activating a 3D View</a>.</p>
 <p>In a sense, that is the case &ndash; the system is 'busy', because the <code>Idling</code> event is being processed at the moment.</p>
 <p>However, I wonder if that is the real reason or a real limitation in this case &ndash; for the system is also busy when <code>IExternalCommand.Execute</code> is being processed, in which case setting <code>ActiveView</code> functions perfectly.</p>
 <p>Looking forward to expert comments on whether setting <code>ActiveView</code> is indeed invalid in <code>Idling</code> under all circumstances and whether there is a way around it.</p>
 <p><strong>Answer 1:</strong> As a workaround, would it be possible to select the view (using the API), then use <code>PostCommand</code> to set the active view? Then wait for idling again...</p>
 <p><strong>Answer 2:</strong> There is a <code>UIDocument.RequestViewChange</code> method made for the case you described.
-It is included in the <a href="http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html">Revit 2015 API</a>
-<a href="http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html#4.02">Document API additions</a>:</p>
+It is included in the <a href="1141_whats_new_2015.htm">Revit 2015 API</a>
+<a href="1141_whats_new_2015.htm#4.02">Document API additions</a>:</p>
 <h4><a name="2"></a><span style="color:darkblue">UIDocument Operations and Additions</span></h4>
 <p style="color:darkblue">The new method UIDocument.RequestViewChange requests to change the active view by posting a message asynchronously. Unlike setting the ActiveView property, this will not make the change in active view immediately. Instead, the request will be posted to occur when control returns to Revit from the API context. This method is permitted to change the active view from the Idling event or an ExternalEvent callback.</p>
 
@@ -172,3 +203,11 @@ It is included in the <a href="http://thebuildingcoder.typepad.com/blog/2014/04/
 <img src="img/dwaravati_logo.png" alt="Dwaravati" width="177"/>
 </center>
 ---->
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

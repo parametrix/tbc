@@ -58,7 +58,7 @@ Other interesting topics also want to be mentioned
 ### Reference Intersector and Deleting Reference Planes
 
 We already looked
-at [deleting unnamed non-hosting reference planes](http://thebuildingcoder.typepad.com/blog/2014/02/deleting-unnamed-non-hosting-reference-planes.html) back
+at [deleting unnamed non-hosting reference planes](1098_delete_unused_ref_plane.htm) back
 in 2012 and 2014.
 Some things have changed since then, and the old code requires fixing and updating once again.
 
@@ -109,8 +109,8 @@ Here is Alex' [15-minute GoPro video of the foggy walk back across the ridge](ht
 ####<a name="4"></a> Using ReferenceIntersector to Place Lighting Fixture on Ceiling Face
 
 Returning to the Revit API, Joshua Lumley shared a nice little example of using the `ReferenceIntersector` class to determine a point on and a reference to the ceiling face in a linked file to place a lighting fixture above a given point, in
-his [comment](http://thebuildingcoder.typepad.com/blog/2010/01/findreferencesbydirection.html#comment-4067218487) on the old discussion of
-the [`FindReferencesByDirection` method](http://thebuildingcoder.typepad.com/blog/2010/01/findreferencesbydirection.html), the precursor of `ReferenceIntersector`.
+his [comment](0294_abg09_findReferencesByDir.htm#comment-4067218487) on the old discussion of
+the [`FindReferencesByDirection` method](0294_abg09_findReferencesByDir.htm), the precursor of `ReferenceIntersector`.
 
 I generalised and simplified his code snippet to this `GetCeilingReferenceAbove` method, which I added
 to [The Building Coder Samples](https://github.com/jeremytammik/the_building_coder_samples)
@@ -172,34 +172,34 @@ Here is a sample snippet showing how the method expects to be used:
 ####<a name="5"></a> Reformat Stable Representation String for Dimensioning
 
 By the way, Joshua also added an important note on how 
-to [reformat the stable representation string for dimensioning](http://thebuildingcoder.typepad.com/blog/2016/04/stable-reference-string-magic-voodoo.html#6) in the discussion
-on the [reference stable representation magic voodoo](http://thebuildingcoder.typepad.com/blog/2016/04/stable-reference-string-magic-voodoo.html).
+to [reformat the stable representation string for dimensioning](1429_stable_references.html#6) in the discussion
+on the [reference stable representation magic voodoo](1429_stable_references.html).
 
 Many thanks for your helpful contributions, Joshua!
 
 ####<a name="6"></a> Deleting Unnamed Non-Hosting Reference Planes Updated 
 
 Another important update was initiated by Austin Sudtelgte, who pointed out that the approach described in 2014
-for [deleting unnamed non-hosting reference planes](http://thebuildingcoder.typepad.com/blog/2014/02/deleting-unnamed-non-hosting-reference-planes.html) no longer works.
-[Austin adds](http://thebuildingcoder.typepad.com/blog/2014/02/deleting-unnamed-non-hosting-reference-planes.html#comment-3985629186):
+for [deleting unnamed non-hosting reference planes](1098_delete_unused_ref_plane.htm) no longer works.
+[Austin adds](1098_delete_unused_ref_plane.htm#comment-3985629186):
 
 > As of 2017 this method no longer works, because Revit doesn't throw an error when deleting a plane with something hosted to it. You will have to get all family instances in the document, check their host ID parameter, get all reference planes excluding the ones whose IDs we just collected, then delete. Dimensions that measure to a reference plane will be removed with the reference plane. The methods used above will still work to determine if one of those will be deleted or not. Alternatively, as of 2018.1, there is an `Element.GetDependentElements` method that will return the same things as what is returned when deleting the element, just without having to delete it and roll back a transaction.
 
 He also points out in
-his [comment on *What's New in the Revit 23019 API*](http://thebuildingcoder.typepad.com/blog/2018/04/whats-new-in-the-revit-2019-api.html#comment-3985568426):
+his [comment on *What's New in the Revit 23019 API*](1647_whats_new_2019.html#comment-3985568426):
 
-> [Point 2.3 on finding element dependencies](http://thebuildingcoder.typepad.com/blog/2018/04/whats-new-in-the-revit-2019-api.html#4.2.3) with
+> [Point 2.3 on finding element dependencies](1647_whats_new_2019.html#4.2.3) with
 `Element.GetDependentElements` seems to require an element filter rather than having it be optional as noted above. It's possible that in 2019 the filter is optional, but in 2018.1 it was not.
 
 This is relevant 
 in [The Building Coder sample](https://github.com/jeremytammik/the_building_coder_samples)
 `CmdDeleteUnusedRefPlanes.cs` to delete unnamed non-hosting reference planes, originally discussed and implemented at
-the [Melbourne DevLab](http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-devlab.html#2) in 2012 to delete all reference planes that:
+the [Melbourne DevLab](0738_melbourne_devlab.htm#2) in 2012 to delete all reference planes that:
 
 - Have not been assigned a name, and
 - Do not host any elements.
 
-The original approach stopped working and was [updated and added to The Building Coder samples in 2014](http://thebuildingcoder.typepad.com/blog/2014/02/deleting-unnamed-non-hosting-reference-planes.html),
+The original approach stopped working and was [updated and added to The Building Coder samples in 2014](1098_delete_unused_ref_plane.htm),
 when the `Delete` method overload taking an `Element` argument was deprecated in Revit 2014 and the deletion of a reference plane hosting elements started throwing an exception.
 
 Austin shared his version of the broken command, plus his new working solution.

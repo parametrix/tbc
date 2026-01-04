@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -49,7 +80,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 <p>In the last couple of years, happily, it became much easier.</p>
 <p>This time around, it was a bit trickier again.</p>
 <p>Happily, I documented the hassle involved
-in <a href="https://thebuildingcoder.typepad.com/blog/2020/05/compiling-the-revit-2021-sdk-samples.html">compiling the initial Revit 2021 SDK samples</a> in
+in <a href="1843_compile_2021_sdk.html">compiling the initial Revit 2021 SDK samples</a> in
 full detail and was able to quite easily repeat those steps.</p>
 <p>The main problem is very basic and not hard to fix at all: the references to the Revit API assemblies in each of the 190 sample projects is set up for different developers' specific environments using local file paths instead of an absolute path.</p>
 <p>All you need to do is to hunt them all down and point them all to the official Revit installation location <em>C:\Program Files\Autodesk\Revit 2021</em>.</p>
@@ -77,9 +108,9 @@ analysing the problem and applying the fixes, so you can easily retrace my steps
 </ul>
 <h4><a name="3"></a> Architecture Mismatch Warning and RvtSamples.txt</h4>
 <p>Most of the warnings concern the
-ever-recurring <a href="http://thebuildingcoder.typepad.com/blog/2013/06/processor-architecture-mismatch-warning.html">architecture mismatch issue</a>
+ever-recurring <a href="0968_architecture_mismatch.htm">architecture mismatch issue</a>
 and can be resolved using
-my <a href="http://thebuildingcoder.typepad.com/blog/2013/07/recursively-disable-architecture-mismatch-warning.html">DisableMismatchWarning.exe utility</a>
+my <a href="0977_architecture_mismatch.htm">DisableMismatchWarning.exe utility</a>
 implemented back in 2013 and available from
 the <a href="https://github.com/jeremytammik/DisableMismatchWarning">DisableMismatchWarning GitHub repository</a>.</p>
 <p>After that, I set up the RvtSamples external application to locate and load all the Revit SDK sample external commands:</p>
@@ -127,3 +158,11 @@ Other projects can be used, as long as they contain an alignment and have the af
 </ul>
 </li>
 </ul>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

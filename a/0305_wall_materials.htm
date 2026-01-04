@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1257043 [Retrieve the general Material of a wall] -->
@@ -10,21 +41,21 @@
 
 <p>We looked at various aspects of materials in the past, such as the materials assigned to an 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/element-materials.html">
+<a href="0025_element_materials.htm">
 element and its solid faces</a> and to a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/family-instance-materials.html">
+<a href="0026_instance_materials.htm">
 family instance</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/material-quantity-extraction.html">
+<a href="0296_abg10_material_quantity.htm">
 material quantity extraction</a>, creating a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/new-material.html">
+<a href="0143_new_material.htm">
 new material</a>, 
 
 and the fact that in the general case, there is no
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/11/solid-material.html">
+<a href="0253_solid_material.htm">
 solid material</a>.
 
 There are exceptions to the last statement, though, as we see from the answer to the following question:
@@ -42,19 +73,19 @@ To do this, we need to determine the material of the wall itself.
 
 <p><strong>Answer:</strong> You can obtain the material of the entire wall from its 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/wall-compound-layers.html">
+<a href="0038_wall_layers.htm">
 compound structure</a>, 
 
 which includes material information for each of its layers.
 
 We also looked at the issue of calculating the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/compound-wall-layer-volumes.html">
+<a href="0090_compound_wall_layer_volumes.htm">
 compound wall layer volumes</a>.
 
 <p>By the way, it might be interesting to compare the results of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/material-quantity-extraction.html">
+<a href="0296_abg10_material_quantity.htm">
 GetMaterialArea and GetMaterialVolume</a> methods 
 
 with the face-based area calculation mentioned above and the volume calculation based on the compound layer structure volumes.
@@ -65,3 +96,12 @@ with the face-based area calculation mentioned above and the volume calculation 
 RIB Software AG</a> 
 
 for this solution!
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

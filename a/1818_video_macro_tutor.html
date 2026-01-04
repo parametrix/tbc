@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -168,15 +199,15 @@ explore the element that you wish to set the comment on to find the built-in par
 </pre>
 
 <p>By the way, I would suggest that you make it simple for yourself: before doing anything else, work through
-the <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#2">standard Revit API getting started material</a>, the training videos, and the initial walkthroughs in the developer guide.</p>
+the <span class="unavailable-link">standard Revit API getting started material</span>, the training videos, and the initial walkthroughs in the developer guide.</p>
 <p>That will explain all the fundamentals and get you up and running smoothly with less hassle.</p>
-<p>Once you have done that read about how to <a href="https://thebuildingcoder.typepad.com/blog/2017/01/virtues-of-reproduction-research-mep-settings-ontology.html#3">research to solve a Revit API programming task</a>.</p>
+<p>Once you have done that read about how to <a href="1515_repro_tray_conduit.html#3">research to solve a Revit API programming task</a>.</p>
 <p>Good luck and have fun!</p>
 <h4><a name="6"></a>Getting Started with a Macro</h4>
 <p>Similar beginners questions cropped up on Revit macros as well,
-in <a href="https://thebuildingcoder.typepad.com/blog/2018/09/five-secrets-of-revit-api-coding.html#comment-4790311450">two</a>
-<a href="https://thebuildingcoder.typepad.com/blog/2018/09/five-secrets-of-revit-api-coding.html#comment-4790311788">comments</a>
-on the <a href="https://thebuildingcoder.typepad.com/blog/2018/09/five-secrets-of-revit-api-coding.html">Five Secrets of Revit API Coding</a>.</p>
+in <a href="1682_5_secrets.html#comment-4790311450">two</a>
+<a href="1682_5_secrets.html#comment-4790311788">comments</a>
+on the <a href="1682_5_secrets.html">Five Secrets of Revit API Coding</a>.</p>
 <p>The answer is always the same:</p>
 <ul>
 <li>Search for tutorials on the Internet. There are hundreds, at least.</li>
@@ -206,18 +237,26 @@ How can I solve this?</p>
 <p>However, you can easily make use of other .NET libraries implementing it and reference those in your Revit add-in.</p>
 <p>I have repeatedly made use of the <a href="http://angusj.com/delphi/clipper.php">Clipper library</a> for such purposes:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/01/room-and-wall-adjacent-area.html">Room and Wall Adjacent Area</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/02/boolean-operations-for-2d-polygons.html">Boolean Operations for 2D Polygons</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/02/getpolygon-extension-methods.html">GetPolygon Extension Methods</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/09/boolean-operations-for-2d-polygons.html">Boolean Operations for 2D Polygons</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/09/saving-a-solid-to-a-sat-file-implementation.html">Saving a Solid to a SAT File Implementation</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/11/creating-topography-contours-and-building-masses.html">Creating Topography Contours and Building Masses</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/04/more-on-wall-opening-areas-per-room.html">More on Wall Opening Areas per Room</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2018/12/fire-rating-zone-intersection.html">Fire Rating Zone Intersection</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/11/automated-pdf-report-and-2d-sketch-booleans.html">Automated PDF Report and 2D Sketch Booleans</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2020/01/extrusion-analyser-and-2d-boolean-element-outline.html">Extrusion Analyser and 2D Boolean Element Outline</a></li>
+<li><a href="0084_room_wall_adjacent_area.htm">Room and Wall Adjacent Area</a></li>
+<li><a href="0098_booleans_on_polygons.htm">Boolean Operations for 2D Polygons</a></li>
+<li><a href="0303_extension_methods.htm">GetPolygon Extension Methods</a></li>
+<li><a href="1011_booleans_on_polygons.htm">Boolean Operations for 2D Polygons</a></li>
+<li><a href="1026_save_solid_to_file.htm">Saving a Solid to a SAT File Implementation</a></li>
+<li><a href="1236_data_topo_building.htm">Creating Topography Contours and Building Masses</a></li>
+<li><a href="1424_wall_opening_areas.html">More on Wall Opening Areas per Room</a></li>
+<li><a href="1708_fire_rating_zone_inters.html">Fire Rating Zone Intersection</a></li>
+<li><a href="1797_indesign_rvtclipper.html">Automated PDF Report and 2D Sketch Booleans</a></li>
+<li><a href="1809_element_outline.html">Extrusion Analyser and 2D Boolean Element Outline</a></li>
 </ul>
 <p>The last pointer highlights the most interesting and up-to-date sample using it so far,
 the <a href="https://github.com/jeremytammik/ElementOutline">ElementOutline add-in</a>.</p>
 <p>You should also check out the discussions in the topic group
-on <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.2">2D Booleans and Adjacent Areas</a>.</p>
+on <span class="unavailable-link">2D Booleans and Adjacent Areas</span>.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

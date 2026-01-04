@@ -43,13 +43,13 @@ Last week, I listed my three Revit Technology Conference classes on connecting t
 ### Connecting Desktop and Cloud, Room Editor Update
 
 Last week, I listed
-my [three Revit Technology Conference classes](http://thebuildingcoder.typepad.com/blog/2015/10/rtc-classes-and-getting-started-with-revit-macros.html) on
+my [three Revit Technology Conference classes](1368_revit_macros.html) on
 connecting the desktop and the cloud, The Building Coder chatroom,
 and published the full detailed handout of the lab
-on [getting started with Revit macros](http://thebuildingcoder.typepad.com/blog/2015/10/rtc-classes-and-getting-started-with-revit-macros.html#7).
+on [getting started with Revit macros](1368_revit_macros.html#7).
 
 This week, I published the notes from
-the [Revit API panel Q&amp;A](http://thebuildingcoder.typepad.com/blog/2015/11/rtc-budapest-and-the-revit-api-panel.html) held during The Building Coder chatroom.
+the [Revit API panel Q&amp;A](1370_rtc_revit_api_panel.html) held during The Building Coder chatroom.
 
 So what do we have left to talk about?
 
@@ -59,7 +59,7 @@ That is actually the most interesting of the three, and one I spent a lot of tim
 the [CompHound component tracker project](https://github.com/CompHound/CompHound.github.io).
 
 I will also be presenting this at Autodesk University in Las Vegas in a few weeks time, in
-session [SD11048 *Connect desktop and cloud: analyse, visualise and report universal component usage*](http://thebuildingcoder.typepad.com/blog/2015/05/connecting-desktop-cloud-lines-and-grid-segments.html#2), cf.
+session [SD11048 *Connect desktop and cloud: analyse, visualise and report universal component usage*](1323_au_line_intersect.htm#2), cf.
 [AU class catalog](https://events.au.autodesk.com/connect/dashboard.ww) &gt;
 [SD11048](https://events.au.autodesk.com/connect/dashboard.ww#loadSearch-searchPhrase=SD11048&searchType=session&tc=0).
 

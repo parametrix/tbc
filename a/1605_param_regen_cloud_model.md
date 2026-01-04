@@ -64,7 +64,7 @@ Congratulations, Jim, and thank you very much for all your work!
 ####<a name="3"></a>Setting a Parameter to Regenerate the Model
 
 We have frequently discussed
-the [need to regenerate](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33) the
+the need to regenerate *(link unavailable)* the
 model or individual elements and various ways to achieve that efficiently.
 
 Another aspect of this and a simple solution came up in the thread
@@ -73,7 +73,7 @@ on [new sloped roof not visible](https://forums.autodesk.com/t5/revit-api-forum/
 **Question:** I have a problem creating a new sloped roof using code.
 
 I use the basic sample shown in the developer guide and The Building Coder article
-on [creating a roof](http://thebuildingcoder.typepad.com/blog/2015/09/revit-answer-day-and-creating-a-roof.html).
+on [creating a roof](1362_answer_day_create_roof.html).
 
 I create a new `FootPrintRoof`, set `DefinesSlopes` to true for each model curve, and assign a `SlopeAngle`.
 

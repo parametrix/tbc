@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -52,17 +83,17 @@ comment.txt
 
 <p>Several workarounds have been proposed for 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/reload-an-addin-to-debug.html">reloading an add-in to debug</a>, 
+<a href="0310_reload_addin.htm">reloading an add-in to debug</a>, 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/dynamically-load-and-debug-plugins.html">dynamically loading a plug-in from a byte array</a> in memory instead of a file on the hard disk,
+<a href="0316_reload_debug.htm">dynamically loading a plug-in from a byte array</a> in memory instead of a file on the hard disk,
 
 and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/dynamically-load-and-debug-plugins.html">using the Revit Python shell</a>.
+<a href="0316_reload_debug.htm">using the Revit Python shell</a>.
 
 <p>Alternatively, and officially supported, you can make use of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/vsta-to-stay-and-updater-to-go.html#1">VSTA</a>,
+<a href="0501_vsta_and_updater.htm#1">VSTA</a>,
 
 converting the code you are currently working on, i.e. actively debugging and editing, to a VSTA macro.
 VSTA will allow you to debug, edit and retest the code without having to restart Revit or reload the model.
@@ -73,7 +104,7 @@ Unfortunately, on the 64 bit OS, there is also a limitation in Visual Studio its
 
 <p>I already pointed out repeatedly that the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/addinmanager.html">
+<a href="0317_addinmanager.htm">
 Add-In Manager</a> allows 
 
 you to unload and reload an add-in without restarting Revit.
@@ -146,3 +177,12 @@ In its Revit 2012 incarnation, it is by default installed as
   <li>If you want to modify your code once it finished executing, you can simply click Debug &gt; Stop Debugging. You do not need to detach from Revit this time to avoid it being closed.
   <li>Once you modified your code, you can recompile it and run it again using the Add-In Manager.
 </ul>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!--
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -68,11 +99,11 @@ on <a href="https://forums.autodesk.com/t5/revit-api-forum/revit-2018-api-undocu
 <p>It also fills me with dread. What else is going to throw an exception unexpectedly?</p>
 <p>What other changes are there?</p>
 <p>(Yes, I know that this item
-is <a href="http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html#2.7"><em>vaguely</em> alluded to in the 'what's new' document</a>,
+is <a href="1551_whats_new_2018.html#2.7"><em>vaguely</em> alluded to in the 'what's new' document</a>,
 but it's not documented anywhere.)</p>
 <p>Have you found any hidden 'treasures' that you want to share?</p>
 <h4><a name="5"></a>Exceptions Should be Exceptional</h4>
-<p>Greg '<a href="">Sherbs</a>' adds a very valid additional point:</p>
+<p>Greg '<a href=">Sherbs</a>' adds a very valid additional point:</p>
 <p>Yikes!</p>
 <p>Good catch!</p>
 <p>This is more than a bit concerning.</p>
@@ -91,8 +122,8 @@ but it's not documented anywhere.)</p>
 <h4><a name="6"></a>Answer</h4>
 <p>Many thanks to Matt for pointing this out!</p>
 <p>I would say that this change in behaviour is <em>precisely</em> alluded to, not <em>vaguely</em>, in the documentation
-of <a href="http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html">What's New in the Revit 2018 API</a> section 
-on <a href="http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html#2.7">UIDocument.PromptForFamilyInstancePlacement() behavioral change</a>:</p>
+of <a href="1551_whats_new_2018.html">What's New in the Revit 2018 API</a> section 
+on <a href="1551_whats_new_2018.html#2.7">UIDocument.PromptForFamilyInstancePlacement() behavioral change</a>:</p>
 <blockquote>
 <p>The behavior for UIDocument.PromptForFamilyInstancePlacement() was changed to be same as that of PickObject() methods...</p>
 </blockquote>
@@ -103,15 +134,15 @@ on <a href="http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-re
 <p>Expected behaviour should not be communicated using exceptions.</p>
 <p>I have been preaching this for years to little avail:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/08/fixing-rvtmgddbg-for-mep-connectors.html">Fixing RvtMgdDbg for MEP Connectors</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/03/duplicate-mark-values.html">Duplicate Mark Values</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/10/selecting-model-elements.html">Selecting Model Elements</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/01/language-independent-subcategory-creation.html">Language Independent Subcategory Creation</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/09/exporting-parameter-data-to-excel.html">Exporting Parameter Data to Excel, and Re-importing</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/03/parameter-displayunittype-and-decompilers.html">Parameter DisplayUnitType, Bretagne and Decompilers</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/05/external-command-lister-and-adding-ribbon-commands.html">External Command Lister and Adding Ribbon Commands</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html#07">The Pick Point Methods Throw an Exception on Cancel</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/02/revitlookup-using-reflection-for-cross-version-compatibility.html#12">Never Catch All Exceptions</a></li>
+<li><a href="0204_rvtmgddbg_mep_connectors.htm">Fixing RvtMgdDbg for MEP Connectors</a></li>
+<li><a href="0323_duplicate_mark_values.htm">Duplicate Mark Values</a></li>
+<li><a href="0453_model_elements.htm">Selecting Model Elements</a></li>
+<li><a href="0512_lang_indep_subcat.htm">Language Independent Subcategory Creation</a></li>
+<li><a href="0828_export_param_excel.htm">Exporting Parameter Data to Excel, and Re-importing</a></li>
+<li><a href="0911_displayunittype.htm">Parameter DisplayUnitType, Bretagne and Decompilers</a></li>
+<li><a href="0947_external_cmd_lister.htm">External Command Lister and Adding Ribbon Commands</a></li>
+<li><a href="1202_plane_proj_pick.htm#07">The Pick Point Methods Throw an Exception on Cancel</a></li>
+<li><a href="1524_revitlookup_reflect.html#12">Never Catch All Exceptions</a></li>
 </ul>
 <p>To answer the original <a href="#3">question</a> raised above: You need to catch and handle (or ignore) the <code>OperationCanceledException</code> as shown by Matt.</p>
 <p>If you code does not, your transaction will presumably not be committed.</p>
@@ -124,7 +155,7 @@ the <a href="https://github.com/jeremytammik/the_building_coder_samples/blob/mas
 in <a href="https://github.com/jeremytammik/the_building_coder_samples">The Building Coder samples</a> to
 exercise the <code>PromptForFamilyInstancePlacement</code> method when it was originally introduced.</p>
 <p>It also includes code using the <code>DocumentChanged</code> event
-to <a href="http://thebuildingcoder.typepad.com/blog/2010/06/place-family-instance.html">retrieve the newly created elements</a>.</p>
+to <a href="0402_place_family_instance.htm">retrieve the newly created elements</a>.</p>
 <p>I updated it to handle the <code>OperationCanceledException</code> as shown by Matt 
 in <a href="https://github.com/jeremytammik/the_building_coder_samples/releases/tag/2018.0.132.2">release 2018.0.132.2</a>.</p>
 <p>Here is the <a href="https://github.com/jeremytammik/the_building_coder_samples/compare/2018.0.132.1...2018.0.132.2">diff to the preceding release</a> that
@@ -143,3 +174,11 @@ shows exactly what modifications were made; simply add an exception handler arou
 <p><center>
 <img src="img/the_exception.jpg" alt="The Exception" width="220">
 </center></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

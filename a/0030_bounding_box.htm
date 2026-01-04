@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -33,8 +63,8 @@ regarding the Element BoundingBox property.</p>
 
 <p>Some more information on the Geometry BoundingBoxXYZ class is provided in section 17.3.5 of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/files/Revit_2009_API_Developer_Guide.zip">
-Revit 2009 API Developer Guide</a>.</p>
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/files/Revit_2009_API_Developer_Guide.zip">
+Revit 2009 API Developer Guide <em>(file no longer available)</em></span>.</p>
 
 <p>Here is a simple command that explores the bounding box properties of a selected element:</p>
 
@@ -102,7 +132,16 @@ Element bounding box of Windows M_Fixed <127959 0406 x 0610mm>
 <p>I hope this helps clarify this simple Element property somewhat.</p>
 
 <p>I am adding a new version 1.0.0.8 of the complete Visual Studio solution 
-<a href="http://thebuildingcoder.typepad.com/blog/files/bc1008.zip">here</a>, 
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/files/bc1008.zip">here <em>(file no longer available)</em></span>, 
 including the new CmdBoundingBox class as well as all other commands discussed so far.</p>
 
-<p style="color:red">Die Frage von mir stammt aus einem solchen Projekt, wo der Kunde selber Bibliothekselemente aufbaut. Er hat ca. 25 Elemente mit vielen Optionen, wobei alle erlaubten Kombinationen eine Artikelnummer haben. Damit er nun in Revit seine Elemente platzieren kann und auch gleich die Optionen (im Revit Parameter) richtig gesetzt sind, mache ich ein Dialog, welcher eine Datenbank anbindet mit den Definitionen der Elemente und Optionen. Dieser Dialog setzt dann die Elemente im Revit ab. Nun sind aber die Elemente unterschiedlich breit, je nachdem welche Optionen ausgew‰hlt sind, und da der Dialog die gew‰hlten Artikel nebeneinander platzieren soll, muss ich rausfinden wie breit das Element ist (eben abh‰ngig der gew‰hlten Parameter). Bei eigenen Test habe ich nun rausgefunden, dass die BoundingBox anscheinend von der Bezugsebenen "vorn", "hinten", "rechts", "links", "oben" und "unten" abh‰ngt und nicht die Geometrie selbst abfragt. Stimmt das? D.h. dass wenn im Familieneditor die erw‰hnten Bezugsebenen nicht alle Teile einschliessen, dann bekomme ich nicht die BoundingBox.</p>
+<p style="color:red">Die Frage von mir stammt aus einem solchen Projekt, wo der Kunde selber Bibliothekselemente aufbaut. Er hat ca. 25 Elemente mit vielen Optionen, wobei alle erlaubten Kombinationen eine Artikelnummer haben. Damit er nun in Revit seine Elemente platzieren kann und auch gleich die Optionen (im Revit Parameter) richtig gesetzt sind, mache ich ein Dialog, welcher eine Datenbank anbindet mit den Definitionen der Elemente und Optionen. Dieser Dialog setzt dann die Elemente im Revit ab. Nun sind aber die Elemente unterschiedlich breit, je nachdem welche Optionen ausgewÔøΩhlt sind, und da der Dialog die gewÔøΩhlten Artikel nebeneinander platzieren soll, muss ich rausfinden wie breit das Element ist (eben abhÔøΩngig der gewÔøΩhlten Parameter). Bei eigenen Test habe ich nun rausgefunden, dass die BoundingBox anscheinend von der Bezugsebenen "vorn", "hinten", "rechts", "links", "oben" und "unten" abhÔøΩngt und nicht die Geometrie selbst abfragt. Stimmt das? D.h. dass wenn im Familieneditor die erwÔøΩhnten Bezugsebenen nicht alle Teile einschliessen, dann bekomme ich nicht die BoundingBox.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

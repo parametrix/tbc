@@ -1,9 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equicenter="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <style type="text/css">p.en { font-style: italic; }</style>
 <script src="google-code-prettify/run_prettify.js"></script>
 <!-- <script src="http://thebuildingcoder.typepad.com/google-code-prettify/run_prettify.js"></script> -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -48,7 +79,7 @@ Yes, simple geometric arcs and model arc elements used to demonstrate the same b
 
 <p>The Revit API has very little to do with this; it is simply reproducing the internal Revit database model.</p>
 
-<p>Please forget any and all comparisons between Revit and other CAD systems; <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.41">Revit is a completely different animal</a>, and has to be, to fully and efficiently support the parametric BIM:</p>
+<p>Please forget any and all comparisons between Revit and other CAD systems; <span class="unavailable-link">Revit is a completely different animal</span>, and has to be, to fully and efficiently support the parametric BIM:</p>
 
 <p>I am afraid that this is another case of abiding by the old adage <a href="https://en.wikipedia.org/wiki/The_Charge_of_the_Light_Brigade_(poem)">formulated by Alfred Lord Tennyson</a>, "ours is not to wonder why, ours is but to do or die":</p>
 
@@ -73,3 +104,12 @@ John Mitchell of the Revit development team responded to my initial rather brief
 <p>In principle, it might be possible to provide an interface that converts back and forth between a public 'view' where closed edges and faces are allowed and the internal 'view' where they are disallowed, but Revit’s API does not attempt to do this. There is in fact some internal code that does just that, allowing Revit users to sketch closed curves in some situations; the closed curves are split in two before they are passed to the geometry kernel. But this is a complex task in general, subject to the kinds of trade-offs mentioned above. Also, the Revit UI does this to some extent, though not completely. For example, it visually hides the 'seam' edges of a solid cylinder or sphere (at least for certain view settings).</p>
 
 <p>I am sure this explanation is much more palatable than my first response, even if the end result is exactly the same &nbsp; :-)</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

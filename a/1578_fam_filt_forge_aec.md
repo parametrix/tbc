@@ -65,7 +65,7 @@ A biggish post rather late in the week... still answering too many cases:
 ####<a name="2"></a>Forge for AEC &ndash; Demos and Sample Code
 
 Last week, I briefly discussed some pros and cons
-of [Revit versus Forge for BIM programming](http://thebuildingcoder.typepad.com/blog/2017/08/revit-versus-forge-ids-and-add-in-installation.html#2).
+of [Revit versus Forge for BIM programming](1577_forge_ids_install.html#2).
 
 Since then, Jim Quanci, Senior Director Software Partner Development at Autodesk,
 published [Autodesk Forge &ndash; What is it?](https://youtu.be/5xVwvBzemkg) &ndash;
@@ -132,7 +132,7 @@ Another issue was raised by my consulting colleague Miro Schonauer:
 **Question:** What is the best way to check if any version and, if so, what version of Revit is installed?
 
 I checked Windows registry keys mentioned in the discussion on 
-the [perpetual GUID algorithm and Revit 2014 product GUIDs](http://thebuildingcoder.typepad.com/blog/2013/04/perpetual-guid-algorithm-and-revit-2014-product-guids.html), 
+the [perpetual GUID algorithm and Revit 2014 product GUIDs](0930_revit_2014_guids.htm), 
 but that is only up to Revit 2014 and still not sure we can detect 'any version'.
 
 **Answer:** One choice it to use `RevitProductUtility` API provided by the `RevitAddInUtility.dll` assembly:
@@ -249,17 +249,17 @@ That is equivalent to running a `foreach` loop over the results of the filter.
 Revit returns a large collection of instances, which costs time and marshalling effort, and .NET post-processes them.
 
 A much faster alternative, but a little bit more complex, is to implement
-a [parameter filter](http://thebuildingcoder.typepad.com/blog/2010/06/element-name-parameter-filter-correction.html).
+a [parameter filter](0384_elem_name_param_filter.htm).
 
 You can apply any filters you like in any order you like.
  
 Revit may perform some optimisation by reordering them.
  
 It is probably useful
-to [apply all quick filters first](http://thebuildingcoder.typepad.com/blog/2015/12/quick-slow-and-linq-element-filtering.html).
+to [apply all quick filters first](1382_filter_shortcuts.html).
  
 Using `ToList` to convert the enumerable filtered element collector to a .NET `List` is  normally not necessary
-and [may cause a significant inefficiency](http://thebuildingcoder.typepad.com/blog/2012/09/findelement-and-collector-optimisation.html).
+and [may cause a significant inefficiency](0832_find_element_optimise.htm).
  
 Check out the examples provided
 by [The Building Coder samples](https://github.com/jeremytammik/the_building_coder_samples) in

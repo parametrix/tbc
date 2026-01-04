@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -184,9 +215,9 @@ using (Transaction t = new Transaction(doc, "parameters"))
 <p>That will save conversion time and space and avoid the unnecessary data duplication, cf. the discussions
 on:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/09/findelement-and-collector-optimisation.html"><code>FindElement</code> and collector optimisation</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2017/08/forge-installed-version-move-group-filter-by-name.html#7">Filtering for family instances and types by family name</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2017/03/q4r4-first-queries-revitlookup-and-areas-in-schemes.html#5">Getting the area scheme from an area</a></li>
+<li><a href="0832_find_element_optimise.htm"><code>FindElement</code> and collector optimisation</a></li>
+<li><a href="1578_fam_filt_forge_aec.html#7">Filtering for family instances and types by family name</a></li>
+<li><a href="1540_q4r4_lookup.html#5">Getting the area scheme from an area</a></li>
 </ul>
 <h4><a name="3"></a> Pushing Wall Type to Doors</h4>
 <p>Some pretty similar code appeared in the question
@@ -256,12 +287,20 @@ on <a href="https://forums.autodesk.com/t5/revit-api-forum/push-walltype-to-door
 <p>Here are two further suggestions to clean up your code:</p>
 <ul>
 <li>Use <code>using</code> for transactions
-&ndash; <a href="https://thebuildingcoder.typepad.com/blog/2012/04/using-using-automagically-disposes-and-rolls-back.html">encapsulating a transaction in a <code>using</code> statement</a> automagically disposes of it and rolls back if needed.</li>
+&ndash; <a href="0753_dispose_transact_2.htm">encapsulating a transaction in a <code>using</code> statement</a> automagically disposes of it and rolls back if needed.</li>
 <li>Don't catch all exceptions
-&ndash; <a href="https://thebuildingcoder.typepad.com/blog/2017/05/prompt-cancel-throws-exception-in-revit-2018.html#5">never catch <u>all</u> exceptions</a>, only the ones that you really can handle.</li>
+&ndash; <a href="1556_prompt_exception.html#5">never catch <u>all</u> exceptions</a>, only the ones that you really can handle.</li>
 </ul>
 <p>Are you really ready to handle the exceptions 'computer on fire', 'building collapsed', etc.?</p>
 <p>If you catch all exceptions, you are preventing the really competent instances from even seeing them.</p>
 <p>Cutting the phone lines to the fire brigade and police, so to speak.</p>
 <p>You may be endangering your computer and your valued person.</p>
 <p>Well, at least your valued Revit model.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -29,7 +29,7 @@ on [Revit Test Framework improvements](https://forums.autodesk.com/t5/revit-api-
 Many thanks to Mark and the UpCodes team for making this available!
 
 By the way, here are some 
-previous [notes on unit testing Revit add-ins](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.16).
+previous notes on unit testing Revit add-ins *(link unavailable)*.
 
 <center>
 <img src="img/sigmaxxmax.png" alt="Test load" width="275"/>
@@ -45,7 +45,7 @@ the [UpCodes AI for building code automation](https://up.codes/features/ai):
 During the course of this work, we ran into many issues (and surely will run into many more), and this forum has helped us resolve many of them.
 
 We'd like to contribute something back to the community by telling you about the improvements we've made to the awesome
-[Dynamo Revit unit test framework](http://thebuildingcoder.typepad.com/blog/2013/10/the-dynamo-revit-unit-test-framework.html),
+[Dynamo Revit unit test framework](1041_dynamo_unit_test.htm),
 `RevitTestFramework` or RTF, by the Dynamo team.
 
 It's an invaluable tool if you are developing a Revit add-in, as it allows you to run integration tests and control Revit in an automated fashion.

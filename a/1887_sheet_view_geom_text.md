@@ -124,7 +124,7 @@ If the filter returns no elements, you are applying too restrictive or downright
 
 Do you have a filter syntax that could find them ?
 
-**Answer:** The most efficient way to define such a filter is for you to pick the elements you are filtering for and explore their properties using RevitLookup, cf., [how to research to find a Revit API solution](https://thebuildingcoder.typepad.com/blog/2017/01/virtues-of-reproduction-research-mep-settings-ontology.html#3).
+**Answer:** The most efficient way to define such a filter is for you to pick the elements you are filtering for and explore their properties using RevitLookup, cf., [how to research to find a Revit API solution](1515_repro_tray_conduit.html#3).
 
 **Response:** I have already explored the viewsheet and the associated family instance as well as the symbol and the family.
 None has geometry.
@@ -270,7 +270,7 @@ for [Revit API filtered element collector](https://duckduckgo.com/?q=revit+api+f
 Please practice this for a bit before asking the next question.
 
 The specific problem that you ran into was discussed in the note
-on [reinitialising the filtered element collector](https://thebuildingcoder.typepad.com/blog/2019/11/design-automation-api-stacks-collectors-and-links.html#4).
+on [reinitialising the filtered element collector](1803_da_webinar_ri_stack.html#4).
 
 Happily, that seems to have resolved the problem for the moment, with no further response so far.
 

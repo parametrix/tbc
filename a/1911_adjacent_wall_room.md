@@ -11,7 +11,7 @@
   another example of a relationship inversion:
   thee room maintains a relationship to its bounding elements, the walls.
   by retrieving that mapping, we can int=vert the raltionship and add information to each wall about its adjacent rooms.
-  A [Relationship Inverter](http://thebuildingcoder.typepad.com/blog/2008/10/relationship-in.html) was
+  A [Relationship Inverter](0016_relationship_inverter.htm) was
   the topic of one of The Building Coder's very first posts, #16, in October 2008.  
 
 - get all warnings
@@ -291,7 +291,7 @@ every room maintains a relationship to its bounding elements, the walls.
 by retrieving and processing that mapping, we can invert the relationship and use that to add information to each wall about its adjacent rooms.
 
 This is a common Revit API task. 
-A similar [relationship inverter](http://thebuildingcoder.typepad.com/blog/2008/10/relationship-in.html) was
+A similar [relationship inverter](0016_relationship_inverter.htm) was
 the topic of one of The Building Coder's very first posts, #16, in October 2008.
 
 ####<a name="3"></a> List of All Built-In Failures
@@ -323,7 +323,7 @@ Each individual improvement may be small and simple.
 However, they all add up, and the entire community ends up enjoying a brilliant and full-fledged tool.
 
 Here are the important enhancements made since 
-the [previous bunch of updates](https://thebuildingcoder.typepad.com/blog/2021/05/revitlookup-update-fuslogvw-and-override-joins.html). 
+the [previous bunch of updates](1906_lookup_2022.html). 
 
 - [2022.0.0.10](https://github.com/jeremytammik/RevitLookup/releases/tag/2022.0.0.10) fix error where element cannot be retrieved for an element id because `SupportedColorFillCategoryIds` returns category ids instead
 - [2022.0.0.11](https://github.com/jeremytammik/RevitLookup/releases/tag/2022.0.0.11) add `PlanViewRange` functionality to display view range level id and offset

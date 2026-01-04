@@ -136,7 +136,7 @@ provided an opportunity to clarify the meaning of specific settings in the geome
 only needed if you require references to the geometry, e.g., for dimensioning purposes. 
 Furthermore, it adds computational effort. 
 Therefore, you should not set it to true unless needed, as explained in the 2010 article 
-on [Geometry Options](https://thebuildingcoder.typepad.com/blog/2010/01/geometry-options.html).
+on [Geometry Options](0278_abg01_geometry_options.htm).
 
 The effect of turning off `ComputeReferences` was recently benchmarked in the discussion 
 on [computing the correlation of objects in Revit](https://forums.autodesk.com/t5/revit-api-forum/computing-the-correlation-of-objects-in-revit/m-p/11701329/highlight/true#M68810):
@@ -157,7 +157,7 @@ is triggered 113,696 times, both lists columnsSTR and columnsARC have 336 items 
 - Code runtime with `ComputeReferences` = false : 9.52 sec, AVG. 83.76 micro-seconds per intersection.
 
 `IncludeNonVisibleObjects` is only required for certain supplementary graphical elements, e.g., 
-for [curtain walls](https://thebuildingcoder.typepad.com/blog/2010/05/curtain-wall-geometry.html).
+for [curtain walls](0374_curtain_wall_geometry.htm).
 I am pretty sure that it is not required for such basic element geometry as solids.
 
 So, I would leave both of those settings turned off in this case, set to their default value of false.
@@ -188,7 +188,7 @@ Is there a way to eliminate the message or intercept it somehow?
 **Answer:** Yes, definitely. 
 If worst comes to worst, you can use the native Windows API to catch and dismiss this dialogue. 
 Look at the various options listed in The Building Coder topic group 
-on [detecting and handling dialogues and failures](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.32).
+on detecting and handling dialogues and failures *(link unavailable)*.
 
 **Response:** I cannot use `Application.FailuresProcessing` because it doesn't trap this warning.
 Also, I cannot use `ControlledApplication.DialogBoxShowing`, as I use `IExternalDBApplication`, not `IExternalApplication`.
@@ -196,7 +196,7 @@ Hence, I have no access to any UI related functionality at all.
 So, the only way seems using your JtClicker, isn't it? 
 
 I gave 
-the [.NET Dialogue Clicker in VB by Greg Wesner](https://thebuildingcoder.typepad.com/blog/2009/10/dismiss-dialogue-using-windows-api.html) a 
+the [.NET Dialogue Clicker in VB by Greg Wesner](0229_dialogue_clicker.htm) a 
 try and it works with some small mods.
 
 The loading process is slower, but finally I can trap the warning dialog and close it.

@@ -34,8 +34,8 @@ Check out Boris Shafiro's class at AU to learn about it...
 
 Several queries concerning rendering issues were discussed recently and solved by the new Visual Materials API included in Revit 2018.1:
 
-- [Revit 2018.1 and the Visual Materials API](http://thebuildingcoder.typepad.com/blog/2017/08/revit-20181-and-the-visual-materials-api.html)
-- [Appearance Asset Editing SDK sample](http://thebuildingcoder.typepad.com/blog/2017/08/revit-20181-and-the-visual-materials-api.html#2)
+- [Revit 2018.1 and the Visual Materials API](1576_sdk_2018_1.html)
+- [Appearance Asset Editing SDK sample](1576_sdk_2018_1.html#2)
 
 Here comes another one, answered more completely by Boris Shafiro's Autodesk University class on this topic:
 

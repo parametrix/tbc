@@ -49,11 +49,11 @@ Reporting on a very exciting topic from the Revit API discussion forum from the 
 
 I am back in the Barcelona Autodesk office supporting the [Forge Accelerator](http://autodeskcloudaccelerator.com/forge-accelerator).
 
-I was here [last year](http://thebuildingcoder.typepad.com/blog/2016/03/adn-becomes-forge-and-barcelona-accelerator.html#3)
-[as well](http://thebuildingcoder.typepad.com/blog/2016/05/forge-accelerator-devcon-and-answer-day.html), where
+I was here [last year](1414_adn_becomes_forge.html#3)
+[as well](1439_accel_answer_day.html), where
 I started working on
 the [roomedit3d project](https://github.com/jeremytammik/roomedit3d), implementing all 
-its [Revit-independent functionality](http://thebuildingcoder.typepad.com/blog/2016/05/roomedit3d-console-test-and-rendering-assets.html#2).
+its [Revit-independent functionality](1441_accel_render_asset.html#2).
 
 Let's look at two Revit API issues before I dig in deeper into Forge:
 
@@ -76,7 +76,7 @@ Therefore, you will want to retain the same add-in id in future versions, so tha
 #### <a name="4"></a>Dimension on Hatch Pattern
 
 On to a much more complex question, adding a new entry to our collection
-of [undocumented `ElementId` relationships](http://thebuildingcoder.typepad.com/blog/2011/11/undocumented-elementid-relationships.html).
+of [undocumented `ElementId` relationships](0673_elementid_relationships.htm).
 
 It came up in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
@@ -84,7 +84,7 @@ on creating a [dimension on hatch pattern slab](https://forums.autodesk.com/t5/r
 was answered very creatively indeed by Fair59, who has already contributed numerous answers to other very tricky issues.
 
 Fair59's solution reminds me of
-Scott Wilson's [`Reference` stable representation magic voodoo](http://thebuildingcoder.typepad.com/blog/2016/04/stable-reference-string-magic-voodoo.html):
+Scott Wilson's [`Reference` stable representation magic voodoo](1429_stable_references.html):
 
 
 **Question:** I want to get dimension on hatch pattern slab like this: 
@@ -103,8 +103,8 @@ Second: Retrieve their geometry, asking for `ComputeReferences = true`.
  
 Third: Create the dimensioning using the references:
 
-- [Dimension walls by iterating faces](http://thebuildingcoder.typepad.com/blog/2011/02/dimension-walls-by-iterating-faces.html)
-- [Dimension walls using `FindReferencesByDirection`](http://thebuildingcoder.typepad.com/blog/2011/02/dimension-walls-using-findreferencesbydirection.html)
+- [Dimension walls by iterating faces](0539_dim_walls_it_face.htm)
+- [Dimension walls using `FindReferencesByDirection`](0540_dim_walls_find_refs.htm)
 
 **Response:** That does not help.
 

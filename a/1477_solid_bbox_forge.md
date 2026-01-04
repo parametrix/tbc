@@ -25,7 +25,7 @@ the [RTC Revit Technology Conference Europe](http://www.rtcevents.com/rtc2016eur
 
 I still have to finish my work on the [roomedit3dv3](https://github.com/Autodesk-Forge/forge-boilers.nodejs/tree/roomedit3d) sample
 to demonstrate connecting the desktop with the cloud by enabling a real-time round-trip modification of the BIM via the Forge viewer;
-yesterday I [integrated the transform viewer extension](http://thebuildingcoder.typepad.com/blog/2016/09/warning-swallower-and-roomedit3d-viewer-extension.html#3);
+yesterday I [integrated the transform viewer extension](1476_roomedit3d_forge_warn.html#3);
 now I have to hook up the `socket.io` messaging back to the Revit add-in to update the BIM.
 
 Meanwhile, let's pick up a nice little geometric Revit API topic and mention the recording from the latest Forge webinar session:
@@ -51,7 +51,7 @@ For now, I used `CreateExtrusionGeometry` and it is OK, but I would appreciate a
 **Answer:** Do you want to generate a persistent Revit database element?
  
 If so, the simplest solution is almost certainly to use
-a [DirectShape element](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.50).
+a DirectShape element *(link unavailable)*.
 
 
 **Response:** In my case, this solid is a temporary one to use with `ElementIntersectsSolidFilter`.

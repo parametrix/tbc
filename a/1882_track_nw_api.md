@@ -92,7 +92,7 @@ One of the threads addressed by Richard is on filtering for detail lines,
 to [collect all detail lines of a particular subcategory](https://forums.autodesk.com/t5/revit-api-forum/collect-all-detail-lines-of-a-particular-subcategory/td-p/9956260):
 
 **Question:** From reading The Building Coder's post 
-on [retrieving all available line styles](https://thebuildingcoder.typepad.com/blog/2013/08/retrieving-all-available-line-styles.html),
+on [retrieving all available line styles](1005_get_line_styles.htm),
 it is my understanding that detail line elements can be collected via FilteredElementCollector once a subcategory is selected.
 
 I have a line style subcategory and would like to collect all the detail lines of that style.

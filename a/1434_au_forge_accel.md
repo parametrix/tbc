@@ -18,9 +18,9 @@ In the beginning of the week, I listed my things to do next, including the most 
 ### Forge and Autodesk University Call for Proposals
 
 In the beginning of the week, I listed
-my [things to do](http://thebuildingcoder.typepad.com/blog/2016/04/room-editor-first-revit-2017-addin-migration.html#1) next,
+my [things to do](1430_room_editor_2017.html#1) next,
 including the most important and exciting one, attending and presenting at
-the [Forge DevCon](http://thebuildingcoder.typepad.com/blog/2016/04/room-editor-first-revit-2017-addin-migration.html#2) developer conference in San Francisco June 15-16.
+the [Forge DevCon](1430_room_editor_2017.html#2) developer conference in San Francisco June 15-16.
 
 My to-do list also includes
 the [Forge accelerators](http://autodeskcloudaccelerator.com) being held

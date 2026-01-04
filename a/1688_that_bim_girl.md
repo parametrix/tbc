@@ -63,7 +63,7 @@ Specifically, here are the first two episodes on getting started writing a Revit
 
 #### <a name="3"></a> Notes to Self on AskNow for Q4R4
 
-My [Q4R4 project](http://thebuildingcoder.typepad.com/blog/r4q4) has been dormant for quite a while.
+My Q4R4 project *(link unavailable)* has been dormant for quite a while.
 
 However, I just noticed a research project that seems as if it could cover all that I need and more, [AskNowQA](https://github.com/AskNowQA):
 

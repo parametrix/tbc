@@ -276,7 +276,7 @@ I'll convert it to C# and try it out when I have some time available.
 led to an explanation of the coordinate order in the `P` tag:
 
 
-**Question:** This may be a bit off-topic, but I wonder about [exporting toposurface to LandXML](https://thebuildingcoder.typepad.com/blog/2010/01/import-landxml-surface.html).
+**Question:** This may be a bit off-topic, but I wonder about [exporting toposurface to LandXML](0280_landxml.htm).
 
 In LandXML, the `P` tag takes the coordinates in an unexpected order:
  

@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -6,6 +36,7 @@
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -39,26 +70,26 @@ If you clean up your code every year or two and remove all API usage that causes
 <p>If you clean up your code every year or two and remove all API usage that causes warning messages, you will normally have very little to do to migrate it later on.</p>
 <p>If you run into any problems, just search the documentation on <em>What's New in the Revit API</em>; most modifications are listed there, including instructions on how to update the code to handle them:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2010-api.html">What's New in the Revit 2010 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2011-api.html">What's New in the Revit 2011 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2012-api.html">What's New in the Revit 2012 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/03/whats-new-in-the-revit-2013-api.html">What's New in the Revit 2013 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html">What's New in the Revit 2014 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html">What's New in the Revit 2015 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html">What's New in the Revit 2016 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html">What's New in the Revit 2017 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/11/whats-new-in-the-revit-20171-api.html">What's New in the Revit 2017.1 API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html">What's New in the Revit 2018 API</a></li>
+<li><a href="0901_whats_new_2010.htm">What's New in the Revit 2010 API</a></li>
+<li><a href="0902_whats_new_2011.htm">What's New in the Revit 2011 API</a></li>
+<li><a href="0903_whats_new_2012.htm">What's New in the Revit 2012 API</a></li>
+<li><a href="0904_whats_new_2013.htm">What's New in the Revit 2013 API</a></li>
+<li><a href="0938_whats_new_2014.htm">What's New in the Revit 2014 API</a></li>
+<li><a href="1141_whats_new_2015.htm">What's New in the Revit 2015 API</a></li>
+<li><a href="1311_whats_new_2016.htm">What's New in the Revit 2016 API</a></li>
+<li><a href="1428_whats_new_2017.html">What's New in the Revit 2017 API</a></li>
+<li><a href="1496_whats_new_2017_1.html">What's New in the Revit 2017.1 API</a></li>
+<li><a href="1551_whats_new_2018.html">What's New in the Revit 2018 API</a></li>
 <li>Revit 2018.1 API:<ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/08/revit-20181-and-the-visual-materials-api.html">Revit 2018.1 and the Visual Materials API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/09/revit-201811-fixes-cropbox-setting.html">Revit 2018.1.1 API documentation</a></li>
+<li><a href="1576_sdk_2018_1.html">Revit 2018.1 and the Visual Materials API</a></li>
+<li><a href="1586_2018_1_1.html">Revit 2018.1.1 API documentation</a></li>
 </ul>
 </li>
 </ul>
 <p>As an example, let's look at the migration of
-the <a href="http://thebuildingcoder.typepad.com/blog/2013/10/text-file-driven-automatic-placement-of-family-instances.html">PlaceInstances add-in implementing text file driven automatic placement of family instances</a> from
+the <a href="1038_place_family_inst.htm">PlaceInstances add-in implementing text file driven automatic placement of family instances</a> from
 Revit 2014 to Revit 2018, prompted
-by <a href="http://thebuildingcoder.typepad.com/blog/2013/10/text-file-driven-automatic-placement-of-family-instances.html#comment-3619372844">two comments</a> by
+by <a href="1038_place_family_inst.htm#comment-3619372844">two comments</a> by
 Campbell and Renzo:</p>
 <p><strong>Question:</strong></p>
 <blockquote>
@@ -122,3 +153,11 @@ the <a href="zip/2018_placeinstances_01.txt">error lists before and after the fi
 <p><center>
 <img src="img/migration.png" alt="Migration" width="160"/>
 </center></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

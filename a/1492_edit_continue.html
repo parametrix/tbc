@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <title>The Building Coder</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" type="text/css" href="3dwc.css"/>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true" defer="defer"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -52,13 +83,13 @@ Porto last week, and other little titbits to share as well:</p>
 </ul>
 <h4><a name="2"></a>Using AddInManager and Attach to Process to Edit and Continue</h4>
 <p>As I mentioned in the notes from
-the <a href="http://thebuildingcoder.typepad.com/blog/2016/10/rtc-revit-api-panel-idea-station-edit-and-continue.html">Revit API discussion panel</a>,
+the <a href="1488_revit_api_panel.html">Revit API discussion panel</a>,
 one of the topics we touched upon was how
-to <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.49">edit and continue, aka debug without restart or live development</a>,
+to <span class="unavailable-link">edit and continue, aka debug without restart or live development</span>,
 i.e., enable the full cycle of debugging an add-in, discovering an error, editing the code to fix it, and continuing debugging in the same Revit model without being forced to terminate and restart Revit and reload the project.</p>
 <p>This is not immediately achievable, because if you use the Visual Studio debugger to launch Revit, it will lock the DLL that you are debugging, and you will not be able to edit it.</p>
 <p>The standard suggestion to work around this that I made in the past is to convert your add-in code to a macro for debugging, and then convert it back again when done.</p>
-<p>Various other suggestions have been made (and are listed in <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.49">The Building Coder topic group 5.49</a> mentioned above) to enable reloading the add-in without converting the code to a macro, e.g., by loading it from an in-memory byte stream instead of a file.</p>
+<p>Various other suggestions have been made (and are listed in <span class="unavailable-link">The Building Coder topic group 5.49</span> mentioned above) to enable reloading the add-in without converting the code to a macro, e.g., by loading it from an in-memory byte stream instead of a file.</p>
 <p>Michael Porskær of <a href="http://www.orbicon.dk">Orbicon A/S</a> pointed out that he uses a much simpler and more direct method by running Revit.exe in normal standalone mode instead of launching it from the Visual Studio debugger, attaching the debugger to the Revit.exe process, and using the AddInManager provided with the Revit SDK to load the add-in.</p>
 <p>Here are the exact steps:</p>
 <ol>
@@ -88,7 +119,7 @@ i.e., enable the full cycle of debugging an add-in, discovering an error, editin
 <p><center>
 <img src="img/resurrect_icon32.png" alt="Resurrect" width="32">
 </center></p>
-<!---- <a class="asset-img-link"  style="float: right;" href="http://thebuildingcoder.typepad.com/.a/6a00e553e16897883301b8d231ff5e970c-popup" onclick="window.open( this.href, '_blank', 'width=640,height=480,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0' ); return false"><img class="asset  asset-image at-xid-6a00e553e16897883301b8d231ff5e970c img-responsive" style="width: 32px; margin: 0px 0px 5px 5px;" alt="Resurrect" title="Resurrect" src="http://thebuildingcoder.typepad.com/.a/6a00e553e16897883301b8d231ff5e970c-50wi" /></a> --->
+<!---- <img class="asset  asset-image at-xid-6a00e553e16897883301b8d231ff5e970c img-responsive" style="width: 32px; margin: 0px 0px 5px 5px;" alt="Resurrect" title="Resurrect" src="http://thebuildingcoder.typepad.com/.a/6a00e553e16897883301b8d231ff5e970c-50wi" /> --->
 
 <h4><a name="3"></a>Can I Replace Myself by Artificial Intelligence?</h4>
 <p>I answered a lot of repetitive questions in the last couple of weeks and months &ndash; not to mention years and decades.</p>
@@ -114,7 +145,7 @@ i.e., enable the full cycle of debugging an add-in, discovering an error, editin
 <p>Who knows, maybe I am already much further, and the text you read here now was AI generated?</p>
 <p>Check out these other AI, CAD and communication related items:</p>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/AlphaGo">AlphaGo</a> (already <a href="http://thebuildingcoder.typepad.com/blog/2016/01/bim-programming-madrid-and-spanish-connectivity.html#7">mentioned in January</a>)</li>
+<li><a href="https://en.wikipedia.org/wiki/AlphaGo">AlphaGo</a> (already <a href="1398_bim_programming.html#7">mentioned in January</a>)</li>
 <li><a href="#4">Autodesk Design Graph</a></li>
 <li><a href="#5">AI recognises conversational speech</a></li>
 <li><a href="#5.1">AI teaching assistant</a></li>
@@ -142,3 +173,11 @@ the <a href="http://hkaudio.com/products.php?id=414">HK Audio Lucas Nano 600</a>
 <p><center>
 <a href="https://flic.kr/s/aHskKjyb4g"><img src="img/789_500.jpg" alt="Isar" width="500"></a>
 </center></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

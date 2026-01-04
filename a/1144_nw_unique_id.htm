@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -65,7 +96,7 @@ Some have been hanging around for a while, while others are more recent.</p>
 
 <p>We already looked at some aspects of this in the discussion on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/09/ifc-guid-generation-and-uniqueness.html">
+<a href="0819_ifc_guid.htm">
 IFC GUID generation</a>.</p>
 
 <p>Let's go through another iteration now:</p>
@@ -198,7 +229,7 @@ However, it is not the same as the Revit UniqueId.
 Nowadays, the easiest way to correlate the export id with the Revit element id and UniqueId is to use the ExportUtils.GetExportId method.
 Before its introduction, the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/uniqueid-dwf-and-ifc-guid.html">IFC GUID algorithm</a> provided
+<a href="0104_uniqueid_dwf_ifc_guid.htm">IFC GUID algorithm</a> provided
 
 similar functionality.
 
@@ -243,7 +274,7 @@ Better still, is there an algorithm to convert the IFC GUID into a UniqueId or R
 
 <p>I looked at the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/ifc-guid-algorithm-in-c.html">IFC GUID algorithm</a> and
+<a href="0396_ifc_guid_cs.htm">IFC GUID algorithm</a> and
 
 the ExportUtils.GetExportId method.
 These seem to apply to export from Revit but not import back in.
@@ -294,7 +325,7 @@ Even with the same model it's not granted that the ID's are stringently the same
 
 <p>As I
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/04/revitlookup-for-ur1-adn-aec-and-au-news.html#5">
+<a href="1139_revitlookup_adn.htm#5">
 mentioned</a>,
 
 the
@@ -405,7 +436,7 @@ Miro
 
 <h4></h4>
 
-<a href="">
+<a href=">
 </a>
 
 
@@ -413,3 +444,12 @@ Miro
 
 
 -->
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

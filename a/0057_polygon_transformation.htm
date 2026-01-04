@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -9,7 +39,7 @@
 
 <p>As promised in the discussion on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/3d-polygon-areas.html">
+<a href="0055_3d_polygon_area.htm">
 three-dimensional polygon area calculation</a>,
 
 I have now implemented some test code to transform the 3D polygon into a horizontal position.
@@ -18,22 +48,22 @@ To my surprise, the results of the 2D and 3D algorithms do indeed exactly match.
 
 This is a continuation of the analysis for determining the profile boundary loop polygons for
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/slab-boundary.html">
+<a href="0031_slab_boundary.htm">
 floor slabs</a>
 
 and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/wall-elevation-profile.html">
+<a href="0039_wall_elevation_profile.htm">
 walls</a>,
 
 and on the calculation of areas for
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/2d-polygon-areas-and-outer-loop.html">
+<a href="0053_2d_polygon_area_outer_loop.htm">
 2D</a>
 
 and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/3d-polygon-areas.html">
+<a href="0055_3d_polygon_area.htm">
 3D</a>
 
 polygons.</p>
@@ -115,7 +145,7 @@ We have the following cases to consider:</p>
 Applying the transform to the polygon is achieved by applying it individually to each vertex.
 Flattening is done by simply dropping the Z coordinate and implemented in
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/2d-polygon-areas-and-outer-loop.html">
+<a href="0053_2d_polygon_area_outer_loop.htm">
 CmdSlabBoundaryArea</a>,
 
 as is the 2D polygon area calculation.</p>
@@ -129,7 +159,16 @@ I hope to be able to do so with the 2008 version which I will soon be switching 
 
 <p>Here is
 
-<a href="http://thebuildingcoder.typepad.com/blog/files/bc10016.zip">
-version 1.0.0.16</a>
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/files/bc10016.zip">
+version 1.0.0.16 <em>(file no longer available)</em></span>
 
 of the complete Visual Studio solution with the updated code discussed here, still using the VS 2005 platform.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

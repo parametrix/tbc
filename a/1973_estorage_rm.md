@@ -175,10 +175,10 @@ The add-in does not create the schema when it's loaded; the schema is created on
 
 **Answer:** I would avoid the try/catch with an empty catch-all.
 Using that, you will never notice if anything goes wrong.
-[Never catch all exceptions](https://thebuildingcoder.typepad.com/blog/2017/05/prompt-cancel-throws-exception-in-revit-2018.html#5)!
+[Never catch all exceptions](1556_prompt_exception.html#5)!
 
 Here is an old article by The Building Coder
-on [erasing extensible storage](https://thebuildingcoder.typepad.com/blog/2013/11/erasing-extensible-storage-with-linked-files.html).
+on [erasing extensible storage](1066_erase_estore_link.htm).
 
 **Response:** I already looked at all the Schema related posts in The Building Coder blog.
 None helped solving the issue in hand.

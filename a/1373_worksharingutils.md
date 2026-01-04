@@ -40,7 +40,7 @@ Rudolf 'Revitalizer' Honke frequently requested better documentation of the Revi
 
 Rudolf [Revitalizer](http://forums.autodesk.com/t5/user/viewprofilepage/user-id/1103138) Honke
 has frequently requested better documentation of the Revit API `*Utils` classes, e.g., when he pointed out
-the [handy utility classes](http://thebuildingcoder.typepad.com/blog/2013/04/handy-utility-classes.html) back in 2013.
+the [handy utility classes](0925_handy_utils.htm) back in 2013.
 
 This is still an interesting and somewhat poorly documented area in the Revit API, as we can see from the discussion below:
 
@@ -85,7 +85,7 @@ While I do not totally agree with them all, similarly to some of the options voi
 the comments section, it is still definitely an interesting and worthwhile quick read.
 
 **Addendum:** In
-his [comment](http://thebuildingcoder.typepad.com/blog/2015/11/worksharingutils.html#comment-2350844009) below,
+his [comment](1373_worksharingutils.html#comment-2350844009) below,
 Guy Robinson points out another interesting related link to the MSDN article
 on [new features in C# 6](http://blogs.msdn.com/b/csharpfaq/archive/2014/11/20/new-features-in-c-6.aspx),
 which is actually more structured and in-depth than the former.

@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -39,22 +70,22 @@ Z:\a\case\sfdc\10561705\attach\PlaceLightSample_2015.rvt
 
 <p>The Building Coder topic group
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.25">
-5.25</a> deals with the
+<span class="unavailable-link">
+5.25</span> deals with the
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.25">
-Family API and placing family instances</a> in
+<span class="unavailable-link">
+Family API and placing family instances</span> in
 
 general and explored the more specialised issue of selecting the correct
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/01/newfamilyinstance-overloads.html">
+<a href="0524_newfamilyinstance.htm">
 NewFamilyInstance method overload</a> to
 
 use for specific given families way back in 2011.</p>
 
 <p>The addition of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/09/family-instance-placement.html">
+<a href="1028_newfamilyinstance.htm">
 family instance placement type</a> functionality
 
 with the FamilyPlacementType enumeration and a corresponding property on the Family class simplified this task significantly.</p>
@@ -63,7 +94,7 @@ with the FamilyPlacementType enumeration and a corresponding property on the Fam
 
 <p>Here is an interesting example of a completely useless and much too exhaustive search to determine how to create copies of a ceiling hosted light fixture, only to end up with the same result we already published in 2012 on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/02/hosting-a-light-fitting-on-a-reference-plane.html">
+<a href="0724_host_reference_plane.htm">
 hosting a light fitting on a reference plane</a>.</p>
 
 <p>Well, hopefully not completely useless, after all, since this exploration does show you several steps and techniques to approach and narrow down the problem to finally rediscover a solution that could also have been found faster and more easily:</p>
@@ -85,7 +116,7 @@ hosting a light fitting on a reference plane</a>.</p>
 
 <p>I read the discussions on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/02/hosting-a-light-fitting-on-a-reference-plane.html">
+<a href="0724_host_reference_plane.htm">
 hosting a light fitting on a reference plane</a> and
 
 <a href="http://forums.autodesk.com/t5/revit-api/family-instance-on-reference-plane-with-api/td-p/4962340">
@@ -126,7 +157,7 @@ I implemented a complete add-in to test your external command and tried it out i
 <ul>
 <li>Check the return value of the NewFamilyInstance method.</li>
 <li>Use the
-<a href="http://thebuildingcoder.typepad.com/blog/2014/09/debugging-and-maintaining-the-image-relationship.html#2">
+<a href="1205_image_relationships.htm#2">
 element lister</a> to see what elements were added to the database, if any.</li>
 </ul>
 
@@ -201,7 +232,7 @@ this project and saved the initial version is saved as
 
 <p>I compared the parameter values of the original and copy using the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/05/bipchecker-for-revit-2015-on-github.html">
+<a href="1153_bipchecker_2015_git.htm">
 BipChecker</a>.</p>
 
 <p>One difference that I noticed was in the built-in parameter SKETCH_PLANE_PARAM.</p>
@@ -539,7 +570,7 @@ the final correctly working solution with parts of the code from previous attemp
 
 <p>After discovering this, I returned to the old blog post on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/02/hosting-a-light-fitting-on-a-reference-plane.html">
+<a href="0724_host_reference_plane.htm">
 hosting a light fitting on a reference plane</a> that
 
 you originally mentioned, only to see that it already clearly discusses the importance of choosing the right NewFamilyInstance method overload for the task, and points out that this exact one taking a reference plane, placement point, direction and family symbol is the right one to do the job in this case &ndash; the same result I ended up with after all this exhaustive renewed exploration for your case.</p>
@@ -673,3 +704,12 @@ Here is an overview of the releases so far:</p>
 </ul>
 
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

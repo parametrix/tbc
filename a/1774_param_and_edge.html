@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -64,14 +95,14 @@ on <a href="https://stackoverflow.com/questions/57653886/how-to-bind-a-shared-pa
 <p><strong>Answer:</strong> Yes.</p>
 <p>You must take into consideration that the shared parameters functionality was added very early in the Revit lifecycle and was completely oriented toward end user interaction. At the time, the Revit API did not even exist, and was not planned for.</p>
 <p>Possibly your use case is weird, from a BIM point of view. I am not an expert on the user interface side of things, so I cannot say.</p>
-<p>On the other hand, <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23">extensible storage</a> was explicitly designed for API use.</p>
+<p>On the other hand, <span class="unavailable-link">extensible storage</span> was explicitly designed for API use.</p>
 <p>If you do not explicitly need the end user or Revit to see and manipulate your data, e.g., for scheduling or other purposes, you should consider using extensible storage instead.</p>
 <p>Neither Revit nor the end user will effectively see your extensible storage data.</p>
 <p>Depending on your exact needs, this may be what you want or not.</p>
 <h4><a name="3"></a> Transferring Element Parameters</h4>
 <p>How can one retrieve all parameters from an element?</p>
 <p><strong>Question:</strong> I am working on converting Revit room volumes into DirectShape elements (done already with info from your blog
-on <a href="https://thebuildingcoder.typepad.com/blog/2019/06/improved-room-closed-shell-directshape-for-forge-viewer.html">room closed shell DirectShape for Forge viewer</a>).</p>
+on <a href="1760_room_closed_shell_forge.html">room closed shell DirectShape for Forge viewer</a>).</p>
 <p>The next step is to copy the room parameters into the DirectShape object, in such a way they appear correctly in the UI.</p>
 <p>Here is a picture of some DirectShapes (Mass in English, "Volume" in the French version) created with Dynamo:</p>
 <p><center>
@@ -105,3 +136,11 @@ the <a href="https://www.revitapidocs.com/2020/a144b0e3-c997-eac1-5c00-51c56d9e6
 <p>Oh no, wrong, that one probably does generate triangulated faces just like you have.</p>
 <p>I believe the <a href="https://www.revitapidocs.com/2020/94c1fef4-2933-ce67-9c2d-361cbf8a42b4.htm"><code>BRepBuilder</code> class</a> enables
 you to create more complex faces with no edges in the middle:</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

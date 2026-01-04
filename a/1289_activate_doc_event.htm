@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -106,7 +137,7 @@ This really self-explanatory exception is thrown when I try to do an Application
 
 Does this discussion on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/12/closing-the-active-document.html">
+<a href="0873_close_active_doc.htm">
 closing the active document</a> help
 
 in any way?</p>
@@ -185,7 +216,7 @@ loading a RVT project file automatically on start-up</a>.</p>
 
 <p>I already published the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2015/02/family-instance-area-and-auto-loading-a-project-file.html#3">initial answers</a>
+<a href="1276_inst_area_autoload.htm#3">initial answers</a>
 
 by Arno&scaron;t and me a month ago, but there was much more and the real solution to come later...</p>
 
@@ -200,12 +231,12 @@ by Arno&scaron;t and me a month ago, but there was much more and the real soluti
 
 <p>Before getting to that, though, let me point out that the easiest way to start up Revit with a project file loaded is to use
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/using-processstart-to-open-a-project-or-family.html">
+<a href="0324_process_start.htm">
 Process.Start</a>.</p>
 
 <p>Once Revit is up and running, as you have pointed out yourself, you can also use the UIApplication.OpenAndActivateDocument method, as demonstrated in this discussion on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/12/closing-the-active-document.html">closing the active document</a>.</p>
+<a href="0873_close_active_doc.htm">closing the active document</a>.</p>
 
 <p>You can prepare a call to this method from within the OnStartup method by temporarily subscribing to the Idling event in the OnStartup method, then unsubscribing from Idling in the Idling event handler, opening the document and doing whatever else you want at that point.</p>
 
@@ -442,3 +473,11 @@ There are only a handful (if at all that much) of events that are raised by the 
 Those are more like exceptions to the rule, as documented in the Revit API help file RevitAPI.chm in the SDK.</p>
 
 -->
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -25,23 +56,23 @@ GHD</a> at
 
 the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-devlab.html">
+<a href="0738_melbourne_devlab.htm">
 Melbourne DevLab</a>
 
 back in March, thus also finally answering
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/real-world-concrete-corner-coordinates.html?cid=6a00e553e168978833017742ce536f970d#comment-6a00e553e168978833017742ce536f970d">
+<a href="0787_real_world_corners.htm">
 Ishfak's request</a> for
 
 the full Revit 2013 source code to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/real-world-concrete-corner-coordinates.html">
+<a href="0787_real_world_corners.htm">
 retrieve real world concrete coordinates</a>.
 
 
 <p>It is a full-blown end-user-capable little application for the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-devlab.html/#3">
+<a href="0738_melbourne_devlab.htm#3">
 automatic creation of setout points</a> for
 
 on-site location and construction of structural elements.
@@ -74,20 +105,20 @@ We would like to then define which of the points should be used as main setout p
 
 <p><b>In Practice:</b> Retrieved all the concrete corner point data via the API is not hard, and I presented the solution to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/real-world-concrete-corner-coordinates.html">
+<a href="0787_real_world_corners.htm">
 retrieve real world concrete coordinates</a>
 
 separately in the following three steps:
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/06/real-world-concrete-corner-coordinates.html#2">
+<li><a href="0787_real_world_corners.htm#2">
 Filtering for structural concrete elements</a>.
 
 <li>Retrieving their corners, i.e. geometry traversal to
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/real-world-concrete-corner-coordinates.html#3">
+<a href="0787_real_world_corners.htm#3">
 retrieve unique vertices</a>.
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/06/real-world-concrete-corner-coordinates.html#4">Converting from Revit model to real-world coordinates</a>.
+<li><a href="0787_real_world_corners.htm#4">Converting from Revit model to real-world coordinates</a>.
 </ul>
 
 <p>However, transferring this information  directly into a schedule proved to be impossible.
@@ -172,13 +203,13 @@ One of them is populated with all setout points, marking every corner of every p
 
 <p>I already pointed to the discussion of the main technical underpinnings for the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/real-world-concrete-corner-coordinates.html">
+<a href="0787_real_world_corners.htm">
 retrieval of the concrete corners</a> above, i.e.
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/06/real-world-concrete-corner-coordinates.html#2">Filtering for structural concrete elements</a>.
-<li>Retrieving their corners, i.e. geometry traversal to <a href="http://thebuildingcoder.typepad.com/blog/2012/06/real-world-concrete-corner-coordinates.html#3">retrieve unique vertices</a>.
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/06/real-world-concrete-corner-coordinates.html#4">Converting from Revit model to real-world coordinates</a>.
+<li><a href="0787_real_world_corners.htm#2">Filtering for structural concrete elements</a>.
+<li>Retrieving their corners, i.e. geometry traversal to <a href="0787_real_world_corners.htm#3">retrieve unique vertices</a>.
+<li><a href="0787_real_world_corners.htm#4">Converting from Revit model to real-world coordinates</a>.
 </ul>
 
 <p>Now let's look at some of the aspects of putting this functionality to use and wrapping it into a full-blown end-user application:
@@ -292,7 +323,7 @@ retrieval of the concrete corners</a> above, i.e.
 
 <p>As mentioned above, the functionality to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/real-world-concrete-corner-coordinates.html">
+<a href="0787_real_world_corners.htm">
 retrieve the concrete corners</a> geometry
 
 data has already been described in previous posts.
@@ -340,7 +371,7 @@ PARAM  .... Point_Number     TEXT         1     1
 
 <p>As said, most of the underlying functionality to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/real-world-concrete-corner-coordinates.html">
+<a href="0787_real_world_corners.htm">
 retrieve the concrete corner</a> geometry
 
 was already presented and discussed.
@@ -640,7 +671,7 @@ on the standard rst_basic_sample_project.rvt with a non-standard project locatio
 
 <p><strong>Addendum:</strong> I
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/11/concrete-setout-points-for-revit-structure-2015.html">
+<a href="1234_setout_points.htm">
 migrated this to Revit 2015</a> and
 
 created the
@@ -652,10 +683,10 @@ SetoutPoints GitHub repository</a> for it.</p>
 
 <hr>
 
-<a href="">
+<a href=">
 </a>
 
-<a name=""></a>
+<a name="></a>
 
 <h4></h4>
 
@@ -665,3 +696,12 @@ SetoutPoints GitHub repository</a> for it.</p>
 <p>Test shared parameter availability
 
 -->
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

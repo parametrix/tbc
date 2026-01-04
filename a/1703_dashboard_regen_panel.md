@@ -143,14 +143,14 @@ on [automatic extraction of the database revives](https://forums.autodesk.com/t5
 
 **Answer:** Here are some suggestions on various topics:
 
-First of all, you need to work through the material to help [getting started with the Revit API](https://thebuildingcoder.typepad.com/blog/about-the-author.html#2).
+First of all, you need to work through the material to help getting started with the Revit API *(link unavailable)*.
 
 Before getting started with the Revit API, you should acquire as much knowledge as possible about Revit from the end user point of view.
 
 I would assume that you already have that &nbsp; :-)
 
 Here is one very old analysis
-of [integrating Revit with an external database](https://thebuildingcoder.typepad.com/blog/2009/01/database-integration.html).
+of [integrating Revit with an external database](0077_db_integration.htm).
 
 Many things have improved significantly since then, and your target is probably quite different (and much simpler than) the one discussed there.
 
@@ -166,7 +166,7 @@ samples [integrating desktop and cloud, provided in the FireRatingCloud overview
 They are also already pretty dated.
 
 Since then, Autodesk has made significant progress with [Forge](https://autodesk-forge.github.io),
-and [Forge design Automation for Revit is just around the corner](https://thebuildingcoder.typepad.com/blog/2018/11/forge-design-automation-for-revit-at-au-and-in-public.html).
+and [Forge design Automation for Revit is just around the corner](1701_da4r_au.html).
 
 Maybe that will provide the most efficient path forward for your project as well?
 
@@ -201,7 +201,7 @@ In general, I would probably not make any calls to `Regenerate` until I notice t
 Just keep in mind what can go wrong when stale data is accessed and used, always check your results, and be ready to add a regen call in case of need.
 
 If you have read and understood all the examples listed in
-the [topic group on the need to regenerate](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33),
+the topic group on the need to regenerate *(link unavailable)*,
 you should be well prepared to address your programming task, at least as far as this aspect is concerned.
 
 Good luck!

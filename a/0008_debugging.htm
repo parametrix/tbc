@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <h3>Debugging a Revit Add-In</h3>
 
 <p>I often hear the question how to unload a Revit add-in. Unfortunately, this is not possible, due to the fundamental .NET framework mechanisms used to load and manage the plug-ins. Revit manages one AppDomain which is used to load all add-in classes.</p>
@@ -8,7 +38,7 @@
 
 <p>For completeness sake, and to ensure that we are really all on the same page, I suggest we start from scratch with a brand new Revit add-in project. That means that we will be going through the same steps as those described in the DevTV presentation and webcast recording mentioned in the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/08/getting-started.html">getting started</a>
+<a href="0003_getting_started.htm">getting started</a>
 
 post. Here is the short version of the description to set up a new Revit add-in:</p>
 
@@ -27,7 +57,7 @@ post. Here is the short version of the description to set up a new Revit add-in:
 <li>Add a reference to RevitAPI.dll by right clicking on the project references in the solution explorer and selecting Add Reference.</li>
 <li>Do not forget to set the 'Copy Local' flag to False. You do so by opening the properties of RevitAPI.dll. See 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/09/the-sdk-samples.html">The SDK Samples Solution</a>
+<a href="0006_sdk_samples_solution.htm">The SDK Samples Solution</a>
 
 for a more detailed explanation of this step.</li>
 <li>Remove the unneeded using statements for System.Collections.Generic and System.Text in the command class source file.</li>
@@ -123,3 +153,12 @@ ECClassName1=DebugTest.Command
 <p>Finally, to pre-load a specific model when starting up Revit in the Visual Studio debugger, simply add the full path to the Revit RVT file in the Debug tab Start options, Command line arguments.</p>
 
 <p>Once all of this is set up, and believe me it is faster to set up than to explain, you should be able to jump in and out of your full debugging and testing scenario within a matter of seconds.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

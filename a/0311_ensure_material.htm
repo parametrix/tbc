@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1256898 ["Beam Material" parameter NULL for familyinstance] -->
@@ -8,11 +39,11 @@
 
 <p>In some of the very early posts, we explored how to access the materials assigned to an individual
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/element-materials.html">element</a>, a
+<a href="0025_element_materials.htm">element</a>, a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/family-instance-materials.html">family instance</a>, or a
+<a href="0026_instance_materials.htm">family instance</a>, or a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/wall-solid-versus-face-materials.html">wall</a>.
+<a href="0305_wall_materials.htm">wall</a>.
 
 However, we never presented anything to handle materials set at the category level.
 Here is recent case handled by my colleague Saikat Bhattacharya on how to ensure that the material of a beam or column is set to a valid value, either at the element or category level:
@@ -70,9 +101,9 @@ The code I used is similar to the Materials SDK sample.
 <p><strong>Answer:</strong> I did a quick check by creating a set of columns and framing instances in RST 2010.
 Using the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/rvtmgddbg.html">RvtMgdDbg</a>
+<a href="0101_rvtmgddbg.htm">RvtMgdDbg</a>
 
-(<a href="http://thebuildingcoder.typepad.com/blog/2009/10/rvtmgddbg-for-revit-2010.html">for 2010</a>)
+(<a href="0238_rvtmgddbg_2010.htm">for 2010</a>)
 
 snoop tool, I was able to see the material assigned to the family instances.
 It does seem to work in 2010 in most circumstances.
@@ -154,3 +185,12 @@ If no element material is specified and the ByCategory material information is n
 </center>
 
 <p>Many thanks to Saikat for this solution!
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

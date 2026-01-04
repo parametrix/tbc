@@ -25,7 +25,7 @@ RevitLookup search by element and unique id in #RevitAPI @AutodeskRevit #bim #dy
 
 Александр Пекшев aka Modis [@Pekshev](https://github.com/Pekshev) recently
 submitted a pull request
-to [snoop the stable representation of references](http://thebuildingcoder.typepad.com/blog/2018/03/export-geometry-and-snoop-stable-representation-of-reference.html#2)
+to [snoop the stable representation of references](1631_snoop_stable_rep.html#2)
 for [RevitLookup](https://github.com/jeremytammik/RevitLookup).
 
 Now he implemented another useful enhancement to search and snoop elements by element id or unique id:
@@ -136,14 +136,14 @@ It prompts you to enter the element id and adds the element to the current selec
 Once you have selected an element in this manner, you can use the traditional RevitLookup 'snoop current selection' to explore its data.
 
 The 'zoom to' option is very similar to 
-the [zoom to selected elements](http://thebuildingcoder.typepad.com/blog/2018/03/switch-view-or-document-by-showing-elements.html#3) functionality
+the [zoom to selected elements](1633_show_elements.html#3) functionality
 discussed last week, implemented using `ShowElements`.
 
 This could obviously be integrated into RevitLookup as well, if so desired.
 
 Another useful piece of functionality that could be integrated is an adaptation of my
-old [StringSearch](http://thebuildingcoder.typepad.com/blog/2016/01/all-model-text-stringsearch-2016-and-new-jobs.html) add-in,
-originally [ADN Plugin of the Month](http://thebuildingcoder.typepad.com/blog/2011/10/string-search-adn-plugin-of-the-month.html) back
+old [StringSearch](1391_string_search_2016.html) add-in,
+originally [ADN Plugin of the Month](0667_string_search_potm.htm) back
 in 2011.
 
 It implements the possibility to search for, list modelessly, select and zoom to elements based on strings in their properties, parameters and other data, including support for regular expressions.

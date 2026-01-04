@@ -109,7 +109,7 @@ The deadline for submitting your proposal is Friday, September 13, 2024:
 ####<a name="3"></a> Q4R4 with LLM and RAG
 
 I spent some time in 2017
-pondering [Q4R4](https://thebuildingcoder.typepad.com/blog/r4q4/),
+pondering Q4R4 *(link unavailable)*,
 *Question Answering for Revit API*, a Revit API question answering system.
 
 That was before the advent and rapid advancement of LLMs in more recent years.
@@ -120,7 +120,7 @@ Some useful sources for priming an LLM with Revit API knowledge might be:
 
 - The Revit API help file, originally Windows CHM, available online at [reviapidocs](https://www.revitapidocs.com/)
 - The Revit API developers guide, available online within the Revit help at [Revit API developers guide](https://help.autodesk.com/view/RVT/2025/ENU/?guid=Revit_API_Revit_API_Developers_Guide_html)
-- [The Building Coder blog; published version](https://thebuildingcoder.typepad.com/)
+- The Building Coder blog; published version *(link unavailable)*
 - The Building Coder HTML and markdown source files on GitHub [tbc](https://github.com/jeremytammik/tbc)
 - [The Revit API discussion forum](https://forums.autodesk.com/t5/revit-api-forum/bd-p/160)
 

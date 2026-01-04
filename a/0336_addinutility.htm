@@ -1,16 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>RevitAddInUtility</h3>
 
 <p>In a 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/revit-2011-product-guids.html?cid=6a00e553e1689788330133ec852f18970b#comment-6a00e553e1689788330133ec852f18970b">comment</a> on 
+<a href="0331_revit_2011_guids.htm">comment</a> on 
 
 the recent discussion of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/revit-2011-product-guids.html">
+<a href="0331_revit_2011_guids.htm">
 Revit 2011 product GUIDs</a>,
 
 David Bartliff raised an interesting question on the new Revit add-in utility DLL which triggered some internal discussion as well.
@@ -78,7 +109,7 @@ Here is an accessibility checking example from the developer guide section 3.2.2
 
 <p>As mentioned in the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/revit-2011-product-guids.html">
+<a href="0331_revit_2011_guids.htm">
 product GUID post</a>,
 
 the Revit 2011 SDK includes a new subfolder named ExternalCommand2011 containing the two applications ExternalComandRegistration and RevitAddInUtilitySample.
@@ -124,7 +155,7 @@ It displays the following dialogue with three buttons and a tree view to demonst
 <li>Provides a console application in which we create an add-in manifest which contains two external commands by RevitAddInUtility.
 <li>Set 'VisibilityMode' node of these two external commands with different values to demonstrate how to visualize external command base on the document type or project type change. Set visibility mode of first command with 'NotVisibleInStructure | NotVisibleWhenNoActiveDocument', Set visibility mode of second command with 'NotVisibleInMEP | NotVisibleInFamily'.
 <li>Provides user an assembly with two classes which inherited from IAvailabilityClass interface:
-<li>First class: return false from IsCommandAvailabilable(UIApplication^ app, CategorySet^ categories) when user selected a wall. Use CategorySet property to judge user�s selection.
+<li>First class: return false from IsCommandAvailabilable(UIApplication^ app, CategorySet^ categories) when user selected a wall. Use CategorySet property to judge user�s selection.
 <li>Second class: return false from IsCommandAvailabilable(UIApplication^ app, CategorySet^ categories) when current document is in 3D view.
 <li>Set 'AvailabilityClass' node of these two external commands with class name provided in step 3.
 <li>Provides resource files for both English and Chinese language. Including both picture and text string to demonstrate the localization, icon and tooltip.
@@ -138,7 +169,7 @@ It displays the following dialogue with three buttons and a tree view to demonst
 <p>In order to make use of the functionality provided by the RevitAddInUtility assembly, for instance in an installer, the application needs to first locate and load it.
 Here is David's
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/revit-2011-product-guids.html?cid=6a00e553e1689788330133ec852f18970b#comment-6a00e553e1689788330133ec852f18970b">question</a> on this:
+<a href="0331_revit_2011_guids.htm">question</a> on this:
 
 <p><strong>Question:</strong> Will the actual release version of RevitAddInUtility.dll be added to the GAC &ndash; it is not for Beta 2. 
 We built the sample exe and put it on the desktop of a user's PC and it failed to work properly because it could not find the utility DLL. 
@@ -161,3 +192,12 @@ TS87598</a>.
 <p>Maybe putting it in the GAC is a good alternate solution which might be feasible if it is indeed entirely managed and has no dependencies whatsoever on Revit DLLs.
 Thank you for that suggestion!
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

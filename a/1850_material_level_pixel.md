@@ -450,8 +450,8 @@ Many thanks to alexpaduroiu for this clear solution.
 ####<a name="4"></a> Change Level of Existing Element
 
 Angelo Mastroberardino brought up this question in
-his [comment](https://thebuildingcoder.typepad.com/blog/2014/03/creating-a-sloped-floor.html#comment-4952460602)
-on [creating a sloped floor](https://thebuildingcoder.typepad.com/blog/2014/03/creating-a-sloped-floor.html):
+his [comment](1121_create_sloped_floor.htm#comment-4952460602)
+on [creating a sloped floor](1121_create_sloped_floor.htm):
 
 **Question:** Is it possible to re-set the reference Level of a Floor, once it is created ?
 
@@ -460,11 +460,11 @@ It is specified during creation only and cannot be modified later.
 
 Here are some posts on levels, both general level handling issues and workarounds to set the level property on certain specific element types:
 
-- [Retrieve levels sorted by elevation](https://thebuildingcoder.typepad.com/blog/2014/11/webgl-goes-mobile-and-sorted-level-retrieval.html#3)
-- [Family instances lacking or with invalid level property](https://thebuildingcoder.typepad.com/blog/2011/01/family-instance-missing-level-property.html)
-- [Changing the level of a floor](https://thebuildingcoder.typepad.com/blog/2019/04/set-floor-level-and-use-ipc-for-disentanglement.html#3)
-- [Calculate a level for an element lacking the property](https://thebuildingcoder.typepad.com/blog/2019/03/assigning-a-level-to-an-element-missing-it.html)
-- A solution to [change the level of an existing room](https://thebuildingcoder.typepad.com/blog/2020/03/panel-schedule-slots-and-change-room-level.html)
+- [Retrieve levels sorted by elevation](1246_webgl_sorted_level.htm#3)
+- [Family instances lacking or with invalid level property](0525_fam_inst_missing_level.htm)
+- [Changing the level of a floor](1737_ipc.html#3)
+- [Calculate a level for an element lacking the property](1728_assign_level.html)
+- A solution to [change the level of an existing room](1828_change_room_level.html)
 
 ####<a name="5"></a> Physics is Cool
 

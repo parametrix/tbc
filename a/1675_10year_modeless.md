@@ -25,7 +25,7 @@ This issue is currently also being discussed in the [Revit API discussion forum]
 
 The official approach is presented in the Revit SDK sample ModelessDialog/ModelessForm_ExternalEvent.
 
-Many other discussions and soutions are listed by The Building Coder in the topic group on [Idling and External Events for Modeless Access and Driving Revit from Outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+Many other discussions and soutions are listed by The Building Coder in the topic group on Idling and External Events for Modeless Access and Driving Revit from Outside *(link unavailable)*.
 
 https://forums.autodesk.com/t5/revit-api-forum/using-mvvm-amp-wpf-with-transaction-amp-doc-regenerate/m-p/8207716
 using mvvm & wpf with transaction & doc.regenerate()
@@ -62,7 +62,7 @@ Today, let's pick up the recurring topic of accessing the Revit API from a model
 Today is The Building Coder's tenth birthday!
 
 The first post was
-a [warm welcome on August 22, 2008](http://thebuildingcoder.typepad.com/blog/2008/08/welcome.html).
+a [warm welcome on August 22, 2008](0001_welcome.htm).
 
 Very many thanks to the entire community for all your support, interest, comments and above all numerous contributions over the years!
 
@@ -86,7 +86,7 @@ I'll skip most of the answer, because it is convoluted.
 
 The most important aspect, though, is short and sweet:
 
-[The Revit API cannot be used in a modeless context](http://thebuildingcoder.typepad.com/blog/2015/12/external-event-and-10-year-forum-anniversary.html#2).
+[The Revit API cannot be used in a modeless context](1383_external_event_10_year.html#2).
 
 It can only be used in a valid Revit API context.
 
@@ -135,5 +135,5 @@ Here are some other recent threads raising the same question:
 - [Using MVVM and WPF with transaction and `doc.regenerate`](https://forums.autodesk.com/t5/revit-api-forum/using-mvvm-amp-wpf-with-transaction-amp-doc-regenerate/m-p/8207716)
 
 Many other discussions and solutions are listed by The Building Coder in the topic group
-on [Idling and external events for modeless access and driving Revit from outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+on Idling and external events for modeless access and driving Revit from outside *(link unavailable)*.
 

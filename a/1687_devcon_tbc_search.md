@@ -171,8 +171,8 @@ I hope you can make it to one of our upcoming events as well.
 #### <a name="3"></a> Hijacking Typepad Search Input for Google Site Search
 
 Matt Taylor submitted
-a [comment](http://thebuildingcoder.typepad.com/blog/2018/09/roadmap-ci-for-rtf-geometry-library-limitations.html#comment-4106874384)
-on [yesterday's blog post](http://thebuildingcoder.typepad.com/blog/2018/09/roadmap-ci-for-rtf-geometry-library-limitations.html) pointing
+a [comment](1686_roadmap_ci_geomlib.html#comment-4106874384)
+on [yesterday's blog post](1686_roadmap_ci_geomlib.html) pointing
 out that the search functionality stopped working:
 
 > Just a heads-up that the search box on your blog doesn't appear to be working.

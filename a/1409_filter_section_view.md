@@ -88,10 +88,10 @@ It is also available from the main entry point for information on and getting st
 the [Revit Developer Centre](http://www.autodesk.com/developrevit).
 
 The Building Coder provides more hints
-on [getting started with the Revit API](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2).
+on getting started with the Revit API *(link unavailable)*.
 
 If you are asking specifically about <u>Revit API help online</u>, then The Building Coder discussion
-about [Revit API help online](http://thebuildingcoder.typepad.com/blog/2014/01/revit-api-help-online-and-hiking-on-la-palma.html) might
+about [Revit API help online](1092_revit_api_help_online.htm) might
 possibly help.
 
 :-)

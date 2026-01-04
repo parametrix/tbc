@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -21,12 +52,12 @@ CreateDimensions simplifies the process of providing the references by using the
 
 <p>The 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/10/revit-family-creation-api-labs.html">
+<a href="0237_rfa_labs.htm">
 Family API labs</a> provide 
 
 another example of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/10/revit-family-creation-api-labs.html#1">
+<a href="0237_rfa_labs.htm#1">
 setting up a reference array</a> in 
 
 order to create some dimensioning and alignment elements.
@@ -39,12 +70,12 @@ order to create some dimensioning and alignment elements.
 
 <li>Query the element geometry and ask it to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/geometry-options.html">
+<a href="0278_abg01_geometry_options.htm">
 compute references</a>.
 
 <li>Use the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/findreferencesbydirection.html">
+<a href="0294_abg09_findReferencesByDir.htm">
 FindReferencesByDirection</a> method.
 
 </ul>
@@ -153,11 +184,11 @@ It works in the context of a family document, however:
 <p>I discussed various methods to determine specific surfaces on the solids of walls and other elements, e.g.
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/10/slab-boundary.html">Slab boundary</a>.</li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/11/slab-side-faces.html">Slab side faces</a>.</li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/11/wall-elevation-profile.html">Wall elevation profile</a>.</li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/12/2d-polygon-areas-and-outer-loop.html">2D polygon areas and outer loop</a>.</li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/12/3d-polygon-areas.html">3D polygon areas</a>.</li>
+<li><a href="0031_slab_boundary.htm">Slab boundary</a>.</li>
+<li><a href="0033_slab_side_faces.htm">Slab side faces</a>.</li>
+<li><a href="0039_wall_elevation_profile.htm">Wall elevation profile</a>.</li>
+<li><a href="0053_2d_polygon_area_outer_loop.htm">2D polygon areas and outer loop</a>.</li>
+<li><a href="0055_3d_polygon_area.htm">3D polygon areas</a>.</li>
 </ul>
 
 <p>For the case you describe, one possibility would be to determine the two closest parallel vertical faces of two respective selected opposing walls.
@@ -489,3 +520,12 @@ version 2011.0.86.0</a>
 
 of The Building Coder samples including the complete source code and Visual Studio solution of the new command.
 Actually, to tell the truth, it includes the next yet-to-be-discussed command as well... psst!
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

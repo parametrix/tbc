@@ -113,5 +113,5 @@ you could simply create your own `Solid` representing the rotated box and use
 an [`ElementIntersectsSolidFilter`](http://www.revitapidocs.com/2018.1/19276b94-fa39-64bb-bfb8-c16967c83485.htm).
 
 Note that the `BoundingBoxIsInsideFilter` is a quick filter, whereas the `ElementIntersectsSolidFilter` is slow,
-cf. [Quick, Slow and LINQ Element Filtering](http://thebuildingcoder.typepad.com/blog/2015/12/quick-slow-and-linq-element-filtering.html).
+cf. [Quick, Slow and LINQ Element Filtering](1382_filter_shortcuts.html).
 

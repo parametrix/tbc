@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -60,7 +91,7 @@ I hope to prevent this here and now before starting with anything new.</p>
 
 <p><strong>Answer:</strong> This is documented in the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html">
+<a href="0938_whats_new_2014.htm">
 Revit 2014 API 'What's New'</a> section:
 
 <h4 style="color: darkblue">Views &amp; Display</h4>
@@ -104,13 +135,13 @@ This should work just as well for windows and other family instances as for roof
 
 <p>This is demonstrated by many samples, e.g. the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/revit-2014-obj-exporter-and-new-sdk-samples.html#2">
+<a href="0984_obj_exp_2014_sdk_samp.htm#2">
 OBJ viewer</a>.</p>
 
 <p>However, it is probably simpler for you to use the Element methods GetMaterialIds, GetMaterialArea and GetMaterialVolume to determine the masses for different materials for any given element.
 Look at the discussion of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/material-quantity-extraction.html">
+<a href="0296_abg10_material_quantity.htm">
 material quantity extraction</a> and
 
 the MaterialQuantities SDK sample for an example of using this.</p>
@@ -132,29 +163,29 @@ There are a couple of workarounds, though.</p>
 
 <p>One method to determine the relationship between a stacked wall and it basic wall components is described in the blog post on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/curtain-wall-geometry.html">
+<a href="0374_curtain_wall_geometry.htm">
 curtain wall geometry</a>,
 
 using
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/11/undocumented-elementid-relationships.html">
+<a href="0673_elementid_relationships.htm">
 undocumented sequential element id relationships</a>.</p>
 
 <p>A more reliable and useful method to determine this relationship is to delete the stacked wall and see which child walls go with it, a method used in a totally general way by the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/object-relationships.html">
+<a href="0314_object_relationship.htm">
 object relationship analyser</a>
 
-(<a href="http://thebuildingcoder.typepad.com/blog/2010/03/object-relationships-in-vb.html">VB</a>).</p>
+(<a href="0319_object_relationship_vb.htm">VB</a>).</p>
 
 <p>Pointers to several uses of that utility and the associated
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/11/temporary-transaction-trick-touchup.html">
+<a href="0854_temp_transact.htm">
 temporary transaction trick</a> are
 
 provided in this discussion on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/determining-purgeable-elements.html">
+<a href="0910_purge.htm">
 purging elements</a>.</p>
 
 
@@ -177,7 +208,7 @@ you can check whether this command can be launched programmatically using the UI
 
 <li>Make use of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/05/copy-and-paste-api-applications-and-modeless-assertion.html">
+<a href="0943_duplicate_views.htm">
 copy and paste API</a>.</li>
 </ul>
 
@@ -194,7 +225,7 @@ copy and paste API</a>.</li>
 <p><strong>Answer:</strong> Before you can affect the colour of a Revit element, you need to choose which method to use, and at what level this control should take place.
 There are numerous choices, as we mentioned discussing the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/04/getelement-method-and-get-element-type.html#2">
+<a href="0745_get_element_type.htm#2">
 element display overrides</a>, e.g.:</p>
 
 <ul>
@@ -252,3 +283,12 @@ If it returns true, then elements cannot return any geometry in that view.
 
 <p>So, that wraps up a couple of things, and I feel free to enter my new week.
 I wish you a happy week as well!</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

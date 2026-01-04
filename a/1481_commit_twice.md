@@ -57,8 +57,8 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api/bd-p/16
 resolved by an interesting workaround discovered by Michael Morris, Principal Engineer of the Revit development team.
 
 This is another example in the series of situations with a
-special [need to regenerate](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33)
-and [handling transactions and transaction groups](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.53):
+special need to regenerate *(link unavailable)*
+and handling transactions and transaction groups *(link unavailable)*:
 
 **Question:** My isolation of an element in a newly created view does not work.
  
@@ -226,9 +226,9 @@ I discussed them with my colleagues, and we put together the following answers f
 For instance, if your Revit add-in needs to use A360, or connect with any of your own or the Autodesk or other web services, Forge may be very important indeed.
 The number of web services is growing daily, and you should urgently consider implementing your own functionality along those lines as well.
 That is the whole point of my presentation
-on [freeing your BIM data](http://thebuildingcoder.typepad.com/blog/2016/06/free-your-bim-data-and-roomedit3d-thee-legged-forge-oauth.html) that
+on [freeing your BIM data](1447_devcon_roomedit3dv2.html) that
 I held at the Forge Developer Conference in June.
-You may want to make use of cloud services to address a larger audience with your application, and yet connect it back to the Revit BIM, cf. my newest sample on [connecting the desktop and the cloud](http://thebuildingcoder.typepad.com/blog/2016/10/roomedit3dv3-up-and-running-with-demo-recording.html).
+You may want to make use of cloud services to address a larger audience with your application, and yet connect it back to the Revit BIM, cf. my newest sample on [connecting the desktop and the cloud](1479_roomedit3d_running.html).
 2. If a CAD model is uploaded to A360 in a way that the references can be resolved, so it becomes viewable in the A360 UI, then it can be translated into SVF as well (in A360 this happens automatically), which will also trigger property generation for it that can be accessed through the Model Derivative endpoints as well as from the Viewer. 
 Anyone uploading a file to translate for the viewer is using the Data Management API.
 Uploading a file is a necessary part of the translation service.
@@ -258,8 +258,8 @@ I hope this helps.
 #### <a name="4"></a>Connecting Desktop and Cloud &ndash; Roomedit3dv3 Live
 
 On popular request, here are the various upcoming events at which I will be presenting on the topics
-of [freeing your BIM data](http://thebuildingcoder.typepad.com/blog/2016/06/free-your-bim-data-and-roomedit3d-thee-legged-forge-oauth.html)
-and [Connecting the desktop and the cloud with a live roomedit3dv3 demonstration](http://thebuildingcoder.typepad.com/blog/2016/10/roomedit3dv3-up-and-running-with-demo-recording.html):
+of [freeing your BIM data](1447_devcon_roomedit3dv2.html)
+and [Connecting the desktop and the cloud with a live roomedit3dv3 demonstration](1479_roomedit3d_running.html):
 
 - Oct. 18-19 &ndash; Forge and BIM, [ISEPBIM](https://www.facebook.com/ISEPBIM) at [ISEP](http://www.isep.ipp.pt), Porto University  
 - Oct. 20-22 &ndash; [RTCEU Revit Technology Conference Europe](http://www.rtcevents.com/rtc2016eur), Porto
@@ -275,7 +275,7 @@ I hope to be able to meet you in person at one of these.
 #### <a name="5"></a>Could You Demo this Remotely?
 
 I completed the [roomedit3dv3](https://github.com/Autodesk-Forge/forge-boilers.nodejs/tree/roomedit3d) project and published
-a [demo recording](http://thebuildingcoder.typepad.com/blog/2016/10/roomedit3dv3-up-and-running-with-demo-recording.html) to show it in action.
+a [demo recording](1479_roomedit3d_running.html) to show it in action.
 
 One response via twitter includes another request for a non-public answer, which I am sorry to say I am unable to satisfy:
 
@@ -285,7 +285,7 @@ One response via twitter includes another request for a non-public answer, which
 
 Unfortunately, I am rather busy trying to answer as many questions as possible for the whole community.
 
-Therefore, I always [prefer to discuss everything I do in public](http://thebuildingcoder.typepad.com/blog/about-the-author.html#1) and
+Therefore, I always prefer to discuss everything I do in public *(link unavailable)* and
 enable the entire community to contribute and share when possible.
 
 Here are the most effective ways to see the demo live and explore it in further depth yourself:

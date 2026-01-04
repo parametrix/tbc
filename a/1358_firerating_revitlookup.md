@@ -108,19 +108,19 @@ This was actually fixed &ndash; more elegantly, I'm glad to say &ndash; in
 [RevitLookup release 2016.0.0.10](https://github.com/jeremytammik/RevitLookup/releases/tag/2016.0.0.10),
 so please do make sure to download and install the latest version if you encounter this situation.
 
-I actually already [mentioned this](http://thebuildingcoder.typepad.com/blog/2015/09/family-category-element-ids-transaction-undo-and-updates.html#5) two weeks ago...
+I actually already [mentioned this](1353_fam_cat_elem_transact.html#5) two weeks ago...
 
 
 #### <a name="4"></a>Retrieving All Model Elements
 
 Once again, let's revisit the topic of
-[selecting model elements](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.9), raised this time by Dale in the Revit API discussion thread on
+selecting model elements *(link unavailable)*, raised this time by Dale in the Revit API discussion thread on
 [traversing all model elements](http://forums.autodesk.com/t5/revit-api/traverse-all-model-elements-in-a-project-top-down-approach/m-p/5815247):
 
 **Question:**
 To be clear, "all model elements" could be defined as all objects that exist in the real world: chairs, doors, walls, etc. &ndash; component and system families. Graphic elements such as levels, sheets, views, dimensions, annotation, profiles, etc. would not be included. I have been through all The Building Coder samples (and others) many times, and whilst there are lots of examples to filter for a specific category or feature, I have been unable to come up with a solution that provides all model elements as defined above. Your
-[example from 2009](http://thebuildingcoder.typepad.com/blog/2009/05/selecting-model-elements.html)
-([2](http://thebuildingcoder.typepad.com/blog/2009/11/select-model-elements-2.html)) may be the best,
+[example from 2009](0140_select_model_elements.htm)
+([2](0254_select_model_elements_2.htm)) may be the best,
 but given that it is several years old, I have been looking for more contemporary code. Apologies if I am overlooking something obvious; I thought this would be a five-minute job but I have been unable to come up with a simple, solid solution.
 
 **Answer:**

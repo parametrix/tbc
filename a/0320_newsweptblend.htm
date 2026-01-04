@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1257915 [NewSweptBlend] -->
@@ -10,7 +41,7 @@
 Anyway, here an important nugget if information from another case handled by my colleagues Phil Xia and Saikat Bhattacharya on how to set up the input profile for the NewSweptBlend method.
 We already described the recommended approach for 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/07/debug-geometric-form-creation.html">
+<a href="0186_debug_form_creation.htm">
 debugging form creation problems</a>,
 
 and it obviously applies to the NewSweptBlend method as well, but the information provided here concerning the input curves to the NewSweptBlend method is required in addition to that and not provided in the Revit API documentation.
@@ -96,7 +127,7 @@ Does the curve have to be perpendicular to the sweep profiles?
 
 <p><strong>Answer:</strong> First of all, here is a summary of the suggestion we already made for 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/07/debug-geometric-form-creation.html">
+<a href="0186_debug_form_creation.htm">
 debugging form creation problems</a>:
 
 one way to investigate issues like this is to change the code so that it creates model lines instead of only internal lines and remove the call to NewSweptBlend.
@@ -127,3 +158,12 @@ version 1.1.0.64</a>
 of the complete Building Coder source code and Visual Studio solution including the new CmdNewSweptBlend external command.</p>
 
 <p>Many thanks to Phil and Saikat for this solution! 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

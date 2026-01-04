@@ -79,7 +79,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 This is blog post number 1900, just fyi,
 cf. [The Building Coder index and table of contents](http://jeremytammik.github.io/tbc/a/#7).
 
-[Revit 2022 has been released](https://thebuildingcoder.typepad.com/blog/2021/04/revit-2022-released.html) and
+[Revit 2022 has been released](1899_rvt_2022.html) and
 the time has come to migrate to the new version.
 
 Updates for [RevitLookup](https://github.com/jeremytammik/RevitLookup),
@@ -200,8 +200,8 @@ Many thanks to Maxim and David for their clarification!
 
 Josiah Offord very kindly shared his solution to implement a multi-target add-in for several releases of Revit
 using [the Microsoft Build Engine MSBuild](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild) in both
-a [comment](https://thebuildingcoder.typepad.com/blog/2018/06/multi-targeting-revit-versions-cad-terms-texture-maps.html#comment-5339799009)
-on [multi-targeting Revit Versions using `TargetFrameworks`](https://thebuildingcoder.typepad.com/blog/2018/06/multi-targeting-revit-versions-cad-terms-texture-maps.html#2) and in a dedicated [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
+a [comment](1668_multi_target_addin.html#comment-5339799009)
+on [multi-targeting Revit Versions using `TargetFrameworks`](1668_multi_target_addin.html#2) and in a dedicated [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 on [multi-targeting 2021 and 2022 using `MSBuild`](https://forums.autodesk.com/t5/revit-api-forum/multi-target-2021-and-2022-using-msbuild/m-p/10235037):
 
 For those interested, you can configure a `.csproj` to multi-target both 2021 and 2022 on .NET Framework 4.8 using MSBuild.

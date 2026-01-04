@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -14,7 +45,7 @@
 
 <p>This is part 5 of Scott Conover's AU 2009 class on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/analyse-building-geometry.html">
+<a href="0275_abg.htm">
 analysing building geometry</a>.
 
 <p>Faces in the Revit API can be described as mathematical functions of two input parameters 'u' and 'v', where the location of the face at any given point in XYZ space is a function of the parameters.
@@ -56,10 +87,10 @@ Lines of constant U or V can be represented as gridlines on the face:</p>
 <li>Plane: A plane defined by the origin and unit vectors in U and V.
 
 <li>Cylinder: A face defined by extruding a circle along an axis.
-The Radius property provides the 'radius vectors' ñ the unit vectors of the circle multiplied by the radius value.
+The Radius property provides the 'radius vectors' ÔøΩ the unit vectors of the circle multiplied by the radius value.
 
 <li>Cone: A face defined by rotation of a line about an axis.
-The Radius property provides the 'radius vectors' ñ the unit vectors of the circle multiplied by the radius value.
+The Radius property provides the 'radius vectors' ÔøΩ the unit vectors of the circle multiplied by the radius value.
 
 <li>Revolved face: A face defined by rotation of an arbitrary curve about an axis.
 The Radius property provides the unit vectors of the plane of rotation, there is no 'radius' involved.
@@ -228,3 +259,12 @@ P(u,v) = U<sup>T</sup> [M<sub>H</sub>] [B} [M<sub>H</sub>]<sup>T</sup> V
 </ul>
 
 <p>The next instalment of this series will look at face edges and their directions and parametrisation.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

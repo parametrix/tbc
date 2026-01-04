@@ -80,8 +80,8 @@ Time and space, listening inwards.
 
 I already participated in the same ten-day course taught by [S. N. Goenka](http://en.wikipedia.org/wiki/S._N._Goenka) and organised
 by [www.dhamma.org](http://www.dhamma.org)
-after [Christmas 2009](http://thebuildingcoder.typepad.com/blog/2009/12/uk-electrical-schedule-sample.html)
-and in [January 2010](http://thebuildingcoder.typepad.com/blog/2010/01/happy-new-year-2010.html).
+after [Christmas 2009](0272_uk_elec_panel_schedule.htm)
+and in [January 2010](0274_happy_new_year.htm).
 
 It was by far the most relaxing thing I have ever done.
 
@@ -111,7 +111,7 @@ Before diving into my own internal workings and doing something apparently extre
 This question was raised by Miroslav Schonauer, Solution Architect for Autodesk Consulting, and answered by Arnošt Löbel, Senior Principal Engineer of the Revit development team.
 
 **Miro:** For the first time I need to use a complex Modeless dialog in Revit. Eventually I will be using a RVT-docking dialog, as in the Revit SDK DockableDialogs sample or
-the [simpler dockable panel sample](http://thebuildingcoder.typepad.com/blog/2013/05/a-simpler-dockable-panel-sample.html),
+the [simpler dockable panel sample](0942_dockable_panel.htm),
 but for the time being I'm only prototyping the 'communication' between the dialogue and Revit, so exploring two options: external events vs. the Idling event, as implemented in the ModelessDialog projects in the Revit SDK Samples.
 
 Can you please confirm:
@@ -119,7 +119,7 @@ Can you please confirm:
 **Q1)** As far as just the 'communication' between a modeless dialog and Revit is concerned, there is not really anything that IDockablePaneProvider additionally provides compared to a simple modeless Form, i.e., we still have the 2 options: External Event or Idling Event.
 
 I've done some research on External event vs Idling Event and read Jeremy's analysis
-on [replacing an Idling event handler by an external event](http://thebuildingcoder.typepad.com/blog/2013/12/replacing-an-idling-event-handler-by-an-external-event.html).
+on [replacing an Idling event handler by an external event](1074_roomedit_extern_event.htm).
 
 **Q2)** Can you please comment or expand on my conclusions:
 
@@ -153,7 +153,7 @@ When clicking a button in the dockable dialog, the active view will lose focus b
 
 Many thanks to Miro, Aaron and Arnošt for this clarification!
 
-By the way, numerous previous discussions and a lot more background information and examples on this area are provided by The Building Coder topic group on [Idling and external events for modeless access and driving Revit from outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+By the way, numerous previous discussions and a lot more background information and examples on this area are provided by The Building Coder topic group on Idling and external events for modeless access and driving Revit from outside *(link unavailable)*.
 
 Now I wish you a happy relaxing weekend, with both aliveness and idling time:
 

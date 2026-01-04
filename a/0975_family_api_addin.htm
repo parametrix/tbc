@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Family API &ndash; Nested Type, Instance and Symbol Retrieval</h3>
@@ -8,35 +39,35 @@
 <p>Welcome to the third and final part of the detailed discussion on use of the Family API in the project environment, covering scenario 3 and the remainder from the following list of topics:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/key-concepts-of-the-family-editor.html">
+<li><a href="0972_family_key_concept.htm">
 Family editor product functionality</a></li>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/key-concepts-of-the-family-editor.html#2">
+<li><a href="0972_family_key_concept.htm#2">
 Key family concepts</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/key-concepts-of-the-family-editor.html#2b">
+<li><a href="0972_family_key_concept.htm#2b">
 Building your first parametric Revit family</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/key-concepts-of-the-family-editor.html#3">
+<li><a href="0972_family_key_concept.htm#3">
 Slide deck bullets</a></li>
-<!-- <li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/key-concepts-of-the-family-editor.html#3b">
+<!-- <li><a href="0972_family_key_concept.htm#3b">
 Building your first parametric Revit family slide deck bullets</a></li> -->
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/key-concepts-of-the-family-editor.html#4">
+<li><a href="0972_family_key_concept.htm#4">
 Complete slide decks</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/key-concepts-of-the-family-editor.html#5">
+<li><a href="0972_family_key_concept.htm#5">
 Family API topics</a></li>
 </ul>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/family-api-add-in-load-family-and-place-instances.html#10">
+<li><a href="0973_family_api_addin.htm#10">
 API scenario 1 &ndash; load family and place instances</a></li>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/family-api-add-in-load-family-and-place-instances.html#11">
+<li><a href="0973_family_api_addin.htm#11">
 Checking whether a family is loaded</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/family-api-add-in-load-family-and-place-instances.html#12">
+<li><a href="0973_family_api_addin.htm#12">
 Find a database element by type and name</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/family-api-add-in-load-family-and-place-instances.html#13">
+<li><a href="0973_family_api_addin.htm#13">
 Loading a family</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/family-api-add-in-load-family-and-place-instances.html#14">
+<li><a href="0973_family_api_addin.htm#14">
 Placing family instances</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/family-api-add-in-load-family-and-place-instances.html#15">
+<li><a href="0973_family_api_addin.htm#15">
 Accessing the newly placed instances</a></li>
 </ul>
 
@@ -76,7 +107,7 @@ Focus!</a></li>
 
 <p>The product functionality was presented by Steven Campbell in his classes on the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/key-concepts-of-the-family-editor.html">
+<a href="0972_family_key_concept.htm">
 key family concepts</a> at the
 
 <a href="http://www.autodesk.ru/adsk/servlet/pc/index?id=21516340&amp;siteID=871736">
@@ -84,10 +115,10 @@ Revit API DevCamp in Moscow</a>,
 
 and API scenario 1-2 are covered by the previous posts on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/family-api-add-in-load-family-and-place-instances.html">
+<a href="0973_family_api_addin.htm">
 loading a family, placing instances</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/family-api-create-type-select-and-modify-instances.html">
+<a href="0974_family_api_addin.htm">
 creating a type, selecting and modifying instances</a>.</p>
 
 
@@ -356,3 +387,12 @@ surprisingly simple productivity secret</a> is
 to identify priorities and then give yourself some time to focus completely on the task at hand for a while, removing all distractions, in particular switching off interruptions such as email and messages for a while.</p>
 
 <p>How many times will I have to continue hearing that message before it finally sinks in?</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

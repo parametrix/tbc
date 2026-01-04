@@ -609,7 +609,7 @@ The external command mainline Execute method drives it like this to achieve the 
 Eirik's statement in the initial query implies that `FindInserts` does not return wall openings that do not host any insert, w.g., a door or window family instance.
 
 This is not true, as Scott Wilson later pointed out. Scott also provided an alternative implementation determining and
-displaying [wall opening profiles using FindInserts](http://thebuildingcoder.typepad.com/blog/2015/12/wall-opening-profiles-and-happy-holidays.html), which you might want to have a look at as well.
+displaying [wall opening profiles using FindInserts](1389_wall_opening_profiles.html), which you might want to have a look at as well.
 
 
 #### <a name="4"></a>Faster Lexicographical Point Sorting

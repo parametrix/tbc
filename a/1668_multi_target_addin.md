@@ -50,15 +50,15 @@ Here comes another solution for efficiently compiling add-ins for multiple Revit
 #### <a name="2"></a> Multi-Targeting Revit Versions Using TargetFrameworks 
 
 Just recently, we pointed out a suggestion
-for [compiling add-ins for multiple Revit versions](http://thebuildingcoder.typepad.com/blog/2018/05/multi-target-add-ins-ai-markdown-and-job-offer.html).
+for [compiling add-ins for multiple Revit versions](1657_multi_addin_ai_md_job.html).
 
 Here are some other, previous, related discussions:
 
-- [Add-In Applications for Multiple Revit Products](http://thebuildingcoder.typepad.com/blog/2010/06/addin-applications-for-multiple-revit-products.html)
-- [Multi-Version Add-in](http://thebuildingcoder.typepad.com/blog/2012/07/multi-version-add-in.html)
-- [Multi-Version Visual Studio Revit Add-In Wizard](http://thebuildingcoder.typepad.com/blog/2013/11/multi-version-visual-studio-revit-add-in-wizard.html)
-- [RevitLookup in Python Shell and Multi-Release Solution](http://thebuildingcoder.typepad.com/blog/2015/05/revitlookup-in-python-shell-and-multi-release-solution.html)
-- [ADN Labs Xtra, Multi-Version Add-Ins and CNC Direct](http://thebuildingcoder.typepad.com/blog/2015/06/adn-labs-xtra-multi-version-add-ins-and-cnc-direct.html)
+- [Add-In Applications for Multiple Revit Products](0378_multi_flavour_apps.htm)
+- [Multi-Version Add-in](0800_multi_version_addin.htm)
+- [Multi-Version Visual Studio Revit Add-In Wizard](1059_multi_version_wizard.htm)
+- [RevitLookup in Python Shell and Multi-Release Solution](1324_revitlookup_python.htm)
+- [ADN Labs Xtra, Multi-Version Add-Ins and CNC Direct](1332_multi_version_xtra.htm)
 
 Today, Olivier 'Vilo' Bastide of [BBS Slama](http://www.bbs-slama.com), *éditeur de logiciels de calculs thermiques*,
 thermal calculation software editor, suggests a different and simpler approach making use of the `TargetFrameworks` functionality, and a further enhancement to that using the `Import` tag.
@@ -76,7 +76,7 @@ I'm personally developing 6 projects for Revit, and I have to compile each one f
 Source code is (thankfully) unique using conditional coding, but having all these projects is not elegant at all.
  
 You recently posted 
-a [suggestion for handling this](http://thebuildingcoder.typepad.com/blog/2018/05/multi-target-add-ins-ai-markdown-and-job-offer.html#2), but after some tuning I couldn't manage to make it work as I wanted.
+a [suggestion for handling this](1657_multi_addin_ai_md_job.html#2), but after some tuning I couldn't manage to make it work as I wanted.
 
 So, I dug into new `csproj` format (introduced with .NET Core) and managed to find a pretty simple solution to target all Revit versions with only one `csproj` and source code per project.
  
@@ -326,7 +326,7 @@ I see that, e.g., `LAYER` in English is the same in German, but `SOLID` is `VOLU
 I would prefer a table instead of an HTML page for more automation.
 
 **Answer:** I provided an answer to a similar question
-on [CAD terminology translation back in 2014](http://thebuildingcoder.typepad.com/blog/2014/10/autodesk-open-source-all-over-germany-and-japan.html#4).
+on [CAD terminology translation back in 2014](1228_open_source_au_japan.htm#4).
 
 It mentions a number of useful resources back then.
 

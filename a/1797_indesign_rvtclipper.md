@@ -96,7 +96,7 @@ Håvard Leding of [Symetri](https://www.symetri.com) shares a new cool 2D Boolea
 This might be of interest to The Building Coder blog.
 
 I worked up your Revit implementation of the Clipper library presented in the article 
-on [Boolean operations for 2D polygons](https://thebuildingcoder.typepad.com/blog/2013/09/boolean-operations-for-2d-polygons.html).
+on [Boolean operations for 2D polygons](1011_booleans_on_polygons.htm).
 
 I added a UI where you can see the result of the different options in real-time.
 
@@ -199,7 +199,7 @@ I copied his handout [AU2019OneClickModelReports.pdf](zip/AU2019OneClickModelRep
 
 ####<a name="3.2"></a> Addendum &ndash; CodeProject on InDesign
 
-Mark Ackerley added a [comment on this](https://thebuildingcoder.typepad.com/blog/2019/11/automated-pdf-report-and-2d-sketch-booleans.html#comment-4682012920):
+Mark Ackerley added a [comment on this](1797_indesign_rvtclipper.html#comment-4682012920):
 
 Re. the Indesign report, here's another link that is mentioned in the presentation and I found very useful:
 

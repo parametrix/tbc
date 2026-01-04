@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1258163 [Opening family files] -->
@@ -9,8 +40,7 @@
 <p>Here is a question that comes up from time to time on how to open and display a project or family file in the Revit user interface.
 I mentioned a workaround in the answer to a 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/09/detail-lines.html?cid=6a00e553e1689788330120a6cf0e3e970b#comment-6a00e553e1689788330120a6cf0e3e970b 
-">
+<a href="0214_detail_lines.htm">
 comment by Nadim</a>,
 
 and now I think it is time to promote this little information nugget to a proper post to make it easier to find.
@@ -27,7 +57,7 @@ There is currently no API method at all to make a document current in the Revit 
 There is a workaround, though, that several people have used successfully:
 you can use Process.Start as described in the comments on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/09/debugging-a-rev.html?cid=6a00e553e16897883301156fc1fed8970b#comment-6a00e553e16897883301156fc1fed8970b">
+<a href="0008_debugging.htm">
 debugging an add-in</a>. 
 
 Here is a little console application demonstrating such a call:
@@ -45,3 +75,12 @@ Here is a little console application demonstrating such a call:
 
 <p>This uses the existing instance of Revit if it is already running.
 It also works fine to start up Revit if you replace the project file "C:/tmp/wall.rvt" by the Revit application executable, although in that case obviously no document is opened.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

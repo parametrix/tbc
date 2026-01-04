@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -178,7 +209,7 @@ the <a href="https://github.com/Zizobiko25/Pipe-Split">Pipe-Split GitHub reposit
 <p><strong>Question:</strong> I wanted to call the Split Element (SL) command through API and wants to give the filter to select only Pipe with predefined length to split.</p>
 <p>Can you please help us with this?</p>
 <p><strong>Answer:</strong> You can call many built-in Revit commands using
-the <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.3"><code>PostCommand</code> API</a>.</p>
+the <span class="unavailable-link"><code>PostCommand</code> API</span>.</p>
 <p>However, this just launches the built-in command as is, prompting the user for all further input and other interaction.</p>
 <p>Therefore, if you wish to drive this completely automatically, it will be hard to make use of the built-in command.</p>
 <!--
@@ -211,16 +242,16 @@ Basically, we want to exactly what this tool does (screenshots included as well)
 <p><strong>Answer:</strong> I believe that one possible approach to achieve this would be to place the fitting in the appropriate position in the model first using <code>NewFamilyInstance</code>, and then connect it to the neighbouring conduits.
 I would expect them to adjust automatically.</p>
 <p>I discovered and demonstrated that approach in the series of posts
-on <a href="http://thebuildingcoder.typepad.com/blog/2014/01/final-rolling-offset-using-pipecreate.html">implementing a rolling offset</a>.</p>
+on <a href="1093_pipe_create.htm">implementing a rolling offset</a>.</p>
 <p>To make sure I am not missing anything, I am checking with the development team for you as well.</p>
 <p>Meanwhile, here are some other discussions on placing similar fittings:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/05/cable-tray-orientation-and-fittings.html">Cable Tray Orientation and Fittings</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/02/use-of-newtakeofffitting-on-a-duct.html">Use of NewTakeOffFitting on a Duct</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/02/set-elbow-fitting-type.html">Set Elbow Fitting Type</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/04/use-of-newtakeofffitting-on-a-pipe.html">Use of NewTakeOffFitting on a Pipe</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/01/newelbowfitting-easily-places-rolling-offset-elbow-fittings.html">Simpler Rolling Offset Using NewElbowFitting</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/10/newcrossfitting-connection-order.html">NewCrossFitting Connection Order</a></li>
+<li><a href="0366_cable_tray_fitting.htm">Cable Tray Orientation and Fittings</a></li>
+<li><a href="0529_newtakeofffitting_duct.htm">Use of NewTakeOffFitting on a Duct</a></li>
+<li><a href="0535_set_elbow_fitting_type.htm">Set Elbow Fitting Type</a></li>
+<li><a href="0564_newtakeofffitting_pipe.htm">Use of NewTakeOffFitting on a Pipe</a></li>
+<li><a href="1091_newelbowfitting.htm">Simpler Rolling Offset Using NewElbowFitting</a></li>
+<li><a href="1233_newcrossfitting.htm">NewCrossFitting Connection Order</a></li>
 </ul>
 <p>The development team added some more detailed advice:</p>
 <p>You can use <code>Document.Create.NewElbowFitting</code> taking two <code>Connector</code> arguments.</p>
@@ -281,3 +312,11 @@ on <a href="http://thebuildingcoder.typepad.com/blog/2014/01/final-rolling-offse
 <br/>please
 <br/>please
 <br/>please I can't breathe"</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

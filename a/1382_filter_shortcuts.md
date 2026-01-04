@@ -112,7 +112,7 @@ As soon as you use any kind of .NET operation to filter that data, you are reque
 Regardless of what you are searching for, doing it in .NET instead of using a built-in filter is guaranteed to double the execution time and halve the performance.
 
 I tested various combinations of this quite extensively, starting with
-the [collector benchmark](http://thebuildingcoder.typepad.com/blog/2010/04/collector-benchmark.html) in 2010.
+the [collector benchmark](0333_collector_benchmark.htm) in 2010.
 
 You can find more examples by searching the Internet for CmdCollectorPerformance, optionally adding 'revit api' or 'building coder'.
 
@@ -120,7 +120,7 @@ They refer to
 the [CmdCollectorPerformance.cs module](https://github.com/jeremytammik/the_building_coder_samples/blob/master/BuildingCoder/BuildingCoder/CmdCollectorPerformance.cs)
 in [The Building Coder samples](https://github.com/jeremytammik/the_building_coder_samples).
 
-Your question 2 regarding the optional use of `ToElements` is answered in my discussion of [ToElementIds performance](http://thebuildingcoder.typepad.com/blog/2012/12/toelementids-performance.html).
+Your question 2 regarding the optional use of `ToElements` is answered in my discussion of [ToElementIds performance](0872_toelementids_perf.htm).
 
 In short, you should avoid it unless you really need it.
 
@@ -129,7 +129,7 @@ One situation in which it might be useful is when you really need to determine t
 A more common need might be to access the element ids.
 
 I recently discussed an example that demonstrates the imperative need
-to [close the collector before deleting elements](http://thebuildingcoder.typepad.com/blog/2015/12/au-ioc-banks-and-not-to-delete-while-iterating.html#2),
+to [close the collector before deleting elements](1381_au_3_filter_delete.html#2),
 in which case `ToElementIds` can come in handy.
 
 By now, I hope that it is clear that your sample 3 is an utter abomination and could be regarded as verging on criminal inefficiency.
@@ -144,7 +144,7 @@ The collector performance samples pointed to above provide several samples of av
 
 Please also explore and understand the related discussion
 on [FindElement and collector
-optimisation](http://thebuildingcoder.typepad.com/blog/2012/09/findelement-and-collector-optimisation.html).
+optimisation](0832_find_element_optimise.htm).
 
 Now back to the overview that I have been planning to publish for so long:
 

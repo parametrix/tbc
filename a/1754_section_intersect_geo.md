@@ -80,7 +80,7 @@ Is there any predefined function to receive the Solid or BoundingBox inside the 
 ####<a name="3"></a> Solution Options, Geometry Elements and View Settings
 
 It is definitely possible, as was explained by Saeed Karshenas in his demonstration
-of [visualising section view geometry in OpelGL](https://thebuildingcoder.typepad.com/blog/2011/08/section-view-geometry.html).
+of [visualising section view geometry in OpelGL](0632_section_view_geom.htm).
 
 To achieve this, you need to specify the section view in the options passed in to get the geometry:
 

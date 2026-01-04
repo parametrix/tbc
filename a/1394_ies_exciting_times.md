@@ -187,7 +187,7 @@ Note that reading and writing the `FBX_LIGHT_PHOTOMETRIC_FILE_CACHE` directly is
 
 
 **Addendum 2 by Joshua Lumley**
-in [his comment below](https://thebuildingcoder.typepad.com/blog/2016/01/loading-an-ies-photometric-web-and-exciting-times.html#comment-5063406227):
+in [his comment below](1394_ies_exciting_times.html#comment-5063406227):
 
 Here is the tricky part; the encoding directive is `using System.Text`:
 

@@ -56,7 +56,7 @@ My colleague Eason Kang researched how to access BIM360 file links in a Revit pr
 In Revit 2019, this method no longer works.
 
 - `TransmissionData` `GetAllExternalFileReferenceIds`, used in the sample
-to [list linked files and `TransmissionData`](http://thebuildingcoder.typepad.com/blog/2011/05/list-linked-files-and-transmissiondata.html),
+to [list linked files and `TransmissionData`](0583_list_links.htm),
 does not report links hosted in BIM360.
 It reports local files that are linked only.
 This is an old sample.
@@ -191,9 +191,9 @@ in [release 2020.0.146.0](https://github.com/jeremytammik/the_building_coder_sam
 ####<a name="3"></a> Retrieve RVT Preview Thumbnail Image with Python
 
 Franco Tonutti researched and solved how to retrieve the RVT preview thumbnail image with Python
-in [his](https://thebuildingcoder.typepad.com/blog/2017/06/determining-rvt-file-version-using-python.html#comment-4484205626)
-[comments](https://thebuildingcoder.typepad.com/blog/2017/06/determining-rvt-file-version-using-python.html#comment-4486812442)
-on [determining the RVT file version using Python](https://thebuildingcoder.typepad.com/blog/2017/06/determining-rvt-file-version-using-python.html)
+in [his](1570_rvt_version_py.html#comment-4484205626)
+[comments](1570_rvt_version_py.html#comment-4486812442)
+on [determining the RVT file version using Python](1570_rvt_version_py.html)
 
 **Question:** Hi Jeremy, how can I get the preview image of a .rfa file?
 
@@ -222,11 +222,11 @@ I'm trying the following without success:
 
 Please take a look at the other explorations reading RVT files without using the Revit API:
 
-- [Open Revit OLE Storage](http://thebuildingcoder.typepad.com/blog/2010/06/open-revit-ole-storage.html)
-- [Basic File Info and RVT File Version](http://thebuildingcoder.typepad.com/blog/2013/01/basic-file-info-and-rvt-file-version.html)
-- [Custom File Properties](https://thebuildingcoder.typepad.com/blog/2015/09/lunar-eclipse-and-custom-file-properties.html#3)
-- [Reading an RVT File without Revit](http://thebuildingcoder.typepad.com/blog/2016/02/reading-an-rvt-file-without-revit.html)
-- [Determining RVT File Version Using Python](http://thebuildingcoder.typepad.com/blog/2017/06/determining-rvt-file-version-using-python.html)
+- [Open Revit OLE Storage](0391_open_ole_storage.htm)
+- [Basic File Info and RVT File Version](0887_rvt_file_version.htm)
+- [Custom File Properties](1363_custom_file_prop.html#3)
+- [Reading an RVT File without Revit](1407_read_rvt_without_revit.html)
+- [Determining RVT File Version Using Python](1570_rvt_version_py.html)
 
 **Response:** Thank you very much.
 
@@ -267,7 +267,7 @@ def get_rvt_preview(rvt_file, png_path):
 
 I already mentioned
 Paolo Serra's [Dynamo Primer](https://primer.dynamobim.org)
-discussing [Revit API versus Dynamo for Revit](https://thebuildingcoder.typepad.com/blog/2018/12/dynamo-symbol-vs-type-and-exporter-exception.html#2).
+discussing [Revit API versus Dynamo for Revit](1710_dynamo_type_inst_except.html#2).
 
 Here is another very valuable and extensive related resource of his, covering numerous aspects of Dynamo, its features, Python, the Revit API and the relationships between them.
 

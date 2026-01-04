@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -23,30 +54,30 @@ No rest for the wicked, as the English say.
 
 <p>In the overview of Kevin Vandecar's 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/filtered-element-collectors.html">
+<a href="0463_filtered_element_collector.htm">
 Revit performance tips and tricks</a> presentation at the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/devcamp-devlabs-and-updated-api-training-schedule.html">
+<a href="0329_devcamp_training.htm">
 AEC DevCamp</a> conference
 
 in Boston in June, which formed the base of my  
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/11/autodesk-university-2010-class-materials.html">
+<a href="0478_au_2010_material.htm">
 AU class CP234-2</a> on
 
 the same topic, I promised to publish a list of the filtered element collector benchmarking samples he created.
 
 <p>I fulfilled part of that promise by discussing the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/level-filter-benchmark.html">
+<a href="0464_level_filter_benchmark.htm">
 level filter benchmark</a> a 
 
 while ago, and the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/xml-family-usage-report.html">
+<a href="0493_xml_family_usage.htm">
 XML family usage report</a> and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/find-intersecting-elements.html">
+<a href="0494_find_intersecting.htm">
 intersecting element retrieval</a> in
 
 the past few days.
@@ -59,14 +90,14 @@ I added links to those posts in the list below.
 <li>Basic filtering examples
 <ol>
 <li>Structural material type and instance usage, Boolean combinations and inversion
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/12/find-intersecting-elements.html">
+<li><a href="0494_find_intersecting.htm">
 Bounding box intersection, view id and exclusion</a>
 </ol>
 <li>LINQ examples
 <ol>
 <li>Family instance, furniture category, material black textile
 <li>Non-native mullion class
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/12/xml-family-usage-report.html">
+<li><a href="0493_xml_family_usage.htm">
 XML report of family and instance usage</a>
 </ol>
 <li>Parameter filter samples
@@ -78,7 +109,7 @@ XML report of family and instance usage</a>
 </ol>
 <li>Parameter filter benchmark
 <ol>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/10/level-filter-benchmark.html">
+<li><a href="0464_level_filter_benchmark.htm">
 Compare performance of level filter versus parameter filter versus LINQ</a>
 </ol>
 <li>Regeneration and Auto-Join Examples
@@ -98,7 +129,7 @@ AU10_CP234-2_Revit_2011_API_Optimization.zip</a> of
 my AU class material including the source code and Visual Studio solution. 
 I removed the sample models, since they are unchanged from my previous posting together with the class handout and presentation in my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/11/autodesk-university-2010-class-materials.html">
+<a href="0478_au_2010_material.htm">
 AU 2010 class materials</a>.
 
 <p>As always, the sample code performs minimal error checking, and you are obviously encouraged to add adequate checks in your own code.
@@ -140,7 +171,7 @@ whereas the new filtered element collector takes 10 milliseconds for the same ta
 
 <p>I already discussed the filter example 2 command implemented by FilterEx2 to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/find-intersecting-elements.html">
+<a href="0494_find_intersecting.htm">
 find all neighbouring elements of a selected one</a> in 
 
 a separate post. 
@@ -176,10 +207,10 @@ Some of the classes available in the Revit API have been added for the sake of d
 For a full list of the 15 non-native classes that cannot be filtered for, please refer to the reference documentation for ElementClassFilter. 
 I discussed a couple of other examples in the past, e.g. the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/08/filtering-for-a-nonnative-class.html">
+<a href="0426_filter_non_native_class.htm">
 AnnotationSymbol</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/measurepanelarea-update.html">
+<a href="0461_measurepanelarea.htm">
 Panel</a> classes.
 
 <p>LINQ provides a handy way to filter for these non-native classes. 
@@ -202,7 +233,7 @@ Here LINQ provides a very powerful way of manipulating data very fast.
 It uses one collector to retrieve all families in the document, retrieves all instances of each, and writes a structured tree report to XML. 
 For more details, please refer to the recent
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/xml-family-usage-report.html">
+<a href="0493_xml_family_usage.htm">
 detailed discussion</a> of this.
 
 <h4>Revit Filters versus LINQ</h4>
@@ -210,7 +241,7 @@ detailed discussion</a> of this.
 <p>The parameter filter example 2 implemented by FilterParameterEx2 is of special interest, since it benchmarks and compares the performance of the built-in Revit filtering functionality provided by the level and parameter filters with the performance achieved by post-processing the filter results using LINQ. 
 Happily, 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/level-filter-benchmark.html">
+<a href="0464_level_filter_benchmark.htm">
 the built-in filters do prove to be more efficient</a>.
 
 <p>Kevin's powerful collection of samples shows that significant enhancements are possible using appropriate filters, regeneration options and transaction modes, and that it pays off to compare various alternatives.
@@ -218,7 +249,7 @@ the built-in filters do prove to be more efficient</a>.
 <!--
 <p>I implemented some 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/collector-benchmark.html">
+<a href="0333_collector_benchmark.htm">
 filtered element collector benchmarks</a> of 
 
 my own early on in the Revit 2011 release cycle.
@@ -255,25 +286,34 @@ my own early on in the Revit 2011 release cycle.
   461_measurepanelarea.htm
 
 <ul>
-<li>My first Revit 2011 plug-in, the <a href="http://thebuildingcoder.typepad.com/blog/2010/05/pipe-to-conduit-converter.html">pipe to conduit converter</a>.
-<li>A very simple collector to retrieve <a href="http://thebuildingcoder.typepad.com/blog/2010/06/export-data-to-xml.html">view sheets</a>.
-<li>Some utility methods to filter for <a href="http://thebuildingcoder.typepad.com/blog/2010/06/set-tag-type.html">levels and types</a> such as door type and a door tag type symbol</a>.
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/04/retrieving-newly-created-elements-in-revit-2011.html">newly added elements</a>.
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/04/retrieve-stairs-on-level.html">stairs on a level</a>.
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/04/filter-for-views-and-istemplate-predicate.html">views</a>.
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/05/get-type-id-and-preview-image.html">family instances and their family</a>.
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/05/determine-sheet-size.html">title block symbols and instances</a> to determine the sheet size.
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/06/display-webcam-image-on-building-element-face.html#3">AVF display styles with a specific name</a>.
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/06/retrieve-mep-elements-and-connectors.html">MEP elements</a>.
-<li>A <a href="http://thebuildingcoder.typepad.com/blog/2010/04/collector-benchmark.html">collector performance benchmark</a>.
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/04/anonymous-methods-in-vb.html">Using LINQ and anonymous methods in VB</a>.
-<li>A RevitLookup update and <a href="http://thebuildingcoder.typepad.com/blog/2010/05/revitlookup-update.html">retrieving all database elements</a>.
-<li>Why <a href="http://thebuildingcoder.typepad.com/blog/2010/06/filter-for-all-elements.html"><strong>not</strong> to retrieve all database elements</a>.
-<li>Many examples of <a href="http://thebuildingcoder.typepad.com/blog/2010/06/parameter-filter.html">parameter filters</a>.
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/06/element-name-parameter-filter-correction.html">Parameter filter for an element name</a>.
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/08/elementparameterfilter-with-a-shared-parameter.html">Parameter filter for a shared parameter</a>.
-<li>Filtering for a <a href="http://thebuildingcoder.typepad.com/blog/2010/08/filtering-for-a-nonnative-class.html">non-native class</a>, i.e. "an element type that exists in the API, but not in Revit's native object model".
-<li>Resolving another non-native class issue, the Panel class in the <a href="http://thebuildingcoder.typepad.com/blog/2010/10/measurepanelarea_update.html">MeasurePanelArea</a> SDK sample.
-<li>Filter for <a href="http://thebuildingcoder.typepad.com/blog/2010/09/filter-for-view-and-phase.html">view and phase</a>.
+<li>My first Revit 2011 plug-in, the <a href="0360_p2c.htm">pipe to conduit converter</a>.
+<li>A very simple collector to retrieve <a href="0392_export_xml.htm">view sheets</a>.
+<li>Some utility methods to filter for <a href="0395_set_tag_type.htm">levels and types</a> such as door type and a door tag type symbol</a>.
+<li>Retrieving <a href="0344_mirror_new_elements.htm">newly added elements</a>.
+<li>Retrieving <a href="0346_stairs_on_level.htm">stairs on a level</a>.
+<li>Retrieving <a href="0355_view_filter.htm">views</a>.
+<li>Retrieving <a href="0359_preview_image.htm">family instances and their family</a>.
+<li>Retrieving <a href="0371_sheet_size.htm">title block symbols and instances</a> to determine the sheet size.
+<li>Retrieving <a href="0380_revitwebcam.htm#3">AVF display styles with a specific name</a>.
+<li>Retrieving <a href="0398_retrieve_mep_elements.htm">MEP elements</a>.
+<li>A <a href="0333_collector_benchmark.htm">collector performance benchmark</a>.
+<li><a href="0334_anonymous_methods_vb.htm">Using LINQ and anonymous methods in VB</a>.
+<li>A RevitLookup update and <a href="0370_revitlookup.htm">retrieving all database elements</a>.
+<li>Why <a href="0397_filter_all_elements.htm"><strong>not</strong> to retrieve all database elements</a>.
+<li>Many examples of <a href="0383_param_filter.htm">parameter filters</a>.
+<li><a href="0384_elem_name_param_filter.htm">Parameter filter for an element name</a>.
+<li><a href="0423_filter_shared_param.htm">Parameter filter for a shared parameter</a>.
+<li>Filtering for a <a href="0426_filter_non_native_class.htm">non-native class</a>, i.e. "an element type that exists in the API, but not in Revit's native object model".
+<li>Resolving another non-native class issue, the Panel class in the <span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/2010/10/measurepanelarea_update.html">MeasurePanelArea <em>(post unavailable)</em></span> SDK sample.
+<li>Filter for <a href="0446_filter_view_phase.htm">view and phase</a>.
 </ul>
 -->
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

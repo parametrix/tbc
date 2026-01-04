@@ -167,7 +167,7 @@ For the moment, just using the underlying integers is the safest way to go, I gu
 ####<a name="4"></a> RevitLookup Build and Install
 
 Moving on to more positive news, we were blessed last week with a very exciting contribution to create
-a [modeless version of RevitLookup](https://thebuildingcoder.typepad.com/blog/2021/10/bridges-regeneration-and-modeless-revitlookup.html).
+a [modeless version of RevitLookup](1924_modeless_revitlookup.html).
 
 This rapid evolution continues with an untiring stint of contributions
 from Roman [@Nice3point](https://github.com/Nice3point) and
@@ -232,7 +232,7 @@ Ever so many thanks to Roman for all his inspired work moving this tool forward 
 Until now, you could download the most recent build of RevitLookup
 from [lookupbuilds.com](https://lookupbuilds.com),
 provided by [Build Informed](https://www.buildinformed.com),
-[implemented back in 2017](https://thebuildingcoder.typepad.com/blog/2017/04/forgefader-ui-lookup-builds-purge-and-room-instances.html#3) and
+[implemented back in 2017](1548_room_instance_purge.html#3) and
 diligently maintained ever since by [Peter Hirn](https://github.com/peterhirn).
 
 The new build system broke that and replaces it, as discussed in
@@ -268,7 +268,7 @@ With the revamped version of The Building Coder Samples, I also finally moved fr
 I hope I am the last of the Revit add-in developer community to do so.
 
 It lacked the `Copy as HTML` option that I use for C# source code colourisation, so I revisited my 2019 note
-on [updating Copy as HTML](https://thebuildingcoder.typepad.com/blog/2019/09/face-intersect-face-is-unbounded.html#5) and
+on [updating Copy as HTML](1773_face_intersect_face.html#5) and
 again installed
 the [Productivity Power Tools 2017/2019](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.ProductivityPowerPack2017) via
 Extensions &gt; Manage Extensions.

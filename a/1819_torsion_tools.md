@@ -76,9 +76,9 @@ More Revit API tutorial material and tools plus a couple of hints from the Revit
 #### <a name="2"></a>Torsion Tools Two
 
 Continuing right on from the
-fruitful [collection of videos and tutorials](https://thebuildingcoder.typepad.com/blog/2020/02/search-for-getting-started-tutorials-and-videos.html) presented
+fruitful [collection of videos and tutorials](1818_video_macro_tutor.html) presented
 yesterday, an update to
-the [Torsion Tools add-in template with code examples for common tools](https://thebuildingcoder.typepad.com/blog/2020/01/torsion-tools-command-event-and-info-in-da4r.html) introduced last week:
+the [Torsion Tools add-in template with code examples for common tools](1813_torsion_tools.html) introduced last week:
 
 - [Torsion Tools Update #2 &ndash; Copy Linked Legends, Schedules and Reference Views](https://youtu.be/C2dBRqXl9UA):
 

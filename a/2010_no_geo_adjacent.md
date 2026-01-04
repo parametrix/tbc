@@ -153,7 +153,7 @@ Just make the bounding box a bit bigger than the beam.
 If worst comes to worst, you can also use the `ReferenceIntersector` to shoot rays from the beam to detect the neighbouring slab.
 
 Finally, though, and best of all, 11 years ago, The Building Coder presented a solution
-to [filter for touching beams using solid intersection](https://thebuildingcoder.typepad.com/blog/2012/09/filter-for-touching-beams-using-solid-intersection.html)
+to [filter for touching beams using solid intersection](0823_filter_touching_beam.htm)
 
 **Response:** Thank you, that solution helped a lot.
 I made a solution where I used the location line and some transform functions.
@@ -168,7 +168,7 @@ How can that be?
 
 Well, the dimensioning requires a reference, and since the reference itself disappears when the geometry is gone, Revit uses the concept of a stable representation of the reference to store information about which reference we mean, even if the geometry is gone,
 cf., e.g., this brief explanation
-of [reference and stable representation](https://thebuildingcoder.typepad.com/blog/2012/05/selecting-a-face-in-a-linked-file.html#1).
+of [reference and stable representation](0766_sel_face_linked_file.htm#1).
 
 ####<a name="6"></a> CUT_EDGE Reference Voodoo
 

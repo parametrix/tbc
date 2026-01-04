@@ -184,9 +184,9 @@ Thank you, ricaun, for the cool project.
 
 This reminds me of my precursor RevitWebcam sample making use of the AVF Analysis Visualisation Framework to display live webcam images on Revit BIM element faces in real time:
 
-- [Display Webcam Image on Building Element Face](http://thebuildingcoder.typepad.com/blog/2010/06/display-webcam-image-on-building-element-face.html)
-- [Revit Webcam 2012](http://thebuildingcoder.typepad.com/blog/2012/02/revit-webcam-2012.html)
-- [RevitWebcam 2017](http://thebuildingcoder.typepad.com/blog/2017/03/rvtfader-avf-ray-tracing-and-signal-attenuation.html)
+- [Display Webcam Image on Building Element Face](0380_revitwebcam.htm)
+- [Revit Webcam 2012](0718_revitwebcam_2012.htm)
+- [RevitWebcam 2017](1542_avf_intersect_fader.html)
 
 ####<a name="4"></a> Rvt-App Browses BasicFileInfo
 

@@ -58,7 +58,7 @@ Each of these samples consists of a C# .NET Revit API desktop add-in and a web s
 I created a stop-gap
 version [roomedit3dv2](https://github.com/jeremytammik/model.derivative.api-nodejs-sample-roomedit3d) of
 the `roomedit3d` sample including [Forge OAuth authentication](https://developer.autodesk.com/en/docs/oauth/v2/overview)
-for my presentation on [Freeing Your BIM Data](http://thebuildingcoder.typepad.com/blog/2016/06/free-your-bim-data-and-roomedit3d-thee-legged-forge-oauth.html) at
+for my presentation on [Freeing Your BIM Data](1447_devcon_roomedit3dv2.html) at
 the June 2016 Forge DevCon.
 
 That is not currently maintained, however, and my plan is to replace it with the new `roomedit3dv3` project.
@@ -203,7 +203,7 @@ Many thanks to Augusto for putting together these very succinct and helpful guid
 
 People keep asking about how to access different Revit views in the Forge viewer.
 
-We already discussed [access to the 3D views](http://thebuildingcoder.typepad.com/blog/2016/07/selecting-views-for-forge-translation.html),
+We already discussed [access to the 3D views](1453_exportviewselector.html),
 which is kind of tricky.
 
 Access to the 2D views is much more straightforward, though, as we can see in the StackOverflow question raised by Greg Bluntzer

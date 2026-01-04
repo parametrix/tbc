@@ -33,9 +33,9 @@ As per API documentation, this operation should not be invalid: no open transact
 However, trying to do so throws an `InvalidOperationException` with the message "Setting active view is temporarily disabled". 
 
 Closest explanation I could reach to is
-Jeremy's [casual reply](http://thebuildingcoder.typepad.com/blog/2011/09/activate-a-3d-view.html#comment-2097342515) "the system may be busy with something else"
-to a [blog comment](http://thebuildingcoder.typepad.com/blog/2011/09/activate-a-3d-view.html#comment-2097342519)
-on [activating a 3D View](http://thebuildingcoder.typepad.com/blog/2011/09/activate-a-3d-view.html).
+Jeremy's [casual reply](0653_activate_3d_view.htm#comment-2097342515) "the system may be busy with something else"
+to a [blog comment](0653_activate_3d_view.htm#comment-2097342519)
+on [activating a 3D View](0653_activate_3d_view.htm).
 
 In a sense, that is the case &ndash; the system is 'busy', because the `Idling` event is being processed at the moment.
  
@@ -46,8 +46,8 @@ Looking forward to expert comments on whether setting `ActiveView` is indeed inv
 **Answer 1:** As a workaround, would it be possible to select the view (using the API), then use `PostCommand` to set the active view? Then wait for idling again...
 
 **Answer 2:** There is a `UIDocument.RequestViewChange` method made for the case you described.
-It is included in the [Revit 2015 API](http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html)
-[Document API additions](http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html#4.02):
+It is included in the [Revit 2015 API](1141_whats_new_2015.htm)
+[Document API additions](1141_whats_new_2015.htm#4.02):
 
 #### <a name="2"></a><span style="color:darkblue">UIDocument Operations and Additions</span>
 

@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -6,6 +36,7 @@
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -479,11 +510,11 @@ project <a href="zip/hdv_ModelessAddinSolution.zip">ModelessAddinSolution.zip</a
 <p>Very many thanks to Hank for his persistent research and sharing this valuable solution.</p>
 <h4><a name="10"></a>Warning! Things Will Change in the Next Release</h4>
 <p>I myself always used the <code>JtWindowHandle</code> class to retrieve the main Revit window handle in the past, and use that
-to <a href="http://thebuildingcoder.typepad.com/blog/2010/06/revit-parent-window.html">set up the parent window relationship for my modeless forms</a> for
+to <a href="0400_revit_parent_window.htm">set up the parent window relationship for my modeless forms</a> for
 simple single modeless forms.</p>
 <p>I have been warned by the development team that this method will cease to work in the next major release of Revit, after Revit 2018:</p>
 <p>A developer followed the advice 
-to <a href="http://thebuildingcoder.typepad.com/blog/2012/10/ensure-wpf-add-in-remains-in-foreground.html">ensure a WPF add-in remains in foreground</a> in
+to <a href="0850_wpf_foreground.htm">ensure a WPF add-in remains in foreground</a> in
 building a new add-in. </p>
 <p>This was written about 5 years ago.</p>
 <p>As of the next major release of Revit, the method described there will no longer work.</p>
@@ -492,3 +523,11 @@ building a new add-in. </p>
 <li>Get the handle of the Revit main window.</li>
 <li>Return the main window handle of the Revit application. This handle should be used when displaying modal dialogs and message windows to ensure that they are properly parented. This property replaces the <em>System.Diagnostics.Process.GetCurrentProcess()</em> <code>MainWindowHandle</code> property.</li>
 </ul>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

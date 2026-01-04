@@ -74,10 +74,10 @@ the [Revit Idea Station](http://forums.autodesk.com/t5/revit-ideas/idb-p/302/):
 
 - [Revit Idea Station](http://forums.autodesk.com/t5/revit-ideas/idb-p/302/)
 - [Tag: API](http://forums.autodesk.com/t5/tag/API/tg-p/board-id/302)
-- [Introducing the Revit Idea Station](http://thebuildingcoder.typepad.com/blog/2016/05/idea-station-and-textnote-bounding-box.html#2)
+- [Introducing the Revit Idea Station](1440_idea_station_txt_bb.html#2)
 
 I mentioned the lively discussion on both of these topics in the notes from
-the [Revit API discussion panel](http://thebuildingcoder.typepad.com/blog/2016/10/rtc-revit-api-panel-idea-station-edit-and-continue.html).
+the [Revit API discussion panel](1488_revit_api_panel.html).
 
 
 #### <a name="5"></a>Revit Today and Tomorrow

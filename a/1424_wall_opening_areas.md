@@ -19,9 +19,9 @@ Håvard added some clarifications and background information on his sample code 
 ### More on Wall Opening Areas per Room
 
 Håvard added some clarifications and background information on his sample code
-to [determine wall opening areas per room](http://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-opening-areas-per-room.html):
+to [determine wall opening areas per room](1423_wall_opening_areas.html):
 
-**Question:** I have some questions on [Håvard's initial approaches](http://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-cut-area-for-a-specific-room.html).
+**Question:** I have some questions on [Håvard's initial approaches](1421_wall_cut_area.html).
 
 Using a Boolean subtraction between transient solids from the actual wall and the family symbol sounds like the right track, but I don’t understand the need for the family instance, because the wall already provides the net geometry.
 
@@ -83,7 +83,7 @@ So I guess the best thing is still what we do now done, get the profile and use 
 **Response:** Now I understand.
 I found the same &ndash; basically the Room volume seems like a '2.5D object' with the 'profile' detected at the specified bottom elevation and it does NOT then detect any elements which may start 'higher'. I can understand why it may be so as it is hard to 'close' the volume in all cases w/o making some kind of simplification assumption.
 
-**Comment:** Arif Hanif added another [comment](http://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-opening-areas-per-room.html#comment-2622637976) to the post, saying, 'Very elegant; I was post processing with clipper. I will adapt my code for spaces in linked models. Håvard, awesome job!'
+**Comment:** Arif Hanif added another [comment](1423_wall_opening_areas.html#comment-2622637976) to the post, saying, 'Very elegant; I was post processing with clipper. I will adapt my code for spaces in linked models. Håvard, awesome job!'
 
 **Answer:** Thanks Arif.
 Linked models is on my todo-list as well.

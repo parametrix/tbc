@@ -63,7 +63,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 ### Revit API Roundtable Notes
 
 Boris Shafiro hosted the virtual 
-[Revit API expert and feedback roundtable](https://thebuildingcoder.typepad.com/blog/2020/11/join-the-revit-api-expert-roundtable-and-feedback.html)
+[Revit API expert and feedback roundtable](1877_au_roundtable.html)
 on Thursday last week, 19 November 2020, as part of the Autodesk University Idea Exchange.
 
 Over 20 participants attended from all around the world.
@@ -94,7 +94,7 @@ Notes:
 Q Jorge Villaroel maintains a detailing add-in. Updating the solution for each new release of the Revit API requires some work, e.g., copy solution, update references to new DLLs, update deprecated calls, etc. Could this be simplified? Do you have a recommendation on how to handle this? How do you do it yourselves?
 
 A This topic has been discussed repeatedly in the Revit API discussion forum and The Building Coder, e.g.,
-the [Revit add-in `dotnet` template](https://thebuildingcoder.typepad.com/blog/2020/11/bim360-management-dotnet-template-and-prism-goodies.html#4) just last week.
+the [Revit add-in `dotnet` template](1875_dotnet_template_prism.html#4) just last week.
 Look into conditional compiles.
 You can set up different VS configuration profiles for different Revit versions and then edit your `CSPROJ` file to selective load Revit DLLs based on values set in the respective config.
 
@@ -105,7 +105,7 @@ A Scott: we are making this change for later extensibility and being less fixed 
 Q Noam Ronen: How to implement QA testing for add-ins?
 
 A The Building Coder provides a topic group
-on [Unit Testing](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.16).
+on Unit Testing *(link unavailable)*.
 Internally, the Revit team uses journal files for testing.
 Forge Design Automation for Revit might help make regular tests possible via automation of running the tests.
 

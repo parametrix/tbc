@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="http://thebuildingcoder.typepad.com/google-code-prettify/run_prettify.js"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -283,8 +314,8 @@ It always returns "" and all the files saved look like this "/folder/.rfa", when
 <p>I discussed the topic of reloading families on The Building Coder in 2011:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/06/reloading-a-family.html">Reloading a family</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/10/reloading-a-family-again.html">Reloading a family again</a></li>
+<li><a href="0597_reload_family.htm">Reloading a family</a></li>
+<li><a href="0660_reload_family.htm">Reloading a family again</a></li>
 </ul>
 
 <p>Some things have changed a little bit since then.</p>
@@ -320,24 +351,24 @@ see the Text Font property that you wish to change, and that looks fine.</p>
 
 <p>I also pointed this out when discussing some
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/05/edit-family-requires-no-transaction.html">
+<a href="0758_edit_family.htm">
 changes in calling the EditDocument method</a> back
 
 in the Revit 2013 timeframe.</p>
 
 <p>There are some further important considerations when
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/06/reloading-a-family.html">
+<a href="0597_reload_family.htm">
 reloading a family</a>.</p>
 
 <p>Actually, here is a complete list of discussions related to reloading families or mentioning the IFamilyLoadOptions interface that might also be useful:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/08/the-revit-family-api.html">The Revit Family API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/02/ifamilyloadoptions-and-gemini.html">IFamilyLoadOptions</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/06/reloading-a-family.html">Reloading a Family</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/10/reloading-a-family-again.html">Reloading a Family Again</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/05/edit-family-requires-no-transaction.html">Edit Family Requires No Transaction</a></li>
+<li><a href="0199_family_api.htm">The Revit Family API</a></li>
+<li><a href="0302_ifamilyloadoptions.htm">IFamilyLoadOptions</a></li>
+<li><a href="0597_reload_family.htm">Reloading a Family</a></li>
+<li><a href="0660_reload_family.htm">Reloading a Family Again</a></li>
+<li><a href="0758_edit_family.htm">Edit Family Requires No Transaction</a></li>
 </ul>
 
 <p>Based on the information provided there, we have to explicitly reload all the modified families after updating their text note type font properties by calling the LoadFamily method on each, and specify an appropriate IFamilyLoadOptions interface implementation when doing so. Here is a suitable one, updated from the discussions listed above:</p>
@@ -661,3 +692,12 @@ Therefore, by tracking the font modifications made, this class also keeps track 
 <p>The complete implementation and Visual Studio solution including the add-in manifest is provided in the
 
 <a href="https://github.com/jeremytammik/SetTextFontInFamilies">SetTextFontInFamilies GitHub repository</a>.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

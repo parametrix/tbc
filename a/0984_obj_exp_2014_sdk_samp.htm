@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -13,12 +44,12 @@
 
 <p>Funnily enough, after dealing with the new Revit 2014
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html">
+<a href="0979_custom_exporter.htm">
 custom exporter framework</a> last
 
 week, and even suggesting rewriting my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html#6">
+<a href="0979_custom_exporter.htm#6">
 Revit 2013 OBJ exporter</a> to make use of it, a request came in for a  version of the
 
 <a href="#2">
@@ -41,7 +72,7 @@ blog page views per country</a>.
 
 <p>As
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html#6">
+<a href="0979_custom_exporter.htm#6">
 mentioned</a>,
 
 it would be nice to rewrite my OBJ exporter for Revit 2013 using the new Revit 2014 custom exporter framework.</p>
@@ -65,18 +96,18 @@ Apparently, the only way to export a Revit model to Octane is via the OBJ file f
 <p><strong>Answer:</strong> In order to provide something immediately, I simply flat ported the Revit 2013 OBJ exporter to Revit 2014.
 I also made use of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/recursively-disable-architecture-mismatch-warning.html">DisableMismatchWarning</a> utility
+<a href="0977_architecture_mismatch.htm">DisableMismatchWarning</a> utility
 
 to fix the processor architecture mismatch warning MSB3270.
 
 <p>The current implementation thus still traverses all the Revit model elements one by one, retrieves their solids, exports the graphics face by face, and determines some, but not all, graphical attributes as described last year:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/06/obj-model-export-considerations.html">OBJ model export considerations</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/06/obj-model-exporter-take-one.html">Take one</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/07/obj-model-exporter-with-colours.html">Colours</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/07/obj-model-exporter-with-multiple-solid-support.html">Multiple solid support</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/07/obj-model-exporter-with-transparency-support.html">Transparency support</a></li>
+<li><a href="0791_obj_export_basics.htm">OBJ model export considerations</a></li>
+<li><a href="0792_obj_export_v1.htm">Take one</a></li>
+<li><a href="0794_obj_export_colour.htm">Colours</a></li>
+<li><a href="0795_obj_export_solids.htm">Multiple solid support</a></li>
+<li><a href="0796_obj_export_transparent.htm">Transparency support</a></li>
 </ul>
 
 <p>Some of that complexity could be removed by rewriting this using the Revit 2014 custom exporter API.
@@ -117,19 +148,19 @@ Maybe the MTL file is not being properly processed.</p>
 
 <p>I already presented the list of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/wishlist-survey-reminder-and-new-sdk-sample-overview.html#3">
+<a href="0963_api_wishlist_survey.htm#3">
 new Revit SDK samples</a> without
 
 going into much detail.</p>
 
 <p>I fleshed it out a bit more for the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/key-concepts-of-the-family-editor.html">
+<a href="0972_family_key_concept.htm">
 Revit API DevCamp in Moscow</a>,
 
 as part of my presentation on the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/revit-2014-api-and-room-plan-view-boundary-polygon-loops.html#2">
+<a href="0916_2014_api_room_loops.htm#2">
 Revit 2014 API</a> news.</p>
 
 <p>The shortest useful summary of the main new API features that I have been able to achieve is this:</p>
@@ -154,10 +185,10 @@ Revit 2014 API</a> news.</p>
 
 <p>For that reason, I recently went to some effort to explore the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/structural-analytical-code-checking-and-results-builder.html">
+<a href="0967_rst_code_check.htm">
 Structural Analysis SDK</a> and the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html">
+<a href="0979_custom_exporter.htm">
 custom exporter framework</a>.</p>
 
 <p>The third item not covered yet concerns the MEP calculations in external services.
@@ -182,7 +213,7 @@ We are working on a good sample for that, hopefully coming soon.</p>
 
 <p>Several of these have already been discussed in the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/revit-2014-api-and-room-plan-view-boundary-polygon-loops.html#2
+<a href="0916_2014_api_room_loops.htm#2
 ">
 DevDays online presentation, recording and sample code</a> and other separate posts.</p>
 
@@ -205,7 +236,7 @@ includes one slide for each sample to provide a quick first impression of each.<
 
 <p>When I visited Harry Mattison in Boston in connection with the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/correct-detail-component-rotation-in-elevation-view.html#6">
+<a href="0959_rotat_detail_comp_elev.htm#6">
 Autodesk Tech Summit</a>, he mentioned that his
 
 <a href="http://boostyourbim.wordpress.com">Boost your BIM</a> page
@@ -221,3 +252,12 @@ views had an extremely unbalanced distribution for different countries, and very
 <p>Rather strange, isn't it?</p>
 
 <p>Thank you, Harry, for this perplexing little item.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

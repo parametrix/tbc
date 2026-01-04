@@ -1,8 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <h3>Geometry Viewers</h3>
 
 <p>The 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/09/geometry-librar.html">previous post</a>
+<a href="0012_geometry_library.htm">previous post</a>
 
 provided an overview of the Revit geometry library and very briefly mentioned some geometry viewers provided in the Revit SDK samples. We will discuss these a little bit more before moving on to some own example code dealing with geometry.</p>
 
@@ -42,3 +72,12 @@ analytical and physical model, and also which view to display. You might thus sa
 ObjectViewer was originally introduced in Revit 9. Another very similar sample named ObjectViewerII was introduced in 9.1. ObjectViewerII was removed in the 2008.2 SDK update, being very similar to ObjectViewer.</p>
 
 <p>For all of the viewers, the steps to run are similar: simply select the element whose geometry or the room whose boundary to display and start the external command. The analytical viewer will check whether any analytical model is available, which requires Revit Structure functionality. In the case of the ObjectViewer, all display views are listed, the detail level can be selected, and analytical and physical model can be switched.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

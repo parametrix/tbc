@@ -122,7 +122,7 @@ a [20-minute YouTube presentation on Deep Research](https://youtu.be/YkCDVn3_wiw
 This functionality already launched in ChatGPT pro.
 
 Some of this functionality was previously available for some other LLMs, e.g.,
-[Claude computer use](https://thebuildingcoder.typepad.com/blog/2024/10/au-api-wishes-and-revit-20253.html#5).
+[Claude computer use](2059_rvt_2025_3.html#5).
 Deep research is still pushing new boundaries, though, e.g., solving a much larger part
 of [Humanity's Last Exam](https://lastexam.ai/).
 Things are certainly moving fast, boundaries pushed and new functionality published daily, with strong competition from many sides.

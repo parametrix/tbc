@@ -154,15 +154,15 @@ The only possibility that I know of that remotely approaches what you are asking
 However, I do not know whether it is possible to launch a call to print within an open transaction group. I suspect not.
 
 Here are two explanations of
-[transactions, sub-transactions, transaction groups](http://thebuildingcoder.typepad.com/blog/2013/04/transactions-sub-transactions-and-transaction-groups.html) and
-[using transaction groups](http://thebuildingcoder.typepad.com/blog/2015/02/using-transaction-groups.html).
+[transactions, sub-transactions, transaction groups](0939_transact_sub_group.htm) and
+[using transaction groups](1280_transaction_group.htm).
 
 That covers about all that you can achieve in this area programmatically.
 
 If you really have to launch the print command, and that cannot be achieved within your own open transaction group, then I guess you would have to take recourse to the Revit Undo command instead, to roll back the already committed transactions.
 
 I do not know whether the Undo command can be driven programmatically, e.g. using the
-[PostCommand method](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.3).
+PostCommand method *(link unavailable)*.
 
 If all else fails, how about saving your document before printing it, creating a copy for the complicated printing process you describe, and then reverting back to the original document once that is done?
 
@@ -201,19 +201,19 @@ I integrated Maxence's enhancements into the
 #### <a name="6"></a>The Revision API and GetRevisionData Update
 
 The following query on how to draw a revision cloud prompted me to update the
-[GetRevisionData add-in](http://thebuildingcoder.typepad.com/blog/2014/06/the-revision-api-and-a-form-on-the-fly.html):
+[GetRevisionData add-in](1168_revision_api.htm):
 
 **Question:**
 I would like to develop a Revit add-in providing functionality similar to Revit's built-in revision cloud with some custom stuff added. Does the Revit API provide the facility to draw revision clouds, or to drawing sketches of them with our custom operator?
 
 **Answer:**
 An entire new Revision API was implemented in Revit 2015, so
-[What's New in the Revit 2015 API](http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html) section on the
-[Revision API](http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html#3.04)
+[What's New in the Revit 2015 API](1141_whats_new_2015.htm) section on the
+[Revision API](1141_whats_new_2015.htm#3.04)
 covers just about all there is to know.
 
 You may also be interested in the
-[GetRevisionData Revit add-in](http://thebuildingcoder.typepad.com/blog/2014/06/the-revision-api-and-a-form-on-the-fly.html).
+[GetRevisionData Revit add-in](1168_revision_api.htm).
 
 I just upgraded the
 [GetRevisionData GitHub repository](https://github.com/jeremytammik/GetRevisionData) to Revit 2016 for you, in

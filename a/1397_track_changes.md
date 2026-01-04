@@ -153,7 +153,7 @@ If a previous snapshot is already present, create a new one, compare them, and r
 You obviously might, if you wish, automatically execute the first action on document load and the second on document save.
 
 If you create an external application to host a button triggering these two action, you would obviously make use of the possibility
-to [roll your own toggle button](http://thebuildingcoder.typepad.com/blog/2012/11/roll-your-own-toggle-button.html).
+to [roll your own toggle button](0857_toggle_button.htm).
 
 
 #### <a name="3"></a>Creating an Element State Snapshot
@@ -171,16 +171,16 @@ We could obviously also store the entire original string representation instead 
 You need to ensure that every relevant change made to the tracked element really does make a difference to the string representation that you generate, and that the hash code you compute really is affected by every modification made.
 
 This concept is similar to my appeal
-to [create your own key](http://thebuildingcoder.typepad.com/blog/2012/03/great-ocean-road-and-creating-your-own-key.html#2),
+to [create your own key](0739_create_own_key.htm#2),
 and touches on some aspects of my more
 recent [Revit project identification](http://the3dwebcoder.typepad.com/blog/2015/07/fireratingcloud-round-trip-and-on-mongolab.html#2).
 
 One interesting sub-topic here is also how to create a sensible and useful canonical snapshot of the element geometry.
 
-I had a stab back in 2009 analysing [nested instance geometry](http://thebuildingcoder.typepad.com/blog/2009/05/nested-instance-geometry.html) and implementing the `GetVertices` method that simply returns a sorted list of all unique vertices of a given solid in lexicographical order.
+I had a stab back in 2009 analysing [nested instance geometry](0134_nested_instance_geo.htm) and implementing the `GetVertices` method that simply returns a sorted list of all unique vertices of a given solid in lexicographical order.
 
 Since the element geometry can contain multiple solids, and they can be nested in a whole hierarchy of transformed instances, I need to traverse the element geometry, retrieve the solids from each level and apply the appropriate transformations to them, similarly to the approach used
-to retrieve [real-world concrete corner coordinates](http://thebuildingcoder.typepad.com/blog/2012/06/real-world-concrete-corner-coordinates.html).
+to retrieve [real-world concrete corner coordinates](0787_real_world_corners.htm).
 
 For family instances, however, I chose to ignore the symbol geometry. The family type or symbol should be considered a constant. Any change to the geometry in a family instance should be reflected in a corresponding change to the family type.
 Therefore, I skip the geometry traversal and analysis for family instances and assume that these kind of changes to the family definition will be tracked elsewhere.
@@ -229,10 +229,10 @@ Here are some of the existing examples and discussions on this topic:
 
 <!--- /a/doc/revit/tbc/ $ blmd 1392 0398 0404 -->
 
-- [Retrieving all elements](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.9)
-- [Retrieving all model elements](http://thebuildingcoder.typepad.com/blog/2016/01/retrieving-all-model-elements.html)
-- [Retrieving MEP elements and connectors](http://thebuildingcoder.typepad.com/blog/2010/06/retrieve-mep-elements-and-connectors.html)
-- [Retrieving structural elements](http://thebuildingcoder.typepad.com/blog/2010/07/retrieve-structural-elements.html)
+- Retrieving all elements *(link unavailable)*
+- [Retrieving all model elements](1392_model_elements.html)
+- [Retrieving MEP elements and connectors](0398_retrieve_mep_elements.htm)
+- [Retrieving structural elements](0404_structural_elements.htm)
 - [Recent thread on model categories](http://forums.autodesk.com/t5/revit-api/all-model-elements-in-project/m-p/5972035)
 
 The current implementation selects all elements that:

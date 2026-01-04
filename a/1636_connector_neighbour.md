@@ -86,8 +86,8 @@ Essentially, if you wanted to grab piece A on a duct, and iterate through the ne
 
 Maybe these discussions and other ones they point to will help:
 
-- [Traversing and exporting all MEP system graphs](http://thebuildingcoder.typepad.com/blog/2016/06/traversing-and-exporting-all-mep-system-graphs.html)
-- [MEP system structure in hierarchical JSON graph](http://thebuildingcoder.typepad.com/blog/2016/06/store-mep-systems-in-hierarchical-json-graph.html)
+- [Traversing and exporting all MEP system graphs](1449_traverse_mep_system.html)
+- [MEP system structure in hierarchical JSON graph](1450_mep_system_json_graph.html)
 
 I work on pipes, but maybe it is not that different from ducts.
 
@@ -127,15 +127,15 @@ You also need to be aware of the Revit SDK TraverseSystem sample. It determines 
 
 Here are some discussions of it:
 
-- [The Revit MEP 2010 API](http://thebuildingcoder.typepad.com/blog/2009/06/revit-mep-api.html)
-- [The Revit MEP API](http://thebuildingcoder.typepad.com/blog/2009/09/the-revit-mep-api.html) and some [Revit MEP sample applications](http://thebuildingcoder.typepad.com/blog/2009/09/the-revit-mep-api.html#6)
-- [Revit MEP API Samples](http://thebuildingcoder.typepad.com/blog/2010/05/the-revit-mep-2011-api.html#samples)
+- [The Revit MEP 2010 API](0156_mep_2010_api.htm)
+- [The Revit MEP API](0219_mep_api.htm) and some [Revit MEP sample applications](0219_mep_api.htm#6)
+- [Revit MEP API Samples](0362_mep_2011_api.htm#samples)
 
 My [AdnRme sample](https://github.com/jeremytammik/AdnRme) performs
 traversal of electrical systems, and is discussed further in
-the [AdnRme topic group](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.40).
+the AdnRme topic group *(link unavailable)*.
 
-Here is [yet another much simpler traversal implementation](http://thebuildingcoder.typepad.com/blog/2013/02/simple-mep-system-traversal.html).
+Here is [yet another much simpler traversal implementation](0893_mep_system_traversal.htm).
 
 **Question:** Another high-level question regarding these branching systems:
 
@@ -267,7 +267,7 @@ I used this method, but the conduit didn't connect to the boxes.
 
 Does it automatically create a conduit between them?
 
-Please study the series of research articles on [rolling offset creation](http://thebuildingcoder.typepad.com/blog/2014/01/final-rolling-offset-using-pipecreate.html).
+Please study the series of research articles on [rolling offset creation](1093_pipe_create.htm).
 
 **Response:** Yes, it worked.
 

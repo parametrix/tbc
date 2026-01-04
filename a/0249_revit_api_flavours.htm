@@ -1,12 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Revit API Flavours</h3>
 
 <p>Maher raised an interesting 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/09/the-revit-mep-api.html#comment-6a00e553e1689788330120a6a0e650970b">
+<a href="0219_mep_api.htm#comment-6a00e553e1689788330120a6a0e650970b">
 question</a> regarding the different flavours of the Revit API:
 
 <p><strong>Question:</strong> I have a few questions on Revit MEP, Arch, and Structure in general. 
@@ -21,13 +52,13 @@ I am confused.
 
 <p>If you try to access a property that is not available in the particular flavour of Revit that your application is running in, the property will generally simply return a null value or sometimes throw an exception, as Shifali is currently painfully discovering, being
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/new-2010-events.html#comments">
+<a href="0129_new_2010_events.htm#comments">
 unable to access the gbXML settings in Revit Architecture</a>.
 
 <p>You can check what flavour you are running in by querying the application object as demonstrated by the 
 
-<a href="http://thebuildingcoder.typepad.com/files/rac_labs_2009-07-30.zip">
-Revit API introduction labs</a> sample command Lab1_2_CommandArguments:
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/files/rac_labs_2009-07-30.zip">
+Revit API introduction labs <em>(file unavailable: rac_labs_2009-07-30.zip)</em></span> sample command Lab1_2_CommandArguments:
 
 <pre class="code">
 &nbsp; <span class="teal">Application</span> app = commandData.Application;
@@ -50,10 +81,10 @@ Revit API introduction labs</a> sample command Lab1_2_CommandArguments:
 
 <p>We have previously taken a deeper look at the Revit 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/revit-structure-resources.html">
+<a href="0117_rst_resources.htm">
 Structure</a> and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/09/the-revit-mep-api.html">
+<a href="0219_mep_api.htm">
 MEP</a> APIs and mentioned some of the specific features of each.
 
 <p>The easiest way that I can think of to see the exact differences between the three flavours of the Revit API is to look at the class diagram in the Revit SDK provided in "Revit API Class Diagram.png".
@@ -75,3 +106,12 @@ It shows all of the namespaces and classes defined in the Revit API and colour c
 <br>25.2 &nbsp; Connectors
 <br>25.3 &nbsp; Family Creation
 </ol>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

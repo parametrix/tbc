@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- Bo Huang RE: Export Revit to Rapt model -->
@@ -8,7 +39,7 @@
 
 <p>Here is a nice little chat with some interesting resulting hints that I had with an Australian programmer Bo that clarify the retrieval of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/08/section-view-geometry.html">
+<a href="0632_section_view_geom.htm">
 geometry from a section view</a>.
 
 The main point is that the cutting plane of the section view does affect the retrieved geometry, whereas the view's bounding box does not. 
@@ -18,7 +49,7 @@ Here is the path we took to clarify this in all its gory detail:
 
 I read your recent discussion of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/01/curved-analytical-model-approximation-and-etabs-structural-link.html">
+<a href="0707_etabs_rst_link.htm">
 curved analytical model approximation and ETABS structural link</a>, 
 
 which gives me a very good direction, since I intend to do something very similar.
@@ -39,7 +70,7 @@ It might also be a very complex polygon with void holes in it, however.
 
 <p><strong>Answer:</strong> You can easily extract the cross section shapes from the floor geometry by defining appropriate section views in Revit and asking the floor for its geometry in that specific view, as described by Saeed Karshenas in the note on 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/08/section-view-geometry.html">
+<a href="0632_section_view_geom.htm">
 section view geometry</a>.
 
 
@@ -106,7 +137,7 @@ In Revit, how can I show the 'Detail 0' view's bounding box in the 3D views so t
 
 <p><strong>Answer 2:</strong> Maybe you can use the solution suggested to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/12/crop-3d-view-to-room.html">
+<a href="0259_crop_view_to_room.htm">
 crop a 3D view to a room</a>?
 
 <p><strong>Response:</strong> I assume you are talking about the Document.Regenerate method.
@@ -171,3 +202,12 @@ I will just have to manually cut the resulting lines so that they fit within the
 
 
 <p>Many thanks to Bo for this discussion and his efficient research!
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

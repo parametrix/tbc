@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 ﻿<head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="http://thebuildingcoder.typepad.com/google-code-prettify/run_prettify.js"></script>
 <!--<script src="google-code-prettify/run_prettify.js"></script>-->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -146,12 +177,12 @@ Input #0, mp3, from 'test.mp3':
 
 <p>Back in February I mentioned using Songbird to play music on the Mac,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/02/mp3-manipulation-using-python-mutagen-and-ffmpeg.html#3">
+<a href="0895_mutagen_ffmpeg.htm#3">
 extracting M3U playlists</a> from
 
 it, and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/02/mp3-manipulation-using-python-mutagen-and-ffmpeg.html#4">
+<a href="0895_mutagen_ffmpeg.htm#4">
 determining the playlist duration</a> using ffmpeg and mutagen.</p>
 
 <p>I encountered lots of other digital music related issues since then, and here are some notes on a few of them:</p>
@@ -210,20 +241,20 @@ variable bit rate and getting the best bang for your byte</a>,
 including the numerous comments providing some interesting suggestions and lots of background information.</p>
 
 <!--
-<a name=""></a>
+<a name="></a>
 
 <h4>Ffmpeg and Lame</h4>
 
 <p>Until I ran into this issue, I was using
 
-<a href="">
+<a href=">
 ffmpeg</a> to
 
 convert between different formats and generate the MP3.
 
 <p>Ffmpeg is actually driving
 
-<a href="">
+<a href=">
 lame</a> in
 
 the background.
@@ -264,7 +295,7 @@ VBR</a>, should be used instead.</p>
 
 <p>Based on these revelations, I ripped a couple of CDs to
 
-<a href="">
+<a href=">
 WAV</a> instead,
 
 which is also a lossless format, and uncompressed as well, unlike FLAC, representing a direct copy of the original CD content.
@@ -295,7 +326,7 @@ which is also a lossless format, and uncompressed as well, unlike FLAC, represen
 <!--
 <p>Here is a suggestion for a
 
-<a href="">
+<a href=">
 naive script</a> to
 
 achieve this:</p>
@@ -320,7 +351,7 @@ IFS=$SAVEIFS
 
 <p>use
 
-<a href="">
+<a href=">
 faad</a>,
 
 the free audio ... decoder to generate a pure unencoded and uncompressed WAV file representing the track contents, and then apply lame to generate the MP3 from that, with all the previous encoding remnants removed, unencumbered by any prior history:
@@ -419,7 +450,7 @@ IFS=$OLDIFS
 
 <p>I presented my Songbird
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/02/mp3-manipulation-using-python-mutagen-and-ffmpeg.html#3">
+<a href="0895_mutagen_ffmpeg.htm#3">
 M3U playlist extractor</a> when
 
 I was still supporting only MP3 file format.
@@ -458,7 +489,7 @@ Selecting and copying several tracks generates a linefeed-delimited list of thes
 <!--
 <p>I mentioned the confusion I had regarding the use of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/02/mp3-manipulation-using-python-mutagen-and-ffmpeg.html#1">
+<a href="0895_mutagen_ffmpeg.htm#1">
 artist versus album artist tags</a>.</p>
 
 <p>Well, the makers of Songbird seem to have had an issue with this as well, since they export the album artist instead of the artist, as I would have expected.</p>
@@ -582,7 +613,7 @@ sys.stderr.write(
 
 <p>I presented my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/02/mp3-manipulation-using-python-mutagen-and-ffmpeg.html#4">
+<a href="0895_mutagen_ffmpeg.htm#4">
 mp3duration.py</a> Python
 
 script achieving that, which I now enhanced to handle FLAC files as well.
@@ -740,3 +771,12 @@ LerchenWave-2013-05b.m3u duration:
 <p>I hope you can find some useful snippets in here.</p>
 
 <p>Happy Sunday!</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

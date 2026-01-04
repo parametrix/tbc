@@ -110,7 +110,7 @@ Unfortunately, he runs into a problem using `WebView2` to host a browser in them
 Many thanks to Konrad for the nice introduction to dockable panels and subsequent problem analysis!
 
 Jason Masters explained [how he solved the conflict using named pipes to connect to a separate UI process](https://archi-lab.net/webview2-and-revits-dockable-panel/#comment-2813), similar to the suggestion to achieve
-[disentanglement and independence via IPC](https://thebuildingcoder.typepad.com/blog/2019/04/set-floor-level-and-use-ipc-for-disentanglement.html#6):
+[disentanglement and independence via IPC](1737_ipc.html#6):
 
 > It’s so frustrating, because DLL hell was solved by Microsoft, like 15 years ago, using strong naming, but Autodesk just doesn’t support it.
 
@@ -129,7 +129,7 @@ explains
 Yet again many thanks to Konrad for this helpful overview!
 
 This explanation nicely complements the existing articles in the topic group
-5.32 on [detecting and handling dialogues and failures](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.32).
+5.32 on detecting and handling dialogues and failures *(link unavailable)*.
 
 ####<a name="5"></a> Check API Changes using Decompilation
 

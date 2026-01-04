@@ -226,7 +226,7 @@ Basically, it makes ChatGPT way more useful.
 Roman [@Nice3point](https://t.me/nice3point) Karpovich ([LinkedIn](https://www.linkedin.com/in/nice3point/)), aka Роман Карпович,
 principal contributor and maintainer of RevitLookup,
 [commented on the last post](https://www.linkedin.com/feed/update/urn:li:activity:7318574255611236353?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7318574255611236353%2C7318581431536959489%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287318581431536959489%2Curn%3Ali%3Aactivity%3A7318574255611236353%29)
-discussing [intersection result, LLM for IFC and more AI](https://thebuildingcoder.typepad.com/blog/2025/04/intersection-result-llm-for-ifc-and-more-ai.html),
+discussing [intersection result, LLM for IFC and more AI](2074_intersect_result.html),
 saying:
 
 Microsoft has already prepared great packages for AI, and they can already be used in C#, with just a couple of lines of code:

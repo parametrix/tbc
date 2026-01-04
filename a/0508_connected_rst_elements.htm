@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- Joe Ye Re: Finding structural elements connected -->
@@ -20,12 +51,12 @@
 <p>We had some glimpses in the past of the structural analytical model maintained by Revit Structure, e.g. when looking at
 
 <ul>
-<li>The <a href="http://thebuildingcoder.typepad.com/blog/2008/09/geometry-viewer.html">AnalyticalViewer</a> SDK sample
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/04/revit-structure-resources.html">Revit Structure API Resources</a>
-<li>The <a href="">NewLineLoad method</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/10/analytical-support-tolerance.html">Analytical support tolerance</a>
-<li>An overview of <a href="http://thebuildingcoder.typepad.com/blog/2010/01/geometry-options.html">geometry options</a>
-<li>The <a href="http://thebuildingcoder.typepad.com/blog/2010/05/the-revit-structure-2011-api.html">Revit Structure 2011 API</a>
+<li>The <a href="0013_geometry_viewers.htm">AnalyticalViewer</a> SDK sample
+<li><a href="0117_rst_resources.htm">Revit Structure API Resources</a>
+<li>The <a href=">NewLineLoad method</a>
+<li><a href="0231_analytical_support_tolerance.htm">Analytical support tolerance</a>
+<li>An overview of <a href="0278_abg01_geometry_options.htm">geometry options</a>
+<li>The <a href="0363_rst_2011_api.htm">Revit Structure 2011 API</a>
 </ul>
 
 <p>Here is a very basic question that can be addressed using the analytical model:
@@ -38,7 +69,7 @@
 
 <p><strong>Answer:</strong> We discussed a straightforward geometrical solution to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/find-intersecting-elements.html">
+<a href="0494_find_intersecting.htm">
 find intersecting elements</a> which
 
 would work well if the beam or column is vertical or aligned with the cardinal coordinate system axes.
@@ -71,7 +102,16 @@ In the structural settings dialog, under the Analytical Model Settings tab, you 
 
 <p>By the way, please note that the class hierarchy for accessing the structural analytical model was replaced in the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/the-revit-structure-2011-api.html">Revit Structure 2011 API</a>.
+<a href="0363_rst_2011_api.htm">Revit Structure 2011 API</a>.
 
 The new class hierarchy offers a more streamlined interface and more capabilities to read data and modify analytical model settings. This also affects the analytical model support access. The details are listed in the What's New section of the Revit 2011 API help file RevitAPI.chm, under 'Replacement for AnalyticalModel'.
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

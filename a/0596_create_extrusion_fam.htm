@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- C:\a\j\adn\case\special\bocad\src\Stiffener\Stiffener.sln -->
@@ -50,11 +81,11 @@ The thickness is also given in millimetres:
 
 <p>Since all the input data is given in millimetres, and the extrusion has to be defined in the internal 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/01/unit-conversion-and-new-blogs.html">Revit database unit</a> for 
+<a href="0526_unit_conversion.htm">Revit database unit</a> for 
 
 length, which is 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/03/internal-imperial-units.html">feet</a>, 
+<a href="0553_imperial_units.htm">feet</a>, 
 
 we need a conversion method for that, e.g.:
 
@@ -141,11 +172,11 @@ A slightly more flexible approach is to search for the element by name using a h
 &nbsp; }
 </pre>
 
-<p>This method is making use of <a href="http://thebuildingcoder.typepad.com/blog/2009/07/language-integrated-query-linq.html">LINQ</a>.
+<p>This method is making use of <a href="0163_linq.htm">LINQ</a>.
 A more efficient approach would use a filtered element collector based on a 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/parameter-filter.html">parameter</a>  
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/element-name-parameter-filter-correction.html">filter</a> to 
+<a href="0383_param_filter.htm">parameter</a>  
+<a href="0384_elem_name_param_filter.htm">filter</a> to 
 
 check the name instead.
 The advantage of that approach is that the filtering then happens on the internal Revit side, before the retrieved element data is passed out from Revit to the managed .NET environment.
@@ -259,7 +290,7 @@ In this case, let's go for the latter.
 The last contribution on 
 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/06/placing-a-line-based-detail-item-instance.html">
+<a href="0595_place_detail_inst.htm">
 placing a line based detail item instance</a> points 
 
 to some previous posts on this topic.
@@ -346,3 +377,12 @@ This may happen, for instance, if the command is run multiple times.
 
 <p>Another very common question in this area is how to perform Boolean operations, both in the family and project context.
 That is a topic that I would like to take a look at in the near future, expanding on the example presented here.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

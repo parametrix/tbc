@@ -77,7 +77,7 @@ generally consists of the view name plus other modifiers, such as the view type,
 
 **Answer:** Yes, indeed, that is exactly what I am suggesting.
 
-Get all the view sheets, keep track of them and the views they host, and invert that relationship, as described in one of the very early discussions by The Building Coder back in 2008 on a [relationship inverter](http://thebuildingcoder.typepad.com/blog/2008/10/relationship-in.html).
+Get all the view sheets, keep track of them and the views they host, and invert that relationship, as described in one of the very early discussions by The Building Coder back in 2008 on a [relationship inverter](0016_relationship_inverter.htm).
 
 That gives you a complete dictionary lookup both ways: you can look up the sheet hosting any view and you can look up all the views hosted by any sheet, instantaneously.
 
@@ -246,7 +246,7 @@ Rather than reinvent to wheel, I thought you might have a snippet handy showing 
 </center>
 
 **Answer:** I discussed accessing
-the [title block of a sheet](https://thebuildingcoder.typepad.com/blog/2009/11/title-block-of-sheet.html) myself
+the [title block of a sheet](0247_title_block_of_sheet.htm) myself
 back in 2009, but that information is rather antiquated now.
 
 The question was also raised and answered in 
@@ -255,7 +255,7 @@ on [TitleBlock](https://forums.autodesk.com/t5/revit-api-forum/titleblock/td-p/3
 and that information is perfectly valid.
 
 Ah, I now found a more recent and useful article on how
-to [determine sheet size](https://thebuildingcoder.typepad.com/blog/2010/05/determine-sheet-size.html) that
+to [determine sheet size](0371_sheet_size.htm) that
 should provide all you need.
 
 The code is included in

@@ -115,7 +115,7 @@ about [The Building Coder blog standalone](https://forums.autodesk.com/t5/revit-
 All articles are published there as well, including their source text.
 The Building Coder standalone boasts a [global chronological blog post index ](http://jeremytammik.github.io/tbc/a).
 Here is the blog post describing how I started the `tbc` repository in 2016:
-[`tbc` &ndash; The Building Coder Source and Index on GitHub](http://thebuildingcoder.typepad.com/blog/2016/02/tbc-the-building-coder-source-and-index-on-github.html)
+[`tbc` &ndash; The Building Coder Source and Index on GitHub](1408_tbc_github.html)
 ([^](http://jeremytammik.github.io/tbc/a/1408_tbc_github.html)).
 
 Back to everyday blogging again, a pointer to the upcoming live, hands-on, face-to-face European APS accelerator, a summary of the announcements made at AU, three interesting Revit API discussions to highlight, and miscellaneous notes to self, mostly AI-related news:
@@ -168,7 +168,7 @@ I'd appreciate any help with where to start learning and what to do
 **Answer:** Welcome to the Revit API!
 
 Normally, I would point you to
-The Building Coder [tips on getting started](https://thebuildingcoder.typepad.com/blog/about-the-author.html#2).
+The Building Coder tips on getting started *(link unavailable)*.
 
 Unfortunately, the Typepad blog host platform is currently having serious problems, so take a look at
 the [GitHub source code of The Building Coder blog](http://jeremytammik.github.io/tbc/a/#2) instead.
@@ -225,7 +225,7 @@ this code:
 
 Can you use RevitLookup to snoop the database to find the corresponding storage location API access?
 
-Here are some previous [articles on API interaction with materials](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.5).
+Here are some previous articles on API interaction with materials *(link unavailable)*.
 
 Are the materials you are after included when you use a filtered element collector to retrieve all Material elements?
 If so, then all you need to do is discover the criteria that mark them for usage in fabrication parts.
@@ -280,7 +280,7 @@ Many thanks to Matthew [mhannonQ65N2](https://forums.autodesk.com/t5/user/viewpr
 ####<a name="6"></a> Revit Add-In Unit Testing
 
 Another recurring topic is reliable automated testing, cf.
-the [topic group on unit testing](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.16).
+the topic group on unit testing *(link unavailable)*.
 
 Luiz Henrique [@ricaun](https://github.com/ricaun) Cassettari provided some updated advice on that in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread

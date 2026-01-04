@@ -44,21 +44,21 @@ Here comes the most surprising Revit API functionality I have ever seen, put to 
 
 We have looked at numerous different approaches to determine wall openings in the past, including:
 
-- [Opening geometry](http://thebuildingcoder.typepad.com/blog/2012/01/opening-geometry.html)
-- [The temporary transaction trick for gross slab data](http://thebuildingcoder.typepad.com/blog/2012/10/the-temporary-transaction-trick-for-gross-slab-data.html)
-- [Retrieving wall openings and sorting points](http://thebuildingcoder.typepad.com/blog/2015/12/retrieving-wall-openings-and-sorting-points.html)
-- [Wall opening profiles](http://thebuildingcoder.typepad.com/blog/2015/12/wall-opening-profiles-and-happy-holidays.html#3)
-- [Determining wall opening areas per room](http://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-opening-areas-per-room.html#4)
-- [More on wall opening areas per room](http://thebuildingcoder.typepad.com/blog/2016/04/more-on-wall-opening-areas-per-room.html)
-- [Two energy model types](http://thebuildingcoder.typepad.com/blog/2017/01/family-category-and-two-energy-model-types.html#3)
-- [IFC helper returns outer `CurveLoop` of door or window](https://thebuildingcoder.typepad.com/blog/2017/06/copy-local-false-and-ifc-utils-for-wall-openings.html#2)
+- [Opening geometry](0699_opening_geometry.htm)
+- [The temporary transaction trick for gross slab data](0851_gross_slab_boundary.htm)
+- [Retrieving wall openings and sorting points](1387_wall_openings.html)
+- [Wall opening profiles](1389_wall_opening_profiles.html#3)
+- [Determining wall opening areas per room](1423_wall_opening_areas.html#4)
+- [More on wall opening areas per room](1424_wall_opening_areas.html)
+- [Two energy model types](1521_wall_opening_areas.html#3)
+- [IFC helper returns outer `CurveLoop` of door or window](1572_ifc_utils_openings.html#2)
 
 So, it seems pretty hard to nail down, and pretty important to solve.
 
 Now Håvard Leding of [Symetri](https://www.symetri.com) contributed
 yet another exciting idea which highlights a number of surprising aspects,
 demonstrates a further creative use case for `GetDependentElements` and expands on his 
-recent [RevitLookup enhancement to retrieve and snoop dependent elements](https://thebuildingcoder.typepad.com/blog/2019/03/retrieving-and-snooping-dependent-elements.html):
+recent [RevitLookup enhancement to retrieve and snoop dependent elements](1730_dependent_elem.html):
 
 - [Get Demolished Solid](#2) 
 - [Why?](#3) 
@@ -76,7 +76,7 @@ Determining the opening dimensions for Doors and Windows is surprisingly difficu
 I suggest this alternative method that uses the solid that Revit creates when you demolish an opening.
 
 It also uses the good
-old [temporary transaction trick](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.53):
+old temporary transaction trick *(link unavailable)*:
 
 <pre class="code">
 <span style="color:gray;">///</span><span style="color:green;">&nbsp;</span><span style="color:gray;">&lt;</span><span style="color:gray;">summary</span><span style="color:gray;">&gt;</span>

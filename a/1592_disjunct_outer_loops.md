@@ -42,12 +42,12 @@ I am attending the Forge DevCon conference in Darmstadt, Germany, right now, and
 We discussed several different approaches to retrieve the outer loop of a planar face.
 
 One useful piece of related functionality was provided early on by 
-the [point in polygon algorithm](http://thebuildingcoder.typepad.com/blog/2010/12/point-in-polygon-containment-algorithm.html).
+the [point in polygon algorithm](0491_point_in_poly.htm).
 
 Previous discussions of this topic include:
 
-- [Determining Wall Opening Areas per Room](http://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-opening-areas-per-room.html)
-- [The `ExporterIFCUtils` method `GetInstanceCutoutFromWall` returns the outer CurveLoop of a window or a door](http://thebuildingcoder.typepad.com/blog/2017/06/copy-local-false-and-ifc-utils-for-wall-openings.html)
+- [Determining Wall Opening Areas per Room](1423_wall_opening_areas.html)
+- [The `ExporterIFCUtils` method `GetInstanceCutoutFromWall` returns the outer CurveLoop of a window or a door](1572_ifc_utils_openings.html)
 
 Recently, it also turned to the additional complexity of retrieving the multiple outer loops required for disjunct planar faces, raised in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
@@ -55,7 +55,7 @@ on whether [the first edge loop is still the outer loop](https://forums.autodesk
 for which Richard [@rpthomas108](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/1035859) Thomas
 shared a possible solution:
 
-- [Determining the outer-most EdgeLoop](http://thebuildingcoder.typepad.com/blog/2017/08/edge-loop-point-reference-plane-and-column-line.html)
+- [Determining the outer-most EdgeLoop](1581_edge_refplane_column.html)
 
 He now posted a new approach to this question in 
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread

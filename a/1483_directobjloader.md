@@ -45,11 +45,11 @@ The warning is completely self-explanatory and trivial.
 To fix it, just do what the man says.
 
 The error is caused by the changes described
-in [What's New in the Revit 2017 API](http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html):
+in [What's New in the Revit 2017 API](1428_whats_new_2017.html):
 
 <font color="darkblue">
 
-#### <a name="4"></a>[TessellatedShapeBuilder Changes](http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html#2.12.2)
+#### <a name="4"></a>[TessellatedShapeBuilder Changes](1428_whats_new_2017.html#2.12.2)
 
 The options for building are now set as options in the `TessellatedShapeBuilder` itself. Access these options through the new properties:
 

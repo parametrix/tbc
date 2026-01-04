@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -13,7 +44,7 @@ SPR204219 [API wish: access Save As functionality which terminates open transact
 
 <p>I waxed philosophical on the topic of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/05/iteration-and-springtime-change-is-the-only-constant.html">change</a> yesterday, 
+<a href="0576_iteration_constancy.htm">change</a> yesterday, 
 
 and here is another issue that can be related to that.
 In fact, almost anything can be associated with change somehow or other, can't it?
@@ -29,11 +60,11 @@ The pre-event can however cancel the event if desired, and subscribe temporarily
 <p>We already discussed a number of aspects of the Idling event, which was one of the most exciting new features provided by the Revit 2011 API:
 
 <ul>
-<li>The <a href="http://thebuildingcoder.typepad.com/blog/2010/04/idling-event.html">Idling event</a>.
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/04/asynchronous-api-calls-and-idling.html">Asynchronous API Calls and Idling</a>.
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/07/modeless-loose-connectors.html">Modeless loose connectors</a> Idling sample.
-<li>A <a href="http://thebuildingcoder.typepad.com/blog/2010/11/pattern-for-semi-asynchronous-idling-api-access.html">pattern for Idling access</a>.
-<li>Another <a href="http://thebuildingcoder.typepad.com/blog/2010/12/modeless-door-lister-and-deleter.html">modeless sample using Idling</a> and a <a href="http://thebuildingcoder.typepad.com/blog/2011/01/modeless-door-lister-flaws.html">critique of its flaws</a>.
+<li>The <a href="0352_idling.htm">Idling event</a>.
+<li><a href="0353_asynchronous.htm">Asynchronous API Calls and Idling</a>.
+<li><a href="0407_modeless_loose_connectors.htm">Modeless loose connectors</a> Idling sample.
+<li>A <a href="0487_async_idling_pattern.htm">pattern for Idling access</a>.
+<li>Another <a href="0504_list_project_doors.htm">modeless sample using Idling</a> and a <a href="0509_list_project_doors_flaws.htm">critique of its flaws</a>.
 </ul>
 
 <p>The reason the convoluted workaround failed and this succeeds is the fact that save can be invoked while an editor transaction is open.  
@@ -211,7 +242,7 @@ and the cleaned up Revit 2012 migration
 
 <p>The Building Coder sample command 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/idling-event.html">CmdIdling</a> used the following code in the Revit 2011 API:
+<a href="0352_idling.htm">CmdIdling</a> used the following code in the Revit 2011 API:
 
 <pre class="code">
 <span class="blue">void</span> OnIdling( <span class="blue">object</span> sender, <span class="teal">IdlingEventArgs</span> e )
@@ -262,3 +293,12 @@ The Building Coder sample code including this change.
 <p><strong>Disclaimer:</strong> Please note that the code presented here is just a test showing one possible workaround for the originally stated problem with the customized SaveAs. 
 It is by no means a production-level solution, and even the concept of using the Idling event in the suggested way is not optimal, as it could lead to potentially undesired results. 
 A more detailed discussion and analysis of the above presented workaround will be published in a future post.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

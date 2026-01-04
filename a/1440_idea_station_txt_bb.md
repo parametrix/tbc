@@ -91,8 +91,8 @@ It worked fine in the earlier versions of Revit.
 Is there any other method I can use to obtain the bounding box of a TextNote using the Revit 2017 API?
 
 **Answer:** Matt Taylor provided a solution in
-his [comment](http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html#comment-2682251724)
-on [What's New in the Revit 2017 API](http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html):
+his [comment](1428_whats_new_2017.html#comment-2682251724)
+on [What's New in the Revit 2017 API](1428_whats_new_2017.html):
 
 When using `myTextNote.BoundingBox(view)` straight after `TextNote.Create`, it should be preceded with `doc.Regenerate`:
 
@@ -111,7 +111,7 @@ Just sayin!
 
 #### <a name="4"></a>Regeneration Performance Benchmark
 
-Later, Matt added another [note on regen performance](http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html#comment-2682319277):
+Later, Matt added another [note on regen performance](1428_whats_new_2017.html#comment-2682319277):
 
 That was the first solution I tried, so I was pretty lucky.
 

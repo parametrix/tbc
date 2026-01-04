@@ -75,7 +75,7 @@ All the recordings made of Autodesk University 2016 classes have now been posted
 via [AU Online](http://au.autodesk.com/au-online/overview).
 
 You can explore the material
-for [my two classes](http://thebuildingcoder.typepad.com/blog/2016/10/au-revit-20171-and-rex-freezedrawing.html#2)
+for [my two classes](1493_au_2017_1_sdk_freeze.html#2)
 by [filtering for `tammik`](http://au.autodesk.com/au-online/classes-on-demand/search?full-text=tammik),
 or directly through the following links:
 
@@ -98,12 +98,12 @@ the great [AU2016 opening keynote](http://au.autodesk.com/au-online/classes-on-d
 
 The last time I worked on the *ADN Xtra Labs* hosted in
 the [AdnRevitApiLabsXtra GitHub repository](https://github.com/jeremytammik/AdnRevitApiLabsXtra) was for
-the [Revit 2017 migration](http://thebuildingcoder.typepad.com/blog/2016/08/trusted-signature-and-updated-revit-2017-api-resources.html#5),
-and the [migration to Revit 2016](http://thebuildingcoder.typepad.com/blog/2015/06/adn-labs-xtra-multi-version-add-ins-and-cnc-direct.html#2) before that.
+the [Revit 2017 migration](1462_trust_sign_2017_update.html#5),
+and the [migration to Revit 2016](1332_multi_version_xtra.htm#2) before that.
 
 They are a superset of the
 official [ADN Revit API labs training material]()
-([2016](http://thebuildingcoder.typepad.com/blog/2015/05/autodesk-university-q1-adn-labs-and-wizard-update.html#4))
+([2016](1320_au_q1_labs_wizard.htm#4))
 available from
 the [Revit Developer Centre](http://www.autodesk.com/developrevit) and
 the [Revit API Training GitHub repository](https://github.com/ADN-DevTech/RevitTrainingMaterial).
@@ -196,7 +196,7 @@ Yes, there is.
 
 Therefore, materials can have a shared parameter attached to them.
 
-Here is an explanation of this that I wrote while [adding a shared parameter to a DWG file](http://thebuildingcoder.typepad.com/blog/2008/11/adding-a-shared-parameter-to-a-dwg-file.html).
+Here is an explanation of this that I wrote while [adding a shared parameter to a DWG file](0036_dwg_shared_param.htm).
 
 You can look at the [list of things I already tested right there in the C# source code](https://github.com/jeremytammik/AdnRevitApiLabsXtra/blob/master/XtraCs/Labs4.cs#L511-L535).
 
@@ -216,7 +216,7 @@ The link to the list of things I already tested has changed, since the line numb
 to [Labs4.cs#L518-L539](https://github.com/jeremytammik/AdnRevitApiLabsXtra/blob/master/XtraCs/Labs4.cs#L518-L539).
 
 You should also always be aware of the possibility to
-use [extensible storage](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23) instead
+use extensible storage *(link unavailable)* instead
 of shared parameters to store custom data, cf. also the SDK samples ExtensibleStorageManager and ExtensibleStorageUtility.
 
 Shared parameters make sense if the user and/or Revit should be aware of the properties, e.g. to view or edit them in the properties panel or to make us of them for scheduling purposes.

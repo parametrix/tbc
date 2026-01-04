@@ -99,7 +99,7 @@ I definitely want to implement this for my case.
 Meanwhile, me being lazy, I figured out an easy way to solve my particular problem.
 
 I used part of
-your [Revit API code for convex hull](https://thebuildingcoder.typepad.com/blog/2016/08/online-revit-api-docs-and-convex-hull.html#3) to
+your [Revit API code for convex hull](1457_online_doc_convex_hull.html#3) to
 get the vertices of the room. 
 This is necessary, as there are multiple boundary segments when there is an overlapping room separation line, a door in the wall, etc.
 Instead of calculating the convex hull, I just iterate over those resulting vertices and determine the pair of points which are 'nearby'.

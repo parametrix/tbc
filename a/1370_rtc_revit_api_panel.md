@@ -40,10 +40,10 @@ Pictures from some days in Budapest during the Revit Technology Conference https
 ### RTC, Budapest and the Revit API Panel
 
 Last week, I listed
-my [three Revit Technology Conference classes](http://thebuildingcoder.typepad.com/blog/2015/10/rtc-classes-and-getting-started-with-revit-macros.html) on
+my [three Revit Technology Conference classes](1368_revit_macros.html) on
 connecting the desktop and the cloud, The Building Coder chatroom,
 and the full detailed handout of the lab
-on [getting started with Revit macros](http://thebuildingcoder.typepad.com/blog/2015/10/rtc-classes-and-getting-started-with-revit-macros.html#7).
+on [getting started with Revit macros](1368_revit_macros.html#7).
 
 All three went very well.
 

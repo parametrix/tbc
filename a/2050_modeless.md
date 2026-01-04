@@ -99,18 +99,18 @@ The most important differentiation in this context is between modal and modeless
 
 Please be aware that the Revit API is single-threaded and only runs within a valid Revit API context:
 
-- [Modeless door lister flaws](http://thebuildingcoder.typepad.com/blog/2011/01/modeless-door-lister-flaws.html)
-- [No multithreading in Revit](http://thebuildingcoder.typepad.com/blog/2011/06/no-multithreading-in-revit.html)
-- [Modeless Revit SDK Samples](http://thebuildingcoder.typepad.com/blog/2012/03/new-revit-2013-sdk-samples.html)
-- [What's New in the Revit 2014 API](http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html)
+- [Modeless door lister flaws](0509_list_project_doors_flaws.htm)
+- [No multithreading in Revit](0603_no_multithreading.htm)
+- [Modeless Revit SDK Samples](0742_new_sdk_samples.htm)
+- [What's New in the Revit 2014 API](0938_whats_new_2014.htm)
   &rarr; API validation &ndash; no transactions from outside threads
-- [Replacing an Idling Event Handler by an External Event](http://thebuildingcoder.typepad.com/blog/2013/12/replacing-an-idling-event-handler-by-an-external-event.html)
-- [Multithreading throws exceptions in Revit 2015](http://thebuildingcoder.typepad.com/blog/2014/05/multithreading-throws-exceptions-in-revit-2015.html)
-- [The Revit API is never ever thread safe](http://thebuildingcoder.typepad.com/blog/2014/11/the-revit-api-is-never-ever-thread-safe.html)
-- [PickPoint with WPF and no threads attached](http://thebuildingcoder.typepad.com/blog/2015/11/pickpoint-with-wpf-and-no-threads.html)
-- [Multi-threading family instance placement monitor](https://thebuildingcoder.typepad.com/blog/2020/02/multi-threading-family-instance-placement-monitor.html)
-- [Multi-threading with the single-threaded Revit API](https://thebuildingcoder.typepad.com/blog/2020/07/selection-link-support-cancel-custom-export-multithreading.html#5)
-- [Add-in threads](https://thebuildingcoder.typepad.com/blog/2023/09/add-in-threads-and-geometry-comparison.html)
+- [Replacing an Idling Event Handler by an External Event](1074_roomedit_extern_event.htm)
+- [Multithreading throws exceptions in Revit 2015](1149_exception_in_2015.htm)
+- [The Revit API is never ever thread safe](1244_no_multithreading.htm)
+- [PickPoint with WPF and no threads attached](1377_wpf_thread_pickpoint.html)
+- [Multi-threading family instance placement monitor](1822_placing_monitor.html)
+- [Multi-threading with the single-threaded Revit API](1854_pick_room_link.html#5)
+- [Add-in threads](2006_threads_geo_equal.html)
 
 A valid Revit API context is only provided by Revit in one of the numerous event handlers defined by the API and runs in the main thread of Revit.
 This blocks the UI, just as you say.
@@ -124,7 +124,7 @@ The external event can be raised from the modeless part of the add-in.
 Revit then calls the corresponding event handler and provides it with a valid Revit API context.
 
 This is discussed in great depth and with many examples by The Building Coder in the topic group
-on [Idling and External Events for Modeless Access and Driving Revit from Outside](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+on Idling and External Events for Modeless Access and Driving Revit from Outside *(link unavailable)*.
 
 The link you provided has an example "Single-project WPF Application (Modeless)", which is one way of interacting with a modeless WPF application and Revit, without blocking the UI.
 

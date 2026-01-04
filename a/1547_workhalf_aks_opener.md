@@ -153,7 +153,7 @@ Many thanks to Allan for putting together and sharing this!
 [RvtFader](https://github.com/jeremytammik/Rvtfader) is pretty well documented in its GitHub repository.
 
 I described the initial release talking
-about [RvtFader, AVF, ray tracing and signal attenuation](http://thebuildingcoder.typepad.com/blog/2017/03/rvtfader-avf-ray-tracing-and-signal-attenuation.html).
+about [RvtFader, AVF, ray tracing and signal attenuation](1542_avf_intersect_fader.html).
 
 I think it provides a cool starting point for any new little application as well, implementing:
 
@@ -171,7 +171,7 @@ I think it provides a cool starting point for any new little application as well
 - Display a 'heat map', i.e. colour gradient, representing the signal loss caused by the distance and number of walls between the source and the target points.
 
 It uses the Revit API `ReferenceIntersector` ray tracing functionality to detect walls and
-the [analysis visualisation framework AVF](http://thebuildingcoder.typepad.com/blog/avf) to display the heat map.
+the analysis visualisation framework AVF *(link unavailable)* to display the heat map.
 
 The result of launching the command and picking a point looks like this:
 
@@ -206,8 +206,8 @@ The four-minute [ForgeFader Autodesk Forge sample app](https://youtu.be/78JlGnf4
 
 So far, I discussed two implementation steps here on The Building Coder; and a third important step was contributed by Cyrille Fauvel:
 
-- [Adding custom geometry to the Forge viewer](http://thebuildingcoder.typepad.com/blog/2017/03/adding-custom-geometry-to-the-forge-viewer.html)
-- [Three.js raytracing in the Forge Viewer](http://thebuildingcoder.typepad.com/blog/2017/03/threejs-raytracing-in-the-forge-viewer.html)
+- [Adding custom geometry to the Forge viewer](1544_forge_debug_geom.html)
+- [Three.js raytracing in the Forge Viewer](1545_forge_raycast.html)
 - [Implementing a custom shader in the Forge Viewer](https://github.com/jeremytammik/forgefader#implementing-a-custom-shader-in-the-forge-viewer)
 
 ForgeFader is based 

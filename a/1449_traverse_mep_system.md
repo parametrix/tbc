@@ -24,7 +24,7 @@ The [Forge DevCon](http://forge.autodesk.com/conference) last week completed suc
 
 I had a [full body 3D scan](https://www.artec3d.com/events/autodesk-forge-devcon-2016) created there in
 the [Shapify Booth](https://www.artec3d.com/hardware/shapifybooth) and explained
-on [The 3D Web Coder](http://thebuildingcoder.typepad.com/) how I
+on The 3D Web Coder *(link unavailable)* how I
 used [`sed`](https://en.wikipedia.org/wiki/Sed)
 to [flip the axes of the resulting OBJ model](http://the3dwebcoder.typepad.com/blog/2016/06/flipping-obj-axes-with-texture-for-forge-viewer.html).
 
@@ -71,13 +71,13 @@ and [Presidio](https://en.wikipedia.org/wiki/Presidio_Park) parks:
 
 Today, I present a simple Revit add-in that analyses all MEP systems in the model and determines the graph structure representing the connections between the systems elements.
 
-I discussed a [simple MEP system traversal](http://thebuildingcoder.typepad.com/blog/2013/02/simple-mep-system-traversal.html) in 2013.
+I discussed a [simple MEP system traversal](0893_mep_system_traversal.htm) in 2013.
 
 The graph information required in this case, however, requires the more advanced traversal algorithms determining the correct order of the individual system elements in the direction of the flow implemented by
-the [TraverseSystem SDK sample](http://thebuildingcoder.typepad.com/blog/2009/06/revit-mep-api.html)
-([2010](http://thebuildingcoder.typepad.com/blog/2009/09/the-revit-mep-api.html#6),
-[2011](http://thebuildingcoder.typepad.com/blog/2010/05/the-revit-mep-2011-api.html#samples)) for mechanical systems and
-the [AdnRme sample](http://thebuildingcoder.typepad.com/blog/2012/05/the-adn-mep-sample-adnrme-for-revit-mep-2013.html)
+the [TraverseSystem SDK sample](0156_mep_2010_api.htm)
+([2010](0219_mep_api.htm#6),
+[2011](0362_mep_2011_api.htm#samples)) for mechanical systems and
+the [AdnRme sample](0763_adnrme_mep_2013.htm)
 ([GitHub repo](https://github.com/jeremytammik/AdnRme)) for electrical ones.
 
 

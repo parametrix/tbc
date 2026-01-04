@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Multi-Version Add-in</h3>
@@ -18,7 +49,7 @@ I created a sample to prove this.
 
 <p><strong>Question:</strong> While migrating to the Revit 2013 API, I ran into problems similar to the ones encountered while
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/04/migrate-building-coder-samples-to-revit-2013.html">
+<a href="0751_bc_migr_2013.htm">
 migrating The Building Coder samples</a>.
 
 <p>I would like to develop an add-in which is backwards compatible with the previous version of Revit, supporting for example both Revit 2012 and Revit 2013 in one .NET assembly DLL.
@@ -53,17 +84,17 @@ lab</a>,
 
 as explained in the overview of the AU 2011
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/09/revit-and-aec-api-classes-at-autodesk-university.html">
+<a href="0651_au_2011_revit_classes.htm">
 Revit and AEC API sessions</a>,
 
 and updated for the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/devcamp-day-one.html#2">
+<a href="0778_devcamp_day_1.htm#2">
 AEC DevCamp</a> with 
 
 an additional external command added to support the new Revit 2013
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/05/devblog-devcamp-element-and-project-wide-data.html#5">
+<a href="0765_estorage_single.htm#5">
 DataStorage element</a>.
 
 <p>Two important requirements were added when packaging the EstoreFile command as a separate plug-in of the month for the labs:
@@ -75,7 +106,7 @@ DataStorage element</a>.
 
 <p>One of the new 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/revit-2013-and-its-api.html#2">
+<a href="0740_revit_2013_api.htm#2">
 Revit 2013 add-in integration features</a> is 
 
 support for contextual help: the user can simply hit F1 on an add-in command button to bring up an Internet URL or a local help file entry.
@@ -278,3 +309,12 @@ Therefore, I also remove the reference to that command in the help text displaye
 eStorage for Revit</a> download.
 
 <p>I trust this answers your question and provides a neat sample to boot.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

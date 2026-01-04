@@ -195,9 +195,9 @@ You can perfectly well leave it as a filtered element collector and iterate dire
 That will save conversion time and space and avoid the unnecessary data duplication, cf. the discussions
 on:
 
-- [`FindElement` and collector optimisation](http://thebuildingcoder.typepad.com/blog/2012/09/findelement-and-collector-optimisation.html)
-- [Filtering for family instances and types by family name](https://thebuildingcoder.typepad.com/blog/2017/08/forge-installed-version-move-group-filter-by-name.html#7)
-- [Getting the area scheme from an area](https://thebuildingcoder.typepad.com/blog/2017/03/q4r4-first-queries-revitlookup-and-areas-in-schemes.html#5)
+- [`FindElement` and collector optimisation](0832_find_element_optimise.htm)
+- [Filtering for family instances and types by family name](1578_fam_filt_forge_aec.html#7)
+- [Getting the area scheme from an area](1540_q4r4_lookup.html#5)
 
 
 #### <a name="3"></a> Pushing Wall Type to Doors
@@ -273,9 +273,9 @@ Try using:
 Here are two further suggestions to clean up your code:
 
 - Use `using` for transactions
-&ndash; [encapsulating a transaction in a `using` statement](https://thebuildingcoder.typepad.com/blog/2012/04/using-using-automagically-disposes-and-rolls-back.html) automagically disposes of it and rolls back if needed.
+&ndash; [encapsulating a transaction in a `using` statement](0753_dispose_transact_2.htm) automagically disposes of it and rolls back if needed.
 - Don't catch all exceptions
-&ndash; [never catch <u>all</u> exceptions](https://thebuildingcoder.typepad.com/blog/2017/05/prompt-cancel-throws-exception-in-revit-2018.html#5), only the ones that you really can handle.
+&ndash; [never catch <u>all</u> exceptions](1556_prompt_exception.html#5), only the ones that you really can handle.
 
 Are you really ready to handle the exceptions 'computer on fire', 'building collapsed', etc.?
 

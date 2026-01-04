@@ -78,7 +78,7 @@ You must take into consideration that the shared parameters functionality was ad
 
 Possibly your use case is weird, from a BIM point of view. I am not an expert on the user interface side of things, so I cannot say.
 
-On the other hand, [extensible storage](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23) was explicitly designed for API use.
+On the other hand, extensible storage *(link unavailable)* was explicitly designed for API use.
 
 If you do not explicitly need the end user or Revit to see and manipulate your data, e.g., for scheduling or other purposes, you should consider using extensible storage instead.
 
@@ -91,7 +91,7 @@ Depending on your exact needs, this may be what you want or not.
 How can one retrieve all parameters from an element?
 
 **Question:** I am working on converting Revit room volumes into DirectShape elements (done already with info from your blog
-on [room closed shell DirectShape for Forge viewer](https://thebuildingcoder.typepad.com/blog/2019/06/improved-room-closed-shell-directshape-for-forge-viewer.html)).
+on [room closed shell DirectShape for Forge viewer](1760_room_closed_shell_forge.html)).
 
 The next step is to copy the room parameters into the DirectShape object, in such a way they appear correctly in the UI.
  

@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1259133 [Curve must be in the plane] -->
@@ -34,28 +65,28 @@ Do you have any code showing how to project points to the plane?
 <p><strong>Answer:</strong> I demonstrate some simple projection of points in the discussions of
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/12/2d-polygon-areas-and-outer-loop.html">2D polygons</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/12/3d-polygon-areas.html">2D polygon areas</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/12/polygon-transformation.html">Polygon transformation</a>
+<li><a href="0053_2d_polygon_area_outer_loop.htm">2D polygons</a>
+<li><a href="0055_3d_polygon_area.htm">2D polygon areas</a>
+<li><a href="0057_polygon_transformation.htm">Polygon transformation</a>
 </ul>
 
 <p>Some basic info on the Transform class is provided in:
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/03/transform.html">Transform class</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/01/transformations.html">Transformations</a>
+<li><a href="0110_transform.htm">Transform class</a>
+<li><a href="0290_abg07_transform.htm">Transformations</a>
 </ul>
 
 <p>Applying a transform to a curve is also discussed in:
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/07/scale-a-curve.html">Scaling a curve</a>
+<li><a href="0183_scale_curve.htm">Scaling a curve</a>
 </ul>
 
 <p>Here is another example of a curve input argument that must reside in a specific plane:
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/03/newsweptblend.html">NewSweptBlend</a>
+<li><a href="0320_newsweptblend.htm">NewSweptBlend</a>
 </ul>
 
 <p>I would suggest that you split the algorithm into two parts and implement separate independent methods for each of them:
@@ -144,4 +175,13 @@ So you could use this property to determine that the curve is a line (and add an
 }
 </pre>
 
-<p>The second step is demonstrated in the <a href="http://thebuildingcoder.typepad.com/blog/2008/12/polygon-transformation.html">polygon transformation</a> post I mentioned above.
+<p>The second step is demonstrated in the <a href="0057_polygon_transformation.htm">polygon transformation</a> post I mentioned above.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

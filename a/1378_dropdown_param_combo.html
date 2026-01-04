@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!---
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -34,7 +65,7 @@ I repeatedly hear from developers who wish to define a specific enumerated set o
 <h3>Drop-down Enumerated Parameter Values</h3>
 <p>I repeatedly hear from developers who wish to define a specific enumerated set of parameter values for their add-ins and limit the selection to these values in the element property palette user interface.</p>
 <p>Internally, Revit does implement a system to handle this, for instance by
-using <a href="http://thebuildingcoder.typepad.com/blog/2014/04/element-id-export-unique-navisworks-and-other-ids.html#5">negative element ids for element property drop-down list enumerations</a>.</p>
+using <a href="1144_nw_unique_id.htm#5">negative element ids for element property drop-down list enumerations</a>.</p>
 <p>This has also been a long-standing wish list item, and unfortunately still remains in that state, currently incorporated in the issue CF-3498 <em>API wish: drop-down enumeration parameters for combo box</em>.</p>
 <ul>
 <li><a href="#2">Drop-down Combo of Enumerated Parameter Values</a></li>
@@ -88,9 +119,17 @@ For instance, a set of enumerated values such as this:</p>
 <p>I hope this helps.</p>
 <p>Many thanks to Marcelo for sharing these two creative workarounds!</p>
 <h4><a name="5"></a>3. Workaround using Family Instance in a Design Option</h4>
-<p>Proposed by Matt Taylor in his <a href="http://thebuildingcoder.typepad.com/blog/2015/11/drop-down-enumerated-parameter-values.html#comment-2843954426">comment below</a>:</p>
+<p>Proposed by Matt Taylor in his <a href="1378_dropdown_param_combo.html#comment-2843954426">comment below</a>:</p>
 <p>I've just come up with another way of doing this.</p>
 <p>It's more of a model template solution than a family solution.</p>
 <p>Place a family instance with each value in a design option, then just make sure that design option is omitted from all views and schedules.</p>
 <p>Because all values for those parameters exist somewhere in the model, they still appear on the pull-down list.</p>
 <p>Many thanks to Matt for this nice idea!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

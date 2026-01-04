@@ -38,7 +38,7 @@ Today, I am presenting a class on Design Automation for Revit or DA4R and the BI
 It is in German language: *BIM360 News und Online Revit-Programmierung von BIM via Forge Design Automation API für RVT*.
 
 The first and main part is similar to yesterday's presentation 
-on [Forge Design Automation for Revit](http://thebuildingcoder.typepad.com/blog/2018/10/forge-design-automation-for-revit.html) at
+on [Forge Design Automation for Revit](1695_da4r.html) at
 the Forge DevCon conference.
 
 Therefore, I will only share the BIM 360 slides (just the text, with most images missing) here now:

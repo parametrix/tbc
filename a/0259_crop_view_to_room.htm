@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1254168 [Setting crop box of 3d view] -->
@@ -50,7 +81,8 @@ It is hard to create a solid and make one face of it perpendicular to the view d
 
 <p>You can also use the Transform class to calculate the crop box of the 3D view instead.  
 
-<p>First, determine the transformation for translating coordinates in the 3D view to the world coordinate system WCS from the View3d.CropBox.Transform property. 
+<p>First, determine the transformation for translating coordinates in the 3D view to the world coordinate system WCS from the View3d.CropBox.Transform property. 
+
 Then invert it to obtain the transformation to translate model WCS coordinates back to the 3D view coordinates. 
 
 <p>Determine the room vertices from its ClosedShell property, and translate them to 3D view coordinates. 
@@ -270,8 +302,17 @@ of the complete Building Coder sample source code and Visual Studio solution inc
 One of the most obvious would be to eliminate duplicate vertices before applying the inverse transformations and searching for the minimum and maximum coordinate values.
 We did implement some useful functionality for doing that with the XyzEqualityComparer class and GetVertices method in the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/nested-instance-geometry.html">
+<a href="0134_nested_instance_geo.htm">
 nested instances geometry retrieval</a>.
 
 It might also be possible to use generic collections such as List&lt;XYZ&gt; instead of XYZArray for the original and transformed vertices, and generic .NET functionality to apply the transformation and determine the max and min coordinate values.
 We left out such enhancements in this case for the sake of clarity, but if you have any suggestions to make, please feel free to do so.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

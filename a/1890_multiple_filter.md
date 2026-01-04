@@ -146,12 +146,12 @@ Every single filter is applied to the collector results.
 If the filters are mutually exclusive, you end up with an empty result.
 
 For a previous explanation, please read the discussion
-on [reinitialising the filtered element collector](https://thebuildingcoder.typepad.com/blog/2019/11/design-automation-api-stacks-collectors-and-links.html#4).
+on [reinitialising the filtered element collector](1803_da_webinar_ri_stack.html#4).
 
 The same question also came up in a few other recent threads, e.g.,
 on [how to extract the geometry and the texts of the title block in a sheet view](https://forums.autodesk.com/t5/revit-api-forum/how-to-extract-the-geometry-and-the-texts-of-the-title-block-in/m-p/9943738),
 summarised in the blog post 
-on [extracting title block geometry and text](https://thebuildingcoder.typepad.com/blog/2021/01/sheet-view-xform-coords-img-export-and-title-block.html#2).
+on [extracting title block geometry and text](1887_sheet_view_geom_text.html#2).
 
 In your sample code snippet, simply create two separate collectors for shared parameters and family instances.
 

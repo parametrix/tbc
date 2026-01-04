@@ -527,13 +527,13 @@ Very many thanks to Hank for his persistent research and sharing this valuable s
 ####<a name="10"></a>Warning! Things Will Change in the Next Release
 
 I myself always used the `JtWindowHandle` class to retrieve the main Revit window handle in the past, and use that
-to [set up the parent window relationship for my modeless forms](http://thebuildingcoder.typepad.com/blog/2010/06/revit-parent-window.html) for
+to [set up the parent window relationship for my modeless forms](0400_revit_parent_window.htm) for
 simple single modeless forms.
 
 I have been warned by the development team that this method will cease to work in the next major release of Revit, after Revit 2018:
 
 A developer followed the advice 
-to [ensure a WPF add-in remains in foreground](http://thebuildingcoder.typepad.com/blog/2012/10/ensure-wpf-add-in-remains-in-foreground.html) in
+to [ensure a WPF add-in remains in foreground](0850_wpf_foreground.htm) in
 building a new add-in. 
 
 This was written about 5 years ago.

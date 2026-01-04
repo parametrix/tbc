@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -28,10 +59,10 @@ PreviewControl question</a>.</p>
 <p>Today is the second day of the Portathon!</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/07/earn-100-submitting-an-autodesk-exchange-app.html">Earn $100 Submitting an Autodesk Exchange App</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/08/exchange-app-videos-and-devtv-youtube-channel.html">Exchange App Videos</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/08/adn-training-material-on-github-and-portathon-reminder.html#2">Portathon reminder and video</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/09/cloud-and-appstore-usage-grows-portathon-reminder.html">Cloud and AppStore usage growth</a></li>
+<li><a href="0987_portathon.htm">Earn $100 Submitting an Autodesk Exchange App</a></li>
+<li><a href="1000_appstore_video.htm">Exchange App Videos</a></li>
+<li><a href="1003_train_github_portathon.htm#2">Portathon reminder and video</a></li>
+<li><a href="1015_growing_cloud_appstore.htm">Cloud and AppStore usage growth</a></li>
 </ul>
 
 <p>Everything went well yesterday, and today we continue.</p>
@@ -48,12 +79,12 @@ PreviewControl question</a>.</p>
 
 <p>I recently mentioned Paul Kinnane's enthusiastic
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/09/access-to-individual-elements-in-linked-projects.html#5">
+<a href="1016_linked_project_element.htm#5">
 feedback on the custom exporter</a>.</p>
 
 <p>Paul went on to submit his Octane renderer add-in as an app to the Autodesk Exchange Store and ran into some issues which triggered a couple of recommendations that seem worthwhile sharing:</p>
 
-<p><strong><a href="http://thebuildingcoder.typepad.com/blog/2013/07/revit-2014-obj-exporter-and-new-sdk-samples.html?cid=6a00e553e168978833019aff45e7ea970c#comment-6a00e553e168978833019aff45e7ea970c"></a>Question:</strong> I am in the process of migrating the plugin to the Store compatible .bundle format instead of loading from <code>C:\ProgramData\Autodesk\Revit\Addins\2014</code>.
+<p><strong><a href="0984_obj_exp_2014_sdk_samp.htm"></a>Question:</strong> I am in the process of migrating the plugin to the Store compatible .bundle format instead of loading from <code>C:\ProgramData\Autodesk\Revit\Addins\2014</code>.
 However, I cannot get the plugin to load into Revit when the files are in <code>C:\ProgramData\Autodesk\ApplicationPlugins\OctaneRender for Revit.bundle</code>.</p>
 
 <p>In summary &ndash; when all the required .addin, .dat and .dll files are in <code>C:\ProgramData\Autodesk\Revit\Addins\2014</code>, the plugin is correctly added to the Add-Ins toolbar. But copying those files into the above .bundle folder results in the plugin not appearing on the toolbar. No error is raised. No amount of adding or editing xml files, putting the DLLs in Contents, etc. seems to help. I watched all the Autodesk videos on this and read all the docs. Can you advise how I can best resolve this issue pls?</p>
@@ -71,14 +102,14 @@ However, I cannot get the plugin to load into Revit when the files are in <code>
 <p>Another thing to check is your XML file encoding:
 In my experience, you can use
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/snow-and-woe-with-manifest-files.html">
+<a href="0498_snow_and_woe.htm">
 any encoding you want in the Revit add-in manifest</a>, but it must correspond to the coding specified in the corresponding XML file tag, i.e.,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/addin-manifest-and-guidize.html#3">
+<a href="0354_guidizer.htm#3">
 the tag must tell the truth</a>.</p>
 
 
-<p><strong><a href="http://thebuildingcoder.typepad.com/blog/2013/07/revit-2014-obj-exporter-and-new-sdk-samples.html?cid=6a00e553e168978833019aff5983a6970b#comment-6a00e553e168978833019aff5983a6970b"></a>Response:</strong> Thanks for all the suggestions Jeremy.</p>
+<p><strong><a href="0984_obj_exp_2014_sdk_samp.htm"></a>Response:</strong> Thanks for all the suggestions Jeremy.</p>
 
 <p>The plugin does not load even after a Revit restart.</p>
 
@@ -107,7 +138,7 @@ So you must have missed one or two small details in the docs after all  :-)</p>
 
 <p>Anyway, as you presumably know, we are running the Autodesk Exchange Store
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/09/multireferenceannotation-example.html">
+<a href="1021_multi_reference_annot.htm">
 Portathon event today</a>.</p>
 
 <p>I therefore passed on your query to both the Revit API development team and my colleagues dealing with the exchange store, and they reply as follows:</p>
@@ -124,7 +155,7 @@ We will be testing the app next week and contact the publisher regarding this di
 
 <p>I hope this matches you intentions!</p>
 
-<p><strong><a href="http://thebuildingcoder.typepad.com/blog/2013/07/revit-2014-obj-exporter-and-new-sdk-samples.html?cid=6a00e553e168978833019aff5c8e9a970c#comment-6a00e553e168978833019aff5c8e9a970c"></a>Response:</strong>
+<p><strong><a href="0984_obj_exp_2014_sdk_samp.htm"></a>Response:</strong>
 Thank you Jeremy.
 Yes that very much matches our intentions.</p>
 
@@ -184,12 +215,12 @@ Painting the solid works fine.</p>
 <p>For the sake of completeness, here are pointers to the previously available preview control samples and resolved issues:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/03/revit-2013-and-its-api.html#2">Preview control</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/06/devcamp-day-two.html#2">DevCamp session on the Revit 2013 UI API enhancements</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/06/devcamp-day-two.html#23">PreviewControlSimple</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/03/new-revit-2013-sdk-samples.html#4">UIAPI Revit SDK sample</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/08/vacation-time-and-various-notes.html#4">Preview control with linked document</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/08/issue-using-a-preview-control-in-a-macro.html">Using a preview control in a macro</a></li>
+<li><a href="0740_revit_2013_api.htm#2">Preview control</a></li>
+<li><a href="0779_devcamp_day_2.htm#2">DevCamp session on the Revit 2013 UI API enhancements</a></li>
+<li><a href="0779_devcamp_day_2.htm#23">PreviewControlSimple</a></li>
+<li><a href="0742_new_sdk_samples.htm#4">UIAPI Revit SDK sample</a></li>
+<li><a href="0805_vacation_news.htm#4">Preview control with linked document</a></li>
+<li><a href="1010_preview_control_macro.htm">Using a preview control in a macro</a></li>
 </ul>
 
 
@@ -202,3 +233,12 @@ Painting the solid works fine.</p>
 <p>I will be taking the computer with me, but I do not expect to publish anything or answer any comments before I return.</p>
 
 <p>Take care and enjoy yourselves while I am away!</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

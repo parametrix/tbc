@@ -56,7 +56,7 @@ Here is yet another variation on this query:
 I'm thinking something similar to RealDWG for AutoCAD?
 
 The closest I was able to find is your discussion
-of [Open Revit OLE Storage](http://thebuildingcoder.typepad.com/blog/2010/06/open-revit-ole-storage.html).
+of [Open Revit OLE Storage](0391_open_ole_storage.htm).
 
 However, I got the impression that this provides very limited and that it would not enable to extract, say, specific wall properties.
 
@@ -65,23 +65,23 @@ However, I got the impression that this provides very limited and that it would 
 It is based on OLE structured storage, COM Structured Storage and the Compound File Binary Format.
 
 One additional aspect of the structure storage format is that it also enables access to
-so-called [custom file properties on RVT and RFA files](http://thebuildingcoder.typepad.com/blog/2015/09/lunar-eclipse-and-custom-file-properties.html#3),
+so-called [custom file properties on RVT and RFA files](1363_custom_file_prop.html#3),
 since they are standard Windows properties stored there.
 
 Here is another recent short overview
-on [programmatically generating Revit family RFA files](http://thebuildingcoder.typepad.com/blog/2015/06/getting-started-creating-families-and-rfa-files.html#4).
+on [programmatically generating Revit family RFA files](1327_learn_family_api.htm#4).
 
 There is a little bit more data that can indeed be accessed from family definition RFA files without running Revit using the `Application` `ExtractPartAtomFromFamilyFile` method:
 
 <!--- 0248 0448 -->
 
-- [Extract Part Atoms](http://thebuildingcoder.typepad.com/blog/2009/11/extract-part-atoms.html)
-- [Extract Part Atom Revisited](http://thebuildingcoder.typepad.com/blog/2010/09/extract-part-atom-revisited.html)
+- [Extract Part Atoms](0248_extract_part_atoms.htm)
+- [Extract Part Atom Revisited](0448_extract_part_atom.htm)
 
 Regarding the question you raise on full access to the RVT file contents without a Revit session up and running, we recently published a request for wishes concerning that area:
 
 <center>
-[What Can Revit on the Cloud Do For You?](http://thebuildingcoder.typepad.com/blog/2016/02/what-can-revit-on-the-cloud-do-for-you.html#2)
+[What Can Revit on the Cloud Do For You?](1400_revit_cloud.html#2)
 </center>
 
 If you have a serious need and a clear vision of what you would like to see, please contact [Jim Quanci](mailto:jim.quanci@autodesk.com) and let him know.
@@ -113,7 +113,7 @@ Moreover, you need to be in a valid Revit API context to make any Revit API call
 A valid Revit API context is only available within call back functions, i.e. event handlers that are actively called by Revit after registering to the corresponding API events.
 
 This is described in detail in numerous discussions in The Building Coder topic group
-on [Idling and External Events for Modeless Access and Driving Revit from Outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+on Idling and External Events for Modeless Access and Driving Revit from Outside *(link unavailable)*.
 
 I assume that the information provided by Content Studio is accessible through the OLE and COM Structured Storage of the RVT and RFA file formats and the part atom functionality and the `Application` `ExtractPartAtomFromFamilyFile` method provided by the Revit API and described above.
 

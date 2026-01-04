@@ -101,8 +101,8 @@ on [CI for RevitLookup](https://forums.autodesk.com/t5/revit-api-forum/ci-for-re
 #### <a name="4"></a>Purging Types, Families and Materials
 
 The Revit API provides no direct access to purge, and this has been high on the add-in developer wish list for a long time, cf. the discussions
-on [purging unused text note types](http://thebuildingcoder.typepad.com/blog/2010/11/purge-unused-text-note-types.html) 
-and [determining purgeable elements](http://thebuildingcoder.typepad.com/blog/2013/03/determining-purgeable-elements.html) in general.
+on [purging unused text note types](0476_purge_text_note_types.htm) 
+and [determining purgeable elements](0910_purge.htm) in general.
 
 Now, Harry Mattison of [Boost your BIM](https://boostyourbim.wordpress.com) provided clever solutions
 to [purge types and families](https://boostyourbim.wordpress.com/2016/10/20/rtceur-api-wish-1-purging-types-and-families)

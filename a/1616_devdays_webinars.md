@@ -166,7 +166,7 @@ But I don't know any other restriction, and how could I adjust my vertex list an
 **Answer:**
 
 The problem might indeed be due to vertices lying too close together; they need to
-be [at least about 2 mm apart](http://thebuildingcoder.typepad.com/blog/2014/05/directshape-performance-and-minimum-size.html).
+be [at least about 2 mm apart](1154_directshape_min_size.htm).
 
 What I always do in these kind of cases:
 

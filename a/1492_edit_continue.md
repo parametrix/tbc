@@ -58,16 +58,16 @@ Porto last week, and other little titbits to share as well:
 
 
 As I mentioned in the notes from
-the [Revit API discussion panel](http://thebuildingcoder.typepad.com/blog/2016/10/rtc-revit-api-panel-idea-station-edit-and-continue.html),
+the [Revit API discussion panel](1488_revit_api_panel.html),
 one of the topics we touched upon was how
-to [edit and continue, aka debug without restart or live development](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.49),
+to edit and continue, aka debug without restart or live development *(link unavailable)*,
 i.e., enable the full cycle of debugging an add-in, discovering an error, editing the code to fix it, and continuing debugging in the same Revit model without being forced to terminate and restart Revit and reload the project.
 
 This is not immediately achievable, because if you use the Visual Studio debugger to launch Revit, it will lock the DLL that you are debugging, and you will not be able to edit it.
 
 The standard suggestion to work around this that I made in the past is to convert your add-in code to a macro for debugging, and then convert it back again when done.
 
-Various other suggestions have been made (and are listed in [The Building Coder topic group 5.49](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.49) mentioned above) to enable reloading the add-in without converting the code to a macro, e.g., by loading it from an in-memory byte stream instead of a file.
+Various other suggestions have been made (and are listed in The Building Coder topic group 5.49 *(link unavailable)* mentioned above) to enable reloading the add-in without converting the code to a macro, e.g., by loading it from an in-memory byte stream instead of a file.
 
 Michael Porskær of [Orbicon A/S](http://www.orbicon.dk) pointed out that he uses a much simpler and more direct method by running Revit.exe in normal standalone mode instead of launching it from the Visual Studio debugger, attaching the debugger to the Revit.exe process, and using the AddInManager provided with the Revit SDK to load the add-in.
 
@@ -146,7 +146,7 @@ Who knows, maybe I am already much further, and the text you read here now was A
 
 Check out these other AI, CAD and communication related items:
 
-- [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo) (already [mentioned in January](http://thebuildingcoder.typepad.com/blog/2016/01/bim-programming-madrid-and-spanish-connectivity.html#7))
+- [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo) (already [mentioned in January](1398_bim_programming.html#7))
 - [Autodesk Design Graph](#4)
 - [AI recognises conversational speech](#5)
 - [AI teaching assistant](#5.1)

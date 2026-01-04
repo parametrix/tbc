@@ -63,7 +63,7 @@ Determining the extents of a text element has been a recurring and challenging t
 </ul>
 
 The 2D custom exporter provides a basis for a much more powerful approach to address this, as already discussed once way back then 
-in [using a custom exporter for 2D](https://thebuildingcoder.typepad.com/blog/2015/11/au-begins-and-using-a-custom-exporter-for-2d.html#2):
+in [using a custom exporter for 2D](1379_custom_export_2d.html#2):
 
 - [Retrieve dimension text height and width](#2)
 - [Determine text font geometry](#3)

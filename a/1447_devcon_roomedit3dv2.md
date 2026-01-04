@@ -34,7 +34,7 @@ Here are all the roomedit3dv2 resources for you to explore at your own leisure:
 
 - [Detailed discussion](http://the3dwebcoder.typepad.com/blog/2016/06/forge-platform-and-roomedit3d-with-thee-legged-oauth.html)
 - [Slide deck](zip/free_your_bim_data.pdf)
-- [Demo recording](https://youtu.be/bDI5YX7PDP8) ([download](http://thebuildingcoder.typepad.com/roomedit3dv2.mp4))
+- [Demo recording](https://youtu.be/bDI5YX7PDP8) (download *(link unavailable)*)
 - [Source code](https://github.com/jeremytammik/model.derivative.api-nodejs-sample-roomedit3d)
 - [Live test](https://roomedit3dv2.herokuapp.com)
 

@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - eliminated deprecated API usage of `NewFloor` and `NewSlab` methods
@@ -91,10 +122,10 @@ Here are some of them, and a final deprecated API clean-up:</p>
 </ul>
 <h4><a name="2"></a> The Building Coder Samples Clean</h4>
 <p>Before diving into the Python oriented topics, I'll mention in passing that the deprecated Revit API usage remaining after
-the <a href="https://thebuildingcoder.typepad.com/blog/2021/04/revit-2022-sdk-and-the-building-coder-samples.html#5">initial migration</a> to
+the <a href="1902_2022_sdk_tbc.html#5">initial migration</a> to
 the Revit 2022 API has now been removed.</p>
 <p>The deprecated API usage was caused by calls to the <code>NewFloor</code> and <code>NewSlab</code> methods.</p>
-<p>The recent <a href="https://thebuildingcoder.typepad.com/blog/2021/08/triangle-count-floor-and-slab-creation.html#3">floor creation API clarification</a> explained
+<p>The recent <a href="1914_create_floor.html#3">floor creation API clarification</a> explained
 how to easily address this,
 and <a href="https://github.com/jeremytammik/the_building_coder_samples">The Building Coder samples</a>
 <a href="https://github.com/jeremytammik/the_building_coder_samples/releases/tag/2022.0.151.4">release 2022.0.151.4</a> implements
@@ -127,10 +158,10 @@ For those, you can implement a second, separate, filtered element collector that
 In a post-processing step, you could check that the value of their <code>ReferenceLevel</code> property matches the desired value.</p>
 <p>These two separate filtered element collectors can be combined into one using a Boolean operation.</p>
 <p>I used this technique to put together such combinations of filters
-to <a href="http://thebuildingcoder.typepad.com/blog/2010/07/retrieve-structural-elements.html">retrieve structural elements</a>
-and <a href="http://thebuildingcoder.typepad.com/blog/2010/06/retrieve-mep-elements-and-connectors.html">MEP elements and their connectors</a>, respectively.</p>
+to <a href="0404_structural_elements.htm">retrieve structural elements</a>
+and <a href="0398_retrieve_mep_elements.htm">MEP elements and their connectors</a>, respectively.</p>
 <p>You can check out The Building Coder topic group
-on <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.9">filtering for elements</a> to
+on <span class="unavailable-link">filtering for elements</span> to
 see many more examples.</p>
 <p><strong>Response:</strong> I didn't realize there was so much diversity in the way Revit handles the different type categories behind the scenes until I downloaded the RevitLookup snoop tool yesterday.
 For example, I see that Duct and Cable Tray are broken out into separate Duct and CableTray Objects, and they both use Reference Levels.
@@ -383,7 +414,7 @@ else:
 </center></p>
 <h4><a name="4"></a> Get ViewSheet from View</h4>
 <p>We already discussed and documented
-how to <a href="https://thebuildingcoder.typepad.com/blog/2020/02/get-title-block-data-and-viewsheet-from-view.html">retrieve a <code>ViewSheet</code> from a <code>View</code></a> based on
+how to <a href="1820_sheet_from_view.html">retrieve a <code>ViewSheet</code> from a <code>View</code></a> based on
 the <a href="http://forums.autodesk.com/t5/revit-api-forum/bd-p/160">Revit API discussion forum</a> thread
 <a href="https://forums.autodesk.com/t5/revit-api-forum/get-viewsheet-from-view/m-p/10491156">get ViewSheet from View</a>.</p>
 <p>Erik Frits added a solution code snippet to that for Python developers:</p>
@@ -503,3 +534,11 @@ a wall.
 Unfortunately, we don't yet have any official documentation for this feature.</p>
 <p><strong>Response:</strong> @vlad.pavel I am so happy, you made my day!
 It worked perfectly! </p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

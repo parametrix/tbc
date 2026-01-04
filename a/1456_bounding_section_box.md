@@ -192,7 +192,7 @@ However, I found some of the X and Y axes are in minus and moreover they are not
  
 Two steps are required:
  
-First of all, all Revit database [length measurements are in imperial feet](http://thebuildingcoder.typepad.com/blog/2011/03/internal-imperial-units.html).
+First of all, all Revit database [length measurements are in imperial feet](0553_imperial_units.htm).
  
 There is no way to change that. 
  
@@ -323,7 +323,7 @@ Does anyone know what would be the best way to achieve it using Revit API?
 **Answer:** The number of possible approaches is infinite.
  
 I would probably start off
-by [computing the convex hull](http://thebuildingcoder.typepad.com/blog/2009/06/convex-hull-and-volume-computation.html) of
+by [computing the convex hull](0160_convex_hull_volume.htm) of
 the entire design, and then determine the width and length of that.
  
 Another approach, which may or may not be faster, depending on many factors:

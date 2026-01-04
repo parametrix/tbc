@@ -73,7 +73,7 @@ While we are at it, let's fix those 53 obsolete API usage warnings as well.
 We have know for long that it will be going away.
 
 In fact, it
-was [publicly announced](http://thebuildingcoder.typepad.com/blog/2012/05/read-only-and-automatic-transaction-modes.html) as
+was [publicly announced](0760_read_auto_transact.htm) as
 far back as 2012.
 
 So this clean-up is long overdue.

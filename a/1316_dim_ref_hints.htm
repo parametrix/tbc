@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -25,7 +56,7 @@ akn_include
 <p>Several cases recently came up asking how to obtain references to programmatically create dimensioning elements.</p>
 
 <p>These hints expand on the recently discussed topic of creating
-<a href="http://thebuildingcoder.typepad.com/blog/2014/11/picking-pairs-and-dimensioning-family-instance-origin.html">
+<a href="1241_dim_fam_inst_orig.htm">
 dimensioning between family instance insertion points</a>.</p>
 
 <p>They were raised by the following queries on how to retrieve suitable references for dimensioning:</p>
@@ -37,7 +68,7 @@ dimensioning between family instance insertion points</a>.</p>
 </ul>
 
 <p>Before getting to that, I'll just add that I returned safe and sound from the
-<a href="http://thebuildingcoder.typepad.com/blog/2015/05/cloning-a-solid-angelhack-3d-web-fest-and-dubai.html">
+<a href="1315_2016_au_dubai_ah8.htm">
 Dubai hackathon</a> that I mentioned last Friday.</p>
 
 <p>I reported on the event during the weekend, discussing
@@ -126,7 +157,7 @@ I want to get the reference planes in a family instance for dimension creation w
 
 <p><strong>Answer:</strong>
 
-I assume you have read about <a href="http://thebuildingcoder.typepad.com/blog/2014/11/picking-pairs-and-dimensioning-family-instance-origin.html">dimensioning between family instance origins</a>.</p>
+I assume you have read about <a href="1241_dim_fam_inst_orig.htm">dimensioning between family instance origins</a>.</p>
 
 <p>If your window symbols have their insertion points at the same location as the centre reference, you could use that approach.</p>
 
@@ -148,8 +179,8 @@ I assume you have read about <a href="http://thebuildingcoder.typepad.com/blog/2
 <h4>Dimensioning Between a Grid and an Edge of a Face</h4>
 
 <p>The following query was raised by Samer Habib in a
-<a href="http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html?cid=6a00e553e16897883301b7c788f437970b#comment-6a00e553e16897883301b7c788f437970b">comment</a> on
-<a href="http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html">What's New in the Revit 2016 API</a>:</p>
+<a href="1311_whats_new_2016.htm">comment</a> on
+<a href="1311_whats_new_2016.htm">What's New in the Revit 2016 API</a>:</p>
 
 <p><strong>Question:</strong>
 
@@ -169,7 +200,7 @@ I am trying to create a new dimension between a grid and an edge of a face.</p>
 
 The answer is exactly the same as above:</p>
 
-<p>Please note the description of <a href="http://thebuildingcoder.typepad.com/blog/2014/11/picking-pairs-and-dimensioning-family-instance-origin.html">dimensioning between instance insertion points</a>, plus these additional important aspects:</p>
+<p>Please note the description of <a href="1241_dim_fam_inst_orig.htm">dimensioning between instance insertion points</a>, plus these additional important aspects:</p>
 
 <ul>
 <li>Set IncludeNonVisibleGeometry when requesting the element geometry.</li>
@@ -214,4 +245,13 @@ Can the API be used to create a dimension to the wrapping location of an insert 
 
 <p><strong>Answer:</strong>
 
-Yes, this location can be found as described in the discussion on <a href="http://thebuildingcoder.typepad.com/blog/2011/10/retrieving-detailed-wall-layer-geometry.html">retrieving detailed wall layer geometry</a>. </p>
+Yes, this location can be found as described in the discussion on <a href="0666_wall_layer_geom.htm">retrieving detailed wall layer geometry</a>. </p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

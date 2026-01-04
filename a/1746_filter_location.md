@@ -161,7 +161,7 @@ Their implementations are almost identical, except that they retrieve the first 
 Since there are more `ElementType` objects than `TextNoteType` ones in the project, the latter method is certainly faster.
 
 Also, all three methods could be speeded up by using a (quick) parameter filter instead of the (slower than slow) LINQ post-processing accessed by the `First` method, as described in the recent discussion
-on [slow, slower still and faster filtering](https://thebuildingcoder.typepad.com/blog/2019/04/slow-slower-still-and-faster-filtering.html#2).
+on [slow, slower still and faster filtering](1736_faster_filtering.html#2).
 
 You can see the methods I added in
 this [diff to the previous version](https://github.com/jeremytammik/the_building_coder_samples/compare/2020.0.145.1...2020.0.145.2).

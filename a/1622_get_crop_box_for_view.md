@@ -27,8 +27,8 @@ E.g., the crop box 'points' to the id of the view it is in using <code>ID_PARAM<
 ### Efficiently Retrieve Crop Box for Given View
 
 Konrads Samulis shared a very nice solution to retrieve the crop box for a given view using a highly efficient parameter filter in
-his [comment](http://thebuildingcoder.typepad.com/blog/2013/09/rotating-a-plan-view.html#comment-3734421721)
-on [rotating a plan view](http://thebuildingcoder.typepad.com/blog/2013/09/rotating-a-plan-view.html).
+his [comment](1019_rotate_plan_view.htm#comment-3734421721)
+on [rotating a plan view](1019_rotate_plan_view.htm).
 
 In his own words:
 

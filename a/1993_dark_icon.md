@@ -90,9 +90,9 @@ meanwhile, the AI revolution acceleration continues growing:
 Matthew Taylor, associate and CAD developer at [WSP](https://www.wsp.com) shared
 two [dark theme icon hacks](https://forums.autodesk.com/t5/revit-api-forum/dark-theme-icons-a-couple-of-hacks/m-p/11935167),
 useful time- and labour-saving tips and tricks to support
-the [dark theme in Revit 2024](https://thebuildingcoder.typepad.com/blog/2023/01/dark-theme-possibility-looming.html).
+the [dark theme in Revit 2024](1979_dark_theme.html).
 The new API functionality to support theme switching is listed in
-the [Revit API news section on UI API additions](https://thebuildingcoder.typepad.com/blog/2023/04/whats-new-in-the-revit-2024-api.html#4.2.25).
+the [Revit API news section on UI API additions](1989_whats_new_2024.html#4.2.25).
 Says Matt:
 
 ####<a name="2.1"></a> Hack 1 &ndash; Dark Icons by ImageMagick
@@ -195,7 +195,7 @@ This means that `ItemFactoryBase.NewFamilyInstance` is invoked underneath by the
 In previous versions of Revit, the "same" method is defined directly in `Autodesk.Revit.Creation.Document` class.
 
 The Revit API news highlights this change in the section
-[1.4.1. Placement of Level based instances in family documents](https://thebuildingcoder.typepad.com/blog/2023/04/whats-new-in-the-revit-2024-api.html#4.1.4.1).
+[1.4.1. Placement of Level based instances in family documents](1989_whats_new_2024.html#4.1.4.1).
 
 The use of the method looks the same, but they result in different compiled code when linked with different releases of RevitAPI.dll, which means the DLL compiled against Revit 2024 cannot be used in Revit 2023 if you use this method.
 
@@ -241,7 +241,7 @@ Now, [scientists can use GPT AI to passively read people's thoughts](https://www
 ####<a name="7"></a> AI Emergent Abilities May Not Be Emergent After All
 
 In March, scientists were surprised comparing ChatGPT using GPT 3.5 with some greater capabilities exhibited by GPT 4,
-hypothesising [sparks of artificial general intelligence in the LLM](https://thebuildingcoder.typepad.com/blog/2023/03/uv-emergence-fuzz-and-the-get_-prefix.html#9).
+hypothesising [sparks of artificial general intelligence in the LLM](1987_uv_fuzz_get_prop.html#9).
 
 A more recent paper questions this, instead
 asking [are emergent abilities of large language models a mirage?](https://arxiv.org/abs/2304.15004)
@@ -261,6 +261,6 @@ That reminds me of Harari's last chapter
 in [21 Lessons for the 21st Century](https://en.wikipedia.org/wiki/21_Lessons_for_the_21st_Century),
 on meditation.
 He shares his own very personal answer on how to reconnect with reality: retreat into myself and feel it through my own senses, cutting off myself for a while from all external input.
-I love that book, as I mentioned discussing [generative AI and multi-modal learning](https://thebuildingcoder.typepad.com/blog/2023/02/back-to-basics-and-chatgpt.html#9) back in February this year.
+I love that book, as I mentioned discussing [generative AI and multi-modal learning](1981_chatgpt_basics.html#9) back in February this year.
 Highly recommended.
 

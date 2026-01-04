@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -25,7 +55,7 @@ We already touched on the relationship between a host and its hosted elements in
 
 The first such topic was the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/relationship-in.html">
+<a href="0016_relationship_inverter.htm">
 relationship inverter</a>,
 
 making use of the explicit property providing a reference to the host of hosted elements such as doors, windows and other family instances.
@@ -33,7 +63,7 @@ Since this property only specifies the relationship in one direction, we impleme
 
 <p>No such explicit property is provided in either direction in the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/tag-association.html">
+<a href="0131_tag_association.htm">
 association between a tag and the tagged element</a>, 
 
 and that discussion mentions four ideas for possible workarounds instead.</p>
@@ -52,7 +82,7 @@ neither to get the reference of a wall footing from the wall attached to it or v
 
 The workaround via the Document.Delete method mentioned as one of the four workarounds to determine the association between 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/tag-association.html">
+<a href="0131_tag_association.htm">
 a tag and the tagged element</a>
 
 can be used in this case as well:
@@ -124,7 +154,7 @@ The Revit 2010 SDK Samples AvoidObstruction and RaytraceBounce demonstrate the u
 By using a couple of points on the wall footing, we can easily determine which wall is located directly above it, and vice versa as well.
 This provides a much stronger possibility to the workarounds using general geometric proximity suggested in the post on the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/tag-association.html">
+<a href="0131_tag_association.htm">
 tag association</a>.</p>
 
 <p>Here is
@@ -136,7 +166,16 @@ of the complete Visual Studio solution with the new command.</p>
 
 <p><strong>Update:</strong> I updated this article for Revit 2011 on August 3 2010 based on the comment below by Jo Lee to fix the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/08/transaction-migration-errors.html">
+<a href="0419_transaction_migration.htm">
 transaction migration errors</a> introduced
 
 by the simplistic initial flat port of the code from Revit 2010 to the Revit 2011 API.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

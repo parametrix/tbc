@@ -105,8 +105,8 @@ Many thanks to Ching for these nice contributions!
 #### <a name="4"></a> Copy legend view and component from background file
 
 Håvard Dagsvik shared a new suggestion for creating a legend view in
-a [comment](http://thebuildingcoder.typepad.com/blog/2010/05/duplicate-legend-component.html#comment-4158350001)
-on [duplicating a legend component](https://thebuildingcoder.typepad.com/blog/2010/05/duplicate-legend-component.html):
+a [comment](0377_duplicate_legend_component.htm#comment-4158350001)
+on [duplicating a legend component](0377_duplicate_legend_component.htm):
 
 Old post and still no methods for creating legend views and components.
 
@@ -237,6 +237,6 @@ For the takeoff to be placed, the API function needs to have a temporary branch 
 
 The Building Coder presented two examples of creating takeoffs a long time ago:
 
-- [Use of NewTakeOffFitting on a Duct](http://thebuildingcoder.typepad.com/blog/2011/02/use-of-newtakeofffitting-on-a-duct.html)
-- [Use of NewTakeOffFitting on a Pipe](http://thebuildingcoder.typepad.com/blog/2011/04/use-of-newtakeofffitting-on-a-pipe.html)
+- [Use of NewTakeOffFitting on a Duct](0529_newtakeofffitting_duct.htm)
+- [Use of NewTakeOffFitting on a Pipe](0564_newtakeofffitting_pipe.htm)
 

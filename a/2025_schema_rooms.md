@@ -22,7 +22,7 @@
 
 - Draw order of detail items
   https://forums.autodesk.com/t5/revit-api-forum/draw-order-of-detail-items/m-p/12531008
-  very briefly mentioned in [Handy Utility Classes](https://thebuildingcoder.typepad.com/blog/2013/04/handy-utility-classes.html) and in the what's new notes for 2013, 2014 and 2024, but never tested
+  very briefly mentioned in [Handy Utility Classes](0925_handy_utils.htm) and in the what's new notes for 2013, 2014 and 2024, but never tested
 
 twitter:
 
@@ -182,7 +182,7 @@ Mauricio [SpeedCAD](https://github.com/SpeedCAD) Jorquera shared a nice solution
 to [Embed GIF in ToolTip](https://forums.autodesk.com/t5/revit-api-forum/embed-gif-in-tooltip/m-p/12532476):
 
 Before creating this custom class, I searched everywhere for an example of how to embed an animated gif in a tooltip for a button in Revit.
-I looked at the [video animated ribbon item tooltip](http://thebuildingcoder.typepad.com/blog/2012/09/video-animated-ribbon-item-tooltip.html) from 2012,
+I looked at the [video animated ribbon item tooltip](0817_tooltip_video.htm) from 2012,
 but it seems that using a GIF is not possible, and I don't like the idea of hosting a video at a URL.
 Anyway, if anyone has found any examples, please let me know.
 
@@ -286,7 +286,7 @@ private void buttonChangeDrawingOrder_Click(
 Thank you! Works like a charm!
 
 We briefly mentioned `DetailElementOrderUtils` way back in 2013 as one of
-the [handy utility classes](https://thebuildingcoder.typepad.com/blog/2013/04/handy-utility-classes.html),
+the [handy utility classes](0925_handy_utils.htm),
 and again in the What's New notes for the 2013, 2014 and 2024 Revit API, but this is the first sample code snippet using them.
 
 So, many thanks to Adrian for spelling it out for us!

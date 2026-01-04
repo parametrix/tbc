@@ -153,7 +153,7 @@ compiling [The Building Coder samples](https://github.com/jeremytammik/the_build
 generated [eight warnings](zip/tbc_samples_2019_errors_warnings_2.txt).
 
 The first is just a notification of unreachable code in the module `CmdListAllRooms.cs` that I recently worked on
-to [export room boundaries to CSV for Forge surface classification](https://thebuildingcoder.typepad.com/blog/2019/01/room-boundaries-to-csv-and-wpf-template.html#2),
+to [export room boundaries to CSV for Forge surface classification](1713_room_boundary_wpf.html#2),
 so I'll fix that first.
 
 It was caused by a `const bool` variable `_exportInMillimetres`.

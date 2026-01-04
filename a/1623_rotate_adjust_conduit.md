@@ -45,7 +45,7 @@ Here is another one: Applying element rotation to adjust and fix conduit end...
 ### Rotation Adjusts and Fixes Conduit End
 
 Quite a while ago, I listed a bunch of possible approaches
-to [refresh element graphics display](http://thebuildingcoder.typepad.com/blog/2014/06/refresh-element-graphics-display.html).
+to [refresh element graphics display](1173_refresh_graphics.htm).
 
 Here comes a new one to join the gang:
 

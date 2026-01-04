@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Opening Geometry, Using LINQ, and Dances with Elephants</h3>
@@ -10,12 +41,12 @@
 
 <p>The issue on requesting non-visible objects to be included when retrieving geometry was discussed a few times in the past, e.g. in the theoretical explanation of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/geometry-options.html">
+<a href="0278_abg01_geometry_options.htm">
 geometry retrieval options</a> and
 
 in the practical case of accessing
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/curtain-wall-geometry.html">
+<a href="0374_curtain_wall_geometry.htm">
 curtain wall geometry</a>.
 
 <p>Here is another neat little issue that just came up and helps throw more light on some of the variations that occur when retrieving family symbol geometry.
@@ -32,7 +63,7 @@ curtain wall geometry</a>.
 
 <p>I described a similar situation accessing the geometry of a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/01/joined-beam-geometry-access.html">
+<a href="0520_joined_beam_geometry.htm">
 joined beam</a>.
 
 <p>Does that apply in your case?
@@ -67,7 +98,7 @@ This may not be fully reliable.
 
 <p>Markus Hannweber pointed out an interesting little possibilty in a comment on the code presented to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/12/loading-an-inventor-adsk-component.html">
+<a href="0695_load_adsk.htm">
 load an Inventor ADSK component</a>,
 
 where I retrieve the first symbol of a newly loaded family using the following lines of code:
@@ -86,12 +117,12 @@ where I retrieve the first symbol of a newly loaded family using the following l
 
 <p>This nicely complements the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/11/pick-corners-and-create-floor.html#comment-6a00e553e168978833015392f0c3e5970b">
+<a href="0672_pick_create_floor.htm#comment-6a00e553e168978833015392f0c3e5970b">
 suggestion</a>
 
 by Jon Smith on using the LINQ FirstOrDefault method in the sample code on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/11/pick-corners-and-create-floor.html">
+<a href="0672_pick_create_floor.htm">
 picking corners to create a floor</a>,
 
 which avoids having to handle the exception thrown by the First method if no element is found.
@@ -138,3 +169,11 @@ On the other hand, the Revit API has been in the process of phasing out all of i
 Jim Quanci, Director of the Autodesk Developer Network ADN, on how small companies can leverage big ones to build their business, e.g. by using the Autodesk Revit API to create and provide your add-in functionality to a large global audience.
 
 -->
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

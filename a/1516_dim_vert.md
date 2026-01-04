@@ -156,11 +156,11 @@ Back to my favourite current 'hobby' topic.
 
 As I already reported, I would like to implement a question answering system for the Revit API and all aspects of Revit API usage and add-in programming:
 
-- [Jill Watson as motivation and lots of literature on deep learning](http://thebuildingcoder.typepad.com/blog/2017/01/au-in-london-and-deep-learning.html#7)
-- [Getting started implementing a question answering system](http://thebuildingcoder.typepad.com/blog/2017/01/virtues-of-reproduction-research-mep-settings-ontology.html#5)
-- [First impression from IBM Bluemix](http://thebuildingcoder.typepad.com/blog/2017/01/virtues-of-reproduction-research-mep-settings-ontology.html#6)
-- [Open source QAS options](http://thebuildingcoder.typepad.com/blog/2017/01/virtues-of-reproduction-research-mep-settings-ontology.html#7)
-- [Building a Revit API ontology](http://thebuildingcoder.typepad.com/blog/2017/01/virtues-of-reproduction-research-mep-settings-ontology.html#8)
+- [Jill Watson as motivation and lots of literature on deep learning](1514_deep_learning.html#7)
+- [Getting started implementing a question answering system](1515_repro_tray_conduit.html#5)
+- [First impression from IBM Bluemix](1515_repro_tray_conduit.html#6)
+- [Open source QAS options](1515_repro_tray_conduit.html#7)
+- [Building a Revit API ontology](1515_repro_tray_conduit.html#8)
 
 Here are some new additions and further steps in my exploration:
 
@@ -168,7 +168,7 @@ Here are some new additions and further steps in my exploration:
 ####<a name="4"></a>QnA Maker
 
 Matt Taylor added
-a [comment](http://thebuildingcoder.typepad.com/blog/2017/01/au-in-london-and-deep-learning.html#comment-3095462007) to
+a [comment](1514_deep_learning.html#comment-3095462007) to
 the last post, pointing out
 the [Microsoft QnA Maker](https://qnamaker.ai) service
 that supports you in building, training and publishing a simple question and answer bot based on FAQ URLs, structured documents or editorial content in minutes:

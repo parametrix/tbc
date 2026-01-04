@@ -92,9 +92,9 @@ Some of them can be addressed by adding appropriate fuzz and adjusting neighbour
 However, sometimes a gap remains.
 
 Jake of [Ripcord Engineering](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/3926242) recently
-shared a bunch of valuable [Python and gbXML tips](https://thebuildingcoder.typepad.com/blog/2023/07/export-gbxml-and-python-tips.html) and followed up with a pointer
+shared a bunch of valuable [Python and gbXML tips](2002_dll_hell_gbxml.html) and followed up with a pointer
 to [Shapely](https://pypi.org/project/shapely/)
-to [find and fix a gap in the building geometry](https://thebuildingcoder.typepad.com/blog/2023/09/element-diff-compare-shapely-and-rdbe.html#4).
+to [find and fix a gap in the building geometry](2008_rdbe_elem_diff.html#4).
 
 He followed up with this impressive and beautiful documentation of
 an entire gbXML [small surface solution addressing the whole building](doc/gbxml_small_surface_solution_whole_building.pdf) that I think warrants an entire blog post of its own, so here goes, addressing the issue

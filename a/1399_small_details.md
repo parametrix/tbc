@@ -42,14 +42,14 @@ Jose presents a simple workaround using an imported DWG file...
 
 I am back from
 the [BIM Programming](http://www.bimprogramming.com)
-[conference and workshops in Madrid](http://thebuildingcoder.typepad.com/blog/2016/01/bim-programming-madrid-and-spanish-connectivity.html) and
+[conference and workshops in Madrid](1398_bim_programming.html) and
 rather flooded with overdue stuff, so here is just a quick note on how to you can model small details in Revit, if you really need to, courtesy
 of Jose Ignacio Montes of [Avatar BIM](http://avatarbim.com).
 
 As you are perfectly well aware, Revit will not allow you to model things smaller than 1/8<sup>th</sup> of an inch directly in the project environment, as we have seen by trying to create smaller and smaller line and direct shape elements until an exception is thrown:
 
-- [Think Big in Revit](http://thebuildingcoder.typepad.com/blog/2009/07/think-big-in-revit.html)
-- [DirectShape Performance and Minimum Size](http://thebuildingcoder.typepad.com/blog/2014/05/directshape-performance-and-minimum-size.html)
+- [Think Big in Revit](0176_think_big.htm)
+- [DirectShape Performance and Minimum Size](1154_directshape_min_size.htm)
 
 
 Jose presents a simple workaround using an imported DWG file:

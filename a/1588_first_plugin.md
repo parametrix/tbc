@@ -43,7 +43,7 @@ on [Revit API Visual Studio error/warnings](https://forums.autodesk.com/t5/revit
 and [IExternalCommand could not be found](https://forums.autodesk.com/t5/revit-api-forum/iexternalcommand-could-not-be-found/m-p/7386154).
 
 There are several ways to quickly get started with the Revit API, which I present as completely and succinctly as I can in
-the [getting started overview](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2).
+the getting started overview *(link unavailable)*.
 
 The first problem you might encounter is getting your add-in loaded into Revit.
 

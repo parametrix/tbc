@@ -64,11 +64,11 @@ Is there a general way to check with what kind of treatment current warning can 
 The solution you have already seems pretty good to me.
  
 For something yet more generic, all I can suggest is
-a [Windows dialogue handler](http://thebuildingcoder.typepad.com/blog/2009/10/dismiss-dialogue-using-windows-api.html),
+a [Windows dialogue handler](0229_dialogue_clicker.htm),
 e.g., [JtClicker](https://github.com/jeremytammik/JtClicker).
  
 The Building Coder provides an entire topic group on the subject
-of [Detecting and Handling Dialogues and Failures](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.32).
+of Detecting and Handling Dialogues and Failures *(link unavailable)*.
  
 
 **Answer 2:** The solution suggested in the thread

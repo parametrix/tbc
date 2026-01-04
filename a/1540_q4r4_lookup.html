@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <!-- <script src="run_prettify.js" type="text/javascript"></script> --> 
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -24,7 +55,7 @@ I ran the first query on the collection of tbc blog posts imported into Elastics
 <p>I ran the first query on the collection
 of <a href="https://github.com/jeremytammik/tbc">tbc</a> blog
 posts imported into Elasticsearch to experiment for the question answering
-system <a href="http://thebuildingcoder.typepad.com/blog/2017/03/q4r4-revit-api-question-answering-system.html">Q4R4 <em>Question Answering for Revit API</em></a>.</p>
+system <a href="1536_q4r4.html">Q4R4 <em>Question Answering for Revit API</em></a>.</p>
 <p>No spectacular results to report so far, but at least it works.</p>
 <p>I installed the <a href="https://github.com/mobz/elasticsearch-head">elasticsearch-head</a> web
 front end to better explore and understand my local Elasticsearch cluster.</p>
@@ -40,7 +71,7 @@ including a nice little filtering sample that I picked up:</p>
 </ul>
 <h4><a name="2"></a>Elasticsearch Text Field Mapping</h4>
 <p>Yesterday, I described
-the <a href="http://thebuildingcoder.typepad.com/blog/2017/03/q4r4-tbc-import-and-revitlookup.html">q4r4 tbc import script <code>tbcimport.py</code></a> that
+the <a href="1539_q4r4_lookup.html">q4r4 tbc import script <code>tbcimport.py</code></a> that
 I implemented to import all The Building Coder blog posts
 into <a href="https://www.elastic.co/products/elasticsearch">Elasticsearch</a> to
 start experimenting with queries on them.</p>
@@ -224,8 +255,8 @@ out to be a pretty trivial matter of accessing and evaluating a simple series of
 <p><strong>Answer:</strong> First, there are a couple of unnecessary inefficiencies in the sample code snippet.</p>
 <p>There is no need for the <code>Cast&lt;&gt;</code>, and more importantly, <code>ToList</code> adds no value for this use case and consumes both time and memory, cf.:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/09/findelement-and-collector-optimisation.html">FindElement and collector optimisation</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/03/events-uv-coordinates-and-rooms-on-level.html#6">Collect all rooms on a given level</a></li>
+<li><a href="0832_find_element_optimise.htm">FindElement and collector optimisation</a></li>
+<li><a href="1537_event_uv_room_filt.html#6">Collect all rooms on a given level</a></li>
 </ul>
 <p>I refactored the parameter accessing code as a separate little method to retrieve the area scheme name from the area element like this:</p>
 <pre class="code">
@@ -289,3 +320,11 @@ out to be a pretty trivial matter of accessing and evaluating a simple series of
 in <a href="https://github.com/jeremytammik/the_building_coder_samples/releases/tag/2017.0.132.10">release 2017.0.132.10</a>.</p>
 <p>You can see the new code
 by <a href="https://github.com/jeremytammik/the_building_coder_samples/compare/2017.0.132.9...2017.0.132.10">comparing with the preceding release 2017.0.132.9</a>.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

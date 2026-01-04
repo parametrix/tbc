@@ -165,7 +165,7 @@ Yet another RevitLookup update, full roundtrip interaction between your own inst
 ####<a name="3"></a> Calling Revit Command from Chromium Browser
 
 Last week, Andrej Licanin of [Bimexperts](https://bimexperts.com/sr/home) shared
-a nice solution demonstrating [how to use the Revit built-in CefSharp browser in WPF](https://thebuildingcoder.typepad.com/blog/2023/11/camera-target-and-toposolid-subdivision-material.html#2).
+a nice solution demonstrating [how to use the Revit built-in CefSharp browser in WPF](2018_topo_mat_came_targ.html#2).
 
 This week he expanded on that in his contribution
 on [calling Revit command from Chromium browser](https://forums.autodesk.com/t5/revit-api-forum/calling-revit-command-from-chromium-browser/td-p/12413281):

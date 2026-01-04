@@ -195,21 +195,21 @@ Then you can simply say:
 </pre>
 
 By the way, I would suggest that you make it simple for yourself: before doing anything else, work through
-the [standard Revit API getting started material](https://thebuildingcoder.typepad.com/blog/about-the-author.html#2), the training videos, and the initial walkthroughs in the developer guide.
+the standard Revit API getting started material *(link unavailable)*, the training videos, and the initial walkthroughs in the developer guide.
 
 That will explain all the fundamentals and get you up and running smoothly with less hassle.
 
-Once you have done that read about how to [research to solve a Revit API programming task](https://thebuildingcoder.typepad.com/blog/2017/01/virtues-of-reproduction-research-mep-settings-ontology.html#3).
+Once you have done that read about how to [research to solve a Revit API programming task](1515_repro_tray_conduit.html#3).
 
 Good luck and have fun!
 
 #### <a name="6"></a>Getting Started with a Macro
 
 Similar beginners questions cropped up on Revit macros as well,
-in [two](https://thebuildingcoder.typepad.com/blog/2018/09/five-secrets-of-revit-api-coding.html#comment-4790311450)
-[comments](https://thebuildingcoder.typepad.com/blog/2018/09/five-secrets-of-revit-api-coding.html#comment-4790311788
+in [two](1682_5_secrets.html#comment-4790311450)
+[comments](1682_5_secrets.html#comment-4790311788
 )
-on the [Five Secrets of Revit API Coding](https://thebuildingcoder.typepad.com/blog/2018/09/five-secrets-of-revit-api-coding.html).
+on the [Five Secrets of Revit API Coding](1682_5_secrets.html).
 
 The answer is always the same:
 
@@ -252,19 +252,19 @@ However, you can easily make use of other .NET libraries implementing it and ref
 
 I have repeatedly made use of the [Clipper library](http://angusj.com/delphi/clipper.php) for such purposes:
 
-- [Room and Wall Adjacent Area](http://thebuildingcoder.typepad.com/blog/2009/01/room-and-wall-adjacent-area.html)
-- [Boolean Operations for 2D Polygons](http://thebuildingcoder.typepad.com/blog/2009/02/boolean-operations-for-2d-polygons.html)
-- [GetPolygon Extension Methods](http://thebuildingcoder.typepad.com/blog/2010/02/getpolygon-extension-methods.html)
-- [Boolean Operations for 2D Polygons](http://thebuildingcoder.typepad.com/blog/2013/09/boolean-operations-for-2d-polygons.html)
-- [Saving a Solid to a SAT File Implementation](http://thebuildingcoder.typepad.com/blog/2013/09/saving-a-solid-to-a-sat-file-implementation.html)
-- [Creating Topography Contours and Building Masses](http://thebuildingcoder.typepad.com/blog/2014/11/creating-topography-contours-and-building-masses.html)
-- [More on Wall Opening Areas per Room](http://thebuildingcoder.typepad.com/blog/2016/04/more-on-wall-opening-areas-per-room.html)
-- [Fire Rating Zone Intersection](https://thebuildingcoder.typepad.com/blog/2018/12/fire-rating-zone-intersection.html)
-- [Automated PDF Report and 2D Sketch Booleans](https://thebuildingcoder.typepad.com/blog/2019/11/automated-pdf-report-and-2d-sketch-booleans.html)
-- [Extrusion Analyser and 2D Boolean Element Outline](https://thebuildingcoder.typepad.com/blog/2020/01/extrusion-analyser-and-2d-boolean-element-outline.html)
+- [Room and Wall Adjacent Area](0084_room_wall_adjacent_area.htm)
+- [Boolean Operations for 2D Polygons](0098_booleans_on_polygons.htm)
+- [GetPolygon Extension Methods](0303_extension_methods.htm)
+- [Boolean Operations for 2D Polygons](1011_booleans_on_polygons.htm)
+- [Saving a Solid to a SAT File Implementation](1026_save_solid_to_file.htm)
+- [Creating Topography Contours and Building Masses](1236_data_topo_building.htm)
+- [More on Wall Opening Areas per Room](1424_wall_opening_areas.html)
+- [Fire Rating Zone Intersection](1708_fire_rating_zone_inters.html)
+- [Automated PDF Report and 2D Sketch Booleans](1797_indesign_rvtclipper.html)
+- [Extrusion Analyser and 2D Boolean Element Outline](1809_element_outline.html)
 
 The last pointer highlights the most interesting and up-to-date sample using it so far,
 the [ElementOutline add-in](https://github.com/jeremytammik/ElementOutline).
 
 You should also check out the discussions in the topic group
-on [2D Booleans and Adjacent Areas](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.2).
+on 2D Booleans and Adjacent Areas *(link unavailable)*.

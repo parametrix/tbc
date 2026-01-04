@@ -81,15 +81,15 @@ Here is the table of contents:
 
 ####<a name="3"></a> Filtered Element Collector Benchmark
 
-Back to the Revit API, I recently reiterated the differences between [slow, slower still and faster filtering](https://thebuildingcoder.typepad.com/blog/2019/04/slow-slower-still-and-faster-filtering.html).
+Back to the Revit API, I recently reiterated the differences between [slow, slower still and faster filtering](1736_faster_filtering.html).
 
 In the end, the only way to tell whether your filter is performing well or not is to implement
 some [benchmarking](https://en.wikipedia.org/wiki/Benchmark_(computing)) for it.
 
 Jai Hari Hara Sudhan very commendably did so, documenting his progress and sharing his results in
-a [series of](https://thebuildingcoder.typepad.com/blog/2019/04/slow-slower-still-and-faster-filtering.html#comment-4421084673)
-[comments on](https://thebuildingcoder.typepad.com/blog/2019/04/slow-slower-still-and-faster-filtering.html#comment-4421183783)
-[that post](https://thebuildingcoder.typepad.com/blog/2019/04/slow-slower-still-and-faster-filtering.html#comment-4421443231) and in
+a [series of](1736_faster_filtering.html#comment-4421084673)
+[comments on](1736_faster_filtering.html#comment-4421183783)
+[that post](1736_faster_filtering.html#comment-4421443231) and in
 his [API speed test screencast](https://knowledge.autodesk.com/community/screencast/99858ef7-c4c8-4599-ba6d-0394ff830d62) demonstrating
 the benchmark running live.
 
@@ -113,7 +113,7 @@ Question 2. In the FamilySelectionFilter method, is there any better or more per
 
 I therefore suggest that you benchmark them yourself and let us know the result.
 
-[The Building Coder topic groups](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5) lists
+The Building Coder topic groups *(link unavailable)* lists
 several benchmarking examples that you can look at to see how.
 
 

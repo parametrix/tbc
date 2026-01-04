@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - clarification symbol versus instance geometry
@@ -179,7 +210,7 @@ I would like to be able to do this in a 3D view, but I don't know how.</p>
 <li>A user opens the add-in and is prompted to input a location through a WPF window.</li>
 <li>Once a location is confirmed, a number of things are created/imported into the active project to make it look as close as possible to its actual real-life location. One of these things is the satellite image I'm seeking to import here.</li>
 </ul>
-<p>Essentially, my question is exactly <a href="">this one</a>, but instead doing that programmatically/automatically through an add-in. In that thread, a suggestion is made to create a decal with the desired image, but this does not seem to be supported through the API.</p>
+<p>Essentially, my question is exactly <a href=">this one</a>, but instead doing that programmatically/automatically through an add-in. In that thread, a suggestion is made to create a decal with the desired image, but this does not seem to be supported through the API.</p>
 <p>Another approach I found is to use <code>PostCommand</code> to create and place decals, but these commands are apparently only executed after exiting the API context and only one at a time.
 As my add-in aims to perform a whole bunch of functionalities in one go, this seems ill-suited for my use case.
 It seems to be possible to chain a bunch of <code>PostCommand</code> calls, but this is a little 'hacky' and not recommended, especially for commercial use.</p>
@@ -188,7 +219,7 @@ Is my use case just not supported in current Revit?
 I'm new to programming for Revit, so it's very possible I've missed something.</p>
 <p>I'm running / programming for Revit 2019 on Windows 10.</p>
 <p><strong>Answer:</strong> What about creating a new material and setting its texture path as described
-in <a href="https://thebuildingcoder.typepad.com/blog/2017/11/modifying-material-visual-appearance.html">modifying material visual appearance</a>,
+in <a href=" ">modifying material visual appearance</a>,
 then making a <code>TopoSurface</code> and assigning the material to it?</p>
 <p>I don't know how to adjust the UV mapping for the TopoSurface, but if it worked, you would see your satellite image in 3D.</p>
 <p><strong>Response:</strong> Thanks to all for the replies!
@@ -371,7 +402,7 @@ However, I can't find a way to determine the view element id, so I don't know wh
 </ul>
 <p>Is there anywhere I could store the view ID, so that I can retrieve it on load? 
 I considered storing it in my own settings file, but that doesn't work if the file gets sent to another user.</p>
-<p><strong>Answer:</strong> This is a prime case for <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23">extensible storage</a> in my opinion.
+<p><strong>Answer:</strong> This is a prime case for <span class="unavailable-link">extensible storage</span> in my opinion.
 Make a new schema and save the <code>UniqueId</code> of the view into it.
 Users will delete that view, though, and if it doesn’t file into the project browser correctly, there will be push back.
 Expect to delete and recreate the view often (even mid-session).
@@ -409,3 +440,11 @@ and many other sacred traditions.</p>
 <p><center>
 <img src="img/candlelight_snow.jpg" alt="Candlelight in snow" title="Candlelight in snow" width="280"/>
 </center></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

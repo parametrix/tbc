@@ -115,7 +115,7 @@ There are different levels of triggers and updaters. You may want to modify thos
 Alternatively, you might be able to add a switch to your updater Execute so that it is only active once and deactivated when it gets called a second time in the same transaction, to step out of the infinite loop.
 
 Maybe some of
-the [other DMU samples](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.31) will
+the other DMU samples *(link unavailable)* will
 help resolve the problem.
 
 Frank shares a simpler suggestion:
@@ -134,7 +134,7 @@ Ever so many thanks to Frank for his endless flow of extremely insightful answer
 
 ####<a name="4"></a> New Forge and Design Automation Samples
 
-I do not discuss [Forge Design Automation for Revit](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55) or
+I do not discuss Forge Design Automation for Revit *(link unavailable)* or
 DA4R as much as I would like, since there are still more than enough issues to be handled dealing with the pure Revit desktop API, and my other Forge Platform Development colleagues are more specialised on the web-based issues.
 
 I would still like to highlight the continuous succession

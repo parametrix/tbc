@@ -1,24 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Display Webcam Image on Building Element Face</h3>
 
 <p>We are now ready to implement RevitWebcam, making use of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/grabbing-an-internet-webcam-image.html">
+<a href="0379_webcam_image.htm">
 webcam image grabber</a>
 
 that I presented yesterday.
 
 <p>As I explained, the idea is to make use of the new Revit API
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/idling-event.html">
+<a href="0352_idling.htm">
 Idling event</a> 
 
 which allows 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/asynchronous-api-calls-and-idling.html">
+<a href="0353_asynchronous.htm">
 semi-asynchronous access</a> to the Revit API.
 
 <p>In order to display the webcam image updating itself in real-time on a Revit building element face, I implement the following steps:
@@ -212,7 +243,7 @@ The code to do so is based on the SpatialFieldGradient SDK sample and looks like
 
 <p>The event handler may be called very frequently, as demonstrated by The Building Coder 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/idling-event.html">
+<a href="0352_idling.htm">
 CmdIdling</a> command.
 
 Since the webcam image will be updated less frequently, it makes sense to check for updates less frequently than the handler is called, i.e. skip the majority of the calls. 
@@ -448,7 +479,7 @@ uiapp.Idling
 
 <p>We can use of the view of Piccadilly Circus from the webcam we used for our 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/grabbing-an-internet-webcam-image.html">
+<a href="0379_webcam_image.htm">
 image grabbing samples</a>:</p>
 
 <center>
@@ -477,3 +508,12 @@ containing the complete source code and Visual Studio solution for this Revit ex
 
 <p>I still have one more Idling sample up my sleeve which I hope to be able to document in the coming days as well. 
 Meanwhile, I hope that you find this as interesting as I do, even if this specific sample may not have that many immediate uses in most people's day-to-day work, and that the underlying principles and solution steps are useful anyway.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

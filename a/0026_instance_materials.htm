@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <style type="text/css">
 .blue { color: blue; }
 .green { color: green; }
@@ -9,7 +39,7 @@
 
 <p>In the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/element-materials.html">
+<a href="0025_element_materials.htm">
 previous post</a>,
 
 we read out materials from walls and other building elements by querying them for their geometry,
@@ -120,7 +150,16 @@ Roofs <127269 Generic Roof - 300mm> has 12 materials:
 <p>As you can see, the material assignments on the family instance solid faces may allow us to differentiate between the different element components, such as the door frame and panel, and the window glass and sash. This is however dependant on the family definition, so there is no guarantee that this approach will work for all families.</p>
 
 <p>An interesting next step would be to analyse how to make use of the transformations defined by the nested geometry instances to calculate the real world coordinates. How to do this is actually demonstrated by the various
-<a href="http://thebuildingcoder.typepad.com/blog/2008/09/geometry-viewer.html">geometry viewers</a>
+<a href="0013_geometry_viewers.htm">geometry viewers</a>
 that we already discussed.</p>
 
-<p>I am adding the complete Visual Studio solution <a href="http://thebuildingcoder.typepad.com/blog/files/bc1006.zip">here</a>. This version 1.0.0.6 includes all commands we discussed so far: CmdListWalls, CmdRelationshipInverter, CmdWallDimensions, CmdFilterPerformance and the updated version of CmdGetMaterials.</p>
+<p>I am adding the complete Visual Studio solution <span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/files/bc1006.zip">here <em>(file no longer available)</em></span>. This version 1.0.0.6 includes all commands we discussed so far: CmdListWalls, CmdRelationshipInverter, CmdWallDimensions, CmdFilterPerformance and the updated version of CmdGetMaterials.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

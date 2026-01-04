@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -67,9 +98,9 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 <h4><a name="2"></a> Get MEP Duct Shape Update</h4>
 <p>We have looked at how to determine the MEP duct shape repeatedly in the past, e.g., in the articles on:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/03/distinguishing-mep-element-shape.html">Distinguishing MEP element shape</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/05/improved-mep-element-shape-and-mount-ararat.html">Improved MEP Element Shape</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/02/ifc-import-levels-and-mep-element-shapes.html">IFC Import Levels and MEP Element Shapes</a></li>
+<li><a href="0554_mep_element_shape.htm">Distinguishing MEP element shape</a></li>
+<li><a href="0578_mep_element_shape_2.htm">Improved MEP Element Shape</a></li>
+<li><a href="1406_mep_element_shape_4.html">IFC Import Levels and MEP Element Shapes</a></li>
 </ul>
 <p>The question came up again in the following discussion, and the solution is now &ndash; and has been for some time now &ndash; at hand:</p>
 <p><strong>Question:</strong> How can I figure out the duct shape (oval, rectangular or round) from <code>DuctType</code> independently of its <code>FamilyName</code>? The FamilyName is a localized string, so cannot get the shape info out from it.</p>
@@ -136,12 +167,12 @@ TransitionsRectangularToRound, TransitionsRectangularToOval and TransitionsOvalT
 <h4><a name="4"></a> BipChecker Facelift</h4>
 <p><a href="https://github.com/ottosson">Mathias Ottosson</a>
 of <a href="https://www.wsp.com">WSP</a> very kindly shares an important UI enhancement of
-the venerable <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.34">BipChecker, the Revit built-in parameter checker</a>,
+the venerable <span class="unavailable-link">BipChecker, the Revit built-in parameter checker</span>,
 in his <a href="http://forums.autodesk.com/t5/revit-api-forum/bd-p/160">Revit API discussion forum</a> thread
 on <a href="https://forums.autodesk.com/t5/revit-api-forum/i-gave-jeremys-bip-checker-a-facelift/m-p/9566362">I gave Jeremys BIP checker a facelift</a>,
 explaining:</p>
 <p>I really enjoy the nifty tools that Jeremy has created or maintains, like
-the <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.34">BipChecker</a>
+the <span class="unavailable-link">BipChecker</span>
 and <a href="https://github.com/jeremytammik/Revitlookup">RevitLookup</a>.
 Truly useful tools that I use more or less daily when I develop for Revit.</p>
 <p>But when I use them a lot, I feel some pain points that makes them a little bit less fun to use.</p>
@@ -259,3 +290,11 @@ on <a href="https://adndevblog.typepad.com/aec/2012/09/fonts-starting-with-.html
 <p><strong>Response:</strong> The method used in the link you sent to AEC DevBlog helped.
 It gives more fonts than are shown by Revit but I think I can work with it.</p>
 <p>Many thanks to Richard for the crucial answer.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

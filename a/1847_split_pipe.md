@@ -199,7 +199,7 @@ While on the topic of splitting things, here is another related old case, 142011
 Can you please help us with this?
 
 **Answer:** You can call many built-in Revit commands using
-the [`PostCommand` API](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.3).
+the `PostCommand` API *(link unavailable)*.
 
 However, this just launches the built-in command as is, prompting the user for all further input and other interaction.
 
@@ -242,18 +242,18 @@ Tool help info:
 I would expect them to adjust automatically.
 
 I discovered and demonstrated that approach in the series of posts
-on [implementing a rolling offset](http://thebuildingcoder.typepad.com/blog/2014/01/final-rolling-offset-using-pipecreate.html).
+on [implementing a rolling offset](1093_pipe_create.htm).
 
 To make sure I am not missing anything, I am checking with the development team for you as well.
 
 Meanwhile, here are some other discussions on placing similar fittings:
 
-- [Cable Tray Orientation and Fittings](http://thebuildingcoder.typepad.com/blog/2010/05/cable-tray-orientation-and-fittings.html)
-- [Use of NewTakeOffFitting on a Duct](http://thebuildingcoder.typepad.com/blog/2011/02/use-of-newtakeofffitting-on-a-duct.html)
-- [Set Elbow Fitting Type](http://thebuildingcoder.typepad.com/blog/2011/02/set-elbow-fitting-type.html)
-- [Use of NewTakeOffFitting on a Pipe](http://thebuildingcoder.typepad.com/blog/2011/04/use-of-newtakeofffitting-on-a-pipe.html)
-- [Simpler Rolling Offset Using NewElbowFitting](http://thebuildingcoder.typepad.com/blog/2014/01/newelbowfitting-easily-places-rolling-offset-elbow-fittings.html)
-- [NewCrossFitting Connection Order](http://thebuildingcoder.typepad.com/blog/2014/10/newcrossfitting-connection-order.html)
+- [Cable Tray Orientation and Fittings](0366_cable_tray_fitting.htm)
+- [Use of NewTakeOffFitting on a Duct](0529_newtakeofffitting_duct.htm)
+- [Set Elbow Fitting Type](0535_set_elbow_fitting_type.htm)
+- [Use of NewTakeOffFitting on a Pipe](0564_newtakeofffitting_pipe.htm)
+- [Simpler Rolling Offset Using NewElbowFitting](1091_newelbowfitting.htm)
+- [NewCrossFitting Connection Order](1233_newcrossfitting.htm)
 
 The development team added some more detailed advice:
 

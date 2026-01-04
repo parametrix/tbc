@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1263326 [How to close active document?] -->
@@ -24,13 +55,13 @@ I really do want to programmatically close the active document.
 <p>We discussed some related issues in the past, e.g. sending messages to Revit, determining its window handle, and working with modeless dialogues:
 
 <ul>
-<!-- 051 --><li><a href="http://thebuildingcoder.typepad.com/blog/2008/12/driving-revit-from-outside.html">Driving Revit from outside</a>
-<!-- 088 --><li><a href="http://thebuildingcoder.typepad.com/blog/2009/02/revit-window-handle-and-modeless-dialogues.html">Revit window handle and modeless dialogues</a>
-<!-- 229 --><li><a href="http://thebuildingcoder.typepad.com/blog/2009/10/dismiss-dialogue-using-windows-api.html">Dialogue clicker, also sends Windows messages</a>
-<!-- 233 --><li><a href="http://thebuildingcoder.typepad.com/blog/2009/10/modeless-pressure-drop-tool.html">Modeless pressure drop tool</a>
-<!-- 260 --><li><a href="http://thebuildingcoder.typepad.com/blog/2009/12/au-and-automated-testing.html">Automated testing and an overview of previous automation solutions</a>
-<!-- 400 --><li><a href="http://thebuildingcoder.typepad.com/blog/2010/06/revit-parent-window.html">Revit parent window</a>
-<!-- 407 --><li><a href="http://thebuildingcoder.typepad.com/blog/2010/07/modeless-loose-connectors.html">Modeless loose connectors</a>
+<!-- 051 --><li><a href="0051_driving_revit.htm">Driving Revit from outside</a>
+<!-- 088 --><li><a href="0088_revit_window_handle.htm">Revit window handle and modeless dialogues</a>
+<!-- 229 --><li><a href="0229_dialogue_clicker.htm">Dialogue clicker, also sends Windows messages</a>
+<!-- 233 --><li><a href="0233_pressure_drop.htm">Modeless pressure drop tool</a>
+<!-- 260 --><li><a href="0260_automated_testing.htm">Automated testing and an overview of previous automation solutions</a>
+<!-- 400 --><li><a href="0400_revit_parent_window.htm">Revit parent window</a>
+<!-- 407 --><li><a href="0407_modeless_loose_connectors.htm">Modeless loose connectors</a>
 </ul>
 
 <p>Please be aware that sending keystrokes to Revit in this way is not part of the Revit API and is not officially supported by Autodesk.
@@ -149,7 +180,7 @@ Public Function Execute(ByVal commandData As ExternalCommandData, ByRef message 
       End Function
 </pre>
 
-<p>And define keyboard shortcuts for two native commands 'Area' and 'Area Boundary Line' in the Revit 2011 from View tab ‡ User Interface ‡ Keyboard Shorcuts
+<p>And define keyboard shortcuts for two native commands 'Area' and 'Area Boundary Line' in the Revit 2011 from View tab ÔøΩ User Interface ÔøΩ Keyboard Shorcuts
 -->
 
 <p>In spite of all our efforts, we have not been able to port some code that worked in Revit 2010 to Revit 2011.
@@ -226,3 +257,12 @@ Please be aware that this is not an officially supported usage by Autodesk.
 It is not guaranteed to work under any conditions or in any past, present or future releases of Revit whatsoever. 
 If you use this, you are doing so at your own risk. 
 Autodesk hopes to expose an appropriate API for this functionality in future.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

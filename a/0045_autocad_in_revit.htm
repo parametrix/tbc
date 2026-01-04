@@ -1,8 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">â† Back to Index</a>
+    </div>
+    <article>
 <h3>Running AutoCAD inside Revit</h3>
 
 <p>The preceding post on 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/realdwg-and-object-enablers.html">
+<a href="0044_realdwg_object_enablers.htm">
 RealDWG and object enablers</a>
 
 discussed one potential method for making use of AcDb functionality to read and write AutoCAD DWG files inside of Revit.
@@ -55,15 +84,15 @@ c.Src = null;
 <p>Obviously, the actions you trigger in your background AutoCAD process must not require any user interaction, or, if they do, you must feed them the appropriate command line user input through something like mainform.axAcCtrl1.PostCommand(...).</p>
 
 <div style="color:red">
-<p>Der Grund für das alles:</p>
+<p>Der Grund fï¿½r das alles:</p>
 
 <ul>
-<li>Unsere Stahlliste geht nur über einen Aufruf aus AutoCAD.</li>
-<li>Da für die Stahlliste nur die Anzahl aber nicht die Anordnung wichtig ist, brauchen wir uns um einen korrekte Plazierung in AutoCAD nicht zu kümmern. Man sieht die Zeichnung nicht. Kann ich dir vieleicht mal zeigen in Vegas.</li>
+<li>Unsere Stahlliste geht nur ï¿½ber einen Aufruf aus AutoCAD.</li>
+<li>Da fï¿½r die Stahlliste nur die Anzahl aber nicht die Anordnung wichtig ist, brauchen wir uns um einen korrekte Plazierung in AutoCAD nicht zu kï¿½mmern. Man sieht die Zeichnung nicht. Kann ich dir vieleicht mal zeigen in Vegas.</li>
 </ul>
 
-<p>Das ganze Projekt kann ich natürlich nicht schicken, der wesentliche Unterschied zu Kean ist, dass ich die Dialogbox mit ACAD (MainForm) nicht aufmache! In MFC würde ich sagen ich lasse einfach DoModal weg. (.NET Befehl hab ich vergessen)
-Bei Kean geht die Dialogbox auf und zeigt ACAD zunächst ohne alle Menüs, aber im wesentlichen ist alles bearbeitbar.
+<p>Das ganze Projekt kann ich natï¿½rlich nicht schicken, der wesentliche Unterschied zu Kean ist, dass ich die Dialogbox mit ACAD (MainForm) nicht aufmache! In MFC wï¿½rde ich sagen ich lasse einfach DoModal weg. (.NET Befehl hab ich vergessen)
+Bei Kean geht die Dialogbox auf und zeigt ACAD zunï¿½chst ohne alle Menï¿½s, aber im wesentlichen ist alles bearbeitbar.
 Aber einfach, gucke 
 
 <a href="http://through-the-interface.typepad.com/through_the_interface/2008/03/embedding-autoc.html">
@@ -71,3 +100,10 @@ da</a>,
 
 da stehen sogar einige meiner Fragen drauf.</p>
 </div>
+    </article>
+    <div class="nav">
+        <a href="index.html">â† Back to Index</a>
+    </div>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

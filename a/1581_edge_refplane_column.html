@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -6,6 +36,7 @@
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -66,7 +97,7 @@ asking <a href="https://forums.autodesk.com/t5/revit-api-forum/is-the-first-edge
 <p>Is it always the first one returned by <code>face.EdgeLoops</code>?</p>
 <p>If not, how to find it?</p>
 <p><strong>Answer:</strong> The Building Coder discussed how to
-determine <a href="http://thebuildingcoder.typepad.com/blog/2008/12/2d-polygon-areas-and-outer-loop.html">2D polygon areas and outer loop</a> by area comparison.</p>
+determine <a href="0053_2d_polygon_area_outer_loop.htm">2D polygon areas and outer loop</a> by area comparison.</p>
 <p>Richard presents an alternative solution based on a simple max and min calculation. In his words:</p>
 <p>The area approach mentioned there is probably more reliable, but I had an alternate idea based on getting all co-ordinates linked to the edge loops they are from and then finding the minimums in a certain direction. Below, I've taken <code>min.x</code>, but but same would apply for <code>min.y</code>, <code>max.x</code> and <code>max.y</code>.</p>
 <p>I could not think of a situation where if you convert the 3D co-ordinates of each edge curve to a co-ordinate system of the plane you would end up with a min.x for the outer loop greater than the min.x for the inner loop. Similarly, the max.x of the outer loop should be greater than the max.x of the inner loop. This appeared to be true for most cases but then there was the issue of circular curves where the two end points could be further back than a point projecting into the centre of the curve. So, I decided to treat cyclic curves differently by checking for min.x along the curve.</p>
@@ -339,8 +370,8 @@ on retrieving the <a href="https://forums.autodesk.com/t5/revit-api-forum/xyz-qu
 <p>The above-mentioned built-in parameters have changed for consistency; older versions of Revit use ones specific to columns. Check the API documentation for details on this.</p>
 <p>Finally, for the sake of completeness, here are previous discussions by The Building Coder on some aspects of slanted columns that illuminate further:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/06/creating-a-slanted-column.html">Creating a slanted column</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/03/slanted-column-cross-section-rotation.html">Slanted column cross section rotation</a></li>
+<li><a href="0149_slanted_column.htm">Creating a slanted column</a></li>
+<li><a href="0559_column_xsec_rotation.htm">Slanted column cross section rotation</a></li>
 </ul>
 <h4><a name="5"></a>Determining a Reference Plane from a Reference Point</h4>
 <p>Last but not least, another very useful and illuminating solution that deserves mentioning is from Fair59, once again, in 
@@ -423,7 +454,7 @@ a <a href="https://forums.autodesk.com/t5/revit-api-forum/reference-plane-from-r
 <p>Many thanks to Fair59 for explaining this and sharing the solution!</p>
 <h4><a name="6"></a>Beware of Multiple Outer Loops</h4>
 <p>Adrian Esdaile added 
-a <a href="http://thebuildingcoder.typepad.com/blog/2017/08/edge-loop-point-reference-plane-and-column-line.html#comment-3491949399">warning in his comment below</a> that
+a <a href="1581_edge_refplane_column.html#comment-3491949399">warning in his comment below</a> that
 you should definitely be aware of:</p>
 <p>In reference to the question about Outer loops: Unfortunately, the quirky nature of Revit will defeat you here. It is entire possible to create valid geometry in Revit composed of TWO (yes, TWO, or more...) OUTER loops. How this will behave with your code (or indeed ANY code!) is questionable.</p>
 <p>For example &ndash; create a Floor in Sketch mode, create two 'islands' of floor, click OK... done! Revit calls this ONE floor object, but it's clearly TWO separate pieces &ndash; that behave as one. It is considered VERY POOR DRAFTING to create floors like this; but "users gonna use" if you give them a chance, and it's a quick and lazy way of doing things.</p>
@@ -438,3 +469,11 @@ you should definitely be aware of:</p>
 <p><strong>Response:</strong> Obviously, it is not that hard to test whether a Revit so-called edge loop consists of multiple disjoint loops, but it places substantial additional burden on the programmer.</p>
 <p>My preferred way to deal with this (or at least protect myself as an add-in developer) would be to implement a reliable model checking algorithm, run automatically at regular intervals as well as before saving the BIM project, that checks for and warns about weird user input of this kind.</p>
 <p>Obviously, the number of creative and involuntarily evil things that users can get up to is absolutely unlimited, so the number of checks performed would grow with time as new evil possibilities are discovered and discouraged.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

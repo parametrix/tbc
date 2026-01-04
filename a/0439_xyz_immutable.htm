@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1262635 [PointLoad.Force.Y] -->
@@ -34,13 +65,13 @@ plankton</a> in our wake.
 
 <p>Looking at the Revit API again, we already discussed the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/xyz-immutable.html">
+<a href="0343_xyz_immutable.htm">
 immutability of the XYZ class</a> in
 
 the Revit 2011 API.
 Here is another aspect of that modification, from a case handled by 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/08/edit-wall-length.html">
+<a href="0422_edit_wall_length.htm">
 Augusto Gon&ccedil;alves</a> and Scott Conover:
 
 <p><strong>Question:</strong> Using the Revit 2010 API, I was able to modify the X, Y and Z components of the PointLoad Force and Moment properties, e.g.
@@ -62,7 +93,7 @@ The XYZ data returned by these properties is and always has been a copy of the u
 
 <p>One of the main reasons why the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/xyz-immutable.html">
+<a href="0343_xyz_immutable.htm">
 XYZ class is now immutable</a> is 
 
 to ensure that this mistake cannot be assumed to work anymore.
@@ -85,3 +116,12 @@ It would however work for other, similar, examples.
 </pre>
 
 <p>Many thanks to Scott and Augusto for the explanation!</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

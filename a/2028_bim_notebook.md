@@ -133,7 +133,7 @@ The amount of news items related to interactivity and AI keeps growing:
 ####<a name="2"></a> BIM Interactive Notebooks
 
 Hot on the foot of
-Joel Waldheim Saury's [interactive .NET Revit BIM Polyglot Notebook](https://thebuildingcoder.typepad.com/blog/2024/02/net-core-c4r-views-and-interactive-hot-reload.html#4),
+Joel Waldheim Saury's [interactive .NET Revit BIM Polyglot Notebook](2026_reload_core_publ.html#4),
 [Chuong Ho](https://chuongmep.com/) shares
 his [BIM Interactive Notebooks](https://www.linkedin.com/posts/chuongmep_opensource-ai-dataanalysis-activity-7164531381107183616-TYNP?utm_source=share&utm_medium=member_desktop):
 

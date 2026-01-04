@@ -127,7 +127,7 @@ on [`BindingMap.Remove` being ineffective on a non-shared project parameter]( ht
 The partner is complaining about an issue deleting non-shared project parameter, and there is no information in the SDK help doc to mention this.
 
 The discussion
-on [deleting a shared parameter](http://thebuildingcoder.typepad.com/blog/2009/08/deleting-a-shared-parameter.html) shows
+on [deleting a shared parameter](0205_delete_shared_param.htm) shows
 how to delete a shared parameter, but I could not find the proper way to delete a non-shared project parameter.
 
 I checked with the Revit engineering team to see if they can fix this or this is by design.
@@ -181,7 +181,7 @@ This version is slightly updated from the code posted by Zhong in the forum disc
 You can iterate directly over the collector itself.
 
 Using `ToElements` creates a copy of the information and uses time and space for no reason, cf.,
-[`FindElement` and collector optimisation](http://thebuildingcoder.typepad.com/blog/2012/09/findelement-and-collector-optimisation.html).
+[`FindElement` and collector optimisation](0832_find_element_optimise.htm).
 
 I added Zhong's solution 
 to [The Building Coder Samples](https://github.com/jeremytammik/the_building_coder_samples) 

@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -18,7 +49,7 @@ beam_distance_to_floor.png
 
 <p>I returned from my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2015/04/revit-api-trends-and-team-meeting-in-bretagne.html#2">
+<a href="1303_bretagne_api_trends.htm#2">
 team meeting</a> and
 
 subsequent brief holiday in the snow and am confronted with a long list of unanswered
@@ -74,7 +105,7 @@ For example, height = Level 4 - Level 0 = 4 meters:</p>
 
 You can use the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/09/a-couple-of-recent-issues.html#4">
+<a href="1211_various.htm#4">
 ReferenceIntersector</a> ray
 
 tracing functionality to achieve this.</p>
@@ -83,15 +114,15 @@ tracing functionality to achieve this.</p>
 
 <p>It was introduced in the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/devcamp-session-on-whats-new.html">Revit 2011 API</a> and
+<a href="0385_devcamp_whats_new.htm">Revit 2011 API</a> and
 
 originally provided via the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/findreferencesbydirection.html">FindReferencesByDirection method</a>.</p>
+<a href="0294_abg09_findReferencesByDir.htm">FindReferencesByDirection method</a>.</p>
 
 <p>The example later published as the MeasureHeight SDK sample is described in
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/findreferencesbydirection.html">FindReferencesByDirection</a> &gt;
+<a href="0294_abg09_findReferencesByDir.htm">FindReferencesByDirection</a> &gt;
 
 Measure distances &gt; Example: Measure Distance with FindReferencesByDirection.</p>
 
@@ -130,14 +161,14 @@ In the far distant past, you could not even ask the topography surface which poi
 
 <p>Therefore, I implemented a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/03/toposurface-interior-and-boundary-points.html">
+<a href="0556_toposurf_points.htm">
 topo surface interior and boundary points</a> add-in
 
 to determine this.</p>
 
 <p>The interior versus exterior predicate was later added to the API, cf.
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html">
+<a href="0938_whats_new_2014.htm">
 What's New in the Revit 2014 API</a> &gt;
 
 Reading points from a TopographySurface.</p>
@@ -182,7 +213,7 @@ Your approach sounds fine to me.</p>
 
 <p>I think I do so in my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/11/concrete-setout-points-for-revit-structure-2015.html">
+<a href="1234_setout_points.htm">
 concrete setout point add-in</a>.</p>
 
 <p>I also demonstrate this approach in many other samples on The Building Coder.</p>
@@ -191,7 +222,7 @@ concrete setout point add-in</a>.</p>
 
 <p>I implemented the original version of it that back in 2009 to analyse
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/nested-instance-geometry.html">
+<a href="0134_nested_instance_geo.htm">
 nested instance geometry</a>.</p>
 
 
@@ -256,8 +287,8 @@ I am afraid that you are encountering a basic and incontestable aspect of BIM: i
 
 <p>The Building Coder topic group on
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.9">
-Filtering for all Elements</a> discusses
+<span class="unavailable-link">
+Filtering for all Elements</span> discusses
 
 this exact issue.</p>
 
@@ -266,8 +297,8 @@ this exact issue.</p>
 <p>Here are two examples of simple first stabs at retrieving MEP and structural elements demonstrating such combinations:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/06/retrieve-mep-elements-and-connectors.html">Retrieving MEP elements and connectors</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/07/retrieve-structural-elements.html">Retrieving structural elements</a></li>
+<li><a href="0398_retrieve_mep_elements.htm">Retrieving MEP elements and connectors</a></li>
+<li><a href="0404_structural_elements.htm">Retrieving structural elements</a></li>
 </ul>
 
 <p>You will probably have to implement a similar kind of combined filtering algorithm for your needs.</p>
@@ -287,11 +318,20 @@ CmdCollectorPerformance module</a>.</p>
 
 I am now using a
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.1">
-Custom Exporter</a> to
+<span class="unavailable-link">
+Custom Exporter</span> to
 
 retrieve all elements and it is serving the purpose.</p>
 
 <p>I followed the samples that you have put on Building Coder.</p>
 
 <p>I agree that special filtering logic will be needed for specific elements and there is no one generic logic that can be used.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

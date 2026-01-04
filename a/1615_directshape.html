@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -6,6 +36,7 @@
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -116,9 +147,9 @@ scroll();
 the <a href="https://github.com/jeremytammik/DirectShapeFromFace">DirectShapeFromFace</a> add-in.</p>
 <p>It  creates a <code>DirectShape</code> element from a selected element face.</p>
 <p>We initially discussed it in 2015, in the article
-on <a href="http://thebuildingcoder.typepad.com/blog/2015/09/directshape-from-face-and-sketch-plane-reuse.html">DirectShape From Face and Sketch Plane Reuse</a>.</p>
+on <a href="1355_directshape_face.html">DirectShape From Face and Sketch Plane Reuse</a>.</p>
 <p>It demonstrates several approaches, including
-a <a href="http://thebuildingcoder.typepad.com/blog/2015/09/simpler-directshape-from-face-restsharp-put-and-post.html#2">simpler access to the picked face using <code>GetTotalTransform</code></a>.</p>
+a <a href="1357_directshape_simple.html#2">simpler access to the picked face using <code>GetTotalTransform</code></a>.</p>
 <p>Now I migrated it from Revit 2016 to Revit 2018, replacing a couple of obsolete API calls.</p>
 <h4><a name="3"></a>Improve Loft Form Creation Speed using DirectShape</h4>
 <p>One of the most important features of direct shapes is the ability to generate geometry directly in place in the model without needing to create a separate family definition and instantiate that, resulting in a  vast speed improvement.</p>
@@ -128,9 +159,9 @@ a <a href="http://thebuildingcoder.typepad.com/blog/2015/09/simpler-directshape-
 <p><strong>Question:</strong> Is there any work-around to create a loft form faster?</p>
 <p><strong>Answer:</strong> Depending on the kind of geometry you want to create, you might be able to use a <code>DirectShape</code> element instead:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/05/directshape-performance-and-minimum-size.html">DirectShape performance and minimum size</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/11/directshape-versus-families-category-and-texture.html">DirectShape versus families, category and texture</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/02/from-hack-to-app-obj-mesh-import-to-directshape.html">From Hack to App &ndash; OBJ Mesh Import to DirectShape</a></li>
+<li><a href="1154_directshape_min_size.htm">DirectShape performance and minimum size</a></li>
+<li><a href="1239_directshape.htm">DirectShape versus families, category and texture</a></li>
+<li><a href="1283_directobjloader.htm">From Hack to App &ndash; OBJ Mesh Import to DirectShape</a></li>
 </ul>
 <h4><a name="4"></a>Create DirectShape Instead of Conceptual Mass</h4>
 <p>I the same vein,
@@ -138,7 +169,7 @@ the <a href="http://forums.autodesk.com/t5/revit-api-forum/bd-p/160">Revit API d
 on <a href="http://forums.autodesk.com/t5/revit-api/create-a-surface-through-revit-api/m-p/5867952">creating a surface through Revit API</a> suggests
 using a <code>DirectShape</code> instead of a conceptual mass element and also introduces
 the new topic group #5.50 dedicated to
-the <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.50"><code>DirectShape</code> element</a>.</p>
+the <span class="unavailable-link"><code>DirectShape</code> element</span>.</p>
 <h4><a name="5"></a>Create Surface from Face</h4>
 <p>Another discussion also deals with creating a surface from a picked element face:</p>
 <p><strong>Question:</strong> I'm working on a function that creates surfaces from selected faces.
@@ -180,10 +211,10 @@ on <a href="https://forums.autodesk.com/t5/revit-api-forum/using-api-to-change-c
 <p>So, I can conclude that the color is stored somewhere within these <code>DirectShape</code> elements. I still cannot find where, and whether it can be changed though API.</p>
 <p><strong>Answer:</strong> The best way to control the colour of a direct shape element is probably by setting an appropriate category or subcategory on it.</p>
 <p>As you presumably know, there
-are <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.24">many ways to control the material and colour of a Revit element</a></p>
+are <span class="unavailable-link">many ways to control the material and colour of a Revit element</span></p>
 <p>If you prefer setting the colour explicitly, you can look at</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/03/change-element-colour.html">Change element colour</a></li>
+<li><a href="0561_change_element_colour.htm">Change element colour</a></li>
 <li><a href="https://forums.autodesk.com/t5/revit-api-forum/how-change-the-color-a-element/td-p/5651177">How to change the colour of an element</a></li>
 </ul>
 <p>Here is some code for that using <code>OverrideGraphicSettings</code>
@@ -241,7 +272,7 @@ using the spatial geometry calculator versus room boundary to achieve that:</p>
 </ul>
 <p>Last reading:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/12/2d-polygon-areas-and-outer-loop.html">2D polygon areas and outer loop</a></li>
+<li><a href="0053_2d_polygon_area_outer_loop.htm">2D polygon areas and outer loop</a></li>
 <li><a href="http://forums.autodesk.com/t5/revit-api-forum/create-mass-from-room/td-p/3674458">Create mass from room</a></li>
 </ul>
 <p>Many thanks for help!</p>
@@ -259,7 +290,7 @@ using the spatial geometry calculator versus room boundary to achieve that:</p>
 <p>This is demonstrated very effectively by
 the <a href="https://github.com/jeremytammik/RoomEditorApp">2D room editor</a>,
 which retrieves this information, converts it to a simplified 2D view in SVG, and displays the room outline in a web browser:</p>
-<p>Here is a <a href="http://thebuildingcoder.typepad.com/blog/2016/10/connecting-desktop-and-cloud-at-rtc-material.html">demo recording and lots of other supporting material</a>.</p>
+<p>Here is a <a href="1487_roomedit3d_material.html">demo recording and lots of other supporting material</a>.</p>
 <p>If you want a 3D direct shape instead of a 2D flat version, you will obviously need to determine the ceiling height and location and take that into account as well.</p>
 <p>Update:</p>
 <p>OK, I now went and read your problem description.</p>
@@ -276,13 +307,13 @@ I already pointed to.</p>
 <p>ExporterIFCUtils.ValidateCurveLoops. Maybe. The Edge.AsCurveFollowingFace method. Maybe. But read on through the following, and note the note in the last of the discussions listed below.</p>
 <p>For the former, here is some more reading material:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/12/2d-polygon-areas-and-outer-loop.html">2D Polygon Areas and Outer Loop</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/03/sort-and-orient-curves-to-form-a-contiguous-loop.html">Curve Following Face and Bounding Box Implementation</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/03/revit-2014-api-and-room-plan-view-boundary-polygon-loops.html#3">Retrieving Plan View Room Boundary Polygon Loops</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/extrusion-analyser-and-plan-view-boundaries.html">Extrusion Analyser and Plan View Boundaries</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-and-furniture-loops-using-symbols.html">Room and Furniture Loops Using Symbols</a></li>
+<li><a href="0053_2d_polygon_area_outer_loop.htm">2D Polygon Areas and Outer Loop</a></li>
+<li><a href="0918_contiguous_curves.htm">Curve Following Face and Bounding Box Implementation</a></li>
+<li><a href="0916_2014_api_room_loops.htm#3">Retrieving Plan View Room Boundary Polygon Loops</a></li>
+<li><a href="0921_extrusion_analyser.htm">Extrusion Analyser and Plan View Boundaries</a></li>
+<li><a href="0936_room_loops_symbols.htm">Room and Furniture Loops Using Symbols</a></li>
 <li><a href="ttps://github.com/jeremytammik/RoomEditorApp/blob/master/RoomEditorApp/ContiguousCurveSorter.cs">ContiguousCurveSorter</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/01/autodesk-internship-in-california-and-sorting-edges.html#3">Sorting Face Loop Edges</a></li>
+<li><a href="1267_intern_sort_edges.htm#3">Sorting Face Loop Edges</a></li>
 </ul>
 <p>I have explored and written lots more on this topic, as you can see if you follow the various links in the discussions listed above.</p>
 <p>I am confident that this will give you all you need.</p>
@@ -408,3 +439,11 @@ the <a href="https://github.com/Tamu/Revit3Drooms">Revit3Drooms GitHub repositor
 --->
 
 <p>OK, that is more than enough on direct shapes for now, isn't it?</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

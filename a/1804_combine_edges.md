@@ -136,8 +136,8 @@ Here are hints from StackOverflow for the first:
 
 The Building Coder provides some older thoughts on sorting and orienting curves to form a contiguous loop:
 
-- [Sort and orient curves to form a contiguous loop](https://thebuildingcoder.typepad.com/blog/2013/03/sort-and-orient-curves-to-form-a-contiguous-loop.html)
-- [Sorting face loop edges](https://thebuildingcoder.typepad.com/blog/2015/01/autodesk-internship-in-california-and-sorting-edges.html#3)
+- [Sort and orient curves to form a contiguous loop](0918_contiguous_curves.htm)
+- [Sorting face loop edges](1267_intern_sort_edges.htm#3)
 
 One method that does part of the work that you should definitely be aware of is the `Edge.AsCurveFollowingFace` method that returns a curve corresponding to the edge oriented in its topological direction on the specified face.
 That is the simplest option and a good place to start.

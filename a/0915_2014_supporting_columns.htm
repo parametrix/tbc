@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 07727891 [Bounding Box] -->
@@ -80,7 +111,7 @@ blow your faces out</a>  :-)</p>
 
 <p>Still, ignoring all that busy-ness for the moment, I chug along and return to a topic similar to my discussion on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/09/filter-for-touching-beams-using-solid-intersection.html">
+<a href="0823_filter_touching_beam.htm">
 retrieving all touching beams</a>.
 
 <p>In that post, I showed how to recursively traverse a collection of beams and detect the neighbouring ones at each end using an ElementIntersectsSolidFilter with a sphere.</p>
@@ -173,7 +204,7 @@ Unfortunately, that does not help either.
 
 <p>To make sure that the movement really is executed and the model updated before checking for an intersection, I followed the advice given by Arno&scaron;t L&ouml;bel on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/11/temporary-transaction-trick-touchup.html">
+<a href="0854_temp_transact.htm">
 enhancing the temporary transaction trick</a> and
 
 encapsulated the whole operation in a transaction group.
@@ -210,7 +241,7 @@ All supporting columns should be intersected by it.
 
 <p>I can use code similar to the sample presented to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2012-api.html">
+<a href="0903_whats_new_2012.htm">
 find 3D elements by intersection</a>.
 
 <p>Yay!
@@ -596,3 +627,12 @@ As said, they can be enabled and tested by modifying the Boolean switches intera
 the complete source code, Visual Studio solution and add-in manifest of the GetBeamColumns external command.
 
 <p>I hope you find this both interesting and useful as a basis for your own variants.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

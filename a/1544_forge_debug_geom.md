@@ -28,7 +28,7 @@ I have not quite finished it yet, but the existing functionality looks as if it 
 ### Adding Custom Geometry to the Forge Viewer
 
 I am in Gothenburg supporting the
-[Forge accelerator](http://thebuildingcoder.typepad.com/blog/2017/03/events-uv-coordinates-and-rooms-on-level.html#2).
+[Forge accelerator](1537_event_uv_room_filt.html#2).
 
 My project here is [ForgeFader](https://github.com/jeremytammik/forgefader),
 implementing the same end user functionality as

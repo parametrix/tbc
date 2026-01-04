@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 ﻿<head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -41,7 +72,7 @@ Here are Rustam, Marat, I and our all-time star, the volleyball herself:</p>
 
 <p>Fittingly enough, here is a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/08/unit-conversion.html?cid=6a00e553e1689788330154379044c3970c#comment-6a00e553e1689788330154379044c3970c">
+<a href="0196_unit_conversion.htm">
 question</a> from
 
 Russia, by Victor Chekalin, or Виктор Чекалин in Cyrillic, on formatting a floating point number as a display string using the current project units.
@@ -52,16 +83,16 @@ Enclos</a>,
 
 who already shared insights on accessing
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/curtain-wall-geometry.html">
+<a href="0374_curtain_wall_geometry.htm">
 curtain wall geometry</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/09/speed-up-selection.html">
+<a href="0441_speed_up_selection.htm">
 speeding up the interactive selection process</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/11/mirroring-in-a-new-family-and-changing-active-view.html">
+<a href="0488_mirror_in_new_family.htm">
 mirroring in a new family and changing the active view</a>, and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/11/planar-face-transform.html">
+<a href="0671_planar_face_transform.htm">
 constructing a planar face transform</a>.
 
 <p>All of the solutions to this problem I have seen revolve around stuffing in the value to format into an unused parameter picked up from some arbitrary database element and then calling the AsValueString method on it.
@@ -72,7 +103,7 @@ Here is Victor's initial query:
 
 <p><strong>Question:</strong> I need to convert a numeric value to a corresponding display string honouring the current Revit ProjectUnit setting. I cannot find how to do it in the Revit help and began search the answer in your amazing site. I found the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/08/unit-conversion.html">
+<a href="0196_unit_conversion.htm">
 Unit Conversion</a> tool
 
 and thought it would fulfil my need, but I was wrong :(
@@ -482,10 +513,10 @@ Parameter name: Area
 
 <p>Here, the parameter value labelled 'imperial' is the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/01/unit-conversion-and-new-blogs.html">
+<a href="0526_unit_conversion.htm">
 internal Revit database unit</a>, e.g.
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/03/internal-imperial-units.html">
+<a href="0553_imperial_units.htm">
 feet for length</a>.
 
 Please note that not all internal database units are imperial.
@@ -493,3 +524,12 @@ In fact, only length is measured in feet, and thus also area and volume.
 Other internal units are
 
 <a href="http://en.wikipedia.org/wiki/International_System_of_Units">SI-based</a>.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

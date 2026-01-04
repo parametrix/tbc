@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -68,7 +98,7 @@ Maybe the API will throw an error in future releases, or the model will misbehav
 
 <p>After more experimenting in the user interface, I observe that if I grip move the endpoints of such a line after its out-of-plane API creation, the line drops onto the plane, so it starts to behave as standard in the user interface. If the line is not edited, for instance by pinning it to prevent this, the RVT file can be happily saved, re-opened and the line legally remains as created via API.</p>
 
-<p>So apparently there is no absolute requirement built into the Revit geometrical parametric engine for a line to fully reside on its sketch plane. It may be different for other curve types like arcs and splines, etc. Apparently it is only the user interface layer that forces such behaviour, which of course is consistent with Revit�s parametric BIM concepts.</p>
+<p>So apparently there is no absolute requirement built into the Revit geometrical parametric engine for a line to fully reside on its sketch plane. It may be different for other curve types like arcs and splines, etc. Apparently it is only the user interface layer that forces such behaviour, which of course is consistent with Revit�s parametric BIM concepts.</p>
 
 <p>The question is, can one rely on this extended API behaviour?</p>
 
@@ -80,7 +110,7 @@ In any other family or project environment, however, a sketch plane is still req
 
 <p>An earlier discussion on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/model-line-creation.html">
+<a href="0032_model_lines.htm">
 creating model lines</a>
 
 provides sample code demonstrating the sketch plane creation for each model line.
@@ -154,3 +184,12 @@ An application generating model lines programmatically can take two approaches:<
 From your description above, though, that would not appear to be the case.</p>
 
 <p>Alternatively, you would have to place the model curves on a new sketch plane, which will probably require recreating them from scratch, for instance using a method similar to the ones described above.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

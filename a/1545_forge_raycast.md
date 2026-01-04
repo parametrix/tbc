@@ -21,7 +21,7 @@ Please note the important information in the final section: the viewer implement
 ### Three.js Raytracing in the Forge Viewer
 
 I am still in Gothenburg supporting
-the [Forge accelerator](http://thebuildingcoder.typepad.com/blog/2017/03/events-uv-coordinates-and-rooms-on-level.html#2) and 
+the [Forge accelerator](1537_event_uv_room_filt.html#2) and 
 working on my [ForgeFader](https://github.com/jeremytammik/forgefader) project.
 
 ForgeFader implements the same end user functionality as
@@ -29,7 +29,7 @@ the [RvtFader](https://github.com/jeremytammik/RvtFader) Revit
 C# .NET API add-in that I implemented last week.
 
 Yesterday, I showed how you
-can [add custom geometry to the Forge viewer](http://thebuildingcoder.typepad.com/blog/2017/03/adding-custom-geometry-to-the-forge-viewer.html)
+can [add custom geometry to the Forge viewer](1544_forge_debug_geom.html)
 for debugging or other purposes and to control graphically what is going on.
 
 Today, I address the ray tracing required to determine the number of walls between the user selected signal source point and the other target points spread out across the picked floor slab.

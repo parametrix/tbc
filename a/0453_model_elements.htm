@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- Konstanty S. -->
@@ -8,12 +39,12 @@
 
 <p>We repeatedly looked at the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/11/select-model-elements-2.html">
+<a href="0254_select_model_elements_2.htm">
 selection of model elements</a>,
 
 and in the discussion on 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/material-quantity-extraction.html">
+<a href="0296_abg10_material_quantity.htm">
 material quantity extraction</a> I 
 
 mentioned the idea that one possible additional improvement might be to make use of the Category.HasMaterialQuantities property.
@@ -21,13 +52,13 @@ mentioned the idea that one possible additional improvement might be to make use
 <p>The topic keeps returning, and now it arose again in a question from Konstanty Seniut.
 I have updated the answer after the initial posting to add some 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/model-elements-revisited.html">
+<a href="0454_model_elements.htm">
 later notes</a> by <!-- add link -->
 
 Scott Conover, so that they are not missed.
 To see Scott's notes and explanations in full, please refer to the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/model-elements-revisited.html">
+<a href="0454_model_elements.htm">
 follow-up post</a>. <!-- add link -->
 
 <p><strong>Question:</strong> I would like to retrieve all elements from the model, for example floors, walls, windows, lines, but ignoring all views, levels and etc. 
@@ -129,12 +160,12 @@ What do you think?
 
 <p><strong>Answer:</strong> As said, I presented one approach in the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/11/select-model-elements-2.html">
+<a href="0254_select_model_elements_2.htm">
 selection of model elements</a>.
 
 Scott 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/model-elements-revisited.html">
+<a href="0454_model_elements.htm">
 later pointed out</a> <!-- add link -->
 
 that that solution appends filters to each other one at a time. 
@@ -186,7 +217,7 @@ The new Revit 2011 LogicalOrFilters support more than two inputs, so it should a
 
 <p>Note that this approach may not retrieve all desired elements, as Scott explains in his 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/model-elements-revisited.html">
+<a href="0454_model_elements.htm">
 update notes</a>.  <!-- add link -->
 
 <p>Which approach to use, or how to combine them, depends on your exact needs, obviously.
@@ -210,7 +241,7 @@ for handling unexpected errors.
 
 <li>Scott 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/model-elements-revisited.html">
+<a href="0454_model_elements.htm">
 later pointed out</a> <!-- add link -->
 
 that the use of the WherePasses clause is totally unnecessary and should be removed.
@@ -272,7 +303,7 @@ At the moment I can avoid checking that property completely, though.
 
 <p><strong>Answer:</strong> The call to ToElements in this code is completely redundant, as Scott explains in his 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/model-elements-revisited.html">
+<a href="0454_model_elements.htm">
 update notes</a>,  <!-- add link -->
 
 so it should simply be removed.
@@ -280,3 +311,12 @@ so it should simply be removed.
 <p><strong>Response:</strong> Interesting things. I will try to improve them. 
 The HasMaterialQuantities property is not set in every element I am interested in, just as Scott said.
 This is why I used the Location property to populate the dictionary with all specific elements  :)
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

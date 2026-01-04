@@ -78,9 +78,9 @@ As I pointed out last week in the preceding article on this topic, Håvard Dagsv
 
 Here are links to the previous discussions:
 
-- [Calculating gross and net wall areas](http://thebuildingcoder.typepad.com/blog/2015/03/calculating-gross-and-net-wall-areas.html)
-- [IFCExportUtils to determine the door and window area](http://thebuildingcoder.typepad.com/blog/2015/03/ifcexportutils-methods-determine-door-and-window-area.html)
-- [Determining wall cut area for a specific room](http://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-cut-area-for-a-specific-room.html)
+- [Calculating gross and net wall areas](1296_spatial_calculator.htm)
+- [IFCExportUtils to determine the door and window area](1298_door_window_area.htm)
+- [Determining wall cut area for a specific room](1421_wall_cut_area.html)
 
 The results are captured in these two Revit add-in projects and GitHub repositories:
 

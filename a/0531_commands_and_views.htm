@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- Rudolf Honke Command and conquer / views -->
@@ -47,13 +78,13 @@ acadGraph CADstudio GmbH</a> recently
 
 presented his results of exploring the Revit ribbon internals using UISpy,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/01/ribbon-spying-and-ui-automation.html">
+<a href="0507_ribbon_spy_automate.htm">
 driving Revit using UI Automation</a>, 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/01/subscribing-to-ui-automation-events.html">
+<a href="0514_ui_automation_events.htm">
 subscribing to UI Automation events</a>, and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/01/further-ideas-for-using-ui-automation.html">
+<a href="0517_ui_auto_switch_view.htm">
 automating Revit window switching</a>.
 
 It is fascinating to be able to drive Revit pretty reliably from outside by simulating the user interaction with the ribbon and other user interface elements.
@@ -65,7 +96,7 @@ DrivingRevitViaUIAutomation</a> that
 
 Rudolf used to implement the following three functionalities from a 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/01/ribbon-spying-and-ui-automation.html#app">
+<a href="0507_ribbon_spy_automate.htm#app">
 stand-alone executable</a>:
 
 <ul>
@@ -162,3 +193,12 @@ To be continued...</p>
 This event is much better suited for this particular problem.
 In addition, it is much less of a performance hit, because ViewActivated is raised only when a view is actually activated, while Idling can be raised several times per second.
 Even if the handler does nothing at all, simply the fact that the code needs to go from native to managed and back to native again means a significant slowdown.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

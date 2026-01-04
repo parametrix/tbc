@@ -59,12 +59,12 @@ Thank you, and looking forward to seeing you!
 
 #### <a name="2"></a>Comparing Families using Part Atoms
 
-I recently discussed [comparing symbols and comparison operators](https://thebuildingcoder.typepad.com/blog/2019/12/comparing-symbols-and-comparison-operators.html),
+I recently discussed [comparing symbols and comparison operators](1805_symbol_compare.html),
 including pointers to previous ponderings
-on [defining your own key for comparison purposes](https://thebuildingcoder.typepad.com/blog/2012/03/great-ocean-road-and-creating-your-own-key.html#2)
-and [tracking element modification](https://thebuildingcoder.typepad.com/blog/2016/01/tracking-element-modification.html#5.1).
+on [defining your own key for comparison purposes](0739_create_own_key.htm#2)
+and [tracking element modification](1397_track_changes.html#5.1).
 
-In a [comment on that post](https://thebuildingcoder.typepad.com/blog/2019/12/comparing-symbols-and-comparison-operators.html#comment-4718582177),
+In a [comment on that post](1805_symbol_compare.html#comment-4718582177),
 Matt Taylor suggested an effective solution to compare family definitions using the Revit API `ExtractPartAtomFromFamilyFile` method:
 
 I would say that this is a good candidate for
@@ -73,7 +73,7 @@ and [ExtractPartAtom methods](https://www.revitapidocs.com/2020/d477cf8f-0dfe-40
 
 You can call those on your family and compare the results they return.
 
-The article on [Extract Part Atom Revisited](https://thebuildingcoder.typepad.com/blog/2010/09/extract-part-atom-revisited.html) shows
+The article on [Extract Part Atom Revisited](0448_extract_part_atom.htm) shows
 how they can be invoked.
 
 As an example, consider a basic column family with width and depth parameters, both set to 600mm, and a type named '600x600'.

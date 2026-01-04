@@ -72,7 +72,7 @@ In this new year, the Revit development team has another topic to share with us:
 ####<a name="2"></a> Dark Theme Possibility Looming
 
 We recently announced internal thoughts
-on [possibly converting the internal representation of Revit element ids from 32 to 64 bit in a future release of Revit](https://thebuildingcoder.typepad.com/blog/2022/11/64-bit-element-ids-maybe.html).
+on [possibly converting the internal representation of Revit element ids from 32 to 64 bit in a future release of Revit](1974_64_bit_element_id.html).
 
 In a similar vein, here is another internal topic being pondered.
 Please note the important safe harbor statement concerning these thoughts:
@@ -211,12 +211,12 @@ Please note that only the 1st level UI supports the dark theme option.
 
 ####<a name="2.6"></a> Autodesk Icon Guidelines Snapshot
 
-Prompted by [Luiz'](https://thebuildingcoder.typepad.com/blog/2023/01/dark-theme-possibility-looming.html#comment-6093239283)
-and [Gábor's comments below](https://thebuildingcoder.typepad.com/blog/2023/01/dark-theme-possibility-looming.html#comment-6093873493),
+Prompted by [Luiz'](1979_dark_theme.html#comment-6093239283)
+and [Gábor's comments below](1979_dark_theme.html#comment-6093873493),
 I acquired and posted an up-to-date snapshot of the current state of the Autodesk icon guidelines including the images above:
 
-- [Autodesk icon guidelines PDF](https://thebuildingcoder.typepad.com/icon/2023-01-20_icon_design_guidelines.pdf)
-- [Zip file including badges and PNG instructiuons](https://thebuildingcoder.typepad.com/icon/2023-01-20_icon_design_guideline.zip)
+- Autodesk icon guidelines PDF *(link unavailable)*
+- Zip file including badges and PNG instructiuons *(link unavailable)*
 
 Thank you for asking, Luiz and Gábor.
 

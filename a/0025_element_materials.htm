@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <style type="text/css">
 .blue { color: blue; }
 .green { color: green; }
@@ -9,13 +39,13 @@
 
 <p>I recently heard several queries on how to access the surface material of a wall or other building element. There are several different ways to access materials defined on building elements. One method is discussed in the section 16.3 Element Material in the 
 
-<a href="">Revit 2009 API Developer Guide</a>. 
+<a href=">Revit 2009 API Developer Guide</a>. 
 
 Another method goes through the geometry and retrieves the material associated with each face. We will discuss the latter approach in this and the next post.</p>
 
 <p>Retrieving the material associated with element geometry is actually very simple, similar to and simpler than the geometrical traversal that we looked at in the post on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/09/wall-dimensions.html">
+<a href="0014_wall_dimensions.htm">
 Wall Dimensions</a>.
 
 The geometry displayed in Revit generally has a solid associated with it, each solid has a set of faces, and each face has a material, which can be queried using its MaterialElement property.
@@ -148,4 +178,13 @@ Roofs <127269 Generic Roof - 300mm> has 12 materials:
 
 <p>Notice that the sample in its current state does not report any materials for the door or windows. This is because these elements are family instances, and their geometry is nested in a geometry instance, which the current code does not traverse into. In a future instalment, we will rectify that to list the materials nested in family instances as well.</p>
 
-<p>I am adding the complete Visual Studio solution <a href="http://thebuildingcoder.typepad.com/blog/files/bc1005.zip">here</a>. This version 1.0.0.5 includes all commands we discussed so far: CmdListWalls, CmdRelationshipInverter, CmdWallDimensions, CmdFilterPerformance and the new CmdGetMaterials.</p>
+<p>I am adding the complete Visual Studio solution <span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/files/bc1005.zip">here <em>(file no longer available)</em></span>. This version 1.0.0.5 includes all commands we discussed so far: CmdListWalls, CmdRelationshipInverter, CmdWallDimensions, CmdFilterPerformance and the new CmdGetMaterials.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

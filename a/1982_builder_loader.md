@@ -385,7 +385,7 @@ A workaround for this was mentioned in the ticket <i>REVIT-20249</i>:
 ####<a name="8"></a> Sublime Text
 
 Closing with a non-Revit topic, I recently updated my computer to
-the [MacBook Pro M1 ARM](https://thebuildingcoder.typepad.com/blog/2022/12/exploring-arm-chatgpt-nairobi-and-the-tsp.html#11).
+the [MacBook Pro M1 ARM](1976_chatgpt_arm_tsp.html#11).
 Then, I updated the OS to MacOS Ventura, and my beloved and trusty old Komodo Edit text editor stopped working.
 It has not been maintained for years.
 Searching for a new minimalist text editor, I happened

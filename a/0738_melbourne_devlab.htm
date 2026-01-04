@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Melbourne DevLab</h3>
@@ -10,10 +41,10 @@ It takes just ten minutes longer than waiting for the overfilled noisy slow tram
 
 <p>The Melbourne Revit API training 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-day-one.html">
+<a href="0736_melbourne_day_1.htm">
 day one</a> and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-day-two.html">
+<a href="0737_melbourne_day_2.htm">
 day two</a> were 
 
 followed by a DevLab.
@@ -103,7 +134,7 @@ Supper Club</a> that
 
 I visited 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-day-two.html">
+<a href="0737_melbourne_day_2.htm">
 just a few days ago</a>:</p>
 
 <center>
@@ -190,12 +221,12 @@ That is about twice as efficient as just filtering for all reference planes and 
 <p>Once we have found all the reference planes with a non-empty name, we need to check for each whether it hosts any elements.
 This topic has been covered several times in the past, e.g. looking for 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/object-relationships.html">
+<a href="0314_object_relationship.htm">
 generic object relationships</a> (also
 
 available for 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/object-relationships-in-vb.html">
+<a href="0319_object_relationship_vb.htm">
 VB</a>).
 
 <p>The simplest approach that I am aware of is to delete it and check the number of element returned by the Delete method.
@@ -413,8 +444,8 @@ The host types are one of the following:
 <ul>
 <li><a href="zip/shared_parameters.txt">shared_parameters.txt</a>, the shared parameter definition file.
 <li><a href="zip/SetoutPoint2012.rfa">SetoutPoint2012.rfa</a>, the setout point family file including the relevant shared parameter definitions.
-<li><a href=""></a> 
-<li><a href=""></a> 
+<li><a href="></a> 
+<li><a href="></a> 
 </ul>
 
 
@@ -481,7 +512,7 @@ Later, we decided to switch type when we promote a setout point to a major or ke
 </ul>
 
 
-<a href="">
+<a href=">
 </a> 
 
 
@@ -494,11 +525,11 @@ Later, we decided to switch type when we promote a setout point to a major or ke
 <pre class="code">
 </pre>
 
-<a name=""></a>
+<a name="></a>
 
 <h4></h4>
 
-<a href="">
+<a href=">
 </a> 
 
 <a name="3"></a>
@@ -507,12 +538,12 @@ Later, we decided to switch type when we promote a setout point to a major or ke
 
 <p>Rudolf Honke 
 
-<a href="">
+<a href=">
 commented</a> on 
 
 the approach I suggested to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/determine-revit-demo-mode.html">
+<a href="0735_demo_mode.htm">
 determine-revit-demo-mode</a> and
 
 proposed using the OptionalFunctionalityUtils IsDWGExportAvailable method instead of using my much more complex try-catch method.
@@ -521,3 +552,12 @@ proposed using the OptionalFunctionalityUtils IsDWGExportAvailable method instea
 The DWG export requires presence of certain modules that are optional and may not be part of the installed Revit. 
 -->
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

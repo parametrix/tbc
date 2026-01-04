@@ -23,7 +23,7 @@ a comment by Zhmayev Yaroslav on multi-targeting Revit versions using <code>Targ
 ### Vacation and Multi-Version Revit Add-In Template
 
 As I mentioned in
-my [last post](http://thebuildingcoder.typepad.com/blog/2018/06/add-in-registration-vendorid-and-signature.html),
+my [last post](1669_addin_registration.html),
 I am taking lots of time off in July.
 
 This is just a note to let you know I am alive, well and happy, currently in Brassac in [Occitanie in southern France](https://en.wikipedia.org/wiki/Occitanie_(administrative_region)),
@@ -36,13 +36,13 @@ by the Vietnamese monk and Zen master [Thich Nhat Hanh](https://plumvillage.org/
 </center>
 
 On the road, I'll just share this quick note from
-a [comment by Zhmayev Yaroslav](http://thebuildingcoder.typepad.com/blog/2018/06/multi-targeting-revit-versions-cad-terms-texture-maps.html#comment-3992433596)
-on [multi-targeting Revit versions using `TargetFrameworks`](http://thebuildingcoder.typepad.com/blog/2018/06/multi-targeting-revit-versions-cad-terms-texture-maps.html#2):
+a [comment by Zhmayev Yaroslav](1668_multi_target_addin.html#comment-3992433596)
+on [multi-targeting Revit versions using `TargetFrameworks`](1668_multi_target_addin.html#2):
 
 #### <a name="2"></a> Multi-Version Revit Add-In Template
 
 I use .NET SDK and multi-targeting for my NuGet packages all the time and I have to admit that matching different .NET Framework versions to different Revit versions as described
-in [multi-targeting Revit versions using `TargetFrameworks`](http://thebuildingcoder.typepad.com/blog/2018/06/multi-targeting-revit-versions-cad-terms-texture-maps.html#2) is
+in [multi-targeting Revit versions using `TargetFrameworks`](1668_multi_target_addin.html#2) is
 really smart.
 
 All Revit add-in templates I've used so far had some small yet really annoying issues, such as:

@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <!-- 
 
 1272598 [planar face transform]
@@ -10,6 +40,7 @@
 
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Planar Face Transform</h3>
@@ -21,13 +52,13 @@ Enclos</a>,
 
 who already shared valuable insights on accessing
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/curtain-wall-geometry.html">
+<a href="0374_curtain_wall_geometry.htm">
 curtain wall geometry</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/09/speed-up-selection.html">
+<a href="0441_speed_up_selection.htm">
 speeding up the interactive selection process</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/11/mirroring-in-a-new-family-and-changing-active-view.html">
+<a href="0488_mirror_in_new_family.htm">
 mirroring in a new family and changing the active view</a>.
 
 <p>Above all, he implements all his stuff in VB, so this is also something for you VB aficionados.
@@ -35,7 +66,7 @@ mirroring in a new family and changing the active view</a>.
 <p>This time, Joe looks at a command that redraws a planar face's edges in a drafting view.  
 The issue is somewhat related to the discussion of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/polygon-transformation.html">
+<a href="0057_polygon_transformation.htm">
 polygon transformations</a>.
 
 <p>However, instead of using rotations and translations, which can be difficult to determine in 3D, Joe wrote a utility function that re-maps the global coordinate system to the planar face's coordinate system using vectors and origins.
@@ -221,3 +252,12 @@ PlanarFaceTransform.zip</a> including
 the complete source code and Visual Studio solution of this command.
 
 <p>Many thanks to Joe for sharing this!
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

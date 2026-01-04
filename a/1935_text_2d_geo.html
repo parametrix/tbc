@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - The height and width of the dimension text
@@ -44,15 +75,15 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 <!-- 0610 0646 1223 1440 1517 -->
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/07/text-size.html">Text Size</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/09/textnote-lost-in-space.html">TextNote Lost in Space?</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/10/new-text-note-and-text-width-calculation.html">New Text Note and Text Width Calculation</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/05/idea-station-and-textnote-bounding-box.html">TextNote Bounding Box</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/01/textnote-rotation-forge-devcon-tensorflow-and-keras.html">TextNote Rotation</a></li>
+<li><a href="0610_text_size.htm">Text Size</a></li>
+<li><a href="0646_textnote_location.htm">TextNote Lost in Space?</a></li>
+<li><a href="1223_text_width.htm">New Text Note and Text Width Calculation</a></li>
+<li><a href="1440_idea_station_txt_bb.html">TextNote Bounding Box</a></li>
+<li><a href="1517_text_rotat.html">TextNote Rotation</a></li>
 </ul>
 
 <p>The 2D custom exporter provides a basis for a much more powerful approach to address this, as already discussed once way back then 
-in <a href="https://thebuildingcoder.typepad.com/blog/2015/11/au-begins-and-using-a-custom-exporter-for-2d.html#2">using a custom exporter for 2D</a>:</p>
+in <a href="1379_custom_export_2d.html#2">using a custom exporter for 2D</a>:</p>
 <ul>
 <li><a href="#2">Retrieve dimension text height and width</a></li>
 <li><a href="#3">Determine text font geometry</a></li>
@@ -275,3 +306,11 @@ End Sub
 That's a clever implementation of <code>IExportContext2d</code>.
 Appreciate the help!</p>
 <p>Many thanks to Richard for sharing this!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

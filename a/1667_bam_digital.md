@@ -57,8 +57,8 @@ Insight is covered by Manu, discussing Project IQ and machine learning enhanced 
 I am presenting on Forge for the digital construction process and connecting to the BIM360 products.
 
 I already explained the main concepts from my point of view in 
-the [overview of Forge for AEC and BIM360](http://thebuildingcoder.typepad.com/blog/2018/06/forge-for-aec-and-bim360-overview.html) and
-the [BIM360 and Forge for AEC message and samples](http://thebuildingcoder.typepad.com/blog/2018/06/bim360-and-forge-for-aec-real-message-and-samples.html).
+the [overview of Forge for AEC and BIM360](1664_bim360.html) and
+the [BIM360 and Forge for AEC message and samples](1666_bim360_samples_msg.html).
 
 Here is the final slide deck summarising those points in
 the [BAM Forge for Digital Construction slides](zip/bam_bim360_forge_aec_slides.pdf).

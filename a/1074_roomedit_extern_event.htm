@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Replacing an Idling Event Handler by an External Event</h3>
@@ -13,7 +44,7 @@
 
 <p>As I hinted at when describing my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/12/au-day-3-recap-cloud-based-round-trip-model-editing.html">
+<a href="1072_au_day_3.htm">
 last day at AU</a>,
 
 I realised that I can significantly improve the implementation of the RoomEditorApp subscription to real-time database changes by replacing the Idling event I was using previously by an external event:</p>
@@ -52,12 +83,12 @@ I realised that I can significantly improve the implementation of the RoomEditor
 
 <p>If you are interested in the full list of events, please look at the complete
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/09/back-and-preparing-the-au-and-devdays-conferences.html#2">
+<a href="1025_au_devdays.htm#2">
 DevDays schedule</a>.
 
 As said,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/10/invitation-to-autodesk-devdays-2013.html">
+<a href="1048_devdays.htm">
 you are welcome to join</a>,
 
 regardless of ADN membership.</p>
@@ -86,7 +117,7 @@ trick to trigger the Idling event</a>,
 
 as briefly mentioned as a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/curve-length-idling-units-and-revitpythonshell.html#3">
+<a href="0985_curve_idling_unit.htm#3">
 potential SetRaiseWithoutDelay workaround</a>.</p>
 
 <p>Use of an external event instead of Idling gives an add-in much more control over the timing behaviour.</p>
@@ -533,7 +564,7 @@ trick to trigger the Idling event</a>,
 
 as briefly mentioned as a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/curve-length-idling-units-and-revitpythonshell.html#3">
+<a href="0985_curve_idling_unit.htm#3">
 potential SetRaiseWithoutDelay workaround</a>.</p>
 
 <p>That is obviously the next step I will explore to complete my understanding, perfect this application and make optimal use of the external event mechanism.</p>
@@ -553,7 +584,7 @@ potential SetRaiseWithoutDelay workaround</a>.</p>
 
 <a href="https://github.com/jeremytammik/RoomEditorApp">RoomEditorApp GitHub repository</a>
 
-(<a href="http://thebuildingcoder.typepad.com/blog/2013/10/roomeditorapp-for-revit-2014-on-github.html">description</a>) as
+(<a href="1045_roomeditorapp.htm">description</a>) as
 
 <a href="https://github.com/jeremytammik/RoomEditorApp/releases/tag/2014.0.0.18">
 release 2014.0.0.18</a>.
@@ -576,7 +607,7 @@ by the git diff tool.</p>
 
 <h4>Triggering Immediate External Event Processing</h4>
 
-<a href="">
+<a href=">
 </a>
 
 <pre class="code">
@@ -615,3 +646,12 @@ I still hope to find a way to stick with external events, though, to avoid the I
 
 <p>I also noticed that Revit needs focus to actually forward the external event Raise invocation to call its Execute method.
 I am still hoping to find an easy clean way to trigger that programmatically from outside...</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -68,7 +68,7 @@ We also clarify function and accessability of various Autodesk APIs and SDKs, lo
 [xUnitRevit: a test runner for Revit](https://speckle.systems/blog/xunitrevit) that
 looks very promising.
 Check out other options in
-the [unit testing topic group](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.16).
+the unit testing topic group *(link unavailable)*.
 
 ####<a name="3"></a> API versus SDK
 

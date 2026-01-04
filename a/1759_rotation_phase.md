@@ -107,7 +107,7 @@ I recently added a couple of enhancements to the it that have not been mentioned
 - Integrated [pull request #4 by @ridespirals to handle 0 or negative DashPatterns](https://github.com/jeremytammik/AddMaterials/pull/4)
 - Flat migration from Revit 2016 to Revit 2020 API
 - Acted on
-the [suggestion by Александр Пекшев](https://thebuildingcoder.typepad.com/blog/2014/04/wpf-fill-pattern-viewer-control-benchmark.html#comment-4497075532) to
+the [suggestion by Александр Пекшев](1140_fill_pattern_benchmark.htm#comment-4497075532) to
 replace `FillPattern` = `'{Binding CutPattern}'` with `FillPattern` = `'{Binding CutPattern, IsAsync=True}'` to speed up the drawing of thumbnails
 
 In the pull request, John [@ridespirals](https://github.com/ridespirals) Varga points out an important hint to handle errors caused by real number imprecision in dash or hash pattern definitions:

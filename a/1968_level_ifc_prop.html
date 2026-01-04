@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - TwentyTwo
@@ -215,15 +246,15 @@ Both throw an error saying the parameter is read-only.</p>
 For that, I would assume that you need to use a different <a href="https://www.revitapidocs.com/2017/0c0d640b-7810-55e4-3c5e-cd295dede87b.htm">overload of the <code>NewFamilyInstance</code> method</a>.
 Please refer to this explanation by The Building Coder and a few recent discussions of related topics in the Revit API discussion forum:</p>
 <ul>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2020/06/creating-material-texture-and-retaining-pixels.html#4">Change level of existing element</a></li>
+<li><a href="1850_material_level_pixel.html#4">Change level of existing element</a></li>
 <li><a href="https://forums.autodesk.com/t5/revit-api-forum/levelid-is-null/m-p/11392692">LevelId is null</a></li>
 <li><a href="https://forums.autodesk.com/t5/revit-api-forum/change-level-on-line-based-family/m-p/10307454">Change level on line based family</a></li>
 </ul>
 <p>Another potentially helpful suggestion came up on the blog:</p>
 <h4><a name="6"></a> Set Level in NewFamilyInstance</h4>
 <p>Xikes shared a valuable observation in
-their <a href="https://thebuildingcoder.typepad.com/blog/2011/01/family-instance-missing-level-property.html#comment-5925189938">comment</a>
-on <a href="https://thebuildingcoder.typepad.com/blog/2011/01/family-instance-missing-level-property.html">family instance missing <code>Level</code> property</a>:</p>
+their <a href="0525_fam_inst_missing_level.htm#comment-5925189938">comment</a>
+on <a href="0525_fam_inst_missing_level.htm">family instance missing <code>Level</code> property</a>:</p>
 <p>For those who are still stuck with this problem even when using the correct overload:</p>
 <pre class="code">
   public FamilyInstance NewFamilyInstance(
@@ -240,3 +271,11 @@ The <code>Level</code> parameter is created properly and is not read-only.
 Keep in mind that this will screw up the offset values, but you can adjust those afterwards.</p>
 <p>It would be very helpful if other developers could confirm this observation.
 Thank you.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1256480 [Problem accessing the Geometry of Columns and Stairs] -->
@@ -10,28 +41,28 @@
 
 <!-- e.g. from
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/08/the-revit-family-api.html?cid=6a00e553e1689788330120a4fa02a6970b#comment-6a00e553e1689788330120a4fa02a6970b">Zorcad</a>,
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/creating-a-wall-with-a-sloped-profile.html?cid=6a00e553e1689788330120a6580066970c#comment-6a00e553e1689788330120a6580066970c">Ritish</a>
-[<a href="http://thebuildingcoder.typepad.com/blog/2009/05/selecting-model-elements.html?cid=6a00e553e1689788330120a60c5f30970b#comment-6a00e553e1689788330120a60c5f30970b">2</a>],
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/selecting-model-elements.html?cid=6a00e553e1689788330120a64e1d69970b#comment-6a00e553e1689788330120a64e1d69970b">Arjun</a>,
+<a href="0199_family_api.htm">Zorcad</a>,
+<a href="0091_wall_with_sloped_profile.htm">Ritish</a>
+[<a href="0140_select_model_elements.htm">2</a>],
+<a href="0140_select_model_elements.htm">Arjun</a>,
 
 and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/selecting-model-elements.html?cid=6a00e553e1689788330120a64e3f64970b#comment-6a00e553e1689788330120a64e3f64970b">Shifali</a>
-[<a href="http://thebuildingcoder.typepad.com/blog/2009/05/selecting-model-elements.html?cid=6a00e553e1689788330120a6a3c6f7970c#comment-6a00e553e1689788330120a6a3c6f7970c">2</a>,
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/selecting-model-elements.html?cid=6a00e553e1689788330120a6a76603970c#comment-6a00e553e1689788330120a6a76603970c">3</a>].
+<a href="0140_select_model_elements.htm">Shifali</a>
+[<a href="0140_select_model_elements.htm">2</a>,
+<a href="0140_select_model_elements.htm">3</a>].
 
 -->
 
 We already explored the geometry of various other elements, e.g.
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/slab-boundary.html">slab boundary</a>,
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/slab-side-faces.html">slab side faces</a>,
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/wall-elevation-profile.html">wall elevation profile</a>,
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/2d-polygon-areas-and-outer-loop.html">2D polygon areas and outer loop</a>,
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/3d-polygon-areas.html">3D polygon areas</a>,
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/cylindrical-column.html">cylindrical columns</a>, and 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/rectangular-duct-corners.html">MEP ducts</a>.
+<a href="0031_slab_boundary.htm">slab boundary</a>,
+<a href="0033_slab_side_faces.htm">slab side faces</a>,
+<a href="0039_wall_elevation_profile.htm">wall elevation profile</a>,
+<a href="0053_2d_polygon_area_outer_loop.htm">2D polygon areas and outer loop</a>,
+<a href="0055_3d_polygon_area.htm">3D polygon areas</a>,
+<a href="0124_cylindrical_column.htm">cylindrical columns</a>, and 
+<a href="0285_rectangular_duct_corners.htm">MEP ducts</a>.
 
 <p>Here is now a solution by Joe Ye which may shed some new light on this issue.
 The main point is that all elements which are represented by instances of a symbol may either have their own local geometry assigned to them, if it is unique in some way, or they may be reusing the standard geometry defined for the family type, transformed to their local insertion point, if it can be reused unmodified and thus shared with all other instances.
@@ -109,8 +140,18 @@ The geometry retrieved then needs to be transformed from the symbol definition c
 <p>The other problem you mention is filtering the columns which do not have the structural type StructuralType.Column. 
 You need to be aware of the fact that a StructuralType is only applicable to structural elements, for example structural columns and structural beams. 
 Normal architectural column instances will not have a structural type assigned to them, so you cannot use this method to filter for them.
-In that case, you should use the more general approach of filtering for the desired combination of FamilyInstance type and column category. 
+In that case, you should use the more general approach of filtering for the desired combination of FamilyInstance type and column category. 
+
 
 <p>Regarding your issue with stairs, the solution is the same as for the columns.
 
 <p>Many thanks to Joe for handling this solution!
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

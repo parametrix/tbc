@@ -118,8 +118,8 @@ can be downloaded and installed right out of the box.
 
 ####<a name="3"></a> What is UV?
 
-Angelo Mastroberardino [commented](https://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html#comment-6144595024)
-on [Planes, Projections and Picking Points](https://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html) and
+Angelo Mastroberardino [commented](1202_plane_proj_pick.htm#comment-6144595024)
+on [Planes, Projections and Picking Points](1202_plane_proj_pick.htm) and
 the [revitapidocs `ComputeDerivatives` method](https://www.revitapidocs.com/2021.1/77ca18ef-783e-9db5-a37a-2d76f637d1a1.htm) asking:
 
 **Question:** What is the point `UV`?
@@ -127,15 +127,15 @@ What is its reference frame and origin?
 Are these `UV` the same (x,y) coordinates of any `XYZ` points of the `Face.EdgeLoops` without the z-coordinate?
 
 **Answer:** The best place to start understanding UV coordinates is Scott Conover's 2010 AU class
-on [Analysing Building Geometry](https://thebuildingcoder.typepad.com/blog/2010/01/analyse-building-geometry.html),
+on [Analysing Building Geometry](0275_abg.htm),
 spread out over ten or so blog posts.
 
 Read that and all will be clear.
 Drilling down into further detail and practical application, here is an article explaining
-the [relationship between 2D UV and 3D XYZ coordinates](https://thebuildingcoder.typepad.com/blog/2011/03/converting-between-2d-uv-and-3d-xyz-coordinates.html).
+the [relationship between 2D UV and 3D XYZ coordinates](0549_convert_2d_uv_3d_xyz.htm).
 
 To round off, here is a nice debugging explanation showing how you
-can [use AVF to document and label the UV coordinates](https://thebuildingcoder.typepad.com/blog/2020/12/dynamo-book-and-texture-bitmap-uv-coordinates.html#2).
+can [use AVF to document and label the UV coordinates](1880_texture_uv_coord.html#2).
 
 ####<a name="4"></a> What is Fuzz?
 
@@ -153,7 +153,7 @@ That is standard.
 The Building Coder quite regularly repeats the [need for fuzz](https://www.google.com/search?q=fuzz&as_sitesearch=thebuildingcoder.typepad.com).
 
 In the case of Revit, matters are even worse than in some other areas, since the Revit database represents property values and dimensions such as length using `float` instead of `double`.
-Hence, the need to [think big in Revit](https://thebuildingcoder.typepad.com/blog/2009/07/think-big-in-revit.html) and ignore every deviation below a certain (quite large) tolerance as irrelevant to the BIM, any "length below about 0.004 feet, i.e. ca. 0.05 inches or 1.2 millimetres".
+Hence, the need to [think big in Revit](0176_think_big.htm) and ignore every deviation below a certain (quite large) tolerance as irrelevant to the BIM, any "length below about 0.004 feet, i.e. ca. 0.05 inches or 1.2 millimetres".
 
 Personally, when I retrieve vertex or coordinate data from Revit, I simply round it to the closest millimetre while retrieving it. I add every vertex or coordinate data item as a key to a dictionary. Every new item is looked up in the dictionary and considered equal to the existing item if it lies within a millimetre of it.
 

@@ -210,7 +210,7 @@ locCurve.Curve = extendedCurve;
 
 If the duct is connected to neighbouring elements, you can let Revit modify and adapt its length automatically by moving those neighbours and their connection points.
 Look at an exploration of different approaches to modifying pipe length in the blog post series
-on [implementing a rolling offset](http://thebuildingcoder.typepad.com/blog/2014/01/final-rolling-offset-using-pipecreate.html).
+on [implementing a rolling offset](1093_pipe_create.htm).
 
 Just moving the neighbour elements will keep all the connections intact.
 

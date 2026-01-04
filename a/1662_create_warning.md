@@ -21,7 +21,7 @@ This also enables the creation of a modeless warning message to the user...
 
 ### Creating a Warning Using the Failure API
 
-The [Failure API](http://thebuildingcoder.typepad.com/blog/2010/04/failure-api.html) was
+The [Failure API](0350_failure_api.htm) was
 introduced a long time ago, back in 2010, for Revit 2011.
 
 Time enough to forget that it enables both failure definition and handling capabilities:

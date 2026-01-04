@@ -75,7 +75,7 @@ I will be attending [DevCon in Amsterdam](https://aps.autodesk.com/blog/register
 It is taking place on May 20-21 2025 in
 the famous old [Beurs van Berlage](https://en.wikipedia.org/wiki/Beurs_van_Berlage) stock market
 constructed 1896-1903.
-I mentioned the [call for papers](https://thebuildingcoder.typepad.com/blog/2024/11/devcon-ai-for-revit-api-modeless-add-ins-leave.html#2) in November.
+I mentioned the [call for papers](2060_modeless_tutor.html#2) in November.
 
 May will also be the last month of my life as an Autodesk employee.
 
@@ -94,7 +94,7 @@ Jaime Alonso Candau of the Revit API consulting company [Nonica.io](https://noni
 The new website provides online Civil3D API documentation for the releases 2022, 2023, 2024 and 2025, in the same style as
 the [`RevApiDocs` Revit API documentation](https://revapidocs.com/) supporting
 Revit 2025 as well as preceding versions that
-I [mentioned in February](https://thebuildingcoder.typepad.com/blog/2025/02/unit-testing-and-more-serious-matters.html#4).
+I [mentioned in February](2067_revittest.html#4).
 
 Many thanks to Jaime for creating and sharing these resource.
 

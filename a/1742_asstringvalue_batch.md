@@ -72,15 +72,15 @@ The standard method to handle such tasks is something like this:
 - Shut down, restart and continue where you left off if the process starts deteriorating or terminates.
 
 Here is more on the topic of using Revit as a server
-for [batch processing Revit documents](http://thebuildingcoder.typepad.com/blog/2015/08/batch-processing-dwfx-links-and-future-proofing.html#4).
+for [batch processing Revit documents](1348_batch_dwf_futureproof.htm#4).
 
-However, [Revit is not designed to be used as a server](https://thebuildingcoder.typepad.com/blog/2016/04/fireratingcloud-context-and-architecture.html#3), and the EULA actually prohibits such use.
+However, [Revit is not designed to be used as a server](1433_firerating_arch.html#3), and the EULA actually prohibits such use.
 
 A better and more robust alternative nowadays that also saves you the maintenance of a local Revit installation and enables integration of your batch processing into other web-based workflows is to perform your batch processing using
 the [Forge Design Automation API for Revit](https://forge.autodesk.com/en/docs/design-automation/v3/developers_guide/overview).
 
 Here are more articles describing specific aspects
-of [DA4R, or Design Automation for Revit](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55)
+of DA4R, or Design Automation for Revit *(link unavailable)*
 
 
 ####<a name="3"></a> AsString and AsValueString Results Differ

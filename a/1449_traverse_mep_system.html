@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <title>The Building Coder</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" type="text/css" href="3dwc.css"/>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true" defer="defer"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -21,7 +52,7 @@ The Forge DevCon last week completed successfully. I had a full body 3D scan cre
 <p>The <a href="http://forge.autodesk.com/conference">Forge DevCon</a> last week completed successfully.</p>
 <p>I had a <a href="https://www.artec3d.com/events/autodesk-forge-devcon-2016">full body 3D scan</a> created there in
 the <a href="https://www.artec3d.com/hardware/shapifybooth">Shapify Booth</a> and explained
-on <a href="http://thebuildingcoder.typepad.com/">The 3D Web Coder</a> how I
+on <span class="unavailable-link">The 3D Web Coder</span> how I
 used <a href="https://en.wikipedia.org/wiki/Sed"><code>sed</code></a>
 to <a href="http://the3dwebcoder.typepad.com/blog/2016/06/flipping-obj-axes-with-texture-for-forge-viewer.html">flip the axes of the resulting OBJ model</a>.</p>
 <p>This week, I am sitting in the Autodesk offices at One Market in San Francisco, supporting the fourth <a href="http://autodeskcloudaccelerator.com">Cloud Accelerator</a> taking place here.</p>
@@ -54,12 +85,12 @@ and <a href="https://en.wikipedia.org/wiki/Presidio_Park">Presidio</a> parks:</p
 </center></p>
 <h4><a name="2"></a>Revit MEP System Traversal</h4>
 <p>Today, I present a simple Revit add-in that analyses all MEP systems in the model and determines the graph structure representing the connections between the systems elements.</p>
-<p>I discussed a <a href="http://thebuildingcoder.typepad.com/blog/2013/02/simple-mep-system-traversal.html">simple MEP system traversal</a> in 2013.</p>
+<p>I discussed a <a href="0893_mep_system_traversal.htm">simple MEP system traversal</a> in 2013.</p>
 <p>The graph information required in this case, however, requires the more advanced traversal algorithms determining the correct order of the individual system elements in the direction of the flow implemented by
-the <a href="http://thebuildingcoder.typepad.com/blog/2009/06/revit-mep-api.html">TraverseSystem SDK sample</a>
-(<a href="http://thebuildingcoder.typepad.com/blog/2009/09/the-revit-mep-api.html#6">2010</a>,
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/the-revit-mep-2011-api.html#samples">2011</a>) for mechanical systems and
-the <a href="http://thebuildingcoder.typepad.com/blog/2012/05/the-adn-mep-sample-adnrme-for-revit-mep-2013.html">AdnRme sample</a>
+the <a href="0156_mep_2010_api.htm">TraverseSystem SDK sample</a>
+(<a href="0219_mep_api.htm#6">2010</a>,
+<a href="0362_mep_2011_api.htm#samples">2011</a>) for mechanical systems and
+the <a href="0763_adnrme_mep_2013.htm">AdnRme sample</a>
 (<a href="https://github.com/jeremytammik/AdnRme">GitHub repo</a>) for electrical ones.</p>
 <h4><a name="3"></a>TraverseAllSystems Revit Add-in</h4>
 <p>I implemented a simple C# .NET Revit API add-in that performs the following steps:</p>
@@ -220,3 +251,11 @@ the <a href="http://forums.autodesk.com/t5/revit-api/bd-p/160">Revit API forum</
 <p>I cannot even imagine how he does it.</p>
 <p>Thank you very much, Mustafa!</p>
 <p>It is extremely appreciated by the entire community!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

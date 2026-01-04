@@ -49,7 +49,7 @@ on [automatic translation](https://chrome.google.com/webstore/detail/google-tran
 the Russian blog  :-)
 
 By the way, this add-in obviously also makes use of
-Andrey's [NuGet Revit API package](http://thebuildingcoder.typepad.com/blog/2016/12/nuget-revit-api-package.html),
+Andrey's [NuGet Revit API package](1510_nuget_revit_api.html),
 now updated to support the recent additional Revit 2017.X.Y releases.
 
 Andrey's reason for raising the thread in the first place was a weird behaviour setting the UI culture in Revit 2017.1.1, which I passed on to the development team for further exploration.

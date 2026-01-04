@@ -92,7 +92,7 @@ I assume that I will need to point the `myaddin.addin` file to the Debug version
 - [Add-in Registration](http://help.autodesk.com/view/RVT/2017/ENU/?guid=GUID-4FFDB03E-6936-417C-9772-8FC258A261F7)
 
 The Building Coder also discusses
-some [additional undocumented add-in folder paths](http://thebuildingcoder.typepad.com/blog/2016/02/bim-360-docs-add-in-folders-stallman-and-the-abc-conjecture.html#5).
+some [additional undocumented add-in folder paths](1402_bim_docs_addin_folders.html#5).
 
 #### <a name="4"></a> Autodesk AppStore Bundle Format
 

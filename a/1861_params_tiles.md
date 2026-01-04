@@ -252,7 +252,7 @@ We do similar with reinforcement bars to get maximum spacing but we are then cou
 #### <a name="3.1"></a>Bin Packing and Container Loading in Dynamo and Excel
 
 Kostya added some further useful suggestions
-in [his comment below](https://thebuildingcoder.typepad.com/blog/2020/08/custom-parameters-and-tile-packing.html#comment-5053479490):
+in [his comment below](1861_params_tiles.html#comment-5053479490):
 
 I have recently been looking for 1D/2D/3D bin packaging algorithms as well. Reference links helped me a lot.
 

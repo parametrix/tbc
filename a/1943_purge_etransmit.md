@@ -7,7 +7,7 @@
 <!---
 
 - purge via API
-  [comment](https://thebuildingcoder.typepad.com/blog/2022/02/purge-unused-and-etransmit-for-da4r.html#comment-5795043511)
+  [comment](1939_purge_etransmit.html#comment-5795043511)
   by Emiliano Capasso on 
   > just wanted to share our recent discovery (I'm pretty sure someone else was aware of it..) but in case
   [Why Revit "Purge"​ Command is an act of love (via API)](https://www.linkedin.com/pulse/why-revit-purge-command-act-love-via-api-emiliano-capasso)
@@ -59,7 +59,7 @@ We return once again to the topic of programmatic purging and learn the history 
 ####<a name="2"></a> Purge Unused using eTransmitForRevitDB.dll
 
 Last month, we
-discussed [several approaches to automating the purge command](https://thebuildingcoder.typepad.com/blog/2022/02/purge-unused-and-etransmit-for-da4r.html).
+discussed [several approaches to automating the purge command](1939_purge_etransmit.html).
 
 Now Emiliano Capasso,
 Head of BIM at [Antonio Citterio Patricia Viel](https://www.citterio-viel.com),
@@ -83,7 +83,7 @@ But with more than 40 active projects, how could we purge (3 times) manually eve
 ####<a name="2.1"></a> The Purge via API Method
 
 Tons of words have been spent about Purging in Revit via API, which is apparently impossible, cf.,
-the [latest post on the topic](https://thebuildingcoder.typepad.com/blog/2022/02/purge-unused-and-etransmit-for-da4r.html)).
+the [latest post on the topic](1939_purge_etransmit.html)).
 
 There are lots of workarounds, such as <b>PerformanceAdvisor</b> and <b>PostableCommand</b>, but none of which was satisfying me.
 

@@ -58,9 +58,9 @@ worked on an update of the ADN JSON mesh exporter, and, last but not least, help
 
 At the San Francisco cloud accelerator, I started working on
 the [TraverseAllSystems](https://github.com/jeremytammik/TraverseAllSystems) add-in
-to [traverse all MEP system graphs](http://thebuildingcoder.typepad.com/blog/2016/06/traversing-and-exporting-all-mep-system-graphs.html) and
+to [traverse all MEP system graphs](1449_traverse_mep_system.html) and
 export their connected hierarchical structure to XML files and
-a [top-down JSON graph](http://thebuildingcoder.typepad.com/blog/2016/06/store-mep-systems-in-hierarchical-json-graph.html) for
+a [top-down JSON graph](1450_mep_system_json_graph.html) for
 the [University of Southern California](http://www.usc.edu)
 [Facilities Management](http://facilities.usc.edu)
 [CAD Services](http://facilities.usc.edu/multisidebar_sublinks.asp?ItemID=236) team.
@@ -77,7 +77,7 @@ The aim of the TraverseAllSystems project is to present the MEP system graphs in
 the [Forge viewer](https://developer.autodesk.com/en/docs/viewer/v2/overview) and
 hook up the tree view nodes bi-directionally with the 2D and 3D viewer elements.
 
-The [simple MEP system traversal](http://thebuildingcoder.typepad.com/blog/2013/02/simple-mep-system-traversal.html) shows
+The [simple MEP system traversal](0893_mep_system_traversal.htm) shows
 how to retrieve an unsorted list of system elements, if the connection graph is not needed.
 
 With the newest enhancements, TraverseAllSystems provides the following functionality:
@@ -136,7 +136,7 @@ https://github.com/kevinscake/usc-forge/
 
 During the trip back to Europe, I had an extensive correspondence with Helen Huang via a series of comments
 on [The Building Coder](http://thebuildingcoder.typepad.com) discussion
-on the [ADN Mesh Data Custom Exporter to JSON](http://thebuildingcoder.typepad.com/blog/2013/07/adn-mesh-data-custom-exporter-to-json.html):
+on the [ADN Mesh Data Custom Exporter to JSON](0981_custom_exporter_json.htm):
 
 **Question:** I tried to use the code to export the Revit sample project to JSON.
 
@@ -288,13 +288,13 @@ Probably, the Forge viewer is the most promising possibility for you to explore 
 
 For more information, please refer to:
 
-- [vA3C](http://thebuildingcoder.typepad.com/blog/2014/05/rvtva3c-revit-va3c-generic-aec-viewer-json-export.html)
-- [Custom exporter](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.1)
+- [vA3C](1157_rvtva3c.htm)
+- Custom exporter *(link unavailable)*
 - [Forge Platform API](https://developer.autodesk.com)
 - [Forge](http://forge.autodesk.com)
 
 For more information on samples connecting Revit models with Forge, please refer to my recent presentation
-on [Freeing your BIM data](http://thebuildingcoder.typepad.com/blog/2016/06/free-your-bim-data-and-roomedit3d-thee-legged-forge-oauth.html).
+on [Freeing your BIM data](1447_devcon_roomedit3dv2.html).
 
 I also implemented a number of earlier samples on connecting the desktop and the cloud, e.g., RoomEditorApp, FireRatingCloud and Roomedit3d, all available from GitHub and extensively documented by The Building Coder.
 

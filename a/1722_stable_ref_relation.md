@@ -26,11 +26,11 @@ of [The Building Coder samples](https://github.com/jeremytammik/the_building_cod
 ### Stable Reference Relationships
 
 Håvard Leding of [Symetri](https://www.symetri.com) recently contributed
-[new RevitLookup commands for edges, faces and linked elements](https://thebuildingcoder.typepad.com/blog/2019/01/new-revitlookup-snoops-edge-face-link.html).
+[new RevitLookup commands for edges, faces and linked elements](1716_snoop_edge_face_link.html).
 
 He now brings up a different topic, related
-the intriguing [undocumented `ElementId` relationships](http://thebuildingcoder.typepad.com/blog/2011/11/undocumented-elementid-relationships.html)
-and [stable representation magic voodoo](http://thebuildingcoder.typepad.com/blog/2016/04/stable-reference-string-magic-voodoo.html).
+the intriguing [undocumented `ElementId` relationships](0673_elementid_relationships.htm)
+and [stable representation magic voodoo](1429_stable_references.html).
 
 In his own words:
 

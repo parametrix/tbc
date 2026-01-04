@@ -146,7 +146,7 @@ the Microsoft article [introducing the .NET Hot Reload experience for editing co
 Many thanks to Chris for sharing this!
 
 For completeness, The Building Coder topic group
-on [debugging without restart and live development](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.49) discusses
+on debugging without restart and live development *(link unavailable)* discusses
 how 'Edit and Continue' used to work way back in Revit 2008 and various other solutions suggested in the meantime.
 
 

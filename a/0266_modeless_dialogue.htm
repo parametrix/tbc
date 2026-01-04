@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1255593 [Modeless dialog in Revit] -->
@@ -24,7 +55,7 @@ The button can be clicked multiple times and elements should keep on being addin
 
 <p>An example of a modeless dialogue box that remains active only as long as the external command which launched it and makes full use of the Revit API within this context is provided by Joel Karr's
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/10/modeless-pressure-drop-tool.html">
+<a href="0233_pressure_drop.htm">
 modeless pressure drop tool</a>.
 
 It also shows how to obtain the Revit window handle, which you can use to set focus to the Revit application.
@@ -37,12 +68,12 @@ This is a completely different issue and may be problematic.
 Why? Because when Revit invokes an external command, it automatically opens a transaction for it. 
 When you are not within the context of an external command invoked by Revit, you need to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/01/transactions.html">
+<a href="0073_transaction.htm">
 manage your own transaction</a>.
 
 <p>The return code from an external command determines how the automatically generated transaction is terminated, and one effect of this is the setting of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/document-ismodified-property.html">
+<a href="0049_is_modified.htm">
 IsModified document dirty flag</a>.
 
 <p>To summarise, if you are working in a modeless dialogue box invoked by an external command which is still active, you have full access to Revit and can use the API to its full extent. 
@@ -50,12 +81,12 @@ IsModified document dirty flag</a>.
 <p>If you are in some other context, i.e. a modeless dialogue that was not invoked by a command, or the command has already terminated, you cannot make full use of the API and there is no guarantee that you can interact with Revit at all. Basically, you are trying to 
 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/driving-revit-from-outside.html">
+<a href="0051_driving_revit.htm">
 drive Revit from outside</a>.
 
 <p>Our recent discussion on 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/12/au-and-automated-testing.html">
+<a href="0260_automated_testing.htm">
 automated testing</a>
 
 links to that discussion and additional related posts.
@@ -64,12 +95,12 @@ links to that discussion and additional related posts.
 
 <p>Regarding the trusted sites, I personally put my trust and effort into 
 
-<a href="http://thebuildingcoder.typepad.com">
-The Building Coder</a>.
+<span class="unavailable-link">
+The Building Coder</span>.
 
 We recently presented an overview of additional 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/10/revit-api-forums.html">
+<a href="0239_forums.htm">
 forums dealing with the Revit API</a>.
 
 I cannot say that any of these except the 
@@ -79,3 +110,12 @@ Autodesk Developer Network</a> ADN
 
 are especially trusted or specifically endorsed in any way. 
 The others are simply sources of information and places to mutually exchange experience, as always, with no guarantees whatsoever given. 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

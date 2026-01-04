@@ -71,7 +71,7 @@ Autodesk University in Darmstadt, Germany:
 
 It expands on previous presentations on *Connecting BIM on Desktop and Cloud* and *Freeing your BIM Data*.
 
-The full documentation on this class including the English language handout document and slide deck is available from The Building Coder post on [Rational BIM Programming at AU Darmstadt](http://thebuildingcoder.typepad.com/blog/2017/10/rational-bim-programming-at-au-darmstadt.html).
+The full documentation on this class including the English language handout document and slide deck is available from The Building Coder post on [Rational BIM Programming at AU Darmstadt](1593_rat_bim_programming.html).
 
 
 ####<a name="3"></a>Pleasant Walks in the Odenwald
@@ -96,7 +96,7 @@ Here are some of the books I recently read and enjoyed more than others:
 - Bernhard Jaumann: *Die Vipern von Montesecco* [de] &ndash; a brilliant whodunnit in a small Italian village with everybody under suspicion and the village wholeheartedly determined to solve this to preserve its sense of unity, and solve it with no outside interference.
 - Antonio Manzini: *Non e stagione* [it] &ndash; un giallo, exciting detective story featuring Rocco Schiavione, a totally hip super macho cop from Rome transferred to Aosta and unhappy with snow in May, trying to save an abandoned kidnapped girl from dying.
 - Antonio Manzini: *Pista nera* [it] &ndash; I love Rocco Schiavione and Antonio Manzini; radical militant violent personal integrity, regardless of law and order, serving a higher and personal truth.
-- Antonio Manzini: *La costola di Adamo* [it] &ndash; more radical personal integrity; the topic is political and sociological, femmicide; read the last sentence of the acknowledgements before starting the book; cf. this [quote and my translation](http://thebuildingcoder.typepad.com/blog/2015/09/change-type-iterate-elements-create-family.html#5).
+- Antonio Manzini: *La costola di Adamo* [it] &ndash; more radical personal integrity; the topic is political and sociological, femmicide; read the last sentence of the acknowledgements before starting the book; cf. this [quote and my translation](1361_rfa_api_iterate.html#5).
 - Antonio Manzini: *Era di maggio* [it] &ndash; number four in this series.
 
 
@@ -117,8 +117,8 @@ My son attended Knowmads a couple of years ago, and now another friend's daughte
 
 The AI research community has been very excited indeed lately by the super-human level of performance achieved by [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo), by learning from a combination of human knowledge and self-generated experience:
  
-- [AlphaGo beats grand master](http://thebuildingcoder.typepad.com/blog/2016/01/bim-programming-madrid-and-spanish-connectivity.html#7) 
-- [AlphaGo beats world champion](http://thebuildingcoder.typepad.com/blog/2017/06/ai-news-and-sub-transaction-regen.html#2) 
+- [AlphaGo beats grand master](1398_bim_programming.html#7) 
+- [AlphaGo beats world champion](1563_subtrans_regen.html#2) 
 
 New research has taken it yet another step further, and 
 now [DeepMind's Go-playing AI doesn't need human help to beat us anymore](https://www.theverge.com/2017/10/18/16495548/deepmind-ai-go-alphago-zero-self-taught)

@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -24,12 +55,12 @@ Do I need to loop through family instances, and do a reverse lookup?
 
 <p><strong>Answer:</strong> If your version of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/rvtmgddbg.html">
+<a href="0101_rvtmgddbg.htm">
 RvtMgdDbg</a> fails 
 
 to display some information that you are interested in, I suggest you 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/08/fixing-rvtmgddbg-for-mep-connectors.html">
+<a href="0204_rvtmgddbg_mep_connectors.htm">
 debug it and fix the problem</a>,
 
 e.g. start it in the debugger and add an exception handler to the offending code.
@@ -40,7 +71,7 @@ In general, each sheet has a title block associated with it, and then hosts mult
 
 <p>To see which title block is added when I add a new sheet to the model, I use a technique to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/locked-dimensioning.html">
+<a href="0099_locked_dimension.htm">
 track all new elements added</a>.
 
 This technique uses the Revit API introduction labs Lab 2-1 element lister.
@@ -72,7 +103,7 @@ C:\tmp\ >diff RevitElementsBeforeSheet.txt RevitElementsAfterSheet.txt
 
 <p>Once the new elements have been identified, the Revit API introduction labs 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/deeper-parameter-exploration.html">
+<a href="0118_deeper_param_exploration.htm">
 built-in parameter checker</a> can 
 
 be used to explore their data. 
@@ -98,7 +129,7 @@ SHEET_NUMBER
 
 We can therefore use the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/relationship-in.html">
+<a href="0016_relationship_inverter.htm">
 relationship inverter algorithm</a> to
 
 identify the title block from the sheet, if needed.
@@ -117,7 +148,7 @@ Files are identical.
 This means that the deletion of the sheet caused the associated title block to be deleted as well. 
 This means that we can probably make use of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/06/host-reference.html">
+<a href="0146_host_reference.htm">
 doc.Delete method to detect dependent elements</a>.
 
 Using that approach, you delete the sheet inside a transaction, save the list of element ids returned by the doc.Delete method, and abort the transaction to undo the deletion operation. The list of ids will then include element ids of both the sheet and the associated title block.
@@ -133,7 +164,7 @@ Ricardo Cardial</a>
 
 raised a related 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/08/shared-parameter-visibility.html#comment-6a00e553e1689788330120a5189ca2970b">
+<a href="0208_shared_param_visibility.htm#comment-6a00e553e1689788330120a5189ca2970b">
 question</a> on 
 
 how to modify the text labels defined in the title block, which we will partially repeat here in order to ensure that these useful ideas do not get lost:
@@ -147,7 +178,7 @@ They can be summarised like this:
 
 <ul>
 <li>
-<a href="http://thebuildingcoder.typepad.com/blog/2009/08/shared-parameter-visibility.html#comment-6a00e553e1689788330120a57141eb970c">
+<a href="0208_shared_param_visibility.htm#comment-6a00e553e1689788330120a57141eb970c">
 Read the data through the built-in parameter SHEET_SCALE</a> with 
 
 the display name 'Scale'. 
@@ -155,8 +186,17 @@ It is a string-valued parameter and is unfortunately marked as read-only.
 
 <li>
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/08/shared-parameter-visibility.html#comment-6a00e553e1689788330120a5715f8c970c">
+<a href="0208_shared_param_visibility.htm#comment-6a00e553e1689788330120a5715f8c970c">
 Modify the family file</a> used 
 
 to define the title block of the sheet.
 </ul>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

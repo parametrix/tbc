@@ -28,7 +28,7 @@ uniquely identify themselves.
 When you copy and paste source code including any such GUID, you need to take care to replace the original GUID by your own one.
 
 You can easily create a new GUID using the Visual Studio GUID generator tool `guidgen.exe` and by other means, cf. the explanation on creating
-an [add-in client id](http://thebuildingcoder.typepad.com/blog/2010/04/addin-manifest-and-guidize.html#4) for
+an [add-in client id](0354_guidizer.htm#4) for
 a Revit add-in manifest.
 
 Boost your BIM recently encountered and reported this issue in
@@ -62,7 +62,7 @@ What happened?
 **Answer:** Several developers reported this issue.
 
 I suspect people are copying code straight from
-the [simpler dockable panel sample](http://thebuildingcoder.typepad.com/blog/2013/05/a-simpler-dockable-panel-sample.html),
+the [simpler dockable panel sample](0942_dockable_panel.htm),
 not realizing they need to replace the GUID with their own one. 
 
 Create your own GUID to replace the original one and the problem will be resolved.

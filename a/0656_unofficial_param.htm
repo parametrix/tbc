@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- SPR #212647 [Element.Paramameters.Contains always returns false] --> 
@@ -29,7 +60,7 @@ our tour.
 <p>Meanwhile, on the Revit API side, Victor Chekalin, or Виктор Чекалин, raised a number of pertinent issues lately. 
 One of them is this question in the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/exploring-element-parameters.html?cid=6a00e553e168978833015391c90d6e970b#comment-6a00e553e168978833015391c90d6e970b">
+<a href="0042_exploring_param.htm">
 comment</a> on
 
 parameters:
@@ -37,7 +68,7 @@ parameters:
 <p><strong>Question:</strong> In my project I find parameters on a particular element that do not appear in the Element.Parameters collection. 
 In 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/exploring-element-parameters.html">
+<a href="0042_exploring_param.htm">
 exploring element parameters</a>, 
 
 you wrote: "Sometimes an element will have other parameters attached to it as well, which are not listed in the 'official' collection returned by the Parameters property. 
@@ -157,21 +188,21 @@ Determine Sheet Size
 -->
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/11/exploring-element-parameters.html">Exploring element parameters</a>
+<li><a href="0042_exploring_param.htm">Exploring element parameters</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/02/locked-dimensioning.html">Locked dimensioning</a>
+<li><a href="0099_locked_dimension.htm">Locked dimensioning</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/04/deeper-parameter-exploration.html">Deeper parameter exploration</a>
+<li><a href="0118_deeper_param_exploration.htm">Deeper parameter exploration</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/09/door-marks.html">Door marks</a>
+<li><a href="0220_door_marks.htm">Door marks</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/11/room-occupancy.html">Room occupancy</a>
+<li><a href="0246_room_occupancy.htm">Room occupancy</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/11/title-block-of-sheet.html">Title block of sheet</a>
+<li><a href="0247_title_block_of_sheet.htm">Title block of sheet</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/05/pre-post-and-pick-select.html">Pre-, post- and pick selection</a>
+<li><a href="0364_pre_post_pick_select.htm">Pre-, post- and pick selection</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/05/determine-sheet-size.html">Determining sheet size</a>
+<li><a href="0371_sheet_size.htm">Determining sheet size</a>
 </ul>
 
 <p>Since I do find my built-in parameter checker a very handy tool I decided to simplify access to and installation of it by extracting the code from the obsolete Revit API Introduction Labs.
@@ -542,3 +573,12 @@ the source code, add-in manifest, and Visual Studio solution for the updated Bip
 
 <p>P.S. One thing that is possibly still missing here is support for shared parameters.
 If you need that, add it, and let us know, please.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

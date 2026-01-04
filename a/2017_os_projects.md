@@ -175,7 +175,7 @@ Great job!
 
 ####<a name="6"></a> Purge Add-In with Rave Reviews
 
-[Kfpopeye shared several useful open-source Revit API projects](https://thebuildingcoder.typepad.com/blog/2021/09/kfpopeye-open-source-avf-and-other-cleanup.html#2) two years ago.
+[Kfpopeye shared several useful open-source Revit API projects](1918_avf_design_option.html#2) two years ago.
 
 Some of them received rave reviews and a lot of interest was expressed to update them and find a new name and maintainer in the recent continuation of
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
@@ -194,7 +194,7 @@ Here are the associated GitHub repositories:
 - [OptionsBar](https://github.com/SpeedCAD/SCADtools.Revit.UI.OptionsBar)
 
 By the way, the latter is comparable with Roman's recent
-fully [Open-Source OptionsBar](https://thebuildingcoder.typepad.com/blog/2023/09/optionsbar-and-bye-bye-to-da4r-2018.html#2).
+fully [Open-Source OptionsBar](2009_optionsbar.html#2).
 
 ####<a name="8"></a> Managing Multiple Revit API Versions
 

@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -30,7 +60,7 @@ Please set ProjectInfo.gbXMLSettings.ExportComplexity to the enumeration value d
 Here are the possible settings, which are documented in the Revit API help file RevitAPI.chm:
 
 <ul>
-<li>Simple: Curtain Walls and Curtain Systems are exported with one ìhugeî opening with the total opening area equal to all openings; a curtain wall with 50 panels is exported as 1 opening. 
+<li>Simple: Curtain Walls and Curtain Systems are exported with one ÔøΩhugeÔøΩ opening with the total opening area equal to all openings; a curtain wall with 50 panels is exported as 1 opening. 
 <li>SimpleWithShadingSurfaces: Export with simple type and shading surfaces. 
 <li>Complex: Curtain Walls and Curtain Systems are exported with several openings, panel by panel; a curtain wall with 50 panels is exported as 50 openings.
 <li>ComplexWithShadingSurfaces: Include complex type and shading surfaces. 
@@ -88,25 +118,25 @@ This is your application execution sequence:
 
 <p>Some hints on modal versus modeless dialogues are discussed in the posts on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/driving-revit-from-outside.html">
+<a href="0051_driving_revit.htm">
 driving Revit from outside</a>
 
 and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/revit-window-handle-and-modeless-dialogues.html">
+<a href="0088_revit_window_handle.htm">
 using modeless dialogues</a>.
 
 More information on the automatic transaction handling performed by Revit for your external command is discussed in the introduction to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/01/transactions.html">
+<a href="0073_transaction.htm">
 transactions</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/01/transaction-responsibility.html">
+<a href="0075_transaction_responsibility.htm">
 transaction responsibility</a>
 
 and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/document-ismodified-property.html">
+<a href="0049_is_modified.htm">
 the document IsModified property</a>.
 
 <a name="2"></a>
@@ -115,7 +145,16 @@ the document IsModified property</a>.
 
 <p>Always ensure that the Copy Local flag on your application's reference to the RevitAPI.dll assembly in your Visual Studio project is set to false, as described in the post on 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/09/the-sdk-samples.html">
+<a href="0006_sdk_samples_solution.htm">
 the document IsModified property</a>.
 
 I still keep seeing cases where this flag is left in its default setting of True.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

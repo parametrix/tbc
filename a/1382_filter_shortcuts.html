@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!---
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -91,17 +122,17 @@ I arrived back safe and sound in Switzerland after the exciting week at Autodesk
 <p>As soon as you use any kind of .NET operation to filter that data, you are requesting Revit to translate and marshal the element information and pass it out from the Revit memory space to the .NET add-in client. That is a hugely inefficient process, compared to the internal filtering.</p>
 <p>Regardless of what you are searching for, doing it in .NET instead of using a built-in filter is guaranteed to double the execution time and halve the performance.</p>
 <p>I tested various combinations of this quite extensively, starting with
-the <a href="http://thebuildingcoder.typepad.com/blog/2010/04/collector-benchmark.html">collector benchmark</a> in 2010.</p>
+the <a href="0333_collector_benchmark.htm">collector benchmark</a> in 2010.</p>
 <p>You can find more examples by searching the Internet for CmdCollectorPerformance, optionally adding 'revit api' or 'building coder'.</p>
 <p>They refer to
 the <a href="https://github.com/jeremytammik/the_building_coder_samples/blob/master/BuildingCoder/BuildingCoder/CmdCollectorPerformance.cs">CmdCollectorPerformance.cs module</a>
 in <a href="https://github.com/jeremytammik/the_building_coder_samples">The Building Coder samples</a>.</p>
-<p>Your question 2 regarding the optional use of <code>ToElements</code> is answered in my discussion of <a href="http://thebuildingcoder.typepad.com/blog/2012/12/toelementids-performance.html">ToElementIds performance</a>.</p>
+<p>Your question 2 regarding the optional use of <code>ToElements</code> is answered in my discussion of <a href="0872_toelementids_perf.htm">ToElementIds performance</a>.</p>
 <p>In short, you should avoid it unless you really need it.</p>
 <p>One situation in which it might be useful is when you really need to determine the number of elements returned by the collector before starting to iterate over them. Unlike the collector itself, ToElements returns a generic List of Element objects providing a Count property.</p>
 <p>A more common need might be to access the element ids.</p>
 <p>I recently discussed an example that demonstrates the imperative need
-to <a href="http://thebuildingcoder.typepad.com/blog/2015/12/au-ioc-banks-and-not-to-delete-while-iterating.html#2">close the collector before deleting elements</a>,
+to <a href="1381_au_3_filter_delete.html#2">close the collector before deleting elements</a>,
 in which case <code>ToElementIds</code> can come in handy.</p>
 <p>By now, I hope that it is clear that your sample 3 is an utter abomination and could be regarded as verging on criminal inefficiency.</p>
 <p>If you say that you found LINQ to be incredibly fast, you will be happy to hear that the Revit filtered element collectors are at least twice as fast, in the worst case.</p>
@@ -109,7 +140,7 @@ in which case <code>ToElementIds</code> can come in handy.</p>
 <p>An interesting specialised topic is how to convert from .NET post-process filtering to built-in Revit filtering in order to optimise performance. One typical situation in which the .NET filtering may seem easier to implement is when checking for specific element parameter values.</p>
 <p>The collector performance samples pointed to above provide several samples of avoiding that by setting up appropriate element parameter filters instead, e.g., to <a href="https://github.com/jeremytammik/the_building_coder_samples/blob/master/BuildingCoder/BuildingCoder/CmdCollectorPerformance.cs#L148-L200">filter for elements in a specific view having a specific phase</a>.</p>
 <p>Please also explore and understand the related discussion
-on <a href="http://thebuildingcoder.typepad.com/blog/2012/09/findelement-and-collector-optimisation.html">FindElement and collector
+on <a href="0832_find_element_optimise.htm">FindElement and collector
 optimisation</a>.</p>
 <p>Now back to the overview that I have been planning to publish for so long:</p>
 <h4><a name="3"></a>Revit Element Filter Classification</h4>
@@ -199,3 +230,11 @@ the <a href="https://github.com/ADN-DevTech/RevitTrainingMaterial">ADN Revit API
 <li>AreaTagFilter &ndash; finds area tags.</li>
 <li>CurveElementFilter &ndash; finds specific types of curve elements, e.g. model curves, symbolic curves, detail curves, etc.</li>
 </ul>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

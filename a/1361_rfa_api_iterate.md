@@ -74,7 +74,7 @@ What do you think I am  missing?
 
 **Answer:**
 First of all, most questions like this have already been answered. Make sure you perform some Internet searches, check
-[The Building Coder topic groups](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5), look through
+The Building Coder topic groups *(link unavailable)*, look through
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api/bd-p/160) etc.
 
 Note that the `Category` property is not always implemented on families, so you may have to use `FamilyCategory` instead, or the category of the family's first symbol.
@@ -86,7 +86,7 @@ Taking a deeper look at your question, I believe that almost everything you need
 the [ADN Xtra Labs](https://github.com/jeremytammik/AdnRevitApiLabsXtra) module [Labs3.cs](https://github.com/jeremytammik/AdnRevitApiLabsXtra/blob/master/XtraCs/Labs3.cs).
 
 Here are links to two more related discussions for you,
-on [changing an element type](http://thebuildingcoder.typepad.com/blog/2010/07/change-element-type.html) and [changing the type of many instances](http://thebuildingcoder.typepad.com/blog/2011/08/changing-the-type-of-many-instances.html).
+on [changing an element type](0410_change_element_type.htm) and [changing the type of many instances](0640_changetypeid.htm).
 
 
 
@@ -124,7 +124,7 @@ All too many people make use of filtered element collectors like this:
 Please do desist.
 
 I have explained a couple of hundred times now that this can be significantly **simplified**, **shortened** and made **more efficient** all at the same time, e.g., in my explanation of possibilities
-for [FindElement and collector optimisation](http://thebuildingcoder.typepad.com/blog/2012/09/findelement-and-collector-optimisation.html).
+for [FindElement and collector optimisation](0832_find_element_optimise.htm).
 
 You can iterate directly over the filtered element collector.
 
@@ -185,11 +185,11 @@ the section [3_Revit_Family_API](https://github.com/ADN-DevTech/RevitTrainingMat
 The most up-to-date version is always provided on GitHub.
 
 A quick way to find links on The Building Coder to specific topics is to look at
-the [topic groups](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5).
+the topic groups *(link unavailable)*.
 The list of interesting posts is by no means complete, nor does it actually include all the best ones, but it is a good place to start.
 
 For example, you might be interested in
-the topic group on [Family API and Placing Family Instances](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.25).
+the topic group on Family API and Placing Family Instances *(link unavailable)*.
 
 Besides the official Revit API training labs mentioned above, you might also like
 the [ADN Xtra labs](https://github.com/jeremytammik/AdnRevitApiLabsXtra), which include the former.

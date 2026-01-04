@@ -98,8 +98,8 @@ Here are some past suggestions for purging unused elements:
 ####<a name="3"></a> Purge via Performance Advisor
 
 Apparently, the last post in the list above is worthwhile pointing out again;
-you can [purge unused using Performance Adviser](https://thebuildingcoder.typepad.com/blog/2018/08/purge-unused-using-performance-adviser.html),
-as Virone Lorenzo also underlined in his [comment](https://thebuildingcoder.typepad.com/blog/2018/08/purge-unused-using-performance-adviser.html#comment-5716062022):
+you can [purge unused using Performance Adviser](1678_purge_unused.html),
+as Virone Lorenzo also underlined in his [comment](1678_purge_unused.html#comment-5716062022):
 
 > WOAW this post is awesome, and it seems to work in Revit 2021 very well!
 Thank you for the code and thanks to Ollie for publishing it in C#.

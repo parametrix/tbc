@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -67,13 +98,13 @@ make use of its overload taking an IWin32Window argument:</p>
 <li><code>ShowDialog(IWin32Window)</code> &ndash; Shows the form as a modal dialog box with the specified owner.</li>
 </ul>
 <p>This approach was explained back in 2010 in the discussion on setting 
-the <a href="https://thebuildingcoder.typepad.com/blog/2010/06/revit-parent-window.html">Revit parent window</a>.</p>
+the <a href="0400_revit_parent_window.htm">Revit parent window</a>.</p>
 <p>Please note that
-the <a href="https://thebuildingcoder.typepad.com/blog/2018/08/whats-new-in-the-revit-20191-api.html#3.1.4">Revit 2019 API provides direct access to the Revit main window handle</a>.</p>
+the <a href="1676_whats_new_2019_1.html#3.1.4">Revit 2019 API provides direct access to the Revit main window handle</a>.</p>
 <h4><a name="3"></a> The Revit 2019 MainWindowHandle API</h4>
 <p>Here is a brief quote from
-the <a href="https://thebuildingcoder.typepad.com/blog/2018/08/whats-new-in-the-revit-20191-api.html">Revit 2019 API news</a>
-on the <a href="https://thebuildingcoder.typepad.com/blog/2018/08/whats-new-in-the-revit-20191-api.html#3.1.4">direct access to the Revit main window handle</a>:</p>
+the <a href="1676_whats_new_2019_1.html">Revit 2019 API news</a>
+on the <a href="1676_whats_new_2019_1.html#3.1.4">direct access to the Revit main window handle</a>:</p>
 <blockquote>
 <p><b>1.4. UI API changes</b></p>
 <p><b>1.4.1. Main window handle access</b></p>
@@ -87,7 +118,7 @@ Use these properties instead of System.Diagnostics.Process.GetCurrentProcess().M
 which is no longer a reliable method for retrieving the main window handle starting with Revit 2019.</p>
 </blockquote>
 <p>The change was also pointed out by The Building Coder in October 2017 with
-a <a href="https://thebuildingcoder.typepad.com/blog/2017/10/modeless-form-keep-revit-focus-and-on-top.html#10">warning that things will change in the next release</a>.</p>
+a <a href="1591_modeless_focus.html#10">warning that things will change in the next release</a>.</p>
 <h4><a name="4"></a> Docking System and Multiple Main Window Explanation</h4>
 <p>Revitalizer explains the need for the new property in his notes
 on <a href="https://forums.autodesk.com/t5/revit-api-forum/assign-a-name-to-a-string-c-process-getcurrentprocess/m-p/8365316">assigning a name to a string in C# and <code>Process.GetCurrentProcess().MainWindowTitle</code></a>:</p>
@@ -114,3 +145,11 @@ a keyboard shortcut problem with <code>CmdPressKeys</code> in Revit 2019.</p>
 in <a href="https://github.com/jeremytammik/the_building_coder_samples/releases/tag/2019.0.143.10">release 2019.0.143.10</a>.</p>
 <p>Look at the modifications made to the modules CmdPlaceFamilyInstance.cs, CmdPressKeys.cs and JtWindowHandle.cs in
 the <a href="https://github.com/jeremytammik/the_building_coder_samples/compare/2019.0.143.9...2019.0.143.10">diff between the two versions</a>.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

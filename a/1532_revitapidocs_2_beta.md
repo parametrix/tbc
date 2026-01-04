@@ -23,8 +23,8 @@ During the expansion cover Revit 2017.1, Gui implemented a number of other signi
 ### Revit API Docs 2.0 Beta
 
 As we noted back
-in [August](http://thebuildingcoder.typepad.com/blog/2016/08/online-revit-api-docs-and-convex-hull.html#2)
-and [October](http://thebuildingcoder.typepad.com/blog/2016/10/token-expiry-and-online-revit-api-docs.html#2) last
+in [August](1457_online_doc_convex_hull.html#2)
+and [October](1484_revitapidocs.html#2) last
 year, Gui Talarico created an extremely useful online version of the contents of the Revit API help file *RevitAPI.chm*.
 
 It sports several significant advantages over the locally hosted Windows help file:

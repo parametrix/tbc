@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -82,7 +113,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 <li>Use a full-blown Boolean operation to determine exact equality</li>
 </ul>
 <p>Long ago, I
-suggested <a href="https://thebuildingcoder.typepad.com/blog/2012/03/great-ocean-road-and-creating-your-own-key.html#2">defining your own key for comparison purposes</a>.</p>
+suggested <a href="0739_create_own_key.htm#2">defining your own key for comparison purposes</a>.</p>
 <p>Furthermore, when comparing objects, .NET differentiates between equality operators and sorting comparison operators.</p>
 <p>Here is a simple <code>XyzEqualityComparer</code> that shows a pretty trivial equality comparison class for 3D points and vectors:</p>
 <pre class="code">
@@ -104,7 +135,7 @@ class XyzEqualityComparer : IEqualityComparer<XYZ>
 <p>A more useful and powerful comparison method answers the question ‘is one of them smaller than, equal, or larger than the other’.</p>
 <p>Such methods are needed for sorting objects, for instance, in order to use them as keys in a dictionary.</p>
 <p>I defined a comparison operator for <code>XYZ</code> points like this 
-for <a href="https://thebuildingcoder.typepad.com/blog/2016/01/tracking-element-modification.html#5.1">tracking element modification</a>:</p>
+for <a href="1397_track_changes.html#5.1">tracking element modification</a>:</p>
 <pre class="code">
   public static bool IsZero(
     double a,
@@ -147,7 +178,7 @@ for <a href="https://thebuildingcoder.typepad.com/blog/2016/01/tracking-element-
 
 <p>As you see, you start from the most basic property data types, e.g., int, double, string, and then build up further and further to achieve all you need.</p>
 <p>We recently discussed a more complex <code>IComparer</code> implementation to compare column marks, <code>ColumnMarkComparer</code>, 
-for <a href="https://thebuildingcoder.typepad.com/blog/2019/11/dll-conflicts-and-replicating-schedule-sort-order.html#4">replicating schedule sort order</a>.</p>
+for <a href="1799_dll_hell_schedule_sort.html#4">replicating schedule sort order</a>.</p>
 <p>That shows how you can concatenate any number of different comparisons for all the different properties of interest to get a finer and finer distinguishing capability.</p>
 <p>You need to decide exactly what differences may occur between the potentially different family instances.</p>
 <p>With that in hand, you can implement a nice clean comparison operator for them and run that over all occurrences in all projects to ensure that all the symbols really are identical if their category name, family name and type name match.</p>
@@ -155,3 +186,11 @@ for <a href="https://thebuildingcoder.typepad.com/blog/2019/11/dll-conflicts-and
 <img src="img/cartographic_symbols.jpg" alt="Cartographic symbols" width="300"> <!--598-->
 <p style="font-size: 80%; font-style:italic">Cartographic symbols</p>
 </center></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

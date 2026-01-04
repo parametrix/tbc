@@ -20,13 +20,13 @@
 - [REX extensions vs Revit add-ins](https://stackoverflow.com/questions/48707506/revit-extensions-vs-plugins)
   What is the difference between extensions and plug-ins? I've been writing many plug-ins, and while diffing througg the SDK folder I came across the REX framework and extensions, but im not really clear on what the benifets of one over the other are.
   The REX framework and extensions are Revit structure specific and built on top of pure simple Revit API add-ins:
-  - [The REX SDK](http://thebuildingcoder.typepad.com/blog/2011/04/the-rex-sdk.html)
-  - [REX content generator](http://thebuildingcoder.typepad.com/blog/2011/12/rex-content-generator.html)
-  - [Structural Analytical Code Checking and Results Builder](http://thebuildingcoder.typepad.com/blog/2013/06/structural-analytical-code-checking-and-results-builder.html)
-  - [Framing Cross Section Analyser and REX](http://thebuildingcoder.typepad.com/blog/2013/12/security-framing-cross-section-analyser-and-rex.html)
-  - [Framing Cross Section Analyser and REX in Revit 2015](http://thebuildingcoder.typepad.com/blog/2015/03/framing-cross-section-analyser-and-rex-in-revit-2015.html)
-  - [REX Add-In Development and Migration](http://thebuildingcoder.typepad.com/blog/2015/12/rex-app-development-and-migration.html)
-  - [REX SDK FreezeDrawing Sample](http://thebuildingcoder.typepad.com/blog/2016/10/au-revit-20171-and-rex-freezedrawing.html#5)
+  - [The REX SDK](0570_rex.htm)
+  - [REX content generator](0691_rex_content_generator.htm)
+  - [Structural Analytical Code Checking and Results Builder](0967_rst_code_check.htm)
+  - [Framing Cross Section Analyser and REX](1076_framing_xsec_analyse.htm)
+  - [Framing Cross Section Analyser and REX in Revit 2015](1294_framing_xsec_analyse.htm)
+  - [REX Add-In Development and Migration](1384_rex.html)
+  - [REX SDK FreezeDrawing Sample](1493_au_2017_1_sdk_freeze.html#5)
 
 - 13832283 [Reload Revit Links From...]
   https://forums.autodesk.com/t5/revit-api-forum/reload-revit-links-from/m-p/7722248
@@ -89,7 +89,7 @@ on [Revit add-ins](https://forums.autodesk.com/t5/revit-api-forum/revit-addins/m
 
 **Question:** I want to start an external tool from a button in the ribbon.
 
-**Answer:** Read the [Revit API getting started material](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2).
+**Answer:** Read the Revit API getting started material *(link unavailable)*.
 That explains all you need.
 
 If you wish to skip all documentation, you can also just run through
@@ -133,10 +133,10 @@ Many thanks to Allan for sharing this!
 
 Here are some other of Allan's contributions here:
 
-- [Stacked Ribbon Button Panel Options](http://thebuildingcoder.typepad.com/blog/2016/09/stacked-ribbon-button-panel-options.html)
-- [WTA Elec, FireP and 3D Aimer Tools](http://thebuildingcoder.typepad.com/blog/2017/03/wta-firep-and-3d-aimer-tools.html)
-- [WTA Mechanical Family Placement Add-in](http://thebuildingcoder.typepad.com/blog/2017/03/wta-mech-and-ttt-for-provision-for-voids.html#3)
-- [AKS Opener](http://thebuildingcoder.typepad.com/blog/2017/04/work-half-aks-opener-rvtfader-and-forgefader.html#3)
+- [Stacked Ribbon Button Panel Options](1466_split_button_opt.html)
+- [WTA Elec, FireP and 3D Aimer Tools](1543_wta_firep_3d_aimer.html)
+- [WTA Mechanical Family Placement Add-in](1546_wta_mech_prov_void.html#3)
+- [AKS Opener](1547_workhalf_aks_opener.html#3)
 
 
 ####<a name="5"></a>REX Extensions versus Revit Add-Ins
@@ -154,19 +154,19 @@ What are the benefits of one over the other?
 
 Here are some previous discussions of various aspects of REX:
 
-- [The REX SDK](http://thebuildingcoder.typepad.com/blog/2011/04/the-rex-sdk.html)
-- [REX content generator](http://thebuildingcoder.typepad.com/blog/2011/12/rex-content-generator.html)
-- [Structural Analytical Code Checking and Results Builder](http://thebuildingcoder.typepad.com/blog/2013/06/structural-analytical-code-checking-and-results-builder.html)
-- [Framing Cross Section Analyser and REX](http://thebuildingcoder.typepad.com/blog/2013/12/security-framing-cross-section-analyser-and-rex.html)
-- [Framing Cross Section Analyser and REX in Revit 2015](http://thebuildingcoder.typepad.com/blog/2015/03/framing-cross-section-analyser-and-rex-in-revit-2015.html)
-- [REX Add-In Development and Migration](http://thebuildingcoder.typepad.com/blog/2015/12/rex-app-development-and-migration.html)
-- [REX SDK FreezeDrawing Sample](http://thebuildingcoder.typepad.com/blog/2016/10/au-revit-20171-and-rex-freezedrawing.html#5)
+- [The REX SDK](0570_rex.htm)
+- [REX content generator](0691_rex_content_generator.htm)
+- [Structural Analytical Code Checking and Results Builder](0967_rst_code_check.htm)
+- [Framing Cross Section Analyser and REX](1076_framing_xsec_analyse.htm)
+- [Framing Cross Section Analyser and REX in Revit 2015](1294_framing_xsec_analyse.htm)
+- [REX Add-In Development and Migration](1384_rex.html)
+- [REX SDK FreezeDrawing Sample](1493_au_2017_1_sdk_freeze.html#5)
 
 
 ####<a name="6"></a>Reloading Revit Links from User Selected Folder
 
-We discussed [automatically reloading links after migration](http://thebuildingcoder.typepad.com/blog/2016/08/automatically-reload-links-after-migration.html)
-and [loading and unloading Revit links](http://thebuildingcoder.typepad.com/blog/2014/12/last-western-european-devdays-links-textures-ur4-vs-r2.html#2)
+We discussed [automatically reloading links after migration](1460_reload_links.html)
+and [loading and unloading Revit links](1261_devdays_milano.htm#2)
 quite a while ago.
 
 A pretty basic question on how to use this functionality was raised and solved
@@ -177,7 +177,7 @@ on [reloading Revit links from...](https://forums.autodesk.com/t5/revit-api-foru
 **Question:** My add-in is currently getting the names of all linked files in the model, reading the file path from each; the user is prompted to choose from a folder depending on whether the name of the link is contained in the file path; now, what I want to do is to actually reload the files from the new file path ... but it's not working.
 
 I actually had a look at the discussion
-on [automatically reloading links after migration](http://thebuildingcoder.typepad.com/blog/2016/08/automatically-reload-links-after-migration.html) while developing my script.
+on [automatically reloading links after migration](1460_reload_links.html) while developing my script.
 
 Later, after several iterations, Andrea ended up sharing the following solution:
 
@@ -215,17 +215,17 @@ You will probably need to implement a conversion for each unit type you encounte
 
 It is probably quite easy once you understand the basic principles.
 
-I looked at [The Building Coder category on units](http://thebuildingcoder.typepad.com/blog/units).
+I looked at The Building Coder category on units *(link unavailable)*.
 
 Here are the posts that look most useful to me to help answer your question:
 
-- [Unit abbreviations](http://thebuildingcoder.typepad.com/blog/2017/08/unit-abbreviations.html)
-- [UnitUtils converting units for unit weight](http://thebuildingcoder.typepad.com/blog/2016/08/unitutils-converting-units-for-unit-weight.html)
-- [Localised unit abbreviations](http://thebuildingcoder.typepad.com/blog/2013/11/localised-unit-abbreviations.html)
-- [Mapping display unit type to unit types](http://thebuildingcoder.typepad.com/blog/2013/11/mapping-display-unit-type-to-unit-types.html)
-- [Unit abbreviations](http://thebuildingcoder.typepad.com/blog/2013/11/unit-abbreviations.html)
-- [Revit 2013 unit conversion utility](http://thebuildingcoder.typepad.com/blog/2013/01/revit-2013-unit-conversion-utility.html)
-- [Unit conversion and display string formatting](http://thebuildingcoder.typepad.com/blog/2011/12/unit-conversion-and-display-string-formatting.html)
+- [Unit abbreviations](1579_unit_abbreviations.html)
+- [UnitUtils converting units for unit weight](1458_unitutils_weight.html)
+- [Localised unit abbreviations](1061_localised_unit_abbrev.htm)
+- [Mapping display unit type to unit types](1051_displayunittype.htm)
+- [Unit abbreviations](1050_unit_abbreviation.htm)
+- [Revit 2013 unit conversion utility](0882_unit_conversion.htm)
+- [Unit conversion and display string formatting](0688_unit_display_str.htm)
 
 You could parse the unit abbreviation string, determine how many inches, feet, mm, metres, etc. it contains, and multiply by a conversion factor from imperial to metric for each imperial unit encountered.
 

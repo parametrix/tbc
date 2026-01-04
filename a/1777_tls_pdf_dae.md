@@ -136,8 +136,8 @@ So, I can just call `imageType.GetImage().Save(filepath)`.
 I conversed with Bernhard Van Renssen in the past few days, in 
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 on [export to DAE file format](https://forums.autodesk.com/t5/revit-api-forum/export-to-dae-file-format/m-p/9004878) and
-in a [comment](https://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html#comment-4598898712) on
-the [article on *Graphics Pipeline Custom Exporter*](https://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html).
+in a [comment](0979_custom_exporter.htm#comment-4598898712) on
+the [article on *Graphics Pipeline Custom Exporter*](0979_custom_exporter.htm).
 
 That prompted me to migrate
 the [Collada custom exporter](https://github.com/jeremytammik/CustomExporterCollada) to
@@ -152,7 +152,7 @@ When debugging, it calls the `exporter.Export` function in the Command.cs file, 
 By the way, is Collada still the best format to export to if you need the materials, uvs and textures?
 
 **Answer:** Are you talking about
-the [Custom Exporter to Collada](https://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html#5) for
+the [Custom Exporter to Collada](0979_custom_exporter.htm#5) for
 Revit 2014, published in July 2013?
 
 I would assume it should work pretty much unchanged.
@@ -165,7 +165,7 @@ In spite of throwing the exception, the custom exporter seems to work perfectly 
 
 Here is a more detailed discussion and example of this:
 
-- [Custom exporter execute may throw](https://thebuildingcoder.typepad.com/blog/2018/12/dynamo-symbol-vs-type-and-exporter-exception.html#5)
+- [Custom exporter execute may throw](1710_dynamo_type_inst_except.html#5)
 - [Wrap call to `exporter.Export` in an exception handler and all is well](https://github.com/jeremytammik/CustomExporterAdnMeshJson/commit/23a95aad8f4a3cca85a72b32e2b699bde1d46bcb)
 
 Can you confirm that this solves the issue in your case as well?
@@ -185,7 +185,7 @@ new [glTF or GL Transmission Format](https://en.wikipedia.org/wiki/GlTF) nowaday
 
 Afaik, it supports everything that Collada does and more, plus is more modern, streamlined, simple and efficient.
 
-In fact, I recently implemented a [room volume exporter that creates data for use in a glTF visualisation](https://thebuildingcoder.typepad.com/blog/2019/06/room-volume-gltf-generator.html).
+In fact, I recently implemented a [room volume exporter that creates data for use in a glTF visualisation](1761_room_volume_gltf.html).
 
 **Response:** I use the GitHub version, both the one with the exception handler (2017.0.0.1) and the 2018.0.0.0 releases, and both of them for some reason do not work neither on Revit 2018 nor 2019 (it does nothing after I click the custom add-in in a 3D view). 
 

@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -148,7 +179,7 @@ as <a href="https://forums.autodesk.com/t5/revit-architecture-forum/google-maps-
 but instead doing that programmatically/automatically through an add-in.
 In that thread, a suggestion is made to create a decal with the desired image, but this does not seem to be supported through the API.</p>
 <p>Another approach I found is
-to <a href="https://thebuildingcoder.typepad.com/blog/2013/10/programmatic-custom-add-in-external-command-launch.html">use <code>PostCommand</code></a> to
+to <a href="1040_postcommand.htm">use <code>PostCommand</code></a> to
 create and place decals, but these commands are apparently
 only <a href="https://knowledge.autodesk.com/support/revit-products/learn-explore/caas/CloudHelp/cloudhelp/2014/ENU/Revit/files/GUID-1C7289DE-8D10-47B5-B6DB-EA1310851C8F-htm.html">executed after exiting the API context</a> and
 only one at a time.
@@ -158,7 +189,7 @@ It seems to be possible to chain a bunch of PostCommands, but this is a little '
 Is my use case just not supported in current Revit?
 I'm new to programming for Revit, so it's very possible I've missed something.</p>
 <p>I'm running / programming for Revit 2019 on Windows 10.</p>
-<p><strong>Answer:</strong> What about creating a new material, setting its texture path, then making a <code>TopoSurface</code> and assigning the material to it, cf. <a href="https://thebuildingcoder.typepad.com/blog/2017/11/modifying-material-visual-appearance.html">modifying material visual appearance</a>?</p>
+<p><strong>Answer:</strong> What about creating a new material, setting its texture path, then making a <code>TopoSurface</code> and assigning the material to it, cf. <a href=" ">modifying material visual appearance</a>?</p>
 <p>I don't know how to adjust the <code>UV</code> mapping for the <code>TopoSurface</code>, but if it worked, you would see your satellite image in 3D.</p>
 <p><strong>Response:</strong> Thanks to all for the replies!
 It took some time to try out the proposed solution (accessing AppearanceElements is convoluted!), so that's why it took me this long to reply.</p>
@@ -178,3 +209,11 @@ to <a href="https://www.freecodecamp.org/news/coronavirus-academy">learn to code
 <li>Optimism is an occupational hazard of programming. Testing is the treatment &ndash; <em>Kent Beck</em></li>
 <li>Act in haste and repent at leisure. Code too soon and debug forever &ndash; <em>Dr. Raymond Kennington</em></li>
 </ul>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

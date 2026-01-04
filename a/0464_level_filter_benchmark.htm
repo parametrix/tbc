@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1264055 [Filtering by Level] -->
@@ -8,7 +39,7 @@
 
 <p>Yesterday I published Kevin Vandecar's handout document from his AEC DevCamp presentation on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/filtered-element-collectors.html">
+<a href="0463_filtered_element_collector.htm">
 filtered element collectors</a>,
 
 and right away an interesting case cropped up which motivated a closer look at one of his samples.
@@ -32,7 +63,7 @@ The answer has turned out to be significantly longer and more interesting than I
 
 <p>To begin with, I thought that I can answer your question twice over by referring to the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/parameter-filter.html#1">
+<a href="0383_param_filter.htm#1">
 parameter filter</a> blog post.
 
 <p>On one hand, it answers your question by pointing to the ElementLevelFilter, which is a slow filter used to match elements by their associated level, exactly as you require.
@@ -215,7 +246,7 @@ This parameter is probably not applicable for all elements, though, so you might
 
 <p>I ran it on the ArchSample.rvt model file included in Kevin's
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/filtered-element-collectors.html">
+<a href="0463_filtered_element_collector.htm">
 presentation material</a> posted yesterday.
 
 <p>The first results showed that the parameter filter was faster than the level filter, even doing the exact job that the element filter was designed to do.
@@ -261,3 +292,12 @@ And certainly the LINQ query is consistently slowest.
 <a href="zip/FilterExamples02.zip">FilterExamples02.zip</a> containing
 
 an updated version of Kevin's code samples and benchmarking code.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -227,12 +227,12 @@ I often use the `ìnt` value to count the number of vertices encountered at each
 - For each new mesh vertex received, check whether it is already listed in the dictionary.
 If so, increment its count; else, add a new entry for it.
 
-The comparison operator needs to accommodate an appropriate amount of [fuzz](https://thebuildingcoder.typepad.com/blog/2017/12/project-identifier-and-fuzzy-comparison.html#3),
-cf. this [dimensioning application](https://thebuildingcoder.typepad.com/blog/2018/12/rebars-in-host-net-framework-and-importance-of-fuzz.html#4).
+The comparison operator needs to accommodate an appropriate amount of [fuzz](1613_project_id_fuzz.html#3),
+cf. this [dimensioning application](1709_rebar_framework_fuzz.html#4).
 
 For some examples, look at `GetCanonicVertices`
-for [tracking element modification](https://thebuildingcoder.typepad.com/blog/2016/01/tracking-element-modification.html) and
-this [post on the `XYZ` class](https://thebuildingcoder.typepad.com/blog/2017/08/birthday-post-on-the-xyz-class.html#3).
+for [tracking element modification](1397_track_changes.html) and
+this [post on the `XYZ` class](1580_bday_xyz_point_vector.html#3).
 
 For yet more examples and use cases, you can search The Building Coder for
 

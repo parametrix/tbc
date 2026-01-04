@@ -13,7 +13,7 @@
   http://forums.autodesk.com/t5/revit-api/help-me-jeremy-tammik-or-anyone-else-familiar-with-rest-api/m-p/6053451
   bar separator in Revit Server model path
   http://thebuildingcoder.typepad.com/blog/2011/11/access-transmissiondata-of-central-file-on-revit-server.html
-  The discussion of a [REST POST request to Revit Server 2014](http://thebuildingcoder.typepad.com/blog/2014/01/rest-post-request-to-revit-server-2014.html) clearly documents the vertical bar separator between the folder and document filename.
+  The discussion of a [REST POST request to Revit Server 2014](1095_post_to_revit_server.htm) clearly documents the vertical bar separator between the folder and document filename.
   My job is to document, not to search.
   I document things because my memory is short.
   I practice my saerch skills on ehalf of others all day long, but I do have other duties as well.
@@ -73,7 +73,7 @@ It also happens to be Dan's sixteenth birthday:
 #### <a name="3"></a>EMEA ADN Team Meeting in London
 
 Back to work, we held our European ADN Team Meeting in London last week,
-with [many exciting topics to discuss](http://thebuildingcoder.typepad.com/blog/2016/03/trial-period-floating-license-entitlement-api-and-sketchup-grevit.html#4).
+with [many exciting topics to discuss](1412_trial_entitlement.html#4).
 
 Lacking a free meeting room in the new Autodesk offices in Soho, and there being just four of us to find space for, we rented an apartment near Bow Street and Covent Garden for a couple of days:
 
@@ -125,10 +125,10 @@ The [complete script](zip/RSN_Cache_Update_and_Model_Export_Script.txt) is attac
 
 **Answer:** Have you looked at these examples on The Building Coder demonstrating various aspects of programmatically accessing Revit Server?
 
-- [VBScript Access to the Revit Server REST API](http://thebuildingcoder.typepad.com/blog/2013/08/revit-server-api-access-and-vbscript.html#3)
-- [Saving a New Central File to Revit Server](http://thebuildingcoder.typepad.com/blog/2013/12/saving-a-new-central-file-to-revit-server.html)
-- [REST POST Request to Revit Server 2014](http://thebuildingcoder.typepad.com/blog/2014/01/rest-post-request-to-revit-server-2014.html)
-- [Accessing a Revit Server Central Model Path](http://thebuildingcoder.typepad.com/blog/2014/08/accessing-a-revit-server-central-model-path.html)
+- [VBScript Access to the Revit Server REST API](1009_revit_server_soap_vbs.htm#3)
+- [Saving a New Central File to Revit Server](1077_save_central_to_server.htm)
+- [REST POST Request to Revit Server 2014](1095_post_to_revit_server.htm)
+- [Accessing a Revit Server Central Model Path](1190_rvt_server_central.htm)
 
 The last one may very well have to do directly with your problem.
 

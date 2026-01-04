@@ -63,12 +63,12 @@ The remaining 10% of the code accounts for the other 90% of the development time
 
 Three years back, Peter Hirn of [Build Informed GmbH](https://www.buildinformed.com) very kindly set up a
 public [CI system](https://en.wikipedia.org/wiki/Continuous_integration) for RevitLookup automatically
-creating [RevitLookup builds](https://thebuildingcoder.typepad.com/blog/2017/04/forgefader-ui-lookup-builds-purge-and-room-instances.html#3).
+creating [RevitLookup builds](1548_room_instance_purge.html#3).
 
 In April this year, however, Matt [@WspDev](https://github.com/WspDev) Taylor
 raised [issue #59 &ndash; continuous integration no longer working](https://github.com/jeremytammik/RevitLookup/issues/59),
 caused by Harry Mattison's preceding [pull request #58 &ndash; solution changes for multi-release building](https://github.com/jeremytammik/RevitLookup/pull/58),
-detailed in the discussion on [support for multi-release building](https://thebuildingcoder.typepad.com/blog/2020/04/revitlookup-2021-with-multi-release-support.html#4).
+detailed in the discussion on [support for multi-release building](1835_revitlookup_2021.html#4).
 
 After some attempts to address that issue, not much happened until last week.
 

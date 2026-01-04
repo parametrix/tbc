@@ -180,10 +180,10 @@ The docs suggest that the target can be reset to the FOV centre, but not how to 
 
 I looked at some existing related articles, e.g.:
 
-- [Custom Exporter GetCameraInfo](http://thebuildingcoder.typepad.com/blog/2014/09/custom-exporter-getcamerainfo.html)
-- [Revit Camera Settings, Project Plasma, DA4R and AI](https://thebuildingcoder.typepad.com/blog/2019/06/revit-camera-settings-project-plasma-da4r-and-ai.html)
-- [Revit Camera FOV, Forge Partner Talks and Jobs](https://thebuildingcoder.typepad.com/blog/2020/04/revit-camera-fov-forge-partner-talks-and-jobs.html)
-- [Save and Restore 3D View Camera Settings](https://thebuildingcoder.typepad.com/blog/2020/10/save-and-restore-3d-view-camera-settings.html)
+- [Custom Exporter GetCameraInfo](1203_custom_exporter_camera.htm)
+- [Revit Camera Settings, Project Plasma, DA4R and AI](1758_camera_plasma_da4r_ai.html)
+- [Revit Camera FOV, Forge Partner Talks and Jobs](1840_camera_fov.html)
+- [Save and Restore 3D View Camera Settings](1870_save_restore_camera.html)
 
 They help confirm aspects covered by the linked documentation.
 The challenge is that going the other way, creating a valid target for APS, is less easily grasped since Revit doesn't expose this in the API.

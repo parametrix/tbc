@@ -12,12 +12,12 @@
 - loading support DLLs
   Jim Jia suggested using an assembly resolver by reracting to the `AppDomain.CurrentDomain.AssemblyResolve` event
   https://forums.autodesk.com/t5/revit-api-forum/missing-system-componentmodel-annotations-v4-2-0-0/m-p/8255546
-  [Revit Add-in Unit Testing](http://thebuildingcoder.typepad.com/blog/2013/07/revit-add-in-unit-testing.html)
-  [Security, Framing Cross Section Analyser and REX](http://thebuildingcoder.typepad.com/blog/2013/12/security-framing-cross-section-analyser-and-rex.html)
-  [RvtVa3c Assembly Resolver](http://thebuildingcoder.typepad.com/blog/2014/05/rvtva3c-assembly-resolver.html)
-  [Framing Cross Section Analyser and REX in Revit 2015](http://thebuildingcoder.typepad.com/blog/2015/03/framing-cross-section-analyser-and-rex-in-revit-2015.html)
-  [REX Add-In Development and Migration](http://thebuildingcoder.typepad.com/blog/2015/12/rex-app-development-and-migration.html)
-  [Add-In Templates Supporting Edit and Continue](http://thebuildingcoder.typepad.com/blog/2017/02/add-in-templates-supporting-edit-and-continue.html)
+  [Revit Add-in Unit Testing](0982_rvtunit.htm)
+  [Security, Framing Cross Section Analyser and REX](1076_framing_xsec_analyse.htm)
+  [RvtVa3c Assembly Resolver](1159_va3c_resolve_assembly.htm)
+  [Framing Cross Section Analyser and REX in Revit 2015](1294_framing_xsec_analyse.htm)
+  [REX Add-In Development and Migration](1384_rex.html)
+  [Add-In Templates Supporting Edit and Continue](1530_andrey_wizard_debug.html)
 
 - Please help tweeting about Boston Accelerator – deadline for proposals Sept. 15th.
   You may reference https://forums.autodesk.com/t5/bim-360-api-forum/forge-accelerator-boston-ma-october-1-5-2018/td-p/8249266
@@ -41,7 +41,7 @@ Let's look at that, and another recurring topic, on loading add-in support DLLs
 If you are interested in diving deep into Forge programming, don't miss the upcoming deadline for proposals for the Boston Forge accelerator!
 
 Looking at the Revit API, I implemented a sample demonstrating how
-to [enable ribbon items in zero document state](http://thebuildingcoder.typepad.com/blog/2011/02/enable-ribbon-items-in-zero-document-state.html) back
+to [enable ribbon items in zero document state](0538_zero_doc_ribbon.htm) back
 in 2011, for Revit 2011.
 
 How long would it take to port such an add-in to Revit 2019?
@@ -67,7 +67,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 on [`IsCommandAvailable` causing a nullref exception](https://forums.autodesk.com/t5/revit-api-forum/iscommandavailable-causes-nullref-exception/m-p/8258750).
 
 That prompted me to update my original implementation
-to [enable ribbon items in zero document state](http://thebuildingcoder.typepad.com/blog/2011/02/enable-ribbon-items-in-zero-document-state.html) in
+to [enable ribbon items in zero document state](0538_zero_doc_ribbon.htm) in
 Revit 2011 and test it in Revit 2019.
 
 I performed the flat migration from Revit 2011 to Revit 2019, i.e., updated the Revit API assembly references and set the .NET framework to version 4.7.
@@ -156,18 +156,18 @@ my colleague Jim Jia suggested using an assembly resolver reacting to the `AppDo
 
 We explored some related issues and had success with this approach in the past, e.g., here:
   
-- [Revit Add-in Unit Testing](http://thebuildingcoder.typepad.com/blog/2013/07/revit-add-in-unit-testing.html)
-- [Security, Framing Cross Section Analyser and REX](http://thebuildingcoder.typepad.com/blog/2013/12/security-framing-cross-section-analyser-and-rex.html)
-- [RvtVa3c Assembly Resolver](http://thebuildingcoder.typepad.com/blog/2014/05/rvtva3c-assembly-resolver.html)
-- [Framing Cross Section Analyser and REX in Revit 2015](http://thebuildingcoder.typepad.com/blog/2015/03/framing-cross-section-analyser-and-rex-in-revit-2015.html)
-- [REX Add-In Development and Migration](http://thebuildingcoder.typepad.com/blog/2015/12/rex-app-development-and-migration.html)
-- [Add-In Templates Supporting Edit and Continue](http://thebuildingcoder.typepad.com/blog/2017/02/add-in-templates-supporting-edit-and-continue.html)
+- [Revit Add-in Unit Testing](0982_rvtunit.htm)
+- [Security, Framing Cross Section Analyser and REX](1076_framing_xsec_analyse.htm)
+- [RvtVa3c Assembly Resolver](1159_va3c_resolve_assembly.htm)
+- [Framing Cross Section Analyser and REX in Revit 2015](1294_framing_xsec_analyse.htm)
+- [REX Add-In Development and Migration](1384_rex.html)
+- [Add-In Templates Supporting Edit and Continue](1530_andrey_wizard_debug.html)
 
 
 #### <a name="4"></a> Rome and  Boston Forge Accelerators
 
 I recently mentioned that I am attending
-the [Forge accelerator in Rome](http://thebuildingcoder.typepad.com/blog/2018/08/revit-20191-cefsharp-forge-accelerator-in-rome.html#5) end
+the [Forge accelerator in Rome](1673_2019_1.html#5) end
 of this month, September 24-28.
 
 I expect that it is too late to decide to join that one now.

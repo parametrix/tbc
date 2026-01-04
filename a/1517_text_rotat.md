@@ -75,7 +75,7 @@ Now nobody has to choose between DevCon and DevDays + AU. It’s all together in
 Rotating a text note is very easy, both during creation and when modifying existing elements.
 
 One little complication for existing add-ins is introduced by fact that the approach changed with
-the [`TextNote` API overhaul in Revit 2016](http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html#4.02):
+the [`TextNote` API overhaul in Revit 2016](1311_whats_new_2016.htm#4.02):
 
 **Question:** In Revit 2015, I used the method:
 

@@ -40,7 +40,7 @@ Last week, we discussed how to retrieve wall openings. Let's take another fresh 
 
 ### Wall Opening Profiles and Happy Holidays!
 
-Last week, we discussed how to [retrieve wall openings](http://thebuildingcoder.typepad.com/blog/2015/12/retrieving-wall-openings-and-sorting-points.html).
+Last week, we discussed how to [retrieve wall openings](1387_wall_openings.html).
 
 Let's take another fresh look at that, and also at:
 

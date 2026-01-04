@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 ﻿<head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="http://thebuildingcoder.typepad.com/google-code-prettify/run_prettify.js"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -32,14 +63,14 @@ Dan Lin: IFC information
 
 <p>Yesterday, I mentioned the new
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html">
+<a href="0979_custom_exporter.htm">
 custom exporter framework</a> providing
 
 direct access to the Revit viewing and rendering graphics pipeline.</p>
 
 <p>That brings new possibilities to a related area that we discussed way back in 2010: how to obtain
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/texture-data-uv-coordinates-and-fbx.html">
+<a href="0306_uv_coords_fbx.htm">
 texture data UV coordinates</a>.
 
 At the time, the Revit API did not provide this information, and a work-around based on the Revit FBX export helped a little.</p>
@@ -100,7 +131,7 @@ Hopefully, the material component keeps on improving going forward allowing us e
 
 <p>As a workaround for that, Artur Brzegowy, who provided the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html#5">
+<a href="0979_custom_exporter.htm#5">
 custom exporter to Collada</a> published
 
 yesterday, suggested getting the texture memory data instead:</p>
@@ -178,14 +209,14 @@ No, there is no direct API support for that.
 
 <p>You can use the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/extrusion-analyser-and-plan-view-boundaries.html">
+<a href="0921_extrusion_analyser.htm">
 extrusion analyser</a> to
 
 determine the shaded area projected onto a plane.
 Project the roof itself onto the same plane as well.
 Then use a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/boolean-operations-for-2d-polygons.html">
+<a href="0098_booleans_on_polygons.htm">
 2D Boolean operation on the plane</a> to
 
 determine the overlap.</p>
@@ -216,11 +247,11 @@ Furthermore, there should be one or more family symbols of A and one or more fam
 <p>Here are some previous discussions related to this:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/05/nested-instance-geometry.html">Nested instance geometry</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/11/nested-family.html">Nested family</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/02/nested-family-instance.html">Nested family instance</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/03/nested-family-utility-methods.html">Nested family utility methods</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/04/nested-lighting-fixture-instances.html">Nested lighting fixture instances</a></li>
+<li><a href="0134_nested_instance_geo.htm">Nested instance geometry</a></li>
+<li><a href="0250_nested_family.htm">Nested family</a></li>
+<li><a href="0300_nested_family_instance.htm">Nested family instance</a></li>
+<li><a href="0313_nested_family_utils.htm">Nested family utility methods</a></li>
+<li><a href="0565_nested_instances.htm">Nested lighting fixture instances</a></li>
 </ul>
 
 
@@ -237,3 +268,12 @@ Furthermore, there should be one or more family symbols of A and one or more fam
 <p>IFC doesn’t support texture. Colour support is also patchy, although the Navisworks 2014 SP1 significantly improves the situation.</p>
 
 <p>As regards IFC viewers, the <a href="http://www.solibri.com/">Solibri model viewer</a> appears to be quite good.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

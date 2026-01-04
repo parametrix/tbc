@@ -29,7 +29,7 @@ Things continue moving fast in AI, and the need to regenerate in the Revit API r
 ### AI News and Sub-Transaction Regen
 
 Things continue moving fast in AI, and
-the [need to regenerate](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33) in
+the need to regenerate *(link unavailable)* in
 the Revit API remains unchanged:
 
 - [AI News](#2)
@@ -38,7 +38,7 @@ the Revit API remains unchanged:
 
 #### <a name="2"></a>AI News
 
-I [reported](http://thebuildingcoder.typepad.com/blog/2016/01/bim-programming-madrid-and-spanish-connectivity.html#7) on
+I [reported](1398_bim_programming.html#7) on
 the surprising success of [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo) 18
 months ago, when it unexpectedly defeated legendary player Lee Se-dol 4-1, cf.
 the [DeepMind Go challenge overview](https://www.theverge.com/google-deepmind).
@@ -69,7 +69,7 @@ Back to the Revit API:
 
 Alexander Ignatovich, [@CADBIMDeveloper](https://github.com/CADBIMDeveloper),
 aka Александр Игнатович, shares another important example that fits in perfectly with our continuing series demonstrating
-the [need to regenerate](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33).
+the need to regenerate *(link unavailable)*.
 
 In his own words:
 

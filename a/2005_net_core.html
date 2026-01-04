@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - tbc 15th birthday august 22, almost passed its puberty by now, soon a grown-up blog, assuminbg human time spans for maturilty
@@ -234,7 +265,7 @@ Then you will be ready to jump in and actively join the fray as soon as possible
 Support for .NET Core will obviously affect that as well.
 Last year, they asked for feedback from the add-in developer community
 on <a href="https://forums.autodesk.com/t5/revit-api-forum/research-how-do-you-use-revit-macros/m-p/11158305">how you use Revit macros</a>
-and <a href="https://thebuildingcoder.typepad.com/blog/2022/05/analysis-of-macros-journals-and-add-in-manager.html#2">shared back the results</a>.</p>
+and <a href="1952_manager_journal_macro.html#2">shared back the results</a>.</p>
 <p>As a result of this and other usage analysis, the current plan is to drop support for document macros.
 Converting a document macro to an application macro is easy, and I hope to share some simple instructions on that anon.</p>
 <h4><a name="5"></a> Polygon Area Algorithms</h4>
@@ -246,8 +277,8 @@ the <a href="https://forums.autodesk.com/t5/revit-api-forum/area-of-a-wall-openi
 I cannot delete any object.</p>
 <p><strong>Answer:</strong> You can delete an object temporarily inside a transaction that is never committed, so the changes are never stored in the database:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/03/calculating-gross-and-net-wall-areas.html">Calculating gross and net wall areas</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2015/04/gross-and-net-wall-area-calculation-enhancement-and-events.html">Gross and net wall area calculation enhancement</a></li>
+<li><a href="1296_spatial_calculator.htm">Calculating gross and net wall areas</a></li>
+<li><a href="1309_spatial_calculator.htm">Gross and net wall area calculation enhancement</a></li>
 </ul>
 <p><strong>Response:</strong> I cannot delete elements, even transitory.</p>
 <p><strong>Answer:</strong> Here is a possible solution, except for ruled faces (for ruled faces, there must be a mathematical approximation similar to below):</p>
@@ -367,3 +398,11 @@ https://www.webfx.com/blog/marketing/carbon-footprint-internet/
 internet_carbon_footprint.png
 
 -->
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

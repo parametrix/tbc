@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 06989871 [Determine if Revit runs in Demo mode] -->
@@ -10,17 +41,17 @@
 
 <p>We have seen numerous examples of performing a certain operation within a temporary transaction that is then rolled back to cancel it, such as to determine gross 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/material-quantity-extraction.html">
+<a href="0296_abg10_material_quantity.htm">
 material quantities</a> for
 
 an element with openings, a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/06/host-reference.html">
+<a href="0146_host_reference.htm">
 host reference</a> and, 
 
 more generally, all
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/object-relationships.html">
+<a href="0314_object_relationship.htm">
 object relationships</a>.
 
 <p>Here is an example of using a related but different approach: the trick consists in attempting to perform a certain operation and gracefully handling a specific expected failure condition, in ths case a specific exception being thrown, to determine whether Revit is running in demo mode:
@@ -132,3 +163,12 @@ Hopefully all exceptions thrown during the first two steps will have to do with 
 Step three is less certain, since for instance the hard drive may be full.
 
 <p>Saving the current document is a really bad idea and might take a long time, without even thinking about detaching from central and keeping work-shares.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

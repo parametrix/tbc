@@ -34,7 +34,7 @@ I added it right here, in DuplicateGraphics.zip, and also provide an overview of
 The [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 on [drawing or rendering over the active view](https://forums.autodesk.com/t5/revit-api-forum/draw-render-over-the-activeview/m-p/7088026) brought
 to my attention that an important new SDK sample created to demonstrate the use of the Revit 2018 functionality
-[`DirectContext3D` for display of externally managed 3D graphics in Revit](http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html#3.26) is
+[`DirectContext3D` for display of externally managed 3D graphics in Revit](1551_whats_new_2018.html#3.26) is
 missing in the current version of the SDK.
 
 I added it as an attachment to that discussion thread, and am also providing it right here, in [DuplicateGraphics.zip](zip/DuplicateGraphics.zip).
@@ -54,8 +54,8 @@ Here is an overview of the new SDK samples added in the past year or two:
 #### <a name="2"></a>Revit 2017 and Revit 2017.1 SDK Samples
 
 Here is a repetition of the list
-of [new Revit SDK samples added in Revit 2017](http://thebuildingcoder.typepad.com/blog/2016/06/point-boundary-condition-and-revit-2017-sdk.html#2) and
-the [REX SDK `DRevitFreezeDrawing` sample](http://thebuildingcoder.typepad.com/blog/2016/10/au-revit-20171-and-rex-freezedrawing.html#5), described in more detail and added in Revit 2017.1:
+of [new Revit SDK samples added in Revit 2017](1446_point_bc_2017_sdk.html#2) and
+the [REX SDK `DRevitFreezeDrawing` sample](1493_au_2017_1_sdk_freeze.html#5), described in more detail and added in Revit 2017.1:
 
 - Samples/CapitalizeAllTextNotes
 - Samples/GenericStructuralConnection

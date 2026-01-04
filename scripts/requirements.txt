@@ -1,0 +1,24 @@
+# No external dependencies required
+# All scripts use Python 3 standard library only
+#
+# Scripts in this directory:
+# - fix_all_links.py       : Main URL-to-local-file mapping (8,868 links)
+# - fix_remaining_links.py : Additional slug-based link fixes (4,684 links)
+# - wrap_html.py           : Wrap HTML fragments with document structure (2,066 files)
+# - fix_double_quotes.py   : Fix malformed href="" patterns (9,007 fixes)
+# - fix_unavailable_links.py : Convert dead Typepad links to text
+# - fix_all_remaining_typepad.py : Comprehensive cleanup of remaining links
+# - fix_about_links.py     : Handle about-page links with anchors
+# - fix_final_cleanup.py   : Image popup link fixes
+# - fix_links.py           : Initial index-only link swapper
+# - verify_links.py        : Verify all internal links resolve
+#
+# Execution order for updates:
+# 1. fix_all_links.py
+# 2. fix_remaining_links.py
+# 3. wrap_html.py
+# 4. fix_double_quotes.py
+# 5. fix_unavailable_links.py
+# 6. fix_all_remaining_typepad.py
+# 7. fix_about_links.py
+# 8. verify_links.py (optional, for reporting)

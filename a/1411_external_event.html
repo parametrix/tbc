@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!---
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -64,7 +95,7 @@ Today, I'll discuss this morning's work
 <li><a href="#11">Download</a></li>
 </ul>
 <p>I implemented a suggestion
-for <a href="http://thebuildingcoder.typepad.com/blog/2016/01/tracking-element-modification.html">tracking element modification</a> a
+for <a href="1397_track_changes.html">tracking element modification</a> a
 month ago and created
 the <a href="https://github.com/jeremytammik/TrackChanges">TrackChanges GitHub repository</a> to host its solution and source code.</p>
 <p>That met with significant interest and triggered the following idea for an enhancement.</p>
@@ -113,7 +144,7 @@ on <a href="http://forums.autodesk.com/t5/revit-api/dynamic-model-update-after-l
 <p>One way to trigger the snapshots at regular intervals, and probably the cleanest approach, is by implementing an external event.</p>
 <h4><a name="4"></a>The TrackChangesCloud External Event</h4>
 <p>The Building Coder topic group
-on <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28">Idling and external events</a> is
+on <span class="unavailable-link">Idling and external events</span> is
 growing pretty large and explains all the background information on this in full detail.</p>
 <p>I implemented a skeleton for the external event named <code>ModificationLogger</code> that does nothing so far, except get raised when I say so.</p>
 <p>Therefore, the implementation is completely trivial:</p>
@@ -438,3 +469,11 @@ is <a href="https://github.com/jeremytammik/TrackChangesCloud/releases/tag/2016.
 <p><center>
 <img src="img/track_changes_diff.png" alt="TrackChanges diff" width="340">
 </center></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

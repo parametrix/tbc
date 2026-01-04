@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -20,7 +51,7 @@ Duct parameters sample file
 
 <p>I presented a little utility add-in yesterday that
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/08/determining-maximal-flow-in-hvac-duct-connectors.html">
+<a href="1007_determine_max_flow.htm">
 determines the maximal flow</a> in
 
 HVAC duct connectors and populates a shared parameter with the result.</p>
@@ -50,9 +81,9 @@ It is best practice in Revit (and life) to close these systems.</p>
 <p>Regarding the loose connectors, I actually implemented a quite serious application for checking those a while back, mainly as one of the early samples demonstrating use of the Idling event in Revit 2011 and 2012:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/07/modeless-loose-connectors.html">Modeless loose connectors</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/08/modeless-loose-connector-navigator-update.html">Modeless loose connector navigator update</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/09/yet-another-modeless-update.html">Yet another modeless update</a></li>
+<li><a href="0407_modeless_loose_connectors.htm">Modeless loose connectors</a></li>
+<li><a href="0639_modeless_loose_connectors.htm">Modeless loose connector navigator update</a></li>
+<li><a href="0652_modeless_loose_connectors.htm">Yet another modeless update</a></li>
 </ul>
 
 <p>The modeless loose connector navigator is a complete tool in its own right, though, enabling you to navigate through a modeless list of all unconnected connecters and manipulate the model at the same time, jumping back and forth as you like.</p>
@@ -83,7 +114,7 @@ It is best practice in Revit (and life) to close these systems.</p>
 
 <p>I added that code to the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/08/determining-maximal-flow-in-hvac-duct-connectors.html#4">
+<a href="1007_determine_max_flow.htm#4">
 SetMaxFlowOnElement</a> method
 
 that I presented yesterday, and added some support for reporting back if any open connectors at all are found in the model.</p>
@@ -175,3 +206,12 @@ and looking good to me so far.</p>
 <p>I am also using
 
 <a href="http://www.virtualdj.com/">VirtualDJ</a> when I want to cross-fade nicely from one song to the next in a playlist.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

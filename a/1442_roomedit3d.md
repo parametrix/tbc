@@ -41,10 +41,10 @@ Let's take a closer look at the implementation and a test run recording:
 #### <a name="1"></a>Overview
 
 All the background information and full discussions of the implementation details are provided in my mention of
-the [initial idea](http://thebuildingcoder.typepad.com/blog/2016/05/idea-station-and-textnote-bounding-box.html), the
+the [initial idea](1440_idea_station_txt_bb.html), the
 working [proof of concept with a C# .NET console test application](http://the3dwebcoder.typepad.com/blog/2016/05/roomedit3d-viewer-translation-extension-post-and-socket.html) and
 the overview of
-the [Revit-independent implementation aspects](http://thebuildingcoder.typepad.com/blog/2016/05/roomedit3d-console-test-and-rendering-assets.html#2).
+the [Revit-independent implementation aspects](1441_accel_render_asset.html#2).
 
 Here is a quick recapitulation:
 

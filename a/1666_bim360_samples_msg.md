@@ -21,7 +21,7 @@ I am participating in a <i>Digital Construction Live</i> event in the UK next we
 ### BIM360 and Forge for AEC Message and Samples
 
 As I pointed out in
-the [overview of Forge for AEC and BIM360](http://thebuildingcoder.typepad.com/blog/2018/06/forge-for-aec-and-bim360-overview.html),
+the [overview of Forge for AEC and BIM360](1664_bim360.html),
 I am participating in a *Digital Construction Live* event in the UK next week and presenting there on Forge for the BIM domain.
 
 Today, let's focus on the real message and some live samples putting it to use:
@@ -43,7 +43,7 @@ The real message about Forge for AEC and BIM360, according to Jim Quanci, with w
 - Using Forge, you can easily pop up your own web page to provide them with whatever information they need.
 
 I explained this principle in more depth in my presentation
-on [rational BIM programming](http://thebuildingcoder.typepad.com/blog/2017/10/rational-bim-programming-at-au-darmstadt.html) at
+on [rational BIM programming](1593_rat_bim_programming.html) at
 Autodesk University in Darmstadt, Germany, last year.
 
 One of the main motivating aspects in that talk is basically exactly what Jim points out:
@@ -70,7 +70,7 @@ In extreme cases, these numbers might vary by several orders of magnitude:
 </center>
 
 For more details, please refer
-to [my presentation mentioned above](http://thebuildingcoder.typepad.com/blog/2017/10/rational-bim-programming-at-au-darmstadt.html).
+to [my presentation mentioned above](1593_rat_bim_programming.html).
 
 
 #### <a name="4"></a> Forge for AEC Sample Live

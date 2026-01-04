@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1257395 [Family Editor:  Detecting Nested Families] -->
@@ -9,33 +40,33 @@
 <p>Nested families seem to be a recurring topic right now.
 We just recently discussed how to test whether a family instance in a project file is 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/nested-family-instance.html">
+<a href="0300_nested_family_instance.htm">
 nested inside another</a>,
 
 and before that we addressed
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/nested-instance-geometry.html">
+<a href="0134_nested_instance_geo.htm">
 nested instance geometry</a> and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/11/nested-family.html">
+<a href="0250_nested_family.htm">
 creating a nested family</a>.
 
 The first place to look for information on using the Revit API in the context of families is the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/08/the-revit-family-api.html">
+<a href="0199_family_api.htm">
 overview of the family API</a>
 
 with the associated 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/08/the-revit-family-api.html#4">
+<a href="0199_family_api.htm#4">
 labs</a> and the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/08/the-revit-family-api.html#5">
+<a href="0199_family_api.htm#5">
 materials and recording</a> of the webcast we presented on the topic.
 
 <p>I received a couple of useful helper methods for exploring and working in the family context from an anonymous contributor whom we can call SOA-boy, since he already contributed some hints on using 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/08/serviceoriented-architecture.html">
+<a href="0195_soa.htm">
 Service-Oriented Architecture</a>. Here is his description:
 
 <p>Because the normal filtering mechanism apparently doesn't work for detecting nested family definitions or nested family instances within a family document, I wrote some code for iterating over all the elements in the host family document as quickly as possible. 
@@ -406,3 +437,12 @@ version 1.1.0.63</a>
 of the complete Building Coder source code and Visual Studio solution including the new external command CmdNestedFamilies and the NestedFamilyFunctions utility class.</p>
 
 <p>Many thanks to SOA-boy for this contribution!
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

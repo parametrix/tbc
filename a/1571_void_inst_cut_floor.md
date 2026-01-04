@@ -41,12 +41,12 @@ I checked in the family the "Cut with Void When Loaded" parameter, so that the v
 Now, I want to retrieve all the instances that create voids in the floor.
 
 I did some research, and found the discussion
-of [Boolean operations and `InstanceVoidCutUtils`](http://thebuildingcoder.typepad.com/blog/2011/06/boolean-operations-and-instancevoidcututils.html).
+of [Boolean operations and `InstanceVoidCutUtils`](0600_instance_void_cut.htm).
 
 But when I use the `InstanceVoidCutUtils` `GetCuttingVoidInstances` method, it returns an empty list.
  
 I also looked
-at the [`ElementIntersectsSolidFilter` problem and solution](http://thebuildingcoder.typepad.com/blog/2015/07/intersect-solid-filter-avf-and-directshape-for-debugging.html#2) and
+at the [`ElementIntersectsSolidFilter` problem and solution](1340_inters_solid_filt.htm#2) and
 tried `ElementIntersectsElementFilter` and `ElementIntersectsSolidFilter`.
 
 Those filters do not return the expected result for me to deduce the voids in the floor either; in fact, they say that no elements intersect.

@@ -58,7 +58,7 @@ In his own words:
 - A suitable sample model: any Revit project. Note that the code changes the current project &ndash; make a backup copy.
 
 This fits in well with the growing interest in direct shapes, as you can observe by the rapidly growing number of entries in
-the [DirectShape topic group](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.50).
+the DirectShape topic group *(link unavailable)*.
 
 I implemented a new external
 command [CmdFlatten](https://github.com/jeremytammik/the_building_coder_samples/blob/master/BuildingCoder/BuildingCoder/CmdFlatten.cs)

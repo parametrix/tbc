@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -44,11 +75,11 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 <p>Since Revit is designed as an interactive end user tool, misusing it as a server may fail and may also violate the license agreement.</p>
 <p>Therefore, in many cases, the cleanest (or only clean) solution will involve use of
 the <a href="https://forge.autodesk.com/en/docs/design-automation/v3/developers_guide/overview">Forge Design Automation API for Revit</a>
-or <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55">DA4R</a>.</p>
+or <span class="unavailable-link">DA4R</span>.</p>
 <p>However, it is also possible to make use of Revit as a server in a limited way via
 an <a href="https://www.revitapidocs.com/2020/05089477-4612-35b2-81a2-89c4f44370ea.htm">external event</a>.</p>
 <p>Many aspects of this have been discussed numerous times in the past in the topic group
-on <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28">external events for modeless access and driving Revit from outside</a>.</p>
+on <span class="unavailable-link">external events for modeless access and driving Revit from outside</span>.</p>
 <p>However, people sometimes prefer not to read and research, not to fish, but rather ask repeated questions and be fed, so we return to this topic again (and again).</p>
 <p>Furthermore, our new hero Igor shared a cool wrapper for external events that makes the process easier than ever before:</p>
 <ul>
@@ -88,13 +119,13 @@ In other words, the Revit add-in would be the server, another process would be a
 <li>SDK/Samples/ModelessDialog/ModelessForm_ExternalEvent/</li>
 </ul>
 <p>Many related discussions and solutions are listed by The Building Coder
-on <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28">External Events for Modeless Access and Driving Revit from Outside</a>.</p>
+on <span class="unavailable-link">External Events for Modeless Access and Driving Revit from Outside</span>.</p>
 <p>Also check out some more recent discussions on using IPC:</p>
 <ul>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/04/set-floor-level-and-use-ipc-for-disentanglement.html">Set Floor Level and Use IPC for Disentanglement</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/09/scaling-an-add-in-for-a-4k-high-resolution-screen.html">Scaling an Add-In for a 4K High Resolution Screen</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/09/ui-top-forms-buttons-web-etc.html#4">Integrating a Web-Based UI</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/11/integrating-the-helix-3d-viewer-with-a-wpf-add-in.html">Integrating the Helix 3D Viewer with a WPF Add-In</a></li>
+<li><a href="1737_ipc.html">Set Floor Level and Use IPC for Disentanglement</a></li>
+<li><a href="1780_4k_hires_scaling.html">Scaling an Add-In for a 4K High Resolution Screen</a></li>
+<li><a href="1783_ui_top_form_button_web.html#4">Integrating a Web-Based UI</a></li>
+<li><a href="1800_helix_3d_viewer.html">Integrating the Helix 3D Viewer with a WPF Add-In</a></li>
 </ul>
 <p><strong>Response:</strong> I really appreciate your prompt answer.</p>
 <p>I'm curious about the entry point.
@@ -114,10 +145,10 @@ Is this add-in (external command) able to listen for messages from other applica
 <p>The only instance that can send that message is Revit.exe.</p>
 <p>The only time the message is sent is when Revit.exe wishes the external command to be executed.</p>
 <p><strong>Response:</strong> I want to develop an add-in that can be loaded in Revit that listens to messages from another process (application) as long as Revit is running. Is it possible to implement?</p>
-<p><strong>Answewr:</strong> Yes, using an <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28">external event</a>.</p>
+<p><strong>Answewr:</strong> Yes, using an <span class="unavailable-link">external event</span>.</p>
 <p>However, Revit is not designed for that purpose and you may violate the license agreement by doing so.</p>
 <p>For that purpose,
-a <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55">DA4R application</a> may
+a <span class="unavailable-link">DA4R application</span> may
 be a more appropriate choice:</p>
 <h4><a name="4"></a>Autodesk Open Positions</h4>
 <p>Autodesk is offering a number of exciting jobs in engineering positions in various parts of the world.</p>
@@ -148,3 +179,11 @@ Do you want to be part of Autodesk’s digital transformation of manufacturing a
 </ul>
 <p>Good luck applying for these or other opportunities that you can find in the <a href="https://www.autodesk.com/careers">Autodesk career site</a>!</p>
 <p>You can ask me for a personal referral link if you find something that you are interested in.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

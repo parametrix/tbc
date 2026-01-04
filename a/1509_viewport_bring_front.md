@@ -37,8 +37,8 @@ Two topics today, on reordering viewports to determine their respective occlusio
 ####<a name="2"></a>Bringing a Viewport to the Front
 
 Joshua Lumley submitted
-a [comment](http://thebuildingcoder.typepad.com/blog/2014/04/determining-the-size-and-location-of-viewports-on-a-sheet.html#comment-3045289101) on
-the discussion on [Determining the Size and Location of Viewports on a Sheet](http://thebuildingcoder.typepad.com/blog/2014/04/determining-the-size-and-location-of-viewports-on-a-sheet.html),
+a [comment](1138_sheet_viewport_loops.htm#comment-3045289101) on
+the discussion on [Determining the Size and Location of Viewports on a Sheet](1138_sheet_viewport_loops.htm),
 suggesting:
 
 > I made code that will change the draw order of a viewport (bring to front) for cases when you need to use simplified duplicate of the same view for background (ceiling grid for example). Are you interested in it? I was hoping you could make a post and share it with the world (it has impressed my colleagues anyway).
@@ -123,7 +123,7 @@ I cleaned up the initial code suggestion like this:
 Notes:
 
 - Separate code from user interface implementation details. Isolate real functionality in separate methods. [Keep it simple](https://en.wikipedia.org/wiki/KISS_principle)!
-- Encapsulate `Transaction` use in a separate `using` statement. Look at the explanations in The Building Coder topic group on [handling transactions and transaction groups](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.53).
+- Encapsulate `Transaction` use in a separate `using` statement. Look at the explanations in The Building Coder topic group on handling transactions and transaction groups *(link unavailable)*.
 - Simplified variable names for better readability and clarity.
 - Commented out unused variables.
 
@@ -148,7 +148,7 @@ on [looking for C++ Samples for Revit 2017 add-in](http://forums.autodesk.com/t5
 **Question:** As I look through the Revit 2017 documentation it looks like C++ has become nearly a first-class citizen.
 
 I am mostly familiar with starting Revit add-in projects using
-the [add-in wizard for C#](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20).
+the add-in wizard for C# *(link unavailable)*.
 
 Is there something comparable for C++?
 
@@ -168,14 +168,14 @@ The Visual Studio C# and VB .NET wizards are very easy to create from scratch, a
 The files that you create manually through these steps can be packaged into a ZIP file and reused to create a Revit C++ add-in wizard.
  
 Look at the descriptions
-of [creating, modifying and updating the C# and VB wizards](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20) to
+of creating, modifying and updating the C# and VB wizards *(link unavailable)* to
 see how the same can be achieved for C++.
 
 Here is an old description of a C++ Revit add-in and some other discussions on related topics:
  
-- [C++ Revit Add-In](http://thebuildingcoder.typepad.com/blog/2010/10/c-revit-add-in.html)
-- [Mixed mode C++ in Revit 2012](http://thebuildingcoder.typepad.com/blog/2012/03/mixed-mode-c-in-revit-2012.html)
-- [Using the built-in Revit AcGe functionality](http://thebuildingcoder.typepad.com/blog/2013/10/using-the-built-in-revit-acge-functionality.html)
+- [C++ Revit Add-In](0459_cpp_addin.htm)
+- [Mixed mode C++ in Revit 2012](0731_mixed_mode.htm)
+- [Using the built-in Revit AcGe functionality](1039_acge_built_in.htm)
  
 **Response:** Thank you! I like the Visual C++ Revit add-in step-by-step article. Regrettably the Visual Studio 2015 "New Project" function no longer includes "Class Library" as one of its options:
 

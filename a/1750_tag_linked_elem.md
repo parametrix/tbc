@@ -61,7 +61,7 @@ The linked file enhancements introduced in the Revit 2014 API obviously need mor
 ####<a name="2"></a> Link Enhancements &ndash; Conversion of Geometric References
 
 `CreateLinkReference` was introduced way back in
-the [Revit 2014 API](https://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html).
+the [Revit 2014 API](0938_whats_new_2014.htm).
 
 Conversion of geometric references in links is mentioned as one of the major enhancements:
 

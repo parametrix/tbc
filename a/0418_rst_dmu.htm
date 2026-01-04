@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- Saikat Bhattacharya: Write up on DMU sample in RST context -->
@@ -26,12 +57,12 @@ I have a couple of interesting questions lined up that I have been wanting to di
 
 <p>Here is the first one, a neat sample of using the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/element-level-events.html#2">
+<a href="0340_element_events.htm#2">
 dynamic model update</a> 
 
 features in the context of Revit Structure created by and presented at the recent 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/07/api-training-and-aec-devcamp-material.html">
+<a href="0408_aec_devcamp_material.htm">
 AEC DevCamp</a> in Boston by Saikat Bhattacharya.
 
 <!-- at the Revit Structure API session at the -->
@@ -46,7 +77,7 @@ AEC DevCamp</a> in Boston by Saikat Bhattacharya.
 
 <p>This sample creates a new ribbon in the Analyze tab with two radio group button which can be used to enable the alignment functionality in the sample to be active or not. If the alignment option is on (or active), every resize of the beam in the model resizes the rebars in the beam to perfectly align it between the two opposite faces of the beam. 
 
-<p>This sample uses the IExternalApplication�s OnStartup event to create a ribbon with two radio buttons on the Analyze tab. It also registers the updater class and adds triggers to it. The trigger is set to work with implicit set of elements which are of Structural Framing category (beams) which is specified using an ElementCategoryFilter and is set to work with change of scope, specifically change in Geometry of the elements (beams). 
+<p>This sample uses the IExternalApplication�s OnStartup event to create a ribbon with two radio buttons on the Analyze tab. It also registers the updater class and adds triggers to it. The trigger is set to work with implicit set of elements which are of Structural Framing category (beams) which is specified using an ElementCategoryFilter and is set to work with change of scope, specifically change in Geometry of the elements (beams). 
 
 <p>The sample implements two external commands called UIDynamicModelUpdateOn and UIDynamicModelUpdateOff which are executed when users click on the radio group buttons in the ribbon panel in the analyze tab. These commands internally just set a local variable which stores whether the alignment of the rebars functionality is activated or not. 
 
@@ -393,3 +424,12 @@ including the complete source code and Visual Studio solution for this sample.
 <p>This solution actually includes another additional sample, which demonstrates a use of the analysis visualisation framework in a structural context, to simulate a visual display a load distribution.
 We might get around to presenting that in detail as well one of these days, or you can just go ahead and explore it for yourself.
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

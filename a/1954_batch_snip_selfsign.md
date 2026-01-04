@@ -397,7 +397,7 @@ For either case, you have to handle the DialogBoxShowing event to cancel the dia
 
 Sound feasible? It is a pretty standard approach to run a batch process.
 Revit is not designed for batch processing dozens of files, let alone hundreds or thousands, so crashes of all kinds are to be expected, perfectly normal, and need to be handled gracefully by batch processing workflows.
-Check out [The Building Coder 'batch' category](https://thebuildingcoder.typepad.com/blog/batch).
+Check out The Building Coder 'batch' category *(link unavailable)*.
 
 **Response:** Thank you so much.
 

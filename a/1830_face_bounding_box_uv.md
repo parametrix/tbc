@@ -89,10 +89,10 @@ Many thanks to Bing Yongcao for sharing this solution!
 #### <a name="3"></a>Handling Add-In Command Binding Conflicts
 
 An interesting question was raised by Smcoder and addressed by Autodesk developer Phil Xia in
-a [series](https://thebuildingcoder.typepad.com/blog/2012/06/replacing-built-in-commands-and-their-ids.html#comment-4837624436)
-[of](https://thebuildingcoder.typepad.com/blog/2012/06/replacing-built-in-commands-and-their-ids.html#comment-4837714095)
-[comments](https://thebuildingcoder.typepad.com/blog/2012/06/replacing-built-in-commands-and-their-ids.html#comment-4838966941)
-on [replacing built-in commands and obtaining their ids](https://thebuildingcoder.typepad.com/blog/2012/06/replacing-built-in-commands-and-their-ids.html):
+a [series](0788_command_ids.htm#comment-4837624436)
+[of](0788_command_ids.htm#comment-4837714095)
+[comments](0788_command_ids.htm#comment-4838966941)
+on [replacing built-in commands and obtaining their ids](0788_command_ids.htm):
 
 **Question:** Do you know how it is handled if two different external applications bind to the same Revit Built-In Command?
 I haven't found any documentation, so I'm thinking of testing it myself to see what happens.

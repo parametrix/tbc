@@ -1,0 +1,807 @@
+/**
+ * toc-sidebar.css - Wiki-Style TOC Sidebar Styles
+ * 
+ * For The Building Coder Archive
+ * Author: GitHub Copilot
+ * Date: January 2, 2026
+ * 
+ * Features:
+ * - Fixed left sidebar with topic-based navigation
+ * - Sticky search box with real-time filtering
+ * - Drag-to-resize functionality
+ * - Collapsible topic groups
+ * - Current page highlighting
+ * - Mobile-responsive hamburger menu
+ */
+
+/* ================================
+   CSS Variables
+   ================================ */
+:root {
+  --tbc-sidebar-width: 280px;
+  --tbc-sidebar-min-width: 180px;
+  --tbc-sidebar-max-width: 500px;
+  
+  /* Soft, soothing light theme matching original blog styling */
+  --tbc-sidebar-bg: #f5f5f5;
+  --tbc-sidebar-bg-light: #ebebeb;
+  --tbc-sidebar-text: #333333;
+  --tbc-sidebar-text-muted: #666666;
+  --tbc-sidebar-hover: #e8e8e8;
+  --tbc-sidebar-active: #0066cc;
+  --tbc-sidebar-border: #dcdcdc;
+  
+  /* Accent colors - matching original link color */
+  --tbc-accent-primary: #0066cc;
+  --tbc-accent-secondary: #0077dd;
+  --tbc-accent-highlight: #3399ff;
+  
+  /* Search styling */
+  --tbc-search-bg: #ffffff;
+  --tbc-search-border: #cccccc;
+  --tbc-search-focus: #0066cc;
+  --tbc-search-highlight: #fffacd;
+  
+  /* Layout */
+  --tbc-header-height: 50px;
+  --tbc-search-height: 55px;
+  --tbc-transition-speed: 0.2s;
+}
+
+/* ================================
+   Base Layout
+   ================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+body.tbc-has-sidebar {
+  margin: 0;
+  padding: 0;
+}
+
+/* ================================
+   Sidebar Container
+   ================================ */
+#tbc-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: var(--tbc-sidebar-width);
+  min-width: var(--tbc-sidebar-min-width);
+  max-width: var(--tbc-sidebar-max-width);
+  height: 100vh;
+  background: var(--tbc-sidebar-bg);
+  color: var(--tbc-sidebar-text);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  box-shadow: 1px 0 3px rgba(31, 35, 40, 0.12);
+  border-right: 1px solid var(--tbc-sidebar-border);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#tbc-sidebar * {
+  box-sizing: border-box;
+}
+
+/* ================================
+   Main Content Area
+   ================================ */
+#tbc-content {
+  margin-left: var(--tbc-sidebar-width);
+  min-height: 100vh;
+  padding: 20px 40px 20px 40px;
+  transition: margin-left var(--tbc-transition-speed) ease;
+}
+
+/* Override the inline body styles when sidebar is present */
+body.tbc-has-sidebar {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Allow article content to use full width while maintaining readability */
+#tbc-content article,
+#tbc-content > .nav,
+#tbc-content > article {
+  max-width: 900px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* ================================
+   Resize Handle
+   ================================ */
+#tbc-resize-handle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  cursor: col-resize;
+  background: transparent;
+  transition: background var(--tbc-transition-speed);
+  z-index: 1001;
+}
+
+#tbc-resize-handle:hover,
+#tbc-resize-handle.dragging {
+  background: rgba(0, 102, 204, 0.4);
+}
+
+body.tbc-resizing {
+  cursor: col-resize !important;
+  user-select: none !important;
+}
+
+body.tbc-resizing * {
+  cursor: col-resize !important;
+  user-select: none !important;
+}
+
+/* ================================
+   Sidebar Header
+   ================================ */
+#tbc-sidebar-header {
+  height: var(--tbc-header-height);
+  padding: 10px 15px;
+  background: var(--tbc-sidebar-bg-light);
+  border-bottom: 1px solid var(--tbc-sidebar-border);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+#tbc-sidebar-header a {
+  color: var(--tbc-sidebar-text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#tbc-sidebar-header a:hover {
+  color: var(--tbc-sidebar-active);
+}
+
+#tbc-sidebar-header .tbc-logo {
+  font-size: 20px;
+}
+
+/* ================================
+   Search Box
+   ================================ */
+#tbc-search-container {
+  padding: 10px 12px;
+  background: var(--tbc-sidebar-bg);
+  border-bottom: 1px solid var(--tbc-sidebar-border);
+  flex-shrink: 0;
+}
+
+.tbc-search-wrapper {
+  display: flex;
+  align-items: center;
+  background: var(--tbc-search-bg);
+  border: 2px solid var(--tbc-search-border);
+  border-radius: 6px;
+  padding: 6px 10px;
+  transition: border-color var(--tbc-transition-speed), box-shadow var(--tbc-transition-speed);
+}
+
+.tbc-search-wrapper:focus-within {
+  border-color: var(--tbc-search-focus);
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.2);
+}
+
+.tbc-search-icon {
+  color: var(--tbc-sidebar-text-muted);
+  font-size: 14px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+#tbc-search-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  padding: 2px 0;
+  background: transparent;
+  color: var(--tbc-sidebar-text);
+  min-width: 0;
+}
+
+#tbc-search-input::placeholder {
+  color: var(--tbc-sidebar-text-muted);
+}
+
+#tbc-search-clear {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #a0aec0;
+  font-size: 16px;
+  padding: 2px 4px;
+  margin-left: 4px;
+  border-radius: 3px;
+  transition: color var(--tbc-transition-speed), background var(--tbc-transition-speed);
+  flex-shrink: 0;
+}
+
+#tbc-search-clear:hover {
+  color: #4a5568;
+  background: #e2e8f0;
+}
+
+#tbc-search-clear.hidden {
+  display: none;
+}
+
+#tbc-search-results {
+  font-size: 12px;
+  color: var(--tbc-sidebar-text-muted);
+  margin-top: 6px;
+  text-align: center;
+  min-height: 18px;
+}
+
+#tbc-search-results.no-results {
+  color: #fc8181;
+}
+
+/* ================================
+   Navigation Links
+   ================================ */
+#tbc-nav-links {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--tbc-sidebar-border);
+  flex-shrink: 0;
+}
+
+#tbc-nav-links a {
+  display: block;
+  padding: 8px 15px;
+  color: var(--tbc-sidebar-text);
+  text-decoration: none;
+  transition: background var(--tbc-transition-speed), color var(--tbc-transition-speed);
+}
+
+#tbc-nav-links a:hover {
+  background: var(--tbc-sidebar-hover);
+  color: #fff;
+}
+
+#tbc-nav-links a.active {
+  background: var(--tbc-sidebar-active);
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ================================
+   Topics Container (Scrollable)
+   ================================ */
+#tbc-topics-container {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px 0;
+}
+
+/* Custom scrollbar */
+#tbc-topics-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+#tbc-topics-container::-webkit-scrollbar-track {
+  background: var(--tbc-sidebar-bg);
+}
+
+#tbc-topics-container::-webkit-scrollbar-thumb {
+  background: var(--tbc-sidebar-border);
+  border-radius: 4px;
+}
+
+#tbc-topics-container::-webkit-scrollbar-thumb:hover {
+  background: var(--tbc-sidebar-hover);
+}
+
+/* ================================
+   Section Headers (Topics/Archive)
+   ================================ */
+.tbc-section-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--tbc-sidebar-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--tbc-sidebar-border);
+  margin-bottom: 4px;
+  position: sticky;
+  top: 0;
+  background: var(--tbc-sidebar-bg);
+  z-index: 5;
+}
+
+.tbc-section-icon {
+  font-size: 14px;
+}
+
+.tbc-section-title {
+  flex: 1;
+}
+
+.tbc-section-count {
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--tbc-sidebar-text-muted);
+}
+
+.tbc-toggle-all {
+  background: none;
+  border: 1px solid var(--tbc-sidebar-border);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--tbc-sidebar-text-muted);
+  padding: 2px 8px;
+  transition: all var(--tbc-transition-speed);
+}
+
+.tbc-toggle-all:hover {
+  background: var(--tbc-sidebar-hover);
+  color: var(--tbc-sidebar-text);
+}
+
+.tbc-topics-section,
+.tbc-archive-section {
+  margin-bottom: 8px;
+}
+
+.tbc-archive-section .tbc-section-header {
+  border-top: 2px solid var(--tbc-sidebar-border);
+  margin-top: 8px;
+  padding-top: 14px;
+}
+
+/* Archive year styling */
+.tbc-archive-year .tbc-topic-id {
+  font-size: 12px;
+}
+
+/* ================================
+   Topic Groups
+   ================================ */
+.tbc-topic {
+  margin-bottom: 2px;
+}
+
+.tbc-topic-header {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background var(--tbc-transition-speed);
+  user-select: none;
+}
+
+.tbc-topic-header:hover {
+  background: var(--tbc-sidebar-hover);
+}
+
+.tbc-topic-toggle {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  font-size: 10px;
+  color: var(--tbc-sidebar-text-muted);
+  transition: transform var(--tbc-transition-speed);
+  flex-shrink: 0;
+}
+
+.tbc-topic.expanded .tbc-topic-toggle {
+  transform: rotate(90deg);
+}
+
+.tbc-topic-title {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--tbc-sidebar-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tbc-topic-id {
+  color: var(--tbc-sidebar-text-muted);
+  font-size: 11px;
+  font-weight: normal;
+  margin-right: 6px;
+}
+
+.tbc-topic-count {
+  font-size: 11px;
+  color: var(--tbc-sidebar-text-muted);
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+/* ================================
+   Topic Posts List
+   ================================ */
+.tbc-topic-posts {
+  display: none;
+  padding-left: 20px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.tbc-topic.expanded .tbc-topic-posts {
+  display: block;
+}
+
+.tbc-post-link {
+  display: block;
+  padding: 6px 12px 6px 20px;
+  color: var(--tbc-sidebar-text-muted);
+  text-decoration: none;
+  font-size: 12px;
+  border-left: 2px solid transparent;
+  transition: all var(--tbc-transition-speed);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tbc-post-link:hover {
+  color: #fff;
+  background: var(--tbc-sidebar-hover);
+  border-left-color: var(--tbc-sidebar-active);
+}
+
+.tbc-post-link.current {
+  color: #fff;
+  background: var(--tbc-sidebar-active);
+  border-left-color: #fff;
+  font-weight: 500;
+}
+
+/* ================================
+   Sub-Topics
+   ================================ */
+.tbc-subtopic {
+  margin-left: 10px;
+}
+
+.tbc-subtopic .tbc-topic-header {
+  padding-left: 20px;
+}
+
+.tbc-subtopic .tbc-topic-title {
+  font-size: 12px;
+}
+
+/* ================================
+   Search Highlighting
+   ================================ */
+.tbc-search-highlight {
+  background-color: var(--tbc-search-highlight);
+  color: #1f2328;
+  padding: 0 2px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.tbc-search-no-match {
+  display: none !important;
+}
+
+/* ================================
+   Mobile Toggle Button
+   ================================ */
+#tbc-mobile-toggle {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1002;
+  width: 44px;
+  height: 44px;
+  background: var(--tbc-sidebar-bg);
+  border: 1px solid var(--tbc-sidebar-border);
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(31, 35, 40, 0.12);
+  color: var(--tbc-sidebar-text);
+  font-size: 24px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#tbc-mobile-toggle:hover {
+  background: var(--tbc-sidebar-hover);
+}
+
+/* Mobile close button in sidebar */
+#tbc-sidebar-close {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--tbc-sidebar-text);
+  font-size: 20px;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+#tbc-sidebar-close:hover {
+  background: var(--tbc-sidebar-hover);
+}
+
+/* ================================
+   Keyboard Shortcut Hint
+   ================================ */
+.tbc-shortcut-hint {
+  font-size: 11px;
+  color: var(--tbc-sidebar-text-muted);
+  text-align: center;
+  padding: 8px;
+  border-top: 1px solid var(--tbc-sidebar-border);
+}
+
+.tbc-shortcut-hint kbd {
+  background: var(--tbc-sidebar-bg-light);
+  border: 1px solid var(--tbc-sidebar-border);
+  border-radius: 3px;
+  padding: 1px 5px;
+  font-family: monospace;
+  font-size: 11px;
+}
+
+/* ================================
+   Responsive Styles
+   ================================ */
+
+/* Tablet: Collapsible sidebar */
+@media (max-width: 1024px) {
+  :root {
+    --tbc-sidebar-width: 260px;
+  }
+}
+
+/* Mobile: Hidden sidebar with hamburger */
+@media (max-width: 768px) {
+  #tbc-sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    width: 85%;
+    max-width: 320px;
+  }
+  
+  #tbc-sidebar.open {
+    transform: translateX(0);
+  }
+  
+  #tbc-content {
+    margin-left: 0 !important;
+    padding: 60px 15px 15px 15px; /* Top padding for mobile toggle button */
+  }
+  
+  #tbc-content article,
+  #tbc-content > .nav,
+  #tbc-content > article {
+    max-width: none;
+  }
+  
+  #tbc-mobile-toggle {
+    display: flex;
+  }
+  
+  #tbc-sidebar-close {
+    display: block;
+  }
+  
+  #tbc-resize-handle {
+    display: none;
+  }
+  
+  /* Overlay when sidebar is open */
+  #tbc-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  #tbc-overlay.active {
+    display: block;
+  }
+  
+  .tbc-shortcut-hint {
+    display: none;
+  }
+}
+
+/* ================================
+   Print Styles
+   ================================ */
+@media print {
+  #tbc-sidebar,
+  #tbc-mobile-toggle,
+  #tbc-overlay {
+    display: none !important;
+  }
+  
+  #tbc-content {
+    margin-left: 0 !important;
+  }
+}
+
+/* ================================
+   Accessibility
+   ================================ */
+.tbc-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus styles */
+#tbc-sidebar a:focus,
+#tbc-sidebar button:focus,
+.tbc-topic-header:focus {
+  outline: 2px solid var(--tbc-sidebar-active);
+  outline-offset: -2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+  
+  #tbc-sidebar,
+  .tbc-topic-toggle {
+    transition: none !important;
+  }
+}
+
+/* ================================
+   Loading State
+   ================================ */
+#tbc-sidebar.loading #tbc-topics-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tbc-loading-spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid var(--tbc-sidebar-border);
+  border-top-color: var(--tbc-sidebar-active);
+  border-radius: 50%;
+  animation: tbc-spin 0.8s linear infinite;
+}
+
+@keyframes tbc-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ================================
+   Error State
+   ================================ */
+.tbc-error {
+  padding: 20px;
+  text-align: center;
+  color: #fc8181;
+}
+
+.tbc-error-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.tbc-error-message {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.tbc-retry-btn {
+  background: var(--tbc-sidebar-hover);
+  color: var(--tbc-sidebar-text);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.tbc-retry-btn:hover {
+  background: var(--tbc-sidebar-active);
+}
+/* ================================
+   Code Block Copy Button
+   ================================ */
+.tbc-code-wrapper {
+  position: relative;
+}
+
+.tbc-copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 6px 8px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s, background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  z-index: 10;
+}
+
+.tbc-code-wrapper:hover .tbc-copy-btn {
+  opacity: 1;
+}
+
+.tbc-copy-btn:hover {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.tbc-copy-btn:active {
+  background: #e0e0e0;
+}
+
+.tbc-copy-btn.tbc-copy-success {
+  background: #d4edda;
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.tbc-copy-btn svg {
+  display: block;
+}
+
+/* Ensure pre elements work well with wrapper */
+.tbc-code-wrapper pre {
+  margin: 0 0 1em 0;
+}

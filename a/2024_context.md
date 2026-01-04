@@ -81,14 +81,14 @@ The best-known event is the external command `Execute` that is triggered by an e
 Within the event handler, Revit provides a valid Revit API context.
 Most Revit API methods can only be used within such a context, and nowhere else, cf.:
 
-- [Use of the Revit API requires a valid context](http://thebuildingcoder.typepad.com/blog/2015/12/external-event-and-10-year-forum-anniversary.html#2)
-- [Revit API context summary](https://thebuildingcoder.typepad.com/blog/2015/08/revit-api-context-and-form-creation-errors.html#2)
-- [Valid Revit API context and external events](https://thebuildingcoder.typepad.com/blog/2020/11/document-session-id-api-context-and-external-events.html#3)
+- [Use of the Revit API requires a valid context](1383_external_event_10_year.html#2)
+- [Revit API context summary](1344_api_context_form_err.htm#2)
+- [Valid Revit API context and external events](1874_doc_session_id.html#3)
 
 When automating Revit, one often wishes to trigger some action in the BIM from outside.
 This can be achieved by implementing an external event that can be raised from a non-modal context.
 This are has been discussed in depth by The Building Coder, cf. the topic group
-on [`Idling` and external events for modeless access and driving Revit from outside](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+on `Idling` and external events for modeless access and driving Revit from outside *(link unavailable)*.
 
 Here are some other aspects of this theme, from an internal Revit developers point of view:
 
@@ -194,7 +194,7 @@ Many thanks to Jeff Hotchkiss and Dimitar Venkov for this illuminating discussio
 **Answer:** SVF is an efficient compressed representation of the BIM geometry and selected metadata resulting from a translation of the original BIM CAD seed file for
 the [Autodesk Platform Services APS](https://aps.autodesk.com/) environment.
 
-Revit [Extensible Storage](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23) is
+Revit Extensible Storage *(link unavailable)* is
 a feature that lets add-ins store custom data inside Revit elements.
 
 The extensible storage data is only accessible to the add-in that creates it.

@@ -203,7 +203,7 @@ Jameson's links above prompted me to revisit
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 on [adding a new custom ribbon panel to a Revit built-in tab](https://forums.autodesk.com/t5/revit-api-forum/add-a-new-custom-ribbon-panel-to-a-revit-built-in-tab/td-p/5538772) 
 that I referred to here on the blog in 2014 in the article
-on [moving an external command button within the ribbon](https://thebuildingcoder.typepad.com/blog/2014/07/moving-an-external-command-button-within-the-ribbon.html).
+on [moving an external command button within the ribbon](1178_move_command_button.htm).
 
 I noticed that the thread was updated after the initial publication.
 Above all, the link to the sample code provided back then is no longer valid, so here is
@@ -235,7 +235,7 @@ Many thanks to Andrey for raising and clarifying this issue.
 #### <a name="5"></a>Adjusting versus Recreating Wall Location Curve
 
 Harald Schmidt pointed out an interesting aspect and important enhancement to the old discussion of how
-to [edit wall length](https://thebuildingcoder.typepad.com/blog/2010/08/edit-wall-length.html) in
+to [edit wall length](0422_edit_wall_length.htm) in
 his [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 on [adjusting Wall.LocationCurve.Curve results in unexpected behaviour](https://forums.autodesk.com/t5/revit-api-forum/adjusting-wall-locationcurve-curve-results-in-unexpected/m-p/9328145):
 
@@ -244,7 +244,7 @@ on [adjusting Wall.LocationCurve.Curve results in unexpected behaviour](https://
 Using `wall.Location.Move` and `wall.Location.Rotate` enables adjusting the location and rotation of the walls, but not their length.
 
 So, we decided to follow the approach suggested 10 years ago by The Building Coder to [
-to [edit wall length](https://thebuildingcoder.typepad.com/blog/2010/08/edit-wall-length.html) by
+to [edit wall length](0422_edit_wall_length.htm) by
 creating a completely new wall location line from scratch like this:
 
 <pre class="code">

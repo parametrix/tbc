@@ -52,9 +52,9 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 
 ### Splitting a Duct in More Depth
 
-We recently shared a brief note on using the `BreakCurve` API for [splitting a pipe](https://thebuildingcoder.typepad.com/blog/2020/03/split-pipe-and-headless-revit.html).
+We recently shared a brief note on using the `BreakCurve` API for [splitting a pipe](1827_headless.html).
 
-In a [comment](https://thebuildingcoder.typepad.com/blog/2020/03/split-pipe-and-headless-revit.html#comment-4835671086) on that,
+In a [comment](1827_headless.html#comment-4835671086) on that,
 Matt Taylor pointed out a much more comprehensive discussion in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 asking [is there any API available to split a duct programmatically?](https://forums.autodesk.com/t5/revit-api-forum/is-there-any-api-available-to-split-a-duct-programmatically/td-p/6926621).

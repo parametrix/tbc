@@ -75,7 +75,7 @@ Meanwhile, here is Maciej Szlek's WPF issue and solution:
 
 #### <a name="3"></a>WPF DoEvents
 
-Exactly two months back, we discussed [PickPoint with WPF and no threads attached](http://thebuildingcoder.typepad.com/blog/2015/11/pickpoint-with-wpf-and-no-threads.html).
+Exactly two months back, we discussed [PickPoint with WPF and no threads attached](1377_wpf_thread_pickpoint.html).
 
 Now another modeless WPF issue was raised and solved by [Maciej 'Max' Szlek](http://maciejszlek.pl):
 
@@ -105,12 +105,12 @@ On the other hand, you can tell from these discussions that some people are succ
 
 I recommend [sticking with Windows Forms](http://forums.autodesk.com/t5/revit-API/winforms-or-wpf/m-p/5558289) if you have a choice.
 
-Here is another recent article on [modeless WPF forms, PickPoint and multithreading](http://thebuildingcoder.typepad.com/blog/2015/11/pickpoint-with-wpf-and-no-threads.html), addressing other issues that also might be of interest to you,
-an [older one on WPF](http://thebuildingcoder.typepad.com/blog/2012/10/ensure-wpf-add-in-remains-in-foreground.html#2), and
-a [comment on triggering an event from Jon](http://thebuildingcoder.typepad.com/blog/2013/12/triggering-immediate-external-event-execute.html?cid=6a00e553e16897883301a3fd3c071c970b#comment-6a00e553e16897883301a3fd3c071c970b).
+Here is another recent article on [modeless WPF forms, PickPoint and multithreading](1377_wpf_thread_pickpoint.html), addressing other issues that also might be of interest to you,
+an [older one on WPF](0850_wpf_foreground.htm#2), and
+a comment on triggering an event from Jon *(link unavailable)*.
 
 Later, one little addition; I searched for "[Revit API WPF DoEvents](https://duckduckgo.com/?q=revit+API+WPF+doevents)" and found this article
-on [multithreading throwing exceptions in Revit 2015](http://thebuildingcoder.typepad.com/blog/2014/05/multithreading-throws-exceptions-in-revit-2015.html).
+on [multithreading throwing exceptions in Revit 2015](1149_exception_in_2015.htm).
 
 **Response:** I grabbed this [DoEvents implementation on StackOverflow](http://stackoverflow.com/a/11899439) to
 "start work on a method that runs on the Dispatcher thread, and it needs to block without blocking the UI Thread... implement a DoEvents based on the Dispatcher itself".
@@ -126,7 +126,7 @@ I haven't tested it much yet but it seems to be stable.
 
 You can run it from the add-in manager &ndash; lack of static references to IExternalApplication.
 
-On the occasion it allows to check if raised external events are queued or running next to each other. They are queued which is gooood but I think safer would be adapting below solution to the one external event &ndash; we don't know how the API engine will change in the future... ;) [pattern for semi-asynchronous Idling API access](http://thebuildingcoder.typepad.com/blog/2010/11/pattern-for-semi-asynchronous-idling-API-access.html)...
+On the occasion it allows to check if raised external events are queued or running next to each other. They are queued which is gooood but I think safer would be adapting below solution to the one external event &ndash; we don't know how the API engine will change in the future... ;) pattern for semi-asynchronous Idling API access *(link unavailable)*...
 
 Anyways thank you for your very accurate advice!
 

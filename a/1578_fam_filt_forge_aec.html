@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -6,6 +36,7 @@
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -59,7 +90,7 @@ A biggish post rather late in the week... still answering too many cases
 </ul>
 <h4><a name="2"></a>Forge for AEC &ndash; Demos and Sample Code</h4>
 <p>Last week, I briefly discussed some pros and cons
-of <a href="http://thebuildingcoder.typepad.com/blog/2017/08/revit-versus-forge-ids-and-add-in-installation.html#2">Revit versus Forge for BIM programming</a>.</p>
+of <a href="1577_forge_ids_install.html#2">Revit versus Forge for BIM programming</a>.</p>
 <p>Since then, Jim Quanci, Senior Director Software Partner Development at Autodesk,
 published <a href="https://youtu.be/5xVwvBzemkg">Autodesk Forge &ndash; What is it?</a> &ndash;
 a 45 minute video recording showing what's possible to do
@@ -107,7 +138,7 @@ browsed through the database to find a class called <code>StartingViewSettings</
 <p>Another issue was raised by my consulting colleague Miro Schonauer:</p>
 <p><strong>Question:</strong> What is the best way to check if any version and, if so, what version of Revit is installed?</p>
 <p>I checked Windows registry keys mentioned in the discussion on 
-the <a href="http://thebuildingcoder.typepad.com/blog/2013/04/perpetual-guid-algorithm-and-revit-2014-product-guids.html">perpetual GUID algorithm and Revit 2014 product GUIDs</a>, 
+the <a href="0930_revit_2014_guids.htm">perpetual GUID algorithm and Revit 2014 product GUIDs</a>, 
 but that is only up to Revit 2014 and still not sure we can detect 'any version'.</p>
 <p><strong>Answer:</strong> One choice it to use <code>RevitProductUtility</code> API provided by the <code>RevitAddInUtility.dll</code> assembly:</p>
 <pre class="code">
@@ -200,13 +231,13 @@ of <a href="https://github.com/jeremytammik/the_building_coder_samples">The Buil
 <p>That is equivalent to running a <code>foreach</code> loop over the results of the filter.</p>
 <p>Revit returns a large collection of instances, which costs time and marshalling effort, and .NET post-processes them.</p>
 <p>A much faster alternative, but a little bit more complex, is to implement
-a <a href="http://thebuildingcoder.typepad.com/blog/2010/06/element-name-parameter-filter-correction.html">parameter filter</a>.</p>
+a <a href="0384_elem_name_param_filter.htm">parameter filter</a>.</p>
 <p>You can apply any filters you like in any order you like.</p>
 <p>Revit may perform some optimisation by reordering them.</p>
 <p>It is probably useful
-to <a href="http://thebuildingcoder.typepad.com/blog/2015/12/quick-slow-and-linq-element-filtering.html">apply all quick filters first</a>.</p>
+to <a href="1382_filter_shortcuts.html">apply all quick filters first</a>.</p>
 <p>Using <code>ToList</code> to convert the enumerable filtered element collector to a .NET <code>List</code> is  normally not necessary
-and <a href="http://thebuildingcoder.typepad.com/blog/2012/09/findelement-and-collector-optimisation.html">may cause a significant inefficiency</a>.</p>
+and <a href="0832_find_element_optimise.htm">may cause a significant inefficiency</a>.</p>
 <p>Check out the examples provided
 by <a href="https://github.com/jeremytammik/the_building_coder_samples">The Building Coder samples</a> in
 the <a href="https://github.com/jeremytammik/the_building_coder_samples/blob/master/BuildingCoder/BuildingCoder/CmdCollectorPerformance.cs">module CmdCollectorPerformance.cs</a></p>
@@ -257,3 +288,11 @@ the <a href="https://github.com/jeremytammik/the_building_coder_samples/blob/mas
 <p>Implementing dedicated parameter filters for the family and type name would be much more efficient, and would avoid Revit having to marshal and send across to .NET all the data for the instances or types that do not match the desired criteria.</p>
 <p>The code region to <a href="https://github.com/jeremytammik/the_building_coder_samples/blob/master/BuildingCoder/BuildingCoder/CmdCollectorPerformance.cs#L1039-L1101">retrieve named family symbols</a> demonstrates several different approaches using both LINQ and the more efficient parameter filter.</p>
 <p>You can implement similar code to retrieve family instances instead of symbols.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

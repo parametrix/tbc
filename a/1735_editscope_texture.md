@@ -112,8 +112,8 @@ I am able to duplicate and edit `AppearanceAsset`.
 
 I have searched The Building Coder and read both the relevant posts:
 
-- [Modifying Material Visual Appearance](http://thebuildingcoder.typepad.com/blog/2017/11/modifying-material-visual-appearance.html)
-- [Material Texture Path](http://thebuildingcoder.typepad.com/blog/2017/10/material-texture-path.html)
+- [Modifying Material Visual Appearance]( )
+- [Material Texture Path](1596_texture_path.html)
 
 The way I obtain the current texture path is taken directly from the latter.
 

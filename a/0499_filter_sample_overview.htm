@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Filtered Element Collector Sample Overview</h3>
@@ -65,12 +96,12 @@ Facebook album</a>.
 <p>Meanwhile, returning to Revit, here is something I have been waiting to do for quite a while now, but new things kept cropping up.
 After discussing my own
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/collector-benchmark.html">
+<a href="0333_collector_benchmark.htm">
 filtered element collector benchmarks</a> early
 
 on in the Revit 2011 release cycle,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/more-kevin-filtering-benchmarks.html">
+<a href="0497_more_kevin_samples.htm">
 Kevin's filtering samples and benchmarks</a> last week,
 
 and a large number of other samples in between,
@@ -137,54 +168,63 @@ I hope that we have covered everything relevant by now and the right moment has 
 -->
 
 <ul>
-<li>My first Revit 2011 plug-in, the <a href="http://thebuildingcoder.typepad.com/blog/2010/05/pipe-to-conduit-converter.html">pipe to conduit converter</a>.</li>
-<li>A very simple collector to retrieve <a href="http://thebuildingcoder.typepad.com/blog/2010/06/export-data-to-xml.html">view sheets</a>.</li>
-<li>Some utility methods to filter for <a href="http://thebuildingcoder.typepad.com/blog/2010/06/set-tag-type.html">levels and types</a> such as door type and a door tag type symbol</a>.</li>
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/04/retrieving-newly-created-elements-in-revit-2011.html">newly added elements</a>.</li>
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/04/retrieve-stairs-on-level.html">stairs on a level</a>.</li>
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/04/filter-for-views-and-istemplate-predicate.html">views</a>.</li>
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/05/get-type-id-and-preview-image.html">family instances and their family</a>.</li>
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/05/determine-sheet-size.html">title block symbols and instances</a> to determine the sheet size.</li>
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/06/display-webcam-image-on-building-element-face.html#3">AVF display styles with a specific name</a>.</li>
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/06/retrieve-mep-elements-and-connectors.html">MEP elements</a>.</li>
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/07/retrieve-structural-elements.html">structural elements</a>.</li>
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/11/purge-unused-text-note-types.html">text notes and text note types</a>.</li>
+<li>My first Revit 2011 plug-in, the <a href="0360_p2c.htm">pipe to conduit converter</a>.</li>
+<li>A very simple collector to retrieve <a href="0392_export_xml.htm">view sheets</a>.</li>
+<li>Some utility methods to filter for <a href="0395_set_tag_type.htm">levels and types</a> such as door type and a door tag type symbol</a>.</li>
+<li>Retrieving <a href="0344_mirror_new_elements.htm">newly added elements</a>.</li>
+<li>Retrieving <a href="0346_stairs_on_level.htm">stairs on a level</a>.</li>
+<li>Retrieving <a href="0355_view_filter.htm">views</a>.</li>
+<li>Retrieving <a href="0359_preview_image.htm">family instances and their family</a>.</li>
+<li>Retrieving <a href="0371_sheet_size.htm">title block symbols and instances</a> to determine the sheet size.</li>
+<li>Retrieving <a href="0380_revitwebcam.htm#3">AVF display styles with a specific name</a>.</li>
+<li>Retrieving <a href="0398_retrieve_mep_elements.htm">MEP elements</a>.</li>
+<li>Retrieving <a href="0404_structural_elements.htm">structural elements</a>.</li>
+<li>Retrieving <a href="0476_purge_text_note_types.htm">text notes and text note types</a>.</li>
 
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/10/selecting-model-elements.html">
-model elements</a>, with some <a href="http://thebuildingcoder.typepad.com/blog/2010/10/model-elements-revisited.html">
+<li>Retrieving <a href="0453_model_elements.htm">
+model elements</a>, with some <a href="0454_model_elements.htm">
 enhancements</a>.</li>
 
-<li>A <a href="http://thebuildingcoder.typepad.com/blog/2010/04/collector-benchmark.html">collector performance benchmark</a> including several collector samples.</li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/04/anonymous-methods-in-vb.html">Using LINQ and anonymous methods in VB</a>.</li>
-<li>A RevitLookup update and <a href="http://thebuildingcoder.typepad.com/blog/2010/05/revitlookup-update.html">retrieving all database elements</a>.</li>
-<li>Why <a href="http://thebuildingcoder.typepad.com/blog/2010/06/filter-for-all-elements.html"><strong>not</strong> to retrieve all database elements</a>.</li>
-<li>Many examples of <a href="http://thebuildingcoder.typepad.com/blog/2010/06/parameter-filter.html">parameter filters</a>.</li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/06/element-name-parameter-filter-correction.html">Parameter filter for an element name</a>.</li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/08/elementparameterfilter-with-a-shared-parameter.html">Parameter filter for a shared parameter</a>.</li>
-<li>Filtering for a <a href="http://thebuildingcoder.typepad.com/blog/2010/08/filtering-for-a-nonnative-class.html">non-native class</a>, i.e. "an element type that exists in the API, but not in Revit's native object model".</li>
-<li>Resolving another non-native class issue, the Panel class in the <a href="http://thebuildingcoder.typepad.com/blog/2010/10/measurepanelarea_update.html">MeasurePanelArea</a> SDK sample.</li>
-<li>Filter for <a href="http://thebuildingcoder.typepad.com/blog/2010/09/filter-for-view-and-phase.html">view and phase</a>.</li>
+<li>A <a href="0333_collector_benchmark.htm">collector performance benchmark</a> including several collector samples.</li>
+<li><a href="0334_anonymous_methods_vb.htm">Using LINQ and anonymous methods in VB</a>.</li>
+<li>A RevitLookup update and <a href="0370_revitlookup.htm">retrieving all database elements</a>.</li>
+<li>Why <a href="0397_filter_all_elements.htm"><strong>not</strong> to retrieve all database elements</a>.</li>
+<li>Many examples of <a href="0383_param_filter.htm">parameter filters</a>.</li>
+<li><a href="0384_elem_name_param_filter.htm">Parameter filter for an element name</a>.</li>
+<li><a href="0423_filter_shared_param.htm">Parameter filter for a shared parameter</a>.</li>
+<li>Filtering for a <a href="0426_filter_non_native_class.htm">non-native class</a>, i.e. "an element type that exists in the API, but not in Revit's native object model".</li>
+<li>Resolving another non-native class issue, the Panel class in the <span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/2010/10/measurepanelarea_update.html">MeasurePanelArea <em>(post unavailable)</em></span> SDK sample.</li>
+<li>Filter for <a href="0446_filter_view_phase.htm">view and phase</a>.</li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/10/level-filter-benchmark.html">
+<li><a href="0464_level_filter_benchmark.htm">
 Level filter benchmark</a> comparing Level filter versus parameter filter versus LINQ post-processing to retrieve elements on a given level.</li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/12/xml-family-usage-report.html">
+<li><a href="0493_xml_family_usage.htm">
 XML family usage report</a> using FamilySymbolFilter and FamilyInstanceFilter.</li>
 
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/12/find-intersecting-elements.html">
+<li>Retrieving <a href="0494_find_intersecting.htm">
 intersecting elements</a> using collector viewId constructor, BoundingBoxIntersectsFilter and exclusion filter.</li>
 
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/11/launching-a-revit-command.html">
-wall types with a specific name</a> and <a href="http://thebuildingcoder.typepad.com/blog/2010/11/launching-a-revit-command.html">
+<li>Retrieving <a href="0479_launch_command.htm">
+wall types with a specific name</a> and <a href="0479_launch_command.htm">
 walls using a specific wall type</a> using parameter filters.</li>
 
-<li>Kevin's <a href="http://thebuildingcoder.typepad.com/blog/2010/10/filtered-element-collectors.html">
+<li>Kevin's <a href="0463_filtered_element_collector.htm">
 optimisation tips and tricks</a> presentation.</li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/12/more-kevin-filtering-benchmarks.html">
+<li><a href="0497_more_kevin_samples.htm">
 Kevin's filtering samples and benchmarks</a>.</li>
 
 </ul>
 
 <p>I hope this provides a useful knowledge base to enable you to solve all your element retrieval needs.
 Obviously, some creativity on your side will also be required.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="bc.css">
+
+<!--
+https://prismjs.com
+<pre><code class="language-cs">
+-->
+<link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<style> code[class*=language-], pre[class*=language-] { font-size : 90%; } </style>
+
+</head>
+
+<!--
+
+- civapidocs.com
+  Just wanted to let you know that the API docs for civil3d are live if you want to check it out: civapidocs.com
+  Jaime Alonso Candau, nonica.io
+
+- revitapidocs updated for 2025
+
+- Fabrication Part - Show Service
+  https://forums.autodesk.com/t5/revit-api-forum/fabrication-part-show-service/td-p/13354945
+  Steven Williams
+  [@steven.williams.as](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/11800801)
+  a tutorial-style explanation
+
+twitter:
+
+I will be joining DevCon 2025 @AutodeskAPS in Amsterdam, my last Autodesk conference; a tutorial-style exploration of fabrication parts show service and updated online API documentation for Civil3D and @AutodeskRevit #RevitAPI 2025 #BIM @DynamoBIM https://thebuildingcoder.typepad.com/blog/2025/03/devcon-api-docs-and-fabrication-part-service.html
+
+My last Autodesk conference nears, new and updated API documentation online, and a tutorial-style exploration of fabrication parts
+&ndash; DevCon in Amsterdam
+&ndash; CivApiDocs Civil3D API documentation
+&ndash; ApiDocs Revit 2025 API docs
+&ndash; Fabrication part show service...
+
+linkedin:
+
+I will be joining DevCon 2025 in Amsterdam, my last Autodesk conference; a tutorial-style exploration of fabrication parts show service and updated online API documentation for Civil3D and #RevitAPI 2025
+
+https://thebuildingcoder.typepad.com/blog/2025/03/devcon-api-docs-and-fabrication-part-service.html
+
+- DevCon in Amsterdam
+- CivApiDocs Civil3D API documentation
+- ApiDocs Revit 2025 API docs
+- Fabrication part show service...
+
+#BIM #DynamoBIM #AutodeskAPS #Revit #API #IFC #SDK #Autodesk #AEC #adsk
+
+the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
+
+<center>
+<img src="img/" alt="" title="" width="600"/>
+<p style="font-size: 80%; font-style:italic"></p>
+<a href="img/.gif"><p style="font-size: 80%; font-style:italic">Click for animation</p></a>
+</center>
+
+-->
+
+### DevCon, API Docs and Fabrication Part Service
+
+My last Autodesk conference nears, new and updated API documentation online, and a tutorial-style exloration of implementing fabrication part &ndash; show service:
+
+- [DevCon in Amsterdam](#2)
+- [CivApiDocs Civil3D API documentation](#3)
+- [ApiDocs Revit 2025 API docs](#4)
+- [Fabrication part &ndash; show service](#5)
+
+####<a name="2"></a> DevCon in Amsterdam
+
+I will be attending [DevCon in Amsterdam](https://aps.autodesk.com/blog/register-today-autodesk-devcon-returns-2025-amsterdam)!
+It is taking place on May 20-21 2025 in
+the famous old [Beurs van Berlage](https://en.wikipedia.org/wiki/Beurs_van_Berlage) stock market
+constructed 1896-1903.
+I mentioned the [call for papers](https://thebuildingcoder.typepad.com/blog/2024/11/devcon-ai-for-revit-api-modeless-add-ins-leave.html#2) in November.
+
+May will also be the last month of my life as an Autodesk employee.
+
+<center>
+<img src="img/devcon_in_boers_berlage_by_gemini.jpg" alt="DevCon in Beurs van Berlage" title="DevCon in Beurs van Berlage" width="400"/> <!-- Pixel Width: 800 -->
+</center>
+
+####<a name="3"></a> CivApiDocs Civil3D API Documentation
+
+Jaime Alonso Candau of the Revit API consulting company [Nonica.io](https://nonica.io/) published
+
+<center>
+  <a href="https://civapidocs.com/">Civ API Docs</a>
+</center>
+
+The new website provides online Civil3D API documentation for the releases 2022, 2023, 2024 and 2025, in the same style as
+the [`RevApiDocs` Revit API documentation](https://revapidocs.com/) supporting
+Revit 2025 as well as preceding versions that
+I [mentioned in February](https://thebuildingcoder.typepad.com/blog/2025/02/unit-testing-and-more-serious-matters.html#4).
+
+Many thanks to Jaime for creating and sharing these resource.
+
+####<a name="4"></a> ApiDocs Revit 2025 API Docs
+
+Following up on that,
+[Gui Talarico](https://twitter.com/gtalarico) now also
+updated the [apidocs](https://apidocs.co) web site for both Revit 2025 and Revit 2025.3 API:
+
+- [Revit 2025.3 API](https://apidocs.co/apps/revit/2025.3/1593f994-fb7b-4b7d-ae1d-1c0ba3337577.htm)
+- [Revit 2025 API](https://apidocs.co/apps/revit/2025/1593f994-fb7b-4b7d-ae1d-1c0ba3337577.htm#)
+
+[Apidocs](https://apidocs.co) also includes API documentation for Grasshopper, Navisworks, Rhino and previous Revit releases all the way back to Revit 2015.
+
+Thank you, Gui, for maintaining this invaluable resource!
+
+####<a name="5"></a> Fabrication Part &ndash; Show Service
+
+[Steven Williams](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/11800801) shared
+a very nice tutorial-style explanation of how to replicate
+[Fabrication Part &ndash; Show Service](https://forums.autodesk.com/t5/revit-api-forum/fabrication-part-show-service/td-p/13354945):
+
+This post started as a question, but I figured it out and thought someone might be interested. I couldn't find any examples of this in the API samples or through web searches, and ChatGPT failed miserably.
+
+My goal is to replicate the Show Service button that appears in the Modify tab when you select a Fabrication Part.
+
+<center>
+<img src="img/sw_fab_part_service_1.png" alt="Fabrication Part - Show Service" title="Fabrication Part - Show Service" width="98"/> <!-- Pixel Height: 76 Pixel Width: 49 -->
+</center>
+
+Clicking this button opens the MEP Fabrication Parts panel to the matching service and palette that generated that part, and highlights the button that was used.
+
+I snooped through the attributes and parameters of several fabrication parts but could only find ServiceId indicating what button was used to draw the part. The fabrication button name does not necessarily correspond to the name of the part drawn in Revit.
+
+Example: I have a button named "Pipe":
+
+<center>
+<img src="img/sw_fab_part_service_2.png" alt="Pipe" title="Pipe" width="120"/> <!-- Pixel Height: 107 Pixel Width: 93 -->
+</center>
+
+These are the relevant properties of the button object, which I obtained like this:
+
+<pre><code class="language-cs"># doc is the Autodesk.Revit.DB.Document in question
+# service_id, palette_index, and button_index are given integers
+fabrication_configuration = FabricationConfiguration.GetFabricationConfiguration(doc)
+service = fabrication_configuration.GetService(service_id)
+button = service.GetButton(palette_index, button_index)
+print(button.ButtonIndex) # == 0
+print(button.Code) # == P01
+print(button.ConditionCount) # == 1
+print(button.IsAHanger) # == False
+print(button.IsStraight) # == True
+print(button.Name) # == Pipe
+print(button.PaletteIndex) # == 0
+print(button.ServiceId) # == 3381</code></pre>
+
+Not much information about what will be drawn in Revit.
+There is a method FabricationServiceButton.ContainsFabricationPartType(partType) that I finally found to be the key.
+
+The part drawn in Revit looks like this ("Cerro Type L Hard Copper Pipe"):
+
+<center>
+<img src="img/sw_fab_part_service_3.png" alt="Copper pipe" title="Copper pipe" width="400"/> <!-- Pixel Height: 70 Pixel Width: 371 -->
+</center>
+
+It has attributes and properties like this:
+
+<pre><code class="language-cs"># select your part
+ref = uidoc.Selection.PickObject(ObjectType.Element)
+element = doc.GetElement(ref)
+# properties
+print(element.ProductName) # == Pipe
+print(element.ProductLongDescription) # == Type L Hard Copper Pipe
+print(element.ProductOriginalEquipmentManufacture) # == Cerro
+print(element.ProductSpecificationDescription) # == Type L
+print(element.Name) # == Default
+# parameters
+print(element.LookupParameter('Product Name').AsValueString()) # == Pipe, also BuiltInParameter.FABRICATION_PRODUCT_DATA_PRODUCT
+print(element.LookupParameter('Product Long Description').AsValueString()) # == Type L Hard Copper Pipe, also BuiltInParameter.FABRICATION_PRODUCT_DATA_LONG_DESCRIPTION
+print(element.LookupParameter('OEM').AsValueString()) # == Cerro, also BuiltInParameter.FABRICATION_PRODUCT_DATA_OEM
+print(element.LookupParameter('Product Specification Description').AsValueString()) # == Type L, also BuiltInParameter.FABRICATION_PRODUCT_DATA_SPECIFICATION</code></pre>
+
+Then I discovered the `FabricationPartType` class that can be retrieved using the fabrication part `GetTypeId` method:
+
+<pre><code class="language-cs">doc.GetElement(element.GetTypeId())</code></pre>
+
+The API documentation says "For the product-based MAP parts, every size is a new part type in Revit.
+For others, one part type can have many sizes."
+
+Now I can put FabricationServiceButton.ContainsFabricationPartType(partType) together with element.GetTypeId().
+There is one last step, which took me a little longer.
+Sometimes we have several ITM files in a single button:
+
+<center>
+<img src="img/sw_fab_part_service_4.png" alt="Adapters" title="Adapters" width="400"/> <!-- Pixel Height: 182 Pixel Width: 325 -->
+</center>
+
+Revit classifies each of these as a Condition. ContainsFabricationPartType() only tells you that the button contains the given partType; now you have to get the condition that matches the partType. For that you have to go back to the FabricationPartType class and use the Lookup(document, button, condition) method with each valid condition the button contains.
+
+This is the summary.
+
+<pre><code class="language-cs"># you can run this in RevitPythonShell
+fabrication_configuration = FabricationConfiguration.GetFabricationConfiguration(doc)
+
+# select a FabricationPart
+# -- consider creating an ISelectionFilter that only passes elements of type FabricationPart
+ref = uidoc.Selection.PickObject(ObjectType.Element)
+element = doc.GetElement(ref)
+part_type = doc.GetElement(element.GetTypeId())
+
+service_id = element.ServiceId
+service = fabrication_configuration.GetService(service_id)
+
+matching_button = None
+matching_condition = None
+for palette_index in range(service.PaletteCount):
+    for button_index in range(service.GetButtonCount(palette_index)):
+        button = service.GetButton(palette_index, button_index)
+        for condition in range(button.ConditionCount):
+            part_type_element = FabricationPartType.Lookup(doc, button, condition)
+            # the GUI always picks the first button and condition that matches
+            # -- the efficiency of this would be improved by making this into
+            # a a function that yields the first match
+            if part_type_element != ElementId.InvalidElementId and matching_button is None:
+                matching_button = button
+                matching_condition = condition</code></pre>
+
+ I think you can now use this matching button, for example, to replicate the 'Create Similar' command for fabrication parts, using the second overload with matching_button and matching_condition from above.
+
+<pre><code class="language-cs">public static FabricationPart Create(
+  Document document,
+  FabricationServiceButton button,
+  int condition,
+  ElementId levelId
+)</code></pre>
+
+Many thanks to Steven for his nice clear explanation and overview.

@@ -68,7 +68,7 @@ the [Forge high-level picture for software development managers](https://labs.bl
 
 Developers are continuously seeking reliable, efficient development approaches.
 Some ways have been described in the past implementing the functionality
-to [edit and continue, and debug without restarting](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.49).
+to edit and continue, and debug without restarting *(link unavailable)*.
 
 This question arose again in the StackOverflow question
 asking [why is my DLL still being used by Revit after execution?](https://stackoverflow.com/questions/55256817/why-is-my-dll-still-being-used-by-revit-after-execution).

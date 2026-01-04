@@ -145,8 +145,8 @@ Probably it will work better if using millimetres.
 **Answer:** Yes, using meters probably explains the issue right away.
 
 Please be aware that all Revit internal length units are considered to
-be [imperial feet](http://thebuildingcoder.typepad.com/blog/2011/03/internal-imperial-units.html), and
-that [Revit does not support very small objects](http://thebuildingcoder.typepad.com/blog/2009/07/think-big-in-revit.html).
+be [imperial feet](0553_imperial_units.htm), and
+that [Revit does not support very small objects](0176_think_big.htm).
 
 Everything that is too small will be ignored. The limit is around 1/16th or an inch, which is about 1.2 mm.
 
@@ -258,7 +258,7 @@ Many thanks to Jon for his in-depth knowledge and explanation!
 #### <a name="7"></a>IFC Family Support Discussion Links
 
 Ryan Schulz points out a number of additional interesting discussions on the topic in
-his [comment below](http://thebuildingcoder.typepad.com/blog/2016/07/ifc-import-and-open-source.html#comment-2797771810):
+his [comment below](1455_ifc_issues.html#comment-2797771810):
 
 - [IFC for Revit &ndash; Support for Revit Groups?](https://sourceforge.net/p/ifcexporter/discussion/general/thread/fad5b2f8)
 - [BuildingSMART/mvdXML issue #3 &ndash; Possible to outline an MVD exchange requirement to address the concept of groups? ](https://github.com/BuildingSMART/mvdXML/issues/3)

@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -136,17 +167,25 @@ Could someone recommend a good example?
 Which direction is worth following?
 I searched on the Autodesk AppStore and found BimObject or ProdLib plugins, which have really nice UIs.
 Are they using WPF or some web framework?</p>
-<p><strong>Answer:</strong> We recently discussed <a href="https://thebuildingcoder.typepad.com/blog/2019/09/scaling-an-add-in-for-a-4k-high-resolution-screen.html#9">WPF versus Winforms</a>.</p>
+<p><strong>Answer:</strong> We recently discussed <a href="1780_4k_hires_scaling.html#9">WPF versus Winforms</a>.</p>
 <p>Even though most of the Revit SDK samples demonstrate use of WinForms, this is hardly recommended anymore nowadays.</p>
 <p>The Revit SDK DockableDialogs example is WPF.  It's good in that it shows the various API's necessary to build an external app, but it was not designed to be a great WPF reference.</p>
 <p>You can see some other samples <a href="https://duckduckgo.com/?q=revit+api+wpf+sample">searching for 'Revit API WPF sample'</a>.</p>
-<p>The Building Coder also shares <a href="https://thebuildingcoder.typepad.com/blog/wpf">some WPF related topics</a>.</p>
+<p>The Building Coder also shares <span class="unavailable-link" title="Original: https://thebuildingcoder.typepad.com/blog/wpf">some WPF related topics <em>(category page)</em></span>.</p>
 <p>Have you checked
-out <a href="https://thebuildingcoder.typepad.com/blog/2019/01/room-boundaries-to-csv-and-wpf-template.html#3">Ali Asad's Visual Studio WPF MVVM Revit add-in template</a>?</p>
+out <a href="1713_room_boundary_wpf.html#3">Ali Asad's Visual Studio WPF MVVM Revit add-in template</a>?</p>
 <p>This StackOverflow thread discusses how to <a href="https://stackoverflow.com/questions/40096793/best-starting-point-for-wpf-revit-add-in">create a WPF Revit add-in starting with the DockableDialogs SDK sample</a>.</p>
 <p>Oh, and finally we must not forget the recent solution using
-<a href="https://thebuildingcoder.typepad.com/blog/2019/04/set-floor-level-and-use-ipc-for-disentanglement.html">IPC to disentangle and connect with CefSharp</a>.</p>
+<a href="1737_ipc.html">IPC to disentangle and connect with CefSharp</a>.</p>
 <p><strong>Response:</strong> I hope I found the solution.
 Using <a href="https://www.teamdev.com/dotnetbrowser">DotNetBrowser</a>,
 I can integrate a Chromium-based browser into Revit app. I tried it and it works fine.</p>
 <p>Many thanks to Balint for sharing this!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

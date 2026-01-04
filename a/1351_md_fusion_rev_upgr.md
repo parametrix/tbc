@@ -158,12 +158,12 @@ using the mouse with our custom operator?
 
 **Answer:**
 Revit 2015 provides programmatic access to this area, so the
-[What's New in the Revit 2015 API](http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html) documentation
+[What's New in the Revit 2015 API](1141_whats_new_2015.htm) documentation
 for that version covers just about all there is to know about the
-[Revision API](http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html#3.04).
+[Revision API](1141_whats_new_2015.htm#3.04).
 
 You may also be interested in the
-[GetRevisionData Revit add-in](http://thebuildingcoder.typepad.com/blog/2014/06/the-revision-api-and-a-form-on-the-fly.html).
+[GetRevisionData Revit add-in](1168_revision_api.htm).
 
 I just upgraded it to Revit 2016 for you; check it out in the
 [GetRevisionData GitHub repository](https://github.com/jeremytammik/GetRevisionData).
@@ -182,13 +182,13 @@ The topic of driving Revit from outside or other background threads has been dis
 so all the information that I am aware of on this topic is already sitting there waiting for your perusal.
 
 Please check out the topic group on
-[driving Revit from outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28) and
+driving Revit from outside *(link unavailable)* and
 explore that material.
 
 I would recommend starting at the end, since the last two entries in that topic list provide a good overview.
 
 Regarding the bulk upgrade, you will probably also be interested in taking a look at Saikat Bhattacharya's
-[File Upgrader add-in](http://thebuildingcoder.typepad.com/blog/2011/06/file-upgrader-plugin-of-the-month.html).
+[File Upgrader add-in](0590_file_upgrader_potm.htm).
 
 It was originally written for Revit 2012 and updated several times for later Revit versions.
 

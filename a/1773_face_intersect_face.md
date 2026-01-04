@@ -297,11 +297,11 @@ Thank you!
 ####<a name="5"></a> Copy as HTML Update
 
 I implemented and installed a couple of 
-different [source code colourizer tools](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.36) in
+different source code colourizer tools *(link unavailable)* in
 the past.
 
 This spring, I set up 
-the [PowerTools 2015 Copy HTML Markup](https://thebuildingcoder.typepad.com/blog/2019/04/close-doc-and-zero-doc-rvtsamples.html#4) functionality.
+the [PowerTools 2015 Copy HTML Markup](1741_rvtsamp_zero_close.html#4) functionality.
 
 On the new computer, I updated to Visual Studio 2017 instead of Visual Studio 2015.
 
@@ -311,6 +311,6 @@ to [Productivity Power Tools 2017/2019](https://marketplace.visualstudio.com/ite
 ####<a name="6"></a> Visual Studio Revit Add-In Wizard Update
 
 In the same vein, I reinstalled
-the [Visual Studio Revit Add-In Wizards](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20),
+the Visual Studio Revit Add-In Wizards *(link unavailable)*,
 again, slightly updated for Visual Studio 2017, captured
 in [VisualStudioRevitAddinWizard release 2020.0.0.2)](https://github.com/jeremytammik/VisualStudioRevitAddinWizard/releases/tag/2020.0.0.2).

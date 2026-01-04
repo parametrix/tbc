@@ -64,7 +64,7 @@ External use is a question mark &ndash; it would be great if we could collect so
 
 Can you please let us know if you are interested in this framework?
 You can simply provide your details in a comment below, or send
-a [private message](https://thebuildingcoder.typepad.com/blog/about-the-author.html#1) if you prefer that.
+a private message *(link unavailable)* if you prefer that.
 
 All info and advice is greatly appreciated!
 Thank you!

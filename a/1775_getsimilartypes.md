@@ -167,7 +167,7 @@ You may also find it out easily for yourself by searching the Internet for an ex
 like [revit api title block label parameters](https://duckduckgo.com/?q=revit+api+title+block+label+parameters).
 
 The Building Coder took a look at
-the [title block of a sheet](https://thebuildingcoder.typepad.com/blog/2009/11/title-block-of-sheet.html) and
+the [title block of a sheet](0247_title_block_of_sheet.htm) and
 its parameters a long time ago, without providing a method to achieve what you are asking for.
 
 Since I think it is time to take another look at this and it may be useful for others in future as well, I put together the following function that may or may not achieve what you are after:

@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -16,13 +47,13 @@
 <p>We looked at a couple of transformation issues in the past, e.g.:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/12/polygon-transformation.html">Polygon Transformation</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/03/transform.html">Transform</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/03/transform-instance-coordinates.html">Transform Instance Coordinates</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/05/transform-an-element.html">Transform an Element</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/01/transformations.html">Transformations</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/06/get-transformed-family-instance-geometry.html">Get Transformed Family Instance Geometry</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/11/planar-face-transform.html">Planar Face Transform</a></li>
+<li><a href="0057_polygon_transformation.htm">Polygon Transformation</a></li>
+<li><a href="0110_transform.htm">Transform</a></li>
+<li><a href="0111_transform_instance_coords.htm">Transform Instance Coordinates</a></li>
+<li><a href="0133_transform_element.htm">Transform an Element</a></li>
+<li><a href="0290_abg07_transform.htm">Transformations</a></li>
+<li><a href="0605_transformed_geo.htm">Get Transformed Family Instance Geometry</a></li>
+<li><a href="0671_planar_face_transform.htm">Planar Face Transform</a></li>
 </ul>
 
 <p>Now Jon Smith of
@@ -97,7 +128,7 @@ I have not used the geometry element transformation or bounding box functionalit
 
 <p>There are several samples on the blog that demonstrate the process, e.g. the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/08/structural-concrete-setout-point-add-in.html">
+<a href="0806_setout_points.htm">
 structural setout point</a> application.
 It collects and marks all vertices of structural concrete element geometry solids.</p>
 
@@ -327,3 +358,12 @@ I prefer the 2014 method as it does not rely on a particular type of geometry an
 <p>This could be replaced by implementing an extension method for the Curve class named GetEndpoint, which is conditionally compiled and only defined for Revit versions prior to 2014.</p>
 
 <p>With such an extension method, the new Revit 2014 code could be used throughout, and you would not even see that the extension method routes it through to the old method when needed.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

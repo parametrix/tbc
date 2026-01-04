@@ -135,7 +135,7 @@ to:
 Autodesk is also clarifying its vision
 of [Forma for AEC](https://www.autodesk.com/company/autodesk-platform/aec)
 and [sustainability](/Users/jta/a/doc/revit/tbc/git/a/zip/forma_sustainability_flyer.pdf) announced
-at [AU 2022](https://thebuildingcoder.typepad.com/blog/2022/09/aps-au-and-miter-wall-join-for-full-face.html#3):
+at [AU 2022](1966_miter_full_face.html#3):
 
 - [Design a better future with Forma’s suite of sustainability solutions](https://blogs.autodesk.com/forma/2023/05/08/sustainability-solutions):
 
@@ -240,9 +240,9 @@ I hope it helps you, and good luck
 
 I am in the process of editing this thread for a blog post. I found three existing related blog posts:
 
-- [User MEP Calculation Sample](http://thebuildingcoder.typepad.com/blog/2013/07/user-mep-calculation-sample.html)
-- [User MEP Calculation Sample on GitHub](http://thebuildingcoder.typepad.com/blog/2013/11/user-mep-calculation-sample-on-github.html)
-- [External Services](http://thebuildingcoder.typepad.com/blog/2015/12/external-services.html)
+- [User MEP Calculation Sample](0986_mep_calculation.htm)
+- [User MEP Calculation Sample on GitHub](1054_mep_calculation.htm)
+- [External Services](1385_external_service.html)
 
 The third of these on Arnošt Löbel's class SD10752 on Revit External Services at Autodesk University 2015 is especially interesting:
 

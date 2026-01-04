@@ -1,17 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 ﻿<head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Replacing Built-In Revit Commands and Their Ids</h3>
 
 <p>One main focus of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/revit-2013-and-its-api.html">
+<a href="0740_revit_2013_api.htm">
 Revit 2013 API</a> features
 
 is better support for 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/revit-2013-and-its-api.html#2">
+<a href="0740_revit_2013_api.htm#2">
 add-in integration</a>.
 
 This includes the possibility for an add-in to replace an existing Revit command with its own implementation. 
@@ -19,14 +50,14 @@ Note that you cannot call an existing command, just replace it entirely.
 
 <p>Such a command replacement is demonstrated in a very simple form by the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/04/developer-center-and-sdk-update.html#21">
+<a href="0757_devcenter_sdk_update.htm#21">
 DisableCommand SDK sample</a>,
 
 which disables a command by replacing its implementation with a simple popup message.
 
 <p>A slightly more complex example is given by the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/new-revit-2013-sdk-samples.html#4">
+<a href="0742_new_sdk_samples.htm#4">
 UIAPI SDK sample</a>,
 
 which implements and installs an alternative command binding for the Design Model command to start up a new family freshly created from the conceptual mass template and display its 3D view.
@@ -159,3 +190,12 @@ Although I try to bind ID_APP_EXIT command (just for test because it was the fir
 It binds without any errors but doesn't work.
 
 <p>Very many thanks to Victor for this interesting research and the useful comprehensive list!
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -39,7 +70,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 <h3>Auto-Executing an External Command</h3>
 <p>I had an extensive discussion on automatically driving Revit from outside to auto-execute a simple functionality with no user input, originally implemented by an external command.</p>
 <p>Also, a big thank you to all for the numerous congratulations
-on <a href="https://thebuildingcoder.typepad.com/blog/2019/08/11-years-and-revit-api-docs-full-text-search.html#2">The Building Coder's eleventh birthday</a>:</p>
+on <a href="1771_searchable_docs.html#2">The Building Coder's eleventh birthday</a>:</p>
 <ul>
 <li><a href="#2">Auto-executing an external command</a></li>
 <li><a href="#3">Eleventh birthday congratulations</a></li>
@@ -48,7 +79,7 @@ on <a href="https://thebuildingcoder.typepad.com/blog/2019/08/11-years-and-revit
 <p><strong>Question:</strong> I have an external command that I would prefer to execute automatically to avoid the need to manually start up Revit, open the RVT model, and launch the command. How can this be achieved?</p>
 <p><strong>Answer:</strong> Easy to solve, various approaches possible.</p>
 <p>I would suggest starting out by trying to use a journal file as described for
-the <a href="http://thebuildingcoder.typepad.com/blog/2010/07/ifc-import-and-conversion-journal-script.html">IFC import and conversion  script</a>.</p>
+the <a href="0406_ifc_conversion_journal.htm">IFC import and conversion  script</a>.</p>
 <p>Another simple approach is to implement an event handler for the <code>DocumentOpened</code> event and automatically process the document immediately as soon as it is opened.</p>
 <p>Can you provide a short description of the top-level user interaction, the top-level Revit add-in API architecture, and the top-level RVT model context of the functionality you wish to run?</p>
 <ul>
@@ -110,7 +141,7 @@ copy Y.rvt input.rvt
 
 <p>These two lines can be placed into a Windows batch or command file, and the original input filename specified as an argument.</p>
 <p>Besides the IFC conversion example mentioned above, here is another article on various aspects
-of <a href="https://thebuildingcoder.typepad.com/blog/2009/07/journal-file-replay.html">journal file replay</a>.</p>
+of <a href="0174_journal_file_replay.htm">journal file replay</a>.</p>
 <p>You should add some logging output to your external command, so that you have reliable information on whether the processing completed successfully.</p>
 <p>The advantage of this approach is its simplicity.</p>
 <p>The disadvantage is that you start up and close down Revit for each file processed.</p>
@@ -118,9 +149,9 @@ of <a href="https://thebuildingcoder.typepad.com/blog/2009/07/journal-file-repla
 <p>More efficient approaches can easily be implemented inside your add-in code. For instance, you can implement another external command that processes multiple files by reading a text file listing the files to process. It can open them one by one programmatically and launch your process on each by calling a method taking a <code>Document</code> input argument. To prepare for this approach, rewrite your <code>Execute</code> method to extract the document from the command data, and pass that into a <code>Process</code> method taking the <code>Document</code> argument. With these two external commands in place, you have the choice of processing either one single file, the current open document, or an entire list of files, with one single click. </p>
 <p>Since Revit is not built for processing hundreds of files in batch mode, processing will fail sooner or later when working on a large number of files. Therefore, logging your progress is important. If you want the process to be fully automatic, you can implement additional functionality to check that it is still working, kill Revit if it has stopped, and restart again to continue processing whatever remains to be done. This kind of approach is documented in several articles on batch processing:</p>
 <ul>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2014/12/au-ends-and-batch-rendering-across-several-projects.html">Batch rendering across several projects</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2015/08/batch-processing-dwfx-links-and-future-proofing.html#4">Batch processing Revit documents</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/04/batch-processing-and-aspects-of-asstringvalue.html#2">Batch processing Revit families and documents</a></li>
+<li><a href="1255_batch_render.htm">Batch rendering across several projects</a></li>
+<li><a href="1348_batch_dwf_futureproof.htm#4">Batch processing Revit documents</a></li>
+<li><a href="1742_asstringvalue_batch.html#2">Batch processing Revit families and documents</a></li>
 </ul>
 <p><strong>Response:</strong> Sounds good, I'll go ahead with this.
 A few more questions:</p>
@@ -150,7 +181,7 @@ on <a href="https://help.autodesk.com/view/RVT/2020/ENU/?guid=Revit_API_Revit_AP
 <h4><a name="3"></a> Thank you for your Eleventh Birthday Congratulations</h4>
 <p>Thank you very much for the lively response and numerous congratulations on The Building Coder's eleventh birthday!</p>
 <p>Over a hundred LinkedIn reactions and over 4500 views there, over eighteen hundred Twitter impressions, almost a hundred Twitter 'engagements', and more, via other channels:</p>
-<p><a href="https://thebuildingcoder.typepad.com/blog/2019/08/11-years-and-revit-api-docs-full-text-search.html#comment-4588231441">Matt Taylor in a comment</a>:</p>
+<p><a href="1771_searchable_docs.html#comment-4588231441">Matt Taylor in a comment</a>:</p>
 <blockquote>
 <p>Happy birthday TBC!</p>
 </blockquote>
@@ -181,3 +212,11 @@ on <a href="https://help.autodesk.com/view/RVT/2020/ENU/?guid=Revit_API_Revit_AP
 <li>Mehmet Polat Diker: Thank you for opening up the gates of “Revit Api Magic” to all of us!</li>
 <li>Hoss Zamani: Thank you for the consistent support throughout these years Jeremy.</li>
 </ul>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

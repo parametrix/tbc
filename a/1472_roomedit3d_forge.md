@@ -18,11 +18,11 @@ I am still in the initial steps of preparing for my upcoming presentations on co
 ### Forge Webinar Series and Roomedit Starting Points
 
 I am still in the initial steps
-of [preparing for my upcoming presentations on connecting the desktop and the cloud](http://thebuildingcoder.typepad.com/blog/2016/09/roomedit3d-update-for-connecting-desktop-and-forge.html) and
+of [preparing for my upcoming presentations on connecting the desktop and the cloud](1471_roomedit3d_forge.html) and
 exploring more Forge sample starting points.
 
 At the same time, we are in the midst of
-the [Forge and AppStore online hackathon webinars](http://thebuildingcoder.typepad.com/blog/2016/09/forge-and-appstore-online-hackathon-webinars.html) that
+the [Forge and AppStore online hackathon webinars](1467_forge_online_hack.html) that
 I mentioned last week, with one down and nine more to come:
 
 - [More Roomedit3dv3 starting points](#2)

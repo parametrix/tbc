@@ -15,9 +15,9 @@
   https://www.autodesk.com/autodesk-university/class/Automate-Your-Revit-Add-Testing-Unit-Testing-2019
   [RevitTestFramework](https://github.com/DynamoDS/RevitTestFramework)
   evolved out ouf
-  [The Dynamo Revit Unit Test Framework](https://thebuildingcoder.typepad.com/blog/2013/10/the-dynamo-revit-unit-test-framework.html)
+  [The Dynamo Revit Unit Test Framework](1041_dynamo_unit_test.htm)
   and improvements
-  [Revit Unit Test Framework Improvements](http://thebuildingcoder.typepad.com/blog/2018/08/revit-unit-test-framework-improvements.html)
+  [Revit Unit Test Framework Improvements](1674_revittestframework.htmml)
 
   /a/doc/revit/tbc/git/a/zip/AU_SD322279_unit_testing_handout.pdf
   /a/doc/revit/tbc/git/a/zip/AU_SD322279_unit_testing_slides.pdf
@@ -59,7 +59,7 @@ Quick notes on two recent interesting [Revit API discussion forum](http://forums
 #### <a name="2"></a>Unit Testing
 
 We discussed unit testing here a number of times in the past, cf.,
-the [topic group on unit testing](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.16).
+the topic group on unit testing *(link unavailable)*.
 
 The [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 on [unit test for Revit add-in](https://forums.autodesk.com/t5/revit-api-forum/unit-test-for-revit-addin/m-p/9195660) brought
@@ -70,13 +70,13 @@ to [automate your Revit add-in testing with unit testing](https://www.autodesk.c
 
 Its unit testing is based on
 the [RevitTestFramework](https://github.com/DynamoDS/RevitTestFramework) that evolved out
-of [the Dynamo Revit unit test framework](https://thebuildingcoder.typepad.com/blog/2013/10/the-dynamo-revit-unit-test-framework.html)
-an many [subsequent improvements](http://thebuildingcoder.typepad.com/blog/2018/08/revit-unit-test-framework-improvements.html).
+of [the Dynamo Revit unit test framework](1041_dynamo_unit_test.htm)
+an many [subsequent improvements](1674_revittestframework.htmml).
 
 Here are the handout and slides:
 
-- [Handout](https://thebuildingcoder.typepad.com/au/2019/AU_SD322279_unit_testing_handout.pdf) ([^](zip/AU_SD322279_unit_testing_handout.pdf))
-- [Slide deck](https://thebuildingcoder.typepad.com/au/2019/AU_SD322279_unit_testing_slides.pdf) ([^](zip/AU_SD322279_unit_testing_slides.pdf))
+- Handout *(link unavailable)* ([^](zip/AU_SD322279_unit_testing_handout.pdf))
+- Slide deck *(link unavailable)* ([^](zip/AU_SD322279_unit_testing_slides.pdf))
 
 Please refer to the [Autodesk University class material](https://www.autodesk.com/autodesk-university/class/Automate-Your-Revit-Add-Testing-Unit-Testing-2019) for the full video recording.
 
@@ -102,7 +102,7 @@ the [Autodesk.Revit.DB.IFC.ExporterIFCUtils utility class](https://www.revitapid
 That seems like very useful thing to be aware of.
 
 As Rudi the Revitalizer keeps pointing out,
-[the Revit API util classes are often overlooked](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.52).
+the Revit API util classes are often overlooked *(link unavailable)*.
 
 I am always amazed at the  number of unexpected gems hidden in there.
 

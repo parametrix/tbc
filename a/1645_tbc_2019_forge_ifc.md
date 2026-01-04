@@ -44,8 +44,8 @@ I now migrated some of the other basic samples and utilities and have some Forge
 ### Forge RVT to IFC, ADN Xtra, TBC and AdnRme Updates
 
 I already described how I installed Revit 2019,
-[compiled the Revit 2019 SDK samples](http://thebuildingcoder.typepad.com/blog/2018/04/compiling-the-revit-2019-sdk-samples.html)
-and [migrated RevitLookup](http://thebuildingcoder.typepad.com/blog/2018/04/revitlookup-2019-and-new-sdk-samples.html) to
+[compiled the Revit 2019 SDK samples](1643_revit_2019_sdk.html)
+and [migrated RevitLookup](1644_sdk_samples_lookup.html) to
 the new version.
 
 I now migrated some of the other basic samples and utilities and have some Forge news to share:

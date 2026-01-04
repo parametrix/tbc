@@ -9,7 +9,7 @@
 - /a/src/rvt/RevitFindExteriorWalls/
   https://thebuildingcoder.typepad.com/blog/2018/05/filterrule-use-and-retrieving-exterior-walls.html#comment-5289806219
 
-  First round at [Retrieving All Exterior Walls](https://thebuildingcoder.typepad.com/blog/2018/05/drive-revit-via-a-wcf-service-wall-directions-and-parameters.html#8)
+  First round at [Retrieving All Exterior Walls](1652_revit_wcf_service.html#8)
   - using the built-in wall function parameter `FUNCTION_PARAM` to filter for exterior walls, `IsExterior( w.WallType )` returns true
   The Revit API also provides a BuildingEnvelopeAnalyzer class that should help with this, but there seem to be problems using it, cf.:
   - Finding exterior walls by BuildingEnvelopeAnalyzer
@@ -17,7 +17,7 @@
   Yet another workaround was suggested: Place some room separation lines outside the building envelope and create a huge room around the entire building. Then, it’s just a matter of getting room boundaries, filtering out the RSLs, appending the remaining elements to your list, deleting the room and RSLs, and moving up to the next level. It may not work for some bad modelling cases, but catches most.
   After further discussion with the development team, they asked: Is the building model enclosed? It needs to be in order for the analyzer to work. In other words, do you have Roof and Floor elements to form enclosed spaces in the model?
   Ten days later:
-  Several possible approaches to [retrieve all exterior walls](https://thebuildingcoder.typepad.com/blog/2018/05/filterrule-use-and-retrieving-exterior-walls.html#2)
+  Several possible approaches to [retrieve all exterior walls](1656_exterior_walls.html#2)
   Now a discussion between ...
 
 - Get the walls, ceiling and floor of a room?
@@ -70,7 +70,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 
 Let's look at the outer boundaries of both buildings and rooms today;
 note that both of these topics are continued in the subsequent follow-up post
-on [boundary elements](https://thebuildingcoder.typepad.com/blog/2021/03/boundary-elements-and-stirrup-constraints.html):
+on [boundary elements](1896_stirrup_constraint.html):
 
 - [Finding exterior walls continued](#2)
 - [Retrieving room bounding elements](#3)
@@ -79,17 +79,17 @@ on [boundary elements](https://thebuildingcoder.typepad.com/blog/2021/03/boundar
 ####<a name="2"></a> Finding Exterior Walls Continued
 
 We discussed some approaches
-to [retrieve all exterior walls](https://thebuildingcoder.typepad.com/blog/2018/05/drive-revit-via-a-wcf-service-wall-directions-and-parameters.html#8) three years ago using different approaches:
+to [retrieve all exterior walls](1652_revit_wcf_service.html#8) three years ago using different approaches:
 
 - The built-in wall function parameter `FUNCTION_PARAM`, tested by the `IsExterior` API method
 - Using the `BuildingEnvelopeAnalyzer` class
 - Placing room separation lines outside the building envelope and creating a huge room around the entire building
 
 Further aspects were added a week later in a second round
-on [retrieving all exterior walls revisited](https://thebuildingcoder.typepad.com/blog/2018/05/filterrule-use-and-retrieving-exterior-walls.html#2).
+on [retrieving all exterior walls revisited](1656_exterior_walls.html#2).
 
 The discussion now continued between Александр Пекшев or Alexander Pekshev of [ModPlus](https://modplus.org/en) and
-Lucas Moreira in a series of [comments](https://thebuildingcoder.typepad.com/blog/2018/05/filterrule-use-and-retrieving-exterior-walls.html#comment-5289806219)
+Lucas Moreira in a series of [comments](1656_exterior_walls.html#comment-5289806219)
 on that post:
 
 Александр: There is one simple enough algorithm that allows you to find the exterior walls, even in an open loop.

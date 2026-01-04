@@ -45,8 +45,8 @@ of [The Building Coder samples](https://github.com/jeremytammik/the_building_cod
 ### Link in and Analyse IFC File Zones and Spaces
 
 I've been fiddling around a bit lately extracting room and zone information from IFC files, as you may have noticed from my previous discussions
-of [exporting room boundaries to CSV](https://thebuildingcoder.typepad.com/blog/2019/01/room-boundaries-to-csv-and-wpf-template.html)
-and [retrieving linked `IfcZone` elements using Python](https://thebuildingcoder.typepad.com/blog/2019/01/retrieving-linked-ifczone-elements-using-python.html).
+of [exporting room boundaries to CSV](1713_room_boundary_wpf.html)
+and [retrieving linked `IfcZone` elements using Python](1715_list_ifc_zones_py.html).
 
 I now implemented more functionality in this direction, to extract both geometry and relationships, namely the room and zone boundaries as well as the room to zone containment or allocation.
 

@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - a careful analysis by rpthomnas to clarify the effects of rotation and reflection achieved by mirroring and flipping on BIM element transform
@@ -155,31 +186,31 @@ the <a href="http://forums.autodesk.com/t5/revit-api-forum/bd-p/160">Revit API d
 on <a href="https://forums.autodesk.com/t5/revit-api-forum/document-maketransientelements/m-p/7774471"><code>Document.MakeTransientElements</code></a>,
 in case you are interested in taking a further look yourself.</p>
 <p>Just for the sake of completeness, some other officially supported approaches to display non-BIM-geometry
-include <a href="https://thebuildingcoder.typepad.com/blog/avf">AVF</a>,
+include <span class="unavailable-link" title="Original: https://thebuildingcoder.typepad.com/blog/avf">AVF <em>(category page)</em></span>,
 DirectContext3D and, new in Revit 2022, 
 the <a href="#4">temporary incanvas graphics API</a> (below).</p>
 <p>Here are some AVF samples:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/12/using-avf-to-display-intersections-and-highlight-rooms.html">AVF Displays Intersections and Highlights Rooms</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/09/sphere-creation-for-avf-and-filtering.html">Sphere Creation for AVF and Filtering</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/09/apollonian-packing-of-spheres-via-web-service-and-avf.html">Apollonian Sphere Packing via Web Service and AVF</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/03/rvtfader-avf-ray-tracing-and-signal-attenuation.html">RvtFader, AVF, Ray Tracing and Signal Attenuation</a></li>
+<li><a href="0694_avf_hilite_rooms.htm">AVF Displays Intersections and Highlights Rooms</a></li>
+<li><a href="0822_create_sphere.htm">Sphere Creation for AVF and Filtering</a></li>
+<li><a href="0825_apollonian_packing.htm">Apollonian Sphere Packing via Web Service and AVF</a></li>
+<li><a href="1542_avf_intersect_fader.html">RvtFader, AVF, Ray Tracing and Signal Attenuation</a></li>
 </ul>
 
 <p>I have not explored the direct context 3D functionality myself yet, but here are some bits and pieces on that:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/03/revitlookup-enhancements-future-revit-and-other-api-news.html">RevitLookup and DevDays Online API News</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html">What's New in the Revit 2018 API</a>
-&rarr; <a href="https://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html#3.26">DirectContext3D for display of externally managed 3D graphics in Revit</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/05/revit-2017-and-2018-sdk-samples.html">Revit 2017 and 2018 SDK Samples</a>
-&rarr; <a href="https://thebuildingcoder.typepad.com/blog/2017/05/revit-2017-and-2018-sdk-samples.html#4.2">DuplicateGraphics</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2021/01/transient-graphics-humane-ai-basic-income-and-lockdown.html#2">Transient Graphics</a></li>
+<li><a href="1534_revit_api_news.html">RevitLookup and DevDays Online API News</a></li>
+<li><a href="1551_whats_new_2018.html">What's New in the Revit 2018 API</a>
+&rarr; <a href="1551_whats_new_2018.html#3.26">DirectContext3D for display of externally managed 3D graphics in Revit</a></li>
+<li><a href="1560_2018_sdk_samples.html">Revit 2017 and 2018 SDK Samples</a>
+&rarr; <a href="1560_2018_sdk_samples.html#4.2">DuplicateGraphics</a></li>
+<li><a href="1884_transient_graphics.html#2">Transient Graphics</a></li>
 </ul>
 
 <h4><a name="4"></a> Temporary InCanvas Graphics API Video</h4>
 <p>Bobby the <a href="https://www.youtube.com/channel/UCPCZ59KhJ4XrdkHgzmhZXKA/about">3rd Dimension Developer</a> shared a video tutorial on
 making use of
-the new Revit 2022 <a href="https://thebuildingcoder.typepad.com/blog/2021/04/whats-new-in-the-revit-2022-api.html#4.2.8.1">temporary in-canvas graphics</a> functionality in his thread
+the new Revit 2022 <a href="1903_whats_new_2022.html#4.2.8.1">temporary in-canvas graphics</a> functionality in his thread
 on <a href="https://forums.autodesk.com/t5/revit-api-forum/temporary-incanvas-graphics-image-colors/m-p/10318210">temporary incanvas graphics image colors</a></p>
 <blockquote>
 <p>I created a <a href="https://youtu.be/ekLz54hLcHc">video on the awesome new Temporary InCanvas Graphics API</a>.
@@ -198,8 +229,16 @@ What are the rules the images, and colours, we can use in this feature?
 the <a href="http://forums.autodesk.com/t5/revit-api-forum/bd-p/160">Revit API discussion forum</a> thread
 on <a href="https://forums.autodesk.com/t5/revit-api-forum/create-project-parameter-not-shared-parameter/m-p/10335503">creating project parameter (not shared parameter)</a>.</p>
 <h4><a name="6"></a> Direct PDF Export and DA4R</h4>
-<p>The Revit 2022 API provides <a href="https://thebuildingcoder.typepad.com/blog/2021/04/whats-new-in-the-revit-2022-api.html#4.2.3">built-in direct export to PDF functionality</a>.</p>
+<p>The Revit 2022 API provides <a href="1903_whats_new_2022.html#4.2.3">built-in direct export to PDF functionality</a>.</p>
 <p>This new functionality obviously enables
 the <a href="https://forge.autodesk.com/blog/design-automation-revit-2022-now-support-exporting-pdf-directly">Forge Design Automation API for Revit 2022 now to support exporting to PDF directly</a>,
 as documented by my colleague Zhong Wu.</p>
 <p>Thanks to Zhong for testing and pointing this out.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

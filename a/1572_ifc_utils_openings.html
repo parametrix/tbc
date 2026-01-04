@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -6,6 +36,7 @@
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -61,16 +92,16 @@ determine the outer CurveLoop of a window or a door.</p>
 <p>Openings must have an <code>OpeningCut</code> object. If not, <code>GetInstanceCutoutFromWall</code> will fail!</p>
 </blockquote>
 <p>This helps explain some issues people had with this method in the past, and also fits into several existing topic groups, such as use
-of <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.52">the frequently overlooked Revit API utility classes</a> on
+of <span class="unavailable-link">the frequently overlooked Revit API utility classes</span> on
 one hand, determining wall openings in general, gross versus net areas and volumes in particular, on the other:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/01/opening-geometry.html">Opening geometry</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/10/the-temporary-transaction-trick-for-gross-slab-data.html">The temporary transaction trick for gross slab data</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/12/retrieving-wall-openings-and-sorting-points.html">Retrieving wall openings and sorting points</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/12/wall-opening-profiles-and-happy-holidays.html#3">Wall opening profiles</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-opening-areas-per-room.html#4">Determining wall opening areas per room</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/04/more-on-wall-opening-areas-per-room.html">More on wall opening areas per room</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/01/family-category-and-two-energy-model-types.html#3">Two energy model types</a></li>
+<li><a href="0699_opening_geometry.htm">Opening geometry</a></li>
+<li><a href="0851_gross_slab_boundary.htm">The temporary transaction trick for gross slab data</a></li>
+<li><a href="1387_wall_openings.html">Retrieving wall openings and sorting points</a></li>
+<li><a href="1389_wall_opening_profiles.html#3">Wall opening profiles</a></li>
+<li><a href="1423_wall_opening_areas.html#4">Determining wall opening areas per room</a></li>
+<li><a href="1424_wall_opening_areas.html">More on wall opening areas per room</a></li>
+<li><a href="1521_wall_opening_areas.html#3">Two energy model types</a></li>
 </ul>
 <h4><a name="3"></a>Setting Copy Local to False Resolves AddIn Manager Issue</h4>
 <p>Yet another solution provided by Fair59 who suggested setting the <code>Copy Local</code> flag to <code>false</code> to resolve an issue with 
@@ -86,5 +117,13 @@ the <a href="https://forums.autodesk.com/t5/revit-api-forum/addin-manager-how-to
 </center></p>
 <p>Many thanks to Fair59 for this solution and important note in general.</p>
 <p>We have in fact pointed out the need
-to <a href="http://thebuildingcoder.typepad.com/blog/2011/08/set-copy-local-to-false.html">set <code>Copy Local</code> to <code>false</code></a> numerous
+to <a href="0634_copy_local_false.htm">set <code>Copy Local</code> to <code>false</code></a> numerous
 times in the past...</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

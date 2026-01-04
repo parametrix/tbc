@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 ﻿<head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Melbourne Day Two</h3>
@@ -235,7 +266,7 @@ We can achieve this by implementing an XYZ equality comparer, e.g. like this:
 
 <p>As an almost-equal tolerance we are using a rather large value, because Revit uses this pretty rough number in several places itself, e.g. to limit the limit the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/07/think-big-in-revit.html">
+<a href="0176_think_big.htm">
 minimum line length</a>.
 
 <p>You must be careful to also define a hash code that does not return different values for points that you wish to compare equal, or every single point will be considered different, possibly even when a point is compared with itself.
@@ -288,19 +319,19 @@ I already presented the fundamentals for handling this when looking at
 
 -->
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/nested-instance-geometry.html">
+<a href="0134_nested_instance_geo.htm">
 nested instance geometry</a>, 
 
 which also implements a GetVertices method similar to the above,
 
 and reused it for 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/03/toposurface-interior-and-boundary-points.html">
+<a href="0556_toposurf_points.htm">
 toposurface point classification</a> and
 
 accessing the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/07/top-faces-of-wall.html">
+<a href="0620_top_faces_of_wall.htm">
 top faces</a> of
 
 a sloped wall.
@@ -335,12 +366,12 @@ this topic, which says it all:
 <p>Long overdue, I finally updated the RstLink sample for Revit 2012 and AutoCAD 2012. 
 I provided a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/revit-structure-resources.html">
+<a href="0117_rst_resources.htm">
 brief description of the analytical link sample</a> two 
 
 years ago, and updated the sample last year for 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/03/structural-analysis-links-to-revit-structure.html">
+<a href="0545_rst_link_apps.htm">
 Revit Structure 2011</a>.
 
 Now here is 
@@ -374,12 +405,12 @@ Now here is
 
 <p>Finally, to wrap up this information overflow, Victor Chekalin, or Виктор Чекалин, offered a very useful and interesting 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/revit-parent-window.html?cid=6a00e553e1689788330163030f0ea6970d#comment-6a00e553e1689788330163030f0ea6970d">
+<a href="0400_revit_parent_window.htm">
 suggestion</a> for 
 
 a new and easier way to obtain the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/revit-parent-window.html">
+<a href="0400_revit_parent_window.htm">
 Revit parent window</a>:
 
 <ol>
@@ -398,12 +429,12 @@ Revit parent window</a>:
 
 <p>Rudolf Honke 
 
-<a href="">
+<a href=">
 commented</a> on 
 
 the approach I suggested to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/determine-revit-demo-mode.html">
+<a href="0735_demo_mode.htm">
 determine-revit-demo-mode</a> and
 
 proposed using the OptionalFunctionalityUtils IsDWGExportAvailable method instead of using my much more complex try-catch method.
@@ -413,3 +444,12 @@ The DWG export requires presence of certain modules that are optional and may no
 -->
 
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

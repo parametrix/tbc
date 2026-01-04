@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <title>The Building Coder</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" type="text/css" href="3dwc.css"/>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true" defer="defer"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -34,7 +65,7 @@ Topics for today
 </ul>
 <h4><a name="2"></a>How Does Code Signing of Revit Add-Ins Increase Security?</h4>
 <p>I talked about
-the <a href="http://thebuildingcoder.typepad.com/blog/2016/08/trusted-signature-and-updated-revit-2017-api-resources.html#2">trusted add-in signature</a> requirement 
+the <a href="1462_trust_sign_2017_update.html#2">trusted add-in signature</a> requirement 
 introduced with the Revit 2017 API last week.</p>
 <p>Neil Smithline, Revit Software Security Architect, added an in-depth explanation on why this requirement was introduced at all, answering a new question from Ken on
 the <a href="http://forums.autodesk.com/t5/revit-api/bd-p/160">Revit API discussion forum</a> thread
@@ -70,9 +101,9 @@ I also happened to produce an more general answer on how to search for help on a
 <p><strong>Answer:</strong> Well, you did not look carefully enough &nbsp; :-)</p>
 <p>I performed a simple Internet search for "Revit API LoadCaseArray". </p>
 <p>One of the first hits is The Building Coder article
-on <a href="http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html">What's New in the Revit 2017 API</a>.</p>
+on <a href="1428_whats_new_2017.html">What's New in the Revit 2017 API</a>.</p>
 <p>Searching that for <code>LoadCaseArray</code>, you first see it listed in the section
-on <a href="http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html#2.22">Obsolete API removal</a>.</p>
+on <a href="1428_whats_new_2017.html#2.22">Obsolete API removal</a>.</p>
 <p>It does not refer to the <code>LoadCaseArray</code> class, though, but the <code>NewLoadCombination</code> method that was previously using it.</p>
 <p>Another hit is the
 old <a href="http://revitapisearch.com/html/b956962a-5802-cca1-e806-cc0461fac741.htm">online Revit 2014 API documentation entry for <code>LoadCaseArray</code></a>.</p>
@@ -84,7 +115,7 @@ old <a href="http://revitapisearch.com/html/b956962a-5802-cca1-e806-cc0461fac741
 <p><code>NewLoadCombination</code>?</p>
 <p>What argument does it take?</p>
 <p>I performed a new Internet search for "Revit API NewLoadCombination", which turns up The Building Coder article
-on <a href="http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html">What's New in the Revit 2016 API</a>.</p>
+on <a href="1311_whats_new_2016.htm">What's New in the Revit 2016 API</a>.</p>
 <p>It includes this section:</p>
 <h4><a name="4"></a>Load cases and load combinations</h4>
 <p>The Revit API classes related to Load Cases and Load Combinations have been significantly renovated. This has introduced new members to the LoadCombnation, LoadCase, LoadNature and LoadUsage classes, and resulted in several previously existing member being marked deprecated and replaced, as shown in this table:</p>
@@ -104,7 +135,7 @@ on <a href="http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-re
 <li>Revit SDK samples, provided in the <a href="http://www.autodesk.com/developrevit">Revit developer centre</a>, to see how to solve specific tasks.</li>
 </ol>
 <p>In this case, I see lots of results searching the Revit SDK samples for <code>LoadCombination</code>.</p>
-<p>I much more hope that you are not only fed, but also in the process of being <a href="http://thebuildingcoder.typepad.com/blog/2009/02/creating-a-group-and-how-to-fish.html">transformed into a competent fisherman</a> &nbsp; :-)</p>
+<p>I much more hope that you are not only fed, but also in the process of being <a href="0089_create_group.htm">transformed into a competent fisherman</a> &nbsp; :-)</p>
 <p>Good luck with your further searches.</p>
 <p><center>
 <img src="img/fishhook.jpg" alt="Stone Age fish hook made from bone" width="100">
@@ -113,3 +144,11 @@ on <a href="http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-re
 <h4><a name="5">Dynamo 1.1 Update</a></h4>
 <p>Finally, to close for today, let me just point out that Autodesk released the <a href="http://architosh.com/2016/08/autodesk-releases-dynamo-1-1-update-for-computational-design">Dynamo 1.1 Update for Computational Design</a>.</p>
 <p>Have fun!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

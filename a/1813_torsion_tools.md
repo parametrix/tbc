@@ -181,10 +181,10 @@ I see no problem, and only one obvious answer: grab the geometry from the model 
 Retrieving the solid geometry from an element and querying its volume is an operation that the Forge Design Automation for Revit will support.
 Several discussions by The Building Coder deal with determining areas and volumes of BIM elements using the desktop Revit API, e.g.:
 
-- [Calculating gross and net wall areas](https://thebuildingcoder.typepad.com/blog/2015/03/calculating-gross-and-net-wall-areas.html)
-- [Gross and net wall area calculation enhancement](https://thebuildingcoder.typepad.com/blog/2015/04/gross-and-net-wall-area-calculation-enhancement-and-events.html)
+- [Calculating gross and net wall areas](1296_spatial_calculator.htm)
+- [Gross and net wall area calculation enhancement](1309_spatial_calculator.htm)
  
-The same processing can also be performed in [Forge Design Automation for Revit (DA4R)](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55).
+The same processing can also be performed in Forge Design Automation for Revit (DA4R) *(link unavailable)*.
 
 <center>
 <img src="img/steel_frame.jpg" alt="Steel frame" title="Steel frame" width="400"/> <!-- 800 -->

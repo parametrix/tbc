@@ -123,10 +123,10 @@ the [DirectShapeFromFace](https://github.com/jeremytammik/DirectShapeFromFace) a
 It  creates a `DirectShape` element from a selected element face.
 
 We initially discussed it in 2015, in the article
-on [DirectShape From Face and Sketch Plane Reuse](http://thebuildingcoder.typepad.com/blog/2015/09/directshape-from-face-and-sketch-plane-reuse.html).
+on [DirectShape From Face and Sketch Plane Reuse](1355_directshape_face.html).
 
 It demonstrates several approaches, including
-a [simpler access to the picked face using `GetTotalTransform`](http://thebuildingcoder.typepad.com/blog/2015/09/simpler-directshape-from-face-restsharp-put-and-post.html#2).
+a [simpler access to the picked face using `GetTotalTransform`](1357_directshape_simple.html#2).
 
 Now I migrated it from Revit 2016 to Revit 2018, replacing a couple of obsolete API calls.
 
@@ -145,9 +145,9 @@ It takes about 4 minutes to create a family in this manner.
 
 **Answer:** Depending on the kind of geometry you want to create, you might be able to use a `DirectShape` element instead:
 
-- [DirectShape performance and minimum size](http://thebuildingcoder.typepad.com/blog/2014/05/directshape-performance-and-minimum-size.html)
-- [DirectShape versus families, category and texture](http://thebuildingcoder.typepad.com/blog/2014/11/directshape-versus-families-category-and-texture.html)
-- [From Hack to App &ndash; OBJ Mesh Import to DirectShape](http://thebuildingcoder.typepad.com/blog/2015/02/from-hack-to-app-obj-mesh-import-to-directshape.html)
+- [DirectShape performance and minimum size](1154_directshape_min_size.htm)
+- [DirectShape versus families, category and texture](1239_directshape.htm)
+- [From Hack to App &ndash; OBJ Mesh Import to DirectShape](1283_directobjloader.htm)
 
 
 ####<a name="4"></a>Create DirectShape Instead of Conceptual Mass
@@ -157,7 +157,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 on [creating a surface through Revit API](http://forums.autodesk.com/t5/revit-api/create-a-surface-through-revit-api/m-p/5867952) suggests
 using a `DirectShape` instead of a conceptual mass element and also introduces
 the new topic group #5.50 dedicated to
-the [`DirectShape` element](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.50).
+the `DirectShape` element *(link unavailable)*.
 
 
 ####<a name="5"></a>Create Surface from Face
@@ -227,11 +227,11 @@ So, I can conclude that the color is stored somewhere within these `DirectShape`
 **Answer:** The best way to control the colour of a direct shape element is probably by setting an appropriate category or subcategory on it.
  
 As you presumably know, there
-are [many ways to control the material and colour of a Revit element](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.24)
+are many ways to control the material and colour of a Revit element *(link unavailable)*
  
 If you prefer setting the colour explicitly, you can look at
  
-- [Change element colour](http://thebuildingcoder.typepad.com/blog/2011/03/change-element-colour.html)
+- [Change element colour](0561_change_element_colour.htm)
 - [How to change the colour of an element](https://forums.autodesk.com/t5/revit-api-forum/how-change-the-color-a-element/td-p/5651177)
  
 Here is some code for that using `OverrideGraphicSettings`
@@ -311,7 +311,7 @@ More info and source in this GitHub issue:
  
 Last reading:
 
-- [2D polygon areas and outer loop](http://thebuildingcoder.typepad.com/blog/2008/12/2d-polygon-areas-and-outer-loop.html)
+- [2D polygon areas and outer loop](0053_2d_polygon_area_outer_loop.htm)
 - [Create mass from room](http://forums.autodesk.com/t5/revit-api-forum/create-mass-from-room/td-p/3674458)
  
 Many thanks for help!
@@ -340,7 +340,7 @@ This is demonstrated very effectively by
 the [2D room editor](https://github.com/jeremytammik/RoomEditorApp),
 which retrieves this information, converts it to a simplified 2D view in SVG, and displays the room outline in a web browser:
  
-Here is a [demo recording and lots of other supporting material](http://thebuildingcoder.typepad.com/blog/2016/10/connecting-desktop-and-cloud-at-rtc-material.html).
+Here is a [demo recording and lots of other supporting material](1487_roomedit3d_material.html).
  
 If you want a 3D direct shape instead of a 2D flat version, you will obviously need to determine the ceiling height and location and take that into account as well.
  
@@ -370,13 +370,13 @@ ExporterIFCUtils.ValidateCurveLoops. Maybe. The Edge.AsCurveFollowingFace method
  
 For the former, here is some more reading material:
  
-- [2D Polygon Areas and Outer Loop](http://thebuildingcoder.typepad.com/blog/2008/12/2d-polygon-areas-and-outer-loop.html)
-- [Curve Following Face and Bounding Box Implementation](http://thebuildingcoder.typepad.com/blog/2013/03/sort-and-orient-curves-to-form-a-contiguous-loop.html)
-- [Retrieving Plan View Room Boundary Polygon Loops](http://thebuildingcoder.typepad.com/blog/2013/03/revit-2014-api-and-room-plan-view-boundary-polygon-loops.html#3)
-- [Extrusion Analyser and Plan View Boundaries](http://thebuildingcoder.typepad.com/blog/2013/04/extrusion-analyser-and-plan-view-boundaries.html)
-- [Room and Furniture Loops Using Symbols](http://thebuildingcoder.typepad.com/blog/2013/04/room-and-furniture-loops-using-symbols.html)
+- [2D Polygon Areas and Outer Loop](0053_2d_polygon_area_outer_loop.htm)
+- [Curve Following Face and Bounding Box Implementation](0918_contiguous_curves.htm)
+- [Retrieving Plan View Room Boundary Polygon Loops](0916_2014_api_room_loops.htm#3)
+- [Extrusion Analyser and Plan View Boundaries](0921_extrusion_analyser.htm)
+- [Room and Furniture Loops Using Symbols](0936_room_loops_symbols.htm)
 - [ContiguousCurveSorter](ttps://github.com/jeremytammik/RoomEditorApp/blob/master/RoomEditorApp/ContiguousCurveSorter.cs)
-- [Sorting Face Loop Edges](http://thebuildingcoder.typepad.com/blog/2015/01/autodesk-internship-in-california-and-sorting-edges.html#3)
+- [Sorting Face Loop Edges](1267_intern_sort_edges.htm#3)
  
 I have explored and written lots more on this topic, as you can see if you follow the various links in the discussions listed above.
  

@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <style type="text/css">
@@ -15,6 +45,7 @@ td.j571
   text-align: right;
 }
 </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -36,18 +67,18 @@ td.j571
 
 <p>The first time around, we discussed the Revit 2010 and previous versions' 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/revit-install-path-and-product-guids.html">
+<a href="0102_revit_path_guid.htm">
 installation path and product GUIDs</a>, 
 
 and then updated the list for 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/revit-2011-product-guids.html">
+<a href="0331_revit_2011_guids.htm">
 Revit 2011</a> last year.
 
 <p>As I mentioned last time, the install path is less of an issue nowadays.
 There is no longer any need to determine the location of Revit.ini to install an add-in, because you have to use an 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/08/network-access-to-add-in-manifest-and-icons.html">
+<a href="0434_addin_manifest_folder.htm">
 add-in manifest</a> to 
 
 inform Revit how to load your add-in instead.
@@ -61,14 +92,14 @@ respectively: "It's safest to place assemblies at a location beneath the calling
 
 <p>Another way to determine the Revit install location is to use the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/revitaddinutility.html">
+<a href="0336_addinutility.htm">
 RevitAddInUtility</a>.
 
 It provides an API for an installer to query the Revit installation location, i.e. the path of Revit.exe, and also to generate an add-in manifest file from the relevant properties you specify.
 
 <p>In Revit 2011, there was an issue with using the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/revitaddinutility-for-32-and-64-bit-systems.html">
+<a href="0369_addinutility_32_64_bit.htm">
 RevitAddInUtility for 64 bits</a>.
 
 That is resolved in Revit 2012, and the same assembly DLL should work transparently on all flavours of Windows now.
@@ -201,3 +232,12 @@ It uses the hexadecimal LCID, which I assume stands for language code identifier
 </dl>
 
 <p>These Revit product keys and the corresponding 64 bit ones produced the data that I added to the GUID table above.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

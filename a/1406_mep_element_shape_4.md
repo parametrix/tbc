@@ -113,15 +113,15 @@ The solution now is really simple, since the introduction of the ElementType.Fam
 
 This used to be a pretty hard question, once upon a time, and several different approaches could be taken, e.g. geometrical analysis, as you can see from these previous discussions:
 
-- [Distinguishing MEP Element Shape](http://thebuildingcoder.typepad.com/blog/2011/03/distinguishing-mep-element-shape.html)
-- [Improved MEP Element Shape](http://thebuildingcoder.typepad.com/blog/2011/05/improved-mep-element-shape-and-mount-ararat.html)
+- [Distinguishing MEP Element Shape](0554_mep_element_shape.htm)
+- [Improved MEP Element Shape](0578_mep_element_shape_2.htm)
 
 Another way to achieve this is to open the duct fitting family and query the DuctConnector element for its Shape property, as explained by Joe Ye
 in [how to get the duct section shape for duct type object](http://adndevblog.typepad.com/aec/2013/03/how-to-get-the-duct-section-shape-for-duct-type-object.html).
 
 Unfortunately, opening the family is quite a costly operation.
 
-From Revit 2015 onwards, the simplest an most effective method to achieve what you need is to query the [ElementType.FamilyName property](http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html#4.05).
+From Revit 2015 onwards, the simplest an most effective method to achieve what you need is to query the [ElementType.FamilyName property](1141_whats_new_2015.htm#4.05).
 
 In your case, that might look like this:
 

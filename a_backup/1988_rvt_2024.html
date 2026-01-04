@@ -1,0 +1,239 @@
+<p><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="bc.css"></p>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+<p></head></p>
+<!---
+
+twitter:
+
+Revit 2024 released and RevitLookup 2024 enhanced with new UI, Windows 11 support, context menu, tooltips, searchbar, new core, extensions, extended storage, snooping points, edges, faces, solids, usability features for the @AutodeskRevit #BIM #RevitAPI @DynamoBIM @AutodeskAPS
+
+Revit 2024 released and RevitLookup 2024 enhanced with new UI, Windows 11 support, new core, extensability and usability features
+&ndash; Brand-new user interface
+&ndash; Themes
+&ndash; Extended context menu
+&ndash; Tooltips
+&ndash; Snoop Selection on Modify tab
+&ndash; Smooth navigation
+&ndash; Windows 11 Mica effect and Snap Layouts
+&ndash; Searchbar
+&ndash; Brand-new Engine core
+&ndash; Extensions
+&ndash; Display all methods
+&ndash; Generic names support
+&ndash; Methods overloads
+&ndash; Extensible storage
+&ndash; Extending Functionality
+&ndash; Snoop Point, Sub-Element, UI Application
+&ndash; Component manager
+&ndash; PerformanceAdviser
+&ndash; Registry research: schemas, services, updaters
+&ndash; Explore built-in and APS (formerly Forge) units
+&ndash; Event monitor
+&ndash; Reworked search
+&ndash; Visual search in a project
+&ndash; OTA update
+&ndash; RevitLookup ideas
+&ndash; Vote: Where would you like to snoop? ...
+
+linkedin:
+
+Revit 2024 has been released, including the Revit 2024 SDK, and so has RevitLookup 2024 for the #RevitAPI
+
+https://autode.sk/revitlookup2024
+
+#bim #DynamoBim #ForgeDevCon #Revit #API #IFC #SDK #AI #VisualStudio #Autodesk #AEC #adsk
+
+the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
+
+<center>
+<img src="img/" alt="" title="" width="600"/>
+<p style="font-size: 80%; font-style:italic"></p>
+</center>
+
+-->
+
+<h3>Revit 2024 and RevitLookup 2024</h3>
+<p><a href="https://blogs.autodesk.com/revit/2023/04/04/whats-new-in-autodesk-revit-2024/">Revit 2024 was released this week</a>.</p>
+<p>Further improving on last year's ground-breaking speed record,
+Roman <a href="https://github.com/Nice3point">Nice3point</a> was prepared well in advance to
+release the corresponding <a href="https://github.com/jeremytammik/RevitLookup">RevitLookup</a>
+<a href="https://github.com/jeremytammik/RevitLookup/releases/tag/2024.0.0">2024 update</a>:</p>
+<!-- https://github.com/jeremytammik/RevitLookup/releases/edit/2024.0.0 -->
+
+<div align="center">
+<img alt="RevitLookup" width="300" src="img/RevitLookup2024_01.png"/>
+</div>
+
+<p>In this release, the entire code base has been completely rewritten from scratch with a redesigned user interface.
+New tools, OTA update, Windows 11 support!</p>
+<p>Here is an overview of the enhancements:</p>
+<ul>
+<li><a href="#2">UI</a><ul>
+<li>A brand-new user interface</li>
+<li>Themes</li>
+<li>Extended context menu</li>
+<li>Tooltips</li>
+<li>Snoop Selection on Modify tab</li>
+<li>Smooth navigation</li>
+<li>Windows 11 Mica effect support</li>
+<li>Windows 11 Snap Layouts support</li>
+<li>Accent colour synced with OS</li>
+<li>New logo</li>
+<li>Searchbar</li>
+</ul>
+</li>
+<li><a href="#3">Engine</a><ul>
+<li>A brand-new core</li>
+<li>Extensions</li>
+<li>Display all methods</li>
+<li>Generic names support</li>
+<li>Multiple results for methods with overloads</li>
+<li>Extensible storage moved to the <code>GetEntity()</code> method</li>
+<li>Extending Functionality</li>
+</ul>
+</li>
+<li><a href="#4">New features</a><ul>
+<li>Snoop Point</li>
+<li>Snoop Sub-Element</li>
+<li>Snoop UI Application</li>
+<li>Component manager</li>
+<li>PerformanceAdviser on document performance</li>
+<li>Registry research: schemas, services, updaters</li>
+<li>Explore built-in and APS (formerly Forge) units</li>
+<li>Event monitor</li>
+<li>Reworked search</li>
+<li>Visual search in a project</li>
+<li>OTA update</li>
+</ul>
+</li>
+<li><a href="#5">RevitLookup ideas</a></li>
+<li><a href="#6">Where would you like to snoop?</a></li>
+</ul>
+<h4><a name="2"></a> UI</h4>
+<h5>A brand-new user interface</h5>
+<p><img alt="image" src="img/RevitLookup2024_02.png" /></p>
+<h5>Themes</h5>
+<p><img alt="image" src="img/RevitLookup2024_03.png" /></p>
+<h5>Extended context menu</h5>
+<p><img alt="image" src="img/RevitLookup2024_04.png" /></p>
+<p>Wiki page: <a href="https://github.com/jeremytammik/RevitLookup/wiki/Context-actions">Context actions</a></p>
+<h5>Tooltips</h5>
+<p><img alt="image" src="img/RevitLookup2024_05.png" /></p>
+<h5>Snoop Selection on Modify tab</h5>
+<p>The Snoop Selection button has been moved to the Modify tab:</p>
+<p><img alt="image" src="img/RevitLookup2024_06.png" /></p>
+<h5>Smooth navigation</h5>
+<p>Enable acceleration in Revit settings if you are having trouble with this option:</p>
+<p><img alt="image" src="img/RevitLookup2024_07.png" /></p>
+<h5>Windows 11 Mica effect support</h5>
+<h5>Windows 11 Snap Layouts support</h5>
+<p><img alt="image" src="img/RevitLookup2024_08.png" /></p>
+<h5>Accent colour synced with OS</h5>
+<p><img alt="image" src="img/RevitLookup2024_09.png" /></p>
+<h5>New logo</h5>
+<h5>Searchbar</h5>
+<p>Focus is triggered by pressing any key on the keyboard:</p>
+<h4><a name="3"></a>  Engine</h4>
+<h5>A brand-new core</h5>
+<h5>Extensions</h5>
+<p>Support new methods from the API and other libraries:</p>
+<p><img alt="image" src="img/RevitLookup2024_10.png" /></p>
+<p><a href="https://github.com/jeremytammik/RevitLookup/wiki/Extensions">Available Extensions</a></p>
+<h5>Display all methods</h5>
+<p>Displaying all methods that objects have, even if RevitLookup does not support them:</p>
+<p><img alt="image" src="img/RevitLookup2024_11.png" /></p>
+<p><img alt="image" src="img/RevitLookup2024_12.png" /></p>
+<h5>Generic names support</h5>
+<style> th, td { padding-right: 1em; } </style>
+
+<table>
+<tr><td>Before</td><td>Now</td></tr>
+<tr><td><img src="img/RevitLookup2024_13.png"/></td><td><img src="img/RevitLookup2024_14.png"/></td></tr>
+</table>
+
+<h5>Multiple results for methods with overloads</h5>
+<p><img alt="image" src="img/RevitLookup2024_15.png" /></p>
+<h5>Extensible storage moved to the <code>GetEntity()</code> method</h5>
+<h5>Extending Functionality</h5>
+<p>Adding new features and extending the functionality of RevitLookup just got easier;
+<a href="https://github.com/jeremytammik/RevitLookup/blob/dev/Contributing.md#architecture">check out the Developer's Guide</a>.</p>
+<h4><a name="4"></a>  New features</h4>
+<h5>Snoop Point</h5>
+<h5>Snoop Sub-Element</h5>
+<h5>Snoop UI Application</h5>
+<h5>Component manager</h5>
+<p>Explore <code>AdWindows.dll</code> and learn how the ribbon and user interface in Revit are arranged.</p>
+<p><img alt="image" src="img/RevitLookup2024_16.png" /></p>
+<h5>PerformanceAdviser on document performance</h5>
+<p><code>PerformanceAdviser</code> to Explore document performance issues.</p>
+<h5>Registry research: schemas, services, updaters</h5>
+<h5>Explore built-in and APS (formerly Forge) units</h5>
+<p><img alt="image" src="img/RevitLookup2024_17.png" /></p>
+<h5>Event monitor</h5>
+<p>Track all incoming events.
+Events from the <code>RevitAPI.dll</code> and <code>RevitAPIUI.dll</code> libraries are available.
+The search bar is used to filter results:</p>
+<p><img alt="image" src="img/RevitLookup2024_18.png" /></p>
+<h5>Reworked search</h5>
+<p>Now you can search for multiple values by <code>Name</code>, <code>Id</code>, <code>UniqueId</code>, <code>IfcGUID</code> and <code>Type IfcGUID</code> parameters:</p>
+<p><img alt="image" src="img/RevitLookup2024_19.png" /></p>
+<p>Wiki page: <a href="https://github.com/jeremytammik/RevitLookup/wiki/Search-elements">Search elements</a></p>
+<h5>Visual search in a project</h5>
+<p>Showing elements:</p>
+<p><img alt="image" src="img/RevitLookup2024_20.png" /></p>
+<p>Showing faces (Revit 2023 or higher):</p>
+<p><img alt="image" src="img/RevitLookup2024_21.png" /></p>
+<p>Showing solids (Revit 2023 or higher):</p>
+<p><img alt="image" src="img/RevitLookup2024_22.png" /></p>
+<p>Showing edges (Revit 2023 or higher):</p>
+<p><img alt="image" src="img/RevitLookup2024_23.png" /></p>
+<h5>OTA update</h5>
+<p>The RevitLookup update is now available directly from the plugin:</p>
+<p><img alt="image" src="img/RevitLookup2024_24.png" /></p>
+<p>Designed &amp; Developed by <a href="https://github.com/Nice3point">Nice3point</a> 🕊</p>
+<p>Ever so many thanks to Roman <a href="https://github.com/Nice3point">Nice3point</a> for his tremendous work!</p>
+<!--
+
+Revit 2024 has been released, which means it's time to update RevitLookup!
+
+All new features will now be released for versions 2022 and 2024.
+
+Also updated: all additional components for developers:
+
+- Official Autodesk [Revit SDK](https://www.autodesk.com/developer-network/platform-technologies/revit)
+- [Nice3point Revit libraries](https://github.com/Nice3point/RevitApi)
+- [Nice3point Revit add-in templates](https://github.com/Nice3point/RevitTemplates)
+- [Nice3point Revit extensions](https://github.com/Nice3point/RevitExtensions)
+
+For further details, you can check out:
+
+- The online help page
+on [What's New in Revit 2024](https://help.autodesk.com/view/RVT/2024/ENU/?guid=GUID-C81929D7-02CB-4BF7-A637-9B98EC9EB38B)
+- The blog post
+on [What’s New in Autodesk Revit 2024](https://blogs.autodesk.com/revit/2022/04/05/whats-new-in-revit-2024/)
+- Register to the AEC Collection Essentials webinar
+on [What's New in Revit 2024](https://www.autodesk.com/webinars/aec/aec-collection-revit-2024) next week,
+April 12
+
+
+<center>
+<img src="img/rvt_2024_whats_new.png" alt="Revit 2024" title="Revit 2024" width="600"/>
+</center>
+
+-->
+
+<h4><a name="5"></a> RevitLookup Ideas</h4>
+<p>Check out
+the <a href="https://github.com/jeremytammik/RevitLookup/discussions">RevitLookup discussions page</a>
+aka <a href="https://github.com/jeremytammik/RevitLookup/discussions">RevitLookup Ideas</a>
+to discuss your RevitLookup wishes and dreams with the developer community.</p>
+<p>Here is one of the open discussions including a poll asking for your preference:</p>
+<h4><a name="6"></a> Where would you like to Snoop?</h4>
+<p>Discussion about
+the <a href="https://github.com/jeremytammik/RevitLookup/discussions/151">Snoop Selection button placement &#35;151</a>:</p>
+<p>What do you think of the new location of the "Snoop Selection" button?
+How do you feel about it and what is your opinion on it, should it be kept or made optional?
+The idea is that Revit automatically opens "Modify" tab, making the Snoop button available at all times.</p>
+<p><a href="https://github.com/jeremytammik/RevitLookup/discussions/151">Please vote</a>!</p>

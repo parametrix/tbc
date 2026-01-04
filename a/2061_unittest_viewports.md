@@ -168,7 +168,7 @@ Interesting times indeed.
 ####<a name="3"></a> Back Again and Winding Up
 
 As I mentioned in November,
-[my retirement is nearing](https://thebuildingcoder.typepad.com/blog/2024/11/devcon-ai-for-revit-api-modeless-add-ins-leave.html#3)
+[my retirement is nearing](2060_modeless_tutor.html#3)
 and I took time off in the past two months.
 
 I am back again now and thinking about how to wind up my activities before retiring towards the middle of the year.
@@ -481,8 +481,8 @@ that [some language reward models exhibit political bias](https://news.mit.edu/2
 ####<a name="15"></a> Mind-Reading Potential of AI
 
 Many groups are researching different ways of using deep learning to interpret human brain signals, cf.,
-[recreate Pink Floyd from brain activity](https://thebuildingcoder.typepad.com/blog/2023/08/15-years-polygon-areas-and-net-core.html#6)
-and [read your thoughts](https://thebuildingcoder.typepad.com/blog/2023/05/dark-icons-newfamilyinstance-and-ai-news.html#6).
+[recreate Pink Floyd from brain activity](2005_net_core.html#6)
+and [read your thoughts](1993_dark_icon.html#6).
 Here is a TED presentation
 on [the mind-reading potential of AI](https://www.ted.com/talks/chin_teng_lin_the_mind_reading_potential_of_ai).
 

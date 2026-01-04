@@ -109,7 +109,7 @@ also reproduced [below](#4).
 
 <!--
 Please note that this is unrelated
-to [the recent RevitLookup hotfix 2025.0.1](https://thebuildingcoder.typepad.com/blog/2024/04/revitlookup-hotfix-and-the-revit-2025-sdk.html#2).
+to [the recent RevitLookup hotfix 2025.0.1](2034_sdk_2025.html#2).
 -->
 
 The dependency isolation is available starting with Revit 2025.

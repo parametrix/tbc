@@ -41,7 +41,7 @@ In a rather simplified manner, it calculates and displays signal attenuation cau
 
 That provided an opportunity for me to dive in again into two very interesting pieces of Revit API functionality:
 
-- [AVF, the Analysis Visualisation Framework](http://thebuildingcoder.typepad.com/blog/avf), for displaying graphical data in a transient manner directly in the BIM.
+- AVF, the Analysis Visualisation Framework *(link unavailable)*, for displaying graphical data in a transient manner directly in the BIM.
 - The `ReferenceIntersector` ray tracing functionality to detect walls and other obstacles between two points.
 
 In the course of implementing the AVF part of things, I also resuscitated my trusty
@@ -75,7 +75,7 @@ Back to `RvtFader`, though:
 #### <a name="3"></a> RvtFader
 
 RvtFader is a Revit C# .NET API add-in to calculate and display signal attenuation using 
-the [analysis visualisation framework](http://thebuildingcoder.typepad.com/blog/avf) AVF
+the analysis visualisation framework *(link unavailable)* AVF
 and `ReferenceIntersector` ray tracing.
 
 <center>
@@ -112,9 +112,9 @@ To achieve this task, RvtFader implements the following:
 
 Summary of the steps towards achieving this:
 
-- Skeleton add-in using the [Visual Studio Revit Add-In Wizards](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20).
+- Skeleton add-in using the Visual Studio Revit Add-In Wizards *(link unavailable)*.
 - External command for the settings user interface displaying a Windows form and storing data in JSON as developed for
-the [HoloLens escape path waypoint JSON exporter](http://thebuildingcoder.typepad.com/blog/2016/09/hololens-escape-path-waypoint-json-exporter.html):
+the [HoloLens escape path waypoint JSON exporter](1468_hololens_exitpath.html):
     - Display modal Windows form.
     - Implement form validation using `ErrorProvider` class, `Validating` and `Validated` events.
     - Store add-in option settings in JSON using the `JavaScriptSerializer` class.
@@ -147,12 +147,12 @@ and [commits](https://github.com/jeremytammik/RvtFader/commits).
     - An introduction to AVF programming basics is provided by Matt Mason's Autodesk University
 class [CP5229 Seeing Data and More &ndash; The Analysis Visualization Framework](http://aucache.autodesk.com/au2011/sessions/5229/class_handouts/v1_CP5229-SeeingDataAndMore-TheAVFinRevitAPI.pdf)
 ([^](doc/cp5229_matt_mason_avf.pdf))
-    - [Discussion of AVF by The Building Coder](http://thebuildingcoder.typepad.com/blog/avf)
+    - Discussion of AVF by The Building Coder *(link unavailable)*
 - **`ReferenceIntersector` ray tracing**:
-    - The `ReferenceIntersector` was previously named [`FindReferencesByDirection`](http://thebuildingcoder.typepad.com/blog/2010/01/findreferencesbydirection.html)
-    - [Dimension walls using `FindReferencesByDirection`](http://thebuildingcoder.typepad.com/blog/2011/02/dimension-walls-using-findreferencesbydirection.html)
-    - [Intersect Solid Filter, AVF vs DirectShape Debugging](http://thebuildingcoder.typepad.com/blog/2015/07/intersect-solid-filter-avf-and-directshape-for-debugging.html)
-    - [Using `ReferenceIntersector` in linked files](http://thebuildingcoder.typepad.com/blog/2015/07/using-referenceintersector-in-linked-files.html)
+    - The `ReferenceIntersector` was previously named [`FindReferencesByDirection`](0294_abg09_findReferencesByDir.htm)
+    - [Dimension walls using `FindReferencesByDirection`](0540_dim_walls_find_refs.htm)
+    - [Intersect Solid Filter, AVF vs DirectShape Debugging](1340_inters_solid_filt.htm)
+    - [Using `ReferenceIntersector` in linked files](1339_reference_intersector.htm)
 - **Signal attenuation**:
     - [Attenuation](https://en.wikipedia.org/wiki/Attenuation)
     - [Modelling Signal Attenuation in IEEE 802.11 Wireless LANs - Vol. 1](http://www-cs-students.stanford.edu/~dbfaria/files/faria-TR-KP06-0118.pdf)

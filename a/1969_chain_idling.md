@@ -152,7 +152,7 @@ Is there a way to do this?
 **Answer:** The standard Revit API approach to launch a command after the previous one has been completed is to use
 the [Idling event](https://www.revitapidocs.com/2023/56145d84-e948-730a-dc72-2a7b88a50a99.htm).
 Explanations and many samples are provided in the topic group
-on [Idling and external events for modeless access and driving Revit from outside](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+on Idling and external events for modeless access and driving Revit from outside *(link unavailable)*.
 
 However, there are other possibilities as well.
 For example, check out these other recent discussions on similar topics:
@@ -268,7 +268,7 @@ Using the RevitTask you can run the func3 in Revit context.
 Starting again from scratch:
 
 One correct, reliable and effective approach to address the situation you describe is to implement
-an [external event](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+an external event *(link unavailable)*.
 
 In the event handler, simply run the code to execute `func3`.
 

@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -37,7 +68,7 @@ well worth highlighting:</p>
 <h4><a name="2"></a> Retrieve Rebars Attached to Structural Element</h4>
 <p><strong>Question:</strong> How can I get all associated rebars which attach to a structural element such as a column by picking that?</p>
 <p><strong>Answer:</strong> Jeremy initially
-suggested <a href="https://thebuildingcoder.typepad.com/blog/2018/12/using-an-intersection-filter-for-linked-elements.html#3">workarounds making use of filtered element collectors</a>.
+suggested <a href="1707_filter_intersect.html#3">workarounds making use of filtered element collectors</a>.
 Unfortunately, that was not very helpful in this case.</p>
 <p>Happily, Einar Raknes came to the rescue pointing out the real solution for this:</p>
 <p>You can use the <code>RebarHostData</code> class and the <code>GetRebarsInHost</code> method to retrieve all rebars associated with a rebar host.</p>
@@ -101,7 +132,7 @@ Unfortunately, that was not very helpful in this case.</p>
 <p>Many thanks to Salvatore Dragotta for pointing this out!</p>
 <h4><a name="4"></a> Importance of Fuzz for Curtain Wall Dimensioning</h4>
 <p>The Building Coder keeps on harping about the importance of fuzz, cf. the recent discussion
-of <a href="https://thebuildingcoder.typepad.com/blog/2017/12/project-identifier-and-fuzzy-comparison.html#3">fuzzy comparison versus exact arithmetic for curve intersection</a>.</p>
+of <a href="1613_project_id_fuzz.html#3">fuzzy comparison versus exact arithmetic for curve intersection</a>.</p>
 <p>Here is yet another example underlining the importance of fuzz, described by Bram Weinreder in 
 the <a href="http://forums.autodesk.com/t5/revit-api-forum/bd-p/160">Revit API discussion forum</a> thread
 on <a href="https://forums.autodesk.com/t5/revit-api-forum/not-all-curtain-walls-behaving-equally/m-p/8457387">not all curtain walls behaving equally</a>:</p>
@@ -168,3 +199,11 @@ on <a href="https://forums.autodesk.com/t5/revit-api-forum/not-all-curtain-walls
 <p>This translates to a tolerance of about 1.5mm.</p>
 <p>Could've probably added three more zeroes there, but this is precise enough for our case.</p>
 <p>Many thanks to Bram for pointing this out!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

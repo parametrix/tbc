@@ -48,7 +48,7 @@ I also implemented two different approaches to store the user-defined add-in opt
 
 Today, I'll just present the external application class creating the ribbon panel with split button providing access to two commands. It reads the ribbon button icons from embedded resources and provides a method to ensure that the main command always remains the default current button.
 
-I used the [stacked ribbon button panel  SplitButtonOptionConcept](http://thebuildingcoder.typepad.com/blog/2016/09/stacked-ribbon-button-panel-options.html) approach to retain the main command button as the current default split button option. Thus the main command is always displayed at the top and immediately accessible with a single click, while access to the other subsidiary commands requires opening the split button drop-down options first.
+I used the [stacked ribbon button panel  SplitButtonOptionConcept](1466_split_button_opt.html) approach to retain the main command button as the current default split button option. Thus the main command is always displayed at the top and immediately accessible with a single click, while access to the other subsidiary commands requires opening the split button drop-down options first.
 
 I'll just present the main external application implementation of this add-in today.
 

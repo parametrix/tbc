@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -25,12 +56,12 @@ So is
 
 <p>I used it myself to display a 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/display-webcam-image-on-building-element-face.html">
+<a href="0380_revitwebcam.htm">
 live webcam image on a building element</a>,
 
 and Saikat used it in the AVF part of his 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/08/structural-dynamic-model-update-sample.html">
+<a href="0418_rst_dmu.htm">
 structural AVF and DMU sample</a>,
 
 although I only documented the DMU or Dynamic Model Update aspect of it in detail.
@@ -46,8 +77,8 @@ It creates geometry solids using the GeometryCreationUtils and BooleanOperationU
 <p>Transient AVF visualisation was used very impressively in the presentation of new geometry functionality at the developer conferences last year. 
 
 <!--
-385_devcamp_whats_new.htm:<li><a href="http://thebuildingcoder.typepad.com/blog/
-2010/01/findreferencesbydirection.html">FindColumns</a>
+385_devcamp_whats_new.htm:<li><span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/
+2010/01/findreferencesbydirection.html">FindColumns</span>
 572_devdays_online.htm:<li>Updated version of the FindColumns SDK sample, using
 new geometry and AVF API features instead of FindReferencesByDirection to find a
 nd display all intersections between walls and columns.
@@ -58,7 +89,7 @@ lls and columns.
 
 You may and should be aware of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/findreferencesbydirection.html">FindColumns</a>
+<a href="0294_abg09_findReferencesByDir.htm">FindColumns</a>
 
 example of using the FindReferencesByDirection method to determine collisions between walls and columns in a situation like this:</p>
 
@@ -68,7 +99,7 @@ example of using the FindReferencesByDirection method to determine collisions be
 
 <p>As I mentioned in the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/04/devdays-2010-online-with-revit-2012-api-news.html#3">
+<a href="0572_devdays_online.htm#3">
 DevDays 2010 Online with Revit 2012 API news</a>,
 
 it was converted to use the exact wall and column geometry instead of the original approximate ray tracing approach, and the results are displayed exactly by hiding the wall and column categories in the view and displaying their intersection solids using AVF instead.
@@ -378,3 +409,12 @@ the VB code and complete Visual Studio solution for this command.
 
 <p>Many thanks to Betina for implementing and sharing this!
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

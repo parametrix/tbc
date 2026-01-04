@@ -65,7 +65,7 @@ A whole bunch of exciting stuff going on:
 
 ####<a name="2"></a> Forma Sustainability Flyer
 
-AU 2022 introduced [Forma for AEC](https://thebuildingcoder.typepad.com/blog/2022/09/aps-au-and-miter-wall-join-for-full-face.html#3).
+AU 2022 introduced [Forma for AEC](1966_miter_full_face.html#3).
 Now, its vision is explained further by
 the [Forma sustainability flyer](/Users/jta/a/doc/revit/tbc/git/a/zip/forma_sustainability_flyer.pdf):
 
@@ -256,7 +256,7 @@ Do you have an in-depth understanding of the underlying Revit BIM paradigm and b
 
 Anyway, if you really want to achieve what you say, I have the following suggestions:
 
-I recommend [encapsulating the transaction instantiation in a C# 'using' statement](https://thebuildingcoder.typepad.com/blog/2012/04/using-using-automagically-disposes-and-rolls-back.html).
+I recommend [encapsulating the transaction instantiation in a C# 'using' statement](0753_dispose_transact_2.htm).
 
 Furthermore, it will probably clarify and simplify things if you separate the different steps of your operation, instead of lumping them all into one single big iteration, e.g.:
 

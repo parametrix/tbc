@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -13,7 +44,7 @@
 
 <p>Once upon a time, while teaching a Revit API class, the training participants identified a problem that was simple enough to be used as a filtered element collector learning example and did something useful at the same time:
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-devlab.html#2">
+<a href="0738_melbourne_devlab.htm#2">
 deleting reference planes not hosting any elements</a>,
 
 implemented as the stand-alone external command DeleteUnnamedNonHostingReferencePlanes.</p>
@@ -182,7 +213,7 @@ Stack Trace:
 
 <p>Furthermore, the original command was implemented before I started pointing out that all
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/04/using-using-automagically-disposes-and-rolls-back.html">
+<a href="0753_dispose_transact_2.htm">
 transactions should best be encapsulated within a 'using' statement</a> block.</p>
 
 <p>Such a block and an exception handler should be added to the call.</p>
@@ -304,3 +335,12 @@ and the version discussed above is
 
 <a href="https://github.com/jeremytammik/the_building_coder_samples/releases/tag/2014.0.107.0">
 release 2014.0.107.0</a>.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

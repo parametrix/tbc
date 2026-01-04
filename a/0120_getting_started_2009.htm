@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -24,7 +54,7 @@ You can expect an update of this material later in a couple of month's time, whe
 
 <h3>1. Setting up the Environment</h3>
 
-<p><strong>Revit Product</strong> ñ you can download the latest version of the released products from the 
+<p><strong>Revit Product</strong> ÔøΩ you can download the latest version of the released products from the 
 
 <a href="http://www.autodesk.com">
 Autodesk product page</a> 
@@ -41,7 +71,7 @@ Here are the current links, but note that the exact locations may change:</p>
 
 <p>Without an activation code, you can only use Revit in view-only mode.<p>
 
-<p><strong>Revit SDK</strong> ñ the Revit SDK is included in every Revit install.</p>
+<p><strong>Revit SDK</strong> ÔøΩ the Revit SDK is included in every Revit install.</p>
 
 <ul>
 <li>DVD version: \Utilities\Common\Software Development Kit\Revit 2009 SDK.zip
@@ -50,25 +80,25 @@ Here are the current links, but note that the exact locations may change:</p>
 
 <p><strong>RevitAPI.dll</strong> is part of every Revit installation and is located in the folder <Revit install>\Program.</p>
 
-<p><strong>Development Environment</strong> ñ Microsoft Visual Studio 2005 for Revit 2009, and Visual Studio 2008 + SP1 for Revit 2010.
+<p><strong>Development Environment</strong> ÔøΩ Microsoft Visual Studio 2005 for Revit 2009, and Visual Studio 2008 + SP1 for Revit 2010.
 The Express edition can also be used.</p>
 
-<p><strong>Revit API Documentation</strong> ñ The Revit SDK includes a Developer Guide, help file, and many samples. 
+<p><strong>Revit API Documentation</strong> ÔøΩ The Revit SDK includes a Developer Guide, help file, and many samples. 
 More detailed information on the SDK contents and how to manage, build and load the samples was discussed in some early blog posts:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/08/getting-started.html">Getting Started with the Revit API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/08/the-revit-sdk-c.html">The Revit SDK Contents</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/08/managing-sdk-sa.html">Managing SDK Samples</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/09/the-sdk-samples.html">The SDK Samples Solution SDKSamples2009.sln</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/09/loading-sdk-sam.html">Loading SDK Samples</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/09/debugging-a-rev.html">Debugging a Revit Add-In</a></li>
+<li><a href="0003_getting_started.htm">Getting Started with the Revit API</a></li>
+<li><a href="0004_revit_sdk_contents.htm">The Revit SDK Contents</a></li>
+<li><a href="0005_managing_sdk_samples.htm">Managing SDK Samples</a></li>
+<li><a href="0006_sdk_samples_solution.htm">The SDK Samples Solution SDKSamples2009.sln</a></li>
+<li><a href="0007_loading_sdk_samples.htm">Loading SDK Samples</a></li>
+<li><a href="0008_debugging.htm">Debugging a Revit Add-In</a></li>
 </ul>
 
 <p>Yet more information for beginners is included in the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/getting_started/">
-Getting Started</a>
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/getting_started">
+Getting Started <em>(category page)</em></span>
 
 category.</p>
 
@@ -118,12 +148,12 @@ The following samples provide good starting points:</p>
 
 <p><strong>c.</strong> A must-have tool is 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/rvtmgddbg.html">
+<a href="0101_rvtmgddbg.htm">
 RvtMgdDbg</a>,
 
 which we discussed in a 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/rvtmgddbg.html">
+<a href="0101_rvtmgddbg.htm">
 separate post</a>.</p>
 
 <a name="3"></a>
@@ -132,9 +162,9 @@ separate post</a>.</p>
 
 <ul>
 <li><a href="http://au.autodesk.com">Autodesk University</a>: search for 'Revit' in the Developer or Customization tracks.
-Here are a few classes held by us at last yearís AU with material providing additional information:
+Here are a few classes held by us at last yearÔøΩs AU with material providing additional information:
 <ul>
-<li>DE101-3 The Revit SDK Sample SmˆrgÂsbord</li>
+<li>DE101-3 The Revit SDK Sample SmÔøΩrgÔøΩsbord</li>
 <li>DE111-3 A Closer Look at the Revit Database with the Revit API</li>
 <li>DE205-3 Enhancing Your Revit Add-In</li>
 </ul>
@@ -167,3 +197,12 @@ on April 29<sup>th</sup>.
 If you are interested in learning more about what is coming for Revit 2010, please take a look at the recording of the recent 
 
 <a href="http://adn.autodesk.com/adn/servlet/item?siteID=4814862&id=12554549&linkID=4901650">Developer Days Online AEC webcast</a>.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

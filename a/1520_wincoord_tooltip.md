@@ -33,8 +33,8 @@ That functionality can be combined with the `ReferenceIntersector` to shoot a ra
 
 I explained the principles of doing so and the nitty-gritty implementation details of the `WinTooltip` sample add-in back in 2012:
 
-- [UIView and Windows Device Coordinates](http://thebuildingcoder.typepad.com/blog/2012/06/uiview-and-windows-device-coordinates.html)
-- [UIView, Windows Coordinates, ReferenceIntersector and My Own Tooltip](http://thebuildingcoder.typepad.com/blog/2012/10/uiview-windows-coordinates-referenceintersector-and-my-own-tooltip.html)
+- [UIView and Windows Device Coordinates](0785_windows_device_coords.htm)
+- [UIView, Windows Coordinates, ReferenceIntersector and My Own Tooltip](0840_wincoord_tooltip.htm)
 
 Hosted on GitHub and migrated to Revit 2017, [WinTooltip](https://github.com/jeremytammik/WinTooltip) now
 displays Revit database element information in a very rough custom tooltip like this:
@@ -54,7 +54,7 @@ By the way, you might be surprised what minimal modifications were required for 
 The code was not modified at all.
 
 I only changed the .NET framework version, updated the Revit API references
-and [eliminated the architecture mismatch warning using `DisableMismatchWarning.exe`](http://thebuildingcoder.typepad.com/blog/2014/09/architecture-mismatch-warning-disabler-update.html).
+and [eliminated the architecture mismatch warning using `DisableMismatchWarning.exe`](1208_architecture_mismatch.htm).
 
 You can examine the exact changes made by looking at the GitHub diffs:
 
@@ -64,9 +64,9 @@ You can examine the exact changes made by looking at the GitHub diffs:
 Please note that several important improvements on handling the `Idling` event properly that have been learned since 2012 have <b><i>not</i></b> been incorporated into this sample.
 
 For more information about those, especially the recommendation
-to [avoid `Idling` in favour of external events except for one-off calls](http://thebuildingcoder.typepad.com/blog/2013/12/replacing-an-idling-event-handler-by-an-external-event.html),
+to [avoid `Idling` in favour of external events except for one-off calls](1074_roomedit_extern_event.htm),
 please refer to The Building Coder topic group
-on [`Idling` and external events for modeless access and driving Revit from outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+on `Idling` and external events for modeless access and driving Revit from outside *(link unavailable)*.
 
 In its current form, WinTooltip for Revit 2017 is still just a flat migration of the original Revit 2013 implementation with all its flaws, just as a proof of concept, and not suitable for production use.
 

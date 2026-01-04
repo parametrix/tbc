@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <!-- <script src="http://thebuildingcoder.typepad.com/google-code-prettify/run_prettify.js"></script>-->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -33,7 +64,7 @@ Revit API, Jeremy Tammik, akn_include
 <p>I am writing this from the Greek island of
 <a href="https://en.wikipedia.org/wiki/Euboea">Euboea</a>,
 on which I already
-<a href="http://thebuildingcoder.typepad.com/blog/2011/08/associative-section-view-fix.html">visited</a>
+<a href="0624_assoc_sect_view.htm">visited</a>
 <a href="http://en.wikipedia.org/wiki/Limni,_Euboea">Limni</a> or
 <a href="http://en.wikipedia.org/wiki/Limni,_Euboea">Λιμνι</a> on
 the north end a couple of years ago.</p>
@@ -76,15 +107,15 @@ Revit API discussion forum</a> instead of raising individual cases for each.</p>
 <p>That way, other developers could chip in and help you as well, and our discussions would be visible for others to share and learn from.</p>
 
 <p>All that I can say about using Revit families programmatically via the Revit API is published by
-<a href="http://thebuildingcoder.typepad.com">
-The Building Coder</a>.</p>
+<span class="unavailable-link">
+The Building Coder</span>.</p>
 
 <p>Search for 'family' or 'families' in the
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5">
-list of topic groups</a>.</p>
+<span class="unavailable-link">
+list of topic groups</span>.</p>
 
 <p>The most effective way to determine which parameters you can use in your specific context is to create a BIM manually and then explore that using RevitLookup, BipChecker, and other, more intimate,
-<a href="http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html">
+<a href="1057_db_explor_python_sh.htm">
 database exploration tools such as the Revit Python and Ruby shells</a>.</p>
 
 <p>The advantage of the Python and Ruby shells is that they enable you to navigate interactively through the model using all the available API constructs, including method calls, iteration, etc., whereas an exploration based on RevitLookup only has access to statically compiled properties that allow navigation by clicking buttons in automatically generated data grid view forms.</p>
@@ -113,8 +144,8 @@ I am working in Germany.</p>
 Please do confirm that you are in fact aware of the wealth of online information available on Revit before I answer your question.</p>
 
 <p>Have you worked through the
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#2">
-getting started material</a>?</p>
+<span class="unavailable-link">
+getting started material</span>?</p>
 
 <p>Have you performed an Internet search to answer this question of yours?</p>
 
@@ -128,11 +159,11 @@ Revit API discussion forum</a>.</p>
 
 <!-- 0011 0196 0526 0553 0882 -->
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2008/09/units.html">Units</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/08/unit-conversion.html">Unit Conversion</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/01/unit-conversion-and-new-blogs.html">Unit Conversion and New Blogs</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/03/internal-imperial-units.html">Internal Imperial Units</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/01/revit-2013-unit-conversion-utility.html">Revit 2013 Unit Conversion Utility</a></li>
+<li><a href="0011_units.htm">Units</a></li>
+<li><a href="0196_unit_conversion.htm">Unit Conversion</a></li>
+<li><a href="0526_unit_conversion.htm">Unit Conversion and New Blogs</a></li>
+<li><a href="0553_imperial_units.htm">Internal Imperial Units</a></li>
+<li><a href="0882_unit_conversion.htm">Revit 2013 Unit Conversion Utility</a></li>
 </ul>
 
 <p>Please search for yourself next time before asking.</p>
@@ -153,7 +184,7 @@ My question is:</p>
 
 <p><strong>Answer:</strong>
 
-The <a href="http://thebuildingcoder.typepad.com/blog/2011/03/internal-imperial-units.html">
+The <a href="0553_imperial_units.htm">
 internal Revit database unit for length is imperial feet</a>.</p>
 
 <p>This cannot be changed.</p>
@@ -167,7 +198,7 @@ internal Revit database unit for length is imperial feet</a>.</p>
 <p>Therefore, that is not possible to scale the building elements in Revit either.</p>
 
 <p>Here is a more detailed explanation on
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/transform-an-element.html">
+<a href="0133_transform_element.htm">
 transforming an element</a>.</p>
 
 <p>Therefore, you have to convert your geometry to feet before you create it.</p>
@@ -196,5 +227,14 @@ Revit Developer Centre</a>.</p>
 <p>They all require the Revit API, i.e., a full Revit installation on the computer and an instance of Revit up and running to provide a valid Revit API context.</p>
 
 <p>Please look at the family creation samples listed in Revit SDK sample readme file <code>SamplesReadMe.htm</code> and The Building Coder topic group on the
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.25">
-Family API</a>.</p>
+<span class="unavailable-link">
+Family API</span>.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

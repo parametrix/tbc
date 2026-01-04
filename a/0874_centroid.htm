@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Solid Centroid and Volume Calculation</h3>
@@ -97,7 +128,7 @@ polyhedral</a> approximation of it.
 Revit defines the approximation tolerance internally.
 Calling it separately for neighbouring faces, however, will return independent triangulations that do not line up where the faces meet, leaving
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/birthdays-and-gaps-in-shells.html">
+<a href="0502_gaps_in_shell.htm">
 gaps in the shell</a> of
 
 the original solid.</p>
@@ -264,7 +295,7 @@ It doesn't have to be inside the model.
 <p>You can also just take the magnitude of the cross product of two edge vectors of the face and divide it by 2.
 This means that you can find the area of a face as a side effect of determining its normal vector, just as I do in my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/2d-polygon-areas-and-outer-loop.html">
+<a href="0053_2d_polygon_area_outer_loop.htm">
 GetSignedPolygonArea</a> method.
 
 
@@ -719,3 +750,12 @@ Improved filtering and error handling is left as an exercise to the inclined rea
 GetCentroid.zip</a> containing
 
 the complete source code, Visual Studio solution and add-in manifest for this command.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

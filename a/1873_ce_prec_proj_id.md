@@ -183,12 +183,12 @@ on [CustomExporter Export Very Jagged Mesh for Curved Surfaces](https://forums.a
 Is there a way to improve this?
 
 **Answer:** Check out The Building Coder topic group on
-the [custom exporter](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.1).
+the custom exporter *(link unavailable)*.
 
 Especially, please read these two posts:
 
-- [Revit export precision and tolerance](https://thebuildingcoder.typepad.com/blog/2015/06/angelhack-athens-sustainability-and-export-precision.html#4)
-- [Controlling the quality of the geometry on custom export](https://thebuildingcoder.typepad.com/blog/2016/02/reorg-fomt-devcon-ted-qr-custom-exporter-quality.html#8)
+- [Revit export precision and tolerance](1330_hack_export_tolerance.htm#4)
+- [Controlling the quality of the geometry on custom export](1405_quality_custom_export.html#8)
  
 I all else fails, you will have to access the real element geometry instead of using the custom exporter.
 
@@ -204,18 +204,18 @@ I also tried to set the `LevelOfDetail` property on `ViewNode`, and it also work
 ####<a name="3"></a> Dismissing a Windows Dialogue with JtClicker
 
 Another topic group is dedicated
-to [detecting and handling dialogues and failures](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.32).
+to detecting and handling dialogues and failures *(link unavailable)*.
 
 It started out before the [DialogBoxShowing event](https://www.revitapidocs.com/2020/cb46ea4c-2b80-0ec2-063f-dda6f662948a.htm) and
 [Failure handling APIs](https://www.revitapidocs.com/2020/c03bb2e5-f679-bf24-4e87-08b3c3a08385.htm) were implemented, using a Windows hook to determine that a dialogue was being shown:
 
 **Question:** You explained how to use the native Windows API hook
-to [dismiss a dialogue](https://thebuildingcoder.typepad.com/blog/2009/10/dismiss-dialogue-using-windows-api.html).
+to [dismiss a dialogue](0229_dialogue_clicker.htm).
 Is there a complete sample project and solution available to understand how to use it to dismiss the dialogue box in Revit?
 
 **Answer:** Whenever searching for such information, one of the first places to go
-are [The Building Coder topic groups](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5).
-In this case, you can look at [detecting and handling dialogues and failures](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.32).
+are The Building Coder topic groups *(link unavailable)*.
+In this case, you can look at detecting and handling dialogues and failures *(link unavailable)*.
 The Windows hook functionality is not really used 'in Revit', as far as I can remember.
 It is independent functionality that can interact with a Revit add-in, if you like.
 The complete project is available in

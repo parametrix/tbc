@@ -440,7 +440,7 @@ Another dimensioning display issue that came up
 involves [removing dimension leader not visible &ndash; only after reselection or reopening](https://forums.autodesk.com/t5/revit-api-forum/removing-dimension-leader-not-visible-only-after-reselection-or/m-p/7545212).
 
 That was resolved by moving an element, as suggested in the bunch of examples illustrating
-the [need to regenerate and various ways to achieve that](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33):
+the need to regenerate and various ways to achieve that *(link unavailable)*:
 
 > `doc.regenerate` and `uidoc.RefreshActiveView` do not seem to do the trick. 
 
@@ -461,8 +461,8 @@ to [create dimension to wall centerline, center of core, faces of core](https://
 
 A lot of powerful and useful functionality addressing this was added in the Revit 2018 API, e.g.:
 
-- [References and selection of subelements](http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html#2.2.3)
-- [API access to FamilyInstance references](http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html#3.19).
+- [References and selection of subelements](1551_whats_new_2018.html#2.2.3)
+- [API access to FamilyInstance references](1551_whats_new_2018.html#3.19).
 
 Fair59 added another solution to pinpoint specific core layers, e.g.:
 

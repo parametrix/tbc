@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -10,7 +41,7 @@
   https://forum.dynamobim.com/t/wall-finish-by-room/13215/34
   <div class="cooked"><p>This is the unit type change associated to the forge type ID.</p>
   <p><a class="mention" href="/u/konrad_k_sobon">@Konrad_K_Sobon</a>  did a good job highlighting some of that here: <a href="https://archi-lab.net/handling-the-revit-2022-unit-changes/">https://archi-lab.net/handling-the-revit-2022-unit-changes/</a>.</p>
-  <p>There is also some good summary discussion on this building coder post from <a class="mention" href="/u/jeremytammik">@jeremytammik</a>: <a href="https://thebuildingcoder.typepad.com/blog/2021/04/pdf-export-forgetypeid-and-multi-target-add-in.html" class="inline-onebox">The Building Coder: PDF Export, ForgeTypeId and Multi-Target Add-In <span class="badge badge-notification clicks" title="1 click">1</span></a></p>
+  <p>There is also some good summary discussion on this building coder post from <a class="mention" href="/u/jeremytammik">@jeremytammik</a>: <a href="1900_forgetypeid.html"" class="inline-onebox">The Building Coder: PDF Export, ForgeTypeId and Multi-Target Add-In <span class="badge badge-notification clicks" title="1 click">1</span></a></p>
   <p>And finally, there is the API documentation includes the new class here: <a href="https://www.revitapidocs.com/2022/d9fcf276-9566-de83-2b0b-d89b65ccc8af.htm" class="inline-onebox">ForgeTypeId Class</a></p>
   <p>This isn’t intended to be a ‘fix’, but more giving you the opportunity to fix the issue yourself first - it’s not super easy, but it’s also not so difficult to do that you shouldn’t be able to make some headway and get better with Python. Should you give it a shot and still be stuck, post the DYN and a really small sample Revit model and the larger community will likely help out. <img src="https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p></div>
 
@@ -100,18 +131,18 @@ Many thanks to  for this very helpful explanation!
 
 <ul>
 <!--
-<li><a href="https://thebuildingcoder.typepad.com/blog/2020/04/revitlookup-2021-with-multi-release-support.html">RevitLookup 2021 with Multi-Release Support</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2020/04/whats-new-in-the-revit-2021-api.html">What's New in the Revit 2021 API</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2020/07/virtual-au-and-aec-hackathon-units-and-das-job.html">Virtual AU and AEC Hackathon, Units and DAS Job</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2020/08/custom-parameters-and-tile-packing.html">Custom Parameters and Tile Packing</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2020/10/firerevit-deprecated-api-and-elbow-centre-point.html">FireRevit, Deprecated API and Elbow Centre Point</a></li>
+<li><a href="1835_revitlookup_2021.html">RevitLookup 2021 with Multi-Release Support</a></li>
+<li><a href="1836_whats_new_2021.html">What's New in the Revit 2021 API</a></li>
+<li><a href="1853_au_hack.html">Virtual AU and AEC Hackathon, Units and DAS Job</a></li>
+<li><a href="1861_params_tiles.html">Custom Parameters and Tile Packing</a></li>
+<li><a href="1871_elbow_centre.html">FireRevit, Deprecated API and Elbow Centre Point</a></li>
 -->
-<li><a href="https://thebuildingcoder.typepad.com/blog/2021/04/revit-2022-released.html">Revit 2022 released</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2021/04/pdf-export-forgetypeid-and-multi-target-add-in.html#2">Replacing deprecated ParameterType with ForgeTypeId
+<li><a href="1899_rvt_2022.html">Revit 2022 released</a></li>
+<li><a href="1900_forgetypeid.html#2">Replacing deprecated ParameterType with ForgeTypeId
 </a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2021/04/revit-2022-migrates-bim360-team-to-docs.html">Removal of DisplayUnitType in RevitLookup 2022</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2021/04/revit-2022-sdk-and-the-building-coder-samples.html">ParameterType and ForgeTypeId in the Revit 2022 SDK and The Building Coder samples</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2021/04/whats-new-in-the-revit-2022-api.html">What's New in the Revit 2022 API</a></li>
+<li><a href="1901_bim360_team_to_docs.html">Removal of DisplayUnitType in RevitLookup 2022</a></li>
+<li><a href="1902_2022_sdk_tbc.html">ParameterType and ForgeTypeId in the Revit 2022 SDK and The Building Coder samples</a></li>
+<li><a href="1903_whats_new_2022.html">What's New in the Revit 2022 API</a></li>
 </ul>
 
 <p>Here are some more related questions that came up since then:</p>
@@ -165,7 +196,7 @@ on <a href="https://forums.autodesk.com/t5/revit-api-forum/displayunittype-in-re
 <h4><a name="5"></a> Unit Conversion Without Knowing</h4>
 <p>In a related vein, how can you implement a unit conversion without knowing the internal Revit unit?</p>
 <p>This question has been around since the beginnings of The Building Coder and was first addressed in blog post #11
-on <a href="https://thebuildingcoder.typepad.com/blog/2008/09/units.html">units</a> in September 2008.</p>
+on <a href="0011_units.htm">units</a> in September 2008.</p>
 <p>It came up again in
 the <a href="http://forums.autodesk.com/t5/revit-api-forum/bd-p/160">Revit API discussion forum</a> thread
 on a <a href="https://forums.autodesk.com/t5/revit-api-forum/unit-conversion-question/m-p/9840917">unit conversion question</a>:</p>
@@ -188,3 +219,11 @@ the <a href="https://www.floornature.com/blog/biennale-di-venezia-german-pavilio
 A look back from the future, which the curators envision as a world where many of today’s problems have been overcome.
 Digital technology makes it possible to visit the pavilion from anywhere in the world: <a href="https://2038.xyz">2038.xyz</a></p>
 </blockquote>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

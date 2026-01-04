@@ -43,7 +43,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 I had an extensive discussion on automatically driving Revit from outside to auto-execute a simple functionality with no user input, originally implemented by an external command.
 
 Also, a big thank you to all for the numerous congratulations
-on [The Building Coder's eleventh birthday](https://thebuildingcoder.typepad.com/blog/2019/08/11-years-and-revit-api-docs-full-text-search.html#2):
+on [The Building Coder's eleventh birthday](1771_searchable_docs.html#2):
 
 - [Auto-executing an external command](#2)
 - [Eleventh birthday congratulations](#3)
@@ -55,7 +55,7 @@ on [The Building Coder's eleventh birthday](https://thebuildingcoder.typepad.com
 **Answer:** Easy to solve, various approaches possible.
 
 I would suggest starting out by trying to use a journal file as described for
-the [IFC import and conversion  script](http://thebuildingcoder.typepad.com/blog/2010/07/ifc-import-and-conversion-journal-script.html).
+the [IFC import and conversion  script](0406_ifc_conversion_journal.htm).
 
 Another simple approach is to implement an event handler for the `DocumentOpened` event and automatically process the document immediately as soon as it is opened.
 
@@ -124,7 +124,7 @@ copy Y.rvt input.rvt
 These two lines can be placed into a Windows batch or command file, and the original input filename specified as an argument.
 
 Besides the IFC conversion example mentioned above, here is another article on various aspects
-of [journal file replay](https://thebuildingcoder.typepad.com/blog/2009/07/journal-file-replay.html).
+of [journal file replay](0174_journal_file_replay.htm).
 
 You should add some logging output to your external command, so that you have reliable information on whether the processing completed successfully.
 
@@ -138,9 +138,9 @@ More efficient approaches can easily be implemented inside your add-in code. For
 
 Since Revit is not built for processing hundreds of files in batch mode, processing will fail sooner or later when working on a large number of files. Therefore, logging your progress is important. If you want the process to be fully automatic, you can implement additional functionality to check that it is still working, kill Revit if it has stopped, and restart again to continue processing whatever remains to be done. This kind of approach is documented in several articles on batch processing:
 
-- [Batch rendering across several projects](https://thebuildingcoder.typepad.com/blog/2014/12/au-ends-and-batch-rendering-across-several-projects.html)
-- [Batch processing Revit documents](https://thebuildingcoder.typepad.com/blog/2015/08/batch-processing-dwfx-links-and-future-proofing.html#4)
-- [Batch processing Revit families and documents](https://thebuildingcoder.typepad.com/blog/2019/04/batch-processing-and-aspects-of-asstringvalue.html#2)
+- [Batch rendering across several projects](1255_batch_render.htm)
+- [Batch processing Revit documents](1348_batch_dwf_futureproof.htm#4)
+- [Batch processing Revit families and documents](1742_asstringvalue_batch.html#2)
 
 **Response:** Sounds good, I'll go ahead with this.
 A few more questions:
@@ -182,7 +182,7 @@ Thank you very much for the lively response and numerous congratulations on The 
 
 Over a hundred LinkedIn reactions and over 4500 views there, over eighteen hundred Twitter impressions, almost a hundred Twitter 'engagements', and more, via other channels:
 
-[Matt Taylor in a comment](https://thebuildingcoder.typepad.com/blog/2019/08/11-years-and-revit-api-docs-full-text-search.html#comment-4588231441):
+[Matt Taylor in a comment](1771_searchable_docs.html#comment-4588231441):
 
 > Happy birthday TBC!
 

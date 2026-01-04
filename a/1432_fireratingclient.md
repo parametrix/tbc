@@ -25,7 +25,7 @@ Today, I address the first item in yesterday's to do list
 
 ### Real-Time BIM Update via FireRatingCloud Windows Client
 
-Today, I address the first item in [the to do list that I published yesterday](http://thebuildingcoder.typepad.com/blog/2016/04/real-time-bim-update-with-fireratingcloud-2017.html#11):
+Today, I address the first item in [the to do list that I published yesterday](1431_firerating_2017.html#11):
 
 - Document and improve [FireRatingClient](https://github.com/jeremytammik/FireRatingCloud/tree/master/FireRatingClient),
 the stand-alone Windows client &ndash; we will need this to demonstrate the real-time BIM update from arbitrary sources.
@@ -45,8 +45,8 @@ Let's look at this task in context and then address it right away:
 
 In the past few days, I worked on updating and migrating my samples connecting BIM and the cloud:
 
-- [RoomEditorApp for Revit 2017](http://thebuildingcoder.typepad.com/blog/2016/04/room-editor-first-revit-2017-addin-migration.html#3)
-- [Real-Time BIM Update with FireRatingCloud 2017](http://thebuildingcoder.typepad.com/blog/2016/04/real-time-bim-update-with-fireratingcloud-2017.html)
+- [RoomEditorApp for Revit 2017](1430_room_editor_2017.html#3)
+- [Real-Time BIM Update with FireRatingCloud 2017](1431_firerating_2017.html)
 
 The [RoomEditorApp](https://github.com/jeremytammik/RoomEditorApp) demonstrates
 a full round-trip real-time connection between the Revit BIM and a simplified 2D view that can be graphically edited on any mobile device.
@@ -200,7 +200,7 @@ available from the [FireRatingCloud GitHub repository](https://github.com/jeremy
 
 #### <a name="8"></a>To Do
 
-Let's update [the to do list that I published yesterday](http://thebuildingcoder.typepad.com/blog/2016/04/real-time-bim-update-with-fireratingcloud-2017.html#11).
+Let's update [the to do list that I published yesterday](1431_firerating_2017.html#11).
 
 I have several more exciting tasks lined up, all related to connecting BIM and the cloud:
 

@@ -147,9 +147,9 @@ Recently, I have mostly been using Gemini 2.0 Flash.
 
 When  doing so, I prefix the persona prompt that I developed and refined.
 I described my prompt development process in the past few posts, cf.,
-[first LLM forum solution](https://thebuildingcoder.typepad.com/blog/2024/11/devcon-ai-for-revit-api-modeless-add-ins-leave.html#5),
-[Revit API support prompt](https://thebuildingcoder.typepad.com/blog/2025/01/llm-prompting-rag-ingestion-and-new-projects.html#5),
-and [promptimalising my Revit API support prompt](https://thebuildingcoder.typepad.com/blog/2025/01/wall-layer-voodoo-and-prompt-optimisation.html#3)
+[first LLM forum solution](2060_modeless_tutor.html#5),
+[Revit API support prompt](2062_gpt_prompt.html#5),
+and [promptimalising my Revit API support prompt](2063_promptimal.html#3)
 
 My current prompt is this:
 
@@ -270,7 +270,7 @@ this [Self-Operating Computer Framework](https://github.com/OthersideAI/self-ope
 
 ####<a name="6"></a> BigBlueButton  and Conferencing Tools
 
-I [recently mentioned](https://thebuildingcoder.typepad.com/blog/2024/05/migrating-vb-to-net-core-8-and-ai-news.html#4) a
+I [recently mentioned](2037_vb_2025.html#4) a
 couple of video conferencing options; let's expand that list:
 
 [BigBlueButton](https://bigbluebutton.org/#) also includes functionality for [conferencing](https://bbb.m4h.network/b/):

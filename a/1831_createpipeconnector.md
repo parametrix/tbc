@@ -175,11 +175,11 @@ on [auto routing a pipe system between plumbing fixtures](https://forums.autodes
 </center>
 
 **Answer:** You
-can [create a placeholder piping system programmatically](https://thebuildingcoder.typepad.com/blog/2011/07/mep-placeholders.html) as well.
+can [create a placeholder piping system programmatically](0609_mep_placeholder.htm) as well.
 
 Or you can create a piping system right away.
 Here is a series of samples that create a minimal bunch of pipes for
-a [rolling offset in lots of different ways](http://thebuildingcoder.typepad.com/blog/2014/01/final-rolling-offset-using-pipecreate.html).
+a [rolling offset in lots of different ways](1093_pipe_create.htm).
 
 **Response:** I am assuming from your response that if I want to connect from say, a water closet to a water heater, with pipes, I will have to explicitly call PipeCreate for each pipe, find connectors, insert each fitting... and then that process over and over until they connect?
 Is there a better work flow for what I'm trying to accomplish?
@@ -188,8 +188,8 @@ Something similar to what is in the Revit user interface?
 **Answer:** The discussions I pointed out already explain everything and cover your question in full.
 Actually, here are some additional relevant discussions of this topic:
 
-- [Connector, neighbour, conduit, transition](https://thebuildingcoder.typepad.com/blog/2018/03/connector-neighbour-conduit-transition.html)
-- [MEP ductwork and changing pipe direction](https://thebuildingcoder.typepad.com/blog/2019/08/mep-ductwork-and-changing-pipe-direction.html)
+- [Connector, neighbour, conduit, transition](1636_connector_neighbour.html)
+- [MEP ductwork and changing pipe direction](1768_pipe_direction.html)
 
 The short answer is simply:
 
@@ -227,7 +227,7 @@ For instance, record the warning and close the dialogue box?
 If all of these fail, a third mechanism is provided by the Windows API, which enables hooking into and reacting to almost any system event, including a dialogue showing.
 
 All three approaches are discussed and compared by The Building Coder in the topic group
-on [detecting and handling dialogues and failures](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.32).
+on detecting and handling dialogues and failures *(link unavailable)*.
 
 #### <a name="6"></a>Retrieving a Geometry Reference
 

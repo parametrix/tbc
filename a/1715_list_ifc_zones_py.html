@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -31,7 +62,7 @@ of <a href="https://github.com/jeremytammik/the_building_coder_samples/releases/
 <p>Since we have not reached a final conclusion yet, however, I'll postpone the discussion of that.</p>
 <p>Instead, I present a little exploration of how to access zones defined in an IFC file in Revit.</p>
 <p>If you are following this blog closely, you might guess that this is related to
-the <a href="https://thebuildingcoder.typepad.com/blog/2019/01/room-boundaries-to-csv-and-wpf-template.html">room boundary CSV exporter project</a> that
+the <a href="1713_room_boundary_wpf.html">room boundary CSV exporter project</a> that
 I recently discussed.</p>
 <p>For this exploration, I installed and used RevitPythonShell.</p>
 <p>Here are the detailed steps:</p>
@@ -74,7 +105,7 @@ and <a href="https://sourceforge.net/p/ifcexporter/wiki/Exporting%20Zones">you h
 <p>Based on that discussion, I linked in an IFC file containing zones representing apartments into a blank Revit project document.</p>
 <p>I started out exploring the model using <a href="https://github.com/jeremytammik/RevitLookup">RevitLookup</a>.</p>
 <p>Since the objects of interest resided in the linked IFC file, however, I soon had to take recourse
-to <a href="http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html">another, more flexible, advanced and intimate database exploration tool</a>.</p>
+to <a href="1057_db_explor_python_sh.htm">another, more flexible, advanced and intimate database exploration tool</a>.</p>
 <p>I visited the <a href="https://github.com/architecture-building-systems/revitpythonshell">RevitPythonShell home page</a> and
 downloaded the installer for Revit 2019.</p>
 <p>It is a one-click install.</p>
@@ -171,3 +202,11 @@ C:\...\010-123xx3-arc-bat01-apt01_2_2018-12-27_1507.ifc.RVT
 
 <p>I very much enjoyed this little excursion into IFC matters and playing around interactively with the Revit API and Python.</p>
 <p>I hope you enjoyed this short summary of my experiences.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

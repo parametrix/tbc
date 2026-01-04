@@ -21,9 +21,9 @@ Existing shared parameter file entries can be read to become an <code>ExternalDe
 ### Parameter Definition Overview
 
 We have repeatedly discussed all kinds of different aspects
-of [Revit element parameters](http://thebuildingcoder.typepad.com/blog/parameters),
+of Revit element parameters *(link unavailable)*,
 but not put together
-a [topic group](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5) for them yet.
+a topic group *(link unavailable)* for them yet.
 
 Today I am happy to present a pretty comprehensive overview and explanation of the process of defining a shared parameter by none less than Scott Conover himself, Senior Revit Engineering Manager:
 
@@ -99,8 +99,8 @@ Many thanks to Scott for this nice comprehensive summary and overview!
 ####<a name="2"></a>Addemdum
 
 Joshua Lumley pointed out some possible enhancements
-in [his two](http://thebuildingcoder.typepad.com/blog/2016/12/parameter-definition-overview.html#comment-3079825547)
-[comments](http://thebuildingcoder.typepad.com/blog/2016/12/parameter-definition-overview.html#comment-3079829813) below:
+in [his two](1507_parameter_definition.html#comment-3079825547)
+[comments](1507_parameter_definition.html#comment-3079829813) below:
 
 To run the code more than twice I added:
 

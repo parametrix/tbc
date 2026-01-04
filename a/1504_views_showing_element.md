@@ -63,7 +63,7 @@ Lucky you, asking the right question.
 
 This one, we can answer, and already have, including a dedicated external command `CmdViewsShowingElements` to prove it to The Building Coder samples:
 
-- [Determine Views Displaying Given Element](http://thebuildingcoder.typepad.com/blog/2014/05/views-displaying-given-element-svg-and-nosql.html#6)
+- [Determine Views Displaying Given Element](1158_views_displaying_elem.htm#6)
 - [Revision help: which views show this object?](http://forums.autodesk.com/t5/Revit-API/Revision-help-which-views-show-this-object/m-p/5029772)
 - [The Building Coder samples GitHub repository](https://github.com/jeremytammik/the_building_coder_samples)
     - [`CmdViewsShowingElements`](https://github.com/jeremytammik/the_building_coder_samples/blob/master/BuildingCoder/BuildingCoder/CmdViewsShowingElements.cs)
@@ -199,8 +199,8 @@ Thank you for the valuable discussion, especially Erik with his in-depth real-wo
 The note on the huge speed-up using bounding boxes is of fundamental importance.
 
 You absolutely must be aware
-of [quick filters](http://thebuildingcoder.typepad.com/blog/2015/12/quick-slow-and-linq-element-filtering.html#6)
-versus [slow filters](http://thebuildingcoder.typepad.com/blog/2015/12/quick-slow-and-linq-element-filtering.html#7) and 
+of [quick filters](1382_filter_shortcuts.html#6)
+versus [slow filters](1382_filter_shortcuts.html#7) and 
 the difference between them.
 
 Quick filters can be executed without regenerating the views and without fully loading the nitty-gritty detailed data of a huge model.
@@ -363,9 +363,9 @@ I hope we can resolve them by and by.
 
 Here are some pretty old and rudimentary introductions to the topics that you asked for, Abba:
 
-- [Element Bounding Box](http://thebuildingcoder.typepad.com/blog/2008/10/element-bounding-box.html)
-- [Transform](http://thebuildingcoder.typepad.com/blog/2009/03/transform.html)
-- [Transform instance coordinates](http://thebuildingcoder.typepad.com/blog/2009/03/transform-instance-coordinates.html)
+- [Element Bounding Box](0030_bounding_box.htm)
+- [Transform](0110_transform.htm)
+- [Transform instance coordinates](0111_transform_instance_coords.htm)
 
 I added Erik's `View` extension method `IntersectsBoundingBox` 
 to [The Building Coder samples](https://github.com/jeremytammik/the_building_coder_samples)

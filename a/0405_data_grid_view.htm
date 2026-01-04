@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Populating a Data Grid View</h3>
@@ -11,12 +42,12 @@ I posted this in advance to ensure you have something worthwhile to chew on duri
 
 <p>This is another stepping stone towards implementing Martin Schmid's proposal to display and navigate through all unconnected MEP connectors in the model that I mentioned in the discussion on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/retrieve-mep-elements-and-connectors.html">
+<a href="0398_retrieve_mep_elements.htm">
 retrieving MEP elements and connectors</a>.
 
 <p>Another one of the steps is
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/revit-parent-window.html">
+<a href="0400_revit_parent_window.htm">
 determining the Revit parent window</a> and
 
 attaching a form to it.
@@ -41,7 +72,7 @@ Here is what it looks like with its properties in the Visual Studio form designe
 
 <!-- 106 -->
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/list-linked-elements.html">
+<a href="0106_list_linked_elements.htm">
 list linked elements</a>.
 
 If you set up an appropriate data container whose elements expose certain public member properties, all you need to do is to specify the container as the data source of the data grid view, and it will not only automatically populate the rows of data, but even create the columns according to the available properties!</p>
@@ -50,7 +81,7 @@ If you set up an appropriate data container whose elements expose certain public
 
 <!-- 164 -->
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/07/three-coding-and-performance-hints.html">
+<a href="0164_three_hints.htm">
 auto-implemented properties</a>,
 
 the definition of the properties on the data item classes is reduced to just specifying their name and type and almost nothing else.</p>
@@ -166,7 +197,7 @@ Furthermore, I save the coordinates as string values instead of double numbers, 
 
 <p>In the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/list-linked-elements.html">
+<a href="0106_list_linked_elements.htm">
 linked elements</a> example
 
 mentioned above, we simply used a generic .NET List&lt;&gt; as a data container.
@@ -465,12 +496,12 @@ Error retrieving connectors on 3 elements,
 <p>The next and final instalment of this discussion will present the details of the interaction of the modeless dialogue box with Revit.
 The modeless form does not have access to the Revit API, since it is
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/asynchronous-api-calls-and-idling.html">
+<a href="0353_asynchronous.htm">
 not asynchronously accessible</a>.
 
 Happily, we can use the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/idling-event.html">
+<a href="0352_idling.htm">
 Idling event</a>
 
 to create a reliable and seamless solution for that.</p>
@@ -489,3 +520,12 @@ Revit parent window</a>.
 
 <p>Enjoy, and I look forward to hearing back from you after my holidays!</p>
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

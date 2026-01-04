@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - purge via API
@@ -58,7 +89,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 </ul>
 <h4><a name="2"></a> Purge Unused using eTransmitForRevitDB.dll</h4>
 <p>Last month, we
-discussed <a href="https://thebuildingcoder.typepad.com/blog/2022/02/purge-unused-and-etransmit-for-da4r.html">several approaches to automating the purge command</a>.</p>
+discussed <a href="1939_purge_etransmit.html">several approaches to automating the purge command</a>.</p>
 <p>Now Emiliano Capasso,
 Head of BIM at <a href="https://www.citterio-viel.com">Antonio Citterio Patricia Viel</a>,
 shared an even better one,
@@ -73,7 +104,7 @@ But as most of our architects are deeply caught in the design process and they f
 <p>But with more than 40 active projects, how could we purge (3 times) manually every one of the 500ish models that we have?</p>
 <h4><a name="2.1"></a> The Purge via API Method</h4>
 <p>Tons of words have been spent about Purging in Revit via API, which is apparently impossible, cf.,
-the <a href="https://thebuildingcoder.typepad.com/blog/2022/02/purge-unused-and-etransmit-for-da4r.html">latest post on the topic</a>).</p>
+the <a href="1939_purge_etransmit.html">latest post on the topic</a>).</p>
 <p>There are lots of workarounds, such as <b>PerformanceAdvisor</b> and <b>PostableCommand</b>, but none of which was satisfying me.</p>
 <p>So I was wondering, how the marvellous <b>eTransmit</b> addin made by Autodesk is actually Purging the models whilst transmitting?</p>
 <p>So I went looking into the folder, found the .dll and in our addin referenced the <b>eTransmitForRevitDB.dll</b> and looked into its <b>public</b> methods:</p>
@@ -156,3 +187,11 @@ Long live the camel!</p>
 <p>Or are you working with other cloud applications and confounded by the plethora of available libraries?</p>
 <p>Maybe the <a href="https://github.com/nodeshift/nodejs-reference-architecture">Node.js Reference Architecture</a> by
 IBM and Red Hat will help make a well-founded decision.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

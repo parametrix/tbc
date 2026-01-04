@@ -84,13 +84,13 @@ I have used it repeatedly in the past to test creating a shared parameter for va
 
 Search The Building Coder blog posts for Lab4_3_1_CreateAndBindSharedParam to see detailed discussions of some of those experiments:
 
-- [Adding a Shared Parameter to a DWG File](http://thebuildingcoder.typepad.com/blog/2008/11/adding-a-shared-parameter-to-a-dwg-file.html)
-- [Model Group Shared Parameter](http://thebuildingcoder.typepad.com/blog/2009/06/model-group-shared-parameter.html)
-- [Exporting Parameter Data to Excel, and Re-importing](http://thebuildingcoder.typepad.com/blog/2012/09/exporting-parameter-data-to-excel.html)
-- [Sydney Revit API Training](http://thebuildingcoder.typepad.com/blog/2013/07/sydney-revit-api-training-and-vacation.html)
-- [Retrieving Element Properties](https://thebuildingcoder.typepad.com/blog/2015/06/archsample-active-transaction-and-adnrme-for-revit-mep-2016.html#2)
-- [The FireRating Revit SDK Sample and ADN Xtra Labs](http://thebuildingcoder.typepad.com/blog/2015/07/firerating-and-the-revit-python-shell-in-the-cloud-as-web-servers.html)
-- [Material Shared Parameters and ADN Xtra Labs](http://thebuildingcoder.typepad.com/blog/2016/12/material-shared-parameters-and-adn-xtra-labs.html)
+- [Adding a Shared Parameter to a DWG File](0036_dwg_shared_param.htm)
+- [Model Group Shared Parameter](0158_model_group_shared_param.htm)
+- [Exporting Parameter Data to Excel, and Re-importing](0828_export_param_excel.htm)
+- [Sydney Revit API Training](0988_news_sydney_train.htm)
+- [Retrieving Element Properties](1329_adnrme_2016.htm#2)
+- [The FireRating Revit SDK Sample and ADN Xtra Labs](1338_firerating_cloud.htm)
+- [Material Shared Parameters and ADN Xtra Labs](1503_material_shared_param.html)
 
 #### <a name="5"></a> Implementation Sample
 
@@ -100,8 +100,8 @@ I implemented one approach for
 the [ExportCncFab add-in](https://github.com/jeremytammik/ExportCncFab).
 
 It is discussed in three posts by The Building Coder, listed in the topic group
-on [splitting an element into parts](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.39).
+on splitting an element into parts *(link unavailable)*.
 
 The third of those explores and
-implements [binding and storing shared parameter data](https://thebuildingcoder.typepad.com/blog/2013/12/driving-cnc-fabrication-and-shared-parameters.html#4).
+implements [binding and storing shared parameter data](1080_exportcncfab.htm#4).
 

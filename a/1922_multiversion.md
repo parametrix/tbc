@@ -81,7 +81,7 @@ Successfully moved from my broken-screen laptop to a loaner machine, updated `Ex
 ####<a name="2"></a> Migration Assistant Rocks
 
 I mentioned
-my [computer mishap resulting in a broken screen](https://thebuildingcoder.typepad.com/blog/2021/10/localised-forge-intros-and-apply-code-changes.html#2) and
+my [computer mishap resulting in a broken screen](1920_apply_code_changes.html#2) and
 the happy fact that the rest of the system still works.
 Unfortunately, requiring an external screen and hence mains power significantly reduces mobility.
 
@@ -89,7 +89,7 @@ As a next step, I was able to transfer the entire system with all user and appli
 
 That worked right out the box.
 The only problem remaining being that the updated OS prevented me
-from [setting up my personal root level directories](https://thebuildingcoder.typepad.com/blog/2021/08/revit-roadmap-api-and-da4r-survey.html#4).
+from [setting up my personal root level directories](1915_roadmap_survey.html#4).
 I am forced to rewrite all my (numerous) shell scripts and add `$HOME` to them.
 I guess I can live with that.
 

@@ -56,7 +56,7 @@ the [Revit Developer Centre](http://www.autodesk.com/developrevit).
 First of all, you might want to check out
 the [overview of new product features](http://www.autodesk.com/products/revit-family/features) and
 check how they correlate with the API functionality enhancements discussed in
-the [DevDays Online API news](http://thebuildingcoder.typepad.com/blog/2017/03/revitlookup-enhancements-future-revit-and-other-api-news.html).
+the [DevDays Online API news](1534_revit_api_news.html).
 
 The Revit SDK contains documentation and samples, which I unpacked in my local folder `C:\a\lib\revit\2018\SDK`:
 

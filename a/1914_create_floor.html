@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - get total polygon count
@@ -100,7 +131,7 @@ It will list the number of triangles and vertices.
 The 3D Viewer is a free download if you don't already have it in Windows 10.</p>
 <p>As a programmer, you can do as you suggest, retrieve all the element geometry, tessellate it, and sum up the total number of triangles.</p>
 <p>You might find it easiest to do so using
-a <a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.1">custom exporter</a>.
+a <span class="unavailable-link">custom exporter</span>.
 The result should be the same as in the FBX export.</p>
 <p><a href="https://forums.autodesk.com/t5/user/viewprofilepage/user-id/5770785">@techXMKH9</a> very
 kindly shared a nice and minimal sample custom exporter implementation that I integrated into a new external command <code>CmdTriangleCount</code>
@@ -269,7 +300,7 @@ of <a href="https://github.com/jeremytammik/the_building_coder_samples">The Buil
 </center></p>
 <h4><a name="3"></a> Floor Creation API Clarification</h4>
 <p>The development team provide some clarification on how to user
-the <a href="https://thebuildingcoder.typepad.com/blog/2021/04/whats-new-in-the-revit-2022-api.html#4.1.4.1">new floor creation API</a> introduced
+the <a href="1903_whats_new_2022.html#4.1.4.1">new floor creation API</a> introduced
 in Revit 2022.</p>
 <p>Some old APIs were obsoleted, and the new methods work a bit differently, so some instructions on how to migrate from the old API to the new may come in handy, especially a sample code snippet like this:</p>
 <pre class="code">
@@ -377,3 +408,11 @@ the <a href="https://github.com/jeremytammik/jtracer">jtracer GitHub repository<
 <p><center>
 <img src="img/many_solar_panels.jpg" alt="Solar panels" title="Solar panels" width="400"/> <!-- 800 -->
 </center></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

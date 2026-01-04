@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -14,18 +45,18 @@
 <a href="http://content.case-inc.com/au-hackathon-2013">
 CASE BIM Hackathon</a> project to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/01/calculating-a-rolling-offset-between-two-pipes.html">
+<a href="1085_rolling_offset.htm">
 calculate a rolling offset</a> between
 
 two pipes,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/01/calculating-a-rolling-offset-between-two-pipes.html">
+<a href="1085_rolling_offset.htm">
 insert the rolling offset pipe segment</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/01/connecting-the-rolling-offset-pipe-to-its-neighbour-pipes.html">
+<a href="1089_rolling_offset_connect.htm">
 connect it to its neighbours</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/01/connecting-the-rolling-offset-pipe-to-its-neighbour-pipes.html">
+<a href="1089_rolling_offset_connect.htm">
 explicitly placing elbow fittings</a>.</p>
 
 <p>The explicit fitting placement was pretty hard and fiddly to implement, requiring the following steps:</p>
@@ -43,10 +74,10 @@ explicitly placing elbow fittings</a>.</p>
 
 <p>As pointed out by Tate in the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/01/connecting-the-rolling-offset-pipe-to-its-neighbour-pipes.html?cid=6a00e553e168978833019b04c5511d970d#comment-6a00e553e168978833019b04c5511d970d">
+<a href="1089_rolling_offset_connect.htm">
 comment</a> on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/01/connecting-the-rolling-offset-pipe-to-its-neighbour-pipes.html">
+<a href="1089_rolling_offset_connect.htm">
 connecting the rolling offset pipe</a> to
 
 its neighbours, almost all that effort can be avoided by using the NewElbowFitting method instead.
@@ -55,12 +86,12 @@ It selects, creates, adapts, places and connects an elbow fitting automatically,
 <p>We touched on the topic of new fitting creation methods now and then in the past, but never presented an example using NewElbowFitting in context like this, so it is actually rather overdue:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/05/cable-tray-orientation-and-fittings.html">Cable tray orientation and fittings</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/02/use-of-newtakeofffitting-on-a-duct.html">Use of NewTakeOffFitting on a duct</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/02/set-elbow-fitting-type.html">Set elbow fitting type</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/04/use-of-newtakeofffitting-on-a-pipe.html">Use of NewTakeOffFitting on a pipe</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/07/mep-placeholders.html">MEP placeholders</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/07/elbow-fitting-selection-and-dimensioning.html">Elbow fitting selection and dimensioning</a></li>
+<li><a href="0366_cable_tray_fitting.htm">Cable tray orientation and fittings</a></li>
+<li><a href="0529_newtakeofffitting_duct.htm">Use of NewTakeOffFitting on a duct</a></li>
+<li><a href="0535_set_elbow_fitting_type.htm">Set elbow fitting type</a></li>
+<li><a href="0564_newtakeofffitting_pipe.htm">Use of NewTakeOffFitting on a pipe</a></li>
+<li><a href="0609_mep_placeholder.htm">MEP placeholders</a></li>
+<li><a href="0803_select_elbow.htm">Elbow fitting selection and dimensioning</a></li>
 </ul>
 
 
@@ -72,7 +103,7 @@ It selects, creates, adapts, places and connects an elbow fitting automatically,
 
 <p>Last time I discussed it, it
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/01/connecting-the-rolling-offset-pipe-to-its-neighbour-pipes.html">
+<a href="1089_rolling_offset_connect.htm">
 connected a pipe directly</a> to
 
 the neighbouring original pipes with no fittings in between.</p>
@@ -120,7 +151,7 @@ the neighbouring original pipes with no fittings in between.</p>
 
 <p>The resulting model looks exactly the same as the one presented yesterday, generated by
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/01/explicitly-placing-rolling-offset-pipe-elbow-fittings.html#4">
+<a href="1090_rolling_offset_elbows.htm#4">
 explicitly placing the elbow fittings</a>.</p>
 
 <p>The new method to place the elbow fittings and properly connect the rolling offset is included in
@@ -134,3 +165,12 @@ repository, in the external command CmdRollingOffset, and the version discussed 
 release 2014.0.106.5</a>.</p>
 
 <p>That just about concludes this project, except for the question on how to use Pipe.Create instead of Document.Create.NewPipe, which is still open.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

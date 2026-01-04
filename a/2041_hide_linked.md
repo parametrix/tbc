@@ -81,12 +81,12 @@ It consists of three parts:
 
 Please also refer to the following previous articles related to Revit 2025 API:
 
-- [Revit 2025 and RevitLookup 2025](https://thebuildingcoder.typepad.com/blog/2024/04/revit-2025-and-revitlookup-2025.html)
-- [The Building Coder Samples 2025](https://thebuildingcoder.typepad.com/blog/2024/04/the-building-coder-samples-2025.html)
-- [RevitLookup Hotfix and the Revit 2025 SDK](https://thebuildingcoder.typepad.com/blog/2024/04/revitlookup-hotfix-and-the-revit-2025-sdk.html)
-- [What's New in the Revit 2025 API](https://thebuildingcoder.typepad.com/blog/2024/04/whats-new-in-the-revit-2025-api.html)
-- [Migrating VB to .NET Core 8](https://thebuildingcoder.typepad.com/blog/2024/05/migrating-vb-to-net-core-8-and-ai-news.html)
-- [Revit 2025.1](https://thebuildingcoder.typepad.com/blog/2024/05/revit-20251-and-handling-lack-of-ui-in-da.html)
+- [Revit 2025 and RevitLookup 2025](2032_rvt_2025.html)
+- [The Building Coder Samples 2025](2033_tbc_2025.html)
+- [RevitLookup Hotfix and the Revit 2025 SDK](2034_sdk_2025.html)
+- [What's New in the Revit 2025 API](2036_whats_new_2025.html)
+- [Migrating VB to .NET Core 8](2037_vb_2025.html)
+- [Revit 2025.1](2040_rvt_2025_1.html)
 
 ####<a name="3"></a> Hiding Linked Elements
 

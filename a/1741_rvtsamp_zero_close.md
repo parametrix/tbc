@@ -57,8 +57,8 @@ As you may know, RvtSamples is simply an external application that reads a text 
 
 It is used to easily provide debugging and testing access to all the external commands provided by the Revit SDK samples.
 
-In his [comment](https://thebuildingcoder.typepad.com/blog/2018/04/rvtsamples-2019.html#comment-4399937612)
-on [RvtSamples for Revit 2019](https://thebuildingcoder.typepad.com/blog/2018/04/rvtsamples-2019.html#comment-4399937612),
+In his [comment](1646_rvtsamples_2019.html#comment-4399937612)
+on [RvtSamples for Revit 2019](1646_rvtsamples_2019.html#comment-4399937612),
 Jérémie asks:
 
 **Question:** After several tries on Visual Studio 2017 I finally managed to load RvtSamples to Revit 2019! Thank you for this update!
@@ -79,7 +79,7 @@ of [Add-in Registration settings in the Developer Guide](http://help.autodesk.co
 
 The RvtSamples.txt text input file is not created by the program, but hand edited.
 
-I implemented it originally in 2008 to [load the Revit SDK samples](https://thebuildingcoder.typepad.com/blog/2008/09/loading-sdk-sam.html).
+I implemented it originally in 2008 to [load the Revit SDK samples](0007_loading_sdk_samples.htm).
 
 At that time, it only held four lines of text per external command to load.
 
@@ -108,7 +108,7 @@ Or, as you suggest, set the default to `AlwaysVisible`. Oh no, this all makes no
 **Response:** The RvtSamples panel is visible but disabled in zero document state.
 
 But now it works. I ended up finding what was blocking me in the article
-on [enabling ribbon items in zero document state](http://thebuildingcoder.typepad.com/blog/2011/02/enable-ribbon-items-in-zero-document-state.html).
+on [enabling ribbon items in zero document state](0538_zero_doc_ribbon.htm).
 
 To implement this in RvtSamples, it's ultimately relatively simple.
 
@@ -137,8 +137,8 @@ After updating the Revit API assembly DLLs to the new version,
 - Error CS1061 in CmdGetMaterials.cs line 736: `Application` does not contain a definition for `get_Assets` and no extension method `get_Assets` accepting a first argument of type `Application` could be found.
 
 The removal of this property is indeed listed
-in [What's New in the Revit 2020 API](https://thebuildingcoder.typepad.com/blog/2019/04/whats-new-in-the-revit-2020-api.html)
-under [obsolete API removal](https://thebuildingcoder.typepad.com/blog/2019/04/whats-new-in-the-revit-2020-api.html#4.1.6).
+in [What's New in the Revit 2020 API](1740_whats_new_2020.html)
+under [obsolete API removal](1740_whats_new_2020.html#4.1.6).
 
 It was referenced in the method `ListAllAssets`, whose only purpose was to test this property.
 I guess it has no particular use.
@@ -154,7 +154,7 @@ I prefer to colourise the C# source code I publish here on the blog, cf. below.
 This can be achieved by installing an additional tool in Visual Studio.
 
 Luckily I researched this topic three years ago
-migrating [RvtSamples for Revit 2017](http://thebuildingcoder.typepad.com/blog/2016/04/rvtsamples-for-revit-2017.html) and
+migrating [RvtSamples for Revit 2017](1427_rvtsamples.html) and
 discovered
 the [Productivity Power Tools 2015](https://visualstudiogallery.msdn.microsoft.com/34ebc6a2-2777-421d-8914-e29c1dfa7f5d).
 
@@ -167,13 +167,13 @@ I installed those and they still work fine:
 
 ####<a name="5"></a> Using PostCommand to Close Document
 
-A long, long time ago, we discussed [closing the active document and why not to](https://thebuildingcoder.typepad.com/blog/2010/10/closing-the-active-document-and-why-not-to.html) do
+A long, long time ago, we discussed [closing the active document and why not to](0456_close_active_doc.htm) do
 so using a Windows message workaround, later followed by another exploration on how
-to [close the last document](https://thebuildingcoder.typepad.com/blog/2012/12/closing-the-active-document.html) by
+to [close the last document](0873_close_active_doc.htm) by
 first opening a dummy document so that the other 'real' document can be closed.
 
 Bogdan just provided a new effective suggestion for closing the active document using `PostCommand` in
-his [comment on the former post](https://thebuildingcoder.typepad.com/blog/2010/10/closing-the-active-document-and-why-not-to.html#comment-4435756188):
+his [comment on the former post](0456_close_active_doc.htm#comment-4435756188):
 
 > Maybe someone has already found this solution to close the active document in Revit; I found the following method:
 

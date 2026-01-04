@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Flex Duct Start Tangent</h3>
@@ -8,13 +39,13 @@
 
 <p>Here is a suggestion for a workaround to specify the start and end tangents of a flex duct or pipe that evolved through a recent
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/08/structural-dynamic-model-update-sample.html?cid=6a00e553e168978833013485f297dc970c#comment-6a00e553e168978833013485f297dc970c">
+<a href="0418_rst_dmu.htm">
 exchange</a>
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/08/structural-dynamic-model-update-sample.html?cid=6a00e553e1689788330133f2dfa073970b#comment-6a00e553e1689788330133f2dfa073970b">
+<a href="0418_rst_dmu.htm">
 of</a>
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/08/structural-dynamic-model-update-sample.html?cid=6a00e553e1689788330134860dce69970c#comment-6a00e553e1689788330134860dce69970c">
+<a href="0418_rst_dmu.htm">
 comments</a> with Zhu XiaoMeng:
 
 <p><strong>Question:</strong> In the Revit application UI, I can create a FlexDuct properly with the start tangent of the Hermite curve in a reasonable direction.
@@ -30,7 +61,7 @@ How can I do the same thing in API as in the UI?
 
 <p><strong>Answer:</strong> One thing to note regarding this is that it does not seem to be related to the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/07/debugging-in-visual-studio-2010-express.html?cid=6a00e553e168978833013485ce109c970c#comment-6a00e553e168978833013485ce109c970c">
+<a href="0416_debug_in_vs2010.htm">
 Hermite spline issue</a> that we recently discussed.
 
 <p>Here is a suggestion for a possible workaround: 
@@ -111,3 +142,12 @@ So the point is: how can I get them joined?
 <p>Before deleting the temporary fitting, call the document Regenerate method, otherwise the tangent will not change!
 
 <p>Very many thanks to Zhu XiaoMeng for this discussion and sharing the successful result!
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

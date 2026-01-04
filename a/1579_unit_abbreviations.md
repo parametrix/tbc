@@ -37,8 +37,8 @@ The Revit API help file `RevitAPI.chm` documentation says:
 
 The Building Coder already took a stab at this in two past articles:
 
-- [Unit abbreviations](http://thebuildingcoder.typepad.com/blog/2013/11/unit-abbreviations.html)
-- [Localised unit abbreviations](http://thebuildingcoder.typepad.com/blog/2013/11/localised-unit-abbreviations.html)
+- [Unit abbreviations](1050_unit_abbreviation.htm)
+- [Localised unit abbreviations](1061_localised_unit_abbrev.htm)
 
 The former implements a manually generated hard coded display of unit type abbreviation list for a selected subset of `DisplayUnitType` values.
 

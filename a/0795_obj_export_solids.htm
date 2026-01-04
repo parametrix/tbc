@@ -1,12 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>OBJ Model Exporter with Multiple Solid Support</h3>
 
 <p>Yesterday, I thought that I had completed my basic 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/07/obj-model-exporter-with-colours.html">
+<a href="0794_obj_export_colour.htm">
 working OBJ exporter</a> implementation 
 
 including colour support.
@@ -92,8 +123,8 @@ All the rest of the fireplace is lost, including its chimney and even a section 
 
 <p>As always when dealing with lengths, areas and volumes in built-in 
 
-<a href="http://thebuildingcoder.typepad.com/blog/units">
-Revit database units</a>, 
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/units">
+Revit database units <em>(category page)</em></span>, 
 
 the area and volume is given in square and cubic feet, respectively.
 
@@ -103,7 +134,7 @@ The second is presumably the round chimney, and the first the actual fireplace i
 
 <p>The exporter mainline that I presented last week was based on the idea of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/obj-model-exporter-take-one.html#7">
+<a href="0792_obj_export_v1.htm#7">
 retrieving a maximum of one single solid per building element</a>.
 
 That assumption simply does not hold for this case.
@@ -115,7 +146,7 @@ That assumption simply does not hold for this case.
 
 <p>I therefore replaced the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/obj-model-exporter-take-one.html#7">
+<a href="0792_obj_export_v1.htm#7">
 GetSolid method</a> by
 
 two new methods ExportSolids and ExportSolid, built to export any number of solids per element:
@@ -246,12 +277,12 @@ Probably just the window and door frames were exported, and not the glass.
 
 <p>The need to support transparency was actually one of the first things Rudolf pointed out in his
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/obj-model-export-considerations.html?cid=6a00e553e168978833017742c3ff3f970d#comment-6a00e553e168978833017742c3ff3f970d">
+<a href="0791_obj_export_basics.htm">
 comment</a> on
 
 the original
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/obj-model-export-considerations.html?cid=6a00e553e168978833017742c3ff3f970d#comment-6a00e553e168978833017742c3ff3f970d">
+<a href="0791_obj_export_basics.htm">
 exporter considerations</a>,
 
 and now I see how right he was.
@@ -271,3 +302,12 @@ the entire source code, Visual Studio solution and add-in manifest for the updat
 <h4>Mingling Triangles and Colours</h4>
 -->
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

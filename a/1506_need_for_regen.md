@@ -87,11 +87,11 @@ the [complete Python file rename_view_numbers.py](zip/rename_view_numbers.py)
 
 Thank you for your query.
 
-This is a nice example of the [need for regeneration](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33).
+This is a nice example of the need for regeneration *(link unavailable)*.
 
-The behaviour you describe may well be caused by a need to regenerate between the transactions. The first modification does something, and the model needs to be regenerated before the modifications take full effect and are reflected in the parameter values that you query in the second transaction. You are accessing stale data. Explore [The Building Coder topic group on the need to regenerate](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33) to learn all the nitty gritty details and view numerous examples of this.
+The behaviour you describe may well be caused by a need to regenerate between the transactions. The first modification does something, and the model needs to be regenerated before the modifications take full effect and are reflected in the parameter values that you query in the second transaction. You are accessing stale data. Explore The Building Coder topic group on the need to regenerate *(link unavailable)* to learn all the nitty gritty details and view numerous examples of this.
 
-Also, when making use of several transactions in one go, it might also be helpful to check out the `TransactionGroup` class and its `Assimilate` method, e.g., in the discussion on [using transaction groups](http://thebuildingcoder.typepad.com/blog/2015/02/using-transaction-groups.html).
+Also, when making use of several transactions in one go, it might also be helpful to check out the `TransactionGroup` class and its `Assimilate` method, e.g., in the discussion on [using transaction groups](1280_transaction_group.htm).
  
 
 ####<a name="4"></a>Use Built-in Parameters to Access Parameters
@@ -141,7 +141,7 @@ The first place to go to check is always the [Forge API status page](https://dev
 ####<a name="6"></a>Added Materials to 210 King Model
 
 As part of my New Year celebration last January, I published
-a [collection of public Revit models](http://thebuildingcoder.typepad.com/blog/2016/01/happy-new-top-cad-blog-public-models-and-forge.html#4)
+a [collection of public Revit models](1390_happy_new_year.html#4)
 on [Dropbox](https://www.dropbox.com/sh/51beylyeor41jnm/AAB7PaDA5t0H5Hg7DDgaslpla?dl=0).
 
 One of them is the model of the [210 King Street Autodesk Toronto office](https://www.dropbox.com/sh/51beylyeor41jnm/AAATil-xM2Y8qC3N5WtmHQZca/210%20King%20-%20Autodesk%20Toronto.rvt?dl=0).
@@ -149,11 +149,11 @@ One of them is the model of the [210 King Street Autodesk Toronto office](https:
 Philippe is using that in
 his [responsive connected database viewer](https://forge-rcdb.autodesk.io) Forge
 demonstration ([GitHub repo](https://github.com/Autodesk-Forge/forge-rcdb.nodejs)) and asked me to
-help [clean up its material settings](http://thebuildingcoder.typepad.com/blog/2016/12/material-shared-parameters-and-adn-xtra-labs.html#7).
+help [clean up its material settings](1503_material_shared_param.html#7).
 
 That led me to implement
 the [PopulateMaterialProperty add-in](https://github.com/jeremytammik/PopulateMaterialProperty).
 
 In case you are interested in the result of running this on the Toronto office model in Revit 2017, The Building Coder has now made that available
-as [210_King_2017_6.rvt](http://thebuildingcoder.typepad.com/public_revit_model/210_King_2017_6.rvt).
+as 210_King_2017_6.rvt *(link unavailable)*.
 

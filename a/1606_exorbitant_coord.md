@@ -28,7 +28,7 @@ Relocating them closer to the origin resolves the problem...
 ### Avoid Exorbitant Coordinates
 
 With help from the Revit API development team, my
-colleague [Jim Jia](http://thebuildingcoder.typepad.com/blog/2017/11/cloud-model-predicate-and-set-parameter-regenerates.html#2) resolved an issue involving large coordinates beyond
+colleague [Jim Jia](1605_param_regen_cloud_model.html#2) resolved an issue involving large coordinates beyond
 the [20-mile limit](#2) that is important to be aware of:
 
 **Question:** My program sets the parameters for a precast concrete slab family.
@@ -100,15 +100,15 @@ I moved the family instances near to the origin and they are now created well.
 
 ####<a name="2"></a>Why the Limit?
 
-**Question:** David Veld asks [below](http://thebuildingcoder.typepad.com/blog/2017/11/avoid-exorbitant-coordinates.html#comment-3639729627): I've always wondered where this 20 mile limit comes from, from a coding-technical point of view. If Revit is written in native C++ and stores its coordinates in feet, as doubles, the limit should be 1.8 × 10^308 (right?) &ndash; this is waaaay beyond 20 miles. Or does this mean they are not and perhaps stored in another way?  
+**Question:** David Veld asks [below](1606_exorbitant_coord.html#comment-3639729627): I've always wondered where this 20 mile limit comes from, from a coding-technical point of view. If Revit is written in native C++ and stores its coordinates in feet, as doubles, the limit should be 1.8 × 10^308 (right?) &ndash; this is waaaay beyond 20 miles. Or does this mean they are not and perhaps stored in another way?  
 
 **Answer:** First of all, read about [demystifying floating point precision](https://blog.demofox.org/2017/11/21/floating-point-precision).
 The precision is reduced the higher the number that is stored.
 
 20 miles is 105600 feet. According to the table there, the precision is about 0.008 feet at that range for floats. This is about 0.2 cm, which is pretty close to Revit's built-in precision limit of about 1/16th of an inch that we repeatedly encountered in the past:
 
-- [Think big in Revit](http://thebuildingcoder.typepad.com/blog/2009/07/think-big-in-revit.html)
-- [DirectShape minimum size](http://thebuildingcoder.typepad.com/blog/2014/05/directshape-performance-and-minimum-size.html#3)
+- [Think big in Revit](0176_think_big.htm)
+- [DirectShape minimum size](1154_directshape_min_size.htm#3)
 
 The Revit help clearly documents
 the [maximum distance limit of 20 miles](https://knowledge.autodesk.com/support/revit-products/learn-explore/caas/CloudHelp/cloudhelp/2018/ENU/Revit-Model/files/GUID-3F79BF5A-F051-49F3-951E-D3E86F51BECC-htm.html).
@@ -147,9 +147,9 @@ That is a fact you have to accept.
 That is why it is so clearly documented.
 
 As always, you can work around it. Here is an example of doing so,
-for [modelling small details](http://thebuildingcoder.typepad.com/blog/2016/02/modelling-small-details.html),
+for [modelling small details](1399_small_details.html),
 by importing a DWG file &ndash; however, please also be aware that it is in general recommended
-to [avoid importing CAD into RFA](http://thebuildingcoder.typepad.com/blog/2016/09/avoid-cad-import-in-rfa-aag16-and-endtrip.html#2).
+to [avoid importing CAD into RFA](1470_dwg_rfa_aacg16_endtrip.html#2).
 
 The recommendation to avoid exorbitant coordinates is not specific to Revit, by the way.
 

@@ -20,9 +20,9 @@ https://forums.autodesk.com/t5/revit-api-forum/obtaining-references-from-edges-i
 and solution from
 https://github.com/CADBIMDeveloper/PutRevitDimensionsToSquareFaces/tree/master/PutRevitDimensionsToSquareFaces
 Sincerely, Alexander
-- [a readme is a must](http://thebuildingcoder.typepad.com/blog/2016/10/how-to-create-a-new-line-style.html#4)!
-- [people cannot use the code unless you specify a license](http://thebuildingcoder.typepad.com/blog/2013/10/the-building-coder-samples-on-github.html#2)!
-- [more on licenses](http://thebuildingcoder.typepad.com/blog/2013/10/wall-compound-layer-and-other-geometry.html#2)
+- [a readme is a must](1490_create_line_style.html#4)!
+- [people cannot use the code unless you specify a license](1036_tbc_samples_github.htm#2)!
+- [more on licenses](1047_wall_geometry.htm#2)
 I still use the This sample is licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT), a lax, permissive non-copyleft free software license. For substantial programs it is better to use the Apache 2.0 license since it blocks patent treachery. Mine samples are not substantial.
 - I've fixed the code (there was much more tricks working with revit references) and pushed to the github.
 
@@ -76,7 +76,7 @@ My code at that moment looked like this:
 </pre>
 
 I searched for a solution and found the old blog post
-on [duplicating a legend component](http://thebuildingcoder.typepad.com/blog/2010/05/duplicate-legend-component.html).
+on [duplicating a legend component](0377_duplicate_legend_component.htm).
 
 That solution puts elements into a group, places a group instance and then ungroups it. This method still remains working with little modification, such as:
 
@@ -193,9 +193,9 @@ Many thanks to Alexander for this work!
 
 Jeremy adds: I added a readme and license to the code for him, because:
 
-- [A readme is a must](http://thebuildingcoder.typepad.com/blog/2016/10/how-to-create-a-new-line-style.html#4)!
-- [People cannot use the code unless you specify a license](http://thebuildingcoder.typepad.com/blog/2013/10/the-building-coder-samples-on-github.html#2)!
-- [More on licenses](http://thebuildingcoder.typepad.com/blog/2013/10/wall-compound-layer-and-other-geometry.html#2)...
+- [A readme is a must](1490_create_line_style.html#4)!
+- [People cannot use the code unless you specify a license](1036_tbc_samples_github.htm#2)!
+- [More on licenses](1047_wall_geometry.htm#2)...
 
 I myself use the [MIT License](http://opensource.org/licenses/MIT) for my samples, "a lax, permissive non-copyleft free software license. For substantial programs, it is better to use the Apache 2.0 license since it blocks patent treachery".
 

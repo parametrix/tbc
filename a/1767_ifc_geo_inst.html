@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -94,7 +125,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 
 <p><center>
 <img src="img/mahabghodss_video.png" alt="Mahab Ghodss civil engineering app" width="450">
-<p style="font-size: 80%; font-style:italic">Mahab Ghodss civil engineering project (<a href="https://thebuildingcoder.typepad.com/files/mahabghodss_video.mp4">video</a>)</p> 
+<p style="font-size: 80%; font-style:italic">Mahab Ghodss civil engineering project (<span class="unavailable-link" title="Original: https://thebuildingcoder.typepad.com/files/mahabghodss_video.mp4">video <em>(file unavailable: mahabghodss_video.mp4)</em></span>)</p> 
 </center></p>
 <ul>
 <li><a href="#7">Iranian civil engineering project video</a></li>
@@ -149,10 +180,10 @@ commands <a href="https://github.com/jeremytammik/AdnRevitApiLabsXtra/blob/maste
 and <a href="https://github.com/jeremytammik/AdnRevitApiLabsXtra/blob/master/XtraCs/Labs4.cs#L268-L509">Lab4_2_ExportParametersToExcel</a>.</p>
 <h4><a name="6"></a> Store Globals on Custom DataStorage, not ProjectInfo</h4>
 <p>Talking about parameters, I implemented an add-in to round-trip Revit element parameters to Forge and back, enabling
-the <a href="https://thebuildingcoder.typepad.com/blog/2017/09/use-forge-or-spreadsheet-to-create-shared-parameters.html">use of Forge or an external spreadsheet to create shared parameters</a>.</p>
-<p>A recent <a href="https://thebuildingcoder.typepad.com/blog/2017/09/use-forge-or-spreadsheet-to-create-shared-parameters.html#comment-4568543582">comment</a> on that once again brought up the topic of storing global information in the model.</p>
+the <a href="1583_rvtmetaprop.html">use of Forge or an external spreadsheet to create shared parameters</a>.</p>
+<p>A recent <a href="1583_rvtmetaprop.html#comment-4568543582">comment</a> on that once again brought up the topic of storing global information in the model.</p>
 <p>If you wish to do so, do not store it on the <code>ProjectInfo</code> singleton element; rather, you can and should create your own <code>DataStorage</code> element for this purpose, as explained in the note
-on <a href="https://thebuildingcoder.typepad.com/blog/2016/11/1500-posts-devday-and-storing-a-dictionary.html#5">storing a dictionary &ndash; use <code>DataStorage</code>, not <code>ProjectInfo</code></a>.</p>
+on <a href="1500_devday_dict.html#5">storing a dictionary &ndash; use <code>DataStorage</code>, not <code>ProjectInfo</code></a>.</p>
 <!--
 
 ####<a name="7"></a> Iranian Civil Engineering Project Video
@@ -167,3 +198,11 @@ shared an impressive [video](https://dms.licdn.com/playback/C4D05AQGxc2GCtF1W5A/
 Thanks to Ahmad for sharing this, and congratulations on implementing this impressive workflow!
 
 -->
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

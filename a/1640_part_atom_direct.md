@@ -90,7 +90,7 @@ After all, this seems like metadata that logically could be available without Re
 In other words, you can read data from an unopened Revit document, but you can only do so from within a valid Revit session.
  
 However, there are many ways of getting at the basic file info without use of the Revit API, e.g.,
-[determining RVT file version using Python](http://thebuildingcoder.typepad.com/blog/2017/06/determining-rvt-file-version-using-python.html), or
+[determining RVT file version using Python](1570_rvt_version_py.html), or
 one of the other approaches discussed there.
 
 

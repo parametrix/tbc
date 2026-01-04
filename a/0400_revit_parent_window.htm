@@ -1,18 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Revit Parent Window</h3>
 
 <p>Today is the last day of the Munich AEC
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/devcamp-devlabs-and-updated-api-training-schedule.html#devlabs">
+<a href="0329_devcamp_training.htm#devlabs">
 DevLab</a>.
 
 It has been a great week here, both meeting with developers to discuss their issues, find quite a few solutions, and connect again with many old friends here in the Munich Autodesk office.
 One issue that came up repeatedly was also a topic in the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/devlab-and-birthday.html">
+<a href="0389_devlab_birthday.htm">
 Waltham DevLab</a>, 
 
 so it is well worth exploring here in more detail:
@@ -69,7 +100,7 @@ Is there a way to explicitly specify the Revit window with the call to the ShowD
 
 <p>I presented an example of implementing and using such a wrapper class in the discussion on 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/driving-revit-from-outside.html">
+<a href="0051_driving_revit.htm">
 driving Revit from outside</a>.
 
 It demonstrates an alternative but less reliable method based on FindWindow to determine the main Revit window handle.
@@ -95,7 +126,7 @@ LooseConnectors</a> sample
 application that I recently created for the AEC DevCamp Revit MEP API presentation. 
 It makes use of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/retrieve-mep-elements-and-connectors.html">
+<a href="0398_retrieve_mep_elements.htm">
 MEP element collector and connector retrieval</a>
 
 methods that I presented a few days ago and then displays a list of all unconnected connectors in a modeless dialogue box.
@@ -121,3 +152,12 @@ Clearly a windows forms issue, and nothing to do with Revit.
 
 I thought you might want to know about this in case someone else runs into a similar glitch and can save some aggravation.  
 In the long run, I may want to figure out how to make it work with a double-click, but for the moment, I will move on to the many other challenges.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

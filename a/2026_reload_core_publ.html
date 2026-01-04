@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
@@ -5,7 +35,8 @@
 <p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"></p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - .net core migration webinar recording
@@ -89,16 +120,16 @@ Many thanks to George for implementing and documenting this exciting new functio
 the <a href="http://forums.autodesk.com/t5/revit-api-forum/bd-p/160">discussion forum</a> and
 here in the blog, e.g.:</p>
 <ul>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2021/01/face-triangulation-lod-net-5-and-core.html#2">.NET 5 and Core</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2023/08/15-years-polygon-areas-and-net-core.html#3">.NET Core</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2023/11/net-core-preview-and-open-source-add-in-projects.html">.NET Core Preview and Open Source Add-In Projects</a></li>
+<li><a href="1888_net_5_core.html#2">.NET 5 and Core</a></li>
+<li><a href="2005_net_core.html#3">.NET Core</a></li>
+<li><a href="2017_os_projects.html">.NET Core Preview and Open Source Add-In Projects</a></li>
 </ul>
 <p>Up until today, the Revit API system requirements still require the pre-Core .NET framework 4.8.</p>
 <p>Roman <a href="https://github.com/Nice3point">Nice3point</a> Karpovich
 of <a href="https://www.linkedin.com/company/atomatiq/">atomatiq</a>, aka Роман Карпович, presented
-a <a href="https://thebuildingcoder.typepad.com/blog/2023/10/dll-paradise-and-a-fall.html">solution using IPC to connect components using different .NET frameworks</a>.</p>
+a <a href="2012_dll_paradise.html">solution using IPC to connect components using different .NET frameworks</a>.</p>
 <p>The development team is thinking about upgrading the Revit API to .NET Core and held
-the <a href="https://thebuildingcoder.typepad.com/blog/2023/12/parameters-and-net-core-webinar.html#2">.NET Core webinar</a> on
+the <a href="2020_net_core_webinar.html#2">.NET Core webinar</a> on
 January 30, 2024, to discuss the current state of things and migration issues.</p>
 <p>The <a href="https://feedback.autodesk.com/project/article/item.html?cap=cb0fd5af18bb49b791dfa3f5efc47a72&amp;arttypeid={16363613-34f6-4dfa-9b97-3857dbbe9ade}&amp;">.NET Core migration webinar recording</a>
 has now been posted to the feedback portal.
@@ -109,8 +140,8 @@ Note that an ADN or feedback portal membership is required to access that link.<
 the UI, cf. also the official Revit online help on how
 to <a href="https://help.autodesk.com/view/RVT/2024/ENU/?guid=GUID-A2444193-FCE8-4219-A590-62CA2B8B5C5D">publish cloud Models</a>.</p>
 <p>However, I am not aware of any official support to select them programmatically through the API, even though we did look at the issue
-of <a href="https://thebuildingcoder.typepad.com/blog/2016/07/selecting-views-for-forge-translation.html">selecting RVT 3D views for Forge translation</a>
-and <a href="https://thebuildingcoder.typepad.com/blog/2017/09/revit-20181-nuget-packages-rooms-and-views-in-forge.html#2">selecting rooms and views to publish to the cloud</a> years ago.</p>
+of <a href="1453_exportviewselector.html">selecting RVT 3D views for Forge translation</a>
+and <a href="1582_forge_view_nuget.html#2">selecting rooms and views to publish to the cloud</a> years ago.</p>
 <p>The question was also raised in
 the <a href="http://forums.autodesk.com/t5/revit-api-forum/bd-p/160">Revit API discussion forum</a> thread
 on <a href="https://forums.autodesk.com/t5/revit-api-forum/how-to-add-views-to-a-publishing-set/m-p/12396874">how to add views to a publishing set</a>,
@@ -169,7 +200,7 @@ his interactive .NET BIM <a href="https://github.com/jowsy/bim-net-interactive">
 <p>Thanks for a great blog!
 I’ve read it for many years and I’ve been at Autodesk University a couple of times!</p>
 <p>Reading your latest post
-about <a href="https://thebuildingcoder.typepad.com/blog/2024/01/valid-revit-api-context-llm-and-ltg.html#2">valid Revit API context</a> inspired
+about <a href="2024_context.html#2">valid Revit API context</a> inspired
 me to share a personal project I’ve been working on that touches this topic.</p>
 <p>I have been experimenting
 with <a href="https://duckduckgo.com/?q=VS+Code+Polyglot+Notebook">VS Code Polyglot Notebook</a> extensions,
@@ -360,3 +391,11 @@ EXTREMELY IMPORTANT. Do NOT be thorough in the case of lyrics or recipes found o
 <li><a href="https://www.linkedin.com/posts/billyhinners_john-walker-1949-2024-activity-7161443988665786368-QdNw?utm_source=share&amp;utm_medium=member_desktop">Billy Hinners</a></li>
 <li><a href="https://www.keanw.com/2024/02/john-walker-leaves-us.html">Kean Walmsley</a></li>
 </ul>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

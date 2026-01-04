@@ -42,7 +42,7 @@ well worth highlighting:
 **Question:** How can I get all associated rebars which attach to a structural element such as a column by picking that?
 
 **Answer:** Jeremy initially
-suggested [workarounds making use of filtered element collectors](https://thebuildingcoder.typepad.com/blog/2018/12/using-an-intersection-filter-for-linked-elements.html#3).
+suggested [workarounds making use of filtered element collectors](1707_filter_intersect.html#3).
 Unfortunately, that was not very helpful in this case.
 
 Happily, Einar Raknes came to the rescue pointing out the real solution for this:
@@ -125,7 +125,7 @@ Many thanks to Salvatore Dragotta for pointing this out!
 #### <a name="4"></a> Importance of Fuzz for Curtain Wall Dimensioning
 
 The Building Coder keeps on harping about the importance of fuzz, cf. the recent discussion
-of [fuzzy comparison versus exact arithmetic for curve intersection](https://thebuildingcoder.typepad.com/blog/2017/12/project-identifier-and-fuzzy-comparison.html#3).
+of [fuzzy comparison versus exact arithmetic for curve intersection](1613_project_id_fuzz.html#3).
 
 Here is yet another example underlining the importance of fuzz, described by Bram Weinreder in 
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread

@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - /Users/jta/a/lib/revit/jeremy/diff_2023_2023_1.txt
@@ -44,7 +75,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 
 <h3>SDK, Add-In Wizard and TrackChanges Updates</h3>
 <p>Analysing the recent Revit SDK update, and
-still <a href="https://thebuildingcoder.typepad.com/blog/2022/12/exploring-arm-chatgpt-nairobi-and-the-tsp.html#11">setting up my new Mac PC</a>:</p>
+still <a href="1976_chatgpt_arm_tsp.html#11">setting up my new Mac PC</a>:</p>
 <ul>
 <li><a href="#1">What's new in Revit 2023.1</a></li>
 <li><a href="#2">Revit 2023.1 SDK update</a></li>
@@ -102,7 +133,7 @@ my <a href="https://github.com/jeremytammik/VisualStudioRevitAddinWizard">Visual
 and running on the new machine, for the first time on Visual Studio 2022.
 First, Visual Studio 2022 prompted me to update it to version 17.4.3.
 <code>install.bat</code> was set up to copy the template zip files to the <code>C:</code> drive, which required me to modify
-the <a href="https://thebuildingcoder.typepad.com/blog/2022/10/bim360-links-and-programming-add-ins.html#6">VS wizard template location</a> last
+the <a href="1967_addins.html#6">VS wizard template location</a> last
 time I tried.
 I then noticed that the <code>\\mac\</code> folder actually maps to my <code>Y:</code> drive and left the VS Options setting as is.
 I also <a href="https://learn.microsoft.com/en-us/answers/questions/714454/location-of-visual-studio-2022-project-template-ca.html">cleared the Visual Studio 2022 project template cache</a>.
@@ -121,18 +152,18 @@ in <a href="https://github.com/jeremytammik/VisualStudioRevitAddinWizard/release
 <p>The <a href="http://forums.autodesk.com/t5/revit-api-forum/bd-p/160">Revit API discussion forum</a> thread
 on <a href="https://forums.autodesk.com/t5/revit-api-forum/journal-step-by-step/m-p/11625744">journal step by step</a>:
 already generated one note of interest here in the lost blog post,
-on the <a href="https://thebuildingcoder.typepad.com/blog/2023/01/cultureinfochanger-and-ironpython3.html#4">journal files AU class</a>.
+on the <a href="1977_cultureinfochanger.html#4">journal files AU class</a>.
 Now, another point came up:</p>
 <p><strong>Question:</strong> Some managers are concerned about staffers working remotely, partly because managers can’t be sure that work is actually being done.
 Can Revit journals be queried to determine how much actual work happened during a Revit session?</p>
 <p><strong>Answer:</strong> I am sure they can. </p>
 <p>Personally, I would approach that question differently, using a technique more similar to the super-simple element lister or the <code>TrackChanges</code> app:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/09/debugging-and-maintaining-the-image-relationship.html#2"> Element Lister Description and Questions</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/01/tracking-element-modification.html">Tracking Element Modification</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/03/implementing-the-trackchangescloud-external-event.html">Implementing the TrackChangesCloud External Event</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2018/02/retrieving-newly-created-element-ids.html">Retrieving Newly Created Element Ids &ndash; Using the Element Lister</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2021/01/line-subcategory-filter-nw-and-modification-tracking.html#3">Revit Project Modification Tracking</a></li>
+<li><a href="1205_image_relationships.htm#2"> Element Lister Description and Questions</a></li>
+<li><a href="1397_track_changes.html">Tracking Element Modification</a></li>
+<li><a href="1411_external_event.html">Implementing the TrackChangesCloud External Event</a></li>
+<li><a href="1628_get_new_element_ids.html">Retrieving Newly Created Element Ids &ndash; Using the Element Lister</a></li>
+<li><a href="1882_track_nw_api.html#3">Revit Project Modification Tracking</a></li>
 </ul>
 
 <p><strong>Response:</strong> Thanks very much, Mr. T.!
@@ -142,3 +173,11 @@ Thanks again, sir.</p>
 <p><strong>Answer:</strong> Yup, such is the world we inhabit and co-create.
 I guess the most complete understanding of work done may be achieved using a combination of all three methods:
 step-by-step commands in the journal file, list of new and modified elements between certain snapshots, and evolution of the entire BIM from humble beginnings to soaring architectural glory...</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

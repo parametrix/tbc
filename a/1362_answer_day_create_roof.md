@@ -187,12 +187,12 @@ The Building Coder [Xtra labs](https://github.com/jeremytammik/AdnRevitApiLabsXt
 another working sample in the external
 command [Lab2_0_CreateLittleHouse in Labs2.cs](https://github.com/jeremytammik/AdnRevitApiLabsXtra/blob/master/XtraCs/Labs2.cs).
 
-[The Building Coder](http://thebuildingcoder.typepad.com/) also
+The Building Coder *(link unavailable)* also
 provides these other roof-related posts:
 
-- [RoomsRoofs SDK Sample](http://thebuildingcoder.typepad.com/blog/2008/09/roomsroofs-sdk.html)
-- [Roof Eave Cut](http://thebuildingcoder.typepad.com/blog/2009/08/roof-eave-cut-in-revit-and-aca.html)
-- [Creating an Extrusion Roof](http://thebuildingcoder.typepad.com/blog/2014/09/events-again-and-creating-an-extrusion-roof.html)
+- [RoomsRoofs SDK Sample](0015_roofsrooms.htm)
+- [Roof Eave Cut](0198_roof_eave_cut.htm)
+- [Creating an Extrusion Roof](1215_extrusion_roof.htm)
 
 <center>
 <img src="img/little_house_roof.png" alt="Little house roof" width="220"/>
@@ -206,10 +206,10 @@ on [Creating a surface through the Revit API](http://forums.autodesk.com/t5/revi
 
 Here are all the discussions I found on this, before hitting the [last and hopefully ultimate answer above](#3) that I already forgot I had written:
 
-- [Slope is slope, not radians](http://thebuildingcoder.typepad.com/blog/2010/08/slope-is-slope-not-radians.html)
-- [Modifying floor slope programmatically &ndash; or not](http://thebuildingcoder.typepad.com/blog/2014/03/creating-a-sloped-floor.html#3)
+- [Slope is slope, not radians](0432_slope_is_slope.htm)
+- [Modifying floor slope programmatically &ndash; or not](1121_create_sloped_floor.htm#3)
 - [New opening](http://forums.autodesk.com/t5/Revit-API/New-Opening/m-p/5104388)
-- [The discussion with Dodd on creating a sloped floor](http://thebuildingcoder.typepad.com/blog/2014/03/creating-a-sloped-floor.html#comment-2231365409)
+- [The discussion with Dodd on creating a sloped floor](1121_create_sloped_floor.htm#comment-2231365409)
 - Internal ADN cases 09714390 *New Opening*, 08886290 *create footprint roof* and 07928659 *Revit 2013如何设置屋顶的坡度*
 
 I hope this helps once and for all and I do not forget about this answer again.

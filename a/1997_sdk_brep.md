@@ -75,7 +75,7 @@ to
 - [aps.autodesk.com/developer/overview/revit](https://aps.autodesk.com/developer/overview/revit)
 
 There, you can now find the new Revit SDK for Revit 2024 updated on May 30, 2023, to fix some of the issues I
-described in April [compiling the Revit 2024 SDK samples](https://thebuildingcoder.typepad.com/blog/2023/04/nice-accelerator-and-compiling-the-revit-2024-sdk.html#3) and
+described in April [compiling the Revit 2024 SDK samples](1991_rvt2024sdk.html#3) and
 subsequently reported in the ticket REVIT-206304 *Update RvtSamples.txt for Revit 2024 SDK*.
 
 ####<a name="2"></a> BRepBuilder Organisation
@@ -154,7 +154,7 @@ public class Test{
 }
 </pre>
 
-**Answer:** [DirectShape from BrepBuilder and Boolean](https://thebuildingcoder.typepad.com/blog/2018/02/directshape-from-brepbuilder-and-boolean.html) provides
+**Answer:** [DirectShape from BrepBuilder and Boolean](1624_brepbuilder.html) provides
 an example that does work.
 
 However, please note that BRepBuilder wasn’t really meant for 'manually' constructing geometry. Its interface is rather cumbersome for that purpose. It was meant for translating existing geometry into Revit, with rather thorough validation of the input geometry.

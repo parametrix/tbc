@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -35,10 +66,10 @@ So this is the last post you will see for a couple of days, and I will not be an
 
 <p>Returning to the Revit API, I discussed some aspects of Revit element groups in the past, such as how to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/creating-a-group-and-how-to-fish.html">
+<a href="0089_create_group.htm">
 create</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/06/rename-a-group.html">
+<a href="0154_rename_group.htm">
 rename</a> a
 
 group.
@@ -99,21 +130,21 @@ There are several different possible ways to suppress unwanted dialogues in Revi
 <ul>
 <li>The old method using the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/06/autoconfirm-save-using-dialogboxshowing-event.html">
+<a href="0151_auto_confirm_save.htm">
 DialogBoxShowing event</a> that
 
 was already available in Revit 2010, which can be used to dismiss a dialogue programmatically.
 
 <li>The comprehensive
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/failure-api.html">
+<a href="0350_failure_api.htm">
 failure processing API</a> added
 
 to the Revit 2011 API, which can do much more than that.
 
 <li>If all else fails and you just want to get rid of the dialogue box by any means, you can also use the Windows API to detect when it is displayed and dismiss it using my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/10/dismiss-dialogue-using-windows-api.html">
+<a href="0229_dialogue_clicker.htm">
 dialogue clicker application</a>.
 </ul>
 
@@ -263,3 +294,12 @@ I have removed unnecessary bits to make it as clear and simple as possible:
 testing truth</a> for
 
 a more in-depth discussion and further comments on this topic.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,9 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script></p>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - how to ask a question
@@ -53,17 +84,17 @@ I'll also highlight a couple of recent interesting AEC related job offers, an AI
 <h4><a name="2"></a> C# and VB Visual Studio Add-in Wizards for Revit 2020</h4>
 <p>So far, for the Revit 2020 API enhancements, I discussed the following aspects and migration steps:</p>
 <ul>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/04/the-revit-2020-fcs-api-and-sdk.html#3">Revit 2020 DevDays Online presentation recording</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/04/the-revit-2020-fcs-api-and-sdk.html#7">Compiling the Revit 2020 SDK samples</a> </li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/04/the-revit-2020-fcs-api-and-sdk.html#8">Setting up RvtSamples</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/04/revitlookup-and-sdk-for-revit-2020.html#2">RevitLookup for Revit 2020</a> </li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/04/revitlookup-and-sdk-for-revit-2020.html#3">Revit 2020 SDK posted to Revit Developer Centre</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/04/whats-new-in-the-revit-2020-api.html">What's New in the Revit 2020 API</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/04/close-doc-and-zero-doc-rvtsamples.html#3">Migration of The Building Coder samples</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/04/new-revit-2020-sdk-samples.html">New Revit 2020 SDK samples</a></li>
+<li><a href="1738_rvt2020.html#3">Revit 2020 DevDays Online presentation recording</a></li>
+<li><a href="1738_rvt2020.html#7">Compiling the Revit 2020 SDK samples</a> </li>
+<li><a href="1738_rvt2020.html#8">Setting up RvtSamples</a></li>
+<li><a href="1739_rvt2020.html#2">RevitLookup for Revit 2020</a> </li>
+<li><a href="1739_rvt2020.html#3">Revit 2020 SDK posted to Revit Developer Centre</a></li>
+<li><a href="1740_whats_new_2020.html">What's New in the Revit 2020 API</a></li>
+<li><a href="1741_rvtsamp_zero_close.html#3">Migration of The Building Coder samples</a></li>
+<li><a href="1744_2020_sdk_samples.html">New Revit 2020 SDK samples</a></li>
 </ul>
 <p>I now turn to the migration of 
-my <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20">C# and VB Visual Studio Revit add-in wizards</a> to
+my <span class="unavailable-link">C# and VB Visual Studio Revit add-in wizards</span> to
 Revit 2020, which turned out to be easier than ever before.</p>
 <p>I just cloned the existing repository for Revit 2019, then globally searched and replaced the string '2019' by '2020'.</p>
 <p>I skipped a very few occurrences, e.g., in the copyright notices, tested, committed the changes, and that was that:</p>
@@ -71,7 +102,7 @@ Revit 2020, which turned out to be easier than ever before.</p>
 <img src="img/revit_2020_addin_wizard.png" alt="Visual Studio Add-in Wizard for Revit 2020" width="786">
 </center></p>
 <p>No code changes were required at all, as was to be expected, seeing that
-the <a href="https://thebuildingcoder.typepad.com/blog/2019/04/close-doc-and-zero-doc-rvtsamples.html#3">migration of the much more complex Building Coder samples</a> required
+the <a href="1741_rvtsamp_zero_close.html#3">migration of the much more complex Building Coder samples</a> required
 only one single trivial modification.</p>
 <p>The new version
 is <a href="https://github.com/jeremytammik/VisualStudioRevitAddinWizard/releases/tag/2020.0.0.0">VisualStudioRevitAddinWizard release 2020.0.0.0</a>,
@@ -93,15 +124,15 @@ me to explain in more detail:</p>
 <p><strong>Answer:</strong> Thank you for your query.</p>
 <p>If you are new to the Revit API, and maybe to programming in general, I first of all welcome you to this topic and forum!</p>
 <p>Before diving any deeper into programming more complex tasks, I would suggest that you work through
-the <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#2">Revit API beginners material</a>,
+the <span class="unavailable-link">Revit API beginners material</span>,
 especially the video tutorial.</p>
 <p>That will explain all the important basics, deepen your understanding, and clarify many questions up front.</p>
 <p>Also, please be aware of
-the <a href="https://thebuildingcoder.typepad.com/blog/2018/06/extensible-storage-and-renaming-a-family-in-a-project.html#2">importance of understanding Revit and the BIM from an end user point of view</a> before
+the <a href="1661_rename_family.html#2">importance of understanding Revit and the BIM from an end user point of view</a> before
 trying to achieve anything programmatically.</p>
 <p>Otherwise, you might quickly find yourself in a situation where your add-in is trying to work against the BIM system instead of making proper use of its powerful built-in functionality.</p>
 <p>Once you have a good grasp of the basics of both the Revit API and the end user view of the BIM task you are addressing, it is time
-to <a href="https://thebuildingcoder.typepad.com/blog/2017/01/virtues-of-reproduction-research-mep-settings-ontology.html#3">research how to solve your task programmatically</a>.</p>
+to <a href="1515_repro_tray_conduit.html#3">research how to solve your task programmatically</a>.</p>
 <p>If you run into an issue after you know what you want to achieve, have ensured that it makes sense in the BIM workflow, have ensured that it can be solved programmatically at all and have done research on how to address it, the time has probably come to ask a question about the specific problems you encounter.</p>
 <p>When you ask a question, it is important to do so in an intelligent and intelligible manner.
 For instance, please ask your question in full.</p>
@@ -143,3 +174,11 @@ Autodesk Consulting is seeking a talented Junior Solutions Architect to work wit
 of <a href="http://www.academy.montreal.ai">AI for all</a>,
 also available for local download as
 a <a href="zip/ai4all.pdf">PDF document</a>.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -28,8 +28,8 @@ Setting up RvtSamples for Revit 2017
 
 Prompted by
 
-Dan Tartaglia [commented](http://thebuildingcoder.typepad.com/blog/2016/04/revit-2017-revitlookup-and-sdk-samples.html#comment-2633447580) on
-the [Revit 2017 SDK sample compilation](http://thebuildingcoder.typepad.com/blog/2016/04/revit-2017-revitlookup-and-sdk-samples.html), saying:
+Dan Tartaglia [commented](1426_revit_2017.html#comment-2633447580) on
+the [Revit 2017 SDK sample compilation](1426_revit_2017.html), saying:
 
 > A couple of other issues to note about the SDK examples (RvtSamples).
 >
@@ -81,7 +81,7 @@ While writing this, I notice that I have to install something like `CopySourceAs
 First things first.
 
 It was not completely trivial
-to [enable CopySourceAsHtml for Visual Studio 2012](http://thebuildingcoder.typepad.com/blog/2014/04/migrating-roomeditorapp-to-revit-2015.html#5).
+to [enable CopySourceAsHtml for Visual Studio 2012](1137_roomeditorapp_2015.htm#5).
 
 I tried to use a similar procedure for Visual Studio 2015, e.g.:
 
@@ -233,9 +233,9 @@ The VB.NET sample DeleteObject generates an error in line 63.
 <img src="img/revit_2017_rvt_samples_05.png" alt="DeleteObject VB.NET sample error" width="366">
 </center>
 
-That one, and several other VB.NET samples as well, have always caused some strange issues for me, as I already [pointed out in previous releases](http://thebuildingcoder.typepad.com/blog/2013/04/compiling-the-revit-2014-sdk.html#9).
+That one, and several other VB.NET samples as well, have always caused some strange issues for me, as I already [pointed out in previous releases](0937_compile_2014_sdk.htm#9).
 
-<!--- Its path is specified as `...\DeleteObject\CS\bin\Debug\DeleteObject.dll`, but for some reason, all the VB.NET samples end up in a differnt location on my system, as I already [pointed out in previous releases](http://thebuildingcoder.typepad.com/blog/2013/04/compiling-the-revit-2014-sdk.html#9). -->
+<!--- Its path is specified as `...\DeleteObject\CS\bin\Debug\DeleteObject.dll`, but for some reason, all the VB.NET samples end up in a differnt location on my system, as I already [pointed out in previous releases](0937_compile_2014_sdk.htm#9). -->
 
 I ignored that one, and other VB.NET issues as well.
 

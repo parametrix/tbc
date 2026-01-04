@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1273285 [IPointCloudAccess.GetUnitsToFeetConversionFactor usage] -->
@@ -26,8 +57,8 @@
 
 <p>Returning to the Revit API, the topic of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/units">
-units</a> is
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/units">
+units <em>(category page)</em></span> is
 
 a recurring theme, and here it is again rearing its beautiful head in the context of point cloud data access:
 
@@ -54,20 +85,20 @@ Is there a difference between the US English and German versions of Revit?
 There is thus no difference between the different versions and languages of Revit; they all use the same internal database unit.
 This fact is special enough to deserve a 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/03/internal-imperial-units.html">
+<a href="0553_imperial_units.htm">
 separate discussion</a> of its own.
 
 <p>A test very similar to the one you describe can easily be expanded to reliably determine the conversion factor between any given user interface unit and the internal Revit database one, as explained in the discussion of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/01/unit-conversion-and-new-blogs.html">
+<a href="0526_unit_conversion.htm">
 unit conversion</a> and
 
 preceding posts.
 
 You can also look at the entire collection of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/units">
-unit topics</a>.
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/units">
+unit topics <em>(category page)</em></span>.
 
 <p>Here is a suggestion on how to implement the IPointCloudAccess interface GetUnitsToFeetConversionFactor method, assuming the point cloud data is given in millimetres:
 
@@ -88,3 +119,12 @@ unit topics</a>.
 &nbsp; }
 </pre>
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

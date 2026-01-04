@@ -109,7 +109,7 @@ The 3D Viewer is a free download if you don't already have it in Windows 10.
 As a programmer, you can do as you suggest, retrieve all the element geometry, tessellate it, and sum up the total number of triangles.
 
 You might find it easiest to do so using
-a [custom exporter](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.1).
+a custom exporter *(link unavailable)*.
 The result should be the same as in the FBX export.
 
 [@techXMKH9](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/5770785) very
@@ -283,7 +283,7 @@ Here is the result of running it in a minimal sample model:
 ####<a name="3"></a> Floor Creation API Clarification
 
 The development team provide some clarification on how to user
-the [new floor creation API](https://thebuildingcoder.typepad.com/blog/2021/04/whats-new-in-the-revit-2022-api.html#4.1.4.1) introduced
+the [new floor creation API](1903_whats_new_2022.html#4.1.4.1) introduced
 in Revit 2022.
 
 Some old APIs were obsoleted, and the new methods work a bit differently, so some instructions on how to migrate from the old API to the new may come in handy, especially a sample code snippet like this:

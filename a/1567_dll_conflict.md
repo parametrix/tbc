@@ -62,7 +62,7 @@ I have no official solution to suggest for this, just these discussion threads a
 #### Addendum &ndash; Updated ILMerge Link
 
 As noted by Micah Gray in
-his [comment below](https://thebuildingcoder.typepad.com/blog/2017/06/handling-third-party-library-dll-conflicts.html#comment-4983002843):
+his [comment below](1567_dll_conflict.html#comment-4983002843):
 
 > The ILMerge link above no longer works.
 It appears to have moved over to

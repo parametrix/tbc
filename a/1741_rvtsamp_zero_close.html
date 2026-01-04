@@ -1,9 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script></p>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 twitter:
@@ -48,8 +79,8 @@ First, however, an interesting adaptation of RvtSamples to run in zero document 
 <p>Before the release of Revit 2020, I had an interesting discussion with my French namesake Jérémie on running RvtSamples in zero document state.</p>
 <p>As you may know, RvtSamples is simply an external application that reads a text file containing information on (a large number of) external commands and their assembly DLL locations to populate a menu making them all accessible in the Revit user interface without a need to install a separate add-in manifest for each one of them.</p>
 <p>It is used to easily provide debugging and testing access to all the external commands provided by the Revit SDK samples.</p>
-<p>In his <a href="https://thebuildingcoder.typepad.com/blog/2018/04/rvtsamples-2019.html#comment-4399937612">comment</a>
-on <a href="https://thebuildingcoder.typepad.com/blog/2018/04/rvtsamples-2019.html#comment-4399937612">RvtSamples for Revit 2019</a>,
+<p>In his <a href="1646_rvtsamples_2019.html#comment-4399937612">comment</a>
+on <a href="1646_rvtsamples_2019.html#comment-4399937612">RvtSamples for Revit 2019</a>,
 Jérémie asks:</p>
 <p><strong>Question:</strong> After several tries on Visual Studio 2017 I finally managed to load RvtSamples to Revit 2019! Thank you for this update!</p>
 <p>However, I have a question about this tool.</p>
@@ -61,7 +92,7 @@ The concern is that the manifest seems created by code from the <code>RvtSamples
 <p>Look at the description
 of <a href="http://help.autodesk.com/view/RVT/2019/ENU/?guid=Revit_API_Revit_API_Developers_Guide_Introduction_Add_In_Integration_Add_in_Registration_html">Add-in Registration settings in the Developer Guide</a>.</p>
 <p>The RvtSamples.txt text input file is not created by the program, but hand edited.</p>
-<p>I implemented it originally in 2008 to <a href="https://thebuildingcoder.typepad.com/blog/2008/09/loading-sdk-sam.html">load the Revit SDK samples</a>.</p>
+<p>I implemented it originally in 2008 to <a href="0007_loading_sdk_samples.htm">load the Revit SDK samples</a>.</p>
 <p>At that time, it only held four lines of text per external command to load.</p>
 <p>That number was later expanded to seven, adding support for the tooltip text, small and large icon image.</p>
 <p>The visibility mode could be added to the list of data to be read from that file, but is not currently so.</p>
@@ -76,7 +107,7 @@ of <a href="http://help.autodesk.com/view/RVT/2019/ENU/?guid=Revit_API_Revit_API
 <p>Or, as you suggest, set the default to <code>AlwaysVisible</code>. Oh no, this all makes no sense at all. AlwaysVisible applies to a standard external command loaded by Revit into the external tools menu. We are not loading anything at all into the external tools menu, but creating our own menu instead. Is the RvtSamples panel visible and active in zero document state?</p>
 <p><strong>Response:</strong> The RvtSamples panel is visible but disabled in zero document state.</p>
 <p>But now it works. I ended up finding what was blocking me in the article
-on <a href="http://thebuildingcoder.typepad.com/blog/2011/02/enable-ribbon-items-in-zero-document-state.html">enabling ribbon items in zero document state</a>.</p>
+on <a href="0538_zero_doc_ribbon.htm">enabling ribbon items in zero document state</a>.</p>
 <p>To implement this in RvtSamples, it's ultimately relatively simple.</p>
 <ul>
 <li>Implement <em>public class Availability: IExternalCommandAvailability</em> (where <code>IsCommandAvailable</code> returns true) in every external DLL you want active in zero document state.</li>
@@ -98,8 +129,8 @@ on <a href="http://thebuildingcoder.typepad.com/blog/2011/02/enable-ribbon-items
 <li>Error CS1061 in CmdGetMaterials.cs line 736: <code>Application</code> does not contain a definition for <code>get_Assets</code> and no extension method <code>get_Assets</code> accepting a first argument of type <code>Application</code> could be found.</li>
 </ul>
 <p>The removal of this property is indeed listed
-in <a href="https://thebuildingcoder.typepad.com/blog/2019/04/whats-new-in-the-revit-2020-api.html">What's New in the Revit 2020 API</a>
-under <a href="https://thebuildingcoder.typepad.com/blog/2019/04/whats-new-in-the-revit-2020-api.html#4.1.6">obsolete API removal</a>.</p>
+in <a href="1740_whats_new_2020.html">What's New in the Revit 2020 API</a>
+under <a href="1740_whats_new_2020.html#4.1.6">obsolete API removal</a>.</p>
 <p>It was referenced in the method <code>ListAllAssets</code>, whose only purpose was to test this property.
 I guess it has no particular use.
 Maybe it never did?
@@ -109,7 +140,7 @@ Anyway, since the method is never called, I simply commented it out.</p>
 <p>I prefer to colourise the C# source code I publish here on the blog, cf. below.</p>
 <p>This can be achieved by installing an additional tool in Visual Studio.</p>
 <p>Luckily I researched this topic three years ago
-migrating <a href="http://thebuildingcoder.typepad.com/blog/2016/04/rvtsamples-for-revit-2017.html">RvtSamples for Revit 2017</a> and
+migrating <a href="1427_rvtsamples.html">RvtSamples for Revit 2017</a> and
 discovered
 the <a href="https://visualstudiogallery.msdn.microsoft.com/34ebc6a2-2777-421d-8914-e29c1dfa7f5d">Productivity Power Tools 2015</a>.</p>
 <p>I installed those and they still work fine:</p>
@@ -117,12 +148,12 @@ the <a href="https://visualstudiogallery.msdn.microsoft.com/34ebc6a2-2777-421d-8
 <img src="img/visual_studio_2015_copy_html_markup_2.png" alt="Copy Html Markup menu entry" width="479">
 </center></p>
 <h4><a name="5"></a> Using PostCommand to Close Document</h4>
-<p>A long, long time ago, we discussed <a href="https://thebuildingcoder.typepad.com/blog/2010/10/closing-the-active-document-and-why-not-to.html">closing the active document and why not to</a> do
+<p>A long, long time ago, we discussed <a href="0456_close_active_doc.htm">closing the active document and why not to</a> do
 so using a Windows message workaround, later followed by another exploration on how
-to <a href="https://thebuildingcoder.typepad.com/blog/2012/12/closing-the-active-document.html">close the last document</a> by
+to <a href="0873_close_active_doc.htm">close the last document</a> by
 first opening a dummy document so that the other 'real' document can be closed.</p>
 <p>Bogdan just provided a new effective suggestion for closing the active document using <code>PostCommand</code> in
-his <a href="https://thebuildingcoder.typepad.com/blog/2010/10/closing-the-active-document-and-why-not-to.html#comment-4435756188">comment on the former post</a>:</p>
+his <a href="0456_close_active_doc.htm#comment-4435756188">comment on the former post</a>:</p>
 <blockquote>
 <p>Maybe someone has already found this solution to close the active document in Revit; I found the following method:</p>
 </blockquote>
@@ -137,3 +168,11 @@ his <a href="https://thebuildingcoder.typepad.com/blog/2010/10/closing-the-activ
 <p>(Voila, my first use of the new Copy HTML Markup menu item &nbsp; :-)</p>
 <p>I added the new method
 to <a href="https://github.com/jeremytammik/the_building_coder_samples/releases/tag/2020.0.145.1">The Building Coder samples release 2020.0.145.1</a>.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

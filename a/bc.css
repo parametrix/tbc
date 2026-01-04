@@ -8,10 +8,13 @@
 pre {
   font-size : 95%;
   line-height : 120%;
-  background-color : lightgrey;
-  white-space : wrap;
-  color: darkblue;
   background-color : linen;
+  white-space : pre-wrap;
+  word-wrap: break-word;
+  color: darkblue;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
 }
 
 pre.code {
@@ -60,4 +63,13 @@ p.quote {
 p.author  {
   text-align: right;
   font-style: italic;
+}
+
+/* Styling for unavailable/archived links */
+.unavailable-link {
+    color: #666;
+}
+.unavailable-link em {
+    font-size: 0.85em;
+    color: #999;
 }

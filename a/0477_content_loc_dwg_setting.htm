@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -32,7 +63,7 @@ I'm still not completely done...
 Before exporting, I need to fetch the settings option. 
 Is it possible to fetch the Revit DWG and IFC export settings option thru API? 
 
-<p><strong>Answer:</strong> Revit doesnít expose any API to retrieve the DWG or IFC export setting options.
+<p><strong>Answer:</strong> Revit doesnÔøΩt expose any API to retrieve the DWG or IFC export setting options.
 However, the current option file name being used is saved in Revit.ini file.
 For example, here are the setting option filenames stored in my version of RAC 2011:
 
@@ -67,7 +98,7 @@ Structure, MEP) and 32/64 bit.
 
 <p>I am interested in installing my families to the correct location, in the same place as the other content. 
 
-<p><strong>Answer:</strong> The family library path can be retrieved from the Revit.ini configuration file in each productís Program folder.
+<p><strong>Answer:</strong> The family library path can be retrieved from the Revit.ini configuration file in each productÔøΩs Program folder.
 Here are the settings providing the family library path (they are all in one single long line in the Revit.ini file):
 
 <h5>RAC2011</h5>
@@ -95,3 +126,11 @@ DataLibraryLocations
 <p>Retrieving the family library path from the Revit.ini configuration file should be independent of the Revit flavour and the 32 or 64 bit OS version.
 
 <p>Many thanks to Joe for these suggestions.
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

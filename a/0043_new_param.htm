@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <h3>Defining a New Parameter</h3>
 
 <p>Here are some frequent questions regarding the creation of new parameters:</p>
@@ -13,21 +43,30 @@
 
 <p>We already discussed some aspects of shared parameters in the previous posts on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/adding-a-shared-parameter-to-a-dwg-file.html">
+<a href="0036_dwg_shared_param.htm">
 adding a shared parameter to a DWG file</a>
 
 and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/exploring-element-parameters.html">
+<a href="0042_exploring_param.htm">
 exploring element parameters</a>.
 
 Those posts also mentions the Revit SDK FireRating sample and the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/files/rac_labs_20081117.zip">
-Revit API introduction labs</a>,
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/files/rac_labs_20081117.zip">
+Revit API introduction labs <em>(file no longer available)</em></span>,
 
 especially the suite 4-3-1, 4-3-2, 4-3-3 and 4-4-1, which is relevant in this context.</p>
 
 <p>New parameters can only be created as shared parameters, and they are always associated with one or more specific categories. You can create a shared parameter without explicitly setting up or reading or writing to an associated parameter file, but a valid file path still needs to be specified by the application SharedParametersFilename property, and Revit will write information about the newly created parameter into that file. This is demonstrated by the examples mentioned above.</p>
 
 <p>To store one single instance of a parameter in a Revit model, you can choose to attach it to an object of a category that also only allows one instance in the database. An object that exists once and once only in every Revit model is the project information element of the category BuiltInCategory.OST_ProjectInformation. Using this to store a visible and an invisible per-document parameter is demonstrated by the Lab4_4_1_PerDocParams command.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

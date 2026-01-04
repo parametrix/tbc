@@ -1,19 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Grabbing an Internet Webcam Image</h3>
 
 <p>I am in full tilt preparing for the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/devcamp-devlabs-and-updated-api-training-schedule.html">
+<a href="0329_devcamp_training.htm">
 AEC DevCamp</a> conference 
 
 (<a href="http://devcamps2010.autodeskevents.net/index.cfm?event=cms.page&id=SID3FA5EEFA001D080A3456040FDD1BD93C">web site</a>) in 
 
 Boston next week, June 7-9, and the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/devcamp-devlabs-and-updated-api-training-schedule.html#devlabs">
+<a href="0329_devcamp_training.htm#devlabs">
 DevLabs</a> in Waltham following immediately afterwards
 
 (<a href="http://usa.autodesk.com/adsk/servlet/item?id=6703509&siteID=123112&cname=DevLab (AEC), Waltham, Jun 10 2010, 201039">register</a>).
@@ -21,12 +52,12 @@ DevLabs</a> in Waltham following immediately afterwards
 <p>One of my sessions at the DevCamp discusses migration to and advanced use of the new Revit 2011 API features. 
 Since some of the new features will be covered by other presentations held by members of the development team, I picked an area that was off their radar and ended up choosing the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/idling-event.html">
+<a href="0352_idling.htm">
 Idling event</a> that I recently talked about.
 
 I mentioned that it provides some exciting new possibilities, since it allows more interaction with external applications and goes one step closer towards providing 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/asynchronous-api-calls-and-idling.html">
+<a href="0353_asynchronous.htm">
 asynchronous access</a> to the Revit API.
 
 <p>Looking for an example of using this event, I pondered various potential providers of external graphical data that changes over time.
@@ -35,7 +66,7 @@ One obvious source of live images is an Internet webcam.
 <p>The idea of displaying a live image in the Revit model also has the added advantage of allowing me to try my hand at using the new analysis visualisation framework and setting up an own spatial field primitive to display pixel data on the face of a Revit model element.
 We looked at one such example discussing the DistanceToSurfaces SDK sample making use of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/element-level-events.html#2">
+<a href="0340_element_events.htm#2">
 dynamic model update</a> mechanism.
 
 <h4>Reading the Matterhorn Webcam JPEG Image Data</h4>
@@ -303,3 +334,12 @@ containing the complete source code and Visual Studio solution for this console 
 
 <p>With these preparations in place, we are all set to return to Revit and make use of these image grabbing methods to implement an Idling event handler to paint a real-time view onto a face of any arbitrary building element.
 For instance, wouldn't it be neat to create a building model whose windows display a real-time view of some beautiful natural park?
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

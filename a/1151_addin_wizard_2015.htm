@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Add-In Wizards for Revit 2015</h3>
@@ -8,10 +39,10 @@
 
 <p>The 2015 version generates the same boilerplate code as the reliable old
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/05/add-in-wizards-for-revit-2014-1.html">
+<a href="0944_addin_wizard_2014.htm">
 Revit 2014</a> one and its
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/sun-direction-shadow-calculation-and-wizard-update.html#2">
+<a href="0969_sun_direct_shadow.htm#2">
 update</a> did,
 
 which can be simply deleted if not needed.</p>
@@ -29,49 +60,49 @@ which can be simply deleted if not needed.</p>
 
 <ul>
 <li>
-<a href="http://thebuildingcoder.typepad.com/blog/2010/07/devtv-addin-templates.html">
+<a href="0415_devtv_addin_templates.htm">
 Original introduction, benefits, and usage example</a> for C# and VB.
 
 <li>Personalised
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/revit-2011-devtv.html#2">
+<a href="0451_revit_2011_devtv.htm#2">
 minimal C# version</a> for Revit 2011.
 
 <li>A short additional
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/snow-and-woe-with-manifest-files.html">
+<a href="0498_snow_and_woe.htm">
 usage note</a>.
 
 <li>
-<a href="http://thebuildingcoder.typepad.com/blog/2011/01/automate-designoption-and-64-bit-add-in-templates.html#2">
+<a href="0523_ui_auto_design_option.htm#2">
 64-bit versions</a> for C# and VB.
 
 <li>Support for the
-<a href="http://thebuildingcoder.typepad.com/blog/2011/04/visual-studio-add-in-wizards-for-revit-2012.html">
+<a href="0569_addin_wizard.htm">
 Revit 2012 API</a> for
 
 C# and VB.
 
 <li>Updated C# and VB versions placing
-<a href="http://thebuildingcoder.typepad.com/blog/2011/10/product-and-add-in-wizard-updates.html#3">
+<a href="0662_addin_wizard_2012_ur2.htm#3">
 assembly DLL alongside add-in manifest</a>.
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/04/add-in-wizard-for-revit-2013.html">
+<li><a href="0749_addin_wizard_2013.htm">
 Revit 2013 C#</a> version including more skeleton code.</li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/06/update-api-assembly-references-and-wizards.html#4">
+<li><a href="0793_update_2013.htm#4">
 Revit 2013 VB</a> version.</li>
 
 <li>C# and VB
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/05/add-in-wizards-for-revit-2014-1.html">
+<a href="0944_addin_wizard_2014.htm">
 add-in wizards for Revit 2014</a>.</li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/06/sun-direction-shadow-calculation-and-wizard-update.html#2">
+<li><a href="0969_sun_direct_shadow.htm#2">
 Wizard update</a>
 
 suppressing the processor architecture mismatch warning and referring to Revit Onebox instead of the architectural flavour.</li>
 
 <li>Wizard generating a
-<a href="http://thebuildingcoder.typepad.com/blog/2013/11/multi-version-visual-studio-revit-add-in-wizard.html">
+<a href="1059_multi_version_wizard.htm">
 multi-version add-in</a>  supporting
 
 both Revit 2013 and 2014.</li>
@@ -80,7 +111,7 @@ both Revit 2013 and 2014.</li>
 
 <p>Just like for Revit 2014, the Revit 2015 add-in wizard uses the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/05/add-in-wizards-for-revit-2014-1.html#2">
+<a href="0944_addin_wizard_2014.htm#2">
 $(ProgramW6432)</a> Visual Studio project template variable to determine where to locate the Revit API assembly files for referencing and the Revit.exe executable for debugging.</p>
 
 
@@ -123,3 +154,12 @@ It shows you that everything is working correctly right away, though.</p>
 <p>I hope you find this useful and look forward to hearing any suggestions for improvement you come up with.</p>
 
 <p>Better still, implement them yourself and let us know where to pick them up  :-)</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

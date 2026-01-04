@@ -1,12 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Assembly Resolver</h3>
 
 <p>One of the
 
-<a href="">
+<a href=">
 RvtVa3c</a>
 
 <a href="...#3">
@@ -66,7 +97,7 @@ For instance, when writing to the same file repeatedly, the end of the updated f
 
 <p>This is due to .NET restrictions requiring proper .NET application behaviour.</p>
 
-<p><a href="http://thebuildingcoder.typepad.com/blog/2010/04/addin-manifest-and-guidize.html">As mentioned</a>,
+<p><a href="0354_guidizer.htm">As mentioned</a>,
 
 one way to resolve this issue is to install the entire application in a sub-folder of the Revit.exe directory, which is not always feasible.</p>
 
@@ -87,10 +118,10 @@ http://www.chilkatsoft.com/p/p_502.asp
 
 <p>I mentioned this beast in the past, e.g. discussing the RvtUnit project for
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/revit-add-in-unit-testing.html">
+<a href="0982_rvtunit.htm">
 Revit Add-in unit testing</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/12/security-framing-cross-section-analyser-and-rex.html#6">
+<a href="1076_framing_xsec_analyse.htm#6">
 using REX without the REX framework</a>.</p>
 
 <p>Matt sets up such resolution handlers on a regular basis, so he quickly typed the following code from scratch by heart to implement and register it in the main RvtVa3c exporter method ExportView3D:</p>
@@ -271,9 +302,18 @@ using REX without the REX framework</a>.</p>
 
 <p><strong>Answer:</strong> A new external command implementation class is instantiated each time you launch the command, as I painfully discovered searching for a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/11/roomeditorapp-idling-and-benchmarking-timer.html#2">
+<a href="1062_roomeditorapp.htm#2">
 solution to the RoomEditorApp idling issues</a>:
 
 "each new external command invocation generates a new different class instance."</p>
 
 <p>For this reason, I was unable to unsubscribe from an external event that was subscribed to from an external command, and changed the subscriber to be the external application instead of the external command.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

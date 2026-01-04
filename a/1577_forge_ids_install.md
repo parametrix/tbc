@@ -76,7 +76,7 @@ the [online demo](https://forge-rcdb.autodesk.io/configurator?id=59041f250007f5c
 Interestingly enough, moving your app development out of the specialised .NET Revit API into a much more generic JavaScript based development platform makes development easier, faster, enables much better integration with other components, and provides access to a  larger number of existing libraries for almost any conceivable task.
 
 Furthermore, if you really do require Revit specific functionality, e.g., you wish to modify the BIM and write `RVT` files, and want to provide your app to a large or unlimited number of users in a flexible fashion, not necessarily bound to a full-fledged Revit desktop installation, be aware that we are continuing to work hard on a Forge design automation API
-to [provide all you need online, aka Revit I/O](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28b).
+to provide all you need online, aka Revit I/O *(link unavailable)*.
 
 
 ####<a name="3"></a>Access Revit BIM Data and Element Ids from BIM360
@@ -88,7 +88,7 @@ Well, you can have that right now, even without any Revit installation whatsoeve
 The Forge [Model Derivative API](https://developer.autodesk.com/en/docs/model-derivative/v2/overview/) extracts
 a streamlined copy of all geometry, BIM element hierarchy and properties from over fifty file formats, and Revit `RVT` files are just one of them.
 
-As [mentioned](http://thebuildingcoder.typepad.com/blog/2017/02/rvt-properties-to-xls-and-forge-accelerators.html) a
+As [mentioned](1533_rvt2xls.html) a
 while ago, [Augusto Goncalves](https://twitter.com/search?q=augusto%20goncalves) implemented
 the `viewer-javascript-extract.spreadsheet` Forge sample to read all the properties on all BIM elements in an `RVT` file and export them to an `XLSX` spreadsheet.
 
@@ -173,7 +173,7 @@ If you would like to learn more about Forge, don't miss the chance to
 ####<a name="7"></a>Updated Visual Studio Revit Add-In Wizard Installation
 
 Back to pure Revit API related topics, 
-[Irneb](https://github.com/irneb) raised an issue with the [Visual Studio Revit Add-In Wizards](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20) 
+[Irneb](https://github.com/irneb) raised an issue with the Visual Studio Revit Add-In Wizards *(link unavailable)* 
 in his [issue #6 &ndash; install script alteration suggestion](https://github.com/jeremytammik/VisualStudioRevitAddinWizard/issues/6), and solved it 
 with [pull request #7 &ndash; path to profile folder](https://github.com/jeremytammik/VisualStudioRevitAddinWizard/pull/7).
 
@@ -238,7 +238,7 @@ Now, I am wondering how to identify the assembly DLL and whether I need to speci
  
 Secondly, I can’t find the add-in manifest anywhere in the repository.
 
-**Answer:** To understand the Revit add-in installation process properly in depth, I suggest that you study the [Revit API getting started material](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2).
+**Answer:** To understand the Revit add-in installation process properly in depth, I suggest that you study the Revit API getting started material *(link unavailable)*.
  
 It explains all you need to know about installing a Revit add-in.
  
@@ -275,4 +275,4 @@ Is this the expected behaviour? I was thinking I could get all object members ju
 
 For instance, in the case of GetFullGeometryForView, a view input argument is required. How is RevitLookup supposed to be able to guess what view you are interested in?
 
-For methods requiring dynamic input that cannot be automatically determined, you will have to [make use of more intimate interactive database exploration tools, e.g. RevitPythonShell](http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html).
+For methods requiring dynamic input that cannot be automatically determined, you will have to [make use of more intimate interactive database exploration tools, e.g. RevitPythonShell](1057_db_explor_python_sh.htm).

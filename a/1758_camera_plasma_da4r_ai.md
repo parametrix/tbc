@@ -236,7 +236,7 @@ I found it a very interesting read.
 ####<a name="4"></a> Mikako's DA4R Overview
 
 I have been rather silent lately on the topic
-of [DA4R, Forge Design Automation for Revit](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55),
+of DA4R, Forge Design Automation for Revit *(link unavailable)*,
 mainly due to the fact that my Forge-focussed colleagues are dealing with that more than I am, focussing on the Revit instead.
 
 Mikako Harada now published her own overview
@@ -248,8 +248,8 @@ you might want to check out.
 ####<a name="5"></a> AI is Affecting Human Game Strategies
 
 I enjoyed following the development
-of [AlphaGo](http://thebuildingcoder.typepad.com/blog/2017/10/au-recording-books-education-and-units.html#6)
-and [AlphaZero](https://thebuildingcoder.typepad.com/blog/2019/03/ai-trends-and-yearly-deprecated-api-usage-cleanup.html#2) quite closely in the past.
+of [AlphaGo](1594_record_book_edu_unit.html#6)
+and [AlphaZero](1727_tbc_cleanup.html#2) quite closely in the past.
 
 My daughter Marie now pointed out an interesting book review
 on [Game Changer &ndash; AlphaZero's Groundbreaking Chess Strategies and the Promise of AI](https://www.goodreads.com/review/show/2731237101) by

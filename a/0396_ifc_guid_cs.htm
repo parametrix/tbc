@@ -1,18 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>IFC GUID Algorithm in C#</h3>
 
 <p>Today is the first day of the Munich
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/devcamp-devlabs-and-updated-api-training-schedule.html#devlabs">
+<a href="0329_devcamp_training.htm#devlabs">
 DevLab</a>.
 
 This one is for five whole days.
 I am looking forward to the week here and will be very pleased if it is as exciting and productive as the two days at the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/devlab-and-birthday.html">
+<a href="0389_devlab_birthday.htm">
 Waltham DevLab</a>.
 
 <p>Meanwhile and unrelated to the DevLabs, H&aring;kon Clausen of
@@ -20,10 +51,10 @@ Waltham DevLab</a>.
 <a href="http://www.nosyko.no">
 Nosyko AS</a>
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/uniqueid-dwf-and-ifc-guid.html?cid=6a00e553e168978833013483a258c1970c#comment-6a00e553e168978833013483a258c1970c">
+<a href="0104_uniqueid_dwf_ifc_guid.htm">
 commented</a> on the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/uniqueid-dwf-and-ifc-guid.html">
+<a href="0104_uniqueid_dwf_ifc_guid.htm">
 UniqueId, DWF and IFC GUID</a> discussion
 
 and submitted a port of the IFC GUID algorithm discussed there to C#.
@@ -82,7 +113,7 @@ Could you help with this question about IFC export?
 Thanks,
 Harry
 
-From: HÂkon Clausen
+From: HÔøΩkon Clausen
 Sent: Monday, June 14, 2010 08:05
 To: Jeremy Tammik
 Subject: Re: GUID comment
@@ -93,7 +124,7 @@ It looks good.
 
 Since you wrote "duplicate guids", just let me clarify that there is no duplication of GUIDS in the IFC file. It's just that e.g. a door or a window symbol do not get the GUID I expect using technique in the IFC file and there are a lot of cases where one symbol is generating several IFC object with different GUIDs and I'm not sure how Revit computes these GUIDs. Please let me now if I'm making myself hard to understand :)
 
-HÂkon
+HÔøΩkon
 
 -->
 
@@ -104,7 +135,7 @@ HÂkon
 
 <p>2014-07-02: Thanks to the issue reported by Paul Marsland in the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/ifc-guid-algorithm-in-c.html#comment-6a00e553e16897883301a3fcfb4b4b970b">
+<a href="0396_ifc_guid_cs.htm#comment-6a00e553e16897883301a3fcfb4b4b970b">
 comment</a> below,
 
 H&aring;kon took another look at the code and replied:</p>
@@ -117,3 +148,12 @@ It was a silly typo, a call to BitConverter.ToInt16 should be BitConverter.ToUIn
 <a href="https://github.com/hakonhc/IfcGuid">IfcGuid GitHub repository</a> to
 
 host it.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

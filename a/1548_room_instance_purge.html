@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <!-- <script src="run_prettify.js" type="text/javascript"></script> --> 
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -81,8 +112,8 @@ on <a href="https://forums.autodesk.com/t5/revit-api-forum/ci-for-revit-lookup/m
 </center></p>
 <h4><a name="4"></a>Purging Types, Families and Materials</h4>
 <p>The Revit API provides no direct access to purge, and this has been high on the add-in developer wish list for a long time, cf. the discussions
-on <a href="http://thebuildingcoder.typepad.com/blog/2010/11/purge-unused-text-note-types.html">purging unused text note types</a> 
-and <a href="http://thebuildingcoder.typepad.com/blog/2013/03/determining-purgeable-elements.html">determining purgeable elements</a> in general.</p>
+on <a href="0476_purge_text_note_types.htm">purging unused text note types</a> 
+and <a href="0910_purge.htm">determining purgeable elements</a> in general.</p>
 <p>Now, Harry Mattison of <a href="https://boostyourbim.wordpress.com">Boost your BIM</a> provided clever solutions
 to <a href="https://boostyourbim.wordpress.com/2016/10/20/rtceur-api-wish-1-purging-types-and-families">purge types and families</a>
 and <a href="https://boostyourbim.wordpress.com/2016/10/21/purge-unused-materials-for-another-rtceur-api-wish">purge unused materials</a>.</p>
@@ -97,3 +128,11 @@ module <a href="https://github.com/jeremytammik/RoomEditorApp/blob/master/RoomEd
 the external command to upload the room data to my cloud database.</p>
 <p>The <a href="https://github.com/jeremytammik/RoomEditorApp/blob/master/RoomEditorApp/CmdUploadRooms.cs#L157-L217">lines L157-L217</a> implement
 code to retrieve the furniture and equipment contained in given room.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

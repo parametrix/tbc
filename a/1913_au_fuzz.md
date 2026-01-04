@@ -135,9 +135,9 @@ The result is imprecise, almost exactly zero, but very slightly off.
 
 That is completely normal and must be taken into account whenever dealing with real numbers of a digital computer, for instance, in many operations, e.g., comparisons,  by adding some fuzz:
 
-- [Fuzzy comparison](https://thebuildingcoder.typepad.com/blog/2017/06/sensors-bim-ai-revitlookup-and-fuzzy-comparison.html#4)
-- [Fuzzy comparison versus exact arithmetic for curve intersection](https://thebuildingcoder.typepad.com/blog/2017/12/project-identifier-and-fuzzy-comparison.html#3)
-- [Importance of fuzz for curtain wall dimensioning](https://thebuildingcoder.typepad.com/blog/2018/12/rebars-in-host-net-framework-and-importance-of-fuzz.html#4)
+- [Fuzzy comparison](1564_fuzz_lookup_futur.html#4)
+- [Fuzzy comparison versus exact arithmetic for curve intersection](1613_project_id_fuzz.html#3)
+- [Importance of fuzz for curtain wall dimensioning](1709_rebar_framework_fuzz.html#4)
 
 The same issue came up again right away in the discussion
 on [element geometry not returning expected face count](https://forums.autodesk.com/t5/revit-api-forum/element-geometry-not-returning-expected-face-count/m-p/10473778).

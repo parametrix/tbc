@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 07163719 [Bad performance to list family with family instance in the model] -->
@@ -11,7 +42,7 @@ We have not looked at that topic for quite a while now.
 
 <!-- The last major contribution was an 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/filtered-element-collector-sample-overview.html">
+<a href="0499_filter_sample_overview.htm">
 overview of filtered element collectors examples</a> over
 
 a year ago. -->
@@ -20,7 +51,7 @@ Here is an issue that recently cropped up which illustrates some interesting poi
 
 <p>I presented a filtered element sample for creating an
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/xml-family-usage-report.html">
+<a href="0493_xml_family_usage.htm">
 XML family usage report</a> which
 
 iterates over all the loaded families and launches a new filter for each of them looking for its instances.
@@ -86,7 +117,7 @@ iterates over all the loaded families and launches a new filter for each of them
 
 <p>Remember to always
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/01/timer-code-for-benchmarking.html">
+<a href="0704_benchmarking.htm">
 benchmark your add-in performance</a>.
 
 <p>One thing that I note which will cost you some unnecessary time is the conversion of collectors to collections, for instance:
@@ -121,22 +152,22 @@ Try it out; benchmark this and let me know the result, please.
 
 <p>The first two steps are illustrated in several places on the blog, for instance in the examples to retrieve
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/retrieve-mep-elements-and-connectors.html">
+<a href="0398_retrieve_mep_elements.htm">
 MEP elements, connectors</a>, and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/07/retrieve-structural-elements.html">
+<a href="0404_structural_elements.htm">
 structural elements</a>.
 
 <p>I'm sure the remaining steps are demonstrated somewhere as well.
 
 <p>You can also look at the numerous other
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/filtered-element-collector-sample-overview.html">
+<a href="0499_filter_sample_overview.htm">
 filtered element collector samples</a>.
 
 <p>The
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/12/xml-family-usage-report.html">
+<a href="0493_xml_family_usage.htm">
 XML family usage report</a>
 
 shows how to iterate specifically over families, which may however not help much in your case, since it looks at all families, regardless of their categories and whether they have any instances in the model.
@@ -205,7 +236,7 @@ Step 1 does not apply to our case since we don't know the categories until after
 
 <a href="mailto:info@r-e-d.co.nz">Guy Robinson</a> 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/05/family-usage-filtered-element-collector-performance.html?cid=6a00e553e1689788330168eba6f389970c#comment-6a00e553e1689788330168eba6f389970c">
+<a href="0770_filt_fam_inst_perf.htm">
 suggested below</a>
 
 making use of the .NET generic GroupBy method to simplify this further as follows:
@@ -296,3 +327,12 @@ So say I have a class like this:
 <p>Saves a bit of typing ;-)
 
 <p>Many thanks to Guy for all his interesting hints and explanations!
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

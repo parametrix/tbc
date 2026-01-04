@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1259537 [Sheet Size (Width/Height) detection] -->
@@ -8,10 +39,10 @@
 
 <p>We already discussed some issues related to sheets and title blocks, such as the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/01/viewports-and-sheets.html">
+<a href="0067_viewports_and_sheets.htm">
 relationship between viewports and sheets</a> and how to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/11/title-block-of-sheet.html">
+<a href="0247_title_block_of_sheet.htm">
 retrieve the title block of a sheet</a>.
 
 <p>Here is a question on determining the size of a sheet which provides an opportunity to update these explorations based on the Revit 2011 platform.
@@ -251,7 +282,7 @@ View sheet name Unnamed number A104 id 129888
 
 <p>If you have a need for a direct mapping between the view sheets and the title block sizes, you could obviously use this information to create a bidirectional mapping as described for the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/relationship-in.html">
+<a href="0016_relationship_inverter.htm">
 relationship inverter</a>.
 
 Then, for a given sheet 's', you might be able to use something like 'title_block[s.Number].Width/Height'.
@@ -264,3 +295,12 @@ Then, for a given sheet 's', you might be able to use something like 'title_bloc
 version 2011.0.68.0</a>
 
 of The Building Coder sample source code and Visual Studio solution including the new command.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

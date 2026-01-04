@@ -50,8 +50,8 @@ say *A filter rule that matches elements of a set of categories*.
 
 
 **Answer:** Yes, the only significant mention of this that I can find is from The Building Coder
-on [What's New in the Revit 2014 API](http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html)
-[small enhancements &amp; interface changes](http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html#3):
+on [What's New in the Revit 2014 API](0938_whats_new_2014.htm)
+[small enhancements &amp; interface changes](0938_whats_new_2014.htm#3):
 
 ####<a name="3"></a>FilterCategoryRule
 
@@ -106,8 +106,8 @@ and [OfCategoryId](http://www.revitapidocs.com/2018.1/63304108-73f8-844e-82fc-5b
 
 It seems to me that it is completely equivalent to a logical or of a bunch of `ElementCategoryFilter` instances, such as I used in the MEP and structural filtered element collector examples:
 
-- [Retrieve MEP elements](http://thebuildingcoder.typepad.com/blog/2010/06/retrieve-mep-elements-and-connectors.html)
-- [Retrieve structural elements](http://thebuildingcoder.typepad.com/blog/2010/07/retrieve-structural-elements.html)
+- [Retrieve MEP elements](0398_retrieve_mep_elements.htm)
+- [Retrieve structural elements](0404_structural_elements.htm)
 
 <center>
 <img src="img/steel_ruler_closeup.jpg" alt="Steel rule" width="320"/>

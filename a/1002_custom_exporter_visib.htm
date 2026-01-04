@@ -1,13 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Determining Absolutely All Visible Elements</h3>
 
 <p>Yesterday, I discussed the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/08/view-filter-api.html">
+<a href="1001_view_filter.htm">
 view filter API</a>.</p>
 
 <p>One issue mentioned that was not completely answered was the following:</p>
@@ -15,7 +46,7 @@ view filter API</a>.</p>
 <p style="color: darkblue"><strong>Question 3:</strong> I would like to export only visible objects.
 Using the element IsHidden method reports whether it was hidden using the Hide in View &gt; Elements menu option, but ignores Hide in View filters, and so does the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/11/visible-elements.html">
+<a href="0255_visible_elements.htm">
 IsHiddenElementOrCategory</a> method.</p>
 
 <p style="color: darkblue">How can my application determine exactly what the user actually sees on the screen?
@@ -29,18 +60,18 @@ Our customers obviously expect this functionality for the export.</p>
 
 <p>Scott and Joel explain how the new
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html">
+<a href="0979_custom_exporter.htm">
 custom exporter framework</a> can
 
 be used to solve this completely, cleanly and efficiently.
 
 <p>I already showed how to make use of it to export to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html#4">XML</a>,
+<a href="0979_custom_exporter.htm#4">XML</a>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html#5">Collada</a> and the
+<a href="0979_custom_exporter.htm#5">Collada</a> and the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/adn-mesh-data-custom-exporter-to-json.html">
+<a href="0981_custom_exporter_json.htm">
 ADN mesh data JSON</a> file formats.</p>
 
 <p>Scott and Joel point out that it can also be used in a more trivial fashion simply to determine the visibility of building elements, including all the different ways of controlling visibility, also covering elements in linked files.</p>
@@ -323,3 +354,12 @@ mein haus besichtigen
 ueberlegen, ob es eventuell irgendwie in unser konzept und weitere ueberlegungen beruecksichtigt werden koennte und sollte  :-)
 sich weiter kennenlernen
 nett zusammen zu abend essen
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

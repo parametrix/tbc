@@ -88,8 +88,8 @@ on [is the first edge loop still the outer loop?](https://forums.autodesk.com/t5
 solved by Richard [RPThomas108](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/1035859) Thomas
 and edited by The Building Coder in two posts:
 
-- [Determining the outer-most EdgeLoop](https://thebuildingcoder.typepad.com/blog/2017/08/edge-loop-point-reference-plane-and-column-line.html#3)
-- [Disjunct planar face outer loops](http://thebuildingcoder.typepad.com/blog/2017/10/disjunct-outer-loops-from-planar-face-with-separate-parts.html) 
+- [Determining the outer-most EdgeLoop](1581_edge_refplane_column.html#3)
+- [Disjunct planar face outer loops](1592_disjunct_outer_loops.html) 
 
 Here is a summary of the new conversation with Stefano and Richard:
 
@@ -100,7 +100,7 @@ Here is a summary of the new conversation with Stefano and Richard:
 </center>
 
 The article
-on [`ExporterIfcUtils` curve loop sort and validate](https://thebuildingcoder.typepad.com/blog/2015/01/exporterifcutils-curve-loop-sort-and-validate.html) also
+on [`ExporterIfcUtils` curve loop sort and validate](1269_exporterifcutils.htm) also
 mentions co-planar loops in the description of `ValidateCurveLoops`.
 Perhaps the problem I had is caused by the fact that also `SortCurveLoops` only works with co-planar loops?
 
@@ -170,7 +170,7 @@ I implemented such stuff in several blog posts using the `Creator` class:
 **Response:** Thank you for the list of articles, it will be very helpful in the near future!
 
 The article
-on the [curved wall elevation profile](https://thebuildingcoder.typepad.com/blog/2015/04/curved-wall-elevation-profile-and-creator-class-update.html) seems
+on the [curved wall elevation profile](1307_wall_elevation_profile.htm) seems
 to mention the same problem that I found in `SortCurveLoops`.
 
 I did another test with `SortCurveLoops`, and indeed it seems to be working reliably only with planar faces.

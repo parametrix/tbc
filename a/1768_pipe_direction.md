@@ -84,14 +84,14 @@ Any idea how to fix this?
 Revit will automatically adjust the newly created element appropriately to connect with the existing elements.
 
 Different variations of this approach are explored and discussed in the research series
-on [creating a rolling offset](http://thebuildingcoder.typepad.com/blog/2014/01/final-rolling-offset-using-pipecreate.html).
+on [creating a rolling offset](1093_pipe_create.htm).
 
 Here are some previous articles on the `NewTakeoffFitting` method and taps:
 
-- [Use of `NewTakeOffFitting` on a duct](http://thebuildingcoder.typepad.com/blog/2011/02/use-of-newtakeofffitting-on-a-duct.html)
-- [Use of `NewTakeOffFitting` on a pipe](http://thebuildingcoder.typepad.com/blog/2011/04/use-of-newtakeofffitting-on-a-pipe.html)
-- [Adjustable versus perpendicular spud](http://thebuildingcoder.typepad.com/blog/2013/02/adjustable-versus-perpendicular-spud.html)
-- [Splitting a duct or pipe with taps](http://thebuildingcoder.typepad.com/blog/2014/02/daylighting-extension-and-splitting-with-taps.html#3)
+- [Use of `NewTakeOffFitting` on a duct](0529_newtakeofffitting_duct.htm)
+- [Use of `NewTakeOffFitting` on a pipe](0564_newtakeofffitting_pipe.htm)
+- [Adjustable versus perpendicular spud](0897_spud.htm)
+- [Splitting a duct or pipe with taps](1104_duct_pipe_tap_split.htm#3)
 
 **Solution:** I looked at the rolling offset, but it deals only with elbows, not tee fittings.
 

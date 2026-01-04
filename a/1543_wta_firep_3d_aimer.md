@@ -28,7 +28,7 @@ I am traveling to Gothenburg for the Forge accelerator. Meanwhile, Allan Seidel 
 ### WTA Elec, FireP and 3D Aimer Tools
 
 I am traveling to Gothenburg for the
-[Forge accelerator](http://thebuildingcoder.typepad.com/blog/2017/03/events-uv-coordinates-and-rooms-on-level.html#2).
+[Forge accelerator](1537_event_uv_room_filt.html#2).
 
 On the way, I noticed another update to the interesting thread in 
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160)
@@ -59,7 +59,7 @@ The answer is, "Just because." Sorry for the file size. The guts to how this is 
 - [AIM3D_DOWNSIZED.mp4](https://forums.autodesk.com/autodesk/attachments/autodesk/160/21574/1/AIM3D_DOWNSIZED.mp4), 21 MB
 
 The overall intent is to share ideas and show what has been used using information learned
-from [The Building Coder](http://thebuildingcoder.typepad.com/) site.
+from The Building Coder *(link unavailable)* site.
 
 The 3d Aimer is a proof of concept.
 

@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 07666381 [Sign In Help] -->
@@ -8,12 +39,12 @@
 
 <p>Last week I provided an
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/10/slab-boundary-revisited.html">
+<a href="0839_slab_boundary.htm">
 updated version</a>
 
 of the  
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/slab-boundary.html">
+<a href="0031_slab_boundary.htm">
 CmdSlabBoundary</a>
 
 external command to determine a floor slab boundary.
@@ -22,7 +53,7 @@ external command to determine a floor slab boundary.
 
 <p><strong>Question:</strong> The solution provided to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/10/slab-boundary-revisited.html">
+<a href="0839_slab_boundary.htm">
 retrieve the slab boundary</a> works 
 
 fine for me if no openings are cut out.
@@ -51,17 +82,17 @@ fine for me if no openings are cut out.
 
 <p>This technique was used to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/material-quantity-extraction.html">
+<a href="0296_abg10_material_quantity.htm">
 determine gross material quantities</a> of 
 
 floors, walls and roofs in the material quantities sample from Scott Conover's Autodesk University 2009 class on 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/01/analyse-building-geometry.html">
+<a href="0275_abg.htm">
 analysing building geometry</a>,
 
 which was later add to the Revit SDK as the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/material-quantity-extraction.html">
+<a href="0296_abg10_material_quantity.htm">
 MaterialQuantities</a> sample. 
 
 <p>It shows how the transaction handling for the temporary operation can be simply and cleanly encapsulated. 
@@ -95,49 +126,49 @@ MaterialQuantities</a> sample.
 We reused this method for many different purposes a number of times, e.g.
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/06/host-reference.html">
+<li><a href="0146_host_reference.htm">
 Determine host reference</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/02/material-quantity-extraction.html">
+<li><a href="0296_abg10_material_quantity.htm">
 Material quantity extraction</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/02/unmodified-element-geometry.html">
+<li><a href="0307_unmodified_geometry.htm">
 Unmodified element geometry</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/03/object-relationships.html">
+<li><a href="0314_object_relationship.htm">
 Object relationships</a>
 
-(<a href="http://thebuildingcoder.typepad.com/blog/2010/03/object-relationships-in-vb.html">VB</a>)
+(<a href="0319_object_relationship_vb.htm">VB</a>)
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/10/model-elements-revisited.html">
+<li><a href="0454_model_elements.htm">
 Retrieve all model elements via a temporary 3D view</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/11/access-to-sketch-and-sketch-plane.html">
+<li><a href="0489_get_sketch.htm">
 Access to sketch and sketch plane</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/08/wall-joins-and-geometry.html">
+<li><a href="0635_wall_join_geo.htm">
 Retrieve unjoined wall geometry</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/10/retrieving-detailed-wall-layer-geometry.html">
+<li><a href="0666_wall_layer_geom.htm">
 Retrieving detailed wall layer geometry</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/12/unit-conversion-and-display-string-formatting.html">
+<li><a href="0688_unit_display_str.htm">
 Unit conversion and display string formatting</a>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/03/determine-revit-demo-mode.html">
+<li><a href="0735_demo_mode.htm">
 Determine Revit demo mode</a>
 
 </ul>
 
 <p><strong>Addendum:</strong> Arno&scaron;t L&ouml;bel pointed out that 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/11/temporary-transaction-trick-touchup.html">
+<a href="0854_temp_transact.htm">
 this will not always work</a>.
 
 Some modifications require the transaction to be committed before they take full effect.
 The 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/11/temporary-transaction-trick-touchup.html">
+<a href="0854_temp_transact.htm">
 workaround</a> for 
 
 that is to enclose it within a transaction group and roll back the group at the end.
@@ -178,7 +209,7 @@ a few more details</a>.
 
 <a name="2"></a>
 
-<a href="">
+<a href=">
 </a>
 
 <h4></h4>
@@ -191,3 +222,12 @@ a few more details</a>.
 </pre>
 
 -->
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

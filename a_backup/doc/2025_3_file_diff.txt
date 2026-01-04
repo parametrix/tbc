@@ -1,0 +1,50 @@
+266a266,269
+> ./Samples/AnalysisVisualizationFramework/DistanceToSurfaces/CS/Command.cs
+> ./Samples/AnalysisVisualizationFramework/DistanceToSurfaces/CS/DistanceToSurfaces.addin
+> ./Samples/AnalysisVisualizationFramework/DistanceToSurfaces/CS/DistanceToSurfaces.csproj
+> ./Samples/AnalysisVisualizationFramework/DistanceToSurfaces/CS/ReadMe_DistanceToSurfaces.rtf
+1179a1173
+> ./Samples/ExternalResourceServer/ExternalResourceDBServer/CS/ServerInterfaceExtensionsForRevitLinks.cs
+1757a1749,1751
+> ./Samples/Massing/DividedSurfaceByIntersects/CS/Command.cs
+> ./Samples/Massing/DividedSurfaceByIntersects/CS/DividedSurfaceByIntersects.addin
+> ./Samples/Massing/DividedSurfaceByIntersects/CS/DividedSurfaceByIntersects.csproj
+1758a1753,1754
+> ./Samples/Massing/DividedSurfaceByIntersects/CS/Properties/AssemblyInfo.cs
+> ./Samples/Massing/DividedSurfaceByIntersects/CS/ReadMe_DividedSurfaceByIntersects.rtf
+1802a1798,1805
+> ./Samples/Massing/ParameterValuesFromImage/Tower.rfa_grayscale.bmp
+> ./Samples/Massing/ParameterValuesFromImage/Tower.rfa_grayscale2.bmp
+> ./Samples/Massing/ParameterValuesFromImage/Tower.rfa_grayscale3.bmp
+> ./Samples/Massing/ParameterValuesFromImage/Tower.rfa_grayscale4.bmp
+> ./Samples/Massing/ParameterValuesFromImage/Tower.rfa_grayscale5.bmp
+> ./Samples/Massing/ParameterValuesFromImage/Tower.rfa_grayscale6.bmp
+> ./Samples/Massing/ParameterValuesFromImage/Tower.rfa_grayscale7.bmp
+> ./Samples/Massing/ParameterValuesFromImage/brickFanWall.rfa_grayscale.bmp
+2003a2005
+> ./Samples/NewMacro/CS/NewMacro/MacroSample/Addin/MacroSample.deps.json
+3009,3015c2996,2999
+< ./Samples/VSProps/SDKSamples.CivilAlignments.Sdk.targets
+< ./Samples/VSProps/SDKSamples.NewMacro.Sdk.targets
+< ./Samples/VSProps/SDKSamples.Sdk.props
+< ./Samples/VSProps/SDKSamples.Sdk.targets
+< ./Samples/VSProps/SDKSamples.Steel.Sdk.targets
+< ./Samples/VSProps/SDKSamples.VB.Sdk.props
+< ./Samples/VSProps/SDKSamples.VB.Sdk.targets
+---
+> ./Samples/VSProps/SDKSamples.CivilAlignments.targets
+> ./Samples/VSProps/SDKSamples.NewMacro.targets
+> ./Samples/VSProps/SDKSamples.Steel.targets
+> ./Samples/VSProps/SDKSamples.VB.props
+3016a3001
+> ./Samples/VSProps/SDKSamples.props
+3284a3269
+> ./Structural Analysis SDK/Examples/Concrete/CodeCheckingConcreteExample/Concrete/InternalForcesSurface.cs
+3309a3295
+> ./Structural Analysis SDK/Examples/Concrete/CodeCheckingConcreteExample/Main/Calculation/SurfaceSection.cs
+3320a3307
+> ./Structural Analysis SDK/Examples/Concrete/CodeCheckingConcreteExample/Main/ResultSurfaceElement.cs
+3328a3316
+> ./Structural Analysis SDK/Examples/Concrete/CodeCheckingConcreteExample/Server/ServerResultsSurface.cs
+3381a3370
+> ./Structural Analysis SDK/Examples/Concrete/CodeCheckingConcreteExample/Utility/ResultInPointSurface.cs

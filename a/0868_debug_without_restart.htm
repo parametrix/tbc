@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Reload Add-in for Debug Without Restart</h3>
@@ -24,12 +55,12 @@ That is the approach I use myself, since I can get by working in absolutely mini
 
 <!-- 865_python_ui_server_api.htm -->
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/11/au-classes-on-python-ui-server-and-framework-apis.html#1">
+<a href="0865_python_ui_server_api.htm#1">
 Python</a> or
 
 <!-- 797_revitrubyshell.htm -->
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/07/meetings-football-and-revitrubyshell.html#2">
+<a href="0797_revitrubyshell.htm#2">
 Ruby</a>.
 
 In fact, the wish be able to modify the API code interactively without requiring the tedious recompile and reload cycle was one of the main motivating factors in implementing the latter.
@@ -43,7 +74,7 @@ When finished debugging, you move the code out of the macro environment into the
 
 <li>Efficient: use the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/addinmanager.html">
+<a href="0317_addinmanager.htm">
 AddInManager</a> and
 
 attach to process to reload repeatedly, with compile and edit cycles.
@@ -51,7 +82,7 @@ attach to process to reload repeatedly, with compile and edit cycles.
 
 <p>I already described all three of the solutions not involving Python and Ruby in an earlier discussion on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/05/debugging-an-add-in-without-restarting-revit.html">
+<a href="0588_debug_without_restart.htm">
 debugging an add-in without restarting Revit</a>.
 
 <p>Melissa Manalac of
@@ -62,7 +93,7 @@ was making such efficient use of the AddInManager approach at the DevLab that I 
 
 <p>She points out that James LeVieux already summarized the process in his
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/05/debugging-an-add-in-without-restarting-revit.html?cid=6a00e553e16897883301538f2ad15a970b#comment-6a00e553e16897883301538f2ad15a970b">
+<a href="0588_debug_without_restart.htm">
 comment</a> on
 
 that discussion:</p> <!--  mentioned above -->
@@ -81,7 +112,7 @@ that discussion:</p> <!--  mentioned above -->
 <p>You also need to be aware that the AddInManager requires the external commands it loads to use manual transaction mode.
 This is no significant restriction, since
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/05/read-only-and-automatic-transaction-modes.html">
+<a href="0760_read_auto_transact.htm">
 automatic transaction mode is not recommended</a> anyway.
 
 <p>Here are some screen snapshots to further clarify these steps:</p>
@@ -163,14 +194,14 @@ automatic transaction mode is not recommended</a> anyway.
 
 <p>As I mentioned quite a while back, I use the Visual Studio
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/04/updated-sdk-2012-products-and-source-code-colourisation.html#4">
+<a href="0575_updated_sdk.htm#4">
 CopyToHtml</a> plug-in
 
 to copy and paste colour coded C# and VB source code to HTML for my blog posts.
 
 <p>Harri Mattison of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/12/boost-your-bim-and-dance-with-an-elephant.html">
+<a href="0867_boost_your_bim.htm">
 Boost Your BIM</a> now
 
 pointed out that this utility obviously cannot be used in the built-in Revit SharpDevelop macro environment.
@@ -188,3 +219,12 @@ Pavel Vladov that is quite nice and can be used instead.
 
 that supports a huge number of different languages besides C#.
 Unfortunately, it does not escape all the HTML characters, e.g. '&lt;' remains '&lt;' instead of being converted to '&amp;lt;'.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

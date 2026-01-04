@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!--
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -44,11 +75,11 @@ Reporting on a very exciting topic from the Revit API discussion forum from the 
 </ul>
 <h4><a name="2"></a>Barcelona Forge Accelerator</h4>
 <p>I am back in the Barcelona Autodesk office supporting the <a href="http://autodeskcloudaccelerator.com/forge-accelerator">Forge Accelerator</a>.</p>
-<p>I was here <a href="http://thebuildingcoder.typepad.com/blog/2016/03/adn-becomes-forge-and-barcelona-accelerator.html#3">last year</a>
-<a href="http://thebuildingcoder.typepad.com/blog/2016/05/forge-accelerator-devcon-and-answer-day.html">as well</a>, where
+<p>I was here <a href="1414_adn_becomes_forge.html#3">last year</a>
+<a href="1439_accel_answer_day.html">as well</a>, where
 I started working on
 the <a href="https://github.com/jeremytammik/roomedit3d">roomedit3d project</a>, implementing all 
-its <a href="http://thebuildingcoder.typepad.com/blog/2016/05/roomedit3d-console-test-and-rendering-assets.html#2">Revit-independent functionality</a>.</p>
+its <a href="1441_accel_render_asset.html#2">Revit-independent functionality</a>.</p>
 <p>Let's look at two Revit API issues before I dig in deeper into Forge:</p>
 <h4><a name="3"></a>Retain the Add-In GUID</h4>
 <p><strong>Question:</strong> If I create a Revit add-in, should the <code>AddinId</code> be unique across different versions of Revit (2017/2018/2019)?</p>
@@ -59,13 +90,13 @@ its <a href="http://thebuildingcoder.typepad.com/blog/2016/05/roomedit3d-console
 <p>Therefore, you will want to retain the same add-in id in future versions, so that Revit doesn't treat the capability as unrecognized.</p>
 <h4><a name="4"></a>Dimension on Hatch Pattern</h4>
 <p>On to a much more complex question, adding a new entry to our collection
-of <a href="http://thebuildingcoder.typepad.com/blog/2011/11/undocumented-elementid-relationships.html">undocumented <code>ElementId</code> relationships</a>.</p>
+of <a href="0673_elementid_relationships.htm">undocumented <code>ElementId</code> relationships</a>.</p>
 <p>It came up in
 the <a href="http://forums.autodesk.com/t5/revit-api-forum/bd-p/160">Revit API discussion forum</a> thread
 on creating a <a href="https://forums.autodesk.com/t5/revit-api-forum/dimension-on-hatch-pattern-slab/td-p/7063302">dimension on hatch pattern slab</a> and
 was answered very creatively indeed by Fair59, who has already contributed numerous answers to other very tricky issues.</p>
 <p>Fair59's solution reminds me of
-Scott Wilson's <a href="http://thebuildingcoder.typepad.com/blog/2016/04/stable-reference-string-magic-voodoo.html"><code>Reference</code> stable representation magic voodoo</a>:</p>
+Scott Wilson's <a href="1429_stable_references.html"><code>Reference</code> stable representation magic voodoo</a>:</p>
 <p><strong>Question:</strong> I want to get dimension on hatch pattern slab like this: </p>
 <p><center>
 <img src="img/dim_hatch_01.png" alt="Dimension hatch lines" width="400">
@@ -76,8 +107,8 @@ find out what elements you are after:</p>
 <p>Second: Retrieve their geometry, asking for <code>ComputeReferences = true</code>.</p>
 <p>Third: Create the dimensioning using the references:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/02/dimension-walls-by-iterating-faces.html">Dimension walls by iterating faces</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/02/dimension-walls-using-findreferencesbydirection.html">Dimension walls using <code>FindReferencesByDirection</code></a></li>
+<li><a href="0539_dim_walls_it_face.htm">Dimension walls by iterating faces</a></li>
+<li><a href="0540_dim_walls_find_refs.htm">Dimension walls using <code>FindReferencesByDirection</code></a></li>
 </ul>
 <p><strong>Response:</strong> That does not help.</p>
 <ol>
@@ -230,3 +261,11 @@ o.ComputeReferences&nbsp;=&nbsp;<span style="color:blue;">true</span>;
 <p><strong>Response:</strong> I ended up avoiding the problem by using a <code>FilledRegion</code> previous set on the floor pattern. The <code>FilledRegion</code> dimension should be equal to one tile dimension.</p>
 <p>So, I can locate one tile on Floor, then create a dimension from that to others.  </p>
 <p>Many thanks to Fair59 for this extremely creative approach and another gem in the collection of tips and tricks making use of undocumented Revit <code>ElementId</code> relationships!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

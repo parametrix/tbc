@@ -248,10 +248,10 @@ Here is a sample run searching for the word 'dabble', which includes today's dra
 2020/09/09 10:31:41 Loaded 1863 documents in 377.397917ms
 2020/09/09 10:31:44 Indexed 1863 documents in 2.876775333s
 2020/09/09 10:31:44 Search for 'dabble' found 5 documents in 9.703µs
-2020/09/09 10:31:44 582 [Wiki API Help, View Event and Structural Material Type](http://thebuildingcoder.typepad.com/blog/2011/05/wiki-api-help-view-event-and-structural-material-type.html)
-2020/09/09 10:31:44 906 [Export Wall Parts Individually to DXF](http://thebuildingcoder.typepad.com/blog/2013/03/export-wall-parts-individually-to-dxf.html)
-2020/09/09 10:31:44 961 [Super Insane MP3 and Songbird Playlist Exporter](http://thebuildingcoder.typepad.com/blog/2013/06/super-insane-mp3-and-songbird-playlist-exporter.html)
-2020/09/09 10:31:44 1008 [Open MEP Connector Warning](http://thebuildingcoder.typepad.com/blog/2013/08/open-mep-connector-warning.html)
+2020/09/09 10:31:44 582 [Wiki API Help, View Event and Structural Material Type](0582_api_wiki_help_view_mat.htm)
+2020/09/09 10:31:44 906 [Export Wall Parts Individually to DXF](0906_export_wall_part_dxf.htm)
+2020/09/09 10:31:44 961 [Super Insane MP3 and Songbird Playlist Exporter](0961_songbird_to_m3u.htm)
+2020/09/09 10:31:44 1008 [Open MEP Connector Warning](1008_loose_connector.htm)
 2020/09/09 10:31:44 1863 [Optimising Parameters and Full-Text Search](http thebuildingcoder.typepad.com not yet published)
 </pre>
 

@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Split a Duct or Pipe</h3>
@@ -16,7 +47,7 @@
 
 <p><strong>Answer:</strong> I touched briefly on the topic of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/revit-api-cases-1.html#2">
+<a href="0119_cases_1.htm#2">
 splitting a duct or pipe</a> a
 
 long time ago, back in 2009.
@@ -28,10 +59,10 @@ long time ago, back in 2009.
 <p>Also, although the LocationCurve.Length property is read-only, you can still modify it by simply assigning a completely new curve to the element Location property itself.
 We already discussed samples of doing so for a 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/09/bevelled-steel-beams.html">
+<a href="0644_steel_beam_bevel.htm">
 beam</a> and a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/08/edit-wall-length.html">
+<a href="0422_edit_wall_length.htm">
 wall</a>.
 
 The same approach can be used on a pipe as well, and obviously replacing the location curve can also change its length.
@@ -42,3 +73,12 @@ The same approach can be used on a pipe as well, and obviously replacing the loc
 <li>AutoRoute: Route a set of ducts and fittings between a base air supply equipment and two terminals. 
 <li>AvoidObstruction: Detect and resolve obstructions between ducts, pipes, and beams.
 </ul>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

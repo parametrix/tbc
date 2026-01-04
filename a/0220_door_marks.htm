@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1253112 [Previous Mark# list] -->
@@ -25,12 +56,12 @@ And somehow manipulate it to make Revit start counting on our choice of number?
 
 <p><strong>Answer:</strong> Using the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/rvtmgddbg.html">
+<a href="0101_rvtmgddbg.htm">
 RvtMgdDbg</a> BIM
 
 debugging and analysis tool or the Revit API introduction labs
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/deeper-parameter-exploration.html">
+<a href="0118_deeper_param_exploration.htm">
 built-in parameter checker</a> to
 
 explore various element parameters, I see that the Mark parameter is accessible through the built-in parameters ALL_MODEL_MARK.
@@ -180,7 +211,7 @@ Running it yet again lists the new mark settings:
 <p>The command returns Succeeded only if the BIM has actually been modified, otherwise Failed.
 This ensures that the document dirty flag stored in its
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/document-ismodified-property.html">
+<a href="0049_is_modified.htm">
 IsModified property</a> is
 
 not set unnecessarily.
@@ -191,3 +222,12 @@ not set unnecessarily.
 version 1.1.0.47</a>
 
 of the complete Building Coder sample source code and Visual Studio solution including the new command.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -16,7 +47,7 @@
 
 <p>One of the most important enhancements made in the Revit 2011 API which is guaranteed to affect almost every single conceivable Revit add-in is the new
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/collector-benchmark.html">
+<a href="0333_collector_benchmark.htm">
 filtered element collector</a> mechanism, and we have already looked at numerous aspects and examples of using it in various ways.
 
 <p>It represents the one and only way to access elements in the Revit database, if you disregard a number of dedicated Document properties providing direct access to specialised collections of various types, which can easily be replaced by filtered element collectors as well.
@@ -51,32 +82,32 @@ filtered element collector</a> mechanism, and we have already looked at numerous
   461_measurepanelarea.htm
 
 <ul>
-<li>My first Revit 2011 plug-in, the <a href="http://thebuildingcoder.typepad.com/blog/2010/05/pipe-to-conduit-converter.html">pipe to conduit converter</a>.
-<li>A very simple collector to retrieve <a href="http://thebuildingcoder.typepad.com/blog/2010/06/export-data-to-xml.html">view sheets</a>.
-<li>Some utility methods to filter for <a href="http://thebuildingcoder.typepad.com/blog/2010/06/set-tag-type.html">levels and types</a> such as door type and a door tag type symbol</a>.
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/04/retrieving-newly-created-elements-in-revit-2011.html">newly added elements</a>.
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/04/retrieve-stairs-on-level.html">stairs on a level</a>.
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/04/filter-for-views-and-istemplate-predicate.html">views</a>.
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/05/get-type-id-and-preview-image.html">family instances and their family</a>.
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/05/determine-sheet-size.html">title block symbols and instances</a> to determine the sheet size.
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/06/display-webcam-image-on-building-element-face.html#3">AVF display styles with a specific name</a>.
-<li>Retrieving <a href="http://thebuildingcoder.typepad.com/blog/2010/06/retrieve-mep-elements-and-connectors.html">MEP elements</a>.
-<li>A <a href="http://thebuildingcoder.typepad.com/blog/2010/04/collector-benchmark.html">collector performance benchmark</a>.
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/04/anonymous-methods-in-vb.html">Using LINQ and anonymous methods in VB</a>.
-<li>A RevitLookup update and <a href="http://thebuildingcoder.typepad.com/blog/2010/05/revitlookup-update.html">retrieving all database elements</a>.
-<li>Why <a href="http://thebuildingcoder.typepad.com/blog/2010/06/filter-for-all-elements.html"><strong>not</strong> to retrieve all database elements</a>.
-<li>Many examples of <a href="http://thebuildingcoder.typepad.com/blog/2010/06/parameter-filter.html">parameter filters</a>.
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/06/element-name-parameter-filter-correction.html">Parameter filter for an element name</a>.
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/08/elementparameterfilter-with-a-shared-parameter.html">Parameter filter for a shared parameter</a>.
-<li>Filtering for a <a href="http://thebuildingcoder.typepad.com/blog/2010/08/filtering-for-a-nonnative-class.html">non-native class</a>, i.e. "an element type that exists in the API, but not in Revit's native object model".
-<li>Resolving another non-native class issue, the Panel class in the <a href="http://thebuildingcoder.typepad.com/blog/2010/10/measurepanelarea_update.html">MeasurePanelArea</a> SDK sample.
-<li>Filter for <a href="http://thebuildingcoder.typepad.com/blog/2010/09/filter-for-view-and-phase.html">view and phase</a>.
+<li>My first Revit 2011 plug-in, the <a href="0360_p2c.htm">pipe to conduit converter</a>.
+<li>A very simple collector to retrieve <a href="0392_export_xml.htm">view sheets</a>.
+<li>Some utility methods to filter for <a href="0395_set_tag_type.htm">levels and types</a> such as door type and a door tag type symbol</a>.
+<li>Retrieving <a href="0344_mirror_new_elements.htm">newly added elements</a>.
+<li>Retrieving <a href="0346_stairs_on_level.htm">stairs on a level</a>.
+<li>Retrieving <a href="0355_view_filter.htm">views</a>.
+<li>Retrieving <a href="0359_preview_image.htm">family instances and their family</a>.
+<li>Retrieving <a href="0371_sheet_size.htm">title block symbols and instances</a> to determine the sheet size.
+<li>Retrieving <a href="0380_revitwebcam.htm#3">AVF display styles with a specific name</a>.
+<li>Retrieving <a href="0398_retrieve_mep_elements.htm">MEP elements</a>.
+<li>A <a href="0333_collector_benchmark.htm">collector performance benchmark</a>.
+<li><a href="0334_anonymous_methods_vb.htm">Using LINQ and anonymous methods in VB</a>.
+<li>A RevitLookup update and <a href="0370_revitlookup.htm">retrieving all database elements</a>.
+<li>Why <a href="0397_filter_all_elements.htm"><strong>not</strong> to retrieve all database elements</a>.
+<li>Many examples of <a href="0383_param_filter.htm">parameter filters</a>.
+<li><a href="0384_elem_name_param_filter.htm">Parameter filter for an element name</a>.
+<li><a href="0423_filter_shared_param.htm">Parameter filter for a shared parameter</a>.
+<li>Filtering for a <a href="0426_filter_non_native_class.htm">non-native class</a>, i.e. "an element type that exists in the API, but not in Revit's native object model".
+<li>Resolving another non-native class issue, the Panel class in the <span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/2010/10/measurepanelarea_update.html">MeasurePanelArea <em>(post unavailable)</em></span> SDK sample.
+<li>Filter for <a href="0446_filter_view_phase.htm">view and phase</a>.
 </ul>
 -->
 
 <p>In addition to all the results published here so far, I was astounded by the wealth of yet more exciting and useful information and benchmarking results presented by Kevin Vandecar, ex Principal Engineer of the Revit API Team, at the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/devcamp-devlabs-and-updated-api-training-schedule.html">
+<a href="0329_devcamp_training.htm">
 AEC DevCamp</a> conference
 
 in June 2010 in his presentation on 'Revit Performance Tips and Tricks &ndash; Exploiting 2011 API Features'.
@@ -97,7 +128,7 @@ It would be a great shame if it were not shown at all, so I have been asked to p
 It will be part of my class <strong>CP234-2</strong>.
 Here are the complete descriptions of all three of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/09/autodesk-university-2010-classes.html">
+<a href="0436_au_2010_classes.htm">
 my AU 2010 classes</a>.
 
 <p>In the best spirit of Autodesk University, Kevin wrote a hand-out document covering the entire session content in some detail. 
@@ -134,7 +165,7 @@ The built-in filters provide this criteria and then you can iterate or filter fu
 <!--
 <p>Tip: The Building Coder blog (Jeremy Tammik) has explored 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/collector-benchmark.html">
+<a href="0333_collector_benchmark.htm">
 filtering performance</a> as well.
 -->
 
@@ -411,3 +442,11 @@ There was a problem with this in the very first version of 2011 that was fixed i
 <h4>Next Instalment</h4>
 
 <p>As said, one of the next topics will be an overview of Kevin's sample code and collector benchmarks, followed by a global  overview of all the filtering samples we have studied so far.
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

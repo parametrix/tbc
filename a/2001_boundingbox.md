@@ -340,8 +340,8 @@ create and enlarge a bounding box point by point that will come in handy for the
 ####<a name="5"></a> Interactive Explanation of SVG Path
 
 I made good use of and learned to love SVG paths working on
-the [room polygon and furniture picker in SVG](http://thebuildingcoder.typepad.com/blog/2012/10/room-polygon-and-furniture-picker-in-svg.html) and
-implementing [2D SVG editing on mobile device with Raphael](http://thebuildingcoder.typepad.com/blog/2013/02/2d-svg-editing-on-mobile-device-with-rapha%C3%ABl.html).
+the [room polygon and furniture picker in SVG](0846_svg_room_furnit_pick.htm) and
+implementing [2D SVG editing on mobile device with Raphael](0896_svg_raphael_edit.htm).
 
 If you would like to enjoy a much nicer explanation of the concepts of SVG paths than I had access to back then, take a quick dive
 into [understanding SVG paths](https://www.nan.fyi/svg-paths).
@@ -357,7 +357,7 @@ Eric Boehlke of [truevis BIM Consulting](https://truevis.com) pointed it out to 
 A competitor to OpenAI. Can upload big files. Any better for coding?
 
 I tested it myself by asking it to summarise
-my [last blog post](https://thebuildingcoder.typepad.com/blog/2023/07/rbp-materials-their-assets-and-the-visual-api.html),
+my [last blog post](2000_materials.html),
 evaluate a German architectural contract without providing any hint of what it might be, and discuss
 the German [HOAI](https://de.wikipedia.org/wiki/Honorarordnung_f%C3%BCr_Architekten_und_Ingenieure).
 The results were completely satisfying in all three cases:

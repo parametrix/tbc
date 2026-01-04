@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1273117 [DocumentChanged and Idling Events] -->
@@ -27,18 +58,18 @@
 -->
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/01/transaction-responsibility.html">Transaction responsibility</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/04/regeneration-option-best-practices.html">Regeneration option best practices</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/04/asynchronous-api-calls-and-idling.html">Asynchronous API calls and Idling</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/05/autojoinelements.html">AutoJoinElements</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/10/closing-the-active-document-and-why-not-to.html">Closing the active document and why not to</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/01/modeless-door-lister-flaws.html">Modeless door lister flaws</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/02/command-and-conquer-when-switching-views.html">Warning addendum on switching views </a>
-<!-- <li><a href="http://thebuildingcoder.typepad.com/blog/2011/02/enable-ribbon-items-in-zero-document-state.html">enable-ribbon-items-in-zero-document-state addendum</a> -->
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/02/external-application-attributes.html">External application attributes</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/04/extensible-storage.html">Extensible storage vendor id</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/09/yet-another-modeless-update.html">Modeless best practices</a>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/11/undocumented-elementid-relationships.html">Warning on using undocumented ElementId relationships</a>
+<li><a href="0075_transaction_responsibility.htm">Transaction responsibility</a>
+<li><a href="0348_regen_option_rules.htm">Regeneration option best practices</a>
+<li><a href="0353_asynchronous.htm">Asynchronous API calls and Idling</a>
+<li><a href="0357_autojoinelements.htm">AutoJoinElements</a>
+<li><a href="0456_close_active_doc.htm">Closing the active document and why not to</a>
+<li><a href="0509_list_project_doors_flaws.htm">Modeless door lister flaws</a>
+<li><a href="0531_commands_and_views.htm">Warning addendum on switching views </a>
+<!-- <li><a href="0538_zero_doc_ribbon.htm">enable-ribbon-items-in-zero-document-state addendum</a> -->
+<li><a href="0541_application_attributes.htm">External application attributes</a>
+<li><a href="0567_extensible_storage.htm">Extensible storage vendor id</a>
+<li><a href="0652_modeless_loose_connectors.htm">Modeless best practices</a>
+<li><a href="0673_elementid_relationships.htm">Warning on using undocumented ElementId relationships</a>
 </ul>
 
 <p>Arno&scaron;t also presented a class on the Idling event at Autodesk University 2011,
@@ -197,7 +228,7 @@ If both are ok I then collect all the family annotation instances in the view, v
 <!--
 <p>He also mentioned that he will look into the fact the Unique Id cannot be used when elements are deleted in near future. But irrespective of that, his helpful and detailed comments should help proceed further.  
 
-<a href="">
+<a href=">
 </a>
 
 <pre class="code">
@@ -243,3 +274,12 @@ Although the window for change is small, each programmer should decide how they 
 <p>Again, this is my recommendation only.
 
 <p><strong>Response:</strong> I think we all prefer Revit not open a gateway to hell but it's nice to know it has that much power!  :)
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

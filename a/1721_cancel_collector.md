@@ -71,7 +71,7 @@ Do you see anything obvious?
 **Answer:** I can hardly imagine that it remains slow if you optimise it as much as possible, however large the model is.
 
 The bounding box filter is a quick filter, whereas the element intersection one is slow,
-cf., [quick, slow and LINQ element filtering](http://thebuildingcoder.typepad.com/blog/2015/12/quick-slow-and-linq-element-filtering.html)
+cf., [quick, slow and LINQ element filtering](1382_filter_shortcuts.html)
 
 This can make a huge difference, especially in large models.
 

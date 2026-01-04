@@ -1,15 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Migrating the Building Coder Samples to Revit 2012</h3>
 
 <p>This is the third migration of the The Building Coder samples, after moving from Revit 2009 to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/porting-the-building-coder-samples.html">
+<a href="0141_port_bc.htm">
 Revit 2010</a> and then to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/porting-the-building-coder-samples-to-revit-2011.html">
+<a href="0330_port_bc_2011.htm">
 Revit 2011</a>.
 
 <p>The move from 2010 to 2011 was a tougher round with many changes.
@@ -21,13 +52,13 @@ This time around, from 2011 to 2012, it is quite easy and straightforward again.
 The time is rather long because there are a large number of commands, over eighty.
 It was shortened somewhat because I had some experience from previously migrating lots of other ADN sample code for the Revit API trainings 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/03/khan-academy.html">
+<a href="0557_khan_academy.htm">
 in</a>
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/03/curveintersect-return-values.html">
+<a href="0558_curve_intersect.htm">
 Jeddah</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/04/erformant-hardware.html">
+<a href="0568_performant_hardware.htm">
 Verona</a>.
 
 <p>Without further ado, let me here present the new
@@ -118,21 +149,21 @@ The build number is currently set to 87 and indicates the number of commands def
 
 <p>As before, I continue to use the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/09/loading-sdk-sam.html">
+<a href="0007_loading_sdk_samples.htm">
 RvtSamples SDK sample</a> to 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/loading-the-building-coder-samples.html">
+<a href="0035_loading_bc_samples.htm">
 load and launch all The Building Coder samples</a>, 
 
 as well as all the other ADN samples that I work with, just like I did for 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/porting-the-building-coder-samples.html">
+<a href="0141_port_bc.htm">
 Revit</a>
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/installing-the-revit-2010-sdk.html">
+<a href="0121_install_2010_sdk.htm">
 2010</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/porting-the-building-coder-samples-to-revit-2011.html">
+<a href="0330_port_bc_2011.htm">
 2011</a>.
 
 The BcSamples.txt include file read by RvtSamples is included in the zip file and provides all the details required.
@@ -698,3 +729,11 @@ Warning	12	'Autodesk.Revit.DB.Reference.ProximityParameter' is obsolete: 'Proper
 <p>These twelve warnings are left as they are for the time being and hopefully cause no harm.
 
 -->
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

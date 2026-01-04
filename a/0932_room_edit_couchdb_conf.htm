@@ -1,13 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Room Editor Project Overview and CouchDB Configuration</h3>
 
 <p>Continuing the research and development for my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/cloud-mobile-extensible-storage-data-use-in-schedules.html#3">
+<a href="0912_cm_estorage_schedule.htm#3">
 cloud-based round-trip 2D Revit model editing project</a>,
 
 here are some issues I tackled since my last report:
@@ -48,39 +79,39 @@ server-side scripting</a>.</p>
 
 <p>I already addressed a number of issues in realising this project and am documenting my progress here on the blog, in the three categories
 
-<a href="http://thebuildingcoder.typepad.com/blog/desktop">desktop</a>,
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/desktop">desktop <em>(category page)</em></span>,
 
-<a href="http://thebuildingcoder.typepad.com/blog/cloud">cloud</a> and
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/cloud">cloud <em>(category page)</em></span> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/mobile">mobile</a>.
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/mobile">mobile <em>(category page)</em></span>.
 
 <p>Here is an overview of the results presented so far, both for this project and some previous related topics, classified into those three categories:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/03/cloud-mobile-extensible-storage-data-use-in-schedules.html">Project overview and Tech Summit proposal</a></td></tr>
+<li><a href="0912_cm_estorage_schedule.htm">Project overview and Tech Summit proposal</a></td></tr>
 <li>Desktop</li>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/03/revit-2014-api-and-room-plan-view-boundary-polygon-loops.html">Room plan view boundary loops</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/03/sort-and-orient-curves-to-form-a-contiguous-loop.html">Sort and orient curves to form a contiguous loop</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/extrusion-analyser-and-plan-view-boundaries.html">Extrusion analyser and plan view boundaries</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/curve-following-face-and-bounding-box-implementation.html">Curve following face and bounding box implementation</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/geosnoop-net-boundary-curve-loop-visualisation.html">GeoSnoop boundary curve loop visualisation</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/desktop-to-cloud-via-dreamseat-couchdb-client.html">Desktop to cloud via DreamSeat CouchDB Client</a></td></tr>
+<li><a href="0916_2014_api_room_loops.htm">Room plan view boundary loops</a></li>
+<li><a href="0918_contiguous_curves.htm">Sort and orient curves to form a contiguous loop</a></li>
+<li><a href="0921_extrusion_analyser.htm">Extrusion analyser and plan view boundaries</a></li>
+<li><a href="0922_bounding_box_xyz_int.htm">Curve following face and bounding box implementation</a></li>
+<li><a href="0924_geo_snoop.htm">GeoSnoop boundary curve loop visualisation</a></li>
+<li><a href="0927_dreamseat_couchdb.htm">Desktop to cloud via DreamSeat CouchDB Client</a></td></tr>
 </ul>
 <li>Cloud</li>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/06/getting-going-with-the-cloud.html">Getting Going with the Cloud</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/09/apollonian-packing-of-spheres-via-web-service-and-avf.html">Apollonian Sphere Packing Web Service and AVF</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/12/the-bim-360-glue-viewer-and-rest-api.html">The BIM 360 Glue Viewer and REST API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/12/bim-360-glue-rest-api-authentication-using-python.html">BIM 360 Glue REST API Authentication Using Python</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/03/relax-simple-free-cloud-based-data-repository-with-nosql-couchdb-and-iriscouch.html">Free Cloud Based Data Repository with NoSQL, CouchDB, and IrisCouch</a></li>
+<li><a href="0790_getting_going_cloud.htm">Getting Going with the Cloud</a></li>
+<li><a href="0825_apollonian_packing.htm">Apollonian Sphere Packing Web Service and AVF</a></li>
+<li><a href="0869_bim360_glue_api.htm">The BIM 360 Glue Viewer and REST API</a></li>
+<li><a href="0870_py_rest_glue.htm">BIM 360 Glue REST API Authentication Using Python</a></li>
+<li><a href="0914_nosql_couchdb_iris.htm">Free Cloud Based Data Repository with NoSQL, CouchDB, and IrisCouch</a></li>
 </ul>
 <li>Mobile</li>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/08/validate-roof-type-and-view-obj-on-android.html">Testing my OBJ exporter on Android</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/09/mobile-device-room-location.html">Mobile Device Room Location</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/10/room-polygon-and-furniture-picker-in-svg.html">Room Polygon and Furniture Picker in SVG</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/02/2d-svg-editing-on-mobile-device-with-rapha%C3%ABl.html">2D SVG Editing on Mobile Device with Raphael</a></li>
+<li><a href="0814_obj_on_android.htm">Testing my OBJ exporter on Android</a></li>
+<li><a href="0830_room_loc_web_serv.htm">Mobile Device Room Location</a></li>
+<li><a href="0846_svg_room_furnit_pick.htm">Room Polygon and Furniture Picker in SVG</a></li>
+<li><a href="0896_svg_raphael_edit.htm">2D SVG Editing on Mobile Device with Raphael</a></li>
 </ul>
 </ul>
 
@@ -285,8 +316,8 @@ I may therefore revert to implementing my room furniture placement editor in pur
 <a href="http://adndevblog.typepad.com/cloud_and_mobile/jeremy-tammik.html">
 Jeremy</a>
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html">
-Tammik</a>.</i></p>
+<span class="unavailable-link">
+Tammik</span>.</i></p>
 
 <p>I am continuing the research and development for my cloud-based round-trip 2D Revit model editing project.
 
@@ -313,12 +344,21 @@ server-side scripting</a>.</p>
 <p>Here are some issues I tackled since my last report:
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-editor-project-overview-and-couchdb-configuration.html#2">Project Overview</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-editor-project-overview-and-couchdb-configuration.html#3">Replicating a CouchDB with Python</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-editor-project-overview-and-couchdb-configuration.html#4">Same origin policy snag and resolution</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-editor-project-overview-and-couchdb-configuration.html#5">Learning and struggling with CouchApps</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-editor-project-overview-and-couchdb-configuration.html#6">Relief moving to Kanso</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-editor-project-overview-and-couchdb-configuration.html#7">Next steps</a></li>
+<li><a href="0932_room_edit_couchdb_conf.htm#2">Project Overview</a></li>
+<li><a href="0932_room_edit_couchdb_conf.htm#3">Replicating a CouchDB with Python</a></li>
+<li><a href="0932_room_edit_couchdb_conf.htm#4">Same origin policy snag and resolution</a></li>
+<li><a href="0932_room_edit_couchdb_conf.htm#5">Learning and struggling with CouchApps</a></li>
+<li><a href="0932_room_edit_couchdb_conf.htm#6">Relief moving to Kanso</a></li>
+<li><a href="0932_room_edit_couchdb_conf.htm#7">Next steps</a></li>
 </ul>
 
 <p>Check it out, and please let us know what you think!</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

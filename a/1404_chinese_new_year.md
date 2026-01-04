@@ -72,7 +72,7 @@ Our Chinese colleagues are already in full celebration of the Chinese New Year.
 It began yesterday, February 8.
 In fact, the whole of this week is a holiday in China and our offices there.
 
-In case of interest, check out the [Chinese New Year impressions](http://thebuildingcoder.typepad.com/blog/2012/01/chinese-new-year-impressions.html) from the Year of the Dragon back in 2012.
+In case of interest, check out the [Chinese New Year impressions](0711_chinese_new_year.htm) from the Year of the Dragon back in 2012.
 
 This year is Monkey, charming, charismatic and extremely inventive.
 
@@ -98,7 +98,7 @@ This help is often hard to provide due to the complexity of the issue.
 Such a point arose again today in the Revit API discussion
 on [API constraint management](http://forums.autodesk.com/t5/revit-api/api-constraint-management/td-p/6021191/jump-to/first-unread-message).
 
-Here is my recommendation on how to approach this, which I now also added as a post-post-scriptum to the [instructions for a reproducible test case](http://thebuildingcoder.typepad.com/blog/about-the-author.html#1b):
+Here is my recommendation on how to approach this, which I now also added as a post-post-scriptum to the instructions for a reproducible test case *(link unavailable)*:
 
 I would love to dive in and try to help you debug this, but I am sorry to say I do not have the time.
 
@@ -111,7 +111,7 @@ One approach to debugging a problem like this is:
 1. Simplify it down to something absolutely trivial and stupid that is guaranteed to work &ndash; dumb it down.
 2. Once that is working, add the required complications one by one until it either works completely or fails.
 
-Once you have determined the exact point of failure, you can narrow that down further and create a <u>minimal</u> [reproducible case](http://thebuildingcoder.typepad.com/blog/about-the-author.html#1b).
+Once you have determined the exact point of failure, you can narrow that down further and create a <u>minimal</u> reproducible case *(link unavailable)*.
 
 With the minimal reproducible case in hand, I can either take a look myself of pass it on to the Revit development team for further analysis.
 
@@ -143,7 +143,7 @@ My standard motivation blurb for goes like this:
 
 > That has several advantages. Among others, your peers can join in and help you, and our conversation becomes visible to others, to help them resolve their issues as well.
 
-In addition to formulating a generic question and publishing it on the forum, a minimal [reproducible case](http://thebuildingcoder.typepad.com/blog/about-the-author.html#1b) can also help a lot.
+In addition to formulating a generic question and publishing it on the forum, a minimal reproducible case *(link unavailable)* can also help a lot.
 
 Put together an absolutely minimal example that clearly demonstrates the problem and also makes it easy to check whether a solution really achieves the desired result.
 

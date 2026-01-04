@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -63,10 +94,10 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 <h4><a name="2"></a> Determining the Revit Camera FOV</h4>
 <p>Many people have asked how you can retrieve the Revit camera field of view or FOV.</p>
 <p>As Valerii Nozdrenkov points out in
-his <a href="https://thebuildingcoder.typepad.com/blog/2019/06/revit-camera-settings-project-plasma-da4r-and-ai.html#comment-4891620499">comment</a>
-on <a href="https://thebuildingcoder.typepad.com/blog/2019/06/revit-camera-settings-project-plasma-da4r-and-ai.html">mapping the Revit camera settings to the Forge viewer</a>,
+his <a href="1758_camera_plasma_da4r_ai.html#comment-4891620499">comment</a>
+on <a href="1758_camera_plasma_da4r_ai.html">mapping the Revit camera settings to the Forge viewer</a>,
 The Building Coder already published a solution suggested by Arno&scaron;t L&ouml;bel reading the required data from
-the <a href="https://thebuildingcoder.typepad.com/blog/2014/09/custom-exporter-getcamerainfo.html">custom exporter <code>GetCameraInfo</code></a>:</p>
+the <a href="1203_custom_exporter_camera.htm">custom exporter <code>GetCameraInfo</code></a>:</p>
 <blockquote>
 <p>When a view is processed and run through a custom exporter context, its properties are used to populate a <code>ViewNode</code> instance.</p>
 <p>One of its methods is <code>GetCameraInfo</code>, which provides information that ought to cover everything you need to know about the view's camera.</p>
@@ -120,3 +151,11 @@ the <a href="https://thebuildingcoder.typepad.com/blog/2014/09/custom-exporter-g
 <li><a href="https://rolp.co/Dmtei">20WD38632 &ndash; Engineering Manager &ndash; Portland</a></li>
 <li><a href="https://rolp.co/SrG6i">20WD38618 &ndash; Software Development Manager &ndash; Novi</a></li>
 </ul>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

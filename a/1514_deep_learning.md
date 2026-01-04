@@ -129,7 +129,7 @@ converting a Hermite spline to `NurbSpline` or `Curve`:
 
 ####<a name="7"></a>Lots of Literature on Deep Learning
 
-As I mentioned last month, I would like to experiment with an [automated system to answer the most common recurring questions on the Revit API](http://thebuildingcoder.typepad.com/blog/2016/10/ai-edit-and-continue.html#3).
+As I mentioned last month, I would like to experiment with an [automated system to answer the most common recurring questions on the Revit API](1492_edit_continue.html#3).
 
 The most inspiring motivation out there for me so far is 
 the [deep learning based teaching assistant Jill Watson](http://www.news.gatech.edu/2016/05/09/artificial-intelligence-course-creates-ai-teaching-assistant) implemented

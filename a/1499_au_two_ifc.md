@@ -127,7 +127,7 @@ Q. We heard that wishes now go into Revit Idea Station:
 
 - [Revit Idea Station](http://forums.autodesk.com/t5/revit-ideas/idb-p/302)
 - [Tag: API](http://forums.autodesk.com/t5/tag/API/tg-p/board-id/302)
-- [Introducing the Revit Idea Station](http://thebuildingcoder.typepad.com/blog/2016/05/idea-station-and-textnote-bounding-box.html#2)
+- [Introducing the Revit Idea Station](1440_idea_station_txt_bb.html#2)
 
 Will you pre-populate it with existing wish list items?
 
@@ -148,7 +148,7 @@ A. All new functionality is required to be equipped with an API. Other than that
 Q. Suppressing messages?
 
 A. There are several levels, cf. The Building Coder topic group
-on [Detecting and Handling Dialogues and Failures](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.32).
+on Detecting and Handling Dialogues and Failures *(link unavailable)*.
 
 Tell us what specific messages you have problems with. If all else fails, there is a Windows API that you can use as a workaround.
 
@@ -206,7 +206,7 @@ Q. Documentation has very little detail. Could this be published in a wiki-style
 
 A. We are looking at that. We need something more scalable. There are challenges.
 
-By the way, look at [Revit API docs, web-hosted CHM content](http://thebuildingcoder.typepad.com/blog/2016/10/token-expiry-and-online-revit-api-docs.html#2):
+By the way, look at [Revit API docs, web-hosted CHM content](1484_revitapidocs.html#2):
 
 <center>
 [www.revitapidocs.com](http://www.revitapidocs.com)
@@ -244,7 +244,7 @@ Q. Can I control the visibility state of face edges, hide specific face edges? E
 
 A. No. In the UI, you might be able to manually override. In direct shape, you have control over categories, and could use those to control visibility.
 
-Q. What do you say about [ODA Teigha BIM](http://thebuildingcoder.typepad.com/blog/2016/09/roomedit3d-broadcast-teigha-bim-and-forge-webinar-3.html#3)?
+Q. What do you say about [ODA Teigha BIM](1475_roomedit3d_forge.html#3)?
 
 A. No comment. We do however see that there is considerable interest for that sort of thing out there.
 
@@ -260,13 +260,13 @@ Q. Access to element relationships? Stair to handrail, e.g.
 
 A. In many cases there is a one-directional relationship.
 You can easily invert it, cf. blog post number 16 from 2008 on
-the [relationship inverter](http://thebuildingcoder.typepad.com/blog/2008/10/relationship-in.html).
+the [relationship inverter](0016_relationship_inverter.htm).
 
 You can use filtered element collectors to very effectively implement such a relationship inverter.
 
 Q. Debug and continue?
 
-A. Yes! Please refer to the recent blog post on [edit and continue](http://thebuildingcoder.typepad.com/blog/2016/10/ai-edit-and-continue.html#2) using 'attach to process' and the AddInManager.
+A. Yes! Please refer to the recent blog post on [edit and continue](1492_edit_continue.html#2) using 'attach to process' and the AddInManager.
 
 Q. New database connections, e.g. SQL server 2016?
 
@@ -285,10 +285,10 @@ A. The number one API wish list has been implemented and had more votes than tha
 
 Here are the notes from previous similar Revit API panel sessions:
 
-- [SD5156 &ndash; The Revit API Expert Panel at Autodesk University 2014](http://thebuildingcoder.typepad.com/blog/2014/12/the-revit-api-panel-at-autodesk-university.html#1)
-- [The Building Coder Revit API Panel at the Revit Technology Conference RTC Europe 2015](http://thebuildingcoder.typepad.com/blog/2015/11/rtc-budapest-and-the-revit-api-panel.html#5)
-- [SD10181 &ndash; Revit API Expert Roundtable at Autodesk University 2015](http://thebuildingcoder.typepad.com/blog/2015/12/au-keynote-and-revit-api-panel.html#9)
-- [RTC 2016 Revit API Panel, Idea Station, Edit and Continue](http://thebuildingcoder.typepad.com/blog/2016/10/rtc-revit-api-panel-idea-station-edit-and-continue.html)
+- [SD5156 &ndash; The Revit API Expert Panel at Autodesk University 2014](1254_au_revit_api_panel.htm#1)
+- [The Building Coder Revit API Panel at the Revit Technology Conference RTC Europe 2015](1370_rtc_revit_api_panel.html#5)
+- [SD10181 &ndash; Revit API Expert Roundtable at Autodesk University 2015](1380_au2015_day_1.html#9)
+- [RTC 2016 Revit API Panel, Idea Station, Edit and Continue](1488_revit_api_panel.html)
 
 
 ####<a name="8"></a>Session Materials

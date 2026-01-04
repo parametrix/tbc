@@ -158,7 +158,7 @@ Which direction is worth following?
 I searched on the Autodesk AppStore and found BimObject or ProdLib plugins, which have really nice UIs.
 Are they using WPF or some web framework?
 
-**Answer:** We recently discussed [WPF versus Winforms](https://thebuildingcoder.typepad.com/blog/2019/09/scaling-an-add-in-for-a-4k-high-resolution-screen.html#9).
+**Answer:** We recently discussed [WPF versus Winforms](1780_4k_hires_scaling.html#9).
 
 Even though most of the Revit SDK samples demonstrate use of WinForms, this is hardly recommended anymore nowadays.
 
@@ -166,15 +166,15 @@ The Revit SDK DockableDialogs example is WPF.  It's good in that it shows the va
 
 You can see some other samples [searching for 'Revit API WPF sample'](https://duckduckgo.com/?q=revit+api+wpf+sample).
 
-The Building Coder also shares [some WPF related topics](https://thebuildingcoder.typepad.com/blog/wpf).
+The Building Coder also shares some WPF related topics *(link unavailable)*.
 
 Have you checked
-out [Ali Asad's Visual Studio WPF MVVM Revit add-in template](https://thebuildingcoder.typepad.com/blog/2019/01/room-boundaries-to-csv-and-wpf-template.html#3)?
+out [Ali Asad's Visual Studio WPF MVVM Revit add-in template](1713_room_boundary_wpf.html#3)?
 
 This StackOverflow thread discusses how to [create a WPF Revit add-in starting with the DockableDialogs SDK sample](https://stackoverflow.com/questions/40096793/best-starting-point-for-wpf-revit-add-in).
 
 Oh, and finally we must not forget the recent solution using
-[IPC to disentangle and connect with CefSharp](https://thebuildingcoder.typepad.com/blog/2019/04/set-floor-level-and-use-ipc-for-disentanglement.html).
+[IPC to disentangle and connect with CefSharp](1737_ipc.html).
 
 **Response:** I hope I found the solution.
 Using [DotNetBrowser](https://www.teamdev.com/dotnetbrowser),

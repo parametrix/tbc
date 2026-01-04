@@ -189,7 +189,7 @@ on [DisplayUnitType in Revit 2022](https://forums.autodesk.com/t5/revit-api-foru
 In a related vein, how can you implement a unit conversion without knowing the internal Revit unit?
 
 This question has been around since the beginnings of The Building Coder and was first addressed in blog post #11
-on [units](https://thebuildingcoder.typepad.com/blog/2008/09/units.html) in September 2008.
+on [units](0011_units.htm) in September 2008.
 
 It came up again in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread

@@ -100,10 +100,10 @@ Is it a slow filter?
 Your code retrieves the element data from Revit to the .NET add-in memory space, and then uses .NET and LINQ to post-process it.
 
 The difference is explained in the discussion
-of [quick, slow and LINQ element filtering](http://thebuildingcoder.typepad.com/blog/2015/12/quick-slow-and-linq-element-filtering.html).
+of [quick, slow and LINQ element filtering](1382_filter_shortcuts.html).
 
 You could convert it to a fast filter by implementing
-a [parameter filter to compare the family name](https://thebuildingcoder.typepad.com/blog/2018/06/forge-tutorials-and-filtering-for-a-parameter-value.html#3).
+a [parameter filter to compare the family name](1659_param_filter.html#3).
 
 That discussion does not show how to actually implement the parameter filter.
 
@@ -175,9 +175,9 @@ Second, a much more succinct solution using the `ParameterFilterRuleFactory` `Cr
 
 Here are some other examples of using the `ParameterFilterRuleFactory`:
 
-- [Isolating elements of a given system](https://thebuildingcoder.typepad.com/blog/2015/01/isolating-elements-of-a-given-system.html)
-- [Retrieving elements visible in view](https://thebuildingcoder.typepad.com/blog/2017/05/retrieving-elements-visible-in-view.html)
-- [A new way to retrieve a parameter id](https://thebuildingcoder.typepad.com/blog/2018/08/revit-20191-cefsharp-forge-accelerator-in-rome.html#7)
+- [Isolating elements of a given system](1272_isolate_system.htm)
+- [Retrieving elements visible in view](1561_elem_visible_view.html)
+- [A new way to retrieve a parameter id](1673_2019_1.html#7)
 
 I hope this clarifies.
 

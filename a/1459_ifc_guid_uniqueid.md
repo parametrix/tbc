@@ -39,10 +39,10 @@ This bug obviously causes problems in plugins that manage an external database o
 
 First of all, here are some previous discussions on the relationship between the unique id and the IFC GUID:
 
-- [UniqueId, DWF and IFC GUID](http://thebuildingcoder.typepad.com/blog/2009/02/uniqueid-dwf-and-ifc-guid.html)
-- [IFC GUID Algorithm in C#](http://thebuildingcoder.typepad.com/blog/2010/06/ifc-guid-algorithm-in-c.html)
-- [IFC GUID Generation and Uniqueness](http://thebuildingcoder.typepad.com/blog/2012/09/ifc-guid-generation-and-uniqueness.html)
-- [IFC GUID Algorithm Update and Family Modification](http://thebuildingcoder.typepad.com/blog/2014/07/ifc-guid-algorithm-update-and-family-modification.html)
+- [UniqueId, DWF and IFC GUID](0104_uniqueid_dwf_ifc_guid.htm)
+- [IFC GUID Algorithm in C#](0396_ifc_guid_cs.htm)
+- [IFC GUID Generation and Uniqueness](0819_ifc_guid.htm)
+- [IFC GUID Algorithm Update and Family Modification](1177_ifc_guid_fami_modi.htm)
 
 In them, we explain that the GUID generation routines have an internal cache that prevents duplicate GUIDs from being generated. In IFC, these functions are called once per element, and then a call to the `ExporterIFCUtils.EndExportInternal` method clears this cache for the next IFC export. Please note that the first time you call these routines, they have consistent values from previous sessions.
 

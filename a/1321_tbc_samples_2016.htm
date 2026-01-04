@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <!-- <script src="http://thebuildingcoder.typepad.com/google-code-prettify/run_prettify.js"></script>-->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -62,9 +93,9 @@ akn_include
 <li>The type or namespace name 'ContFooting' could not be found</li>
 </ul>
 
-<p>The first of these is due to a typo fixed in the Revit 2016 API, a missing 'i' in the spelling of the class name, which is now named <a href="http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html#4.08">ExternalDefinitionCreationOptions</a>, as originally intended.</p>
+<p>The first of these is due to a typo fixed in the Revit 2016 API, a missing 'i' in the spelling of the class name, which is now named <a href="1311_whats_new_2016.htm#4.08">ExternalDefinitionCreationOptions</a>, as originally intended.</p>
 
-<p>The second missing class is renamed to WallFoundation in Revit 2016, cf. <a href="http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html#4.04">Structural API changes</a> &gt; ContFooting and ContFootingType class and members renamed.</p>
+<p>The second missing class is renamed to WallFoundation in Revit 2016, cf. <a href="1311_whats_new_2016.htm#4.04">Structural API changes</a> &gt; ContFooting and ContFootingType class and members renamed.</p>
 
 <p>These errors are fixed by renaming ExternalDefinitonCreationOptions to ExternalDefinitionCreationOptions and ContFooting to WallFoundation.
 The errors are eliminates and <a href="zip/bc_migr_2016_b.txt">30 warnings</a> remain.</p>
@@ -117,7 +148,7 @@ The errors are eliminates and <a href="zip/bc_migr_2016_b.txt">30 warnings</a> r
 </center>
 
 <p>I added the include directive that I implemented back in 2008 to pull in the BcSamples.txt file to
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/loading-the-building-coder-samples.html">
+<a href="0035_loading_bc_samples.htm">
 load The Building Coder Samples</a> to the end of RvtSamples.txt:</p>
 
 <pre>
@@ -152,3 +183,11 @@ RevitLookup to list all the display names associated with a given built-in param
 <a href="https://github.com/jeremytammik/RevitLookup/releases/tag/2016.0.0.9">RevitLookup release 2016.0.0.9</a>.</p>
 
 <p>Thank you very much, Maxence!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

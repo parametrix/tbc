@@ -42,13 +42,13 @@ However, you can stiil start preparing your add-in for the day when it comes:
 Here are some aspects to consider:
 
 - No user interface
-- Ensure that no warnings are displayed <!-- <br/>&ndash; done, cf. yesterday's discussion on [swallowing StairsAutomation warnings](http://thebuildingcoder.typepad.com/blog/2018/09/swallowing-stairsautomation-warnings.html) -->
+- Ensure that no warnings are displayed <!-- <br/>&ndash; done, cf. yesterday's discussion on [swallowing StairsAutomation warnings](1689_automation_warnings.html) -->
 - No references to RevitAPIUI, Windows Forms, or other user interface related assemblies
 - Driven automatically with input received via JSON files and model path of RVT document to process
 - The app is responsible for opening the model itself
 
 Yesterday, as a first example step,
-we [modified the StairsAutomations sample to avoid displaying any warnings](http://thebuildingcoder.typepad.com/blog/2018/09/swallowing-stairsautomation-warnings.html),
+we [modified the StairsAutomations sample to avoid displaying any warnings](1689_automation_warnings.html),
 so the second item listed above is handled.
 
 Today, we'll address most of the remaining ones:
@@ -69,7 +69,7 @@ For the time being, though, we can use it to just mimic the 'run automatically' 
 The trickiest step for me was finding out how to access the Revit `Application` object using only the `IExternalDBApplication` interface, because that is apparently not documented anywhere at all.
 
 I finally found the solution in a previous blog post
-on [automatically opening a project on start-up](http://thebuildingcoder.typepad.com/blog/2015/03/automatically-open-a-project-on-startup.html) &ndash;
+on [automatically opening a project on start-up](1290_auto_open_project.htm) &ndash;
 the `sender` argument passed in to the `ApplicationInitialized` can be cast to `Application`.
 
 That enables me to implement the entirely UI-independent DB application to drive the stairs creation utility class like this:

@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -9,7 +39,7 @@
 
 <p>Here is a little note to answer a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/10/relationship-in.html#comments">
+<a href="0016_relationship_inverter.htm#comments">
 question from Berria</a> on creating walls and doors on two separate levels.
 This is a slightly edited version of the original query:</p>
 
@@ -24,8 +54,8 @@ An error occurs when I build the second, because the level to define the compone
 I cannot tell you off-hand what the problem is in your situation, but I can provide you with a code example that achieves your goal.
 Look at the external command Lab2_0_CreateLittleHouse in the
 
-<a href="http://thebuildingcoder.typepad.com/blog/files/rac_labs_20081117.zip">
-Revit API introduction labs</a>.
+<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/files/rac_labs_20081117.zip">
+Revit API introduction labs <em>(file no longer available)</em></span>.
 
 To demonstrate that the code can be easily adapted to work on several levels, here is a modified version which creates only the walls and doors, omitting the other elements, and repeats the process on two levels.
 In order to place the second door, I do indeed modify the Z coordinate of its insertion point by setting 'midpoint.Z = levelMiddle.Elevation'.
@@ -149,3 +179,12 @@ midpoint.Z = levelMiddle.Elevation;
 <img src="img/two_level_house.png" alt="Two level house"/>
 
 <p>I hope this helps resolve your problem.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -71,7 +71,7 @@ I'm incredibly confused by the SDK and various documentation inconsistencies, an
 
 **Answer:** Thank you for your report and very sorry about your confusion.
  
-I hope that the material for [getting started with the Revit API](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2) in its non-macro incarnation is a bit clearer.
+I hope that the material for getting started with the Revit API *(link unavailable)* in its non-macro incarnation is a bit clearer.
  
 The macro environment should be simpler to use. I am sorry to hear that the samples are broken, though.
  
@@ -82,8 +82,8 @@ I hope this trouble getting started with the Revit macros does not put you off a
 #### <a name="3"></a>Solution &ndash; Sam Comes to the Rescue
 
 Happily, the issue has now been resolved by the valiant Samer Najjar
-in [his comment](http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html#comment-2862033662)
-on [What's New in the Revit 2017 API](http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html):
+in [his comment](1428_whats_new_2017.html#comment-2862033662)
+on [What's New in the Revit 2017 API](1428_whats_new_2017.html):
 
 > I don't know if this is the right place to share this but since it's the most responsive blog about the subject (thanks to you) I thought I'd give it a go here.
 

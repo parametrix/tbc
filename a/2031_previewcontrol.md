@@ -322,7 +322,7 @@ How to move selected elements to another level while maintaining their position 
 Can you achieve what you want manually in the end user interface?
 If so, that is a good start.
 If not, it would be good to check that first, determine the optimal workflow and best practices, cf.
-the [standard approach to address a Revit API programming task](https://thebuildingcoder.typepad.com/blog/2017/01/virtues-of-reproduction-research-mep-settings-ontology.html#3).
+the [standard approach to address a Revit API programming task](1515_repro_tray_conduit.html#3).
 
 Possibly, some elements cannot simply be moved to an different level, but need to be recreated from scratch based on the new level.
 

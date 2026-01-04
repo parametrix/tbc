@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -63,10 +94,10 @@ Can you suggest any way to achieve this?</p>
 
 <p>I have in fact solved that exact issue, for my
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.21">
-room editor app</a>, to determine
+<span class="unavailable-link">
+room editor app</span>, to determine
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/extrusion-analyser-and-plan-view-boundaries.html">
+<a href="0921_extrusion_analyser.htm">
 boundary loops for equipment and furniture family instances</a>.</p>
 
 <p>In that case, I did in fact use the ExtrusionAnalyzer class to determine the closed loops.</p>
@@ -83,15 +114,15 @@ boundary loops for equipment and furniture family instances</a>.</p>
 
 <p>You could determine such a closed 2D polygon either by calculating the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/06/convex-hull-and-volume-computation.html">
+<a href="0160_convex_hull_volume.htm">
 convex 2D hull</a> or using a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/09/boolean-operations-for-2d-polygons.html">
+<a href="1011_booleans_on_polygons.htm">
 2D polygon library</a>.</p>
 
 <p>Once you have a closed polygon, calculating its
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/2d-polygon-areas-and-outer-loop.html">
+<a href="0053_2d_polygon_area_outer_loop.htm">
 2D area</a> is pretty straightforward.</p>
 
 <p><strong>Response:</strong> Many thanks to your quick response.
@@ -135,12 +166,12 @@ how to load a RVT file automatically when starting Revit</a>:</p>
 
 <p>Before getting to that, though, let me point out that the easiest way to start up Revit with a project file loaded is to use
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/using-processstart-to-open-a-project-or-family.html">
+<a href="0324_process_start.htm">
 Process.Start</a>.</p>
 
 <p>Once Revit is up and running, as you have pointed out yourself, you can also use the UIApplication.OpenAndActivateDocument method, as demonstrated in this discussion on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/12/closing-the-active-document.html">closing the active document</a>.</p>
+<a href="0873_close_active_doc.htm">closing the active document</a>.</p>
 
 <p>You can prepare a call to this method from within the OnStartup method by temporarily subscribing to the Idling event in the OnStartup method, then unsubscribing from Idling in the Idling event handler, opening the document and doing whatever else you want at that point.</p>
 
@@ -207,3 +238,11 @@ by calls to the deprecated Element.Parameter property taking a parameter name as
 </ol>
 
 <p>Please get in touch.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

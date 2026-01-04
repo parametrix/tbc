@@ -121,12 +121,12 @@ Breaking news: a solution to use extensible storage in the APS Design Automation
 Checking that the add-in code is currently executing within a valid Revit API context keeps spawning new solutions.
 
 Luiz Henrique [@ricaun](https://ricaun.com/) Cassettari suggested one approach in March last year
-by [attempting to subscribe to the application `Idling` event and catching the exception](https://thebuildingcoder.typepad.com/blog/2024/03/api-context-aps-toolkit-and-da4r-debugging.html#2) in
+by [attempting to subscribe to the application `Idling` event and catching the exception](2029_check_context.html#2) in
 case of failure.
 Throwing an exception is expensive and should be avoided if possible, so that approach is suboptimal.
 
 Next, in August 2024, Roman [@Nice3point](https://t.me/nice3point) Karpovich, aka Роман Карпович, shared a more effective approach in
-his [RevitToolkit.Context method](https://thebuildingcoder.typepad.com/blog/2024/08/api-context-background-process-postcommand.html#4).
+his [RevitToolkit.Context method](2051_modeless.html#4).
 
 Now, in January 2025, Ricaun returns with a new solution by checking the application `ActiveAddInId` property, in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
@@ -214,7 +214,7 @@ Thanks again to ricaun for a different way to address this.
 
 ####<a name="5"></a> Two Ways to Determine Elements in Section View
 
-We discussed two workarounds to [determine elements present in section view](https://thebuildingcoder.typepad.com/blog/2024/01/directcontext3d-ids-and-linked-section-elements-.html#5).
+We discussed two workarounds to [determine elements present in section view](2023_id.html#5).
 Wallas [@wl_santanna](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/9728005) Santana presented a solution,
 pointing out that
 a new [overload for the `FilteredElementCollector` class](https://www.revitapidocs.com/2024/968b52a0-de55-2f96-de40-968812bc41c7.htm) was

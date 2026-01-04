@@ -1,7 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -44,7 +75,7 @@ on the <a href="https://stackoverflow.com/questions/53921260/c-sharp-revit-api-h
 
 <p>When I debug it, <code>symbolId</code> always equals <code>-1</code>.</p>
 <p><strong>Answer:</strong> Work through
-the <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#2">Revit API getting started material</a> and
+the <span class="unavailable-link">Revit API getting started material</span> and
 all will be explained.
 That will save you and others many further questions and answers.</p>
 <p>To address this specific question anyway, <code>GetDefaultFamilyTypeId</code> presumably does not do what you expect it to for wall elements.
@@ -56,8 +87,8 @@ Maybe <code>GetDefaultFamilyTypeId</code> only works for non-system families.</p
 the <a href="https://apidocs.co/apps/revit/2019/08ae8886-6ab3-3ef5-d2e0-0da2ffa7bd2c.htm">constant <code>ElementId.InvalidElementId</code> property</a>.</p>
 <p>To retrieve an arbitrary (not default) wall type, use a filtered element collector to retrieve all <code>WallType</code> elements and pick the first one you find.</p>
 <p>Here is a code snippet that retrieves all wall types with a filtered element collector and applies .NET LINQ post-processing to that to pick the first one with a specific name,
-from <a href="https://thebuildingcoder.typepad.com">The Building Coder</a> discussion
-on <a href="https://thebuildingcoder.typepad.com/blog/2017/12/creating-face-wall-and-mass-floor.html">creating face wall and mass floor
+from <span class="unavailable-link">The Building Coder</span> discussion
+on <a href="1608_create_mass_floor.html">creating face wall and mass floor
 </a>:</p>
 <pre class="code">
 &nbsp;&nbsp;<span style="color:#2b91af;">WallType</span>&nbsp;wType&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;<span style="color:#2b91af;">FilteredElementCollector</span>(&nbsp;doc&nbsp;)
@@ -67,7 +98,7 @@ on <a href="https://thebuildingcoder.typepad.com/blog/2017/12/creating-face-wall
 </pre>
 
 <p>When you start getting deeper into the use of filtered element collectors, be aware of the significant performance difference
-between <a href="http://thebuildingcoder.typepad.com/blog/2015/12/quick-slow-and-linq-element-filtering.html">quick and slow filters versus .NET post-processing</a>.</p>
+between <a href="1382_filter_shortcuts.html">quick and slow filters versus .NET post-processing</a>.</p>
 <p><strong>Response:</strong> I solved the problem and created many different types of walls already after reading
 the <a href="http://help.autodesk.com/view/RVT/2019/ENU">Revit online help</a> &gt;
 Revit Developer's Guide
@@ -101,3 +132,11 @@ of <a href="https://youtu.be/1s6JZOBVAHs">pyRevit 4.6.9 and Keynote Manager Beta
 <iframe width="480" height="270" src="https://www.youtube.com/embed/1s6JZOBVAHs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center></p>
 <p>Thank you very much, Ehsan, for your invaluable work on pyRevit and the new useful keynote manager!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

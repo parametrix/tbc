@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- Joe Ye article for ADN - AEC Customization Newsletter - BIM Edition - Fall 2010 -->
@@ -75,7 +106,7 @@ Thank you for that, at least.
 <p>Anyway, I think I can leave that topic now, to return to the Revit API.
 I already gave a brief introduction to the Revit 2011
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/failure-api.html">
+<a href="0350_failure_api.htm">
 Failure API and the ErrorHandling SDK Sample</a>
 
 which demonstrates its use.
@@ -85,15 +116,15 @@ which demonstrates its use.
 <p>One of the most common uses of this API is to disable undesired warning and error messages.
 Previously, one way to achieve this was to use an older and simpler approach based on the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/06/autoconfirm-save-using-dialogboxshowing-event.html">
+<a href="0151_auto_confirm_save.htm">
 DialogBoxShowing event</a>.
 
 The Failure API provides a much more powerful and complete solution, as we showed in the discussions on 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/08/editing-elements-inside-groups.html">
+<a href="0429_group_edit.htm">
 editing elements inside groups</a> and 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/08/suppress-unwanted-dialogue.html">
+<a href="0430_unwanted_dialogue.htm">
 suppressing an unwanted dialogue</a>.
 
 <p>Now Joe Ye of Autodesk Beijing wrote the following more extensive introduction to the Failure API, including several interesting examples:
@@ -174,9 +205,12 @@ When it does so, it starts to handle the failures in repeated cycles.
 Each cycle of failure processing includes three steps:
 
 <ul>
-<li>Failure pre-processing (IFailuresProcessor)
-<li>Failure processing event (FailureProcessing event)
-<li>Final processing (IFailureProcessor)
+<li>Failure pre-processing 
+(IFailuresProcessor)
+<li>Failure processing event 
+(FailureProcessing event)
+<li>Final processing
+ (IFailureProcessor)
 </ul>
 
 <p>These steps are called one by one in a cycle. 
@@ -401,3 +435,12 @@ A detailed description of the Failure API is provided in Chapter 26 of the Devel
 For a reference to all relevant classes and methods, please refer to the Revit API help file RevitAPI.chm.
 
 <p>Many thanks to Joe for the useful overview and samples!
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

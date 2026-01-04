@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
@@ -6,7 +36,8 @@
 <p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"></p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - Revit ID Compilation
@@ -143,38 +174,38 @@ ExternalId = DwfGUID + "-" + Hex(ElementId)</li>
 Here is a list of existing information on element ids and unique ids from The Building Coder:</p>
 <ul>
 <li>Element Id<ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/04/retrieving-newly-created-elements-in-revit-2011.html">Retrieving Newly Created Elements in Revit 2011</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/02/comparing-element-id-for-equality.html">Comparing Element Id for Equality</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/05/dwg-issues-and-various-other-updates.html">DWG Issues and Various Other Updates</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/04/element-id-export-unique-navisworks-and-other-ids.html">Element Id &ndash; Export, Unique, Navisworks and Other Ids</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/07/createlinkreference-sample-code.html">CreateLinkReference Sample Code</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/09/family-category-element-ids-transaction-undo-and-updates.html">Family Category, Element Ids, Transaction Undo and Updates</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/01/devday-conference-in-munich-and-wpf-doevents.html">DevDay Conference in Munich and WPF DoEvents</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/08/revit-versus-forge-ids-and-add-in-installation.html">Revit versus Forge, Ids and Add-In Installation</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2018/02/retrieving-newly-created-element-ids.html">Retrieving Newly Created Element Ids</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2018/03/revitlookup-search-and-snoop-by-element-and-unique-id.html">RevitLookup Search by Element and Unique Id</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/07/element-identifiers-in-rvt-ifc-nw-and-forge.html">Element Identifiers in RVT, IFC, NW and Forge</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2022/07/immutable-uniqueid-and-revit-database-explorer.html">Immutable UniqueId and Revit Database Explorer</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2022/11/64-bit-element-ids-maybe.html">64-Bit Element Ids, Maybe?</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2023/04/configuring-rvtsamples-2024.html">Configuring RvtSamples 2024 and Big Numbers</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2023/05/64-bit-ids-revit-and-revitlookup-updates.html">64 Bit Ids, Revit and RevitLookup Updates</a></li>
+<li><a href="0344_mirror_new_elements.htm">Retrieving Newly Created Elements in Revit 2011</a></li>
+<li><a href="0544_element_id_equality.htm">Comparing Element Id for Equality</a></li>
+<li><a href="0948_dwg_issues.htm">DWG Issues and Various Other Updates</a></li>
+<li><a href="1144_nw_unique_id.htm">Element Id &ndash; Export, Unique, Navisworks and Other Ids</a></li>
+<li><a href="1182_createlinkreference.htm">CreateLinkReference Sample Code</a></li>
+<li><a href="1353_fam_cat_elem_transact.html">Family Category, Element Ids, Transaction Undo and Updates</a></li>
+<li><a href="1396_devday_wpf_doevents.html">DevDay Conference in Munich and WPF DoEvents</a></li>
+<li><a href="1577_forge_ids_install.html">Revit versus Forge, Ids and Add-In Installation</a></li>
+<li><a href="1628_get_new_element_ids.html">Retrieving Newly Created Element Ids</a></li>
+<li><a href="1634_lookup_search_snoop.html">RevitLookup Search by Element and Unique Id</a></li>
+<li><a href="1762_forge_rvt_nw_ifc_id.html">Element Identifiers in RVT, IFC, NW and Forge</a></li>
+<li><a href="1959_rdbe.html">Immutable UniqueId and Revit Database Explorer</a></li>
+<li><a href="1974_64_bit_element_id.html">64-Bit Element Ids, Maybe?</a></li>
+<li><a href="1992_rvtsamples2024.html">Configuring RvtSamples 2024 and Big Numbers</a></li>
+<li><a href="1995_lookup.html">64 Bit Ids, Revit and RevitLookup Updates</a></li>
 </ul>
 </li>
 <li>UniqueId<ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/02/uniqueid-dwf-and-ifc-guid.html">UniqueId, DWF and IFC GUID</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-day-two.html">Melbourne Day Two</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/06/real-world-concrete-corner-coordinates.html">Real-World Concrete Corner Coordinates</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/09/ifc-guid-generation-and-uniqueness.html">IFC GUID Generation and Uniqueness</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/05/copy-and-paste-api-applications-and-modeless-assertion.html">Copy and Paste API Applications and Modeless Assertion</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/04/element-id-export-unique-navisworks-and-other-ids.html">Element Id &ndash; Export, Unique, Navisworks and Other Ids</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/09/unique-names-and-the-namingutils-class.html">Unique Names and the NamingUtils Class</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/02/understanding-the-use-of-the-uniqueid.html">Understanding the Use of the UniqueId</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/04/back-from-easter-holidays-and-various-revit-api-issues.html">Back from Easter Holidays and Various Revit API Issues</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/08/consistency-of-ifc-guid-and-uniqueid.html">Consistency of IFC GUID and UniqueId</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/08/revit-versus-forge-ids-and-add-in-installation.html">Revit versus Forge, Ids and Add-In Installation</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2018/03/revitlookup-search-and-snoop-by-element-and-unique-id.html">RevitLookup Search by Element and Unique Id</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2022/04/unique-id-and-ifc-guid.html">Unique Id and IFC GUID Parameter</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2022/07/immutable-uniqueid-and-revit-database-explorer.html">Immutable UniqueId and Revit Database Explorer</a></li>
+<li><a href="0104_uniqueid_dwf_ifc_guid.htm">UniqueId, DWF and IFC GUID</a></li>
+<li><a href="0737_melbourne_day_2.htm">Melbourne Day Two</a></li>
+<li><a href="0787_real_world_corners.htm">Real-World Concrete Corner Coordinates</a></li>
+<li><a href="0819_ifc_guid.htm">IFC GUID Generation and Uniqueness</a></li>
+<li><a href="0943_duplicate_views.htm">Copy and Paste API Applications and Modeless Assertion</a></li>
+<li><a href="1144_nw_unique_id.htm">Element Id &ndash; Export, Unique, Navisworks and Other Ids</a></li>
+<li><a href="1209_namingutils.htm">Unique Names and the NamingUtils Class</a></li>
+<li><a href="1277_uniqueid.htm">Understanding the Use of the UniqueId</a></li>
+<li><a href="1304_back_from_easter.htm">Back from Easter Holidays and Various Revit API Issues</a></li>
+<li><a href="1459_ifc_guid_uniqueid.html">Consistency of IFC GUID and UniqueId</a></li>
+<li><a href="1577_forge_ids_install.html">Revit versus Forge, Ids and Add-In Installation</a></li>
+<li><a href="1634_lookup_search_snoop.html">RevitLookup Search by Element and Unique Id</a></li>
+<li><a href="1949_unique_ifc_guid.html">Unique Id and IFC GUID Parameter</a></li>
+<li><a href="1959_rdbe.html">Immutable UniqueId and Revit Database Explorer</a></li>
 </ul>
 </li>
 </ul>
@@ -249,3 +280,11 @@ if (null != tagConexao.get_BoundingBox(Config.doc.ActiveView))
 Btw I'll study how transformations works when I have linked elements in some view.
 Thank you.</p>
 <p>Thank you, Wallas, for raising this issue and confirming.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

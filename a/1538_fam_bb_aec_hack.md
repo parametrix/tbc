@@ -24,7 +24,7 @@ Here is some more information on that, highlighting the exciting speaker line-up
 ### Family Bounding Box and AEC Hackathon Munich
 
 I briefly mentioned
-the [AEC Hackathon in Munich](http://thebuildingcoder.typepad.com/blog/2017/03/events-uv-coordinates-and-rooms-on-level.html#3) yesterday.
+the [AEC Hackathon in Munich](1537_event_uv_room_filt.html#3) yesterday.
 
 Here is some more information on that, highlighting the exciting speaker line-up and target topics, plus a solution for determining the bounding box of an entire family and a suggestion to implement a continuous integration service for RevitLookup:
 

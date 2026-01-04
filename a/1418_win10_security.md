@@ -91,7 +91,7 @@ I am currently developing an MSI package for this to avoid future headache.
 Jeremy adds: Closely related issues arose repeatedly in the past.
 
 I first mentioned it in relation to
-the [Revit Add-in file load exception](http://thebuildingcoder.typepad.com/blog/2011/10/revit-add-in-file-load-exception.html) loading
+the [Revit Add-in file load exception](0668_file_load_exception.htm) loading
 the RevitPythonShell on some non-XP machines,
 and [Kean Walmsley](http://through-the-interface.typepad.com) provided
 a comprehensive explanation of it back in 2011

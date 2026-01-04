@@ -116,12 +116,12 @@ Consequently, it is useful to know the RVT file version before launching the cor
 The Building Coder and
 many [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) threads discuss how this can be achieved:
 
-- [RVT File Version](http://thebuildingcoder.typepad.com/blog/2008/10/rvt-file-version.html)
-- [RFA File Version](http://thebuildingcoder.typepad.com/blog/2009/06/rfa-version-grey-commands-family-context-and-rdb-link.html#1)
-- [Basic File Info and RVT File Version](http://thebuildingcoder.typepad.com/blog/2013/01/basic-file-info-and-rvt-file-version.html)
-- [Determining RVT File Version Using Python](http://thebuildingcoder.typepad.com/blog/2017/06/determining-rvt-file-version-using-python.html)
-- [RvtVerFileOpen &ndash; Automatically Open Correct RVT File Version](https://thebuildingcoder.typepad.com/blog/2020/05/automatically-open-correct-rvt-file-version.html#4)
-- [Doc Session Id, API Context and External Events](https://thebuildingcoder.typepad.com/blog/2020/11/document-session-id-api-context-and-external-events.html#4)
+- [RVT File Version](0023_rvt_file_version.htm)
+- [RFA File Version](0157_rvtver_grey_rfa_rdb.htm#1)
+- [Basic File Info and RVT File Version](0887_rvt_file_version.htm)
+- [Determining RVT File Version Using Python](1570_rvt_version_py.html)
+- [RvtVerFileOpen &ndash; Automatically Open Correct RVT File Version](1846_open_rvt_file_version.html#4)
+- [Doc Session Id, API Context and External Events](1874_doc_session_id.html#4)
 - [Know the version of a RVT file before opening the file in Revit](https://forums.autodesk.com/t5/revit-api-forum/i-would-like-to-know-the-version-of-a-rvt-file-before-opening/td-p/8403150)
 
 The official approach is to use the Revit API `BasicFileInfo`;
@@ -130,7 +130,7 @@ Some of the previously discussed solutions above work by extracting and analysin
 apparently, those solutions no longer work.
 
 By the way, another use of `BasicFileInfo` was discussed last week
-to [unload links with transmission data](https://thebuildingcoder.typepad.com/blog/2024/10/unload-links-offline-and-filter-for-types.html#5).
+to [unload links with transmission data](2057_filter_type.html#5).
 
 How to determine RVT Version came up again in the following discussion:
 
@@ -234,7 +234,7 @@ All the other steps you describe require a valid Revit API context: to create `D
 One way to obtain a valid Revit API context is to use
 an [external event](https://www.revitapidocs.com/2024/05089477-4612-35b2-81a2-89c4f44370ea.htm).
 Many examples are provided in The Building Coder topic group
-on [`Idling` and external events for modeless access and driving Revit from outside](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+on `Idling` and external events for modeless access and driving Revit from outside *(link unavailable)*.
 
 Here is a possible step-by=step approach:
 

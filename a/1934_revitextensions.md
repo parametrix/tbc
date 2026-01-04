@@ -122,7 +122,7 @@ It renders better in its original German version than in English:
 In the last post of the previous year, I mentioned 
 Roman [Nice3point](https://github.com/Nice3point), his huge contributions
 to [RevitLookup](https://github.com/jeremytammik/RevitLookup) in the past few months,
-his [RevitTemplates update 1.7.0](https://thebuildingcoder.typepad.com/blog/2021/12/revittemplates-update-170.html)
+his [RevitTemplates update 1.7.0](1933_revittemplates.html)
 and the invitation to provide feedback on them.
 
 Let's move into this new year with yet another contribution and invitation from Roman:

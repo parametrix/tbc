@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -17,19 +48,19 @@ Dan TartagliaNBBJ LP
 
 <p>One of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html#3">
+<a href="1141_whats_new_2015.htm#3">
 major Revit 2015 API additions</a> is
 
 access to
-<a href="http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html#3.04">
+<a href="1141_whats_new_2015.htm#3.04">
 revisions</a>.</p>
 
 <p>All prior versions provided very limited access to revision data in a project.
 Here are some things people achieved in spite of the limitations:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/09/max-revision-wrapper-class.html">Max' revision wrapper class</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/02/wrangling-revisions-with-ruby.html">Wrangling revisions with Ruby</a></li>
+<li><a href="1027_revision.htm">Max' revision wrapper class</a></li>
+<li><a href="1106_ruby_revisions.htm">Wrangling revisions with Ruby</a></li>
 </ul>
 
 <p>Let's now take a look at an elegant example of accessing and displaying the complete revision data in a project,
@@ -58,7 +89,7 @@ design technology@NBBJ</a>:</p>
 
 <p><strong>Answer:</strong> What you ask for is now possible in Revit 2015 using the new
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html#3.04">
+<a href="1141_whats_new_2015.htm#3.04">
 revision classes</a>.</p>
 
 <p>I am not aware of any way to access it programmatically in Revit 2014, though.
@@ -78,12 +109,12 @@ That is used by the ParamsFromGetAllRevElements method to retrieve all project r
 
 <p>I fixed the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/06/processor-architecture-mismatch-warning.html">
+<a href="0968_architecture_mismatch.htm">
 architecture mismatch warnings</a> in
 
 the initial 2014 project using my recursive project parser and fixer
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/07/recursively-disable-architecture-mismatch-warning.html">
+<a href="0977_architecture_mismatch.htm">
 DisableMismatchWarning.exe</a>.</p>
 
 <p>I like the parameter to value to string converter, so let's list it here for posterity to enjoy:</p>
@@ -455,3 +486,12 @@ That took quite a while, testing and debugging numerous combinations of the auto
  &nbsp; <span style="font-family: Amiri,sans-serif;" xml:lang="ar" lang="ar">إن شاء الله</span>
 
  &nbsp; (<a href="http://en.wikipedia.org/wiki/Insha%27Allah">insha'Allah</a>, God willing).</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

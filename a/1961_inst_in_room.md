@@ -160,7 +160,7 @@ and EatRevitPoopCad for their helpful advice!
 
 ####<a name="2.1"></a> Rooms in Linked Models
 
-As Joshua Lumley points out in his [comment below](https://thebuildingcoder.typepad.com/blog/2022/08/instances-in-room-and-need-for-fuzz.html#comment-5959441109),
+As Joshua Lumley points out in his [comment below](1961_inst_in_room.html#comment-5959441109),
 `IsPointInRoom` works well for rooms in linked models as well; just remember to invert the total transform of the linked instance before doing it.
 
 ####<a name="2.2"></a> MEP Components Near Ceilings

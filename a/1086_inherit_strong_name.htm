@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -67,12 +98,12 @@ Therefore, a FamilyInstance in the API does not actually contain the properties 
 
 <p>If you want to get additional serialized data onto a Revit element, you should look at
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23">
-Extensible Storage</a> in the Revit API.</p>
+<span class="unavailable-link">
+Extensible Storage</span> in the Revit API.</p>
 
 <p>If you want to make code easier to write and want to 'add' additional members to our classes (so you could have a call to a FamilyInstance.GetMarker method or something like that), you can look at
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/02/getpolygon-extension-methods.html">
+<a href="0303_extension_methods.htm">
 C# extension methods</a> &ndash;
 
 however, adding such methods will not allow additional data to be stored in those classes unless you implement these members using Extensible Storage.</p>
@@ -120,8 +151,8 @@ default.</p>
 <p>There are quite a few surprises lurking in the Revit API and the entire Revit product paradigm for unwary developers experienced in other less parametric and BIM oriented CAD systems, as we have already repeatedly seen in the past:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/02/bim-versus-free-geometry-and-product-training.html">BIM versus free geometry and product training</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/10/porting-an-autocad-application.html">Porting an AutoCAD application</a></li>
+<li><a href="0723_spark_learning.htm">BIM versus free geometry and product training</a></li>
+<li><a href="0842_port_acad_app.htm">Porting an AutoCAD application</a></li>
 </ul>
 
 <p>In fact, as I often point out, one of the hardest tasks for a budding Revit add-in developer experienced in ObjectARX or other CAD system programming is to forget her accumulated previous experience and open her mind for something completely new and different.</p>
@@ -313,3 +344,12 @@ Cheers,
 Jeremy
 
 -->
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

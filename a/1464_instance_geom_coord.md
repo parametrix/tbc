@@ -24,7 +24,7 @@ I recently shared Scott Wilson's reference stable representation magic voodoo, a
 ### Voodoo Magic Retrieves Global Instance Edges
 
 I recently shared
-Scott Wilson's [reference stable representation magic voodoo](http://thebuildingcoder.typepad.com/blog/2016/04/stable-reference-string-magic-voodoo.html),
+Scott Wilson's [reference stable representation magic voodoo](1429_stable_references.html),
 and you may have asked yourself what use it is.
 
 Well, here is one example making effective use of it, raised and solved by Ola Gunnar Skippervik
@@ -109,14 +109,14 @@ In other cases, the geometry may need some modification for a specific instance,
 In that case, the instance generates its own geometry.
 
 The discussion on
-[GetInstanceGeometry Overhead and Invalid References](http://thebuildingcoder.typepad.com/blog/2012/12/getinstancegeometry-overhead-references-and-exceptions.html) points out some differences between the `GetSymbolGeometry` and `GetInstanceGeometry` methods that can be used to access these different geometry collections.
+[GetInstanceGeometry Overhead and Invalid References](0875_inst_geom_overhead.htm) points out some differences between the `GetSymbolGeometry` and `GetInstanceGeometry` methods that can be used to access these different geometry collections.
 
 Other developers have encountered similar problems in the past distinguishing between local and global coordinated retrieved from family instances, as you can see from
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api/bd-p/160) thread
 on [converting local family instance coordinate of selected edge to project coordinates](http://forums.autodesk.com/t5/revit-api/convert-local-family-instance-coordinate-of-selected-edge-to/m-p/6282821).
 
 In it, Scott Wilson provides a solution making use of
-some [reference stable representation magic voodoo](http://thebuildingcoder.typepad.com/blog/2016/04/stable-reference-string-magic-voodoo.html).
+some [reference stable representation magic voodoo](1429_stable_references.html).
 
 Might that come in useful for you too?
 
@@ -171,20 +171,20 @@ Many thanks to Ola Gunnar for his useful sample and confirmation!
 #### <a name="7"></a>Structural Concrete Setout Point Add-In 
 
 By the way, talking about set-out geometry, I once implemented a full-fledged 
-[structural concrete setout point add-in](http://thebuildingcoder.typepad.com/blog/2012/08/structural-concrete-setout-point-add-in.html),
-later [migrated to Revit 2015](http://thebuildingcoder.typepad.com/blog/2014/11/concrete-setout-points-for-revit-structure-2015.html)
+[structural concrete setout point add-in](0806_setout_points.htm),
+later [migrated to Revit 2015](1234_setout_points.htm)
 and hosted in the [GitHub SetoutPoints repository](https://github.com/jeremytammik/SetoutPoints).
 
 It is a Revit add-in for automatic placement and management of structural concrete setout points.
 
 Here is some more on its history:
 
-- [Melbourne DevLab](http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-devlab.html)
-- [Commercial use of the SetoutPoints application](http://thebuildingcoder.typepad.com/blog/2013/01/basic-file-info-and-rvt-file-version.html)
+- [Melbourne DevLab](0738_melbourne_devlab.htm)
+- [Commercial use of the SetoutPoints application](0887_rvt_file_version.htm)
 - [Revit API forum discussion thread on Jeremy's SetoutPoints](http://forums.autodesk.com/t5/revit-api/jeremy-s-setoutpoint/m-p/5372337)
 
 In the forum discussion, the exact same issue as above is raised and solved to ensure that all points are placed correctly in the global coordinate system using 
-a [more direct and officially supported approach](http://thebuildingcoder.typepad.com/blog/2014/11/concrete-setout-points-for-revit-structure-2015.html) without 
+a [more direct and officially supported approach](1234_setout_points.htm) without 
 any voodoo magic  :-)
 
 Now it just remains to compare the two approaches and determine which is better, simpler and more reliable.

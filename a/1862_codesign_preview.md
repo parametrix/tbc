@@ -73,8 +73,8 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 
 ####<a name="2"></a>Revit Add-In Code Signing YAML
 
-Peter Hirn's [YAML file for automating the code signing](https://thebuildingcoder.typepad.com/blog/2020/08/revitlookup-continuous-integration-and-graphql.html#3) of
-the [continuous integration build of RevitLookup](https://thebuildingcoder.typepad.com/blog/2020/08/revitlookup-continuous-integration-and-graphql.html#2) helps solve
+Peter Hirn's [YAML file for automating the code signing](1860_ci_graphql.html#3) of
+the [continuous integration build of RevitLookup](1860_ci_graphql.html#2) helps solve
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 on [Revit 2018 Code Signing](https://forums.autodesk.com/t5/revit-api-forum/revit-2018-code-signing/m-p/9715700):
 
@@ -93,7 +93,7 @@ Where did I go wrong?
 
 I have tried various other combinations of this command including passing in the .addin file which errors out saying unrecognized file and signing all dlls in my addins folder.
 
-**Answer:** Peter Hirn added an automatic signing step to the [RevitLookup continuous integration on GitLab](https://thebuildingcoder.typepad.com/blog/2020/08/revitlookup-continuous-integration-and-graphql.html#2).
+**Answer:** Peter Hirn added an automatic signing step to the [RevitLookup continuous integration on GitLab](1860_ci_graphql.html#2).
 
 The YAML file executing the add-in signing is available in the [RevitLookup GitHub repository](https://github.com/jeremytammik/RevitLookup).
 
@@ -222,7 +222,7 @@ Funky stuff, but good to know!
 Many thanks to Scott for this useful information and research.
 
 For pointers to several previous discussions of various aspects of the `PreviewControl`, check out the post
-on [zooming in a preview control](https://thebuildingcoder.typepad.com/blog/2013/09/appstore-advice-and-zooming-in-a-preview-control.html#4).
+on [zooming in a preview control](1022_preview_control_zoom.htm#4).
 
 ####<a name="4"></a>Element Type Predicates
 

@@ -133,7 +133,7 @@ Please always download and install the latest version to ensure you are up to da
 
 I also migrated SvgExport, my Revit add-in to export element geometry to SVG, discussed in the posts on
 [displaying 2D graphics via a node server](http://the3dwebcoder.typepad.com/blog/2015/04/displaying-2d-graphics-via-a-node-server.html) and
-[sending a room boundary to an SVG node web server](http://thebuildingcoder.typepad.com/blog/2015/04/sending-a-room-boundary-to-an-svg-node-web-server.html).
+[sending a room boundary to an SVG node web server](1306_3dwc_svg_01.htm).
 
 The current version including some small clean-up is now
 [SvgExport release 2016.0.0.1](https://github.com/jeremytammik/SvgExport/releases/tag/2016.0.0.1).
@@ -160,7 +160,7 @@ So I want to avoid setting the family name by saving the document.
 As you know and are already doing, you can create a family definition in memory and load it into the project without ever saving to disk.
 
 I tried to implement that back in 2011, for Revit 2012, as explained in the discussion
-on [creating and inserting an extrusion family](http://thebuildingcoder.typepad.com/blog/2011/06/creating-and-inserting-an-extrusion-family.html) for
+on [creating and inserting an extrusion family](0596_create_extrusion_fam.htm) for
 a structural stiffener.
 
 At that time, the pure in-memory loading did not work as expected.

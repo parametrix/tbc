@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!--
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -38,7 +69,7 @@ Let's look at that, and another recurring topic, on loading add-in support DLLs
 <h3>Support DLL, Zero Doc State and Forge Accelerators</h3>
 <p>If you are interested in diving deep into Forge programming, don't miss the upcoming deadline for proposals for the Boston Forge accelerator!</p>
 <p>Looking at the Revit API, I implemented a sample demonstrating how
-to <a href="http://thebuildingcoder.typepad.com/blog/2011/02/enable-ribbon-items-in-zero-document-state.html">enable ribbon items in zero document state</a> back
+to <a href="0538_zero_doc_ribbon.htm">enable ribbon items in zero document state</a> back
 in 2011, for Revit 2011.</p>
 <p>How long would it take to port such an add-in to Revit 2019?</p>
 <p>Well, this one took ten or twenty minutes, including some debugging, screen snapshots, and documentation.</p>
@@ -57,7 +88,7 @@ in 2011, for Revit 2011.</p>
 the <a href="http://forums.autodesk.com/t5/revit-api-forum/bd-p/160">Revit API discussion forum</a> thread
 on <a href="https://forums.autodesk.com/t5/revit-api-forum/iscommandavailable-causes-nullref-exception/m-p/8258750"><code>IsCommandAvailable</code> causing a nullref exception</a>.</p>
 <p>That prompted me to update my original implementation
-to <a href="http://thebuildingcoder.typepad.com/blog/2011/02/enable-ribbon-items-in-zero-document-state.html">enable ribbon items in zero document state</a> in
+to <a href="0538_zero_doc_ribbon.htm">enable ribbon items in zero document state</a> in
 Revit 2011 and test it in Revit 2019.</p>
 <p>I performed the flat migration from Revit 2011 to Revit 2019, i.e., updated the Revit API assembly references and set the .NET framework to version 4.7.</p>
 <p>Next, I tried to load and debug the add-in.</p>
@@ -132,16 +163,16 @@ my colleague Jim Jia suggested using an assembly resolver reacting to the <code>
 
 <p>We explored some related issues and had success with this approach in the past, e.g., here:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/07/revit-add-in-unit-testing.html">Revit Add-in Unit Testing</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/12/security-framing-cross-section-analyser-and-rex.html">Security, Framing Cross Section Analyser and REX</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/05/rvtva3c-assembly-resolver.html">RvtVa3c Assembly Resolver</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/03/framing-cross-section-analyser-and-rex-in-revit-2015.html">Framing Cross Section Analyser and REX in Revit 2015</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2015/12/rex-app-development-and-migration.html">REX Add-In Development and Migration</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/02/add-in-templates-supporting-edit-and-continue.html">Add-In Templates Supporting Edit and Continue</a></li>
+<li><a href="0982_rvtunit.htm">Revit Add-in Unit Testing</a></li>
+<li><a href="1076_framing_xsec_analyse.htm">Security, Framing Cross Section Analyser and REX</a></li>
+<li><a href="1159_va3c_resolve_assembly.htm">RvtVa3c Assembly Resolver</a></li>
+<li><a href="1294_framing_xsec_analyse.htm">Framing Cross Section Analyser and REX in Revit 2015</a></li>
+<li><a href="1384_rex.html">REX Add-In Development and Migration</a></li>
+<li><a href="1530_andrey_wizard_debug.html">Add-In Templates Supporting Edit and Continue</a></li>
 </ul>
 <h4><a name="4"></a> Rome and  Boston Forge Accelerators</h4>
 <p>I recently mentioned that I am attending
-the <a href="http://thebuildingcoder.typepad.com/blog/2018/08/revit-20191-cefsharp-forge-accelerator-in-rome.html#5">Forge accelerator in Rome</a> end
+the <a href="1673_2019_1.html#5">Forge accelerator in Rome</a> end
 of this month, September 24-28.</p>
 <p>I expect that it is too late to decide to join that one now.</p>
 <p>However, <a href="https://forums.autodesk.com/t5/bim-360-api-forum/forge-accelerator-boston-ma-october-1-5-2018/td-p/8249266">you can still submit proposals for the Boston accelerator taking place in October</a>
@@ -157,3 +188,11 @@ accessing <a href="https://forge.autodesk.com/blog/bim-360-issues-api-sample-nod
 <p>However, we do ask that you submit a proposal as part of your application so that we can verify that the intended use of the Autodesk Forge APIs in your project is feasible.</p>
 <p>You can <a href="http://autodeskcloudaccelerator.com/apply">apply and submit your proposal here</a>.</p>
 <p>For more information, please visit the <a href="http://autodeskcloudaccelerator.com/forge-accelerator">Forge Accelerator website</a>.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

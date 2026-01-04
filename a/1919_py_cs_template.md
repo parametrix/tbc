@@ -112,7 +112,7 @@ my very simple [Visual Studio Revit add-in wizard](https://github.com/jeremytamm
 the past.
 
 I just added a list of them to the GitHub repo readme and
-the corresponding [topic group](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20).
+the corresponding topic group *(link unavailable)*.
 
 Roman Karpov, aka Роман Карпович, now shares another one, saying:
 

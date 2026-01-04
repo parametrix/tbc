@@ -147,8 +147,8 @@ Maybe the type is in use.
 You can't delete system types, only purge them, cf.:
 
 - [Purge unused via API](https://forums.autodesk.com/t5/revit-api-forum/purge-unused-via-the-api/td-p/6431564)
-- [Purge and `PostCommand`](https://thebuildingcoder.typepad.com/blog/2017/11/purge-and-detecting-an-empty-view.html#2)
-- [Purge unused with `eTransmit`](https://thebuildingcoder.typepad.com/blog/2022/03/purge-unused-and-the-autodesk-camel.html)
+- [Purge and `PostCommand`](1600_purge_empty_view.html#2)
+- [Purge unused with `eTransmit`](1943_purge_etransmit.html)
 
 <center>
 <img src="img/arrowhead_purge.png" alt="Purge unused" title="Purge unused" width="458"/> <!-- Pixel Height: 600 Pixel Width: 458 -->
@@ -240,9 +240,9 @@ the [`OpenDocumentFile` method](https://www.revitapidocs.com/2024/5716f206-98ee-
 **Answer:**
 You can achieve this using the transmission data:
 
-- [List Linked Files and TransmissionData](http://thebuildingcoder.typepad.com/blog/2011/05/list-linked-files-and-transmissiondata.html)
-- [Using the WriteTransmissionData Method](http://thebuildingcoder.typepad.com/blog/2011/10/using-the-writetransmissiondata-method.html)
-- [Standalone BasicFileInfo and ExtractPartAtom](http://thebuildingcoder.typepad.com/blog/2018/04/standalone-basicfileinfo-and-extractpartatom-method.html)
+- [List Linked Files and TransmissionData](0583_list_links.htm)
+- [Using the WriteTransmissionData Method](0659_writetransmissiondata.htm)
+- [Standalone BasicFileInfo and ExtractPartAtom](1640_part_atom_direct.html)
 
 Here are some old notes from another case on closing worksets and unloading links when opening model:
 

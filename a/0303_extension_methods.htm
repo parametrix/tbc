@@ -1,10 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
 
-Daren Thomas Re: Wird Revit 2011 eine Zuordnung von R‰umen und Bˆden / D‰chern ermˆglichen?
+Daren Thomas Re: Wird Revit 2011 eine Zuordnung von RÔøΩumen und BÔøΩden / DÔøΩchern ermÔøΩglichen?
 
 -->
 
@@ -17,7 +48,7 @@ Daren works in the group
 
 One area of their research is detailed building energy analysis, and one piece of basic utility functionality required for this analysis are
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/boolean-operations-for-2d-polygons.html">
+<a href="0098_booleans_on_polygons.htm">
 Boolean operations</a> on
 
 the polygonal areas of rooms on different levels.
@@ -29,7 +60,7 @@ To do so, we need to read the model with its rooms and the relationships between
 Specifically, we would like to determine the intersections areas on a floor of the rooms below and above it.
 You mentioned the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/boolean-operations-for-2d-polygons.html">
+<a href="0098_booleans_on_polygons.htm">
 General Polygon Clipper GPC</a> library,
 
 and that looks like a good starting point, although it does require an additional library with the associated administrative overhead and licensing complications.
@@ -38,32 +69,32 @@ and that looks like a good starting point, although it does require an additiona
 
 <p><strong>Answer:</strong> Look at the Revit SDK sample
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/09/roomsroofs-sdk.html">
+<a href="0015_roofsrooms.htm">
 RoofsRooms</a>,
 
 and the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/12/crop-3d-view-to-room.html">
+<a href="0259_crop_view_to_room.htm">
 ClosedShell</a> property
 
 on the Room class.
 
 You can also make use of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/10/analytical-support-tolerance.html">
+<a href="0231_analytical_support_tolerance.htm">
 FindReferencesByDirection</a> method.
 
 We suggested some further ideas when looking at the related problems of
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/01/room-and-wall-adjacency.html">
+<a href="0076_room_wall_adjacency.htm">
 room and wall adjacency</a>,
 
 their
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/01/room-and-wall-adjacent-area.html">
+<a href="0084_room_wall_adjacent_area.htm">
 adjacent areas</a>, and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/07/space-adjacency.html">
+<a href="0169_space_adjacency.htm">
 space adjacency</a>.
 
 <p><strong>Response:</strong> Currently we are following the GPC route.
@@ -265,3 +296,12 @@ a new technology in C# 3.0 that I find especially useful for working with plug-i
 
 <p>I am going on vacation to Andalusia tomorrow for the next ten days, so I will probably not be posting any more until March.
 I wish you all a wonderful time and hope that you will have many pleasant, exciting and illuminating Revit API adventures while I take some time off from them.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

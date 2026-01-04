@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1252964 [Remove all Geometry from a RFA] -->
@@ -13,12 +44,12 @@ Environmental Systems Design, Inc</a>
 
 that nicely complements the issue of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/selecting-model-elements.html">
+<a href="0140_select_model_elements.htm">
 identifying model elements in a project file</a>
 
 with the subsequent 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/06/category-comparison-and-model-element-selection-revisited.html">
+<a href="0155_category_comparison_2.htm">
 correction</a>
 
 added.
@@ -121,12 +152,12 @@ In this case, I simply noted that the camera has a non-null category, whereas th
 <p>Secondly, deleting an element causes other dependent elements to be deleted also, so even though we just pass in one single extrusion element to the Delete method, a whole group of other elements are eliminated as well.
 We already discussed and made use of this effect to determine the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/tag-association.html">
+<a href="0131_tag_association.htm">
 association between a tag and the tagged element</a>
 
 and between
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/06/host-reference.html">
+<a href="0146_host_reference.htm">
 a host and its hosted elements</a>.
 
 <p>Here is the complete Visual Studio solution 
@@ -135,3 +166,12 @@ a host and its hosted elements</a>.
 RemoveRfaGeom</a>
 
 implementing the new command.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

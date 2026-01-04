@@ -40,8 +40,8 @@ A couple of quick topics to start the week:
 
 #### <a name="2"></a>Add-In DLL Signature
 
-As I mentioned [migrating RvtSamples to Revit 2017](http://thebuildingcoder.typepad.com/blog/2016/04/rvtsamples-for-revit-2017.html),
-the ['Security – Unsigned Add-In' message](http://thebuildingcoder.typepad.com/blog/2016/04/rvtsamples-for-revit-2017.html#5) is
+As I mentioned [migrating RvtSamples to Revit 2017](1427_rvtsamples.html),
+the ['Security – Unsigned Add-In' message](1427_rvtsamples.html#5) is
 now displayed by Revit when an unsigned add-in DLL is detected.
 
 We raised that question briefly in
@@ -127,7 +127,7 @@ The Revit API is entirely based on events.
 You cannot use the Revit API except in a valid Revit API context, and a valid Revit API context is provided by Revit API events and nothing else.
 
 For more details on this, please refer to The Building Coder topic group
-on [Idling and external events for modeless access and driving Revit from outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+on Idling and external events for modeless access and driving Revit from outside *(link unavailable)*.
 
 Now for the good part: the combination of these two is easily possible.
 

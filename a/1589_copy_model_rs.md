@@ -33,7 +33,7 @@ Today, I have two important results to share based on hard work by Tim Burnham a
 
 ####<a name="2"></a>Download from Revit Server Requires RSN.INI Entry
 
-I discussed [copying a model from a Revit Server](http://thebuildingcoder.typepad.com/blog/2011/12/copy-a-model-from-a-revit-server.html) six
+I discussed [copying a model from a Revit Server](0693_rest_copy_model.htm) six
 years ago.
 
 After all this time, an important caveat is required, prompted by Tim Burnham and all the blood, sweat and tears he spent on resolving an issue with an `Application.CopyModel` error for Revit Server:
@@ -75,7 +75,7 @@ If your local Revit install is set up with the server already, I assume the API 
 I would expect the API should interact with RS assuming port 808 is open and you’re within the LAN/WAN confines.
  
 It might be useful to amend the initial article
-on [copying a model from a Revit Server](http://thebuildingcoder.typepad.com/blog/2011/12/copy-a-model-from-a-revit-server.html) to
+on [copying a model from a Revit Server](0693_rest_copy_model.htm) to
 include this info.
 
 Someone will thank you!

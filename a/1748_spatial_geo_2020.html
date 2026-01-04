@@ -1,9 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script></p>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - 2019 Autodesk show reels are out
@@ -91,8 +122,8 @@ on <a href="https://forums.autodesk.com/t5/revit-api-forum/revit-2020-addin-mana
 <h4><a name="4"></a> Spatial Element Geometry Calculator Update</h4>
 <p>Dan pointed out an inconsistency in
 the <a href="https://github.com/jeremytammik/SpatialElementGeometryCalculator">SpatialElementGeometryCalculator</a>
-in <a href="https://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-opening-areas-per-room.html#comment-4452599622">his comment</a>
-on <a href="https://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-opening-areas-per-room.html">determining wall opening areas per room</a> that led me to migrate the add-in to Revit 2020 and integrate his code fix:</p>
+in <a href="1423_wall_opening_areas.html#comment-4452599622">his comment</a>
+on <a href="1423_wall_opening_areas.html">determining wall opening areas per room</a> that led me to migrate the add-in to Revit 2020 and integrate his code fix:</p>
 <p>Dan: If I understand the sample model provided correctly, the room height is taken into account and not the full wall height.
 So, in room 7, even though the wall is 4 m high, only 3 m will be taken into account, since that is the height of the room.
 Fair enough; this would mean 30 m<sup>2</sup> gross for each wall, since they are all 10 m long inside the room.
@@ -127,7 +158,7 @@ in <a href="https://github.com/jeremytammik/SpatialElementGeometryCalculator/rel
 </center></p>
 <h4><a name="4.1"></a> Håvard's New Suggestion</h4>
 <p>Håvard Leding of <a href="https://www.symetri.com">Symetri</a> {whose last name used to be Dagsvik) very
-kindly <a href="https://thebuildingcoder.typepad.com/blog/2016/04/determining-wall-opening-areas-per-room.html#comment-4454441990">answered Dan's comment</a>,
+kindly <a href="1423_wall_opening_areas.html#comment-4454441990">answered Dan's comment</a>,
 pointing out that the current implementation might possibly bear some fundamental improvement:</p>
 <blockquote>
 <p>Hi Dan, seems you found a bug there... sorry about that :-) &nbsp;
@@ -155,7 +186,7 @@ First, get the openings like this:</p>
 
 <blockquote>
 <p>Then, for each dependent of interest, use <code>GetDependentElements</code> again to get the <code>openingSolid</code> as described here in the recent suggestion how
-to <a href="https://thebuildingcoder.typepad.com/blog/2019/03/determine-exact-opening-by-demolishing.html">determine exact opening by demolishing</a>.</p>
+to <a href="1733_demolished_solid.html">determine exact opening by demolishing</a>.</p>
 </blockquote>
 <h4><a name="5"></a> English Spelling</h4>
 <p>Let's finish off on a completely different topic, the baffling idiosyncrasies of English spelling.</p>
@@ -166,3 +197,11 @@ to <a href="https://thebuildingcoder.typepad.com/blog/2019/03/determine-exact-op
 <li>sh = ti from satisfaction</li>
 </ul>
 <p>English spelling sure is pretty arbitrary sometimes...</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

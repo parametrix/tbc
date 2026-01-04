@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -147,18 +178,18 @@ on <a href="https://forums.autodesk.com/t5/revit-api-forum/auto-route-a-pipe-sys
 <p style="font-size: 80%; font-style:italic">Auto generated pipes</p>
 </center></p>
 <p><strong>Answer:</strong> You
-can <a href="https://thebuildingcoder.typepad.com/blog/2011/07/mep-placeholders.html">create a placeholder piping system programmatically</a> as well.</p>
+can <a href="0609_mep_placeholder.htm">create a placeholder piping system programmatically</a> as well.</p>
 <p>Or you can create a piping system right away.
 Here is a series of samples that create a minimal bunch of pipes for
-a <a href="http://thebuildingcoder.typepad.com/blog/2014/01/final-rolling-offset-using-pipecreate.html">rolling offset in lots of different ways</a>.</p>
+a <a href="1093_pipe_create.htm">rolling offset in lots of different ways</a>.</p>
 <p><strong>Response:</strong> I am assuming from your response that if I want to connect from say, a water closet to a water heater, with pipes, I will have to explicitly call PipeCreate for each pipe, find connectors, insert each fitting... and then that process over and over until they connect?
 Is there a better work flow for what I'm trying to accomplish?
 Something similar to what is in the Revit user interface?</p>
 <p><strong>Answer:</strong> The discussions I pointed out already explain everything and cover your question in full.
 Actually, here are some additional relevant discussions of this topic:</p>
 <ul>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2018/03/connector-neighbour-conduit-transition.html">Connector, neighbour, conduit, transition</a></li>
-<li><a href="https://thebuildingcoder.typepad.com/blog/2019/08/mep-ductwork-and-changing-pipe-direction.html">MEP ductwork and changing pipe direction</a></li>
+<li><a href="1636_connector_neighbour.html">Connector, neighbour, conduit, transition</a></li>
+<li><a href="1768_pipe_direction.html">MEP ductwork and changing pipe direction</a></li>
 </ul>
 <p>The short answer is simply:</p>
 <ul>
@@ -187,7 +218,7 @@ on <a href="https://stackoverflow.com/questions/60831658/saving-families-out-vie
 </ul>
 <p>If all of these fail, a third mechanism is provided by the Windows API, which enables hooking into and reacting to almost any system event, including a dialogue showing.</p>
 <p>All three approaches are discussed and compared by The Building Coder in the topic group
-on <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.32">detecting and handling dialogues and failures</a>.</p>
+on <span class="unavailable-link">detecting and handling dialogues and failures</span>.</p>
 <h4><a name="6"></a>Retrieving a Geometry Reference</h4>
 <p>Let's round off with a quick question 
 on <a href="https://forums.autodesk.com/t5/revit-api-forum/get-reference-upper-on-rebar-51/m-p/9396627">getting a reference to the upper face on rebar 51</a>:</p>
@@ -204,3 +235,11 @@ var refr = Reference.ParseFromStableRepresentation(
 the <a href="https://www.revitapidocs.com/2020/d8a55a5b-2a69-d5ab-3e1f-6cf1ee43c8ec.htm">Element.Geometry property</a>.</p>
 <p>It takes an <code>Options</code> argument in which you can specify <code>ComputeReferences</code> = <code>true</code>.</p>
 <p>Iterate over the geometry solids and their faces, pick the face that you want, e.g., based on its normal vector (pointing upwards) and vertex locations (maximal Z values), and use the reference that it comes equipped with.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

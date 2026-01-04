@@ -141,7 +141,7 @@ In fact, here is an example of exactly that,
 and it is not the only one.
 
 Look at The Building Coder topic group
-on [modeless access and driving Revit from outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28) for
+on modeless access and driving Revit from outside *(link unavailable)* for
 several other related ideas.
 
 It would not be stable, however, so your framework would definitely have to monitor performance, keep track of tasks queued and executed, and deal with the fact that Revit might need to be killed and restarted occasionally.

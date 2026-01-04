@@ -1,12 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Namespaces</h3>
 
 <p>Here is a 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/getting-started-with-the-revit-2009-api.html?cid=6a00e553e1689788330120a5e41815970b#comment-6a00e553e1689788330120a5e41815970b">
+<a href="0120_getting_started_2009.htm">
 question</a> by 
 
 <a href="mailto:freelancecadd@gmail.com">
@@ -45,7 +76,7 @@ Although it may seem confusing the first time through, it is very simple to hand
 
 <p>Adding the required references to a project is demonstrated by the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/getting-started-with-the-revit-2009-api.html">
+<a href="0120_getting_started_2009.htm">
 Revit DevTV recording</a>.
 
 <p>The entire Revit API resides in one single assembly, RevitAPI.dll, which includes all the Revit namespaces, so that is simple. Which class resides in which namespace is documented by the Revit API help file RevitAPI.chm, which is included with the Revit SDK:
@@ -55,3 +86,12 @@ Revit DevTV recording</a>.
 </center>
 
 <p>In general, all you have to do when you copy code from one project to another is ensure that the required references are loaded, and then add appropriate using statements, unless the code you copied uses the full name of every class it references.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

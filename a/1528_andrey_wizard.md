@@ -34,7 +34,7 @@ I have been maintaining a simple Visual Studio Revit add-in wizard for a number 
 ### New Visual Studio Templates for Revit Add-Ins
 
 I have been maintaining a
-simple [Visual Studio Revit add-in wizard](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20) for
+simple Visual Studio Revit add-in wizard *(link unavailable)* for
 a number of years, hosted in
 the [VisualStudioRevitAddinWizard GitHub repo](https://github.com/jeremytammik/VisualStudioRevitAddinWizard).
 

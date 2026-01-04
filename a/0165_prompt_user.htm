@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -21,7 +51,7 @@
 
 <p>We recently touched on the topic of 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/vb-samples-and-other-questions.html#1">
+<a href="0137_vb_samples.htm#1">
 IFC export</a>
 
 and the lack of API access to this functionality.
@@ -41,7 +71,7 @@ recently suggested an effective, simple and reliable work-around for the lack of
 His requirement is especially to pin unpinned Revit link instances.
 One solution is to simply
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/06/convex-hull-and-volume-computation.html?cid=6a00e553e1689788330115718ed107970b#comment-6a00e553e1689788330115718ed107970b">
+<a href="0160_convex_hull_volume.htm">
 prompt the user to pin them</a>:
 
 <pre class="code">
@@ -95,3 +125,12 @@ That is why I cannot produce the IFC files through a nightly batch process drivi
 I 'solved' it by checking if there is an IFC file present. If not, or if it is not recent, I ask the user to export the model to IFC by hand into a particular directory.
 As long as the Revit API does not provide access to the IFC export I guess we have to solve this issue this way. 
 It should be much more user friendly if the IFC export would be generated automatically.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

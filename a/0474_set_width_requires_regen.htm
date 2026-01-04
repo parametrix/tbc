@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- Armand Marshall RE: TextNote.Width (solved) -->
@@ -8,28 +39,28 @@
 
 <p>I presented a general introduction to the topic of regeneration in the discussion of my first Revit 2011 add-in, the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/pipe-to-conduit-converter.html#6">
+<a href="0360_p2c.htm#6">
 pipe to conduit converter</a>, and
 
 in Kevin Vandecar's 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/10/filtered-element-collectors.html">
+<a href="0463_filtered_element_collector.htm">
 performance tips and tricks</a>.
 
 <p>We discussed the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/manual-regeneration-mode-danger.html">
+<a href="0345_manual_regeneration.htm">
 danger of lacking regeneration calls</a>, 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/regeneration-option-best-practices.html">
+<a href="0348_regen_option_rules.htm">
 best regen practices</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/04/regeneration-option-best-practices.html">
+<a href="0348_regen_option_rules.htm">
 some performance issues</a> quite 
 
 a while ago, and an example of problems resulting from accessing stale data in the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/to-regenerate-or-not-to-regenerate.html">
+<a href="0388_regen_required.htm">
 location curve of a newly inserted family instance</a>.
 
 <p>Here is another interesting and very clear little example of one of the many problems that you can run into if you forget to regenerate appropriately, raised and resolved by Armand Marshall of 
@@ -40,7 +71,7 @@ EIC Engineers, Inc.</a>:
 <p><strong>Question:</strong> I've been working on reading values from an Excel file and creating text in Revit from that.
 I read the discussion on 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/textnote-rotation.html">
+<a href="0393_text_rotation.htm">
 TextNote rotation</a> and 
 
 notice that you read the TextNote.Width value.  
@@ -96,3 +127,12 @@ Different widths?
 <p><strong>Answer:</strong> Yes, this is always a likely culprit, and I should definitely make a habit of always asking people what their regeneration option and transaction mode are before thinking of anything else.
 
 <p>Many thanks to Armand for this helpful example!
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

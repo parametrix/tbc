@@ -102,7 +102,7 @@ Many thanks to the Revit development team and Siyu Guo for the shareback and int
 ####<a name="3"></a> Add-In Manager with Debug Trace
 
 We recently mentioned
-Chuong Ho's [open source add-in manager](https://thebuildingcoder.typepad.com/blog/2022/01/add-in-manager-formulamanager-and-tiger-year.html#2).
+Chuong Ho's [open source add-in manager](1936_os_addin_mgr.html#2).
 
 > Usually, when developing and debugging an add-in with Revit API, user has to recompile, close and reopen Revit each time they modify the add-in code. 
 With Add-In Manager, you can modify and run the add-in directly without closing and reopening Revit again and again.
@@ -121,7 +121,7 @@ Chuong announces new enhancements:
 By the way, for the sake of completeness, note that
 the [.NET hot reload for editing code at runtime](https://devblogs.microsoft.com/dotnet/introducing-net-hot-reload)
 in Visual Studio 2019 also enables you to update your add-in code on the fly, cf.
-[apply code changes debugging Revit add-in](https://thebuildingcoder.typepad.com/blog/2021/10/localised-forge-intros-and-apply-code-changes.html#4).
+[apply code changes debugging Revit add-in](1920_apply_code_changes.html#4).
 
 ####<a name="4"></a> Journal File Analysis
 

@@ -182,7 +182,7 @@ Many thanks to Mike, Matt, Erik and Gonçalo for raising and helping to solve th
 
 ####<a name="2"></a>Addendum &ndash; Load and Execute Code on the Fly
 
-In the [comment below](http://thebuildingcoder.typepad.com/blog/2016/11/using-other-events-to-execute-add-in-code.html#comment-3039130901),
+In the [comment below](1501_app_dlg_events.html#comment-3039130901),
 David Echols explains how he can load and execute assembly code on the fly by subscribing to the `Idling` event in the application `OnStartup` method:
 
 > I have used the following code in the last four versions of Revit for overnight batch processing of PDF and DWG exports and sheet lists across multiple workstations. This is not the most elegant way to do this, but it does show how I load the assembly on the fly and execute the command that does the processing.

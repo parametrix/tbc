@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - Revit database explorer RDBE
@@ -55,7 +86,7 @@ meanwhile, take care handling and trying to convert between element ids and thei
 <h4><a name="2"></a> Immutable UniqueId, Mutable Element Id</h4>
 <p><strong>Question:</strong> Can I safely assume the integer value of the last part of an <code>Element</code> <code>UniqueId</code> interpreted as a hexadecimal value always equals its <code>ElementId</code> integer value?</p>
 <p>This was suggested by the article
-on <a href="https://thebuildingcoder.typepad.com/blog/2009/02/uniqueid-dwf-and-ifc-guid.html">UniqueId, DWF and IFC GUID</a>.</p>
+on <a href="0104_uniqueid_dwf_ifc_guid.htm">UniqueId, DWF and IFC GUID</a>.</p>
 <p>I encountered a situation where the last portion of the unique id hex value differs from the element id:</p>
 <ul>
 <li>UniqueId: e41507ae-ace2-4c44-8d8a-072f18908bea-0004d4c5</li>
@@ -126,5 +157,13 @@ I started last, two weeks ago, and mine is almost ready 😊; there are still a 
 <p>It will be interesting to see how things pan out in the long haul.
 Optimally, maybe the three separate projects can converge and exploit synchronicity... good luck and much success to all three!</p>
 <p>The interactive command line interface to drive the creation of filtered element collectors might fit in very nicely into a more complete interactive shell, like the initiative of @chuongmep
-to <a href="https://thebuildingcoder.typepad.com/blog/2022/07/mep-api-intro-and-revitpythonshell-lookup-nuptials.html#3">reinvigorate RevitPythonShell and hook it up with RevitLookup</a></p>
+to <a href="1957_rps_lookup_mep_start.html#3">reinvigorate RevitPythonShell and hook it up with RevitLookup</a></p>
 <p>Nice3point adds: Sounds interesting; my team and I will update the interface as soon as we have time, there will also be a search, OTA update and new context menu elements. Here it is important to understand that what is needed is not WPF / WinForms, but the possibility to extend the functionality. It’s more difficult to do this on Forms, where the logic is mixed with the UI, which is bad.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

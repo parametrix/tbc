@@ -18,11 +18,11 @@ Below is the utility function I use to achieve this. Note this works for any ele
 ...
 The category filter is used to eliminate any element not of the desired category before using the slower parameter filter to find the desired element. It is probably possible to speed this up further with clever usage of filters, but I have found that it is plenty fast enough for me in practice.
 Colin Stark
-Thank you for that, Colin! I added it to [The Building Coder samples](https://github.com/jeremytammik/the_building_coder_samples) [CmdViewsShowingElements](https://github.com/jeremytammik/the_building_coder_samples/blob/master/BuildingCoder/BuildingCoder/CmdViewsShowingElements.cs), described in the discussion of [Determining Views Showing an Element](http://thebuildingcoder.typepad.com/blog/2016/12/determining-views-showing-an-element.html).
+Thank you for that, Colin! I added it to [The Building Coder samples](https://github.com/jeremytammik/the_building_coder_samples) [CmdViewsShowingElements](https://github.com/jeremytammik/the_building_coder_samples/blob/master/BuildingCoder/BuildingCoder/CmdViewsShowingElements.cs), described in the discussion of [Determining Views Showing an Element](1504_views_showing_element.html).
 
 - CmdViewsShowingElements
-  - [Determine Views Displaying Given Element](http://thebuildingcoder.typepad.com/blog/2014/05/views-displaying-given-element-svg-and-nosql.html#6)
-  - [Determining Views Showing an Element](http://thebuildingcoder.typepad.com/blog/2016/12/determining-views-showing-an-element.html)
+  - [Determine Views Displaying Given Element](1158_views_displaying_elem.htm#6)
+  - [Determining Views Showing an Element](1504_views_showing_element.html)
 
 Retrieving Elements Visible in View @AutodeskForge #ForgeDevCon #RevitAPI @AutodeskRevit #bim #dynamobim http://bit.ly/elem_visible_view
 
@@ -62,9 +62,9 @@ There is a limitation for elements in linked documents, as explained in the thre
 on [elements from linked document](http://forums.autodesk.com/t5/revit-api/elements-from-linked-document/m-p/5867049).
 
 In order to include linked elements, you can use
-a [custom exporter](http://thebuildingcoder.typepad.com/blog/2013/07/graphics-pipeline-custom-exporter.html).
+a [custom exporter](0979_custom_exporter.htm).
 For more info on that, please refer
-to [The Building Coder custom exporter topic group](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.1).
+to The Building Coder custom exporter topic group *(link unavailable)*.
 
 The solution for your specific case is to find the `ViewPlan` associated with the viewport and check the  `BoundingBox` of all elements on the level of this `ViewPlan` to find ones that fit inside the `ViewPlan.CropBox`.
 
@@ -77,7 +77,7 @@ I am learning Revit API and a beginner. I am so desperate to learn what you have
 Welcome to Revit API programming!
  
 I suggest that you first of all take a look at
-the [Revit API getting started material](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2) and
+the Revit API getting started material *(link unavailable)* and
 work through the step-by-step instructions provided by the DevTV and My First Revit Plugin video tutorials.
  
 That will show you what other important material is available that you MUST be aware of, answer this question of yours, and many, many more besides.
@@ -88,8 +88,8 @@ They already answer your question in full.
  
 The Building Coder discussed the related topic of determining all views displaying a specific element in depth, implementing an external command named `CmdViewsShowingElements` to try out some approaches:
  
-- [Determine views displaying given element](http://thebuildingcoder.typepad.com/blog/2014/05/views-displaying-given-element-svg-and-nosql.html)
-- [Determining views showing an element](http://thebuildingcoder.typepad.com/blog/2016/12/determining-views-showing-an-element.html)
+- [Determine views displaying given element](1158_views_displaying_elem.htm)
+- [Determining views showing an element](1504_views_showing_element.html)
  
 A similar question recently also arose in the StackOverflow thread on how
 to [determine whether a `FamilyInstance` is visible in a `View`](http://stackoverflow.com/questions/44012630/determine-is-a-familyinstance-is-visible-in-a-view).

@@ -70,9 +70,9 @@ I begin this week with a rather mixed bag of interesting issues from the last:
 
 We have looked at how to determine the MEP duct shape repeatedly in the past, e.g., in the articles on:
 
-- [Distinguishing MEP element shape](http://thebuildingcoder.typepad.com/blog/2011/03/distinguishing-mep-element-shape.html)
-- [Improved MEP Element Shape](http://thebuildingcoder.typepad.com/blog/2011/05/improved-mep-element-shape-and-mount-ararat.html)
-- [IFC Import Levels and MEP Element Shapes](http://thebuildingcoder.typepad.com/blog/2016/02/ifc-import-levels-and-mep-element-shapes.html)
+- [Distinguishing MEP element shape](0554_mep_element_shape.htm)
+- [Improved MEP Element Shape](0578_mep_element_shape_2.htm)
+- [IFC Import Levels and MEP Element Shapes](1406_mep_element_shape_4.html)
 
 The question came up again in the following discussion, and the solution is now &ndash; and has been for some time now &ndash; at hand:
 
@@ -166,13 +166,13 @@ Is there a better way than manually looking at changed files in the commit histo
 
 [Mathias Ottosson](https://github.com/ottosson)
 of [WSP](https://www.wsp.com) very kindly shares an important UI enhancement of
-the venerable [BipChecker, the Revit built-in parameter checker](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.34),
+the venerable BipChecker, the Revit built-in parameter checker *(link unavailable)*,
 in his [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread
 on [I gave Jeremys BIP checker a facelift](https://forums.autodesk.com/t5/revit-api-forum/i-gave-jeremys-bip-checker-a-facelift/m-p/9566362),
 explaining:
 
 I really enjoy the nifty tools that Jeremy has created or maintains, like
-the [BipChecker](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.34)
+the BipChecker *(link unavailable)*
 and [RevitLookup](https://github.com/jeremytammik/Revitlookup).
 Truly useful tools that I use more or less daily when I develop for Revit.
 

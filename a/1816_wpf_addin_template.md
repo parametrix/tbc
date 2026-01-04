@@ -64,7 +64,7 @@ Revit add-ins is pretty clearly recommending WPF as the better choice, for vario
 
 - WPF is better for dynamic UIs
 - The WPF binding mechanisms work well
-- WinForms has [serious scaling issues on high resolution monitors](https://thebuildingcoder.typepad.com/blog/2019/09/scaling-an-add-in-for-a-4k-high-resolution-screen.html)
+- WinForms has [serious scaling issues on high resolution monitors](1780_4k_hires_scaling.html)
 - WPF apps don't have scaling issues
 - WPF UIs are built in a modern way with separate style, XML layout, and code / logic documents
     - Similar to how UIs are built on other frameworks like Android / iOS / macOS / web development

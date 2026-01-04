@@ -45,10 +45,10 @@ Many other larger events are coming up after this:
 
 The agenda here consists of two parts, a 90-minute presentation and a 4-hour hands-on workshop:
 
-- Presentation &ndash; [Connecting desktop and cloud](http://thebuildingcoder.typepad.com/blog/2016/10/connecting-desktop-and-cloud-at-rtc-material.html)
+- Presentation &ndash; [Connecting desktop and cloud](1487_roomedit3d_material.html)
 - Workshop
-    - Revit API &ndash; [creating a Revit add-in with one single click](http://thebuildingcoder.typepad.com/blog/2016/10/revit-api-and-connecting-desktop-and-cloud-tuda.html#4)
-    - Connecting BIM with the cloud &ndash; [connecting Revit and Forge with 25 lines of code](http://thebuildingcoder.typepad.com/blog/2016/11/roomedit3dv3-diff-from-boilerplate-code.html#9)
+    - Revit API &ndash; [creating a Revit add-in with one single click](1489_tu_darmstadt.html#4)
+    - Connecting BIM with the cloud &ndash; [connecting Revit and Forge with 25 lines of code](1494_roomedit3dv3_diff.html#9)
 
 Since some participants are probably not well versed in the Autodesk biosphere, we'll try to cram in some supplementary information, resulting in the following agenda:
 
@@ -61,9 +61,9 @@ Since some participants are probably not well versed in the Autodesk biosphere, 
     - Connecting desktop and cloud, Forge and BIM
 - Workshop
     - Getting started with &ndash; practice
-        - [Revit API add-ins](http://thebuildingcoder.typepad.com/blog/2016/10/revit-api-and-connecting-desktop-and-cloud-tuda.html#4)
+        - [Revit API add-ins](1489_tu_darmstadt.html#4)
         - [Forge viewer tutorial](https://developer.autodesk.com/en/docs/viewer/v2/tutorials/basic-viewer/)
-        - [Adapting boilerplate code to connect Forge and BIM](http://thebuildingcoder.typepad.com/blog/2016/11/roomedit3dv3-diff-from-boilerplate-code.html)
+        - [Adapting boilerplate code to connect Forge and BIM](1494_roomedit3dv3_diff.html)
 
 Some last-minute coordination on this with Philipp Mueller is still outstanding...
 

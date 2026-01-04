@@ -177,7 +177,7 @@ I only know Python and no C#.
 **Answer:** I love Python. C# is also very nice.
 Most of my Revit API samples are in C#.
 The Building Coder includes a whole topic group
-on [articles on how to set up section views](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.38).
+on articles on how to set up section views *(link unavailable)*.
 
 **Response:**  First of all, thanks for all the sample code!
 I came up with the idea to use ChatGPT to translate your code to Python and then changed it to fit my needs.

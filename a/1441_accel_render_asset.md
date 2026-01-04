@@ -95,7 +95,7 @@ Is it not possible to edit the Revit render appearance asset in Revit itself, wo
 
 **Answer:** Yes, you can edit and create AppearanceAssetElement objects.
 
-Look at The Building Coder discussion of [What's New in the Revit 2014 API](http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html):
+Look at The Building Coder discussion of [What's New in the Revit 2014 API](0938_whats_new_2014.htm):
 
 <span style="color:green">
 
@@ -137,12 +137,12 @@ B. Unfortunately, as said, we do not have full access to all asset properties, e
 
 [A] Unfortunately the API currently does not provide full access to all assets.
 
-C. You might also want to check out The Building Coder topic group on [Material Management and Libraries](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.5).
+C. You might also want to check out The Building Coder topic group on Material Management and Libraries *(link unavailable)*.
 
 D. If your workflow requires adding a material that is not currently available, one approach might be to copy and paste it from some other Revit file, or loading an asset from some other product like Inventor via an ADSK package:
 
-- [Loading an Inventor ADSK component](http://thebuildingcoder.typepad.com/blog/2011/12/loading-an-inventor-adsk-component.html)
-- [ADSK file import](http://thebuildingcoder.typepad.com/blog/2012/08/adsk-file-import-and-phase-of-room.html)
+- [Loading an Inventor ADSK component](0695_load_adsk.htm)
+- [ADSK file import](0811_import_adsk.htm)
 
 E. Furthermore, you might want to check the Revit API discussion forum thread on [Revit API materials and textures](http://forums.autodesk.com/t5/revit-api/revit-api-materials-and-textures/m-p/6319370).
 

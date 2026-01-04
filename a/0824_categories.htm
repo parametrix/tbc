@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -21,7 +52,7 @@ You should be aware of this.
 
 <p>I mentioned a related issue back in the Revit 2011 timeframe, describing 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/categories.html">
+<a href="0367_categories.htm">
 The Building Coder CmdCategories sample command</a>.
 
 <p>Still, this is a bit unexpected and has caused issues for several developers.
@@ -296,12 +327,12 @@ platform providing access to storage, a collaboration workspace, and a fast-grow
 
 <p>Arjen de Pater raised a 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/11/newblend-sample.html?cid=6a00e553e168978833017744a73173970d#comment-6a00e553e168978833017744a73173970d">
+<a href="0470_newblend.htm">
 question</a> on 
 
 using the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/11/newblend-sample.html">
+<a href="0470_newblend.htm">
 NewBlend method</a> that
 
 Mikako Harada just addressed:
@@ -324,7 +355,7 @@ It also includes sample code to create a blend form:
 
 <p>Once that is clear, you should definitely ensure that you can create the same shape through the user interface, as recommended for
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/07/debug-geometric-form-creation.html">
+<a href="0186_debug_form_creation.htm">
 debugging form creation</a>.
 
 If that fails, then it will fail through the API as well.
@@ -337,7 +368,7 @@ It may provide you with a more informative error message, though.
 <p><strong>Answer:</strong> Ah.
 Well, here are two 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/03/newsweptblend.html">
+<a href="0320_newsweptblend.htm">
 NewSweptBlend</a>
 
 <a href="http://adndevblog.typepad.com/aec/2012/08/newsweptblend-code-sample.html">
@@ -369,3 +400,12 @@ the View.Duplicate method taking a ViewDuplicateOption, something that I was not
 
 <p>You cannot use the NewViewPlan method to achieve this in a family document, because it throws an InvalidOperationException,
 as Saikat explains very clearly.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

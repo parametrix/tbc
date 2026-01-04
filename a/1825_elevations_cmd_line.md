@@ -101,8 +101,8 @@ Many thanks to Lisa-Marie for creating and sharing this valuable resource, and t
 
 We mentioned some command line switch related topics here in the past:
 
-- [Revit Command-Line Switches](https://thebuildingcoder.typepad.com/blog/2017/01/distances-switches-kiss-ing-and-a-dino.html#3)
-- [Passing an Add-In Custom Command Line Parameters](https://thebuildingcoder.typepad.com/blog/2019/01/face-methods-and-custom-command-line-arguments.html#2)
+- [Revit Command-Line Switches](1512_kiss.html#3)
+- [Passing an Add-In Custom Command Line Parameters](1717_cmdline_face.html#2)
 
 Vladimir Michl of [cadstudio.cz](https://www.cadstudio.cz) provides an update to these in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) thread

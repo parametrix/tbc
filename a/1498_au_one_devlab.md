@@ -71,8 +71,8 @@ Here are some snapshots of her, the presenters, the huge 8k+ audience and the va
 #### <a name="3"></a>Jeff Kowalski, CTO
 
 My favourite presentation, as you can well understand if you paid attention to my recent ponderings
-on [AlphaGo](http://thebuildingcoder.typepad.com/blog/2016/01/bim-programming-madrid-and-spanish-connectivity.html#7) and how
-to [replace myself by artificial intelligence](http://thebuildingcoder.typepad.com/blog/2016/10/ai-edit-and-continue.html#3):
+on [AlphaGo](1398_bim_programming.html#7) and how
+to [replace myself by artificial intelligence](1492_edit_continue.html#3):
 
 - [Machine learning](#3.1)
 - [Generative design](#3.2)
@@ -239,17 +239,17 @@ There are also several Revit Idea Station requests related to access to referenc
 
 <b>[A]</b> Check out these two posts on refreshing graphics:
 
-- [2011-07](http://thebuildingcoder.typepad.com/blog/2011/07/refresh-element-graphics-display.html)
-- [2014-06](http://thebuildingcoder.typepad.com/blog/2014/06/refresh-element-graphics-display.html)
+- [2011-07](0611_refresh_graphics.htm)
+- [2014-06](1173_refresh_graphics.htm)
 
 You should also explore The Building Coder topic
-group [5.33](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33) on
-the [need to regenerate](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33).
+group 5.33 *(link unavailable)* on
+the need to regenerate *(link unavailable)*.
 
 <b>[Q]</b> Do you have any suggestions for an open source IFC toolkit?
 
 <b>[A]</b> Yes, please refer to
-the [y GeometryGymIFC Open Source C# Library](http://thebuildingcoder.typepad.com/blog/2016/07/ifc-import-and-open-source.html#4).
+the [y GeometryGymIFC Open Source C# Library](1455_ifc_issues.html#4).
 
 <b>[Q]</b> I have a Revit API wish list item. How can I ensure that it is given the attention it deserves?
 
@@ -257,23 +257,23 @@ the [y GeometryGymIFC Open Source C# Library](http://thebuildingcoder.typepad.co
 
 <b>[Q]</b> I am creating a Revit plugin to bulk upgrade old version RVT files to new version. I need to run this process in the background so that other tasks can be performed during this upgrade process. Can you please guide us to how to run this upgrade process in the background?
 
-<b>[A]</b> The topic of driving Revit from outside or other background threads has been discussed extensively in the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api/bd-p/160) and in the posts listed in The Building Coder topic group on [Idling and External events for modeless access and driving Revit from outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28). Please explore that material in some depth to begin with. I would recommend starting at the end, since the last two entries in that topic list provide a good overview. Regarding the bulk upgrade, you will probably also be interested in taking a look at Saikat Bhattacharya's [File Upgrader add-in](http://thebuildingcoder.typepad.com/blog/2011/06/file-upgrader-plugin-of-the-month.html). It may be outdated, though. It was originally written for Revit 2012 and updated several later Revit versions. For a while, it was also available from the Autodesk Exchange AppStore. The last version that I have stored locally is [FileUpgrader_2015-08-27.zip](zip/FileUpgrader_2015-08-27.zip).
+<b>[A]</b> The topic of driving Revit from outside or other background threads has been discussed extensively in the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api/bd-p/160) and in the posts listed in The Building Coder topic group on Idling and External events for modeless access and driving Revit from outside *(link unavailable)*. Please explore that material in some depth to begin with. I would recommend starting at the end, since the last two entries in that topic list provide a good overview. Regarding the bulk upgrade, you will probably also be interested in taking a look at Saikat Bhattacharya's [File Upgrader add-in](0590_file_upgrader_potm.htm). It may be outdated, though. It was originally written for Revit 2012 and updated several later Revit versions. For a while, it was also available from the Autodesk Exchange AppStore. The last version that I have stored locally is [FileUpgrader_2015-08-27.zip](zip/FileUpgrader_2015-08-27.zip).
 
 <b>[Q]</b> I am interested in tracking and logging element modification.
 
-<b>[A]</b> Check out the posts on [tracking element modification](http://thebuildingcoder.typepad.com/blog/2016/01/tracking-element-modification.html) and [TrackChangesCloud](http://thebuildingcoder.typepad.com/blog/2016/03/implementing-the-trackchangescloud-external-event.html).
+<b>[A]</b> Check out the posts on [tracking element modification](1397_track_changes.html) and [TrackChangesCloud](1411_external_event.html).
 
 <b>[Q]</b> Do you have any suggestions on using extensible storage in a worksharing environment?
 
 <b>[A]</b> Yes. They are included in The Building Coder topic
-group [5.23](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23)
-on [extensible storage](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23).
+group 5.23 *(link unavailable)*
+on extensible storage *(link unavailable)*.
 
 
 #### <a name="7"></a>Forge Pricing
 
 As Jim Quanci announced yesterday at
-the [DevDay conference general session](http://thebuildingcoder.typepad.com/blog/2016/11/devday-conference-at-autodesk-university.html#2),
+the [DevDay conference general session](1497_au_devday.html#2),
 [Forge subscriptions](https://developer.autodesk.com/en/pricing) successfully launched.
 
 You can now take your apps to production

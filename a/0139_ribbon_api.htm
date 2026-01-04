@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+    <article>
 <style>
 .blue { color: blue; }
 .teal { color: teal; }
@@ -8,10 +38,10 @@
 <h3>Revit 2010 Ribbon API</h3>
 
 <p>I am currently sitting in Stockholm, preparing a visit to a Revit developer here and enjoying the wonderful Swedish nature in May.
-On Saturday I cut a couple of cubic meters of beautiful birch wood for heating with my friend Alexander in Huddinge, and on Sunday we went together with another class mate Lasse for a walk in the woods and around the lakes and marshes in Roslagen north of Stockholm, specifically to the three lakes Stora Harsjˆn, Lilla Harsjˆn and 
+On Saturday I cut a couple of cubic meters of beautiful birch wood for heating with my friend Alexander in Huddinge, and on Sunday we went together with another class mate Lasse for a walk in the woods and around the lakes and marshes in Roslagen north of Stockholm, specifically to the three lakes Stora HarsjÔøΩn, Lilla HarsjÔøΩn and 
 
 <a href="http://sv.wikipedia.org/wiki/T%C3%A4rnan">
-T‰rnan</a>, 
+TÔøΩrnan</a>, 
 
 where we used to go camping on the weekends as school boys thirty-five years ago.
 We saw lots of rare birds and plants and enjoyed the wonderful clear blue Scandinavian air and sky and stillness, so unlike anything you can see and feel in central Europe.
@@ -19,12 +49,12 @@ Now I am back to setting up my development system again on my temporary replacem
 
 <p>The topic of accessing and modifying the Revit ribbon user interface was addressed by a 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/driving-revit-from-outside.html?cid=6a00e553e1689788330115705e1423970b#comment-6a00e553e1689788330115705e1423970b">
+<a href="0051_driving_revit.htm">
 comment from Jake</a>
 
 and the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/driving-revit-from-outside.html?cid=6a00e553e168978833011570604384970b#comment-6a00e553e168978833011570604384970b">
+<a href="0051_driving_revit.htm">
 ensuing discussion</a>.
 
 Here, we will just discuss the basic Revit ribbon API functionality.</p>
@@ -34,10 +64,11 @@ The ribbon interface simplifies the usage for new users and reacts to the design
 Unlike AutoCAD based products, this change is not optional. 
 There is no way to turn this off and switch back to the old UI.</p>
 
-<p>The Revit API has been extended in order to enable Revit external applications to make use of the ribbon.
+<p>The Revit API has been extended in order to enable Revit external applications to make use of the ribbon.
+
 Here is an overview of the Revit 2010 ribbon API, which was also discussed in the recent 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/revit-api-introduction-webcast.html">
+<a href="0136_revit_api_intro_webcast.htm">
 Revit programming webcast</a>, 
 
 and a few related questions that cropped up.</p>
@@ -97,7 +128,7 @@ It adds the following elements to the Add-Ins tab:</p>
 
 <p>The figure shows the two ribbon panels called 'Ribbon Sample' and 'Add-in Panel Info'. 
 The first panel, on the left, has one push button called 'Create Wall', and a three-layered stacked button next to it showing 'Delete Last Wall' at the top. 
-Notice that the third stacked button, 'Move Walls', is a pull-down button.† 
+Notice that the third stacked button, 'Move Walls', is a pull-down button.ÔøΩ 
 You can also add tooltips to and separators between buttons.
 
 <p>Here is the relevant part of the code, the method CreateRibbons, which is called from the external application OnStartup method:</p>
@@ -244,3 +275,12 @@ This provides control of the visibility of the navigation bar, project browser, 
 <p>As stated above, the Revit API allows applications to add UI elements to the ribbon, but only in the Add-Ins tab, and only certain types of ribbon items, as illustrated by the Ribbon SDK sample.</p>
 
 <p>Many thanks to my colleagues Adam Nagy and Saikat Bhattacharya for providing the basis for this summary.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">‚Üê Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

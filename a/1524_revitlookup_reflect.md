@@ -232,7 +232,7 @@ I am also perfectly happy to restore code that was removed and that you would li
 [RevDev Studios](https://twitter.com/revdevstudios) provides custom add-in development services for Revit.
 
 I guess I really ought to add a comment about them to the post
-on [finding a development partner](http://thebuildingcoder.typepad.com/blog/2011/12/finding-a-development-partner.html),
+on [finding a development partner](0696_developer_partner.htm),
 or update that post in general.
 
 
@@ -252,7 +252,7 @@ above causes two warnings `CS0168` in `CollectorExtElement.cs` saying, "The vari
   }
 </pre>
 
-However, you should [never, ever, catch all exceptions](http://thebuildingcoder.typepad.com/blog/2016/04/how-to-distinguish-redundant-rooms.html#3).
+However, you should [never, ever, catch all exceptions](1417_distinguish_rooms.html#3).
 
 Andy very kindly fixed that as well,
 submitting [pull request #23 &ndash; catching proper exceptions for reflection invocation](https://github.com/jeremytammik/RevitLookup/pull/23).

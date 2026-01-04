@@ -28,7 +28,7 @@ Basically, that requires the following steps
 ### BCF API and Manually Setting Up an Add-In
 
 The time is overdue to migrate
-the [Visual Studio Revit Add-In Wizards](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20) to
+the Visual Studio Revit Add-In Wizards *(link unavailable)* to
 Revit 2017.
 
 This time, instead of a simple flat migration like in previous years, I decided to [set up a new Visual Studio C# .NET Revit add-in project manually](#3), by hand, completely from scratch, just to see whether anything significant changed since I did that last, and to ensure that the wizard is really using all the required Visual Studio settings.
@@ -148,4 +148,4 @@ The final working version presented above after fixing the initial problems with
 in [release 2017.0.0.4](https://github.com/jeremytammik/RvtBcfApiExampleClient/releases/tag/2017.0.0.4).
 
 As said, next I will use the generated files to update
-the [Visual Studio Revit add-in wizard](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.20) for Revit 2017.
+the Visual Studio Revit add-in wizard *(link unavailable)* for Revit 2017.

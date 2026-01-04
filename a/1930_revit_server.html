@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - access revit server docs
@@ -71,15 +102,15 @@ on <a href="https://forums.autodesk.com/t5/revit-api-forum/how-do-i-invoke-the-r
 I want to call the base interface methods, like <code>download</code>... can you provide an example?</p>
 <p><strong>Answer:</strong> Maybe some of these can help:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/11/au-classes-on-python-ui-server-and-framework-apis.html">AU Classes on Python, UI, Server and Framework APIs</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/08/the-revit-server-rest-api.html">The Revit Server REST API</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/08/revit-server-api-access-and-vbscript.html">Revit Server API Access and VBScript</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/12/saving-a-new-central-file-to-revit-server.html">Saving a New Central File to Revit Server</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/01/rest-post-request-to-revit-server-2014.html">REST POST Request to Revit Server 2014</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/08/accessing-a-revit-server-central-model-path.html">Accessing a Revit Server Central Model Path</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/08/revit-server-thumbnail-requires-redistributable.html">Revit Server Thumbnail Requires Redistributable</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2016/03/pi-day-meeting-ski-tours-and-revit-server-bar-separator.html">Pi Day, Meeting, Ski Tour, Revit Server Bar Separator</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2017/02/revitserverapilib-truss-members-and-layers.html">Revit Server API Lib, Truss Members and Layers</a></li>
+<li><a href="0865_python_ui_server_api.htm">AU Classes on Python, UI, Server and Framework APIs</a></li>
+<li><a href="0993_revit_server_rest_api.htm">The Revit Server REST API</a></li>
+<li><a href="1009_revit_server_soap_vbs.htm">Revit Server API Access and VBScript</a></li>
+<li><a href="1077_save_central_to_server.htm">Saving a New Central File to Revit Server</a></li>
+<li><a href="1095_post_to_revit_server.htm">REST POST Request to Revit Server 2014</a></li>
+<li><a href="1190_rvt_server_central.htm">Accessing a Revit Server Central Model Path</a></li>
+<li><a href="1201_rvt_server_thumbnail.htm">Revit Server Thumbnail Requires Redistributable</a></li>
+<li><a href="1413_pi_adn_revit_server.html">Pi Day, Meeting, Ski Tour, Revit Server Bar Separator</a></li>
+<li><a href="1522_revitserverapilib.html">Revit Server API Lib, Truss Members and Layers</a></li>
 </ul>
 
 <p><strong>Response:</strong> Thanks for your solution, your answer helped me a lot; after reading these articles, I still have a question: after getting the Revit Server file path, how do I open the file by Revit API?</p>
@@ -187,3 +218,11 @@ It worked for us; maybe you could consider it as an alternative. </p>
 <li>Determine its full path, e.g., <em>/Users/jta/Library/Group Containers/UBF8T346G9.Office/Outlook/Outlook 15 Profiles/Main Profile/Files/S0/1/MimeFiles/{63B52B5D-54C5-8647-A59F-0D190331F697}/</em></li>
 <li>Go to that directory and copy the mime text files to their final destination</li>
 </ul>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,8 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <h3>Managing SDK Samples</h3>
 
 <p>As mentioned in the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/08/the-revit-sdk-c.html">previous post</a>,
+<a href="0004_revit_sdk_contents.htm">previous post</a>,
 
 the Revit SDK samples provide the biggest knowledge base on how to solve any specific programming task in Revit. The API documentation RevitAPI.chm lists the available classes and their properties and methods, and the API diagram in 'Revit API Diagram.dwf' shows their class hierarchy, but there is no information there about how they work together to provide specific functionality. The getting started document 'Getting Started Revit API 2009.doc' does provide some background information about the Revit API. A draft Revit API user manual explaining in more depth how to solve specific tasks is available from ADN for Revit 2008. Unfortunately, this document has not yet been completed and added to the standard SDK documentation.</p>
 
@@ -17,3 +47,12 @@ the Revit SDK samples provide the biggest knowledge base on how to solve any spe
 <p>Luckily, additional tools are included in the Revit SDK which help us address each of these two steps easily for all samples in one fell swoop: a Visual Studio solution file <strong>SDKSamples2009.sln</strong> is provided which allows us to compile all samples in one go. In addition, it provides a good base for debugging and searching the entire source code. Secondly, one of the samples provided, <strong>RvtSamples</strong>, is an external application which creates a hierarchical menu substructure within the Revit menu enabling us to load any one of the other samples. As an external application, it also needs to be added to the Revit.ini file to inform Revit to load it, but requires only a couple of lines instead of hundreds.</p>
 
 <p>Finally, one useful resource providing an overview over all Revit SDK samples is the read-me file SamplesReadMe.htm, which was added in the Revit 2009 release. Whereas each individual sample has its own read-me file with detailed information and instructions on the sample, the global read-me file provides an overview and classification in several different ways: by skill level, release version, and category, such as database access, new object creation, geometry. This can be used to decide where to start looking for the material of most interest you you.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -44,32 +75,32 @@ nick b Re: Hope all is going well - I have a Revit API question
 <p>Here are a couple of examples of retrieving room boundaries that we discussed in the past:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/11/accessing-room-data.html">Accessing room data</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/08/graphically-display-area-boundary-loops.html">Graphically display area boundary loops</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/08/room-in-area-predicate-via-point-in-polygon-test.html">Room in area predicate via point in polygon test</a></li>
-<li>Analysis of Room and Space 3D geometry in the <a href="http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2012-api.html">Revit 2012 API news</a></li>
-<li>New GetBoundarySegments method in the <a href="http://thebuildingcoder.typepad.com/blog/2013/03/whats-new-in-the-revit-2013-api.html">Revit 2013 API news</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/03/revit-2014-api-and-room-plan-view-boundary-polygon-loops.html#3">Retrieving plan view room boundary polygon loops</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/09/room-neighbours.html">Room neighbours</a></li>
+<li><a href="0682_accessing_room_data.htm">Accessing room data</a></li>
+<li><a href="0808_display_area_boundary.htm">Graphically display area boundary loops</a></li>
+<li><a href="0810_room_in_area.htm">Room in area predicate via point in polygon test</a></li>
+<li>Analysis of Room and Space 3D geometry in the <a href="0903_whats_new_2012.htm">Revit 2012 API news</a></li>
+<li>New GetBoundarySegments method in the <a href="0904_whats_new_2013.htm">Revit 2013 API news</a></li>
+<li><a href="0916_2014_api_room_loops.htm#3">Retrieving plan view room boundary polygon loops</a></li>
+<li><a href="1014_room_neighbours.htm">Room neighbours</a></li>
 </ul>
 
 <p>We also looked at several ray shooting examples to discover neighbouring elements, e.g.</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/01/identifying-wall-compound-layers-and-parts.html">Identifying wall compound layers and parts</a></li>
-<li>The <a href="http://thebuildingcoder.typepad.com/blog/2012/03/revit-2013-and-its-api.html#3">ReferenceIntersector class</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/10/wall-footing-relationship-revisited.html">Wall footing relationship</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/10/uiview-windows-coordinates-referenceintersector-and-my-own-tooltip.html">UIView, Windows Coordinates, ReferenceIntersector and My Own Tooltip</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/03/supporting-columns.html#2">Determining the columns supporting a beam</a> by
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/supporting-columns.html#8">ray casting</a>
+<li><a href="0701_wall_layers_and_parts.htm">Identifying wall compound layers and parts</a></li>
+<li>The <a href="0740_revit_2013_api.htm#3">ReferenceIntersector class</a></li>
+<li><a href="0838_wall_footing.htm">Wall footing relationship</a></li>
+<li><a href="0840_wincoord_tooltip.htm">UIView, Windows Coordinates, ReferenceIntersector and My Own Tooltip</a></li>
+<li><a href="0915_2014_supporting_columns.htm#2">Determining the columns supporting a beam</a> by
+<a href="0915_2014_supporting_columns.htm#8">ray casting</a>
 </li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/07/football-and-space-adjacency-for-heat-load-calculation.html#3">Space adjacency for heat load calculation</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2013/09/room-neighbours.html">Room neighbours</a></li>
+<li><a href="0983_space_adjacency.htm#3">Space adjacency for heat load calculation</a></li>
+<li><a href="1014_room_neighbours.htm">Room neighbours</a></li>
 </ul>
 
 <p>Note that the recent
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/09/room-neighbours.html">
+<a href="1014_room_neighbours.htm">
 room neighbour</a> discussion
 
 belongs to both of these two groups and is actually very similar to the bounding element sample we discuss here.</p>
@@ -517,3 +548,12 @@ Happy to provide all this info for the Blog. =)
 
 -->
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

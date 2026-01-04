@@ -71,7 +71,7 @@ to [migrate Revit Worksharing models from BIM 360 Team to BIM 360 Docs &ndash; p
 In his own words:
 
 Revit 2022 was officially released on April 8th, 2021
-with [a host of new features](https://thebuildingcoder.typepad.com/blog/2021/04/revit-2022-released.html).
+with [a host of new features](1899_rvt_2022.html).
 
 Support for saving a Revit worksharing central model to the cloud is one important enhancement in the Revit 2022 API, using the method
 

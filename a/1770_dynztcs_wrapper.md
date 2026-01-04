@@ -172,7 +172,7 @@ Cf. also [how to load assembly from stream](https://stackoverflow.com/questions/
 The add-in manager reads the DLL file from disk, converts it to a memory stream, and uses that to load the .NET code into the .NET environment. Therefore, .NET never gets to see or touch (or lock) the DLL file.
 
 This approach has also been used to implement frameworks
-enabling [debug and continue functionality for Revit add-ins](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.49).
+enabling debug and continue functionality for Revit add-ins *(link unavailable)*.
 
 
 ####<a name="4"></a> How to Become a Successful Freelancer

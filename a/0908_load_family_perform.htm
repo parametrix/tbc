@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -13,7 +44,7 @@
 
 <p>Since we are into the topic of family loading performance anyway, after yesterdays discussion on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/sweep-family-performance-enhancement.html">
+<a href="0907_sweep_performance.htm">
 efficient sweep creation</a>,
 
 here is another interesting discussion with some useful family loading and symbol filtering benchmarking results and observations by Thomas Jarzyna and an in-depth analysis of the effects of converting a filtered element collector to a .NET collection by Scott Conover:</p>
@@ -50,7 +81,7 @@ I have a lot of different families and even more symbols, so to keep the project
 
 <p>I described a
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/01/timer-code-for-benchmarking.html">
+<a href="0704_benchmarking.htm">
 simple benchmarking system</a> that
 
 I would use in a Revit add-in in lack of anything more sophisticated.
@@ -62,10 +93,10 @@ I would use in a Revit add-in in lack of anything more sophisticated.
 <p>Here are two different implementation examples checking whether a family has already been loaded, and loading it otherwise, for
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/06/creating-and-inserting-an-extrusion-family.html#3">
+<li><a href="0596_create_extrusion_fam.htm#3">
 Creating and inserting an extrusion family</a></li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/08/structural-concrete-setout-point-add-in.html#6">
+<li><a href="0806_setout_points.htm#6">
 Structural concrete setout points</a></li>
 </ul>
 
@@ -133,7 +164,7 @@ They are already very interesting.
 
 <p>A call to ToElements definitely costs some performance, since it allocates an entirely new generic .NET collection and copies all the elements across from the Revit filtered element collector, as I mentioned discussing
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/09/findelement-and-collector-optimisation.html">
+<a href="0832_find_element_optimise.htm">
 FindElement and collector optimisation</a>.
 
 <p>I am surprised and interested (and was initially a little disappointed) to hear that the subsequent iteration over the .NET collection is measurably faster than the Revit collector, though.
@@ -191,3 +222,12 @@ Normally, only certain specialized applications such as multiple data extraction
 Caching data needed for multiple things will be better &ndash; always &ndash; but premature if there’s no need to have such a cache at all.
 
 <p>Note that the built-in collections on Document (.WallTypes, etc.) &ndash; which are becoming obsolete in future versions &ndash; use FilteredElementCollector as their base; there is no caching done there either, and no real advantage to them other than saving the coding effort of building the collector and filters.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

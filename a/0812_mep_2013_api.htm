@@ -1,23 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Updated Revit MEP 2013 Material</h3>
 
 <p>I presented the Revit MEP API at the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/06/devcamp-day-two.html#5">
+<a href="0779_devcamp_day_2.htm#5">
 AEC DevCamp</a> in 
 
 June.
 In preparation for that, I provided a quick 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/05/the-revit-2013-mep-api-and-external-services.html">
+<a href="0762_mep_2013.htm">
 Revit 2013 MEP API overview</a> and 
 
 migrated and more fully described the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/05/the-adn-mep-sample-adnrme-for-revit-mep-2013.html">
+<a href="0763_adnrme_mep_2013.htm">
 AdnRme sample application</a>.
 
 I will be presenting on this topic again at
@@ -43,7 +74,7 @@ Here is the completed overview:
 <p>Routing preferences choose the first symbol in a rule list matching the given criteria. To ensure that a certain symbol is chosen for a given scenario, you can either set appropriate size criteria, or temporarily re-order the rules using the RemoveRule and AddRule methods.
 <p>Programmatic use of routing preferences is demonstrated by 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/03/new-revit-2013-sdk-samples.html#3">
+<a href="0742_new_sdk_samples.htm#3">
 RoutingPreferenceTools</a> SDK sample. 
 
 <a name="4"></a>
@@ -71,7 +102,7 @@ RoutingPreferenceTools</a> SDK sample.
 <p>The new ReferenceIntersector class provides a simpler access to geometric ray-tracing analysis.
 <p>Finally, a new 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/05/the-revit-2013-mep-api-and-external-services.html#3">
+<a href="0762_mep_2013.htm#3">
 external services framework</a> has been put into place. It wraps external service functionality, which can be used to enable encapsulation and replacement of various calculation and analysis workflows, providing a basis for future MEP calculations and structural code checking. It is already in place and fully functional, but not yet used, so no examples are yet provided.
 
 <!--
@@ -86,3 +117,12 @@ C:\a\doc\revit\au\2012\doc\CP4108_rme_api_ppt.pdf
 <a href="file:///C:/a/doc/revit/au/2012/doc/CP4108_rme_api_ppt.pdf">presentation</a> and
 
 <a href="file:///C:/a/doc/revit/au/2012/doc/CP4108_rme_api.pdf">handout document</a>.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

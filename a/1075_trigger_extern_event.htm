@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>Triggering Immediate External Event Execution</h3>
@@ -12,16 +43,16 @@
 <a href="http://adndevblog.typepad.com/aec/2013/07/tricks-to-force-trigger-idling-event.html">
 trick to trigger the Idling event</a>
 
-(<a href="http://thebuildingcoder.typepad.com/blog/2013/07/curve-length-idling-units-and-revitpythonshell.html#3">potential SetRaiseWithoutDelay workaround</a>)
+(<a href="0985_curve_idling_unit.htm#3">potential SetRaiseWithoutDelay workaround</a>)
 
 to force an
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/12/replacing-an-idling-event-handler-by-an-external-event.html#8">
+<a href="1074_roomedit_extern_event.htm#8">
 immediate execution of my external event</a>.</p>
 
 <p>I also added a comment from Guy Robinson on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/12/replacing-an-idling-event-handler-by-an-external-event.html#10">Revit requiring focus</a> that
+<a href="1074_roomedit_extern_event.htm#10">Revit requiring focus</a> that
 
 had me worried for a moment.</p>
 
@@ -46,7 +77,7 @@ had me worried for a moment.</p>
 
 <p>Guy mentions
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/12/replacing-an-idling-event-handler-by-an-external-event.html#10">Revit requiring focus</a>.</p>
+<a href="1074_roomedit_extern_event.htm#10">Revit requiring focus</a>.</p>
 
 <p>That can easily be achieved using the Windows API SetForegroundWindow provided by user32.dll.</p>
 
@@ -107,7 +138,7 @@ had me worried for a moment.</p>
 <p>With these three extra lines in place, Revit reacts immediately to my external event Raise.
 This is also reflected in the log file (compare with the previous version
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/12/replacing-an-idling-event-handler-by-an-external-event.html#8">
+<a href="1074_roomedit_extern_event.htm#8">
 waiting for Revit to react</a>):</p>
 
 <pre>
@@ -164,3 +195,12 @@ release 2014.0.0.19</a>.
 <p>Anyway, I urgently need to get some sleep now before the Milano DevDay conference, due to begin in just a very few hours...</p>
 
 <p>Again, wish me luck, guys.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

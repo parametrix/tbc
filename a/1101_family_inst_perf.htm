@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -38,10 +69,10 @@
 
 <p><strong>Answer:</strong> Yes, this is absolutely possible. You can create a separate view for each element, on the fly or permanently. You can set up that view completely as you wish, e.g. for the desired orientation and cut planes. In that view, you can hide all other elements and generate a plan of the single object of interest. I presented examples of using this technique to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/01/export-walls-and-floors-to-sat.html">
+<a href="0698_export_wall_floor_sat.htm">
 export walls and floors to individual SAT files</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/12/driving-cnc-fabrication-and-shared-parameters.html">
+<a href="1080_exportcncfab.htm">
 generate DXF files for CNC fabrication of wall parts</a>.</p>
 
 
@@ -50,8 +81,8 @@ generate DXF files for CNC fabrication of wall parts</a>.</p>
 <p><strong>Answer:</strong> Yes, setting up the correct references keeps the dimensioning up to date.
 If you wish to apply other automatic adjustments, you can achieve that using the
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.31">
-dynamic model updater framework DMU</a>,
+<span class="unavailable-link">
+dynamic model updater framework DMU</span>,
 
 as demonstrated by the DynamicModelUpdate associative section view SDK Sample.</p>
 
@@ -86,11 +117,11 @@ Kiwi Codes Project Browser</a> demo.</p>
 
 <p><strong>Answer:</strong> This is theoretically possible but extremely hard to accomplish, and you would basically be fighting the system instead of making proper use of it. I totally understand where you are coming from, though. In traditional CAD programming, you get used to having total control and implementing exactly what you need for yourself. In Revit, you should try to forget about all that, especially when
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/10/porting-an-autocad-application.html">porting an AutoCAD application</a>.
+<a href="0842_port_acad_app.htm">porting an AutoCAD application</a>.
 
 You really need to understand the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/02/bim-versus-free-geometry-and-product-training.html">difference between BIM versus free geometry</a>
+<a href="0723_spark_learning.htm">difference between BIM versus free geometry</a>
 
 before embarking upon a Revit application project.
 Make sure you have proper in-depth product training and really understand the customer needs and optimal best practice workflows.</p>
@@ -145,7 +176,7 @@ ParseFromStableRepresentation methods on the Reference class.
 <p><strong>Answer:</strong> One easy way to see all the data you are interested in at a glance is to create separate variables for them.
 Also, a very powerful way to debug and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html">
+<a href="1057_db_explor_python_sh.htm">
 interact intimately with the model and API simultaneously</a> is
 
 to use the Revit Python or Ruby scripting shells.</p>
@@ -155,21 +186,21 @@ to use the Revit Python or Ruby scripting shells.</p>
 
 <p><strong>Answer:</strong> Please look at the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/01/lots-of-clouds.html#6">RevitLookup update on GitHub</a>.
+<a href="1094_clouds.htm#6">RevitLookup update on GitHub</a>.
 
 It includes extended functionality for snooping of geometry, FormatOptions and RevitLinkInstances.
 
 I also developed some own tools in that direction, e.g. the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/geosnoop-net-boundary-curve-loop-visualisation.html">
+<a href="0924_geo_snoop.htm">
 GeoSnoop .NET boundary curve loop visualisation</a> tool
 
 used for my room editor
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-and-furniture-loops-using-symbols.html">
+<a href="0936_room_loops_symbols.htm">
 room and furniture loops</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/12/security-framing-cross-section-analyser-and-rex.html">
+<a href="1076_framing_xsec_analyse.htm">
 structural framing cross sections</a>.
 
 You will probably have to develop some of you own as well to achieve exactly what you need.
@@ -191,7 +222,7 @@ I hope you implement the in a fashion generic enough to be useful and shareable 
 <p><strong>Answer:</strong> Currently, the only way to modify geometry in the fashion you describe in the project environment is the use of void cuts.
 Here is an overview of some of the available
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5">3D Boolean operation and element cutting</a> functionality.</p>
+<span class="unavailable-link">3D Boolean operation and element cutting</span> functionality.</p>
 
 
 <p><strong>11)</strong> We understand that is possible to create complex families based on the parametric values and formulas that take into consideration parameters. Using instance parameters we can manipulate the geometry of each instance of that family types &ndash; one simple example is this
@@ -211,7 +242,7 @@ I encountered that issue myself and am pretty sure it has been resolved.
 Even if not, all you have to do is save the RFA file and load the family from there, just as you say.
 I implemented code to handle both situations to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/06/creating-and-inserting-an-extrusion-family.html">create and insert an extrusion family</a>.
+<a href="0596_create_extrusion_fam.htm">create and insert an extrusion family</a>.
 
 I recently tested the FreeFormElement SDK sample again and did not observe any such issue.</p>
 
@@ -222,10 +253,10 @@ I recently tested the FreeFormElement SDK sample again and did not observe any s
 In a structural model, the structural analysis support information may return this.
 For a generic solution, you can use ray casting or element filtering based on proximity, e.g. to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2012/09/filter-for-touching-beams-using-solid-intersection.html">
+<a href="0823_filter_touching_beam.htm">
 filter for touching beams using solid intersection</a> or
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/supporting-columns.html#2">
+<a href="0915_2014_supporting_columns.htm#2">
 determine the columns supporting a beam</a>.</p>
 
 
@@ -235,7 +266,7 @@ determine the columns supporting a beam</a>.</p>
 The initial tool of choice for such exploration is RevitLookup and the BimChecker.
 For more
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html">
+<a href="1057_db_explor_python_sh.htm">
 intimately interact with the model and API</a> at
 
 the same time, you could turn to the
@@ -262,7 +293,7 @@ If you would like it to vary, you will need to use different types for the diffe
 
 <p><strong>17)</strong> Can we create parts of a FootPrintRoof to obtain the layer geometry, similarly as you demonstrate to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/10/retrieving-detailed-wall-layer-geometry.html">retrieve detailed wall layer geometry</a>?</p>
+<a href="0666_wall_layer_geom.htm">retrieve detailed wall layer geometry</a>?</p>
 
 <p><strong>Answer:</strong> I would assume that the slab can be separated into parts, just like a wall.</p>
 
@@ -280,8 +311,17 @@ If you would like it to vary, you will need to use different types for the diffe
 Here are some more discussions related to performance handling large numbers of family instances and adding Boolean operations to them:</p>
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/03/performance-profiling.html">Performance Profiling</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/07/beam-maker-using-a-void-extrusion-to-cut.html">Beam Maker Using a Void Extrusion to Cut</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2011/06/boolean-operations-and-instancevoidcututils.html">Boolean Operations and InstanceVoidCutUtils</a></li>
+<li><a href="0332_performance_profiling.htm">Performance Profiling</a></li>
+<li><a href="0412_beam_maker.htm">Beam Maker Using a Void Extrusion to Cut</a></li>
+<li><a href="0600_instance_void_cut.htm">Boolean Operations and InstanceVoidCutUtils</a></li>
 </ul>
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

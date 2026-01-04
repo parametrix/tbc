@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -16,7 +47,7 @@
 
 by Swapnil Chaudhary of 
 
-<a href="">Neilsoft Limited</a> 
+<a href=">Neilsoft Limited</a> 
 
 how to use some intelligence and trigonometry instead of brute force and API calls 
 
@@ -77,10 +108,10 @@ Here are three to start with, in order of increasing purely personal preference:
 <p>You can determine the bottom face of the beam by querying the beam for its solid, iterating over its faces, and searching for the face whose normal vector has a minimal Z value, i.e. points downward the most.
 I provided source code samples implementing this for the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/08/bottom-face-of-a-wall.html">
+<a href="0203_wall_bottom_face.htm">
 bottom</a> and
 
-<a href="http://thebuildingcoder.typepad.com/blog/2011/12/top-faces-of-sloped-wall-update.html">
+<a href="0692_top_faces_of_wall.htm">
 top faces of a wall</a>.
 
 <p>You can then project the beam location line end points onto that face using the Face.Project method to obtain the desired bottom line end points.
@@ -149,7 +180,7 @@ The desired points are given by p + v and q + v.
 
 <p>I used a similar calculation to determine the wall width or thickness vector 'w' to display the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/wall-compound-layers.html">
+<a href="0038_wall_layers.htm">
 wall compound layers</a>,
 
 except that it is horizontal, i.e. has a zero Z component, instead of lying in the plane P, with a minimal (negative) Z component.
@@ -190,3 +221,12 @@ the Host parameter on the family document owner family property, which stores th
 <p>Note that if you have a face-based family <b>instance</b>, you can query its Host and HostFace properties to retrieve the host element and a reference to the hosting face, respectively.
 
 <p>Two more interesting methods to explore in this context are the FamilyCanConvertToFaceHostBased and ConvertFamilyToFaceHostBased methods provided by the FamilyUtils class.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

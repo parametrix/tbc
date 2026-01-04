@@ -53,7 +53,7 @@ that the Hauslabjoch mummy [Ötzi](https://en.wikipedia.org/wiki/%C3%96tzi) was
 found and climbed the [Finailspitze (3514 m)](https://en.wikipedia.org/wiki/Fineilspitze),
 [Weißkugel (3739 m)](https://en.wikipedia.org/wiki/Wei%C3%9Fkugel) and
 Fluchtkogel (3500 m) in splendid conditions
-([high resolution](http://thebuildingcoder.typepad.com/img/588_finailspitze_jeremy.jpg) [^](/p/2018/2018-03-24_skitour_venter_runde/thomas/588_finailspitze_jeremy.jpg)):
+(high resolution *(link unavailable)* [^](/p/2018/2018-03-24_skitour_venter_runde/thomas/588_finailspitze_jeremy.jpg)):
 
 <center>
 <img src="img/588_finailspitze_jeremy.jpg" alt="Jeremy on the Finailspitze summit in Austria" width="1182"/>
@@ -77,7 +77,7 @@ We are considering three possible implementations of Dynamo on the Cloud, and wo
 
 As you may have heard already, Autodesk is well down the path
 developing [Forge Design Automation for Revit](http://au.autodesk.com/au-online/classes-on-demand/class-catalog/classes/year-2017/autocad/sd124720#chapter=0),
-aka [Revit I/O](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28b).
+aka Revit I/O *(link unavailable)*.
 
 This is Revit as an 'engine' on the cloud.  No user interface, aka 'headless' &ndash; an engine you can drive using the Revit API we have today.  We are currently working on moving Forge Design Automation for Revit from private to public beta.
 

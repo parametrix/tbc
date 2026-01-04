@@ -77,7 +77,7 @@ a different language than the one used to generate it.
 [Dynamo ](https://forum.dynamobim.com) is
 a separate environment using Python for programming that talks to the Revit API and also adds its own functionality.
 
-[The Revit API getting started material](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2) lists
+The Revit API getting started material *(link unavailable)* lists
 several other learning resources.
 
 My personal opinion:
@@ -88,7 +88,7 @@ My personal opinion:
 Almost all the official Revit SDK samples, Internet sample code and The Building Coder samples are in C#. 
 
 By the way: please try to utterly forget AutoLISP and AutoCAD and all its APIs when learning Revit API,
-because [Revit and its API is different](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.41).
+because Revit and its API is different *(link unavailable)*.
 
 Please also learn as much as possible about Revit and BIM philosophy before you try to start programming, or nothing will make any sense at all.
 
@@ -108,9 +108,9 @@ One of the easiest languages to get started with is Python, IMHO.
 
 Some old pointers to related resources:
 
-- [A .NET Language Learning Resource](http://thebuildingcoder.typepad.com/blog/2009/07/a-net-language-learning-resource.html)
-- [Cairo and Free .NET Books](http://thebuildingcoder.typepad.com/blog/2010/10/cairo-and-free-net-books.html)
-- [C# and .NET Little Wonders](http://thebuildingcoder.typepad.com/blog/2010/11/c-and-net-little-wonders.html)
+- [A .NET Language Learning Resource](0188_learning_net.htm)
+- [Cairo and Free .NET Books](0457_cairo_and_net_books.htm)
+- [C# and .NET Little Wonders](0485_cs_net_wonders.htm)
 
 A good understanding of event-driven programming is very helpful, since the Revit API is entirely event driven.
 
@@ -120,7 +120,7 @@ And while it's really good, there's certainly nothing related to Revit at all.
 
 I've really wanted to be able to create customisations for Revit for some time and really want to focus on it to get to a point where I can create, even some rudimentary programs.
 
-**Answer:** How did you find the [Revit API getting started information](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2)?
+**Answer:** How did you find the Revit API getting started information *(link unavailable)*?
 
 **Response:**  After quite some time, here is the path I’ve taken in pursuit of learning the Revit API:
 

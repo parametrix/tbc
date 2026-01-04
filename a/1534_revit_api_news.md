@@ -13,7 +13,7 @@
   https://www.youtube.com/watch?v=7haXE4oOgZk&list=PL4CYqBFEfhpJ5oh_vZzqpD_8mIpFLk5yB&index=2
   https://www.youtube.com/watch?v=7haXE4oOgZk
   The section discussing the Revit API news begins at [12:45](https://www.youtube.com/watch?v=7haXE4oOgZk&t=765s).
-  To learn more about Revit API basics, please refer to the [discussion and overview of getting started material](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2﻿).
+  To learn more about Revit API basics, please refer to the discussion and overview of getting started material *(link unavailable)*.
 
 RevitLookup and DevDays Online API News #RevitAPI @AutodeskRevit #aec #bim #dynamobim @AutodeskForge http://bit.ly/devdays2016online
 
@@ -77,11 +77,11 @@ As said, I extracted and slightly edited the Revit API news portion of the DevDa
 Here is the link to that, plus the supporting material:
 
 - [Revit API News DevDays Online webinar recording](https://adn.autodesk.io/uploads/file/revit_2018_api_news/index.html) with TOC
-- Slide deck: [PDF](http://thebuildingcoder.typepad.com/devday/2016/Revit_API_2018.pdf)
+- Slide deck: PDF *(link unavailable)*
 and on [SlideShare](https://www.slideshare.net/JeremyTammik1/revit-2018-api-news-73083190)
 
 To learn more about Revit API basics, please refer to
-the [discussion and overview of getting started material](http://thebuildingcoder.typepad.com/blog/about-the-author.html#2﻿).
+the discussion and overview of getting started material *(link unavailable)*.
 
 For the sake of completeness, I am also adding the slide deck contents here:
 
@@ -294,9 +294,9 @@ Finally, to round off this exciting forward-looking excursion with something dow
 tool [RevitLookup](https://github.com/jeremytammik/RevitLookup) has
 been significantly restructured in the past few weeks to use `Reflection` and reduce code duplication:
 
-- [Using `Reflection` for cross-version compatibility](http://thebuildingcoder.typepad.com/blog/2017/02/revitlookup-using-reflection-for-cross-version-compatibility.html)
-- [Basic clean-up of the new version](http://thebuildingcoder.typepad.com/blog/2017/02/revitlookup-with-reflection-cleanup.html)
-- [Restore access to extensible storage data](http://thebuildingcoder.typepad.com/blog/2017/02/revitlookup-extensible-storage-restored.html#3)
+- [Using `Reflection` for cross-version compatibility](1524_revitlookup_reflect.html)
+- [Basic clean-up of the new version](1529_revitlookup_reflect.html)
+- [Restore access to extensible storage data](1531_revitlookup_estore.html#3)
 
 After adding the latter fixes related to extensible storage,
 Alexander Ignatovich, [@CADBIMDeveloper](https://github.com/CADBIMDeveloper), aka Александр Игнатович,

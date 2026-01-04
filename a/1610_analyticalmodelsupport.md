@@ -39,7 +39,7 @@ My end goal is to select a beam and retrieve the element id of the elements its 
 I have been able to do this by checking location intersection of all other beams, but this scales by `n^2` based on the number of beams for the check.
  
 I read the article 
-on [finding connected structural elements](http://thebuildingcoder.typepad.com/blog/2011/01/finding-connected-structural-elements.html), 
+on [finding connected structural elements](0508_connected_rst_elements.htm), 
 but I'm confused on the actual implementation of it.
 
 Has anybody come across a working example showing how to

@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <title>The Building Coder</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" type="text/css" href="3dwc.css"/>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true" defer="defer"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -33,10 +64,10 @@ on <a href="http://forums.autodesk.com/t5/revit-api/anormal-modification-of-elem
 <h4><a name="3"></a>Answer</h4>
 <p>First of all, here are some previous discussions on the relationship between the unique id and the IFC GUID:</p>
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/02/uniqueid-dwf-and-ifc-guid.html">UniqueId, DWF and IFC GUID</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/06/ifc-guid-algorithm-in-c.html">IFC GUID Algorithm in C#</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2012/09/ifc-guid-generation-and-uniqueness.html">IFC GUID Generation and Uniqueness</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2014/07/ifc-guid-algorithm-update-and-family-modification.html">IFC GUID Algorithm Update and Family Modification</a></li>
+<li><a href="0104_uniqueid_dwf_ifc_guid.htm">UniqueId, DWF and IFC GUID</a></li>
+<li><a href="0396_ifc_guid_cs.htm">IFC GUID Algorithm in C#</a></li>
+<li><a href="0819_ifc_guid.htm">IFC GUID Generation and Uniqueness</a></li>
+<li><a href="1177_ifc_guid_fami_modi.htm">IFC GUID Algorithm Update and Family Modification</a></li>
 </ul>
 <p>In them, we explain that the GUID generation routines have an internal cache that prevents duplicate GUIDs from being generated. In IFC, these functions are called once per element, and then a call to the <code>ExporterIFCUtils.EndExportInternal</code> method clears this cache for the next IFC export. Please note that the first time you call these routines, they have consistent values from previous sessions.</p>
 <p>For now, there are two workarounds:</p>
@@ -58,3 +89,11 @@ If the <code>EpisodeId</code> is reset on an undo of a delete, that would explai
 <p>I looked at your sample files and note a couple of cases that could be improved.
 In general, though, most of the GUIDs are consistent and unique as per rules 1 and 2.
 We will improve this over time to reduce the noise in 3, but it is very difficult to remove all of the noise without a lot of extra storage in the Revit file.</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

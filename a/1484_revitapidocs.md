@@ -39,7 +39,7 @@ Here are today's Revit API and Forge news items:
 
 #### <a name="2"></a>Updated Online Revit API Docs
 
-Gui Talarico updated the [online Revit API documentation](http://thebuildingcoder.typepad.com/blog/2016/08/online-revit-api-docs-and-convex-hull.html#2)
+Gui Talarico updated the [online Revit API documentation](1457_online_doc_convex_hull.html#2)
 
 <center>
 <span style="font-size: 120%; font-weight: bold">

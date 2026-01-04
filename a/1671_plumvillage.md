@@ -30,7 +30,7 @@ Here are some personal notes from my experiences there, followed by a Revit API 
 
 I am back from my July vacation.
 
-[As planned](http://thebuildingcoder.typepad.com/blog/2018/07/vacation-and-multi-version-revit-add-in-template.html), 
+[As planned](1670_brassac.html), 
 I visited the Buddhist monastery [Plum Village](https://plumvillage.org) near Bordeaux, founded
 by the Vietnamese monk and Zen master [Thich Nhat Hanh](https://plumvillage.org/about/thich-nhat-hanh).
 

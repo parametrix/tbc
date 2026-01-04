@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - back to the basics:
@@ -159,7 +190,7 @@ def get_panel_schedule_sheet_instances(sort_by_name = False):
 
 <p><strong>Answer:</strong> First, I think you can completely eliminate the call to <code>ToElements</code>. 
 It is a waste of memory and computation time, as I have pointed out repeatedly in the past, e.g., 
-in <a href="https://thebuildingcoder.typepad.com/blog/2016/04/how-to-distinguish-redundant-rooms.html#2">How to Distinguish Redundant Rooms</a>. </p>
+in <a href="1417_distinguish_rooms.html#2">How to Distinguish Redundant Rooms</a>. </p>
 <p>Now, to address your question, you can simply implement a common method <code>get_elements_of_category_and_class</code> taking a category and a class argument. 
 Pass in either one or the other or both and execute <code>OfClass</code> and <code>OfCategory</code> checks on the filtered element collector, either one or the other or both, skipping evaluation of <code>null</code>-valued arguments.</p>
 <h4><a name="4"></a> XYZ Trigonometry</h4>
@@ -236,7 +267,7 @@ The results were surprisingly mixed:</p>
 <p>Jeremy: Do you know The Building Coder blog?</p>
 <p>ChatGPT: I'm sorry, but I am not aware of The Building Coder blog. As a large language model trained by OpenAI, my knowledge is based on the text that has been fed into my training data. I do not have the ability to browse the internet or access additional information outside of what has been provided to me during my training. I apologize if I am unable to provide you with the information you are looking for. Is there anything else I may be able to assist you with?</p>
 <p>Jeremy: Can you read The Building Coder blog 
-at <a href="https://thebuildingcoder.typepad.com/">thebuildingcoder.typepad.com</a> so 
+at <span class="unavailable-link">thebuildingcoder.typepad.com</span> so 
 that you later have access to that information?</p>
 <p>ChatGPT: As a language model trained by OpenAI, I do not have the ability to browse the internet or access information outside of what has been provided to me during my training. I am only able to provide information and respond to questions based on the text that has been fed into my training data. I apologize if I am unable to provide you with the information you are looking for. Is there anything else I may be able to assist you with?</p>
 <p>Jeremy: Can I provide you with additional training text to expand your knowledge in a specific domain?</p>
@@ -454,3 +485,11 @@ enabling type and play by turning text into scenes, images, games, animations li
 <br/>
 <img src="img/chatgpt_ai_ethics_paragraph.png" alt="ChatGPT AI ethics paragraph" title="ChatGPT AI ethics paragraph" width="800"/> <!-- 1676 × 1702 pixels -->
 </center></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

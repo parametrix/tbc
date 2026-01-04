@@ -57,7 +57,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 ### Utility Classes and Constraining Stirrups
 
 Taking a look at
-yet another [overlooked Revit API utility class](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5,52),
+yet another overlooked Revit API utility class *(link unavailable)*,
 rebar constraints, and learning basics of power, energy, entropy and information:
 
 - [ParameterFilterUtilities](#2)
@@ -68,7 +68,7 @@ rebar constraints, and learning basics of power, energy, entropy and information
 ####<a name="2"></a> ParameterFilterUtilities
 
 Another example of the useful functionality provided by
-the [Revit API `*Utils` classes that are often overlooked](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.52) was
+the Revit API `*Utils` classes that are often overlooked *(link unavailable)* was
 highlighted by Samuel Kreuz' question and answer in the thread on using `ParameterFilterUtilities`
 to [get all possible `FilterRule` parameters](https://forums.autodesk.com/t5/revit-api-forum/get-all-possible-filterrule-parameters/m-p/10936268):
 
@@ -127,7 +127,7 @@ Many thanks to Samuel for raising this question and confirming the solution!
 ####<a name="3"></a> Constrain Stirrup to Host Cover
 
 I had a fruitful conversation with Kevin Richard Anggrek a year ago
-on [implementing valid rebar stirrup constraints](https://thebuildingcoder.typepad.com/blog/2021/03/boundary-elements-and-stirrup-constraints.html#2).
+on [implementing valid rebar stirrup constraints](1896_stirrup_constraint.html#2).
 
 Kevin now very kindly summarised some further advice and aspects in this area answering a new request in his thread 
 on [constraining stirrups to the cover of the host element](https://forums.autodesk.com/t5/revit-api-forum/problem-with-constraining-stirrups-to-the-cover-of-the-host/td-p/10045899).

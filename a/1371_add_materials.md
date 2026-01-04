@@ -40,19 +40,19 @@ Fill Pattern Viewer Fix and Add Materials 2016 #revitapi #bim #aec #3dwebcoder #
 ### Fill Pattern Viewer Fix and Add Materials 2016
 
 [@kfpopeye](https://github.com/kfpopeye) discovered and fixed an issue with complex fill patterns in the venerable
-old [WPF Fill Pattern Viewer Control](http://thebuildingcoder.typepad.com/blog/2014/04/wpf-fill-pattern-viewer-control.html) by
+old [WPF Fill Pattern Viewer Control](1127_fill_pattern_wpf.htm) by
 Victor Chekalin and Alexander Ignatovich.
 
 The fill pattern viewer control is part of
 the [AddMaterials](https://github.com/jeremytammik/AddMaterials) Revit add-in
 to load new materials into a project based on a list defined in an Excel spreadsheet:
 
-- [Original implementation for Revit 2011](http://thebuildingcoder.typepad.com/blog/2010/08/add-new-materials-from-list.html#2)
-- [Reimplementation for Revit 2014](http://thebuildingcoder.typepad.com/blog/2014/03/adding-new-materials-from-list-updated.html)
-- [Improved error messages and reporting](http://thebuildingcoder.typepad.com/blog/2014/03/adding-new-materials-from-list-updated-again.html)
-- [WPF FillPattern viewer control](http://thebuildingcoder.typepad.com/blog/2014/04/wpf-fill-pattern-viewer-control.html)
-- [Check for already loaded materials](http://thebuildingcoder.typepad.com/blog/2014/04/getting-serious-adding-new-materials-from-list.html)
-- [FillPattern viewer benchmarking](http://thebuildingcoder.typepad.com/blog/2014/04/wpf-fill-pattern-viewer-control-benchmark.html)
+- [Original implementation for Revit 2011](0431_add_materials.htm#2)
+- [Reimplementation for Revit 2014](1116_add_materials.htm)
+- [Improved error messages and reporting](1122_add_materials.htm)
+- [WPF FillPattern viewer control](1127_fill_pattern_wpf.htm)
+- [Check for already loaded materials](1129_add_materials.htm)
+- [FillPattern viewer benchmarking](1140_fill_pattern_benchmark.htm)
 
 Says kfpopeye:
 

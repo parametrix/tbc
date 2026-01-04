@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
@@ -5,6 +35,7 @@
 <!--
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript"></script>
 -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -25,8 +56,8 @@ Setting up RvtSamples for Revit 2017
 
 <h3>RvtSamples for Revit 2017</h3>
 <p>Prompted by</p>
-<p>Dan Tartaglia <a href="http://thebuildingcoder.typepad.com/blog/2016/04/revit-2017-revitlookup-and-sdk-samples.html#comment-2633447580">commented</a> on
-the <a href="http://thebuildingcoder.typepad.com/blog/2016/04/revit-2017-revitlookup-and-sdk-samples.html">Revit 2017 SDK sample compilation</a>, saying:</p>
+<p>Dan Tartaglia <a href="1426_revit_2017.html#comment-2633447580">commented</a> on
+the <a href="1426_revit_2017.html">Revit 2017 SDK sample compilation</a>, saying:</p>
 <blockquote>
 <p>A couple of other issues to note about the SDK examples (RvtSamples).</p>
 <ol>
@@ -66,7 +97,7 @@ the <a href="http://thebuildingcoder.typepad.com/blog/2016/04/revit-2017-revitlo
 <p>While writing this, I notice that I have to install something like <code>CopySourceAsHtml</code> in my Visual Studio 2015 IDE before I can start describing my steps here.</p>
 <p>First things first.</p>
 <p>It was not completely trivial
-to <a href="http://thebuildingcoder.typepad.com/blog/2014/04/migrating-roomeditorapp-to-revit-2015.html#5">enable CopySourceAsHtml for Visual Studio 2012</a>.</p>
+to <a href="1137_roomeditorapp_2015.htm#5">enable CopySourceAsHtml for Visual Studio 2012</a>.</p>
 <p>I tried to use a similar procedure for Visual Studio 2015, e.g.:</p>
 <pre>
 &gt; md "C:\Users\tammikj\Documents\Visual Studio 2015\Addins"
@@ -170,7 +201,7 @@ What are the risks?
 <p><center>
 <img src="img/revit_2017_rvt_samples_05.png" alt="DeleteObject VB.NET sample error" width="366">
 </center></p>
-<p>That one, and several other VB.NET samples as well, have always caused some strange issues for me, as I already <a href="http://thebuildingcoder.typepad.com/blog/2013/04/compiling-the-revit-2014-sdk.html#9">pointed out in previous releases</a>.</p>
+<p>That one, and several other VB.NET samples as well, have always caused some strange issues for me, as I already <a href="0937_compile_2014_sdk.htm#9">pointed out in previous releases</a>.</p>
 <!--- Its path is specified as `...\DeleteObject\CS\bin\Debug\DeleteObject.dll`, but for some reason, all the VB.NET samples end up in a differnt location on my system, as I already [pointed out in previous releases](http://thebuildingcoder.typepad.com/blog/2013/04/compiling-the-revit-2014-sdk.html#9). -->
 
 <p>I ignored that one, and other VB.NET issues as well.</p>
@@ -272,3 +303,11 @@ Revit.SDK.Samples.FabricationPartLayout.CS.StretchAndFit
 <p>I hope this will save some effort on your part.</p>
 <p>Good luck and have fun with the Revit 2017 API!</p>
 <p>Lots more to come on this subject!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -150,7 +150,7 @@ another recording, 63 MB in size.
 
 Here is a quick analysis of the word count of the blog posts so far.
 
-I started [using the Markdown blog post format](http://thebuildingcoder.typepad.com/blog/2015/08/markdown-the-fusion-accelerator-revisions-and-bulk-upgrade.html#2) in August 2015.
+I started [using the Markdown blog post format](1351_md_fusion_rev_upgr.html#2) in August 2015.
 
 Before then, they were all hand written in HTML and stored  with a filename extension of `htm`.
 

@@ -80,7 +80,7 @@ Here is the [diff to the previous release](https://github.com/jeremytammik/the_b
 
 In doing so, I noticed they already did include another nice DMU sample in the module `CmdElevationWatcher` that reacts to elevation view creation.
 It compares the use of DMU versus the `DocumentChanged` event to track that happening, discussed in the article
-on [`DocumentChanged` versus Dynamic Model Updater](https://thebuildingcoder.typepad.com/blog/2012/06/documentchanged-versus-dynamic-model-updater.html).
+on [`DocumentChanged` versus Dynamic Model Updater](0783_doc_change_dmu.htm).
 
 Here is my slightly modified version of your code:
 

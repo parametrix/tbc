@@ -1,15 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="http://thebuildingcoder.typepad.com/google-code-prettify/run_prettify.js"></script>
 <!-- <script src="google-code-prettify/run_prettify.js"></script> -->
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <h3>My Cloud-Based 2D Editor Implementation Status</h3>
 
 <p>Continuing the research and development for my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/cloud-mobile-extensible-storage-data-use-in-schedules.html#3">
+<a href="0912_cm_estorage_schedule.htm#3">
 cloud-based round-trip 2D Revit model editing project</a>,
 
 here are some issues I tackled since my last report:
@@ -28,7 +59,7 @@ here are some issues I tackled since my last report:
 
 <p>After struggles with and resolution of the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-editor-project-overview-and-couchdb-configuration.html#4">
+<a href="0932_room_edit_couchdb_conf.htm#4">
 same origin policy</a>,
 
 I discover that I need to use
@@ -112,7 +143,7 @@ Intended audience is programmers with interest in cloud-based and mobile computi
 
 <p>I described the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-and-furniture-loops-using-symbols.html#2">
+<a href="0936_room_loops_symbols.htm#2">
 room editor database structure</a> consisting
 
 of the model, level and room hierarchy.</p>
@@ -121,7 +152,7 @@ of the model, level and room hierarchy.</p>
 
 <p>Two of the main tasks listed in my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-and-furniture-loops-using-symbols.html#10">
+<a href="0936_room_loops_symbols.htm#10">
 last to-do list</a> were:</p>
 
 <ul>
@@ -161,7 +192,7 @@ also provides a useful list of additional references.</p>
 
 <p>As
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/04/room-editor-project-overview-and-couchdb-configuration.html#6">
+<a href="0932_room_edit_couchdb_conf.htm#6">
 said</a>,
 
 I can use <a href="http://kan.so">Kanso</a> to maintain and install the database, push the views and upload my documents in JSON format to the local CouchDB database 'roomedit' using commands such as these:</p>
@@ -335,12 +366,12 @@ db.getView('room_loops', 'models',
 <a href="http://adndevblog.typepad.com/cloud_and_mobile/jeremy-tammik.html">
 Jeremy</a>
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html">
-Tammik</a>.</i></p>
+<span class="unavailable-link">
+Tammik</span>.</i></p>
 
 <p>Continuing the research and development for my
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/03/cloud-mobile-extensible-storage-data-use-in-schedules.html#3">
+<a href="0912_cm_estorage_schedule.htm#3">
 cloud-based round-trip 2D Revit model editing project</a>,
 
 I updated the project description to emphasise more strongly that I am using pure client-side scripting to display and edit my graphical data, so there is nothing to implement or install at all on the mobile device, beyond testing that my server-side scripts really do their job.
@@ -369,3 +400,12 @@ I updated the project description to emphasise more strongly that I am using pur
 <center>
 <iframe width="420" height="315" src="http://www.youtube.com/embed/-FjXWokH1Ss" frameborder="0" allowfullscreen></iframe>
 </center>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

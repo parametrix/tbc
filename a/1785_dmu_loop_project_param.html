@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" type="text/javascript"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -87,7 +118,7 @@ My end goal here is to get the family whose shape handle has been pulled, loop t
 <p>There are different levels of triggers and updaters. You may want to modify those so that the changes you make do not re-trigger your updater.</p>
 <p>Alternatively, you might be able to add a switch to your updater Execute so that it is only active once and deactivated when it gets called a second time in the same transaction, to step out of the infinite loop.</p>
 <p>Maybe some of
-the <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.31">other DMU samples</a> will
+the <span class="unavailable-link">other DMU samples</span> will
 help resolve the problem.</p>
 <p>Frank shares a simpler suggestion:</p>
 <p>To prevent the loop, I usually test to see if the new value differs from the old value:</p>
@@ -101,7 +132,7 @@ help resolve the problem.</p>
 
 <p>Ever so many thanks to Frank for his endless flow of extremely insightful answers!</p>
 <h4><a name="4"></a> New Forge and Design Automation Samples</h4>
-<p>I do not discuss <a href="https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55">Forge Design Automation for Revit</a> or
+<p>I do not discuss <span class="unavailable-link">Forge Design Automation for Revit</span> or
 DA4R as much as I would like, since there are still more than enough issues to be handled dealing with the pure Revit desktop API, and my other Forge Platform Development colleagues are more specialised on the web-based issues.</p>
 <p>I would still like to highlight the continuous succession
 of <a href="https://forge.autodesk.com/categories/code-samples">new Forge samples</a>,
@@ -110,3 +141,11 @@ and a <a href="https://forge.autodesk.com/blog/design-automation-revit-parameter
 <p><center>
 <img src="img/user_da_http.png" alt="Design Automation server communication" width="600">
 </center></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

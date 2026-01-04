@@ -114,7 +114,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 ### API Context, Background Process, PostCommand
 
 We recently addressed aspects of interacting with
-the [Revit API from a modeless context](https://thebuildingcoder.typepad.com/blog/2024/08/modeless-add-ins-and-pdf-printing-speed.html).
+the [Revit API from a modeless context](2050_modeless.html).
 Let's continue in the same vein, and also look at AI and nuclear power news bites:
 
 - [Background process and Revit API](#2)
@@ -161,7 +161,7 @@ This cannot be achieved in a background process, since the element lives in the 
 
 I disagree.
 The Building Coder has discussed related issues with great frequency, and they have also come up a lot in previous discussions here in the forum; a background process is basically a modeless context, so the interaction between those and the BIM are covered by the discussions
-on [Idling and external events for modeless access and driving Revit from outside](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+on Idling and external events for modeless access and driving Revit from outside *(link unavailable)*.
 
 ####<a name="3"></a> Revit Background Processor
 
@@ -188,15 +188,15 @@ If the code is fast, the user will never notice, and if the code takes a long ti
 I did quite a lot of work implementing similar functionality for
 my [RoomEditorApp](https://github.com/jeremytammik/RoomEditorApp) way back in 2013.
 
-There, I did indeed encounter and analyse certain [RoomEditorApp Idling issues](https://thebuildingcoder.typepad.com/blog/2013/11/roomeditorapp-idling-and-benchmarking-timer.html).
+There, I did indeed encounter and analyse certain [RoomEditorApp Idling issues](1062_roomeditorapp.htm).
 
 I hit some limitations of the `Idling` event, especially controlling the timing and frequency of interaction with Revit, affecting how strongly the external code affected and blocked the Revit UI.
-In the end, I resolved them by [replacing an Idling event handler by an external event](https://thebuildingcoder.typepad.com/blog/2013/12/replacing-an-idling-event-handler-by-an-external-event.html).
+In the end, I resolved them by [replacing an Idling event handler by an external event](1074_roomedit_extern_event.htm).
 
 You may be able to implement significant improvements to your approach by following suit.
 
 I suggest you check out some of the other discussions on this topic in The Building Coder topic group
-on [`Idling` and external events for modeless access and driving Revit from outside](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28)
+on `Idling` and external events for modeless access and driving Revit from outside *(link unavailable)*
 and the related posts listed in
 the [FireRatingCloud documentation](https://github.com/jeremytammik/FireRatingCloud).
 
@@ -224,7 +224,7 @@ Roman [@Nice3point](https://t.me/nice3point) Karpovich, aka Роман Карп�
 on [how to know if Revit API is in context](https://forums.autodesk.com/t5/revit-api-forum/how-to-know-if-revit-api-is-in-context/m-p/12964099#M80866n):
 
 The previously suggested solutions
-for [determining Revit API context](https://thebuildingcoder.typepad.com/blog/2024/03/api-context-aps-toolkit-and-da4r-debugging.html#2) throw an exception when the API context is not available.
+for [determining Revit API context](2029_check_context.html#2) throw an exception when the API context is not available.
 
 The preview version
 of [RevitToolkit](https://github.com/Nice3point/RevitToolkit) provides

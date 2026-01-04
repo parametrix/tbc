@@ -192,7 +192,7 @@ Here is my code:
 All the samples I've found so far appear to be written as add-ins.
 
 I found one single sample showing an `IUpdater` in a macro, 
-for [wrangling revisions with Ruby](https://thebuildingcoder.typepad.com/blog/2014/02/wrangling-revisions-with-ruby.html).
+for [wrangling revisions with Ruby](1106_ruby_revisions.htm).
 Unfortunately, that's a bit too complex for me to follow at this point, especially in Ruby.
 
 I was hoping to find an RVT with a vanilla C# `IUpdater` macro embedded, similar to the SDK *Revit_Macro_Samples.rvt*.

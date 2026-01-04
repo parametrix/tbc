@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css"></p>
 <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-<p></head></p>
+<p>  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head></p>
 <!---
 
 - https://forums.autodesk.com/t5/revit-ideas/change-project-units-between-imperial-and-metric-with-one-button/idc-p/11852849#M50519
@@ -112,20 +143,20 @@ for <a href="https://github.com/jeremytammik/UnitMigration/releases/tag/2021.0.0
 and <a href="https://github.com/jeremytammik/UnitMigration/releases/tag/2023.0.0.1">Revit 2023</a> that
 can be downloaded and installed right out of the box.</p>
 <h4><a name="3"></a> What is UV?</h4>
-<p>Angelo Mastroberardino <a href="https://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html#comment-6144595024">commented</a>
-on <a href="https://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html">Planes, Projections and Picking Points</a> and
+<p>Angelo Mastroberardino <a href="1202_plane_proj_pick.htm#comment-6144595024">commented</a>
+on <a href="1202_plane_proj_pick.htm">Planes, Projections and Picking Points</a> and
 the <a href="https://www.revitapidocs.com/2021.1/77ca18ef-783e-9db5-a37a-2d76f637d1a1.htm">revitapidocs <code>ComputeDerivatives</code> method</a> asking:</p>
 <p><strong>Question:</strong> What is the point <code>UV</code>?
 What is its reference frame and origin?
 Are these <code>UV</code> the same (x,y) coordinates of any <code>XYZ</code> points of the <code>Face.EdgeLoops</code> without the z-coordinate?</p>
 <p><strong>Answer:</strong> The best place to start understanding UV coordinates is Scott Conover's 2010 AU class
-on <a href="https://thebuildingcoder.typepad.com/blog/2010/01/analyse-building-geometry.html">Analysing Building Geometry</a>,
+on <a href="0275_abg.htm">Analysing Building Geometry</a>,
 spread out over ten or so blog posts.</p>
 <p>Read that and all will be clear.
 Drilling down into further detail and practical application, here is an article explaining
-the <a href="https://thebuildingcoder.typepad.com/blog/2011/03/converting-between-2d-uv-and-3d-xyz-coordinates.html">relationship between 2D UV and 3D XYZ coordinates</a>.</p>
+the <a href="0549_convert_2d_uv_3d_xyz.htm">relationship between 2D UV and 3D XYZ coordinates</a>.</p>
 <p>To round off, here is a nice debugging explanation showing how you
-can <a href="https://thebuildingcoder.typepad.com/blog/2020/12/dynamo-book-and-texture-bitmap-uv-coordinates.html#2">use AVF to document and label the UV coordinates</a>.</p>
+can <a href="1880_texture_uv_coord.html#2">use AVF to document and label the UV coordinates</a>.</p>
 <h4><a name="4"></a> What is Fuzz?</h4>
 <p>Confusion around comparison of floating point values persists, and came up again in the question
 on <a href="https://forums.autodesk.com/t5/revit-api-forum/analytical-node-vs-analytical-member-coordinate-accuracy-issue/m-p/11848971">analytical node vs analytical member coordinate accuracy</a>:</p>
@@ -138,7 +169,7 @@ In fact, anyone experienced in the comparison of real floating-point numbers doe
 That is standard.
 The Building Coder quite regularly repeats the <a href="https://www.google.com/search?q=fuzz&amp;as_sitesearch=thebuildingcoder.typepad.com">need for fuzz</a>.</p>
 <p>In the case of Revit, matters are even worse than in some other areas, since the Revit database represents property values and dimensions such as length using <code>float</code> instead of <code>double</code>.
-Hence, the need to <a href="https://thebuildingcoder.typepad.com/blog/2009/07/think-big-in-revit.html">think big in Revit</a> and ignore every deviation below a certain (quite large) tolerance as irrelevant to the BIM, any "length below about 0.004 feet, i.e. ca. 0.05 inches or 1.2 millimetres".</p>
+Hence, the need to <a href="0176_think_big.htm">think big in Revit</a> and ignore every deviation below a certain (quite large) tolerance as irrelevant to the BIM, any "length below about 0.004 feet, i.e. ca. 0.05 inches or 1.2 millimetres".</p>
 <p>Personally, when I retrieve vertex or coordinate data from Revit, I simply round it to the closest millimetre while retrieving it. I add every vertex or coordinate data item as a key to a dictionary. Every new item is looked up in the dictionary and considered equal to the existing item if it lies within a millimetre of it.</p>
 <p>So, in my case, A==B if A-B is smaller than 1 mm.</p>
 <h4><a name="5"></a> What is get_Parameter and get_Geometry?</h4>
@@ -356,3 +387,11 @@ is currently being observed (surprisingly) in the LLMs:</p>
 <p><center>
 <img src="img/emergence_in_snowflake.jpg" alt="Emergence in snowflakes" title="Emergence in snowflakes" width="420"/> <!-- Pixel Height: 1,080 Pixel Width: 845 -->
 </center></p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

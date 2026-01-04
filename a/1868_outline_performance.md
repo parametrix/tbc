@@ -120,12 +120,12 @@ Is there are right way to achieve this with the Revit API?
 
 However, there may be many possibilities to optimise your code.
 The Building Coder provides various utility functions that may help.
-For instance, to [determine the bounding box of an entire family](https://thebuildingcoder.typepad.com/blog/2017/03/family-bounding-box-and-aec-hackathon-munich.html#3).
+For instance, to [determine the bounding box of an entire family](1538_fam_bb_aec_hack.html#3).
 Many more in [The Building Coder samples `Util` module](https://github.com/jeremytammik/the_building_coder_samples/blob/master/BuildingCoder/BuildingCoder/Util.cs).
 Search there for "bounding box".
 I am sure they can be further optimised as well for your case.
 For instance, you may be able to extract all the `X` coordinates from all the individual elements' bounding box `Max` values and use a generic `Max` function to determine their maximum in one single call instead of comparing them one by one.
-[Benchmark your code](https://thebuildingcoder.typepad.com/blog/2012/01/timer-code-for-benchmarking.html) to discover optimisation possibilities and analyse their effect on the performance. 
+[Benchmark your code](0704_benchmarking.htm) to discover optimisation possibilities and analyse their effect on the performance. 
 
 **Response:** Thanks to Jeremy for advice and input on this issue.
 I published my final result below and did some research on performance and accuracy.
@@ -529,11 +529,11 @@ out [Wykobi](https://www.wykobi.com), an
 
 ####<a name="4"></a> Set Base and Survey Clipped and Unclipped
 
-As we pointed out in the discussion on [survey and project base points](https://thebuildingcoder.typepad.com/blog/2012/11/survey-and-project-base-point.html) in 2012, *the clipped/unclipped state of the base and survey points could not be set via the API. You could pin them using the Element.Pinned property*... back then.
+As we pointed out in the discussion on [survey and project base points](0861_survey_base_pnt.htm) in 2012, *the clipped/unclipped state of the base and survey points could not be set via the API. You could pin them using the Element.Pinned property*... back then.
 
 Happily and finally, Revit 2021.1 exposed a new property `Clipped` for the base point,
-cf. [Clipped state of BasePoint](https://thebuildingcoder.typepad.com/blog/2020/08/revit-20211-sdk-and-whats-new.html#6.3.2)
-in [What's New in the Revit 2021.1 API](https://thebuildingcoder.typepad.com/blog/2020/08/revit-20211-sdk-and-whats-new.html).
+cf. [Clipped state of BasePoint](1858_whats_new_2021_1.html#6.3.2)
+in [What's New in the Revit 2021.1 API](1858_whats_new_2021_1.html).
 
 So, starting from this version, you have the ability to get and set the clipped state for the Survey Point.
 For Project Base Point, the property is read-only and will always return false, since the PBP clipped state has been removed.

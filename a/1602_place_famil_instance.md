@@ -45,24 +45,24 @@ If you clean up your code every year or two and remove all API usage that causes
 
 If you run into any problems, just search the documentation on *What's New in the Revit API*; most modifications are listed there, including instructions on how to update the code to handle them:
 
-- [What's New in the Revit 2010 API](http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2010-api.html)
-- [What's New in the Revit 2011 API](http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2011-api.html)
-- [What's New in the Revit 2012 API](http://thebuildingcoder.typepad.com/blog/2013/02/whats-new-in-the-revit-2012-api.html)
-- [What's New in the Revit 2013 API](http://thebuildingcoder.typepad.com/blog/2013/03/whats-new-in-the-revit-2013-api.html)
-- [What's New in the Revit 2014 API](http://thebuildingcoder.typepad.com/blog/2013/04/whats-new-in-the-revit-2014-api.html)
-- [What's New in the Revit 2015 API](http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html)
-- [What's New in the Revit 2016 API](http://thebuildingcoder.typepad.com/blog/2015/04/whats-new-in-the-revit-2016-api.html)
-- [What's New in the Revit 2017 API](http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html)
-- [What's New in the Revit 2017.1 API](http://thebuildingcoder.typepad.com/blog/2016/11/whats-new-in-the-revit-20171-api.html)
-- [What's New in the Revit 2018 API](http://thebuildingcoder.typepad.com/blog/2017/04/whats-new-in-the-revit-2018-api.html)
+- [What's New in the Revit 2010 API](0901_whats_new_2010.htm)
+- [What's New in the Revit 2011 API](0902_whats_new_2011.htm)
+- [What's New in the Revit 2012 API](0903_whats_new_2012.htm)
+- [What's New in the Revit 2013 API](0904_whats_new_2013.htm)
+- [What's New in the Revit 2014 API](0938_whats_new_2014.htm)
+- [What's New in the Revit 2015 API](1141_whats_new_2015.htm)
+- [What's New in the Revit 2016 API](1311_whats_new_2016.htm)
+- [What's New in the Revit 2017 API](1428_whats_new_2017.html)
+- [What's New in the Revit 2017.1 API](1496_whats_new_2017_1.html)
+- [What's New in the Revit 2018 API](1551_whats_new_2018.html)
 - Revit 2018.1 API:
-    - [Revit 2018.1 and the Visual Materials API](http://thebuildingcoder.typepad.com/blog/2017/08/revit-20181-and-the-visual-materials-api.html)
-    - [Revit 2018.1.1 API documentation](http://thebuildingcoder.typepad.com/blog/2017/09/revit-201811-fixes-cropbox-setting.html)
+    - [Revit 2018.1 and the Visual Materials API](1576_sdk_2018_1.html)
+    - [Revit 2018.1.1 API documentation](1586_2018_1_1.html)
 
 As an example, let's look at the migration of
-the [PlaceInstances add-in implementing text file driven automatic placement of family instances](http://thebuildingcoder.typepad.com/blog/2013/10/text-file-driven-automatic-placement-of-family-instances.html) from
+the [PlaceInstances add-in implementing text file driven automatic placement of family instances](1038_place_family_inst.htm) from
 Revit 2014 to Revit 2018, prompted
-by [two comments](http://thebuildingcoder.typepad.com/blog/2013/10/text-file-driven-automatic-placement-of-family-instances.html#comment-3619372844) by
+by [two comments](1038_place_family_inst.htm#comment-3619372844) by
 Campbell and Renzo:
 
 **Question:**

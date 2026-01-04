@@ -1,8 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <p><head>
 <title>The Building Coder</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" type="text/css" href="3dwc.css"/>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true" defer="defer"></script>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head></p>
 <!---
 
@@ -35,13 +66,13 @@ online <a href="http://help.autodesk.com/view/RVT/2017/ENU">Revit Help</a>.</p>
 using <a href="https://www.google.com">Google</a>
 or <a href="https://duckduckgo.com">DuckDuckGo</a>.</p>
 <p>With the notable exception
-of <a href="http://thebuildingcoder.typepad.com/blog/2014/01/revit-api-help-online-and-hiking-on-la-palma.html">Revit 2014</a>,
+of <a href="1092_revit_api_help_online.htm">Revit 2014</a>,
 <a href="http://revitapisearch.com">revitapisearch.com</a>,
 implemented by Peter Boyer of the Dynamo team.</p>
 <p>Just a few weeks ago, Arif Hanif expressed interest to do the same for Revit 2017 in
-a <a href="http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html#comment-2823075296">couple</a>
-of <a href="http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html#comment-2824265506">comments</a>
-on <a href="http://thebuildingcoder.typepad.com/blog/2016/04/whats-new-in-the-revit-2017-api.html">What's New in the Revit 2017 API</a>.</p>
+a <a href="1428_whats_new_2017.html#comment-2823075296">couple</a>
+of <a href="1428_whats_new_2017.html#comment-2824265506">comments</a>
+on <a href="1428_whats_new_2017.html">What's New in the Revit 2017 API</a>.</p>
 <p>Well, someone beat him to it.</p>
 <p>In
 his <a href="http://forums.autodesk.com/t5/revit-api/bd-p/160">Revit API discussion forum</a> thread
@@ -97,9 +128,9 @@ I tried a JS client side search, similar to what git pages has, but it was crash
 </ol>
 <h4><a name="3"></a>2D Convex Hull Algorithm in C# using <code>XYZ</code></h4>
 <p>Yesterday, I mentioned the convex hull calculation as one option for determining
-the <a href="http://thebuildingcoder.typepad.com/blog/2016/08/vacation-end-forge-news-and-bounding-boxes.html#8">bounding box of selected elements or entire model</a>.</p>
+the <a href="1456_bounding_section_box.html#8">bounding box of selected elements or entire model</a>.</p>
 <p>Maxence replied in
-a <a href="http://thebuildingcoder.typepad.com/blog/2016/08/vacation-end-forge-news-and-bounding-boxes.html#comment-2839904399">comment</a> on
+a <a href="1456_bounding_section_box.html#comment-2839904399">comment</a> on
 that post and provided a convex hull implementation in C#.</p>
 <p>It is a 2D algorithm implementing the <a href="https://en.wikipedia.org/wiki/Gift_wrapping_algorithm">Jarvis march or Gift wrapping algorithm</a>:</p>
 <p>It makes use of an extension method <code>MinBy</code> on the generic <code>IEnumerable</code> class,
@@ -234,3 +265,11 @@ Room nr. '1' named 'Room 1' at (-77.61,15.1,0) with lower left corner (-106.43,-
 in <a href="https://github.com/jeremytammik/the_building_coder_samples">The Building Coder samples</a>
 <a href="https://github.com/jeremytammik/the_building_coder_samples/releases/tag/2017.0.127.10">release 2017.0.127.10</a>.</p>
 <p>Many thanks to Maxence for providing the nice convex hull algorithm implementation!</p>
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -162,16 +193,16 @@ AutoCAD arbitrary axis algorithm</a> and
 
 <!--
 the arbitrary axis algorithm is not really mentioned here after all:
-<a href="http://thebuildingcoder.typepad.com/blog/2008/12/polygon-transformation.html">Polygon Transformation</a>
+<a href="0057_polygon_transformation.htm">Polygon Transformation</a>
 -->
 
 the determination of a normal vector performed by the GetCurveNormal method:</p>
 
 <!-- 0356 0375 0462 -->
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/05/detail-curve-must-be-in-plane.html">Detail curve must be in plane</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/05/model-curve-creator.html">Model curve creator</a></li>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2010/10/plane-normal-and-points-on-plane.html">Plane normal and points on plane</a></li>
+<li><a href="0356_detail_curve_plane.htm">Detail curve must be in plane</a></li>
+<li><a href="0375_model_curve_creator.htm">Model curve creator</a></li>
+<li><a href="0462_points_on_plane.htm">Plane normal and points on plane</a></li>
 </ul>
 
 <p>However, in this case, there is actually no need for all this, because the Revit API provides all we need built-in.</p>
@@ -261,12 +292,12 @@ Given the 3D global XYZ point returned by the reference returned by PickObject, 
 
 <p>To pick the path and name of the family to insert, you can use the .NET OpenFileDialog to select a family definition RFA file as demonstrated by the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/10/text-file-driven-automatic-placement-of-family-instances.html">
+<a href="1038_place_family_inst.htm">
 text file driven automatic placement of family instances</a> example
 
 that uses it to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/10/text-file-driven-automatic-placement-of-family-instances.html">
+<a href="1038_place_family_inst.htm">
 select an input text file</a>.
 
 Once the family definition file is selected, you can load it with the LoadFamily method.
@@ -291,13 +322,13 @@ The first idea that comes to mind is the following:</p>
 
 CmdCollectorPerformance external command is currently set up to call the GetInstancesIntersectingElement method to test and demonstrate use of the ElementIntersectsElementFilter, closely related to the ElementIntersectsSolidFilter, with a detailed analysis of the use and result provided by the discussion on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/11/determining-intersecting-elements-and-continued-futureproofing.html#3">
+<a href="1243_future_proof.htm#3">
 determining all family instances intersecting an element</a>.</p>
 
 <p>Furthermore, The Building Coder provides a whole topic group on various aspects of
 
-<a href="http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.48">
-element intersection and collision detection</a>.</p>
+<span class="unavailable-link">
+element intersection and collision detection</span>.</p>
 
 <p>I added all the code described above to the new method PlaceFamilyInstanceOnFace in the module
 
@@ -324,3 +355,12 @@ Good luck!</p>
 Autodesk Screencasts</a>:
 
 a Screencast is like a screenshot in video form taking a ride-along with the person giving the presentation and seeing click-by-click how it is driven.</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

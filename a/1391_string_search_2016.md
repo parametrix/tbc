@@ -73,7 +73,7 @@ I have been searching for a coding sample or snippet but have been unable to fin
 2. How do I drive this functionality programmatically from outside?
 
 We have already discussed the second question in other threads, and it is addressed in full by The Building Coder topic group
-on [Idling and External Events for Modeless Access and Driving Revit from Outside](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.28).
+on Idling and External Events for Modeless Access and Driving Revit from Outside *(link unavailable)*.
 
 The first question is initially very simple, so I can leave it up to you to flesh out.
 
@@ -86,7 +86,7 @@ In the simplest case, it might just be text notes and their visible text strings
 Possibly you are also interested in other strings that can be found in specific element parameters or elsewhere.
 
 That should all be pretty simple to determine and access, e.g. using RevitLookup or other,
-more [intimate database exploration tools](http://thebuildingcoder.typepad.com/blog/2013/11/intimate-revit-database-exploration-with-the-python-shell.html).
+more [intimate database exploration tools](1057_db_explor_python_sh.htm).
 
 Once you have the extraction functionality up and running to your satisfaction, it should be easy to encapsulate that in a stand-alone function and call it from an external event.
 
@@ -114,10 +114,10 @@ To determine all element types that have visible text appearing on the display, 
 Trial and error, basically, and gathering experience as you go along.
 
 You might also be interested in
-the [StringSearch Plug-in of the Month utility](http://thebuildingcoder.typepad.com/blog/2011/10/string-search-adn-plugin-of-the-month.html) that
+the [StringSearch Plug-in of the Month utility](0667_string_search_potm.htm) that
 I implemented as the  a couple of years ago.
 
-I later [updated and created a GitHub repository](http://thebuildingcoder.typepad.com/blog/2014/12/devdays-github-stl-and-obj-model-import.html#4) for
+I later [updated and created a GitHub repository](1258_devday_git_stl_obj.htm#4) for
 it as well.
 
 It searches for all strings in the model.

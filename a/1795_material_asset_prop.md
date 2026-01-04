@@ -28,7 +28,7 @@
   [Changing material texture path with editScope](https://forums.autodesk.com/t5/revit-api-forum/changing-material-texture-path-with-editscope/m-p/8017578)
   [Render Material Texture Image](https://forums.autodesk.com/t5/revit-api-forum/render-material-texture-image/m-p/8080636)
 
-  [setting material texture path in `EditScope`](https://thebuildingcoder.typepad.com/blog/2019/04/set-material-texture-path-in-editscope.html)
+  [setting material texture path in `EditScope`](1735_editscope_texture.html)
   
 - material and asset access
 Liz Fortune Oct 31st at 7:33 PM
@@ -134,7 +134,7 @@ Here is an overview over some recent issues:
 
 - [Create new material and add texture from file path](https://stackoverflow.com/questions/58414284/revit-api-material-with-texture-from-filepath)
 - [Create new material and add new physical and thermal assets with values](https://forums.autodesk.com/t5/revit-api-forum/create-new-material-and-add-new-physical-and-thermal-assets-with/m-p/7311468)
-- [Setting material texture path in `EditScope`](https://thebuildingcoder.typepad.com/blog/2019/04/set-material-texture-path-in-editscope.html) &ndash; ([discussion forum thread](https://forums.autodesk.com/t5/revit-api-forum/changing-material-texture-path-with-editscope/m-p/8017578), case 14254618)
+- [Setting material texture path in `EditScope`](1735_editscope_texture.html) &ndash; ([discussion forum thread](https://forums.autodesk.com/t5/revit-api-forum/changing-material-texture-path-with-editscope/m-p/8017578), case 14254618)
 
 <!--
 
@@ -143,15 +143,15 @@ Here is an overview over some recent issues:
 14887363 [Obtain Uv-coordinates from texture]
 
 - [Units on the elements, that conform the assets of materials](https://forums.autodesk.com/t5/revit-api-forum/units-on-the-elements-that-conform-the-assets-of-materials/m-p/8593252)
-- [Material asset textures](https://thebuildingcoder.typepad.com/blog/2016/10/list-material-asset-texture-and-forge-webinar-recordings.html)
+- [Material asset textures](1482_material_asset_texture.html)
 - [Render material texture image](https://forums.autodesk.com/t5/revit-api-forum/render-material-texture-image/m-p/8080636), case 14348365
 - [AddMaterials GitHub repository](https://github.com/jeremytammik/AddMaterials) &ndash; add materials from a list of properties defined in Excel
 
 -->
 
 Older discussions are listed in the topic groups
-on [material management and libraries](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.5)
-and [texture bitmap and UV coordinate access](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.42).
+on material management and libraries *(link unavailable)*
+and texture bitmap and UV coordinate access *(link unavailable)*.
 
 
 ####<a name="3"></a> Access to All Material Asset Properties
@@ -257,7 +257,7 @@ To access this data, we used code snippets shared on The Building Coder blog to 
 This code will get you everything for the thermal and structural assets and almost everything for the appearance asset.
 
 [Boris Shafiro's PDF](zip/sd124625_visual_appearance_of_materials_api_boris_shafiro_handout.pdf) from his AU presentation
-on [modifying material visual appearance](https://thebuildingcoder.typepad.com/blog/2017/11/modifying-material-visual-appearance.html)
+on [modifying material visual appearance]( )
 was crucial in figuring out how to touch all the aspects of the appearance asset!
 
 Here is an image I put together [showing mappings for the appearance asset](zip/assets_air_appearance_properties.png):
@@ -298,8 +298,8 @@ They are common for all assets, so they look like the other properties or parame
 ####<a name="6"></a> Determine Full Path to Texture Bitmap
 
 Finally, to round off this collection, here is a result from
-a [comment](https://thebuildingcoder.typepad.com/blog/2016/10/list-material-asset-texture-and-forge-webinar-recordings.html#comment-4442686784)
-on [material asset textures](https://thebuildingcoder.typepad.com/blog/2016/10/list-material-asset-texture-and-forge-webinar-recordings.html):
+a [comment](1482_material_asset_texture.html#comment-4442686784)
+on [material asset textures](1482_material_asset_texture.html):
 
 **Question:** Great tip, but how can we create the full path to the `unifiedbitmap_Bitmap` texture?
 I tried using the `Application` `GetLibraryPaths` method, but the material library is not listed in the dictionary. &nbsp; :(

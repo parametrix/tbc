@@ -127,7 +127,7 @@ Most of the enhancements I made were related to using the official NuGet package
 #### <a name="5"></a>Travel to Athens
 
 Two reasons for the pressure I felt last Friday were the preparations for the upcoming Forge DevCon, and, more imminently, 
-the [Athens Forge meetup and workshop](http://thebuildingcoder.typepad.com/blog/2016/04/room-editor-first-revit-2017-addin-migration.html#1) taking 
+the [Athens Forge meetup and workshop](1430_room_editor_2017.html#1) taking 
 place this week.
 
 Accordingly, I am now in Greece, where I happily and unexpectedly ended up at the Lake Marathon:

@@ -56,7 +56,7 @@ Here are two different aspects of protecting Revit families:
 Often discussed, various solutions suggested.
 
 For example, we discussed one example of a copy protection solution  
-by [simplifying nested family instances](http://thebuildingcoder.typepad.com/blog/2018/06/simplifying-nested-family-instances.html) to
+by [simplifying nested family instances](1663_explode_nested_families.html) to
 protect the intellectual property built into a complex hierarchy of nested family instances by replacing them with a flatter and simpler hierarchy, yet retaining all the relevant non-confidential custom data.
 
 Here is an AUGI discussion from 2009 on the pros and cons
@@ -83,7 +83,7 @@ If you have an algorithm to rebuild your key at will from the current state of t
 - Does the original key exist? If not, alarm.
 - Recompute the current key from the current state of the family. does it match the stored key? If not, alarm.
 
-[Creating your own key](http://thebuildingcoder.typepad.com/blog/2012/03/great-ocean-road-and-creating-your-own-key.html#2) can
+[Creating your own key](0739_create_own_key.htm#2) can
 be useful in numerous ways, so I already discussed this topic and suggested doing so back in 2012.
 
 Therefore, I hope that all the families that you care about are already adequately protected against tampering.

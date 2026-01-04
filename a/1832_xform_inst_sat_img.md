@@ -175,7 +175,7 @@ but instead doing that programmatically/automatically through an add-in.
 In that thread, a suggestion is made to create a decal with the desired image, but this does not seem to be supported through the API.
 
 Another approach I found is
-to [use `PostCommand`](https://thebuildingcoder.typepad.com/blog/2013/10/programmatic-custom-add-in-external-command-launch.html) to
+to [use `PostCommand`](1040_postcommand.htm) to
 create and place decals, but these commands are apparently
 only [executed after exiting the API context](https://knowledge.autodesk.com/support/revit-products/learn-explore/caas/CloudHelp/cloudhelp/2014/ENU/Revit/files/GUID-1C7289DE-8D10-47B5-B6DB-EA1310851C8F-htm.html) and
 only one at a time.
@@ -188,7 +188,7 @@ I'm new to programming for Revit, so it's very possible I've missed something.
 
 I'm running / programming for Revit 2019 on Windows 10.
 
-**Answer:** What about creating a new material, setting its texture path, then making a `TopoSurface` and assigning the material to it, cf. [modifying material visual appearance](https://thebuildingcoder.typepad.com/blog/2017/11/modifying-material-visual-appearance.html)?
+**Answer:** What about creating a new material, setting its texture path, then making a `TopoSurface` and assigning the material to it, cf. [modifying material visual appearance]( )?
 
 I don't know how to adjust the `UV` mapping for the `TopoSurface`, but if it worked, you would see your satellite image in 3D.
 

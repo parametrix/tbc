@@ -20,12 +20,12 @@ These two topics have now met and united, because Andrey added support for that 
 ### Add-In Templates Supporting Edit and Continue
 
 Last week, I presented Andrey
-Bushman's [new Visual Studio templates for Revit add-ins](http://thebuildingcoder.typepad.com/blog/2017/02/new-visual-studio-2015-templates-for-revit-add-ins.html).
+Bushman's [new Visual Studio templates for Revit add-ins](1528_andrey_wizard.html).
 
 Furthermore, we discussed many aspects
-of [edit and continue](http://thebuildingcoder.typepad.com/blog/about-the-author.html#5.49) in
+of edit and continue *(link unavailable)* in
 the past, including the solution to use
-the [Add-in Manager](http://thebuildingcoder.typepad.com/blog/2016/10/ai-edit-and-continue.html#2).
+the [Add-in Manager](1492_edit_continue.html#2).
 
 These two topics have now met and united, because Andrey added support for that and a bunch of other new functionality in
 his [commit](https://github.com/Andrey-Bushman/Revit2017AddInTemplateSet/commit/e1a3ceb811717929b5d758cacd41e9f46917758f):

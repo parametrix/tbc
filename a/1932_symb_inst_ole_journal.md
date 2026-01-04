@@ -214,7 +214,7 @@ I'm new to programming for Revit, so it's very possible I've missed something.
 I'm running / programming for Revit 2019 on Windows 10.
 
 **Answer:** What about creating a new material and setting its texture path as described
-in [modifying material visual appearance](https://thebuildingcoder.typepad.com/blog/2017/11/modifying-material-visual-appearance.html),
+in [modifying material visual appearance]( ),
 then making a `TopoSurface` and assigning the material to it?
 
 I don't know how to adjust the UV mapping for the TopoSurface, but if it worked, you would see your satellite image in 3D.
@@ -436,7 +436,7 @@ However, I can't find a way to determine the view element id, so I don't know wh
 Is there anywhere I could store the view ID, so that I can retrieve it on load? 
 I considered storing it in my own settings file, but that doesn't work if the file gets sent to another user.
 
-**Answer:** This is a prime case for [extensible storage](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.23) in my opinion.
+**Answer:** This is a prime case for extensible storage *(link unavailable)* in my opinion.
 Make a new schema and save the `UniqueId` of the view into it.
 Users will delete that view, though, and if it doesn’t file into the project browser correctly, there will be push back.
 Expect to delete and recreate the view often (even mid-session).

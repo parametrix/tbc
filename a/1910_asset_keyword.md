@@ -72,7 +72,7 @@ Many thanks to  for this very helpful explanation!
 ### Topo from Lines, Asset Keyword and Regeneration
 
 Two [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/bd-p/160) threads
-reinforce the ever-present [need to regenerate](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33),
+reinforce the ever-present need to regenerate *(link unavailable)*,
 the development team clarifies access to various asset keyword properties, and Harry Mattison shares a free tool to create and update a toposurface from a set of model lines:
 
 - [Asset keyword access](#2)
@@ -89,7 +89,7 @@ the development team clarifies access to various asset keyword properties, and H
 **Question:** I have an issue setting a string value to the material appearance asset keyword property.
 In one material, it can be set as expected, but another material returns an error saying, "The input value is invalid for this AssetPropertyString property; Parameter name: value".
 I found the blog article
-on [Material, Physical and Thermal Assets](https://thebuildingcoder.typepad.com/blog/2019/11/material-physical-and-thermal-assets.html) and the internal development ticket *REVIT-170824* which explains that the keyword property on the `Identity` tab is not exposed yet.
+on [Material, Physical and Thermal Assets](1795_material_asset_prop.html) and the internal development ticket *REVIT-170824* which explains that the keyword property on the `Identity` tab is not exposed yet.
 However, I still expect the "keyword" property on the appearance tab to accept a string value.
 In addition, I can see some error message in the journal file when I try to run the code below.
 Is it possible to set the "keyword" property of the appearance asset?
@@ -160,18 +160,18 @@ Here is our understanding of the current situation accessing the keyword propert
 - For keywords under the `Identity` tab, which is the keyword for `Material`, there is currently no API exposed for either `get` or `set`.
 - Keywords under `Appearance` can be both `get` and `set` using the code above.
 - Keywords under `Thermal` and `Structural` can be read using `get`, as described in the article
-on [material, physical and thermal assets](https://thebuildingcoder.typepad.com/blog/2019/11/material-physical-and-thermal-assets.html).
+on [material, physical and thermal assets](1795_material_asset_prop.html).
 `Set` is currently not supported for historical reasons (cf. internal tickets *REVIT-171312* and *REVIT-170824*).
 
 ####<a name="3"></a> Modifying Group Requires Regen
 
 Forgetting or not realising
-the [need to regenerate](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33) and
+the need to regenerate *(link unavailable)* and
 accessing stale data can lead to pretty confusing and challenging problems.
 
 As already noted in some previous examples, certain operations require more than just a call to `Regenerate`, e.g., starting and committing two or more separate transactions in a row.
 Happily, in such cases, they can be assimilated into one single `TransactionGroup`, cf. the additional discussion
-on [handling transactions and transaction groups](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.50).
+on handling transactions and transaction groups *(link unavailable)*.
 
 It took a lengthy discussion with input from a couple of experienced add-in developers to clarify this need in the thread
 on [modifying group in API results in duplicate group](https://forums.autodesk.com/t5/revit-api-forum/modifying-group-in-api-results-in-duplicate-group/m-p/10374430).
@@ -179,7 +179,7 @@ on [modifying group in API results in duplicate group](https://forums.autodesk.c
 ####<a name="4"></a> Modifying Part Material Requires Regen
 
 Another example of 
-the [need to regenerate](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.33) was
+the need to regenerate *(link unavailable)* was
 raised and solved
 by Joseph [@jrtlatta](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/7726218) Latta
 and Richard [@RPThomas108](https://forums.autodesk.com/t5/user/viewprofilepage/user-id/1035859) Thomas in

@@ -23,7 +23,7 @@ Happily, the Revit API provides tools to support that as well
 ### Using an Intersection Filter for Linked Elements
 
 Intersecting elements has always been a hot topic, cf. various previous discussions
-on [3D Booleans, cutting and joining elements](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.30);
+on 3D Booleans, cutting and joining elements *(link unavailable)*;
 intersecting with elements in a linked file is even more challenging.
 
 Happily, the Revit API provides tools to support that as well:
@@ -117,7 +117,7 @@ deals with [getting all associated rebars that attach to a structural element](h
 **Question:** How can I get all associated rebars which attach to a structural element such as a column by picking that?
 
 **Answer:** Picking an element is described in
-the [Revit API getting started material](https://thebuildingcoder.typepad.com/blog/about-the-author.html#2) and
+the Revit API getting started material *(link unavailable)* and
 also demonstrated in [The Building Coder samples](https://github.com/jeremytammik/the_building_coder_samples).
 
 For instance, in the latter, you can check out
@@ -131,8 +131,8 @@ Once you have picked your structural element, use a filtered element collector t
 
 Set it up to retrieve rebar elements only, and add a filter for the column solid:
 
-- [Bounding box filter is always axis aligned](https://thebuildingcoder.typepad.com/blog/2018/04/bounding-box-filter-always-axis-aligned.html)
-- [Using intersection filter with linked file](https://thebuildingcoder.typepad.com/blog/2018/04/using-intersection-filter-with-linked-file.html)
+- [Bounding box filter is always axis aligned](1642_rot_bbfilter_outline.html)
+- [Using intersection filter with linked file](1639_linked_inters_filt.html)
 
 [The Building Coder samples](https://github.com/jeremytammik/the_building_coder_samples)
 includes some examples of using a solid intersection filter, e.g., the [`GetInstancesIntersectingElement` method](https://github.com/jeremytammik/the_building_coder_samples/blob/master/BuildingCoder/BuildingCoder/CmdCollectorPerformance.cs#L1294-L1430) showing

@@ -31,7 +31,7 @@ The interesting part will be to store the results in a cloud database for analys
 A prerequisite for that is a reliable way to identify Revit project documents.
 
 I already explored that topic
-when [starting to implement](http://thebuildingcoder.typepad.com/blog/2015/07/firerating-and-the-revit-python-shell-in-the-cloud-as-web-servers.html#4)
+when [starting to implement](1338_firerating_cloud.htm#4)
 the [FireRatingCloud](https://github.com/jeremytammik/FireRatingCloud) sample, writing
 about [implementing Mongo database relationships](http://the3dwebcoder.typepad.com/blog/2015/07/implementing-mongo-database-relationships.html)
 and [identifying a RVT project](http://the3dwebcoder.typepad.com/blog/2015/07/implementing-mongo-database-relationships.html#2).

@@ -107,7 +107,7 @@ Useful to know, just in case you happen to run into this yourself.
 I just noticed a neat
 [Forge](https://forge.autodesk.com)
 [Design Automation for Revit](https://forge.autodesk.com/en/docs/design-automation/v3/developers_guide/overview)
-or [DA4R](https://thebuildingcoder.typepad.com/blog/about-the-author.html#5.55) sample
+or DA4R *(link unavailable)* sample
 application created by my colleague
 Jaime [@afrojme](https://twitter.com/AfroJme) Rosales,
 [Forge Partner Development](http://forge.autodesk.com):

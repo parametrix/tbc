@@ -82,7 +82,7 @@ For such situations, you would use a viewer or other simplified or read-only acc
 
 For read-only access to a model, you might want to consider using a pure viewer instead, first and foremost something globally accessible like the Forge platform.
 
-I [recently mentioned](https://thebuildingcoder.typepad.com/blog/2022/03/drilling-holes-in-beams-and-other-projects.html#3) my
+I [recently mentioned](1941_family_void.html#3) my
 current [RvtLock3r](https://github.com/jeremytammik/RvtLock3r) side project
 that ensures that certain specified parameter values have not been modified.
 

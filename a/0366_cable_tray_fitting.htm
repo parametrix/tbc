@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 
@@ -15,21 +46,21 @@
 
 <p>In the overview of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/the-revit-mep-2011-api.html">
+<a href="0362_mep_2011_api.htm">
 Revit MEP 2011 API</a>, 
 
 I mentioned that new elements have been introduced to represent cable trays and conduits.
 
 <p>We already had a look at the creation of new conduit elements in the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/pipe-to-conduit-converter.html">
+<a href="0360_p2c.htm">
 pipe to conduit converter</a>. 
 
 <p>The creation of cable tray elements is equally simple, making use of the static Create method on the CableTray class.
 
 <p>This is another example of the 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/05/pipe-to-conduit-converter.html#10">
+<a href="0360_p2c.htm#10">
 new element creation paradigm</a> instead of 
 
 the creation document classAutodesk.Revit.Creation.Document, a second generation API automatically generated with RIDL, the Revit Interface Definition Language.
@@ -366,3 +397,12 @@ It also includes a cleaned up version of the initial code:
 <li>CmdCableTray4 &ndash; connecting the first 'twisted' cable trays from the initial sample code.
 </ul>
 
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

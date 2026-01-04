@@ -78,17 +78,17 @@ make use of its overload taking an IWin32Window argument:
 - `ShowDialog(IWin32Window)` &ndash; Shows the form as a modal dialog box with the specified owner.
 
 This approach was explained back in 2010 in the discussion on setting 
-the [Revit parent window](https://thebuildingcoder.typepad.com/blog/2010/06/revit-parent-window.html).
+the [Revit parent window](0400_revit_parent_window.htm).
 
 Please note that
-the [Revit 2019 API provides direct access to the Revit main window handle](https://thebuildingcoder.typepad.com/blog/2018/08/whats-new-in-the-revit-20191-api.html#3.1.4).
+the [Revit 2019 API provides direct access to the Revit main window handle](1676_whats_new_2019_1.html#3.1.4).
 
 
 #### <a name="3"></a> The Revit 2019 MainWindowHandle API
 
 Here is a brief quote from
-the [Revit 2019 API news](https://thebuildingcoder.typepad.com/blog/2018/08/whats-new-in-the-revit-20191-api.html)
-on the [direct access to the Revit main window handle](https://thebuildingcoder.typepad.com/blog/2018/08/whats-new-in-the-revit-20191-api.html#3.1.4):
+the [Revit 2019 API news](1676_whats_new_2019_1.html)
+on the [direct access to the Revit main window handle](1676_whats_new_2019_1.html#3.1.4):
 
 > <b>1.4. UI API changes</b>
 
@@ -104,7 +104,7 @@ Use these properties instead of System.Diagnostics.Process.GetCurrentProcess().M
 which is no longer a reliable method for retrieving the main window handle starting with Revit 2019.
 
 The change was also pointed out by The Building Coder in October 2017 with
-a [warning that things will change in the next release](https://thebuildingcoder.typepad.com/blog/2017/10/modeless-form-keep-revit-focus-and-on-top.html#10).
+a [warning that things will change in the next release](1591_modeless_focus.html#10).
 
 
 #### <a name="4"></a> Docking System and Multiple Main Window Explanation

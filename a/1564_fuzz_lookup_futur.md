@@ -55,7 +55,7 @@ We continue patrolling the well-trodden paths of BIM, AI, Revit precision and Re
 #### <a name="2"></a>Connected BIM
 
 Last week, I mentioned the
-momentous [AI news](http://thebuildingcoder.typepad.com/blog/2017/06/ai-news-and-sub-transaction-regen.html#2) that
+momentous [AI news](1563_subtrans_regen.html#2) that
 AlphaGo has now conclusively beaten mankind at the game of Go and is retiring from competitive play.
 
 AI is not the only exciting thing happening with computers right now.
@@ -101,13 +101,13 @@ Here are a number of previous discussions of this topic:
 
 <!--- /a/doc/revit/tbc/git/a $ grep -i fuzz *[md] --->
 
-- [Nested Instance Geometry](http://thebuildingcoder.typepad.com/blog/2009/05/nested-instance-geometry.html) and the first implementation of the `XyzEqualityComparer` class &ndash; I implement this container by using a generic dictionary class and attaching an equality comparison class which ensures that almost equal points are regarded as being exactly equal, allowing for some fuzziness due to numerical imprecision... The sorting process requires another fuzzy comparison routine, a `Compare` function which determines whether a given point is larger than, equal to, or smaller than another one, and correspondingly returns 1, 0 or -1.
-- [Top Faces of Sloped Wall](http://thebuildingcoder.typepad.com/blog/2011/07/top-faces-of-wall.html) &ndash; Obviously, like all comparisons of real numbers, that requires us to add a fuzz factor, since real-valued coordinates will almost never be exactly equal.
--[Retrieving Unique Geometry Vertices](http://thebuildingcoder.typepad.com/blog/2012/03/melbourne-day-two.html#2) &ndash; For this, we need to implement a fuzzy method to distinguish between points that really are different, but detect that points that are nearly the same should in fact be treated as identical.
-- [XYZ Vertex Lookup](http://thebuildingcoder.typepad.com/blog/2012/06/obj-model-export-considerations.html#6) &ndash; As discussed so many times in the past, the point comparison has to include some fuzz.
-- [Sort and Orient Curves to Form a Contiguous Loop](http://thebuildingcoder.typepad.com/blog/2013/03/sort-and-orient-curves-to-form-a-contiguous-loop.html) &ndash; Its end point matching comparison relies on the standard Revit precision, which is around one sixteenth of an inch. Since the built-in Revit database length unit is feet, I define the following fuzz factor for that...
-- [Never use Direct Comparison for Floating Point Numbers](http://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html#05) &ndash; I would recommend never doing that, because they could always be off by an infinitesimal amount, in which case the comparison would return false, even if they are almost equal, within the possible precision. You need to use fuzzy comparison for floating point numbers. Look at this discussion on real number equality testing.
-- [Extracting Unique Building Element Geometry Vertices](http://thebuildingcoder.typepad.com/blog/2015/04/back-from-easter-holidays-and-various-revit-api-issues.html#4) &ndash; implement a fuzzy point equality comparer and then add the points as keys to a dictionary.
+- [Nested Instance Geometry](0134_nested_instance_geo.htm) and the first implementation of the `XyzEqualityComparer` class &ndash; I implement this container by using a generic dictionary class and attaching an equality comparison class which ensures that almost equal points are regarded as being exactly equal, allowing for some fuzziness due to numerical imprecision... The sorting process requires another fuzzy comparison routine, a `Compare` function which determines whether a given point is larger than, equal to, or smaller than another one, and correspondingly returns 1, 0 or -1.
+- [Top Faces of Sloped Wall](0620_top_faces_of_wall.htm) &ndash; Obviously, like all comparisons of real numbers, that requires us to add a fuzz factor, since real-valued coordinates will almost never be exactly equal.
+-[Retrieving Unique Geometry Vertices](0737_melbourne_day_2.htm#2) &ndash; For this, we need to implement a fuzzy method to distinguish between points that really are different, but detect that points that are nearly the same should in fact be treated as identical.
+- [XYZ Vertex Lookup](0791_obj_export_basics.htm#6) &ndash; As discussed so many times in the past, the point comparison has to include some fuzz.
+- [Sort and Orient Curves to Form a Contiguous Loop](0918_contiguous_curves.htm) &ndash; Its end point matching comparison relies on the standard Revit precision, which is around one sixteenth of an inch. Since the built-in Revit database length unit is feet, I define the following fuzz factor for that...
+- [Never use Direct Comparison for Floating Point Numbers](1202_plane_proj_pick.htm#05) &ndash; I would recommend never doing that, because they could always be off by an infinitesimal amount, in which case the comparison would return false, even if they are almost equal, within the possible precision. You need to use fuzzy comparison for floating point numbers. Look at this discussion on real number equality testing.
+- [Extracting Unique Building Element Geometry Vertices](1304_back_from_easter.htm#4) &ndash; implement a fuzzy point equality comparer and then add the points as keys to a dictionary.
 
 OK?
 

@@ -1,5 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!-- 1256407 [Get extrusions out of a family] -->
@@ -25,16 +56,16 @@ To access the extrusion elements, you have to open the family document and read 
 Here are some previous topics which should help understand the situation better:
 
 <ul>
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/08/the-revit-family-api.html">
+<li><a href="0199_family_api.htm">
 The Revit Family API</a>.</li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/08/the-revit-family-api.html">
+<li><a href="0199_family_api.htm">
 The Revit Family Creation API Labs</a>.</li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/09/remove-all-geometry-from-a-family.html">
+<li><a href="0216_remove_geometry_rfa.htm">
 Removing all geometry from a family</a>.</li>
 
-<li><a href="http://thebuildingcoder.typepad.com/blog/2009/11/nested-family.html">
+<li><a href="0250_nested_family.htm">
 Creating a nested family</a>.</li>
 
 </ul>
@@ -43,12 +74,21 @@ Creating a nested family</a>.</li>
 If it is already opened by Revit, it will be listed in the application Documents collection. 
 Otherwise, you need to determine the family document path name, as explained in 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/04/access-to-linked-file-geometry.html">
+<a href="0126_access_linked_file_geometry.htm">
 accessing linked file geometry</a>.
 
 Finally, you should be able to adapt the example that 
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/05/imports-in-families.html">
+<a href="0142_imports_in_families.htm">
 opens all family documents and searches them for certain elements</a> to
 
 search for the extrusions instead.
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

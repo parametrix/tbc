@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -15,14 +46,14 @@ Sending Escape to Terminate a Family Instance Placement Loop #WEBGL #threejs #3D
 
 <p>I presented the
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/place-family-instance.html">
+<a href="0402_place_family_instance.htm">
 PromptForFamilyInstancePlacement method</a> in
 
 June 2010 when it was newly introduced in the Revit API, together with a nice little solution temporarily subscribing to the OnDocumentChanged to access the newly added elements after terminating the placement interaction.</p>
 
 <p>Since then, the Revit 2015 API provided some
 
-<a href="http://thebuildingcoder.typepad.com/blog/2014/04/whats-new-in-the-revit-2015-api.html#4.02">
+<a href="1141_whats_new_2015.htm#4.02">
 Document API additions</a> such
 
 as the method UIDocument.PostRequestForElementTypePlacement enabling an add-in to launch and to some extents control the full standard placement interaction between user and the Revit product.</p>
@@ -151,7 +182,7 @@ Congratulations on solving this!</p>
 
 <p>Inspired by your solution, I implemented code to abort the PromptForFamilyInstancePlacement after placing the first instance in the existing external command implementation
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/06/place-family-instance.html">
+<a href="0402_place_family_instance.htm">
 CmdPlaceFamilyInstance</a> in The Building Coder samples and posted the code to the
 
 <a href="https://github.com/jeremytammik/the_building_coder_samples">The Building Coder sample GitHub repository</a> in
@@ -160,7 +191,7 @@ CmdPlaceFamilyInstance</a> in The Building Coder samples and posted the code to 
 
 <p>Here is my full implementation making use of the <code>Press</code> class implemented to
 
-<a href="http://thebuildingcoder.typepad.com/blog/2010/11/launching-a-revit-command.html">launch a Revit command</a> using WM_KEYDOWN Windows messages similar to your sample code above:</p>
+<a href="0479_launch_command.htm">launch a Revit command</a> using WM_KEYDOWN Windows messages similar to your sample code above:</p>
 
 <pre class="code">
 <span class="blue">#region</span> Namespaces
@@ -327,3 +358,12 @@ basic example of View and Data API client side scripting using the minimal JavaS
 </center>
 
 <p>Looking forward to seeing you at the meetup tonight, if you happen to be in the area!</p>
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>

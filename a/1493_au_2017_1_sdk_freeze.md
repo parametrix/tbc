@@ -91,7 +91,7 @@ It also includes a new REX SDK sample:
 
 #### <a name="5"></a>REX SDK FreezeDrawing Sample
 
-One important structural part of the Revit SDK is the [REX SDK](http://thebuildingcoder.typepad.com/blog/2015/12/rex-app-development-and-migration.html).
+One important structural part of the Revit SDK is the [REX SDK](1384_rex.html).
 
 The 2017.1 version of the REX SDK contains new sample project `DRevitFreezeDrawing` that was created from a discontinued REX module.
   

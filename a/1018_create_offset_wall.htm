@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Building Coder</title>
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="google-code-prettify/prettify.css">
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        a { color: #0066cc; }
+        img { max-width: 100%; height: auto; }
+        .nav { margin-bottom: 20px; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+        .nav a { margin-right: 15px; }
+    </style>
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+    <article>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="bc.css">
+  <link rel="stylesheet" href="toc/toc-sidebar.css">
 </head>
 
 <!--
@@ -69,7 +100,7 @@ You can determine the specific values by looking them up using the RevitLookup t
 
 <p>Note that this is an application of the principles we discussed way back in the year 2008, explaining the old
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/wall-compound-layers.html">
+<a href="0038_wall_layers.htm">
 wall compound layers</a> and
 
 brought up in a comment by Berria on that post:</p>
@@ -79,7 +110,7 @@ brought up in a comment by Berria on that post:</p>
 <p><strong>Answer:</strong> You need to be very precise with what you mean by wall location line.
 As
 
-<a href="http://thebuildingcoder.typepad.com/blog/2008/11/wall-compound-layers.html">
+<a href="0038_wall_layers.htm">
 mentioned</a>,
 
 there is a difference between the wall.Location line that you see in the API and the 'Location Line' visible in the user interface.
@@ -88,10 +119,10 @@ The position of the latter can be adjusted using the WALL_KEY_REF_PARAM paramete
 
 <p>A bit later, Mike posted a similar
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/creating-a-wall-with-a-sloped-profile.html?cid=6a00e553e1689788330115722cf638970b#comment-6a00e553e1689788330115722cf638970b">
+<a href="0091_wall_with_sloped_profile.htm">
 query</a> on
 
-<a href="http://thebuildingcoder.typepad.com/blog/2009/02/creating-a-wall-with-a-sloped-profile.html">
+<a href="0091_wall_with_sloped_profile.htm">
 creating a wall with a sloped profile</a>:</p>
 
 <p><strong>Question:</strong> I am struggling to figure out how to set a wall's 'Location Line' to 'Finish Face: Interior' in code prior to drawing the wall.
@@ -101,7 +132,7 @@ I would like the interior face of the wall to be at the coordinate points I supp
 
 <p>Create a new wall and look at its parameters, e.g. using RevitLookup or the Revit API Introduction labs
 
-<a href="http://thebuildingcoder.typepad.com/blog/2013/01/built-in-parameter-enumeration-duplicates-and-bipchecker-update.html">
+<a href="0888_bip_checker_5.htm">
 built-in parameter checker</a>.
 
 One of the parameters is</p>
@@ -120,7 +151,7 @@ If I manually change the property to 'Finish Face: Interior' and then look at th
 
 <hr/>
 
-<a href="">
+<a href=">
 </a>
 
 <p><strong>Question:</strong>
@@ -155,3 +186,12 @@ If I manually change the property to 'Finish Face: Interior' and then look at th
 <p>When creating a wall using the Wall.Create method, by default, the center line of the created wall is the line you passed in to it.</p>
 
 -->
+
+    </article>
+    <div class="nav">
+        <a href="index.html">← Back to Index</a>
+    </div>
+<script src="toc/toc-sidebar.js"></script>
+<script src="toc/copy-code.js"></script>
+</body>
+</html>
