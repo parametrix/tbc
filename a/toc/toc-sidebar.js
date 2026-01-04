@@ -213,16 +213,17 @@
         <div id="tbc-search-results"></div>
       </div>
       
-      <nav id="tbc-nav-links" aria-label="Main navigation">
-        <!-- Populated dynamically -->
-      </nav>
-      
       <div id="tbc-topics-container" aria-label="Topics navigation">
         <div class="tbc-loading-spinner"></div>
       </div>
       
-      <div class="tbc-shortcut-hint">
-        Press <kbd>/</kbd> to search
+      <div id="tbc-sidebar-footer">
+        <nav id="tbc-nav-links" aria-label="Main navigation">
+          <!-- Populated dynamically -->
+        </nav>
+        <div class="tbc-shortcut-hint">
+          Press <kbd>/</kbd> to search
+        </div>
       </div>
     `;
   }
@@ -243,59 +244,6 @@
     }
     
     return topics.map(topic => generateTopicHTML(topic)).join('');
-  }
-
-  function generateArchiveHTML(archive) {
-    if (!archive || !archive.length) {
-      return '';
-    }
-    
-    // Filter out invalid years (like typos e.g., 1020 instead of 2020)
-    const validArchive = archive.filter(year => {
-      const yearNum = parseInt(year.title);
-      return yearNum >= 2000 && yearNum <= 2100;
-    });
-    
-    if (!validArchive.length) return '';
-    
-    const archiveTopics = validArchive.map(year => {
-      const isExpanded = state.expandedTopics.has(year.id);
-      const expandedClass = isExpanded ? ' expanded' : '';
-      
-      const postsHTML = year.posts.map(post => {
-        const isCurrent = isCurrentPost(post.file);
-        const currentClass = isCurrent ? ' current' : '';
-        return `<a href="${escapeHtml(post.file)}" class="tbc-post-link${currentClass}" title="${escapeHtml(post.title)}">${escapeHtml(post.title)}</a>`;
-      }).join('');
-      
-      return `
-        <div class="tbc-topic tbc-archive-year${expandedClass}" data-topic-id="${escapeHtml(year.id)}">
-          <div class="tbc-topic-header" tabindex="0" role="button" aria-expanded="${isExpanded}">
-            <span class="tbc-topic-toggle">▶</span>
-            <span class="tbc-topic-title">
-              <span class="tbc-topic-id">📅</span>
-              ${escapeHtml(year.title)}
-            </span>
-            <span class="tbc-topic-count">(${year.posts.length})</span>
-          </div>
-          <div class="tbc-topic-posts">
-            ${postsHTML}
-          </div>
-        </div>
-      `;
-    }).join('');
-    
-    return `
-      <div class="tbc-archive-section">
-        <div class="tbc-section-header">
-          <span class="tbc-section-icon">📚</span>
-          <span class="tbc-section-title">Chronological Archive</span>
-          <span class="tbc-section-count">(${validArchive.reduce((sum, y) => sum + y.posts.length, 0)} posts)</span>
-          <button class="tbc-toggle-all" title="Toggle all years">±</button>
-        </div>
-        ${archiveTopics}
-      </div>
-    `;
   }
 
   function generateTopicHTML(topic, isSubTopic = false) {
@@ -465,11 +413,6 @@
           ${generateTopicsHTML(state.tocData.topics)}
         </div>
       `;
-      
-      // Archive section
-      if (state.tocData.archive && state.tocData.archive.length) {
-        html += generateArchiveHTML(state.tocData.archive);
-      }
       
       topicsContainer.innerHTML = html;
     }

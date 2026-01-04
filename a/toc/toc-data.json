@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-01-04",
-  "totalTopics": 46,
-  "totalPostLinks": 372,
+  "lastUpdated": "2026-01-02",
+  "totalTopics": 55,
+  "totalPostLinks": 503,
   "navigation": [
     {
       "label": "About Jeremy Tammik",
@@ -26,20 +26,6 @@
     }
   ],
   "topics": [
-    {
-      "id": "0.1",
-      "title": "Recent Posts",
-      "posts": [
-        {
-          "title": "Sample Post Title",
-          "file": "2080_sample_post_title.html"
-        },
-        {
-          "title": "Sample Post Title",
-          "file": "2079_sample_post_title.html"
-        }
-      ]
-    },
     {
       "id": "5.1",
       "title": "Custom Exporter",
@@ -233,6 +219,72 @@
       ]
     },
     {
+      "id": "5.5",
+      "title": "Material Management and Libraries",
+      "posts": [
+        {
+          "title": "Add New Materials from List",
+          "file": "0431_add_materials.htm#2"
+        },
+        {
+          "title": "Material Assets and FBX",
+          "file": "0527_material_assets.htm"
+        },
+        {
+          "title": "Retrieving Materials",
+          "file": "0631_settings_materials.htm"
+        },
+        {
+          "title": "Materials Collection and Filtering",
+          "file": "0700_materials_collection.htm"
+        },
+        {
+          "title": "Pipe Insulation and Insulation Material",
+          "file": "0772_pipe_insul_mater.htm"
+        },
+        {
+          "title": "Read Material Asset Parameter",
+          "file": "0889_read_material_asset.htm"
+        },
+        {
+          "title": "Accessing and Filtering by Ramp Material",
+          "file": "0934_ramp_material.htm"
+        },
+        {
+          "title": "Using the Copy and Paste API to manage materials in adsklib or template files",
+          "file": "0943_duplicate_views.htm#4"
+        },
+        {
+          "title": "Adding New Materials from List Updated",
+          "file": "1116_add_materials.htm"
+        },
+        {
+          "title": "Adding New Materials from List Enhancements",
+          "file": "1122_add_materials.htm"
+        },
+        {
+          "title": "Getting Serious Adding New Materials from List",
+          "file": "1129_add_materials.htm"
+        },
+        {
+          "title": "Modifying Material Visual Appearance",
+          "file": " "
+        },
+        {
+          "title": "archi+lab few more comments about materials in Revit, Dynamo, APIs etc.",
+          "file": "https://archi-lab.net/few-more-comments-about-materials-in-revit-dynamo-apis-etc"
+        },
+        {
+          "title": "Create New Material with Texture",
+          "file": "1932_symb_inst_ole_journal.html#3"
+        },
+        {
+          "title": "21-minute video tutorial to create material with Revit API and C&#35;",
+          "file": "https://youtu.be/9ZoyuR1hzXA"
+        }
+      ]
+    },
+    {
       "id": "5.6",
       "title": "Phase",
       "posts": [
@@ -311,6 +363,72 @@
         {
           "title": "The Revit 2013 Structure API",
           "file": "0782_rst_2013.htm"
+        }
+      ]
+    },
+    {
+      "id": "5.9",
+      "title": "Retrieving Elements Using FilteredElementCollector",
+      "posts": [
+        {
+          "title": "Do Not Filter For All Elements!",
+          "file": "0397_filter_all_elements.htm"
+        },
+        {
+          "title": "Retrieving MEP Elements and Connectors",
+          "file": "0398_retrieve_mep_elements.htm"
+        },
+        {
+          "title": "Retrieving Structural Elements",
+          "file": "0404_structural_elements.htm"
+        },
+        {
+          "title": "Filtered Element Collectors",
+          "file": "0463_filtered_element_collector.htm"
+        },
+        {
+          "title": "More Kevin Filtering Benchmarks",
+          "file": "0497_more_kevin_samples.htm"
+        },
+        {
+          "title": "Filtered Element Collector Sample Overview",
+          "file": "0499_filter_sample_overview.htm"
+        },
+        {
+          "title": "Exporting Parameter Data to Excel, and Re-importing",
+          "file": "0828_export_param_excel.htm"
+        },
+        {
+          "title": "Valid category and non-empty geometry",
+          "file": "0140_select_model_elements.htm"
+        },
+        {
+          "title": "Ditto, and eliminate certain categories",
+          "file": "0254_select_model_elements_2.htm"
+        },
+        {
+          "title": "Valid category and neither category nor element is hidden",
+          "file": "0255_visible_elements.htm"
+        },
+        {
+          "title": "Based on the Category.HasMaterialQuantities property",
+          "file": "0453_model_elements.htm"
+        },
+        {
+          "title": "Based on the elements visible in a default 3D view",
+          "file": "0454_model_elements.htm"
+        },
+        {
+          "title": "Using a custom exporter",
+          "file": "1002_custom_exporter_visib.htm"
+        },
+        {
+          "title": "Selecting all physical elements in model",
+          "file": "1519_model_vert_align_cs.html#3"
+        },
+        {
+          "title": "Efficiently retrieve crop box for given view",
+          "file": "1622_get_crop_box_for_view.html"
         }
       ]
     },
@@ -585,6 +703,130 @@
       ]
     },
     {
+      "id": "5.20",
+      "title": "Visual Studio Revit Add-In Wizards",
+      "posts": [
+        {
+          "title": "Add-In Wizards for Revit 2014",
+          "file": "0944_addin_wizard_2014.htm"
+        },
+        {
+          "title": "Wizard Update",
+          "file": "0969_sun_direct_shadow.htm#2"
+        },
+        {
+          "title": "Multi-Version Visual Studio Revit Add-In Wizard",
+          "file": "1059_multi_version_wizard.htm"
+        },
+        {
+          "title": "Add-In Wizards for Revit 2015",
+          "file": "1151_addin_wizard_2015.htm"
+        },
+        {
+          "title": "Add-in Wizards for Revit 2016",
+          "file": "1312_addin_wizard_2016.htm"
+        },
+        {
+          "title": "Updated Visual Studio Add-in Wizards for Revit 2016",
+          "file": "1320_au_q1_labs_wizard.htm#5"
+        },
+        {
+          "title": "Revit Add-In Wizards on GitHub and Installer",
+          "file": "1350_wizard_github_install.htm"
+        },
+        {
+          "title": "Visual Studio 2015 Revit 2017 Add-in Wizards",
+          "file": "1438_addin_wizard_2017.html"
+        },
+        {
+          "title": "Update to suppress the architecture mismatch warning",
+          "file": "1448_py_dmu_tutorial.html#2"
+        },
+        {
+          "title": "New Visual Studio Templates for Revit Add-Ins",
+          "file": "1528_andrey_wizard.html"
+        },
+        {
+          "title": "Revit 2018 Visual Studio .NET Add-in Wizards",
+          "file": "1552_addin_wizard_2018.html"
+        },
+        {
+          "title": "User Profile for Visual Studio Revit Add-In Wizard Installation",
+          "file": "1577_forge_ids_install.html#7"
+        },
+        {
+          "title": "Revit 2018.1 API NuGet Packages",
+          "file": "1582_forge_view_nuget.html#3"
+        },
+        {
+          "title": "Multi-Version Revit Add-In Template",
+          "file": "1670_brassac.html"
+        },
+        {
+          "title": "Revit 2019 Visual Studio .NET Add-in Wizards",
+          "file": "1681_addin_wizard_2019.html"
+        },
+        {
+          "title": "Revit 2020 C# and VB Visual Studio Add-in Wizards",
+          "file": "1745_wiz_2020.html"
+        },
+        {
+          "title": "Built-In Zip Utility for Add-In Wizard",
+          "file": "1764_rebar_curves_wizard_zip.html#4"
+        },
+        {
+          "title": "Visual Studio 2019 Revit add-in template tags",
+          "file": "1796_wiz_tag_vs_2019.html"
+        },
+        {
+          "title": "Revit WPF add-ins and template",
+          "file": "1816_wpf_addin_template.html"
+        },
+        {
+          "title": "Revit 2021 Visual Studio add-in templates",
+          "file": "1848_wizard_2021.html"
+        },
+        {
+          "title": "Hellpie Revit add-in dotnet template",
+          "file": "1875_dotnet_template_prism.html"
+        },
+        {
+          "title": "Visual Studio Revit 2022 add-in templates",
+          "file": "1906_lookup_2022.html#4"
+        },
+        {
+          "title": "VS Wizard Template Location",
+          "file": "1967_addins.html#6"
+        },
+        {
+          "title": "Add-In Wizard Template in VS 2022",
+          "file": "1978_sdk_2023_1.html#3"
+        }
+      ]
+    },
+    {
+      "id": "5.21",
+      "title": "RoomEditorApp – Room Editor Revit Add-In",
+      "posts": [
+        {
+          "title": "External application to present the user interface",
+          "file": "1049_roomeditorapp.htm"
+        },
+        {
+          "title": "Determine boundary loops for rooms",
+          "file": "0916_2014_api_room_loops.htm#3"
+        },
+        {
+          "title": "Determine boundary loops for equipment and furniture family instances",
+          "file": "0921_extrusion_analyser.htm"
+        },
+        {
+          "title": "Temporary graphical display of the boundary loops for debugging purposes",
+          "file": ">Transform Revit graphics to SVG path descriptions</a></li>\n<li><a href="
+        }
+      ]
+    },
+    {
       "id": "5.22",
       "title": "Advanced Revit 2014 API Features and Samples",
       "posts": [
@@ -721,6 +963,10 @@
         {
           "title": "Class",
           "file": "http://au.autodesk.com/au-online/classes-on-demand/class-catalog/2011/autodesk-revit-architecture/extensible-storage-in-the-autodesk-revit-2012-api"
+        },
+        {
+          "title": "Lab",
+          "file": "http://au.autodesk.com/au-online/classes-on-demand/class-catalog/2011/autodesk-revit-architecture/autodesk-revit-2012-api-extensible-storage"
         }
       ]
     },
@@ -751,6 +997,127 @@
         {
           "title": "Assign different colour and material to each DirectShape face",
           "file": "1963_point_cloud.html#2"
+        }
+      ]
+    },
+    {
+      "id": "5.25",
+      "title": "Family API, Loading and Placing Family Instances",
+      "posts": [],
+      "subTopics": [
+        {
+          "id": "5.25.1",
+          "title": "Family API for Creating Family Definitions",
+          "posts": [
+            {
+              "title": "The Revit Family API",
+              "file": "0199_family_api.htm"
+            },
+            {
+              "title": "Key Concepts of the Family Editor",
+              "file": "0972_family_key_concept.htm"
+            },
+            {
+              "title": "In-memory family creation, loading, and instance placement",
+              "file": "1360_revitlookup.html#5"
+            },
+            {
+              "title": "Creating an Electrical Family",
+              "file": "1361_rfa_api_iterate.html#4"
+            }
+          ]
+        },
+        {
+          "id": "5.25.2",
+          "title": "Family Instance Placement",
+          "posts": [
+            {
+              "title": "Place Family Instance",
+              "file": "0402_place_family_instance.htm"
+            },
+            {
+              "title": "Place Detail Instance",
+              "file": "0450_place_detail_inst.htm"
+            },
+            {
+              "title": "Change Element Type",
+              "file": "0410_change_element_type.htm"
+            },
+            {
+              "title": "Reloading a Family",
+              "file": "0597_reload_family.htm"
+            },
+            {
+              "title": "NewFamilyInstance overloads",
+              "file": "0524_newfamilyinstance.htm"
+            },
+            {
+              "title": "Placing a Line Based Detail Item Instance",
+              "file": "0595_place_detail_inst.htm"
+            },
+            {
+              "title": "Family API Add-in – Load Family and Place Instances",
+              "file": "0973_family_api_addin.htm"
+            },
+            {
+              "title": "Family API – Create Type, Select and Modify Instances",
+              "file": "0974_family_api_addin.htm"
+            },
+            {
+              "title": "Family API – Nested Type, Instance and Symbol Retrieval",
+              "file": "0975_family_api_addin.htm"
+            },
+            {
+              "title": "Family Instance Placement",
+              "file": "1028_newfamilyinstance.htm"
+            },
+            {
+              "title": "Text File Driven Automatic Placement of Family Instances",
+              "file": "1038_place_family_inst.htm"
+            },
+            {
+              "title": "Terminating a Family Instance Placement Loop with Esc",
+              "file": "1279_terminate_inst_loop.htm"
+            },
+            {
+              "title": "PostRequestForElementTypePlacement Sample",
+              "file": "1287_post_request_inst.htm"
+            },
+            {
+              "title": "Re-Researching Lighting Family Instance Placement",
+              "file": "1301_newfamilyinstance_face.htm"
+            }
+          ]
+        },
+        {
+          "id": "5.25.3",
+          "title": "Loading a Family",
+          "posts": [
+            {
+              "title": "Creating and placing an extrusion family",
+              "file": "0596_create_extrusion_fam.htm"
+            },
+            {
+              "title": "Reloading a family",
+              "file": "0597_reload_family.htm"
+            },
+            {
+              "title": "Reloading a family again",
+              "file": "0660_reload_family.htm"
+            },
+            {
+              "title": "Activate your family symbol before using it",
+              "file": "1191_activate_famil_symbol.htm"
+            },
+            {
+              "title": "Modifying, saving and reloading families",
+              "file": "1214_mod_reload_family.htm"
+            },
+            {
+              "title": "Renaming a family in a project",
+              "file": "1661_rename_family.html#3"
+            }
+          ]
         }
       ]
     },
@@ -987,6 +1354,40 @@
       ]
     },
     {
+      "id": "5.30",
+      "title": "3D Booleans, Cutting and Joining Elements",
+      "posts": [
+        {
+          "title": "Find Intersecting Elements",
+          "file": "0494_find_intersecting.htm"
+        },
+        {
+          "title": "Boolean Operations and InstanceVoidCutUtils",
+          "file": "0600_instance_void_cut.htm"
+        },
+        {
+          "title": "Bevelled Steel Beams",
+          "file": "0644_steel_beam_bevel.htm"
+        },
+        {
+          "title": "AVF Displays Wall/Column Intersections and Highlights Rooms",
+          "file": "0694_avf_hilite_rooms.htm"
+        },
+        {
+          "title": "Element Intersection",
+          "file": "0835_element_intersection.htm"
+        },
+        {
+          "title": "DevLab Munich",
+          "file": "1078_devlab_muc.htm"
+        },
+        {
+          "title": "Determining all family instances intersecting an element",
+          "file": "1243_future_proof.htm#3"
+        }
+      ]
+    },
+    {
       "id": "5.31",
       "title": "Dynamic Model Updater Framework DMU",
       "posts": [
@@ -1167,6 +1568,36 @@
         {
           "title": "Built-in Parameter Checker included in ADN Revit API Training Labs Xtra",
           "file": "1332_multi_version_xtra.htm#5"
+        }
+      ]
+    },
+    {
+      "id": "5.35",
+      "title": "Autodesk Technical Summit 2014 – A Generic Cloud-based Round-trip Real-time 2D Revit BIM Editor",
+      "posts": [
+        {
+          "title": "Initial plan",
+          "file": "1100_web_workshop.htm#6.2"
+        },
+        {
+          "title": "Accepted proposal",
+          "file": "1110_tech_summit.htm#3"
+        },
+        {
+          "title": "Sheet and category selection, loop enhancements",
+          "file": "1133_glowcode_profiling.htm#5"
+        },
+        {
+          "title": "Migrating RoomEditorApp to Revit 2015",
+          "file": "1137_roomeditorapp_2015.htm"
+        },
+        {
+          "title": "Sheet-view-element transforms",
+          "file": "1145_raas_sheet_bimel.htm"
+        },
+        {
+          "title": "Room editor round-trip element property editing",
+          "file": "1150_roomedit_prop_async.htm"
         }
       ]
     },
@@ -1563,6 +1994,64 @@
         {
           "title": "Export Walls and Floors to SAT",
           "file": "0698_export_wall_floor_sat.htm"
+        },
+        {
+          "title": "Export Wall Parts Individually to DXF",
+          "file": "0906_export_wall_part_dxf.htm"
+        },
+        {
+          "title": "ExportCncFab on GitHub and RevitLookup Update",
+          "file": "1044_exportcncfab.htm"
+        },
+        {
+          "title": "AU 2013 Class FB2938 – Design to Fabrication",
+          "file": "1071_au_day_2.htm#3"
+        },
+        {
+          "title": "Driving CNC Fabrication and Shared Parameters",
+          "file": "1080_exportcncfab.htm"
+        },
+        {
+          "title": "How to Save a Solid to a File",
+          "file": "1023_save_solid_to_file.htm"
+        },
+        {
+          "title": "Saving a Solid to a SAT File Implementation",
+          "file": "1026_save_solid_to_file.htm"
+        }
+      ]
+    },
+    {
+      "id": "5.48",
+      "title": "Element Intersection and Collision Detection",
+      "posts": [
+        {
+          "title": "Element intersection",
+          "file": "0835_element_intersection.htm"
+        },
+        {
+          "title": "Intersection between elements",
+          "file": "0399_find_element_intersection.htm"
+        },
+        {
+          "title": "Using AVF to display intersections and highlight rooms",
+          "file": "0694_avf_hilite_rooms.htm"
+        },
+        {
+          "title": "Filter for touching beams using solid intersection",
+          "file": "0823_filter_touching_beam.htm"
+        },
+        {
+          "title": "Find intersecting elements",
+          "file": "0494_find_intersecting.htm"
+        },
+        {
+          "title": "Determining intersecting elements",
+          "file": "1243_future_proof.htm#3"
+        },
+        {
+          "title": "Using an Intersection Filter for Linked Elements",
+          "file": "1707_filter_intersect.html"
         }
       ]
     },
@@ -1631,6 +2120,26 @@
         {
           "title": "From Hack to App – OBJ Mesh Import to DirectShape",
           "file": "1283_directobjloader.htm"
+        },
+        {
+          "title": "Creating a DirectShape Element from a Face Mesh",
+          "file": "1355_directshape_face.html"
+        },
+        {
+          "title": "Simpler DirectShape on Picked Face Using Total Transform",
+          "file": "1357_directshape_simple.html#2"
+        },
+        {
+          "title": "Flatten All Elements to DirectShape",
+          "file": "1375_flatten_to_directshape.html"
+        },
+        {
+          "title": "Create Swept Blend DirectShape in C++",
+          "file": "1620_create_swept_blend.html"
+        },
+        {
+          "title": "Assign different colour and material to each DirectShape face",
+          "file": "1963_point_cloud.html#2"
         }
       ]
     },
@@ -1664,6 +2173,80 @@
       "id": "5.52",
       "title": "The Revit API Util Classes are Often Overlooked",
       "posts": []
+    },
+    {
+      "id": "5.53",
+      "title": "Handling Transactions and Transaction Groups",
+      "posts": [
+        {
+          "title": "Transactions",
+          "file": "0073_transaction.htm"
+        },
+        {
+          "title": "Transaction Responsibility",
+          "file": "0075_transaction_responsibility.htm"
+        },
+        {
+          "title": "Extra Transaction Required",
+          "file": "0291_extra_transaction.htm"
+        },
+        {
+          "title": "Transaction Migration Errors",
+          "file": "0419_transaction_migration.htm"
+        },
+        {
+          "title": "Scope and Dispose of Transactions",
+          "file": "0750_dispose_transact.htm"
+        },
+        {
+          "title": "Using Using Automagically Disposes and Rolls Back",
+          "file": "0753_dispose_transact_2.htm"
+        },
+        {
+          "title": "Read-only and Automatic Transaction Modes",
+          "file": "0760_read_auto_transact.htm"
+        },
+        {
+          "title": "Disposal of Revit API Objects",
+          "file": "0831_dispose.htm"
+        },
+        {
+          "title": "The Temporary Transaction Trick",
+          "file": "0851_gross_slab_boundary.htm"
+        },
+        {
+          "title": "Temporary Transaction Trick Touchup",
+          "file": "0854_temp_transact.htm"
+        },
+        {
+          "title": "TTT to Obtain Section Marker Endpoint",
+          "file": "1541_section_marker_endp.html"
+        },
+        {
+          "title": "Updater Queues Multi-Transaction Operation for Idling",
+          "file": "0859_updater_transact.htm"
+        },
+        {
+          "title": "Extra Transaction or Regeneration Required",
+          "file": "0866_extra_transaction.htm"
+        },
+        {
+          "title": "Transactions, Sub-Transactions and Transaction Groups",
+          "file": "0939_transact_sub_group.htm"
+        },
+        {
+          "title": "Handling Transaction Status and Errors",
+          "file": "1250_transaction.htm"
+        },
+        {
+          "title": "Using Transaction Groups",
+          "file": "1280_transaction_group.htm"
+        },
+        {
+          "title": "Avoid Brain Racking by Using Using",
+          "file": "1869_using_vs_racking.html"
+        }
+      ]
     },
     {
       "id": "5.54",
@@ -1750,6 +2333,14 @@
         {
           "title": "Preparing a Revit Add-in for Design Automation",
           "file": "1720_prepare_da4r.html"
+        },
+        {
+          "title": "Before Getting Started with Design Automation",
+          "file": "1729_begin_da4r.html"
+        },
+        {
+          "title": "Placing Detail Group Without UI Access",
+          "file": "2040_rvt_2025_1.html#3"
         }
       ]
     },
@@ -1795,7 +2386,5 @@
         }
       ]
     }
-  ],
-  "totalArchiveYears": 20,
-  "totalArchivePosts": 2078
+  ]
 }

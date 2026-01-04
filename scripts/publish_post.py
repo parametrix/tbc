@@ -35,6 +35,7 @@ POSTS_DIR = REPO_ROOT / "a"
 DRAFTS_DIR = POSTS_DIR / "drafts"
 INDEX_FILE = POSTS_DIR / "index.html"
 TOC_FILE = POSTS_DIR / "toc" / "toc-data.json"
+CHRONO_FILE = POSTS_DIR / "toc" / "chrono-data.json"
 ROOT_INDEX = REPO_ROOT / "index.html"
 
 # Recent Posts topic ID (will be first in sidebar)
@@ -185,7 +186,7 @@ def read_post(md_file):
 
 
 def update_toc(title, filename, post_number, post_date, dry_run=False):
-    """Add the new post to 'Recent Posts' and Chronological Archive in toc-data.json."""
+    """Add the new post to 'Recent Posts' in toc-data.json (left sidebar)."""
     if not TOC_FILE.exists():
         print(f"Warning: TOC file not found: {TOC_FILE}")
         return False
@@ -232,62 +233,13 @@ def update_toc(title, filename, post_number, post_date, dry_run=False):
     # Update the topic in the list
     toc_data['topics'][recent_index] = recent_topic
     
-    # ========================================
-    # Update Chronological Archive
-    # ========================================
-    year = post_date.year
-    year_id = f"archive-{year}"
-    date_str = post_date.strftime("%Y-%m-%d")
-    
-    # Create archive entry with post number in title (matches existing format)
-    archive_post = {
-        "title": f"#{post_number:04d} - {title}",
-        "file": filename,
-        "date": date_str
-    }
-    
-    # Find or create the year entry in archive
-    archive = toc_data.get('archive', [])
-    year_entry = None
-    year_index = -1
-    
-    for i, entry in enumerate(archive):
-        if entry.get('id') == year_id:
-            year_entry = entry
-            year_index = i
-            break
-    
-    if year_entry is None:
-        # Create new year entry and insert at the beginning (most recent year first)
-        year_entry = {
-            "id": year_id,
-            "title": str(year),
-            "posts": []
-        }
-        archive.insert(0, year_entry)
-        year_index = 0
-        toc_data['archive'] = archive
-        toc_data['totalArchiveYears'] = len(archive)
-    
-    # Add post to the end of the year's posts (chronological order within year)
-    # Check if post already exists (avoid duplicates)
-    existing_files = [p.get('file') for p in year_entry['posts']]
-    if filename not in existing_files:
-        year_entry['posts'].append(archive_post)
-        # Sort posts by date within the year
-        year_entry['posts'].sort(key=lambda p: p.get('date', ''))
-        toc_data['archive'][year_index] = year_entry
-        toc_data['totalArchivePosts'] = sum(len(y.get('posts', [])) for y in archive)
-    
     # Update metadata
     toc_data['lastUpdated'] = datetime.now().strftime("%Y-%m-%d")
     toc_data['totalPostLinks'] = sum(len(t.get('posts', [])) for t in toc_data['topics'])
     
     if dry_run:
         print(f"[DRY RUN] Would add to TOC 'Recent Posts': {title}")
-        print(f"[DRY RUN] Would add to Chronological Archive ({year}): #{post_number:04d}")
         print(f"[DRY RUN] TOC would have {toc_data['totalPostLinks']} topic post links")
-        print(f"[DRY RUN] Archive would have {toc_data.get('totalArchivePosts', 0)} posts")
     else:
         # Write with proper formatting
         TOC_FILE.write_text(
@@ -296,7 +248,76 @@ def update_toc(title, filename, post_number, post_date, dry_run=False):
         )
         print(f"Updated toc-data.json:")
         print(f"  - Added to 'Recent Posts': {title}")
-        print(f"  - Added to Chronological Archive ({year}): #{post_number:04d}")
+    
+    return True
+
+
+def update_chrono_data(title, filename, post_number, post_date, dry_run=False):
+    """Add the new post to chrono-data.json (right-side timeline navigation)."""
+    if not CHRONO_FILE.exists():
+        print(f"Warning: Chrono file not found: {CHRONO_FILE}")
+        return False
+    
+    try:
+        chrono_data = json.loads(CHRONO_FILE.read_text(encoding='utf-8'))
+    except json.JSONDecodeError as e:
+        print(f"Warning: Could not parse chrono file: {e}")
+        return False
+    
+    year = post_date.year
+    date_str = post_date.strftime("%Y-%m-%d")
+    
+    # Create new post entry
+    new_post = {
+        "num": post_number,
+        "file": filename,
+        "title": title,
+        "date": date_str,
+        "year": year,
+        "month": post_date.month
+    }
+    
+    # Check if post already exists (avoid duplicates)
+    existing_nums = [p.get('num') for p in chrono_data.get('posts', [])]
+    if post_number not in existing_nums:
+        # Add post and re-sort by number
+        chrono_data['posts'].append(new_post)
+        chrono_data['posts'].sort(key=lambda p: p['num'])
+        chrono_data['totalPosts'] = len(chrono_data['posts'])
+    
+    # Update year statistics
+    year_found = False
+    for year_entry in chrono_data.get('years', []):
+        if year_entry.get('year') == year:
+            year_entry['count'] += 1
+            year_entry['lastPost'] = max(year_entry['lastPost'], post_number)
+            year_found = True
+            break
+    
+    if not year_found:
+        # Create new year entry
+        new_year = {
+            "year": year,
+            "count": 1,
+            "firstPost": post_number,
+            "lastPost": post_number
+        }
+        chrono_data['years'].append(new_year)
+        chrono_data['years'].sort(key=lambda y: y['year'], reverse=True)
+    
+    # Update metadata
+    chrono_data['lastUpdated'] = datetime.now().strftime("%Y-%m-%d")
+    
+    if dry_run:
+        print(f"[DRY RUN] Would add to chrono-data.json: #{post_number:04d}")
+        print(f"[DRY RUN] Chrono would have {chrono_data['totalPosts']} posts")
+    else:
+        CHRONO_FILE.write_text(
+            json.dumps(chrono_data, indent=2, ensure_ascii=False),
+            encoding='utf-8'
+        )
+        print(f"Updated chrono-data.json:")
+        print(f"  - Added post #{post_number:04d} ({year})")
     
     return True
 
@@ -408,9 +429,13 @@ def publish_post(md_file, date=None, title=None, slug=None,
     if update_idx:
         update_index(post_number, post_date, post_title, filename, categories, dry_run)
     
-    # Update TOC sidebar (Recent Posts + Chronological Archive)
+    # Update TOC sidebar (left sidebar - topic-based)
     if update_toc_flag:
         update_toc(post_title, filename, post_number, post_date, dry_run)
+    
+    # Update chrono-data.json (right column - timeline navigation)
+    if update_toc_flag:
+        update_chrono_data(post_title, filename, post_number, post_date, dry_run)
     
     # Update homepage stats
     if update_stats:
@@ -441,8 +466,8 @@ Examples:
 Updates performed:
   - Creates HTML file in a/ directory
   - Adds entry to a/index.html post table (chronological TOC)
-  - Adds to "Recent Posts" in a/toc/toc-data.json (sidebar)
-  - Adds to Chronological Archive in a/toc/toc-data.json (sidebar)
+  - Adds to "Recent Posts" in a/toc/toc-data.json (left sidebar topics)
+  - Adds to a/toc/chrono-data.json (right column timeline navigation)
   - Updates post count on homepage (index.html)
         """
     )
@@ -476,7 +501,7 @@ Updates performed:
     parser.add_argument(
         "--no-toc",
         action="store_true",
-        help="Don't update a/toc/toc-data.json (sidebar)"
+        help="Don't update a/toc/ files (toc-data.json and chrono-data.json)"
     )
     parser.add_argument(
         "--no-stats",

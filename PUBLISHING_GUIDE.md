@@ -27,7 +27,7 @@ This guide explains how to publish and manage blog posts in The Building Coder a
    git push
    ```
 
-3. **Done!** The post appears in Recent Posts and Chronological Archive.
+3. **Done!** The post appears in Recent Posts (left sidebar) and Timeline (right column).
 
 ### Add Post to a Topic (Optional)
 
@@ -334,29 +334,34 @@ You can also manually trigger publishing:
 
 ## 5. Managing Topics
 
-The sidebar organizes posts into **Topics** (subject-based groups) and a **Chronological Archive** (by year). When you publish a post, it automatically appears in:
-- **Recent Posts** - The first topic in the sidebar
-- **Chronological Archive** - Grouped by year
+The **left sidebar** organizes posts into **Topics** (subject-based groups). The **right column** shows chronological navigation (timeline). When you publish a post, it automatically appears in:
+- **Recent Posts** - The first topic in the left sidebar
+- **Timeline** - Chronological navigation on the right (from `a/toc/chrono-data.json`)
 
 You can also add posts to subject topics (like "Custom Exporter" or "Family API").
 
 ### 5.1 Understanding the Sidebar Structure
 
-The sidebar TOC data is stored in `a/toc/toc-data.json`:
+The left sidebar TOC data is stored in `a/toc/toc-data.json`:
 
 ```
-Sidebar Structure
+Left Sidebar Structure
 ├── Navigation Links (About, Contact, etc.)
-├── Topics (subject-based groups)
-│   ├── 0.1 Recent Posts (auto-updated)
-│   ├── 5.1 Custom Exporter
-│   ├── 5.2 2D Booleans and Adjacent Areas
-│   ├── ... (61+ topics)
-│   └── 5.56 Forge and APS
-└── Chronological Archive (by year)
-    ├── 2025 (auto-updated)
-    ├── 2024
-    └── ... (back to 2008)
+└── Topics (subject-based groups)
+    ├── 0.1 Recent Posts (auto-updated)
+    ├── 5.1 Custom Exporter
+    ├── 5.2 2D Booleans and Adjacent Areas
+    ├── ... (46+ topics)
+    └── 5.56 Forge and APS
+```
+
+The right column timeline data is stored in `a/toc/chrono-data.json`:
+
+```
+Right Column Timeline
+├── Previous/Next post navigation
+├── Current post indicator
+└── Year browser (2008-2026)
 ```
 
 ### 5.2 Managing Topics via GitHub Actions
@@ -422,8 +427,8 @@ The easiest way to remove a post:
 The Action automatically:
 - Deletes the HTML file
 - Removes entry from `a/index.html`
-- Removes from Recent Posts in sidebar
-- Removes from Chronological Archive
+- Removes from Recent Posts in left sidebar
+- Removes from timeline (`a/toc/chrono-data.json`)
 - Commits and pushes changes
 
 ### 6.2 Remove Manually
@@ -445,7 +450,7 @@ Edit `a/index.html` and delete the table row for the post:
 <tr><td align="right">NNNN</td><td>YYYY-MM-DD</td><td><a href="NNNN_slug.html">Title</a>...</td></tr>
 ```
 
-#### Step 3: Remove from TOC sidebar
+#### Step 3: Remove from left sidebar
 
 Edit `a/toc/toc-data.json`:
 
@@ -454,14 +459,20 @@ Edit `a/toc/toc-data.json`:
    { "title": "Your Post Title", "file": "NNNN_slug.html" }
    ```
 
-2. Remove from the archive year section:
+2. Update `totalPostLinks` count.
+
+#### Step 4: Remove from timeline
+
+Edit `a/toc/chrono-data.json`:
+
+1. Remove from the "posts" array:
    ```json
-   { "title": "#NNNN - Your Post Title", "file": "NNNN_slug.html", "date": "YYYY-MM-DD" }
+   { "num": NNNN, "file": "NNNN_slug.html", "title": "Your Post Title", "date": "YYYY-MM-DD", "year": YYYY, "month": MM }
    ```
 
-3. Update `totalPostLinks` and `totalArchivePosts` counts.
+2. Update `totalPosts` count and the corresponding year's `count` in the `years` array.
 
-#### Step 4: Commit and push
+#### Step 5: Commit and push
 
 ```bash
 git add -A
@@ -506,7 +517,7 @@ python scripts/publish_post.py a/drafts/my-post.md --dry-run
 | `--slug name` | Custom filename slug |
 | `--dry-run` | Preview without writing |
 | `--no-index` | Don't update a/index.html |
-| `--no-toc` | Don't update toc-data.json (sidebar) |
+| `--no-toc` | Don't update a/toc/ files (sidebar + timeline) |
 | `--no-stats` | Don't update homepage stats |
 
 ### 7.4 What the Script Does
@@ -516,10 +527,10 @@ python scripts/publish_post.py a/drafts/my-post.md --dry-run
 3. **Wraps** with the site template (nav, sidebar, CSS)
 4. **Generates** filename: `NNNN_slug.html` (next number)
 5. **Updates** `a/index.html` with new table row
-6. **Updates** `a/toc/toc-data.json`:
+6. **Updates** `a/toc/toc-data.json` (left sidebar):
    - Adds to "Recent Posts" section
-   - Adds to Chronological Archive (by year)
-7. **Updates** `index.html` (homepage) - post count stats
+7. **Updates** `a/toc/chrono-data.json` (right column timeline)
+8. **Updates** `index.html` (homepage) - post count stats
 
 ### 7.5 Post-Publishing
 

@@ -6,7 +6,7 @@ This document outlines the requirements and implementation approach for adding a
 
 > **📌 Key Design Decision: TOPIC-BASED ORDERING**
 > 
-> The sidebar TOC uses **topic-based grouping** (by subject matter), NOT chronological ordering (by year/date). This matches the homepage's section #5 which organizes posts into 61 topic groups like "Custom Exporter", "FilteredElementCollector", "Family API", etc.
+> The sidebar TOC uses **topic-based grouping** (by subject matter), NOT chronological ordering (by year/date). This matches the homepage's section #5 which organizes posts into 58 topic groups (55 main topics + 3 subtopics) like "Custom Exporter", "FilteredElementCollector", "Family API", etc.
 
 > **✅ GitHub Pages + JavaScript: CONFIRMED WORKING**
 > 
@@ -22,7 +22,7 @@ This plan implements a **wiki-style Table of Contents (TOC) sidebar** for The Bu
 
 | Feature | Status | Priority |
 |---------|--------|----------|
-| Topic-based TOC (61 topics) | ✅ Selected | Must Have |
+| Topic-based TOC (58 topics) | ✅ Selected | Must Have |
 | JavaScript-loaded sidebar | ✅ Selected | Must Have |
 | Real-time search | ✅ Selected | Must Have |
 | Drag-to-resize sidebar | ✅ Selected | Must Have |
@@ -38,7 +38,7 @@ This plan implements a **wiki-style Table of Contents (TOC) sidebar** for The Bu
 
 ### 1. TOC Organization: TOPIC-BASED
 
-**NOT chronological (by year)**. Posts grouped into 61 topic categories matching homepage section #5:
+**NOT chronological (by year)**. Posts grouped into 58 topic categories matching homepage section #5:
 
 ```
 TOPICS
@@ -160,7 +160,7 @@ tbc/
 |------|-------------|--------|
 | 1.1 | Analyze `a/index.html` section #5 structure | Understanding of HTML patterns |
 | 1.2 | Create `extract_topic_toc.py` script | Python script |
-| 1.3 | Parse all 61 topic groups (5.1 - 5.56) | Topic list with IDs/titles |
+| 1.3 | Parse all 58 topic groups (5.1 - 5.56, excluding redirects) | Topic list with IDs/titles |
 | 1.4 | Extract post links within each topic | Post titles + file paths |
 | 1.5 | Handle sub-topics (5.25.1, 5.25.2, 5.25.3) | Nested structure |
 | 1.6 | Generate `toc-data.json` | ~150KB JSON file |
@@ -171,7 +171,7 @@ tbc/
 {
   "version": "1.0",
   "lastUpdated": "2026-01-02",
-  "totalTopics": 61,
+  "totalTopics": 58,
   "totalPosts": 2078,
   "navigation": [
     {"label": "Home", "href": "index.html"},
@@ -377,7 +377,7 @@ tbc/
 | **Sidebar Display** | Appears on all 2,078 pages |
 | | Correct width (280px default) |
 | | Scrollable when content overflows |
-| **Topic Groups** | All 61 topics displayed |
+| **Topic Groups** | All 58 topics displayed |
 | | Expand/collapse works |
 | | Sub-topics display correctly |
 | | Post counts accurate |
@@ -466,7 +466,7 @@ tbc/
 
 The implementation is complete when:
 
-- [ ] All 61 topic groups appear in sidebar
+- [ ] All 58 topic groups appear in sidebar
 - [ ] All posts accessible via topic navigation
 - [ ] Search finds posts by title and topic
 - [ ] Sidebar resizable via drag
@@ -486,7 +486,7 @@ The implementation is complete when:
 Before implementation begins, please confirm:
 
 - [ ] **Topic-based organization** (not chronological) is correct
-- [ ] **61 topics** from homepage section #5 is the source
+- [ ] **58 topics** from homepage section #5 is the source
 - [ ] **Search is Must Have** (not Nice to Have)
 - [ ] **Drag-to-resize** is required
 - [ ] **Color scheme** (dark blue sidebar) is acceptable
@@ -664,7 +664,7 @@ The JSON structure uses **topic-based grouping** (not chronological):
 {
   "lastUpdated": "2025-01-02",
   "totalPosts": 2078,
-  "totalTopics": 61,
+  "totalTopics": 58,
   "sections": {
     "about": {
       "title": "About",
@@ -723,7 +723,7 @@ The JSON structure uses **topic-based grouping** (not chronological):
         }
       ]
     }
-    // ... all 61 topic groups extracted from a/index.html
+    // ... all 58 topic groups extracted from a/index.html
   ]
 }
 ```
@@ -731,7 +731,7 @@ The JSON structure uses **topic-based grouping** (not chronological):
 ### Extracting Topic Data
 
 The topic data must be extracted from `a/index.html` section #5, which contains:
-- 61 main topic groups (5.1 through 5.56)
+- 55 main topic groups (5.1 through 5.56, excluding 5.12 redirect) + 3 subtopics
 - Some topics have sub-topics (e.g., 5.25.1, 5.25.2, 5.25.3)
 - Each topic contains curated lists of related blog posts with links
 
@@ -742,7 +742,7 @@ Key functionality:
 - Generate sidebar HTML dynamically with topic groups
 - Insert into page DOM
 - Highlight current page in TOC (and expand its topic group)
-- Handle collapsible topic sections (61 topics + sub-topics)
+- Handle collapsible topic sections (55 topics + 3 sub-topics = 58 total)
 - **Drag-to-resize sidebar width** (see Resizable Sidebar section below)
 - Implement search/filter (optional)
 - Support keyboard navigation
@@ -757,7 +757,7 @@ Key styles:
 - Sticky header within sidebar
 - Current page highlight
 - Hover states
-- Collapsible topic groups (61 topics)
+- Collapsible topic groups (58 topics)
 - Nested sub-topics (e.g., 5.25.1, 5.25.2, 5.25.3)
 - Mobile hamburger menu
 - Print styles (hide sidebar)
@@ -995,7 +995,7 @@ Each blog post HTML file needs modification:
    - License (#3)
    - Disclaimer (#4)
 
-3. **Topics Section** (61 TOPIC GROUPS - collapsible)
+3. **Topics Section** (58 TOPIC GROUPS - collapsible)
    
    Each topic is a collapsible group containing curated lists of related posts:
    
@@ -1424,7 +1424,7 @@ When hamburger clicked:
 ### Optimization Strategies
 
 1. **Lazy Loading Topic Contents**
-   - Load only topic headers initially (61 topics)
+   - Load only topic headers initially (58 topics)
    - Load posts within a topic on expand
    - This keeps initial render fast
 
@@ -1455,7 +1455,7 @@ When hamburger clicked:
 
 ### Phase 1: Create TOC Assets
 1. **Extract topic-based TOC data** from `a/index.html` section #5 into `toc-data.json`
-   - Parse 61 topic groups (5.1 through 5.56)
+   - Parse 58 topic groups (5.1 through 5.56, excluding 5.12 redirect)
    - Extract post links within each topic
    - Handle sub-topics (e.g., 5.25.1, 5.25.2, 5.25.3)
 2. Create `toc-sidebar.css` with styles

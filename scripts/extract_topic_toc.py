@@ -2,8 +2,12 @@
 """
 extract_topic_toc.py - Extract topic-based TOC from a/index.html to JSON
 
-This script parses the homepage and extracts all 61+ topic groups from section #5,
-creating a structured JSON file for the sidebar navigation.
+This script parses the homepage and extracts all 58 topic groups (55 main + 3 subtopics)
+from section #5, creating a structured JSON file for the sidebar navigation.
+
+Note: There are 61 anchors in index.html, but:
+- 2 are sub-section markers (5.9b, 5.28b) embedded within topic lists
+- 1 is a redirect (5.12 -> 5.9) with no content
 
 Author: parametrix
 Date: January 2, 2026
@@ -142,6 +146,44 @@ class TopicTOCExtractor(HTMLParser):
             self.topics.append(self.current_topic)
 
 
+def find_matching_ul(content: str, start_pos: int) -> Optional[str]:
+    """
+    Find a complete <ul>...</ul> block starting from start_pos,
+    properly handling nested <ul> tags.
+    """
+    ul_start = content.find('<ul>', start_pos)
+    if ul_start == -1:
+        ul_start = content.find('<ul ', start_pos)  # ul with attributes
+    if ul_start == -1:
+        return None
+    
+    # Find the matching </ul> by counting nesting
+    depth = 0
+    pos = ul_start
+    while pos < len(content):
+        next_open = content.find('<ul', pos + 1)
+        next_close = content.find('</ul>', pos + 1)
+        
+        if next_close == -1:
+            return None  # No closing tag found
+        
+        if next_open != -1 and next_open < next_close:
+            # Found nested <ul> before </ul>
+            depth += 1
+            pos = next_open
+        else:
+            # Found </ul>
+            if depth == 0:
+                # This is our matching </ul>
+                ul_end = next_close + len('</ul>')
+                return content[ul_start:ul_end]
+            else:
+                depth -= 1
+                pos = next_close
+    
+    return None
+
+
 def extract_topics_with_regex(html_content: str) -> List[Dict[str, Any]]:
     """
     Extract topics using regex as a more robust fallback.
@@ -149,32 +191,55 @@ def extract_topics_with_regex(html_content: str) -> List[Dict[str, Any]]:
     """
     topics = []
     
-    # Pattern to find topic anchors and their content
-    # <a name="5.X"></a>\n\n<h4>5.X. Title</h4>\n\n<ul>...</ul>
-    topic_pattern = re.compile(
-        r'<a\s+name="(5\.\d+(?:\.\d+)?)">\s*</a>\s*'
-        r'<h4>([^<]+)</h4>\s*'
-        r'(?:<[^>]+>\s*)*'  # Skip any intermediate tags/comments
-        r'<ul>(.*?)</ul>',
-        re.DOTALL | re.IGNORECASE
-    )
+    # First, find all topic anchor positions - only main topics (5.X) and subtopics (5.X.Y)
+    # Skip sub-section markers like 5.9b which are embedded inside <ul> lists
+    anchor_pattern = re.compile(r'<a\s+name="(5\.\d+(?:\.\d+)?)">\s*</a>', re.IGNORECASE)
+    anchors = [(m.group(1), m.start(), m.end()) for m in anchor_pattern.finditer(html_content)]
     
-    # Pattern to extract links from ul content
-    link_pattern = re.compile(
-        r'<li>\s*<a\s+href="([^"]+)"[^>]*>([^<]+)</a>',
-        re.IGNORECASE
-    )
-    
-    for match in topic_pattern.finditer(html_content):
-        topic_id = match.group(1)
-        title_raw = match.group(2)
-        ul_content = match.group(3)
+    # For each anchor, extract its content
+    for i, (topic_id, start, end) in enumerate(anchors):
+        # Determine where this topic's section ends (next main anchor or section 6)
+        if i + 1 < len(anchors):
+            next_start = anchors[i + 1][1]
+        else:
+            # Find end of section (next major section like <a name="6">)
+            section_end = re.search(r'<a\s+name="6', html_content[end:])
+            next_start = end + section_end.start() if section_end else len(html_content)
+        
+        chunk = html_content[end:next_start]
+        
+        # Extract title from h4 (may contain <code> tags)
+        h4_match = re.search(r'<h4>(.*?)</h4>', chunk, re.IGNORECASE | re.DOTALL)
+        if h4_match:
+            title_raw = h4_match.group(1)
+        else:
+            # Try to get title from the first li text if no h4
+            li_match = re.search(r'<li>\s*([^<:]+)', chunk)
+            title_raw = li_match.group(1).strip() if li_match else f"Topic {topic_id}"
+        
+        # Find the first complete <ul>...</ul> block (handling nesting)
+        ul_block = find_matching_ul(html_content, end)
+        if not ul_block:
+            continue  # Skip topics with no links
+        
+        # Make sure the ul_block starts within our expected range (before next topic's h4)
+        ul_pos = html_content.find(ul_block, end)
+        if ul_pos > next_start:
+            continue  # This ul belongs to a different topic
+        
+        ul_content = ul_block[4:-5]  # Remove <ul> and </ul> tags
         
         # Clean title - remove leading number
         title = re.sub(r'^5\.\d+\.?\d*\.?\s*', '', title_raw).strip()
         # Convert HTML entities
         title = title.replace('&ndash;', '–').replace('&mdash;', '—')
         title = title.replace('<code>', '').replace('</code>', '')
+        
+        # Pattern to extract links from ul content
+        link_pattern = re.compile(
+            r'<li>\s*<a\s+href="([^"]+)"[^>]*>([^<]+)</a>',
+            re.IGNORECASE
+        )
         
         # Extract posts
         posts = []
@@ -191,9 +256,10 @@ def extract_topics_with_regex(html_content: str) -> List[Dict[str, Any]]:
         # Determine if this is a subtopic
         is_subtopic = bool(re.match(r'^5\.\d+\.\d+$', topic_id))
         
-        if is_subtopic and topics:
-            # Add as subtopic to previous main topic
+        if is_subtopic:
+            # Add as subtopic to parent main topic
             parent_id = '.'.join(topic_id.split('.')[:2])
+            parent_found = False
             for t in reversed(topics):
                 if t["id"] == parent_id:
                     t.setdefault("subTopics", []).append({
@@ -201,7 +267,32 @@ def extract_topics_with_regex(html_content: str) -> List[Dict[str, Any]]:
                         "title": title,
                         "posts": posts
                     })
+                    parent_found = True
                     break
+            
+            # If parent wasn't found, create it (some parent topics have no <ul> of their own)
+            if not parent_found:
+                # Look up the parent's title from the anchors list
+                parent_title = f"Topic {parent_id}"
+                for pid, pstart, pend in anchors:
+                    if pid == parent_id:
+                        pchunk = html_content[pend:pend+500]
+                        ph4_match = re.search(r'<h4>([^<]+(?:<code>[^<]+</code>[^<]*)?)</h4>', pchunk, re.IGNORECASE)
+                        if ph4_match:
+                            parent_title = re.sub(r'^5\.\d+\.?\s*', '', ph4_match.group(1)).strip()
+                            parent_title = parent_title.replace('&ndash;', '–').replace('&mdash;', '—')
+                        break
+                
+                topics.append({
+                    "id": parent_id,
+                    "title": parent_title,
+                    "posts": [],
+                    "subTopics": [{
+                        "id": topic_id,
+                        "title": title,
+                        "posts": posts
+                    }]
+                })
         else:
             topics.append({
                 "id": topic_id,

@@ -256,31 +256,48 @@ body.tbc-resizing * {
 }
 
 /* ================================
-   Navigation Links
+   Sidebar Footer (Nav Links)
    ================================ */
-#tbc-nav-links {
-  padding: 10px 0;
-  border-bottom: 1px solid var(--tbc-sidebar-border);
+#tbc-sidebar-footer {
   flex-shrink: 0;
+  border-top: 1px solid var(--tbc-sidebar-border);
+  padding: 8px 12px;
+  background: var(--tbc-sidebar-bg-light);
+}
+
+#tbc-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  justify-content: center;
 }
 
 #tbc-nav-links a {
-  display: block;
-  padding: 8px 15px;
-  color: var(--tbc-sidebar-text);
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: var(--tbc-sidebar-text-muted);
   text-decoration: none;
+  border-radius: 3px;
   transition: background var(--tbc-transition-speed), color var(--tbc-transition-speed);
 }
 
 #tbc-nav-links a:hover {
   background: var(--tbc-sidebar-hover);
-  color: #fff;
+  color: var(--tbc-sidebar-text);
 }
 
 #tbc-nav-links a.active {
   background: var(--tbc-sidebar-active);
   color: #fff;
   font-weight: 500;
+}
+
+#tbc-sidebar-footer .tbc-shortcut-hint {
+  text-align: center;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid var(--tbc-sidebar-border);
 }
 
 /* ================================
@@ -363,20 +380,8 @@ body.tbc-resizing * {
   color: var(--tbc-sidebar-text);
 }
 
-.tbc-topics-section,
-.tbc-archive-section {
+.tbc-topics-section {
   margin-bottom: 8px;
-}
-
-.tbc-archive-section .tbc-section-header {
-  border-top: 2px solid var(--tbc-sidebar-border);
-  margin-top: 8px;
-  padding-top: 14px;
-}
-
-/* Archive year styling */
-.tbc-archive-year .tbc-topic-id {
-  font-size: 12px;
 }
 
 /* ================================
@@ -564,12 +569,11 @@ body.tbc-resizing * {
   font-size: 11px;
   color: var(--tbc-sidebar-text-muted);
   text-align: center;
-  padding: 8px;
-  border-top: 1px solid var(--tbc-sidebar-border);
+  padding: 4px;
 }
 
 .tbc-shortcut-hint kbd {
-  background: var(--tbc-sidebar-bg-light);
+  background: var(--tbc-sidebar-bg);
   border: 1px solid var(--tbc-sidebar-border);
   border-radius: 3px;
   padding: 1px 5px;
