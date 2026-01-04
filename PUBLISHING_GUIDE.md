@@ -27,7 +27,7 @@ This guide explains how to publish and manage blog posts in The Building Coder a
    git push
    ```
 
-3. **Done!** The post appears in Recent Posts (left sidebar) and Timeline (right column).
+3. **Done!** The post appears in the chronological index and Timeline (right column).
 
 ### Add Post to a Topic (Optional)
 
@@ -345,15 +345,16 @@ You can also add posts to subject topics (like "Custom Exporter" or "Family API"
 The left sidebar TOC data is stored in `a/toc/toc-data.json`:
 
 ```
-Left Sidebar Structure
+Left Sidebar Structure (Topic-based)
 ├── Navigation Links (About, Contact, etc.)
 └── Topics (subject-based groups)
-    ├── 0.1 Recent Posts (auto-updated)
     ├── 5.1 Custom Exporter
     ├── 5.2 2D Booleans and Adjacent Areas
-    ├── ... (46+ topics)
+    ├── ... (57 topics)
     └── 5.56 Forge and APS
 ```
+
+**Note:** New posts are NOT automatically added to topics. Use `manage_topics.py` or the "Manage Topics" GitHub Action to add posts to subject categories.
 
 The right column timeline data is stored in `a/toc/chrono-data.json`:
 
@@ -427,7 +428,7 @@ The easiest way to remove a post:
 The Action automatically:
 - Deletes the HTML file
 - Removes entry from `a/index.html`
-- Removes from Recent Posts in left sidebar
+- Removes from any topics in left sidebar (if present)
 - Removes from timeline (`a/toc/chrono-data.json`)
 - Commits and pushes changes
 
@@ -450,11 +451,11 @@ Edit `a/index.html` and delete the table row for the post:
 <tr><td align="right">NNNN</td><td>YYYY-MM-DD</td><td><a href="NNNN_slug.html">Title</a>...</td></tr>
 ```
 
-#### Step 3: Remove from left sidebar
+#### Step 3: Remove from left sidebar (if present)
 
 Edit `a/toc/toc-data.json`:
 
-1. Remove from "Recent Posts" (topic id "0.1"):
+1. Search for the post filename and remove its entry from any topic:
    ```json
    { "title": "Your Post Title", "file": "NNNN_slug.html" }
    ```
@@ -527,10 +528,10 @@ python scripts/publish_post.py a/drafts/my-post.md --dry-run
 3. **Wraps** with the site template (nav, sidebar, CSS)
 4. **Generates** filename: `NNNN_slug.html` (next number)
 5. **Updates** `a/index.html` with new table row
-6. **Updates** `a/toc/toc-data.json` (left sidebar):
-   - Adds to "Recent Posts" section
-7. **Updates** `a/toc/chrono-data.json` (right column timeline)
-8. **Updates** `index.html` (homepage) - post count stats
+6. **Updates** `a/toc/chrono-data.json` (right column timeline)
+7. **Updates** `index.html` (homepage) - post count stats
+
+**Note:** Posts are NOT automatically added to topics in the left sidebar (`a/toc/toc-data.json`). Use `manage_topics.py` to add posts to subject categories.
 
 ### 7.5 Post-Publishing
 

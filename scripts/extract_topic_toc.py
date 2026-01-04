@@ -16,6 +16,7 @@ Date: January 2, 2026
 import re
 import json
 from pathlib import Path
+from datetime import datetime
 from html.parser import HTMLParser
 from typing import List, Dict, Optional, Any
 
@@ -403,7 +404,7 @@ def main():
     # Build final JSON structure
     toc_data = {
         "version": "1.0",
-        "lastUpdated": "2026-01-02",
+        "lastUpdated": datetime.now().strftime("%Y-%m-%d"),
         "totalTopics": len(topics),
         "totalPostLinks": total_posts,
         "navigation": nav_links,

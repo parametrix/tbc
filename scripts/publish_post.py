@@ -34,14 +34,12 @@ REPO_ROOT = Path(__file__).parent.parent
 POSTS_DIR = REPO_ROOT / "a"
 DRAFTS_DIR = POSTS_DIR / "drafts"
 INDEX_FILE = POSTS_DIR / "index.html"
-TOC_FILE = POSTS_DIR / "toc" / "toc-data.json"
 CHRONO_FILE = POSTS_DIR / "toc" / "chrono-data.json"
 ROOT_INDEX = REPO_ROOT / "index.html"
 
-# Recent Posts topic ID (will be first in sidebar)
-RECENT_POSTS_ID = "0.1"
-RECENT_POSTS_TITLE = "Recent Posts"
-MAX_RECENT_POSTS = 20  # Keep only the most recent N posts in this section
+# Note: The left sidebar (toc-data.json) contains topic-based navigation (by subject).
+# New posts are NOT automatically added to topics - use manage_topics.py to add posts
+# to subject categories. The right-side timeline (chrono-data.json) is always updated.
 
 # HTML template for new posts
 POST_TEMPLATE = '''<!DOCTYPE html>
@@ -183,73 +181,6 @@ def read_post(md_file):
     content = Path(md_file).read_text(encoding='utf-8')
     post = frontmatter.loads(content)
     return post
-
-
-def update_toc(title, filename, post_number, post_date, dry_run=False):
-    """Add the new post to 'Recent Posts' in toc-data.json (left sidebar)."""
-    if not TOC_FILE.exists():
-        print(f"Warning: TOC file not found: {TOC_FILE}")
-        return False
-    
-    try:
-        toc_data = json.loads(TOC_FILE.read_text(encoding='utf-8'))
-    except json.JSONDecodeError as e:
-        print(f"Warning: Could not parse TOC file: {e}")
-        return False
-    
-    # Find or create the "Recent Posts" topic
-    recent_topic = None
-    recent_index = -1
-    
-    for i, topic in enumerate(toc_data.get('topics', [])):
-        if topic.get('id') == RECENT_POSTS_ID:
-            recent_topic = topic
-            recent_index = i
-            break
-    
-    if recent_topic is None:
-        # Create new "Recent Posts" topic at the beginning
-        recent_topic = {
-            "id": RECENT_POSTS_ID,
-            "title": RECENT_POSTS_TITLE,
-            "posts": []
-        }
-        toc_data['topics'].insert(0, recent_topic)
-        recent_index = 0
-    
-    # Create new post entry for Recent Posts
-    new_post = {
-        "title": title,
-        "file": filename
-    }
-    
-    # Add to the beginning of Recent Posts (most recent first)
-    recent_topic['posts'].insert(0, new_post)
-    
-    # Limit the number of posts in Recent Posts section
-    if len(recent_topic['posts']) > MAX_RECENT_POSTS:
-        recent_topic['posts'] = recent_topic['posts'][:MAX_RECENT_POSTS]
-    
-    # Update the topic in the list
-    toc_data['topics'][recent_index] = recent_topic
-    
-    # Update metadata
-    toc_data['lastUpdated'] = datetime.now().strftime("%Y-%m-%d")
-    toc_data['totalPostLinks'] = sum(len(t.get('posts', [])) for t in toc_data['topics'])
-    
-    if dry_run:
-        print(f"[DRY RUN] Would add to TOC 'Recent Posts': {title}")
-        print(f"[DRY RUN] TOC would have {toc_data['totalPostLinks']} topic post links")
-    else:
-        # Write with proper formatting
-        TOC_FILE.write_text(
-            json.dumps(toc_data, indent=2, ensure_ascii=False),
-            encoding='utf-8'
-        )
-        print(f"Updated toc-data.json:")
-        print(f"  - Added to 'Recent Posts': {title}")
-    
-    return True
 
 
 def update_chrono_data(title, filename, post_number, post_date, dry_run=False):
@@ -429,10 +360,6 @@ def publish_post(md_file, date=None, title=None, slug=None,
     if update_idx:
         update_index(post_number, post_date, post_title, filename, categories, dry_run)
     
-    # Update TOC sidebar (left sidebar - topic-based)
-    if update_toc_flag:
-        update_toc(post_title, filename, post_number, post_date, dry_run)
-    
     # Update chrono-data.json (right column - timeline navigation)
     if update_toc_flag:
         update_chrono_data(post_title, filename, post_number, post_date, dry_run)
@@ -449,6 +376,8 @@ def publish_post(md_file, date=None, title=None, slug=None,
         print("  git add -A")
         print(f'  git commit -m "Add post {post_number}: {post_title}"')
         print("  git push")
+        print("\nTo add this post to a topic (left sidebar):")
+        print(f"  python scripts/manage_topics.py add-post <topic_id> {filename} \"{post_title}\"")
     
     return True
 
@@ -466,9 +395,11 @@ Examples:
 Updates performed:
   - Creates HTML file in a/ directory
   - Adds entry to a/index.html post table (chronological TOC)
-  - Adds to "Recent Posts" in a/toc/toc-data.json (left sidebar topics)
   - Adds to a/toc/chrono-data.json (right column timeline navigation)
   - Updates post count on homepage (index.html)
+  
+Note: Posts are NOT automatically added to topics in the left sidebar.
+      Use manage_topics.py to add posts to subject categories.
         """
     )
     
@@ -501,7 +432,7 @@ Updates performed:
     parser.add_argument(
         "--no-toc",
         action="store_true",
-        help="Don't update a/toc/ files (toc-data.json and chrono-data.json)"
+        help="Don't update a/toc/chrono-data.json (timeline navigation)"
     )
     parser.add_argument(
         "--no-stats",
