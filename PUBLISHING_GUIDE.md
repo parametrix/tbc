@@ -348,14 +348,14 @@ The left sidebar TOC data is stored in `a/toc/toc-data.json`:
 Left Sidebar Structure (Topic-based)
 ├── Navigation Links (About, Contact, etc.)
 └── Topics (subject-based groups)
-    ├── 0.1 Uncategorized (new posts land here)
     ├── 5.1 Custom Exporter
     ├── 5.2 2D Booleans and Adjacent Areas
-    ├── ... (58 topics)
-    └── 5.56 Forge and APS
+    ├── ... (57 topics)
+    ├── 5.56 Forge and APS
+    └── 5.99 Uncategorized (new posts land here)
 ```
 
-**Note:** New posts are automatically added to the **Uncategorized** topic (ID 0.1). Use `manage_topics.py` or the "Manage Topics" GitHub Action to move posts to subject-specific categories.
+**Note:** New posts are automatically added to the **Uncategorized** topic (ID 5.99). Use `manage_topics.py` or the "Manage Topics" GitHub Action to move posts to subject-specific categories.
 
 The right column timeline data is stored in `a/toc/chrono-data.json`:
 
@@ -533,7 +533,7 @@ python scripts/publish_post.py a/drafts/my-post.md --dry-run
 7. **Updates** `a/toc/toc-data.json` (adds to Uncategorized topic)
 8. **Updates** `index.html` (homepage) - post count stats
 
-**Note:** New posts are added to the Uncategorized topic (ID 0.1) in the left sidebar. Use `manage_topics.py` to move posts to subject-specific categories.
+**Note:** New posts are added to the Uncategorized topic (ID 5.99) in the left sidebar. Use `manage_topics.py` to move posts to subject-specific categories.
 
 ### 7.5 Post-Publishing
 

@@ -39,7 +39,7 @@ TOC_FILE = POSTS_DIR / "toc" / "toc-data.json"
 ROOT_INDEX = REPO_ROOT / "index.html"
 
 # Topic assignment:
-# - New posts are automatically added to the "Uncategorized" topic (ID 0.1)
+# - New posts are automatically added to the "Uncategorized" topic (ID 5.99)
 # - Use manage_topics.py to move posts to subject-specific topics
 # - The right-side timeline (chrono-data.json) is always updated
 
@@ -267,15 +267,15 @@ def update_toc_data(title, filename, dry_run=False):
         print(f"Warning: Could not parse TOC file: {e}")
         return False
     
-    # Find the Uncategorized topic (ID 0.1)
+    # Find the Uncategorized topic (ID 5.99)
     uncategorized = None
     for topic in toc_data.get('topics', []):
-        if topic.get('id') == '0.1':
+        if topic.get('id') == '5.99':
             uncategorized = topic
             break
     
     if uncategorized is None:
-        print("Warning: Uncategorized topic (ID 0.1) not found in toc-data.json")
+        print("Warning: Uncategorized topic (ID 5.99) not found in toc-data.json")
         return False
     
     # Create new post entry
@@ -434,7 +434,7 @@ def publish_post(md_file, date=None, title=None, slug=None,
         print(f'  git commit -m "Add post {post_number}: {post_title}"')
         print("  git push")
         print("\nTo move this post to a specific topic (from Uncategorized):")
-        print(f"  python scripts/manage_topics.py remove-post 0.1 {filename}")
+        print(f"  python scripts/manage_topics.py remove-post 5.99 {filename}")
         print(f"  python scripts/manage_topics.py add-post <topic_id> {filename} \"{post_title}\"")
     
     return True
@@ -457,7 +457,7 @@ Updates performed:
   - Adds to Uncategorized topic in a/toc/toc-data.json (left sidebar)
   - Updates post count on homepage (index.html)
   
-Note: New posts are added to the Uncategorized topic (ID 0.1) by default.
+Note: New posts are added to the Uncategorized topic (ID 5.99) by default.
       Use manage_topics.py to move posts to subject-specific topics.
         """
     )
