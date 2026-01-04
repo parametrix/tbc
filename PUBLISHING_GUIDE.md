@@ -35,7 +35,8 @@ git push
 3. [Markdown Formatting Guide](#3-markdown-formatting-guide)
 4. [Publishing Locally](#4-publishing-locally)
 5. [Publishing via GitHub Actions](#5-publishing-via-github-actions)
-6. [Troubleshooting](#6-troubleshooting)
+6. [Managing Topics](#6-managing-topics)
+7. [Troubleshooting](#7-troubleshooting)
 
 ---
 
@@ -368,9 +369,132 @@ You can also manually trigger publishing:
 
 ---
 
-## 6. Troubleshooting
+## 6. Managing Topics
 
-### 6.1 Common Issues
+The sidebar organizes posts into **Topics** (subject-based groups) and a **Chronological Archive** (by year). When you publish a post with `publish_post.py`, it automatically appears in:
+- **Recent Posts** - The first topic in the sidebar
+- **Chronological Archive** - Grouped by year
+
+However, you may want to add posts to existing subject topics (like "Custom Exporter" or "Family API") or create new topics.
+
+### 6.1 Understanding the Sidebar Structure
+
+The sidebar TOC data is stored in `a/toc/toc-data.json`:
+
+```
+Sidebar Structure
+├── Navigation Links (About, Contact, etc.)
+├── Topics (subject-based groups)
+│   ├── 0.1 Recent Posts (auto-updated)
+│   ├── 5.1 Custom Exporter
+│   ├── 5.2 2D Booleans and Adjacent Areas
+│   ├── ... (61+ topics)
+│   └── 5.56 Forge and APS
+└── Chronological Archive (by year)
+    ├── 2025 (auto-updated)
+    ├── 2024
+    └── ... (back to 2008)
+```
+
+### 6.2 List All Topics
+
+To see all available topics:
+
+```bash
+python scripts/manage_topics.py list
+```
+
+Output:
+```
+============================================================
+TOC Topics (46 total)
+============================================================
+
+  5.1      Custom Exporter                                 (12 posts)
+  5.2      2D Booleans and Adjacent Areas                  (11 posts)
+  5.3      PostCommand                                     (12 posts)
+  ...
+```
+
+### 6.3 View Topic Details
+
+To see all posts in a specific topic:
+
+```bash
+python scripts/manage_topics.py show 5.1
+```
+
+### 6.4 Add a Post to an Existing Topic
+
+After publishing a post, add it to a relevant topic:
+
+```bash
+# Syntax
+python scripts/manage_topics.py add-post <topic_id> <filename> "Post Title"
+
+# Example
+python scripts/manage_topics.py add-post 5.9 2080_filtered_collector.html "Using FilteredElementCollector"
+
+# Preview without saving
+python scripts/manage_topics.py add-post 5.9 2080_example.html "Title" --dry-run
+```
+
+### 6.5 Create a New Topic
+
+To create a brand new topic category:
+
+```bash
+# Syntax
+python scripts/manage_topics.py new-topic <topic_id> "Topic Title"
+
+# Example: Create topic 5.62
+python scripts/manage_topics.py new-topic 5.62 "Machine Learning Integration"
+
+# Insert after a specific topic
+python scripts/manage_topics.py new-topic 5.62 "ML Integration" --after 5.61
+
+# Preview without saving
+python scripts/manage_topics.py new-topic 5.62 "ML Integration" --dry-run
+```
+
+Then add posts to the new topic:
+```bash
+python scripts/manage_topics.py add-post 5.62 2080_ml_post.html "ML in Revit API"
+```
+
+### 6.6 Remove a Post from a Topic
+
+If you need to remove a post from a topic:
+
+```bash
+python scripts/manage_topics.py remove-post 5.1 0123_old_post.html
+```
+
+### 6.7 Complete Workflow Example
+
+Here's a typical workflow for publishing and categorizing a post:
+
+```bash
+# 1. Publish the post (auto-adds to Recent Posts + Chronological Archive)
+python scripts/publish_post.py a/drafts/my-filtered-collector-post.md
+
+# 2. Add to a relevant topic
+python scripts/manage_topics.py add-post 5.9 2080_filtered_collector.html "Advanced Filtering"
+
+# 3. Optionally add to additional topics (a post can be in multiple topics)
+python scripts/manage_topics.py add-post 5.10 2080_filtered_collector.html "Advanced Filtering"
+
+# 4. Commit and push
+git add -A
+git commit -m "Add post 2080: Advanced Filtering"
+git push
+```
+
+---
+
+## 7. Troubleshooting
+
+### 7.1 Common Issues
 
 **Issue: Script can't find the markdown file**
 ```
@@ -408,7 +532,7 @@ Solution: The script auto-detects the next number.
 If manual, check a/index.html for the latest post number.
 ```
 
-### 6.2 Validating Your Post
+### 7.2 Validating Your Post
 
 Before publishing, you can preview locally:
 
@@ -420,7 +544,7 @@ python scripts/publish_post.py a/drafts/my-post.md --dry-run
 start a/drafts/my-post-preview.html
 ```
 
-### 6.3 Deleting/Reverting a Published Post
+### 7.3 Deleting/Reverting a Published Post
 
 If you need to unpublish or delete a post, you must undo all changes made by the publish script:
 

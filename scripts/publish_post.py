@@ -184,8 +184,8 @@ def read_post(md_file):
     return post
 
 
-def update_toc(title, filename, dry_run=False):
-    """Add the new post to the 'Recent Posts' section in toc-data.json."""
+def update_toc(title, filename, post_number, post_date, dry_run=False):
+    """Add the new post to 'Recent Posts' and Chronological Archive in toc-data.json."""
     if not TOC_FILE.exists():
         print(f"Warning: TOC file not found: {TOC_FILE}")
         return False
@@ -216,7 +216,7 @@ def update_toc(title, filename, dry_run=False):
         toc_data['topics'].insert(0, recent_topic)
         recent_index = 0
     
-    # Create new post entry
+    # Create new post entry for Recent Posts
     new_post = {
         "title": title,
         "file": filename
@@ -232,20 +232,71 @@ def update_toc(title, filename, dry_run=False):
     # Update the topic in the list
     toc_data['topics'][recent_index] = recent_topic
     
+    # ========================================
+    # Update Chronological Archive
+    # ========================================
+    year = post_date.year
+    year_id = f"archive-{year}"
+    date_str = post_date.strftime("%Y-%m-%d")
+    
+    # Create archive entry with post number in title (matches existing format)
+    archive_post = {
+        "title": f"#{post_number:04d} - {title}",
+        "file": filename,
+        "date": date_str
+    }
+    
+    # Find or create the year entry in archive
+    archive = toc_data.get('archive', [])
+    year_entry = None
+    year_index = -1
+    
+    for i, entry in enumerate(archive):
+        if entry.get('id') == year_id:
+            year_entry = entry
+            year_index = i
+            break
+    
+    if year_entry is None:
+        # Create new year entry and insert at the beginning (most recent year first)
+        year_entry = {
+            "id": year_id,
+            "title": str(year),
+            "posts": []
+        }
+        archive.insert(0, year_entry)
+        year_index = 0
+        toc_data['archive'] = archive
+        toc_data['totalArchiveYears'] = len(archive)
+    
+    # Add post to the end of the year's posts (chronological order within year)
+    # Check if post already exists (avoid duplicates)
+    existing_files = [p.get('file') for p in year_entry['posts']]
+    if filename not in existing_files:
+        year_entry['posts'].append(archive_post)
+        # Sort posts by date within the year
+        year_entry['posts'].sort(key=lambda p: p.get('date', ''))
+        toc_data['archive'][year_index] = year_entry
+        toc_data['totalArchivePosts'] = sum(len(y.get('posts', [])) for y in archive)
+    
     # Update metadata
     toc_data['lastUpdated'] = datetime.now().strftime("%Y-%m-%d")
     toc_data['totalPostLinks'] = sum(len(t.get('posts', [])) for t in toc_data['topics'])
     
     if dry_run:
         print(f"[DRY RUN] Would add to TOC 'Recent Posts': {title}")
-        print(f"[DRY RUN] TOC would have {toc_data['totalPostLinks']} total post links")
+        print(f"[DRY RUN] Would add to Chronological Archive ({year}): #{post_number:04d}")
+        print(f"[DRY RUN] TOC would have {toc_data['totalPostLinks']} topic post links")
+        print(f"[DRY RUN] Archive would have {toc_data.get('totalArchivePosts', 0)} posts")
     else:
         # Write with proper formatting
         TOC_FILE.write_text(
             json.dumps(toc_data, indent=2, ensure_ascii=False),
             encoding='utf-8'
         )
-        print(f"Updated toc-data.json with '{title}' in Recent Posts")
+        print(f"Updated toc-data.json:")
+        print(f"  - Added to 'Recent Posts': {title}")
+        print(f"  - Added to Chronological Archive ({year}): #{post_number:04d}")
     
     return True
 
@@ -357,9 +408,9 @@ def publish_post(md_file, date=None, title=None, slug=None,
     if update_idx:
         update_index(post_number, post_date, post_title, filename, categories, dry_run)
     
-    # Update TOC sidebar (Recent Posts)
+    # Update TOC sidebar (Recent Posts + Chronological Archive)
     if update_toc_flag:
-        update_toc(post_title, filename, dry_run)
+        update_toc(post_title, filename, post_number, post_date, dry_run)
     
     # Update homepage stats
     if update_stats:
@@ -389,8 +440,9 @@ Examples:
 
 Updates performed:
   - Creates HTML file in a/ directory
-  - Adds entry to a/index.html post table
+  - Adds entry to a/index.html post table (chronological TOC)
   - Adds to "Recent Posts" in a/toc/toc-data.json (sidebar)
+  - Adds to Chronological Archive in a/toc/toc-data.json (sidebar)
   - Updates post count on homepage (index.html)
         """
     )
