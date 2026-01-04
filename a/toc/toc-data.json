@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-01-02",
+  "lastUpdated": "2026-01-04",
   "totalTopics": 46,
-  "totalPostLinks": 370,
+  "totalPostLinks": 371,
   "navigation": [
     {
       "label": "About Jeremy Tammik",
@@ -26,6 +26,16 @@
     }
   ],
   "topics": [
+    {
+      "id": "0.1",
+      "title": "Recent Posts",
+      "posts": [
+        {
+          "title": "Sample Post Title",
+          "file": "2079_sample_post_title.html"
+        }
+      ]
+    },
     {
       "id": "5.1",
       "title": "Custom Exporter",
