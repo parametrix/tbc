@@ -213,6 +213,13 @@
         <div id="tbc-search-results"></div>
       </div>
       
+      <div id="tbc-welcome-link">
+        <a href="0001_welcome.htm" title="Welcome to The Building Coder">
+          <span class="tbc-welcome-icon">👋</span>
+          <span>Welcome</span>
+        </a>
+      </div>
+      
       <div id="tbc-topics-container" aria-label="Topics navigation">
         <div class="tbc-loading-spinner"></div>
       </div>

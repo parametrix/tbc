@@ -256,6 +256,39 @@ body.tbc-resizing * {
 }
 
 /* ================================
+   Welcome Link
+   ================================ */
+#tbc-welcome-link {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--tbc-sidebar-border);
+}
+
+#tbc-welcome-link a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: linear-gradient(135deg, var(--tbc-accent-primary) 0%, var(--tbc-accent-secondary) 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all var(--tbc-transition-speed);
+  box-shadow: 0 2px 4px rgba(0, 102, 204, 0.2);
+}
+
+#tbc-welcome-link a:hover {
+  background: linear-gradient(135deg, var(--tbc-accent-secondary) 0%, var(--tbc-accent-highlight) 100%);
+  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.3);
+  transform: translateY(-1px);
+}
+
+.tbc-welcome-icon {
+  font-size: 16px;
+}
+
+/* ================================
    Sidebar Footer (Nav Links)
    ================================ */
 #tbc-sidebar-footer {
