@@ -263,7 +263,7 @@ def update_homepage_stats(post_count, dry_run=False):
     display_count = (post_count // 100) * 100
     new_stat = f"{display_count}+"
     
-    # Pattern to find the blog posts stat
+    # Pattern to find the blog posts stat (handles newlines between divs)
     pattern = r'(<div class="number">)\d+\+?(</div>\s*<div class="label">Blog Posts)'
     replacement = rf'\g<1>{new_stat}\g<2>'
     

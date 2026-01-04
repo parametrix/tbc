@@ -298,8 +298,9 @@ python scripts/publish_post.py a/drafts/my-post.md --dry-run
 | `--title "Title"` | Override post title |
 | `--slug name` | Custom filename slug |
 | `--dry-run` | Preview without writing |
-| `--no-index` | Don't update index.html |
-| `--no-toc` | Don't update toc-data.json |
+| `--no-index` | Don't update a/index.html |
+| `--no-toc` | Don't update toc-data.json (sidebar) |
+| `--no-stats` | Don't update homepage stats |
 
 ### 4.4 What the Script Does
 
@@ -311,19 +312,7 @@ python scripts/publish_post.py a/drafts/my-post.md --dry-run
 6. **Updates** `a/toc/toc-data.json` - adds to "Recent Posts" in sidebar
 7. **Updates** `index.html` (homepage) - post count stats
 
-### 4.5 Command Options
-
-| Option | Description |
-|--------|-------------|
-| `--date YYYY-MM-DD` | Override publication date |
-| `--title "Title"` | Override post title |
-| `--slug name` | Custom filename slug |
-| `--dry-run` | Preview without writing |
-| `--no-index` | Don't update a/index.html |
-| `--no-toc` | Don't update toc-data.json (sidebar) |
-| `--no-stats` | Don't update homepage stats |
-
-### 4.6 Post-Publishing
+### 4.5 Post-Publishing
 
 After running the script:
 
@@ -475,15 +464,19 @@ git commit -m "Delete post NNNN: Title"
 git push
 ```
 
-#### Alternative: Use a Script
+#### Alternative: Use the Delete Script
 
-You can create a helper script `scripts/delete_post.py`:
+A helper script is provided in `scripts/delete_post.py`:
 
 ```bash
+# Preview what would be deleted
+python scripts/delete_post.py NNNN_slug.html --dry-run
+
+# Actually delete
 python scripts/delete_post.py NNNN_slug.html
 ```
 
-(See Appendix C for the delete script implementation)
+The script handles all cleanup automatically (HTML file, index, TOC).
 
 ---
 
