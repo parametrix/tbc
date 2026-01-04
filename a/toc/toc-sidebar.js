@@ -1242,13 +1242,8 @@
   // Initialize
   // ================================
   async function initChronoColumn() {
-    // Get current post number
+    // Get current post number (null for index.html)
     chronoState.currentPostNum = getCurrentPostNumber();
-    
-    // Don't render on index or if not a blog post
-    if (!chronoState.currentPostNum) {
-      return;
-    }
     
     // Load saved state
     loadExpandedYears();
@@ -1260,7 +1255,7 @@
       return;
     }
     
-    // Render column
+    // Render column (works for both index and post pages)
     const column = renderChronoColumn();
     if (!column) return;
     
@@ -1270,12 +1265,22 @@
     
     // Initialize event handlers
     initYearClickHandlers(column);
-    initKeyboardNav();
     
-    // Auto-expand current year
-    const currentPost = findPostByNum(chronoState.data.posts, chronoState.currentPostNum);
-    if (currentPost && !chronoState.expandedYears.has(currentPost.year)) {
-      toggleYear(currentPost.year);
+    // Only init keyboard nav on post pages
+    if (chronoState.currentPostNum) {
+      initKeyboardNav();
+      
+      // Auto-expand current year
+      const currentPost = findPostByNum(chronoState.data.posts, chronoState.currentPostNum);
+      if (currentPost && !chronoState.expandedYears.has(currentPost.year)) {
+        toggleYear(currentPost.year);
+      }
+    } else {
+      // On index page, expand the most recent year
+      const years = chronoState.data.years || [];
+      if (years.length > 0 && !chronoState.expandedYears.has(years[0].year)) {
+        toggleYear(years[0].year);
+      }
     }
     
     console.log('Chrono column initialized');
