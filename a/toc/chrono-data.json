@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "lastUpdated": "2026-01-05",
-  "totalPosts": 1350,
+  "totalPosts": 2081,
   "posts": [
     {
       "num": 1,
@@ -10118,7 +10118,7 @@
     {
       "num": 1265,
       "file": "1265_avenir_future.htm",
-      "title": "The Future &ndash;&nbsp;\u0623\u0646\u0627 \u062a\u0634\u0627\u0631",
+      "title": "The Future &ndash;&nbsp;أنا تشار",
       "date": "2015-01-07",
       "year": 2015,
       "month": 1
@@ -10550,7 +10550,7 @@
     {
       "num": 1319,
       "file": "1319_compatibility.htm",
-      "title": "Compatibilizar entre vers\u00f5es &ndash; API Compatibility Helper",
+      "title": "Compatibilizar entre versões &ndash; API Compatibility Helper",
       "date": "2015-05-19",
       "year": 2015,
       "month": 5
@@ -10802,40 +10802,5970 @@
       "date": "2015-08-21",
       "year": 2015,
       "month": 8
+    },
+    {
+      "num": 1351,
+      "file": "1351_md_fusion_rev_upgr.html",
+      "title": "Markdown, Fusion Accelerator $$$, Revisions and Bulk Upgrade",
+      "date": "2015-08-28",
+      "year": 2015,
+      "month": 8
+    },
+    {
+      "num": 1352,
+      "file": "1352_realdwg_meetup_prague.html",
+      "title": "RealDWG, AutoCAD I/O, View & Data API Meetup",
+      "date": "2015-09-02",
+      "year": 2015,
+      "month": 9
+    },
+    {
+      "num": 1353,
+      "file": "1353_fam_cat_elem_transact.html",
+      "title": "Family Category, Element Ids, Transaction Undo and Updates",
+      "date": "2015-09-03",
+      "year": 2015,
+      "month": 9
+    },
+    {
+      "num": 1354,
+      "file": "1354_fs_mantis.html",
+      "title": "F# Procedural Modelling and Z3 Constraint Solving",
+      "date": "2015-09-04",
+      "year": 2015,
+      "month": 9
+    },
+    {
+      "num": 1355,
+      "file": "1355_directshape_face.html",
+      "title": "DirectShape From Face and Sketch Plane Reuse",
+      "date": "2015-09-08",
+      "year": 2015,
+      "month": 9
+    },
+    {
+      "num": 1356,
+      "file": "1356_geom_transact_link.html",
+      "title": "Geometry Basics and No Modifying Linked Files",
+      "date": "2015-09-09",
+      "year": 2015,
+      "month": 9
+    },
+    {
+      "num": 1357,
+      "file": "1357_directshape_simple.html",
+      "title": "Simple DirectShape on Face, RestSharp, PUT and POST",
+      "date": "2015-09-11",
+      "year": 2015,
+      "month": 9
+    },
+    {
+      "num": 1358,
+      "file": "1358_firerating_revitlookup.html",
+      "title": "FireRating in the Cloud and RevitLookup Update",
+      "date": "2015-09-15",
+      "year": 2015,
+      "month": 9
+    },
+    {
+      "num": 1359,
+      "file": "1359_share_learn_book.html",
+      "title": "Sharing, Dynamo and a Chinese Book",
+      "date": "2015-09-22",
+      "year": 2015,
+      "month": 9
+    },
+    {
+      "num": 1360,
+      "file": "1360_revitlookup.html",
+      "title": "SVG, In-Memory Family, RevitLookup BoundingBox",
+      "date": "2015-09-24",
+      "year": 2015,
+      "month": 9
+    },
+    {
+      "num": 1361,
+      "file": "1361_rfa_api_iterate.html",
+      "title": "Change Type, Iterate Elements, Create Family",
+      "date": "2015-09-25",
+      "year": 2015,
+      "month": 9
+    },
+    {
+      "num": 1362,
+      "file": "1362_answer_day_create_roof.html",
+      "title": "Revit Answer Day and Creating a Roof",
+      "date": "2015-09-28",
+      "year": 2015,
+      "month": 9
+    },
+    {
+      "num": 1363,
+      "file": "1363_custom_file_prop.html",
+      "title": "Lunar Eclipse and Custom File Properties",
+      "date": "2015-09-29",
+      "year": 2015,
+      "month": 9
+    },
+    {
+      "num": 1364,
+      "file": "1364_postcommand_rules.html",
+      "title": "PostCommand causes Internal Exceptions, a Break",
+      "date": "2015-10-02",
+      "year": 2015,
+      "month": 10
+    },
+    {
+      "num": 1365,
+      "file": "1365_devdays.html",
+      "title": "Autodesk DevDays 2015 and CAD Trends",
+      "date": "2015-10-19",
+      "year": 2015,
+      "month": 10
+    },
+    {
+      "num": 1366,
+      "file": "1366_filter_rac_2016.html",
+      "title": "Filtering Samples and RAC 2016 Features",
+      "date": "2015-10-21",
+      "year": 2015,
+      "month": 10
+    },
+    {
+      "num": 1367,
+      "file": "1367_sheet_to_model_coord.html",
+      "title": "Sheet to Model Coordinate Conversion",
+      "date": "2015-10-22",
+      "year": 2015,
+      "month": 10
+    },
+    {
+      "num": 1368,
+      "file": "1368_revit_macros.html",
+      "title": "RTC Classes and Getting Started with Revit Macros",
+      "date": "2015-10-27",
+      "year": 2015,
+      "month": 10
+    },
+    {
+      "num": 1369,
+      "file": "1369_halloween.html",
+      "title": "Happy Halloween!",
+      "date": "2015-10-31",
+      "year": 2015,
+      "month": 10
+    },
+    {
+      "num": 1370,
+      "file": "1370_rtc_revit_api_panel.html",
+      "title": "RTC, Budapest and the Revit API Panel",
+      "date": "2015-11-03",
+      "year": 2015,
+      "month": 11
+    },
+    {
+      "num": 1371,
+      "file": "1371_add_materials.html",
+      "title": "Fill Pattern Viewer Fix and Add Materials for 2016",
+      "date": "2015-11-04",
+      "year": 2015,
+      "month": 11
+    },
+    {
+      "num": 1372,
+      "file": "1372_rtc_roomedit.html",
+      "title": "Connecting Desktop and Cloud, Room Editor Update",
+      "date": "2015-11-06",
+      "year": 2015,
+      "month": 11
+    },
+    {
+      "num": 1373,
+      "file": "1373_worksharingutils.html",
+      "title": "WorksharingUtils",
+      "date": "2015-11-09",
+      "year": 2015,
+      "month": 11
+    },
+    {
+      "num": 1374,
+      "file": "1374_aec_tech_symposium.html",
+      "title": "Kids@Work and AEC Technology Symposium Videos",
+      "date": "2015-11-13",
+      "year": 2015,
+      "month": 11
+    },
+    {
+      "num": 1375,
+      "file": "1375_flatten_to_directshape.html",
+      "title": "Flatten All Elements to DirectShape",
+      "date": "2015-11-17",
+      "year": 2015,
+      "month": 11
+    },
+    {
+      "num": 1376,
+      "file": "1376_au_cloud_devday.html",
+      "title": "Connecting Desktop and Cloud at AU and DevDays",
+      "date": "2015-11-18",
+      "year": 2015,
+      "month": 11
+    },
+    {
+      "num": 1377,
+      "file": "1377_wpf_thread_pickpoint.html",
+      "title": "PickPoint with WPF and No Threads",
+      "date": "2015-11-19",
+      "year": 2015,
+      "month": 11
+    },
+    {
+      "num": 1378,
+      "file": "1378_dropdown_param_combo.html",
+      "title": "Drop-down Enumerated Parameter Values",
+      "date": "2015-11-20",
+      "year": 2015,
+      "month": 11
+    },
+    {
+      "num": 1379,
+      "file": "1379_custom_export_2d.html",
+      "title": "DevDay@AU and Using a Custom Exporter for 2D",
+      "date": "2015-11-30",
+      "year": 2015,
+      "month": 11
+    },
+    {
+      "num": 1380,
+      "file": "1380_au2015_day_1.html",
+      "title": "AU Keynote and Revit API Panel",
+      "date": "2015-12-01",
+      "year": 2015,
+      "month": 12
+    },
+    {
+      "num": 1381,
+      "file": "1381_au_3_filter_delete.html",
+      "title": "AU, IoC, Banks and Not To Delete While Iterating",
+      "date": "2015-12-03",
+      "year": 2015,
+      "month": 12
+    },
+    {
+      "num": 1382,
+      "file": "1382_filter_shortcuts.html",
+      "title": "Quick, Slow and LINQ Element Filtering",
+      "date": "2015-12-08",
+      "year": 2015,
+      "month": 12
+    },
+    {
+      "num": 1383,
+      "file": "1383_external_event_10_year.html",
+      "title": "External Event and 10 Year Forum Anniversary",
+      "date": "2015-12-09",
+      "year": 2015,
+      "month": 12
+    },
+    {
+      "num": 1384,
+      "file": "1384_rex.html",
+      "title": "REX Add-In Development and Migration",
+      "date": "2015-12-10",
+      "year": 2015,
+      "month": 12
+    },
+    {
+      "num": 1385,
+      "file": "1385_external_service.html",
+      "title": "External Services",
+      "date": "2015-12-15",
+      "year": 2015,
+      "month": 12
+    },
+    {
+      "num": 1386,
+      "file": "1386_stacked_split_button.html",
+      "title": "Adding a Stacked Split Button to the Ribbon",
+      "date": "2015-12-16",
+      "year": 2015,
+      "month": 12
+    },
+    {
+      "num": 1387,
+      "file": "1387_wall_openings.html",
+      "title": "Retrieving Wall Openings and Sorting Points",
+      "date": "2015-12-17",
+      "year": 2015,
+      "month": 12
+    },
+    {
+      "num": 1388,
+      "file": "1388_project_param_guid.html",
+      "title": "Shared Project Parameter GUID Reporter",
+      "date": "2015-12-18",
+      "year": 2015,
+      "month": 12
+    },
+    {
+      "num": 1389,
+      "file": "1389_wall_opening_profiles.html",
+      "title": "Wall Opening Profiles and Happy Holidays!",
+      "date": "2015-12-22",
+      "year": 2015,
+      "month": 12
+    },
+    {
+      "num": 1390,
+      "file": "1390_happy_new_year.html",
+      "title": "Happy New Top CAD Blog, Public Models and Forge",
+      "date": "2016-01-06",
+      "year": 2016,
+      "month": 1
+    },
+    {
+      "num": 1391,
+      "file": "1391_string_search_2016.html",
+      "title": "All Model Text, StringSearch 2016 and New Jobs",
+      "date": "2016-01-07",
+      "year": 2016,
+      "month": 1
+    },
+    {
+      "num": 1392,
+      "file": "1392_model_elements.html",
+      "title": "Retrieving All Model Elements",
+      "date": "2016-01-08",
+      "year": 2016,
+      "month": 1
+    },
+    {
+      "num": 1393,
+      "file": "1393_idling_dmu_doc_change.html",
+      "title": "Idling, DMU, DocumentChanged and Need for Regen",
+      "date": "2016-01-12",
+      "year": 2016,
+      "month": 1
+    },
+    {
+      "num": 1394,
+      "file": "1394_ies_exciting_times.html",
+      "title": "Loading an IES Photometric Web and Exciting Times",
+      "date": "2016-01-13",
+      "year": 2016,
+      "month": 1
+    },
+    {
+      "num": 1395,
+      "file": "1395_pub_roof_fam_estore.html",
+      "title": "Era of Connection, Families and Data Handling",
+      "date": "2016-01-15",
+      "year": 2016,
+      "month": 1
+    },
+    {
+      "num": 1396,
+      "file": "1396_devday_wpf_doevents.html",
+      "title": "DevDay Conference in Munich and WPF DoEvents",
+      "date": "2016-01-19",
+      "year": 2016,
+      "month": 1
+    },
+    {
+      "num": 1397,
+      "file": "1397_track_changes.html",
+      "title": "Tracking Element Modification",
+      "date": "2016-01-22",
+      "year": 2016,
+      "month": 1
+    },
+    {
+      "num": 1398,
+      "file": "1398_bim_programming.html",
+      "title": "BIM Programming Madrid and Spanish Connectivity",
+      "date": "2016-01-29",
+      "year": 2016,
+      "month": 1
+    },
+    {
+      "num": 1399,
+      "file": "1399_small_details.html",
+      "title": "Modelling Small Details",
+      "date": "2016-02-01",
+      "year": 2016,
+      "month": 2
+    },
+    {
+      "num": 1400,
+      "file": "1400_revit_cloud.html",
+      "title": "What Can Revit on the Cloud Do For You?",
+      "date": "2016-02-02",
+      "year": 2016,
+      "month": 2
+    },
+    {
+      "num": 1401,
+      "file": "1401_estorefile.html",
+      "title": "EstoreFile, Group Preview and RoomScheduleCloud",
+      "date": "2016-02-03",
+      "year": 2016,
+      "month": 2
+    },
+    {
+      "num": 1402,
+      "file": "1402_bim_docs_addin_folders.html",
+      "title": "BIM 360 Docs, Add-In Folders, Stallman and Abc",
+      "date": "2016-02-05",
+      "year": 2016,
+      "month": 2
+    },
+    {
+      "num": 1403,
+      "file": "1403_stallman_fsf.html",
+      "title": "Richard Stallman for a Free Digital Society",
+      "date": "2016-02-06",
+      "year": 2016,
+      "month": 2
+    },
+    {
+      "num": 1404,
+      "file": "1404_chinese_new_year.html",
+      "title": "Happy Monkey, How To Ask a Question and Debug",
+      "date": "2016-02-09",
+      "year": 2016,
+      "month": 2
+    },
+    {
+      "num": 1405,
+      "file": "1405_quality_custom_export.html",
+      "title": "Reorg, FoMT, DevCon, TED, QR, Custom Exporter Quality",
+      "date": "2016-02-23",
+      "year": 2016,
+      "month": 2
+    },
+    {
+      "num": 1406,
+      "file": "1406_mep_element_shape_4.html",
+      "title": "IFC Import Levels and MEP Element Shapes",
+      "date": "2016-02-24",
+      "year": 2016,
+      "month": 2
+    },
+    {
+      "num": 1407,
+      "file": "1407_read_rvt_without_revit.html",
+      "title": "Reading an RVT File without Revit",
+      "date": "2016-02-25",
+      "year": 2016,
+      "month": 2
+    },
+    {
+      "num": 1408,
+      "file": "1408_tbc_github.html",
+      "title": "tbc &ndash; The Building Coder Source and Index on GitHub",
+      "date": "2016-02-26",
+      "year": 2016,
+      "month": 2
+    },
+    {
+      "num": 1409,
+      "file": "1409_filter_section_view.html",
+      "title": "API, SDK and View Section Box Element Intersection",
+      "date": "2016-03-01",
+      "year": 2016,
+      "month": 3
+    },
+    {
+      "num": 1410,
+      "file": "1410_delete_print_setup.html",
+      "title": "Index, Debug, Curves, Distance, Deleting PrintSetup",
+      "date": "2016-03-02",
+      "year": 2016,
+      "month": 3
+    },
+    {
+      "num": 1411,
+      "file": "1411_external_event.html",
+      "title": "Implementing the TrackChangesCloud External Event",
+      "date": "2016-03-03",
+      "year": 2016,
+      "month": 3
+    },
+    {
+      "num": 1412,
+      "file": "1412_trial_entitlement.html",
+      "title": "Entitlement API, Trial Period and Floating License",
+      "date": "2016-03-07",
+      "year": 2016,
+      "month": 3
+    },
+    {
+      "num": 1413,
+      "file": "1413_pi_adn_revit_server.html",
+      "title": "Pi Day, Meeting, Ski Tour, Revit Server Bar Separator",
+      "date": "2016-03-14",
+      "year": 2016,
+      "month": 3
+    },
+    {
+      "num": 1414,
+      "file": "1414_adn_becomes_forge.html",
+      "title": "ADN Becomes Forge and Barcelona Accelerator",
+      "date": "2016-03-18",
+      "year": 2016,
+      "month": 3
+    },
+    {
+      "num": 1415,
+      "file": "1415_idling_external.html",
+      "title": "Vipassana and Idling versus External Events",
+      "date": "2016-03-19",
+      "year": 2016,
+      "month": 3
+    },
+    {
+      "num": 1416,
+      "file": "1416_april.html",
+      "title": "Swami Ma Anand Mazaak Buddhoo",
+      "date": "2016-04-01",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1417,
+      "file": "1417_distinguish_rooms.html",
+      "title": "How to Distinguish Redundant Rooms",
+      "date": "2016-04-04",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1418,
+      "file": "1418_win10_security.html",
+      "title": "Windows 10 Security Blocks External Command",
+      "date": "2016-04-05",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1419,
+      "file": "1419_rebar_shape_hook_loc.html",
+      "title": "Location of Hooks in a Rebar Shape Family",
+      "date": "2016-04-06",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1420,
+      "file": "1420_forge_devcon.html",
+      "title": "Forge DevCon, Spring, Impermanence, BIM Cloud",
+      "date": "2016-04-07",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1421,
+      "file": "1421_wall_cut_area.html",
+      "title": "Determining Wall Cut Area for a Specific Room",
+      "date": "2016-04-08",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1422,
+      "file": "1422_named_guid_storage.html",
+      "title": "Named Guid Storage for Project Identification",
+      "date": "2016-04-11",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1423,
+      "file": "1423_wall_opening_areas.html",
+      "title": "Determining Wall Opening Areas per Room",
+      "date": "2016-04-13",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1424,
+      "file": "1424_wall_opening_areas.html",
+      "title": "More on Wall Opening Areas per Room",
+      "date": "2016-04-14",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1425,
+      "file": "1425_pyrevit.html",
+      "title": "The pyRevit IronPython Script Library",
+      "date": "2016-04-18",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1426,
+      "file": "1426_revit_2017.html",
+      "title": "Revit 2017, RevitLookup and SDK Samples",
+      "date": "2016-04-19",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1427,
+      "file": "1427_rvtsamples.html",
+      "title": "RvtSamples for Revit 2017",
+      "date": "2016-04-20",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1428,
+      "file": "1428_whats_new_2017.html",
+      "title": "What's New in the Revit 2017 API",
+      "date": "2016-04-21",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1429,
+      "file": "1429_stable_references.html",
+      "title": "Reference Stable Representation Magic Voodoo",
+      "date": "2016-04-22",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1430,
+      "file": "1430_room_editor_2017.html",
+      "title": "Room Editor &ndash; First Revit 2017 Addin Migration",
+      "date": "2016-04-25",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1431,
+      "file": "1431_firerating_2017.html",
+      "title": "Real-Time BIM Update with FireRatingCloud 2017",
+      "date": "2016-04-26",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1432,
+      "file": "1432_fireratingclient.html",
+      "title": "Real-Time BIM Update via a Windows Forms Client",
+      "date": "2016-04-27",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1433,
+      "file": "1433_firerating_arch.html",
+      "title": "FireRatingCloud Context and Architecture",
+      "date": "2016-04-28",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1434,
+      "file": "1434_au_forge_accel.html",
+      "title": "Forge and Autodesk University Call for Proposals",
+      "date": "2016-04-29",
+      "year": 2016,
+      "month": 4
+    },
+    {
+      "num": 1435,
+      "file": "1435_sign_acad_bim_uk.html",
+      "title": "DLL Signature, BIM 2 in UK and AutoCAD.NET",
+      "date": "2016-05-02",
+      "year": 2016,
+      "month": 5
+    },
+    {
+      "num": 1436,
+      "file": "1436_tbc_samples_2017.html",
+      "title": "The Building Coder Samples 2017",
+      "date": "2016-05-03",
+      "year": 2016,
+      "month": 5
+    },
+    {
+      "num": 1437,
+      "file": "1437_bcf_manual_addin.html",
+      "title": "BCF API and Manually Setting Up an Add-In",
+      "date": "2016-05-11",
+      "year": 2016,
+      "month": 5
+    },
+    {
+      "num": 1438,
+      "file": "1438_addin_wizard_2017.html",
+      "title": "Visual Studio 2015 Revit 2017 Add-in Wizards",
+      "date": "2016-05-13",
+      "year": 2016,
+      "month": 5
+    },
+    {
+      "num": 1439,
+      "file": "1439_accel_answer_day.html",
+      "title": "Forge Accelerator, DevCon and Answer Day",
+      "date": "2016-05-17",
+      "year": 2016,
+      "month": 5
+    },
+    {
+      "num": 1440,
+      "file": "1440_idea_station_txt_bb.html",
+      "title": "Idea Station and TextNote Bounding Box",
+      "date": "2016-05-20",
+      "year": 2016,
+      "month": 5
+    },
+    {
+      "num": 1441,
+      "file": "1441_accel_render_asset.html",
+      "title": "Roomedit3d Console Test and Rendering Assets",
+      "date": "2016-05-25",
+      "year": 2016,
+      "month": 5
+    },
+    {
+      "num": 1442,
+      "file": "1442_roomedit3d.html",
+      "title": "Roomedit3d Live Real-Time Socket.io BIM Update",
+      "date": "2016-05-26",
+      "year": 2016,
+      "month": 5
+    },
+    {
+      "num": 1443,
+      "file": "1443_mac_athens.html",
+      "title": "My Mac Died and I am Alive in Greece",
+      "date": "2016-05-31",
+      "year": 2016,
+      "month": 5
+    },
+    {
+      "num": 1444,
+      "file": "1444_filter_view_bb.html",
+      "title": "Filtering for View Specific Elements",
+      "date": "2016-06-01",
+      "year": 2016,
+      "month": 6
+    },
+    {
+      "num": 1445,
+      "file": "1445_viewer_rvt_room.html",
+      "title": "Highlighting Revit Rooms in the Forge Viewer",
+      "date": "2016-06-02",
+      "year": 2016,
+      "month": 6
+    },
+    {
+      "num": 1446,
+      "file": "1446_point_bc_2017_sdk.html",
+      "title": "Point Boundary Condition and Revit 2017 SDK",
+      "date": "2016-06-13",
+      "year": 2016,
+      "month": 6
+    },
+    {
+      "num": 1447,
+      "file": "1447_devcon_roomedit3dv2.html",
+      "title": "Freeing your BIM Data and Roomedit3d Forge OAuth",
+      "date": "2016-06-16",
+      "year": 2016,
+      "month": 6
+    },
+    {
+      "num": 1448,
+      "file": "1448_py_dmu_tutorial.html",
+      "title": "Dynamic Model Updater Tutorial and Wizard Update",
+      "date": "2016-06-17",
+      "year": 2016,
+      "month": 6
+    },
+    {
+      "num": 1449,
+      "file": "1449_traverse_mep_system.html",
+      "title": "Traversing and Exporting all MEP System Graphs",
+      "date": "2016-06-22",
+      "year": 2016,
+      "month": 6
+    },
+    {
+      "num": 1450,
+      "file": "1450_mep_system_json_graph.html",
+      "title": "MEP System Structure in Hierarchical JSON Graph",
+      "date": "2016-06-23",
+      "year": 2016,
+      "month": 6
+    },
+    {
+      "num": 1451,
+      "file": "1451_custom_export_adn_2017.html",
+      "title": "Exporting RVT BIM to JSON, WebGL and Forge",
+      "date": "2016-07-05",
+      "year": 2016,
+      "month": 7
+    },
+    {
+      "num": 1452,
+      "file": "1452_py_out_arg.html",
+      "title": "Retrieving a C# out Argument Value in Python",
+      "date": "2016-07-07",
+      "year": 2016,
+      "month": 7
+    },
+    {
+      "num": 1453,
+      "file": "1453_exportviewselector.html",
+      "title": "Selecting RVT 3D Views for Forge Translation",
+      "date": "2016-07-11",
+      "year": 2016,
+      "month": 7
+    },
+    {
+      "num": 1454,
+      "file": "1454_self_organising.html",
+      "title": "Self-Organising Architecture, Voxel-Based Energy Analysis",
+      "date": "2016-07-14",
+      "year": 2016,
+      "month": 7
+    },
+    {
+      "num": 1455,
+      "file": "1455_ifc_issues.html",
+      "title": "IFC Import and Open Source",
+      "date": "2016-07-22",
+      "year": 2016,
+      "month": 7
+    },
+    {
+      "num": 1456,
+      "file": "1456_bounding_section_box.html",
+      "title": "Vacation End, Forge News and Bounding Boxes",
+      "date": "2016-08-15",
+      "year": 2016,
+      "month": 8
+    },
+    {
+      "num": 1457,
+      "file": "1457_online_doc_convex_hull.html",
+      "title": "Online Revit API Docs and Convex Hull",
+      "date": "2016-08-16",
+      "year": 2016,
+      "month": 8
+    },
+    {
+      "num": 1458,
+      "file": "1458_unitutils_weight.html",
+      "title": "UnitUtils Converting Units for Unit Weight",
+      "date": "2016-08-17",
+      "year": 2016,
+      "month": 8
+    },
+    {
+      "num": 1459,
+      "file": "1459_ifc_guid_uniqueid.html",
+      "title": "Consistency of IFC GUID and UniqueId",
+      "date": "2016-08-18",
+      "year": 2016,
+      "month": 8
+    },
+    {
+      "num": 1460,
+      "file": "1460_reload_links.html",
+      "title": "Automatically Reload Links After Migration",
+      "date": "2016-08-19",
+      "year": 2016,
+      "month": 8
+    },
+    {
+      "num": 1461,
+      "file": "1461_place_tap_on_face.html",
+      "title": "Using Routing Preferences to Select and Place a Tap",
+      "date": "2016-08-24",
+      "year": 2016,
+      "month": 8
+    },
+    {
+      "num": 1462,
+      "file": "1462_trust_sign_2017_update.html",
+      "title": "Trusted Signature and Revit 2017 API Resources",
+      "date": "2016-08-26",
+      "year": 2016,
+      "month": 8
+    },
+    {
+      "num": 1463,
+      "file": "1463_macro_samples_2017.html",
+      "title": "Revit Macro Samples Migrated to Revit 2017",
+      "date": "2016-08-29",
+      "year": 2016,
+      "month": 8
+    },
+    {
+      "num": 1464,
+      "file": "1464_instance_geom_coord.html",
+      "title": "Voodoo Magic Retrieves Global Instance Edges",
+      "date": "2016-08-31",
+      "year": 2016,
+      "month": 8
+    },
+    {
+      "num": 1465,
+      "file": "1465_trust_sign_fish.html",
+      "title": "Trusted Signature Motivation and Fishing",
+      "date": "2016-09-01",
+      "year": 2016,
+      "month": 9
+    },
+    {
+      "num": 1466,
+      "file": "1466_split_button_opt.html",
+      "title": "Stacked Ribbon Button Panel Options",
+      "date": "2016-09-06",
+      "year": 2016,
+      "month": 9
+    },
+    {
+      "num": 1467,
+      "file": "1467_forge_online_hack.html",
+      "title": "Forge and AppStore Online Hackathon Webinars",
+      "date": "2016-09-08",
+      "year": 2016,
+      "month": 9
+    },
+    {
+      "num": 1468,
+      "file": "1468_hololens_exitpath.html",
+      "title": "HoloLens Escape Path Waypoint JSON Exporter",
+      "date": "2016-09-12",
+      "year": 2016,
+      "month": 9
+    },
+    {
+      "num": 1469,
+      "file": "1469_macromanager.html",
+      "title": "MacroManager, Materials and Getting Started",
+      "date": "2016-09-13",
+      "year": 2016,
+      "month": 9
+    },
+    {
+      "num": 1470,
+      "file": "1470_dwg_rfa_aacg16_endtrip.html",
+      "title": "Avoid CAD Import in RFA, AAG16 and Endtrip",
+      "date": "2016-09-15",
+      "year": 2016,
+      "month": 9
+    },
+    {
+      "num": 1471,
+      "file": "1471_roomedit3d_forge.html",
+      "title": "Roomedit3d Update for Connecting Desktop and Forge",
+      "date": "2016-09-19",
+      "year": 2016,
+      "month": 9
+    },
+    {
+      "num": 1472,
+      "file": "1472_roomedit3d_forge.html",
+      "title": "Forge Webinar Series and Roomedit Starting Points",
+      "date": "2016-09-22",
+      "year": 2016,
+      "month": 9
+    },
+    {
+      "num": 1473,
+      "file": "1473_roomedit3d_forge.html",
+      "title": "The Birth of Roomedit3dv3 and Forge Webinar 2",
+      "date": "2016-09-24",
+      "year": 2016,
+      "month": 9
+    },
+    {
+      "num": 1474,
+      "file": "1474_flip_section_view.html",
+      "title": "Flipping a Section View and Forge Webinar 3",
+      "date": "2016-09-26",
+      "year": 2016,
+      "month": 9
+    },
+    {
+      "num": 1475,
+      "file": "1475_roomedit3d_forge.html",
+      "title": "Roomedit3d Broadcast, Teigha BIM, Forge Webinar 3",
+      "date": "2016-09-28",
+      "year": 2016,
+      "month": 9
+    },
+    {
+      "num": 1476,
+      "file": "1476_roomedit3d_forge_warn.html",
+      "title": "Warning Swallower, Roomedit3d Viewer Extension",
+      "date": "2016-09-29",
+      "year": 2016,
+      "month": 9
+    },
+    {
+      "num": 1477,
+      "file": "1477_solid_bbox_forge.html",
+      "title": "Solid From Bounding Box and Forge Webinar 4",
+      "date": "2016-09-30",
+      "year": 2016,
+      "month": 9
+    },
+    {
+      "num": 1478,
+      "file": "1478_roomedit3d_broadcast.html",
+      "title": "Retrieving and Broadcasting the Roomedit3dv3 Translation",
+      "date": "2016-10-03",
+      "year": 2016,
+      "month": 10
+    },
+    {
+      "num": 1479,
+      "file": "1479_roomedit3d_running.html",
+      "title": "Roomedit3dv3 Up and Running with Demo Recording",
+      "date": "2016-10-04",
+      "year": 2016,
+      "month": 10
+    },
+    {
+      "num": 1480,
+      "file": "1480_forge_webinar_5.html",
+      "title": "Forge Webinars on Design Automation and BIM360",
+      "date": "2016-10-05",
+      "year": 2016,
+      "month": 10
+    },
+    {
+      "num": 1481,
+      "file": "1481_commit_twice.html",
+      "title": "Need to Commit Twice, Roomedit3dv3 and Forge",
+      "date": "2016-10-06",
+      "year": 2016,
+      "month": 10
+    },
+    {
+      "num": 1482,
+      "file": "1482_material_asset_texture.html",
+      "title": "Material Asset Textures, Forge Webinar Recordings",
+      "date": "2016-10-07",
+      "year": 2016,
+      "month": 10
+    },
+    {
+      "num": 1483,
+      "file": "1483_directobjloader.html",
+      "title": "DirectObjLoader for Revit 2017",
+      "date": "2016-10-09",
+      "year": 2016,
+      "month": 10
+    },
+    {
+      "num": 1484,
+      "file": "1484_revitapidocs.html",
+      "title": "Token Expiry and Online Revit API Docs",
+      "date": "2016-10-17",
+      "year": 2016,
+      "month": 10
+    },
+    {
+      "num": 1485,
+      "file": "1485_forge_demos_caveat.html",
+      "title": "Cool Forge Demos and Roomedit Caveat",
+      "date": "2016-10-18",
+      "year": 2016,
+      "month": 10
+    },
+    {
+      "num": 1486,
+      "file": "1486_webgl_forge_intro.html",
+      "title": "Forge Formats, Webinars and Fusion 360 Client API",
+      "date": "2016-10-19",
+      "year": 2016,
+      "month": 10
+    },
+    {
+      "num": 1487,
+      "file": "1487_roomedit3d_material.html",
+      "title": "Connecting Desktop and Cloud RTC Material",
+      "date": "2016-10-20",
+      "year": 2016,
+      "month": 10
+    },
+    {
+      "num": 1488,
+      "file": "1488_revit_api_panel.html",
+      "title": "RTC Revit API Panel, Idea Station, Edit and Continue",
+      "date": "2016-10-21",
+      "year": 2016,
+      "month": 10
+    },
+    {
+      "num": 1489,
+      "file": "1489_tu_darmstadt.html",
+      "title": "Revit API Connecting Desktop and Cloud @ TUDa",
+      "date": "2016-10-22",
+      "year": 2016,
+      "month": 10
+    },
+    {
+      "num": 1490,
+      "file": "1490_create_line_style.html",
+      "title": "How to Create a New Line Style",
+      "date": "2016-10-24",
+      "year": 2016,
+      "month": 10
+    },
+    {
+      "num": 1491,
+      "file": "1491_public_roadmap.html",
+      "title": "Revit Future Direction and Public Roadmap",
+      "date": "2016-10-26",
+      "year": 2016,
+      "month": 10
+    },
+    {
+      "num": 1492,
+      "file": "1492_edit_continue.html",
+      "title": "AI, Edit and Continue",
+      "date": "2016-10-27",
+      "year": 2016,
+      "month": 10
+    },
+    {
+      "num": 1493,
+      "file": "1493_au_2017_1_sdk_freeze.html",
+      "title": "AU, Revit 2017.1 SDK and REX FreezeDrawing",
+      "date": "2016-10-31",
+      "year": 2016,
+      "month": 10
+    },
+    {
+      "num": 1494,
+      "file": "1494_roomedit3dv3_diff.html",
+      "title": "Roomedit3dv3 Diff from Forge Boilerplate Code",
+      "date": "2016-11-02",
+      "year": 2016,
+      "month": 11
+    },
+    {
+      "num": 1495,
+      "file": "1495_devdays.html",
+      "title": "BIM@TuDa, DevDays, Forge News and More Events",
+      "date": "2016-11-03",
+      "year": 2016,
+      "month": 11
+    },
+    {
+      "num": 1496,
+      "file": "1496_whats_new_2017_1.html",
+      "title": "What's New in the Revit 2017.1 API",
+      "date": "2016-11-09",
+      "year": 2016,
+      "month": 11
+    },
+    {
+      "num": 1497,
+      "file": "1497_au_devday.html",
+      "title": "DevDay Conference at Autodesk University",
+      "date": "2016-11-14",
+      "year": 2016,
+      "month": 11
+    },
+    {
+      "num": 1498,
+      "file": "1498_au_one_devlab.html",
+      "title": "AU Day One, Keynote and DevLab",
+      "date": "2016-11-15",
+      "year": 2016,
+      "month": 11
+    },
+    {
+      "num": 1499,
+      "file": "1499_au_two_ifc.html",
+      "title": "AU Day Two, IFC and Revit API Panel",
+      "date": "2016-11-16",
+      "year": 2016,
+      "month": 11
+    },
+    {
+      "num": 1500,
+      "file": "1500_devday_dict.html",
+      "title": "1500 Posts, DevDay and Storing a Dictionary",
+      "date": "2016-11-21",
+      "year": 2016,
+      "month": 11
+    },
+    {
+      "num": 1501,
+      "file": "1501_app_dlg_events.html",
+      "title": "Using Other Events to Execute Add-In Code",
+      "date": "2016-11-23",
+      "year": 2016,
+      "month": 11
+    },
+    {
+      "num": 1502,
+      "file": "1502_bim360docs.html",
+      "title": "BIM 360, Docs, Issues, Forge, DevDay and Accelerator",
+      "date": "2016-11-30",
+      "year": 2016,
+      "month": 11
+    },
+    {
+      "num": 1503,
+      "file": "1503_material_shared_param.html",
+      "title": "Material Shared Parameters and ADN Xtra Labs",
+      "date": "2016-12-05",
+      "year": 2016,
+      "month": 12
+    },
+    {
+      "num": 1504,
+      "file": "1504_views_showing_element.html",
+      "title": "Determining Views Showing an Element",
+      "date": "2016-12-07",
+      "year": 2016,
+      "month": 12
+    },
+    {
+      "num": 1505,
+      "file": "1505_missing_project_info.html",
+      "title": "Restoring a Missing Project Information Element",
+      "date": "2016-12-08",
+      "year": 2016,
+      "month": 12
+    },
+    {
+      "num": 1506,
+      "file": "1506_need_for_regen.html",
+      "title": "Need for Regen and Duplicate Parameter Access",
+      "date": "2016-12-09",
+      "year": 2016,
+      "month": 12
+    },
+    {
+      "num": 1507,
+      "file": "1507_parameter_definition.html",
+      "title": "Parameter Definition Overview",
+      "date": "2016-12-12",
+      "year": 2016,
+      "month": 12
+    },
+    {
+      "num": 1508,
+      "file": "1508_forge_py_script_ifc.html",
+      "title": "Forge Formats Python Script and IFC Open Shell",
+      "date": "2016-12-14",
+      "year": 2016,
+      "month": 12
+    },
+    {
+      "num": 1509,
+      "file": "1509_viewport_bring_front.html",
+      "title": "Viewport Bring to Front and C++ Revit Add-In",
+      "date": "2016-12-15",
+      "year": 2016,
+      "month": 12
+    },
+    {
+      "num": 1510,
+      "file": "1510_nuget_revit_api.html",
+      "title": "NuGet Revit API Package",
+      "date": "2016-12-20",
+      "year": 2016,
+      "month": 12
+    },
+    {
+      "num": 1511,
+      "file": "1511_cpp_crypto_content.html",
+      "title": "Happy New Year, C++, Crypto and Content",
+      "date": "2017-01-02",
+      "year": 2017,
+      "month": 1
+    },
+    {
+      "num": 1512,
+      "file": "1512_kiss.html",
+      "title": "Distances, Switches, Kiss-ing and a Dino",
+      "date": "2017-01-09",
+      "year": 2017,
+      "month": 1
+    },
+    {
+      "num": 1513,
+      "file": "1513_revitlookup.html",
+      "title": "RevitLookup Supports Spot Dimension and Escape",
+      "date": "2017-01-10",
+      "year": 2017,
+      "month": 1
+    },
+    {
+      "num": 1514,
+      "file": "1514_deep_learning.html",
+      "title": "AU in London and Deep Learning",
+      "date": "2017-01-11",
+      "year": 2017,
+      "month": 1
+    },
+    {
+      "num": 1515,
+      "file": "1515_repro_tray_conduit.html",
+      "title": "Virtuous Reproduction, Research, Settings, Ontology",
+      "date": "2017-01-12",
+      "year": 2017,
+      "month": 1
+    },
+    {
+      "num": 1516,
+      "file": "1516_dim_vert.html",
+      "title": "Vertical Dimensioning and Revit API QAS Research",
+      "date": "2017-01-17",
+      "year": 2017,
+      "month": 1
+    },
+    {
+      "num": 1517,
+      "file": "1517_text_rotat.html",
+      "title": "TextNote Rotation, DevCon, TensorFlow and Keras",
+      "date": "2017-01-19",
+      "year": 2017,
+      "month": 1
+    },
+    {
+      "num": 1518,
+      "file": "1518_sched_param_guid.html",
+      "title": "Schedule Parameters and Shared Parameter GUID",
+      "date": "2017-01-23",
+      "year": 2017,
+      "month": 1
+    },
+    {
+      "num": 1519,
+      "file": "1519_model_vert_align_cs.html",
+      "title": "Dynamic Scripts, Model Elements, Vertical Alignment",
+      "date": "2017-01-24",
+      "year": 2017,
+      "month": 1
+    },
+    {
+      "num": 1520,
+      "file": "1520_wincoord_tooltip.html",
+      "title": "UIView Windows Coordinate Ray Casting Tooltip",
+      "date": "2017-01-25",
+      "year": 2017,
+      "month": 1
+    },
+    {
+      "num": 1521,
+      "file": "1521_wall_opening_areas.html",
+      "title": "Family Category and Two Energy Model Types",
+      "date": "2017-01-26",
+      "year": 2017,
+      "month": 1
+    },
+    {
+      "num": 1522,
+      "file": "1522_revitserverapilib.html",
+      "title": "Revit Server API Lib, Truss Members and Layers",
+      "date": "2017-02-02",
+      "year": 2017,
+      "month": 2
+    },
+    {
+      "num": 1523,
+      "file": "1523_multi_lang_resource.html",
+      "title": "Multiple Language RESX Resource Files",
+      "date": "2017-02-03",
+      "year": 2017,
+      "month": 2
+    },
+    {
+      "num": 1524,
+      "file": "1524_revitlookup_reflect.html",
+      "title": "RevitLookup Reflection Cross-Version Compatibility",
+      "date": "2017-02-06",
+      "year": 2017,
+      "month": 2
+    },
+    {
+      "num": 1525,
+      "file": "1525_move_section_view.html",
+      "title": "Moving the Section View Location",
+      "date": "2017-02-07",
+      "year": 2017,
+      "month": 2
+    },
+    {
+      "num": 1526,
+      "file": "1526_set_view_idling.html",
+      "title": "Setting Active View During Idling",
+      "date": "2017-02-09",
+      "year": 2017,
+      "month": 2
+    },
+    {
+      "num": 1527,
+      "file": "1527_mep_connector_number.html",
+      "title": "Revit MEP Connector Number",
+      "date": "2017-02-13",
+      "year": 2017,
+      "month": 2
+    },
+    {
+      "num": 1528,
+      "file": "1528_andrey_wizard.html",
+      "title": "New Visual Studio Templates for Revit Add-Ins",
+      "date": "2017-02-14",
+      "year": 2017,
+      "month": 2
+    },
+    {
+      "num": 1529,
+      "file": "1529_revitlookup_reflect.html",
+      "title": "RevitLookup with Reflection Cleanup",
+      "date": "2017-02-17",
+      "year": 2017,
+      "month": 2
+    },
+    {
+      "num": 1530,
+      "file": "1530_andrey_wizard_debug.html",
+      "title": "Add-In Templates Supporting Edit and Continue",
+      "date": "2017-02-20",
+      "year": 2017,
+      "month": 2
+    },
+    {
+      "num": 1531,
+      "file": "1531_revitlookup_estore.html",
+      "title": "RevitLookup Extensible Storage Restored",
+      "date": "2017-02-22",
+      "year": 2017,
+      "month": 2
+    },
+    {
+      "num": 1532,
+      "file": "1532_revitapidocs_2_beta.html",
+      "title": "Revit API Docs 2.0 Beta",
+      "date": "2017-02-27",
+      "year": 2017,
+      "month": 2
+    },
+    {
+      "num": 1533,
+      "file": "1533_rvt2xls.html",
+      "title": "RVT Properties to XLS and Forge Accelerators",
+      "date": "2017-02-28",
+      "year": 2017,
+      "month": 2
+    },
+    {
+      "num": 1534,
+      "file": "1534_revit_api_news.html",
+      "title": "RevitLookup and DevDays Online API News",
+      "date": "2017-03-02",
+      "year": 2017,
+      "month": 3
+    },
+    {
+      "num": 1535,
+      "file": "1535_family_browser.html",
+      "title": "WPF Revit Family Browser and Vacation",
+      "date": "2017-03-04",
+      "year": 2017,
+      "month": 3
+    },
+    {
+      "num": 1536,
+      "file": "1536_q4r4.html",
+      "title": "Q4R4 &ndash; Revit API Question Answering System",
+      "date": "2017-03-13",
+      "year": 2017,
+      "month": 3
+    },
+    {
+      "num": 1537,
+      "file": "1537_event_uv_room_filt.html",
+      "title": "Events, UV Coordinates and Rooms on Level",
+      "date": "2017-03-14",
+      "year": 2017,
+      "month": 3
+    },
+    {
+      "num": 1538,
+      "file": "1538_fam_bb_aec_hack.html",
+      "title": "Family Bounding Box and AEC Hackathon Munich",
+      "date": "2017-03-15",
+      "year": 2017,
+      "month": 3
+    },
+    {
+      "num": 1539,
+      "file": "1539_q4r4_lookup.html",
+      "title": "Q4R4 tbc Import and RevitLookup",
+      "date": "2017-03-16",
+      "year": 2017,
+      "month": 3
+    },
+    {
+      "num": 1540,
+      "file": "1540_q4r4_lookup.html",
+      "title": "Elasticsearch-Head, RevitLookup and Area Schemes",
+      "date": "2017-03-17",
+      "year": 2017,
+      "month": 3
+    },
+    {
+      "num": 1541,
+      "file": "1541_section_marker_endp.html",
+      "title": "TTT to Obtain Section Marker Endpoint",
+      "date": "2017-03-20",
+      "year": 2017,
+      "month": 3
+    },
+    {
+      "num": 1542,
+      "file": "1542_avf_intersect_fader.html",
+      "title": "RvtFader, AVF, Ray Tracing and Signal Attenuation",
+      "date": "2017-03-23",
+      "year": 2017,
+      "month": 3
+    },
+    {
+      "num": 1543,
+      "file": "1543_wta_firep_3d_aimer.html",
+      "title": "WTA Elec, FireP and 3D Aimer Tools",
+      "date": "2017-03-26",
+      "year": 2017,
+      "month": 3
+    },
+    {
+      "num": 1544,
+      "file": "1544_forge_debug_geom.html",
+      "title": "Adding Custom Geometry to the Forge Viewer",
+      "date": "2017-03-29",
+      "year": 2017,
+      "month": 3
+    },
+    {
+      "num": 1545,
+      "file": "1545_forge_raycast.html",
+      "title": "Three.js Raytracing in the Forge Viewer",
+      "date": "2017-03-30",
+      "year": 2017,
+      "month": 3
+    },
+    {
+      "num": 1546,
+      "file": "1546_wta_mech_prov_void.html",
+      "title": "WTA Mech and TTT for Provision for Voids",
+      "date": "2017-03-31",
+      "year": 2017,
+      "month": 3
+    },
+    {
+      "num": 1547,
+      "file": "1547_workhalf_aks_opener.html",
+      "title": "Work Half, AKS Opener, RvtFader and ForgeFader",
+      "date": "2017-04-05",
+      "year": 2017,
+      "month": 4
+    },
+    {
+      "num": 1548,
+      "file": "1548_room_instance_purge.html",
+      "title": "ForgeFader, Lookup Builds, Purge &amp; Room Instances",
+      "date": "2017-04-06",
+      "year": 2017,
+      "month": 4
+    },
+    {
+      "num": 1549,
+      "file": "1549_forgify.html",
+      "title": "Forgify",
+      "date": "2017-04-18",
+      "year": 2017,
+      "month": 4
+    },
+    {
+      "num": 1550,
+      "file": "1550_2018_devcon_cfp.html",
+      "title": "RevitLookup 2018 and Forge DevCon CFP",
+      "date": "2017-04-22",
+      "year": 2017,
+      "month": 4
+    },
+    {
+      "num": 1551,
+      "file": "1551_whats_new_2018.html",
+      "title": "What's New in the Revit 2018 API",
+      "date": "2017-04-25",
+      "year": 2017,
+      "month": 4
+    },
+    {
+      "num": 1552,
+      "file": "1552_addin_wizard_2018.html",
+      "title": "Revit 2018 Visual Studio .NET Add-in Wizards",
+      "date": "2017-04-27",
+      "year": 2017,
+      "month": 4
+    },
+    {
+      "num": 1553,
+      "file": "1553_docs_hotfix_forge.html",
+      "title": "Women Coders, Forge and Revit API Docs Updates",
+      "date": "2017-04-28",
+      "year": 2017,
+      "month": 4
+    },
+    {
+      "num": 1554,
+      "file": "1554_tessellation.html",
+      "title": "Wall and Opening Tessellation",
+      "date": "2017-05-03",
+      "year": 2017,
+      "month": 5
+    },
+    {
+      "num": 1555,
+      "file": "1555_modeless.html",
+      "title": "External Access to the Revit API",
+      "date": "2017-05-09",
+      "year": 2017,
+      "month": 5
+    },
+    {
+      "num": 1556,
+      "file": "1556_prompt_exception.html",
+      "title": "Prompt Cancel Throws Exception in Revit 2018",
+      "date": "2017-05-11",
+      "year": 2017,
+      "month": 5
+    },
+    {
+      "num": 1557,
+      "file": "1557_family_inst_refs.html",
+      "title": "API Access to Family Instance References",
+      "date": "2017-05-17",
+      "year": 2017,
+      "month": 5
+    },
+    {
+      "num": 1558,
+      "file": "1558_right_project_loc.html",
+      "title": "Finding the Right Project Location",
+      "date": "2017-05-19",
+      "year": 2017,
+      "month": 5
+    },
+    {
+      "num": 1559,
+      "file": "1559_2017_05_hotfix.html",
+      "title": "Hotfix Resolves Export and Print Issue",
+      "date": "2017-05-22",
+      "year": 2017,
+      "month": 5
+    },
+    {
+      "num": 1560,
+      "file": "1560_2018_sdk_samples.html",
+      "title": "Revit 2017 and 2018 SDK Samples",
+      "date": "2017-05-23",
+      "year": 2017,
+      "month": 5
+    },
+    {
+      "num": 1561,
+      "file": "1561_elem_visible_view.html",
+      "title": "Retrieving Elements Visible in View",
+      "date": "2017-05-29",
+      "year": 2017,
+      "month": 5
+    },
+    {
+      "num": 1562,
+      "file": "1562_mod_grid_point.html",
+      "title": "SDK Update, RvtSamples and Setting Grid Endpoint",
+      "date": "2017-05-31",
+      "year": 2017,
+      "month": 5
+    },
+    {
+      "num": 1563,
+      "file": "1563_subtrans_regen.html",
+      "title": "AI News and Sub-Transaction Regen",
+      "date": "2017-06-01",
+      "year": 2017,
+      "month": 6
+    },
+    {
+      "num": 1564,
+      "file": "1564_fuzz_lookup_futur.html",
+      "title": "Sensors, BIM, AI, RevitLookup, Fuzzy Comparison",
+      "date": "2017-06-06",
+      "year": 2017,
+      "month": 6
+    },
+    {
+      "num": 1565,
+      "file": "1565_dim_hatch.html",
+      "title": "Hatch Line Dimensioning Voodoo",
+      "date": "2017-06-12",
+      "year": 2017,
+      "month": 6
+    },
+    {
+      "num": 1566,
+      "file": "1566_align_grid.html",
+      "title": "Aligning a Slightly Off-Axis Grid",
+      "date": "2017-06-13",
+      "year": 2017,
+      "month": 6
+    },
+    {
+      "num": 1567,
+      "file": "1567_dll_conflict.html",
+      "title": "Handling Third Party Library DLL Conflicts",
+      "date": "2017-06-15",
+      "year": 2017,
+      "month": 6
+    },
+    {
+      "num": 1568,
+      "file": "1568_dim_seg_points.html",
+      "title": "Determining Dimension Segment Endoints",
+      "date": "2017-06-16",
+      "year": 2017,
+      "month": 6
+    },
+    {
+      "num": 1569,
+      "file": "1569_path_elemid_param.html",
+      "title": "Finding an Exit Path and ElementId Parameter Values",
+      "date": "2017-06-21",
+      "year": 2017,
+      "month": 6
+    },
+    {
+      "num": 1570,
+      "file": "1570_rvt_version_py.html",
+      "title": "Determining RVT File Version Using Python",
+      "date": "2017-06-22",
+      "year": 2017,
+      "month": 6
+    },
+    {
+      "num": 1571,
+      "file": "1571_void_inst_cut_floor.html",
+      "title": "FindInserts Determines Void Instances Cutting Floor",
+      "date": "2017-06-23",
+      "year": 2017,
+      "month": 6
+    },
+    {
+      "num": 1572,
+      "file": "1572_ifc_utils_openings.html",
+      "title": "Copy Local False and IFC Utils for Wall Openings",
+      "date": "2017-06-27",
+      "year": 2017,
+      "month": 6
+    },
+    {
+      "num": 1573,
+      "file": "1573_family_inst_lcs_wcs.html",
+      "title": "Picked Instance Face Geometry in LCS Versus WCS",
+      "date": "2017-06-30",
+      "year": 2017,
+      "month": 6
+    },
+    {
+      "num": 1574,
+      "file": "1574_cloud_dock_events.html",
+      "title": "Dockable Pane, Point Cloud, AI, BIM360, Forge, AU",
+      "date": "2017-07-16",
+      "year": 2017,
+      "month": 7
+    },
+    {
+      "num": 1575,
+      "file": "1575_bim360hack.html",
+      "title": "BIM 360 Hackathon and Bounding Boxes",
+      "date": "2017-08-07",
+      "year": 2017,
+      "month": 8
+    },
+    {
+      "num": 1576,
+      "file": "1576_sdk_2018_1.html",
+      "title": "Revit 2018.1 and the Visual Materials API",
+      "date": "2017-08-08",
+      "year": 2017,
+      "month": 8
+    },
+    {
+      "num": 1577,
+      "file": "1577_forge_ids_install.html",
+      "title": "Revit versus Forge, Ids and Add-In Installation",
+      "date": "2017-08-10",
+      "year": 2017,
+      "month": 8
+    },
+    {
+      "num": 1578,
+      "file": "1578_fam_filt_forge_aec.html",
+      "title": "Forge, Installed Version, Move Group, Name Filter",
+      "date": "2017-08-17",
+      "year": 2017,
+      "month": 8
+    },
+    {
+      "num": 1579,
+      "file": "1579_unit_abbreviations.html",
+      "title": "Unit Abbreviations",
+      "date": "2017-08-18",
+      "year": 2017,
+      "month": 8
+    },
+    {
+      "num": 1580,
+      "file": "1580_bday_xyz_point_vector.html",
+      "title": "Birthday Post on the XYZ Class",
+      "date": "2017-08-22",
+      "year": 2017,
+      "month": 8
+    },
+    {
+      "num": 1581,
+      "file": "1581_edge_refplane_column.html",
+      "title": "Edge Loop, Point Reference Plane and Column Line",
+      "date": "2017-08-28",
+      "year": 2017,
+      "month": 8
+    },
+    {
+      "num": 1582,
+      "file": "1582_forge_view_nuget.html",
+      "title": "NuGet Package Update, Rooms and Views in Forge",
+      "date": "2017-09-01",
+      "year": 2017,
+      "month": 9
+    },
+    {
+      "num": 1583,
+      "file": "1583_rvtmetaprop.html",
+      "title": "Use Forge or Spreadsheet to Create Shared Parameters",
+      "date": "2017-09-11",
+      "year": 2017,
+      "month": 9
+    },
+    {
+      "num": 1584,
+      "file": "1584_dim_inst_face.html",
+      "title": "ExtentElem and Square Face Dimensioning References",
+      "date": "2017-09-12",
+      "year": 2017,
+      "month": 9
+    },
+    {
+      "num": 1585,
+      "file": "1585_forge_devcon.html",
+      "title": "Forge DevCon at AU in Darmstadt and Las Vegas",
+      "date": "2017-09-13",
+      "year": 2017,
+      "month": 9
+    },
+    {
+      "num": 1586,
+      "file": "1586_2018_1_1.html",
+      "title": "Revit 2018.1.1 API Docs and CropBox Setting",
+      "date": "2017-09-19",
+      "year": 2017,
+      "month": 9
+    },
+    {
+      "num": 1587,
+      "file": "1587_changes_xtra.html",
+      "title": "ADN Xtra Labs and API Changes since Revit 2013",
+      "date": "2017-09-20",
+      "year": 2017,
+      "month": 9
+    },
+    {
+      "num": 1588,
+      "file": "1588_first_plugin.html",
+      "title": "My First Revit Plugin Enhancements",
+      "date": "2017-09-26",
+      "year": 2017,
+      "month": 9
+    },
+    {
+      "num": 1589,
+      "file": "1589_copy_model_rs.html",
+      "title": "Revit Server Download and Hiding Point Cloud Scan",
+      "date": "2017-09-27",
+      "year": 2017,
+      "month": 9
+    },
+    {
+      "num": 1590,
+      "file": "1590_license.html",
+      "title": "Vacation and Open Source Code Licenses, Again",
+      "date": "2017-09-29",
+      "year": 2017,
+      "month": 9
+    },
+    {
+      "num": 1591,
+      "file": "1591_modeless_focus.html",
+      "title": "Modeless Form Keep Revit Focus and On Top",
+      "date": "2017-10-15",
+      "year": 2017,
+      "month": 10
+    },
+    {
+      "num": 1592,
+      "file": "1592_disjunct_outer_loops.html",
+      "title": "Disjunct Planar Face Outer Loops",
+      "date": "2017-10-16",
+      "year": 2017,
+      "month": 10
+    },
+    {
+      "num": 1593,
+      "file": "1593_rat_bim_programming.html",
+      "title": "Rational BIM Programming at AU Darmstadt",
+      "date": "2017-10-17",
+      "year": 2017,
+      "month": 10
+    },
+    {
+      "num": 1594,
+      "file": "1594_record_book_edu_unit.html",
+      "title": "AU Recording, Books, Education and Units",
+      "date": "2017-10-19",
+      "year": 2017,
+      "month": 10
+    },
+    {
+      "num": 1595,
+      "file": "1595_do_not_reuse_guid.html",
+      "title": "Do Not Reuse an Existing GUID",
+      "date": "2017-10-20",
+      "year": 2017,
+      "month": 10
+    },
+    {
+      "num": 1596,
+      "file": "1596_texture_path.html",
+      "title": "Material Texture Path",
+      "date": "2017-10-23",
+      "year": 2017,
+      "month": 10
+    },
+    {
+      "num": 1597,
+      "file": "1597_curtain_wall_panel.html",
+      "title": "Curtain Wall Panel Geometry with Basic Wall Panel",
+      "date": "2017-10-25",
+      "year": 2017,
+      "month": 10
+    },
+    {
+      "num": 1598,
+      "file": "1598_devcon.html",
+      "title": "Forge DevCon in Las Vegas",
+      "date": "2017-10-30",
+      "year": 2017,
+      "month": 10
+    },
+    {
+      "num": 1599,
+      "file": "1599_devcon.html",
+      "title": "Forge DevCon Highlights",
+      "date": "2017-11-01",
+      "year": 2017,
+      "month": 11
+    },
+    {
+      "num": 1600,
+      "file": "1600_purge_empty_view.html",
+      "title": "Purge and Detecting an Empty View",
+      "date": "2017-11-09",
+      "year": 2017,
+      "month": 11
+    },
+    {
+      "num": 1601,
+      "file": "1601_delete_global_param.html",
+      "title": "Deleting a Global Parameter and RevitPythonShell",
+      "date": "2017-11-13",
+      "year": 2017,
+      "month": 11
+    },
+    {
+      "num": 1602,
+      "file": "1602_place_famil_instance.html",
+      "title": "Migrating PlaceInstances to Revit 2018",
+      "date": "2017-11-16",
+      "year": 2017,
+      "month": 11
+    },
+    {
+      "num": 1603,
+      "file": "1603_material_visual_app.html",
+      "title": "Modifying Material Visual Appearance",
+      "date": "2017-11-20",
+      "year": 2017,
+      "month": 11
+    },
+    {
+      "num": 1604,
+      "file": "1604_au_revit_api_panel.html",
+      "title": "Revit API Panel @ AU Las Vegas 2017",
+      "date": "2017-11-22",
+      "year": 2017,
+      "month": 11
+    },
+    {
+      "num": 1605,
+      "file": "1605_param_regen_cloud_model.html",
+      "title": "Cloud Model Predicate, and Set Parameter Regenerates",
+      "date": "2017-11-28",
+      "year": 2017,
+      "month": 11
+    },
+    {
+      "num": 1606,
+      "file": "1606_exorbitant_coord.html",
+      "title": "Avoid Exorbitant Coordinates",
+      "date": "2017-11-29",
+      "year": 2017,
+      "month": 11
+    },
+    {
+      "num": 1607,
+      "file": "1607_automatic_walls.html",
+      "title": "Automatic Wall Creation",
+      "date": "2017-11-30",
+      "year": 2017,
+      "month": 11
+    },
+    {
+      "num": 1608,
+      "file": "1608_create_mass_floor.html",
+      "title": "Creating Face Wall and Mass Floor",
+      "date": "2017-12-05",
+      "year": 2017,
+      "month": 12
+    },
+    {
+      "num": 1609,
+      "file": "1609_whats_new_2018_2.html",
+      "title": "What's New in the Revit 2018.2 API",
+      "date": "2017-12-11",
+      "year": 2017,
+      "month": 12
+    },
+    {
+      "num": 1610,
+      "file": "1610_analyticalmodelsupport.html",
+      "title": "How to Use GetAnalyticalModelSupports",
+      "date": "2017-12-12",
+      "year": 2017,
+      "month": 12
+    },
+    {
+      "num": 1611,
+      "file": "1611_pipe_k_factor.html",
+      "title": "Pipe Fitting K Factor, Archi+Lab and Installer",
+      "date": "2017-12-13",
+      "year": 2017,
+      "month": 12
+    },
+    {
+      "num": 1612,
+      "file": "1612_param_vary_group.html",
+      "title": "Setting Parameter Varies Between Groups",
+      "date": "2017-12-20",
+      "year": 2017,
+      "month": 12
+    },
+    {
+      "num": 1613,
+      "file": "1613_project_id_fuzz.html",
+      "title": "Project Identifier and Fuzzy Comparison",
+      "date": "2017-12-21",
+      "year": 2017,
+      "month": 12
+    },
+    {
+      "num": 1614,
+      "file": "1614_merry_xmas.html",
+      "title": "Magic Number, Magic Automation and Magic Season",
+      "date": "2017-12-22",
+      "year": 2017,
+      "month": 12
+    },
+    {
+      "num": 1615,
+      "file": "1615_directshape.html",
+      "title": "DirectShape Topics and Happy New Year!",
+      "date": "2018-01-09",
+      "year": 2018,
+      "month": 1
+    },
+    {
+      "num": 1616,
+      "file": "1616_devdays_webinars.html",
+      "title": "Transform Utils, DirectShape Builder and DevDays Online Webinars",
+      "date": "2018-01-10",
+      "year": 2018,
+      "month": 1
+    },
+    {
+      "num": 1617,
+      "file": "1617_areaload_direction.html",
+      "title": "AreaLoad Force Direction, CMake and SDK Access",
+      "date": "2018-01-16",
+      "year": 2018,
+      "month": 1
+    },
+    {
+      "num": 1618,
+      "file": "1618_au_past_future.html",
+      "title": "Autodesk University Past and Future",
+      "date": "2018-01-17",
+      "year": 2018,
+      "month": 1
+    },
+    {
+      "num": 1619,
+      "file": "1619_momentum.html",
+      "title": "Revit Tools for MomenTUM Pedestrian Simulation",
+      "date": "2018-01-19",
+      "year": 2018,
+      "month": 1
+    },
+    {
+      "num": 1620,
+      "file": "1620_create_swept_blend.html",
+      "title": "Create Swept Blend DirectShape in C++",
+      "date": "2018-01-24",
+      "year": 2018,
+      "month": 1
+    },
+    {
+      "num": 1621,
+      "file": "1621_return_failure_info.html",
+      "title": "Gathering and Returning Failure Information",
+      "date": "2018-01-31",
+      "year": 2018,
+      "month": 1
+    },
+    {
+      "num": 1622,
+      "file": "1622_get_crop_box_for_view.html",
+      "title": "Efficiently Retrieve Crop Box for Given View",
+      "date": "2018-02-01",
+      "year": 2018,
+      "month": 2
+    },
+    {
+      "num": 1623,
+      "file": "1623_rotate_adjust_conduit.html",
+      "title": "Rotation Adjusts Conduit End",
+      "date": "2018-02-02",
+      "year": 2018,
+      "month": 2
+    },
+    {
+      "num": 1624,
+      "file": "1624_brepbuilder.html",
+      "title": "DirectShape from BrepBuilder and Boolean",
+      "date": "2018-02-06",
+      "year": 2018,
+      "month": 2
+    },
+    {
+      "num": 1625,
+      "file": "1625_mergedviews.html",
+      "title": "MergedViews and Exporting to a Single DWG",
+      "date": "2018-02-07",
+      "year": 2018,
+      "month": 2
+    },
+    {
+      "num": 1626,
+      "file": "1626_newfamilysymbolprofile.html",
+      "title": "NewFamilySymbolProfile Sample Add-In",
+      "date": "2018-02-11",
+      "year": 2018,
+      "month": 2
+    },
+    {
+      "num": 1627,
+      "file": "1627_keynote_rex.html",
+      "title": "DevDays, Keynote Manager and REX Extensions",
+      "date": "2018-02-12",
+      "year": 2018,
+      "month": 2
+    },
+    {
+      "num": 1628,
+      "file": "1628_get_new_element_ids.html",
+      "title": "Retrieving Newly Created Element Ids",
+      "date": "2018-02-21",
+      "year": 2018,
+      "month": 2
+    },
+    {
+      "num": 1629,
+      "file": "1629_change_text_colour.html",
+      "title": "Changing Text Colour",
+      "date": "2018-02-27",
+      "year": 2018,
+      "month": 2
+    },
+    {
+      "num": 1630,
+      "file": "1630_adn_web_labs_update.html",
+      "title": "Updated ADN Web Site, Revit API Labs, Tag Creation",
+      "date": "2018-03-01",
+      "year": 2018,
+      "month": 3
+    },
+    {
+      "num": 1631,
+      "file": "1631_snoop_stable_rep.html",
+      "title": "Export Geometry and Snoop Stable Representation",
+      "date": "2018-03-02",
+      "year": 2018,
+      "month": 3
+    },
+    {
+      "num": 1632,
+      "file": "1632_filter_intersect.html",
+      "title": "Create 2D Arc and Filter for Intersecting Elements",
+      "date": "2018-03-06",
+      "year": 2018,
+      "month": 3
+    },
+    {
+      "num": 1633,
+      "file": "1633_show_elements.html",
+      "title": "Switch View or Document by Showing Elements",
+      "date": "2018-03-08",
+      "year": 2018,
+      "month": 3
+    },
+    {
+      "num": 1634,
+      "file": "1634_lookup_search_snoop.html",
+      "title": "RevitLookup Search by Element and Unique Id",
+      "date": "2018-03-12",
+      "year": 2018,
+      "month": 3
+    },
+    {
+      "num": 1635,
+      "file": "1635_contextualhelp.html",
+      "title": "Contextual Help Best Practice",
+      "date": "2018-03-13",
+      "year": 2018,
+      "month": 3
+    },
+    {
+      "num": 1636,
+      "file": "1636_connector_neighbour.html",
+      "title": "Connector, Neighbour, Conduit, Transition",
+      "date": "2018-03-19",
+      "year": 2018,
+      "month": 3
+    },
+    {
+      "num": 1637,
+      "file": "1637_align_plan_view.html",
+      "title": "Boston Forge Accelerator and Aligning Plan Views",
+      "date": "2018-03-21",
+      "year": 2018,
+      "month": 3
+    },
+    {
+      "num": 1638,
+      "file": "1638_dynamo_web.html",
+      "title": "Dynamo on the Web?",
+      "date": "2018-03-26",
+      "year": 2018,
+      "month": 3
+    },
+    {
+      "num": 1639,
+      "file": "1639_linked_inters_filt.html",
+      "title": "Using Intersection Filter with Linked File",
+      "date": "2018-04-03",
+      "year": 2018,
+      "month": 4
+    },
+    {
+      "num": 1640,
+      "file": "1640_part_atom_direct.html",
+      "title": "Standalone BasicFileInfo and ExtractPartAtom",
+      "date": "2018-04-05",
+      "year": 2018,
+      "month": 4
+    },
+    {
+      "num": 1641,
+      "file": "1641_revit_2018_3.html",
+      "title": "Revit 2018.3, SetValueString and External Events",
+      "date": "2018-04-10",
+      "year": 2018,
+      "month": 4
+    },
+    {
+      "num": 1642,
+      "file": "1642_rot_bbfilter_outline.html",
+      "title": "Bounding Box Filter is Always Axis Aligned",
+      "date": "2018-04-11",
+      "year": 2018,
+      "month": 4
+    },
+    {
+      "num": 1643,
+      "file": "1643_revit_2019_sdk.html",
+      "title": "Compiling the Revit 2019 SDK Samples",
+      "date": "2018-04-13",
+      "year": 2018,
+      "month": 4
+    },
+    {
+      "num": 1644,
+      "file": "1644_sdk_samples_lookup.html",
+      "title": "RevitLookup 2019 and New SDK Samples",
+      "date": "2018-04-16",
+      "year": 2018,
+      "month": 4
+    },
+    {
+      "num": 1645,
+      "file": "1645_tbc_2019_forge_ifc.html",
+      "title": "Forge RVT to IFC, ADN Xtra, TBC, AdnRme Updates",
+      "date": "2018-04-19",
+      "year": 2018,
+      "month": 4
+    },
+    {
+      "num": 1646,
+      "file": "1646_rvtsamples_2019.html",
+      "title": "RvtSamples 2019",
+      "date": "2018-04-24",
+      "year": 2018,
+      "month": 4
+    },
+    {
+      "num": 1647,
+      "file": "1647_whats_new_2019.html",
+      "title": "What's New in the Revit 2019 API",
+      "date": "2018-04-25",
+      "year": 2018,
+      "month": 4
+    },
+    {
+      "num": 1648,
+      "file": "1648_whats_new_2019.html",
+      "title": "What’s New Webinar and Forge vs. A360",
+      "date": "2018-04-26",
+      "year": 2018,
+      "month": 4
+    },
+    {
+      "num": 1649,
+      "file": "1649_fpd_jobs.html",
+      "title": "New Opportunities in the Forge Evangelist Team",
+      "date": "2018-04-27",
+      "year": 2018,
+      "month": 4
+    },
+    {
+      "num": 1650,
+      "file": "1650_scale_icon_image.html",
+      "title": "Scaling a Bitmap for the Large and Small Image Icons",
+      "date": "2018-05-02",
+      "year": 2018,
+      "month": 5
+    },
+    {
+      "num": 1651,
+      "file": "1651_filtercategoryrule.html",
+      "title": "How to use FilterCategoryRule",
+      "date": "2018-05-08",
+      "year": 2018,
+      "month": 5
+    },
+    {
+      "num": 1652,
+      "file": "1652_revit_wcf_service.html",
+      "title": "Parameters, Walls and Driving Revit via WCF Service",
+      "date": "2018-05-14",
+      "year": 2018,
+      "month": 5
+    },
+    {
+      "num": 1653,
+      "file": "1653_dwg_layer_visible.html",
+      "title": "Foreground Image Import and Visible DWG Geometry",
+      "date": "2018-05-16",
+      "year": 2018,
+      "month": 5
+    },
+    {
+      "num": 1654,
+      "file": "1654_get_all_param_val.html",
+      "title": "Getting All Parameter Values",
+      "date": "2018-05-17",
+      "year": 2018,
+      "month": 5
+    },
+    {
+      "num": 1655,
+      "file": "1655_revit_2019_sdk_apr.html",
+      "title": "Installing the Revit 2019 SDK April Update",
+      "date": "2018-05-18",
+      "year": 2018,
+      "month": 5
+    },
+    {
+      "num": 1656,
+      "file": "1656_exterior_walls.html",
+      "title": "FilterRule Use and Retrieving Exterior Walls",
+      "date": "2018-05-24",
+      "year": 2018,
+      "month": 5
+    },
+    {
+      "num": 1657,
+      "file": "1657_multi_addin_ai_md_job.html",
+      "title": "Multi-Target Add-Ins, AI, Markdown and Job Offer",
+      "date": "2018-05-25",
+      "year": 2018,
+      "month": 5
+    },
+    {
+      "num": 1658,
+      "file": "1658_rex.html",
+      "title": "Exported File Path and Revit Structural Analysis SDK",
+      "date": "2018-05-31",
+      "year": 2018,
+      "month": 5
+    },
+    {
+      "num": 1659,
+      "file": "1659_param_filter.html",
+      "title": "Forge Tutorials and Filtering for a Parameter Value",
+      "date": "2018-06-01",
+      "year": 2018,
+      "month": 6
+    },
+    {
+      "num": 1660,
+      "file": "1660_sdk_my_first_plugin.html",
+      "title": "Revit 2019 SDK and My First Plugin Update",
+      "date": "2018-06-04",
+      "year": 2018,
+      "month": 6
+    },
+    {
+      "num": 1661,
+      "file": "1661_rename_family.html",
+      "title": "Extensible Storage and Renaming Family in Project",
+      "date": "2018-06-07",
+      "year": 2018,
+      "month": 6
+    },
+    {
+      "num": 1662,
+      "file": "1662_create_warning.html",
+      "title": "Creating a Warning Using the Failure API",
+      "date": "2018-06-11",
+      "year": 2018,
+      "month": 6
+    },
+    {
+      "num": 1663,
+      "file": "1663_explode_nested_families.html",
+      "title": "Simplifying Nested Family Instances",
+      "date": "2018-06-13",
+      "year": 2018,
+      "month": 6
+    },
+    {
+      "num": 1664,
+      "file": "1664_bim360.html",
+      "title": "Forge for AEC and BIM360 Overview",
+      "date": "2018-06-14",
+      "year": 2018,
+      "month": 6
+    },
+    {
+      "num": 1665,
+      "file": "1665_rex_sdk_vs_2019.html",
+      "title": "REX SDK Templates for Revit Structure 2019",
+      "date": "2018-06-15",
+      "year": 2018,
+      "month": 6
+    },
+    {
+      "num": 1666,
+      "file": "1666_bim360_samples_msg.html",
+      "title": "BIM360 and Forge for AEC Message and Samples",
+      "date": "2018-06-16",
+      "year": 2018,
+      "month": 6
+    },
+    {
+      "num": 1667,
+      "file": "1667_bam_digital.html",
+      "title": "BAM Digital Construction and Drawing a Model Line",
+      "date": "2018-06-21",
+      "year": 2018,
+      "month": 6
+    },
+    {
+      "num": 1668,
+      "file": "1668_multi_target_addin.html",
+      "title": "Multi-Targeting Revit Versions, CAD Terms, Textures",
+      "date": "2018-06-28",
+      "year": 2018,
+      "month": 6
+    },
+    {
+      "num": 1669,
+      "file": "1669_addin_registration.html",
+      "title": "Add-In Registration &ndash; VendorId and Signature",
+      "date": "2018-06-29",
+      "year": 2018,
+      "month": 6
+    },
+    {
+      "num": 1670,
+      "file": "1670_brassac.html",
+      "title": "Vacation and Multi-Version Revit Add-In Template",
+      "date": "2018-07-17",
+      "year": 2018,
+      "month": 7
+    },
+    {
+      "num": 1671,
+      "file": "1671_plumvillage.html",
+      "title": "Mindful Living and Smiling to Myself",
+      "date": "2018-07-29",
+      "year": 2018,
+      "month": 7
+    },
+    {
+      "num": 1672,
+      "file": "1672_cmdwallprofile_2019.html",
+      "title": "Wall Profile Command Update",
+      "date": "2018-08-08",
+      "year": 2018,
+      "month": 8
+    },
+    {
+      "num": 1673,
+      "file": "1673_2019_1.html",
+      "title": "Revit 2019.1, CEFSharp, Forge Accelerator in Rome",
+      "date": "2018-08-17",
+      "year": 2018,
+      "month": 8
+    },
+    {
+      "num": 1674,
+      "file": "1674_revittestframework.html",
+      "title": "Revit Unit Test Framework Improvements",
+      "date": "2018-08-20",
+      "year": 2018,
+      "month": 8
+    },
+    {
+      "num": 1675,
+      "file": "1675_10year_modeless.html",
+      "title": "Ten Years Anniversary, MVVM, WPF and WinForm",
+      "date": "2018-08-22",
+      "year": 2018,
+      "month": 8
+    },
+    {
+      "num": 1676,
+      "file": "1676_whats_new_2019_1.html",
+      "title": "What's New in the Revit 2019.1 API",
+      "date": "2018-08-23",
+      "year": 2018,
+      "month": 8
+    },
+    {
+      "num": 1677,
+      "file": "1677_del_non_shared_param.html",
+      "title": "Colleagues Deleting Non-Shared Project Parameter",
+      "date": "2018-08-27",
+      "year": 2018,
+      "month": 8
+    },
+    {
+      "num": 1678,
+      "file": "1678_purge_unused.html",
+      "title": "Purge Unused using Performance Adviser",
+      "date": "2018-08-28",
+      "year": 2018,
+      "month": 8
+    },
+    {
+      "num": 1679,
+      "file": "1679_delete_unused_ref_plane.html",
+      "title": "Reference Intersector and Deleting Reference Planes",
+      "date": "2018-09-04",
+      "year": 2018,
+      "month": 9
+    },
+    {
+      "num": 1680,
+      "file": "1680_refplane_in_family.html",
+      "title": "Icon Access and Reference Plane in Family Instance",
+      "date": "2018-09-05",
+      "year": 2018,
+      "month": 9
+    },
+    {
+      "num": 1681,
+      "file": "1681_addin_wizard_2019.html",
+      "title": "Revit 2019 Visual Studio .NET Add-in Wizards",
+      "date": "2018-09-06",
+      "year": 2018,
+      "month": 9
+    },
+    {
+      "num": 1682,
+      "file": "1682_5_secrets.html",
+      "title": "Five Secrets of Revit API Coding",
+      "date": "2018-09-10",
+      "year": 2018,
+      "month": 9
+    },
+    {
+      "num": 1683,
+      "file": "1683_zero_doc_ribbon.html",
+      "title": "Support DLL, Zero Doc State and Forge Accelerators",
+      "date": "2018-09-11",
+      "year": 2018,
+      "month": 9
+    },
+    {
+      "num": 1684,
+      "file": "1684_rebar_dimension.html",
+      "title": "Rebar, Wall Centreline, Core and Grid Dimensioning",
+      "date": "2018-09-13",
+      "year": 2018,
+      "month": 9
+    },
+    {
+      "num": 1685,
+      "file": "1685_reality_sdk_rcp.html",
+      "title": "Reality Solutions SDK Enables RCP File Read-Write",
+      "date": "2018-09-14",
+      "year": 2018,
+      "month": 9
+    },
+    {
+      "num": 1686,
+      "file": "1686_roadmap_ci_geomlib.html",
+      "title": "Roadmap, CI for RTF, Geometry Library Limitations",
+      "date": "2018-09-20",
+      "year": 2018,
+      "month": 9
+    },
+    {
+      "num": 1687,
+      "file": "1687_devcon_tbc_search.html",
+      "title": "DevCon Europe and Typepad versus Google Search",
+      "date": "2018-09-21",
+      "year": 2018,
+      "month": 9
+    },
+    {
+      "num": 1688,
+      "file": "1688_that_bim_girl.html",
+      "title": "That BIM Girl and AskNow",
+      "date": "2018-09-24",
+      "year": 2018,
+      "month": 9
+    },
+    {
+      "num": 1689,
+      "file": "1689_automation_warnings.html",
+      "title": "Swallowing StairsAutomation Warnings",
+      "date": "2018-09-25",
+      "year": 2018,
+      "month": 9
+    },
+    {
+      "num": 1690,
+      "file": "1690_convert_addin_da4r.html",
+      "title": "Auto-Run an Add-In for Design Automation",
+      "date": "2018-09-26",
+      "year": 2018,
+      "month": 9
+    },
+    {
+      "num": 1691,
+      "file": "1691_floor_area_why_hide.html",
+      "title": "Floor Area Above Room and Mysterious Hide",
+      "date": "2018-09-27",
+      "year": 2018,
+      "month": 9
+    },
+    {
+      "num": 1692,
+      "file": "1692_family_tamper_protect.html",
+      "title": "Protecting a Family from Tampering",
+      "date": "2018-09-28",
+      "year": 2018,
+      "month": 9
+    },
+    {
+      "num": 1693,
+      "file": "1693_devcon_2018.html",
+      "title": "Forge DevCon in Darmstadt and Las Vegas",
+      "date": "2018-10-10",
+      "year": 2018,
+      "month": 10
+    },
+    {
+      "num": 1694,
+      "file": "1694_addin_locations.html",
+      "title": "Revit Add-In Locations and BIM360 EU",
+      "date": "2018-10-15",
+      "year": 2018,
+      "month": 10
+    },
+    {
+      "num": 1695,
+      "file": "1695_da4r.html",
+      "title": "Forge Design Automation for Revit",
+      "date": "2018-10-16",
+      "year": 2018,
+      "month": 10
+    },
+    {
+      "num": 1696,
+      "file": "1696_bim360_issues_api.html",
+      "title": "BIM 360 Issues API",
+      "date": "2018-10-17",
+      "year": 2018,
+      "month": 10
+    },
+    {
+      "num": 1697,
+      "file": "1697_rotated_rebar.html",
+      "title": "Resources, Rotated Rebar Stirrups and Steel Stuff",
+      "date": "2018-10-22",
+      "year": 2018,
+      "month": 10
+    },
+    {
+      "num": 1698,
+      "file": "1698_takeoff_forge_ifc.html",
+      "title": "Tailor Your BIM with F#, Forge, IFC and Takeoffs",
+      "date": "2018-10-30",
+      "year": 2018,
+      "month": 10
+    },
+    {
+      "num": 1699,
+      "file": "1699_view_template_include.html",
+      "title": "View Template Include Setting",
+      "date": "2018-11-01",
+      "year": 2018,
+      "month": 11
+    },
+    {
+      "num": 1700,
+      "file": "1700_transaction_group.html",
+      "title": "More on Transaction Groups and Assimilation",
+      "date": "2018-11-10",
+      "year": 2018,
+      "month": 11
+    },
+    {
+      "num": 1701,
+      "file": "1701_da4r_au.html",
+      "title": "Design Automation for Revit at AU and in Public",
+      "date": "2018-11-14",
+      "year": 2018,
+      "month": 11
+    },
+    {
+      "num": 1702,
+      "file": "1702_window_handle.html",
+      "title": "Revit Window Handle and Parenting an Add-In Form",
+      "date": "2018-11-15",
+      "year": 2018,
+      "month": 11
+    },
+    {
+      "num": 1703,
+      "file": "1703_dashboard_regen_panel.html",
+      "title": "Dashboard, Regen and Revit API Panel at AU",
+      "date": "2018-11-19",
+      "year": 2018,
+      "month": 11
+    },
+    {
+      "num": 1704,
+      "file": "1704_efficiency_elegance.html",
+      "title": "Efficient and Elegant Code",
+      "date": "2018-11-27",
+      "year": 2018,
+      "month": 11
+    },
+    {
+      "num": 1705,
+      "file": "1705_aca_api_docs.html",
+      "title": "AutoCAD Architecture 2019 API Documentation",
+      "date": "2018-12-01",
+      "year": 2018,
+      "month": 12
+    },
+    {
+      "num": 1706,
+      "file": "1706_keynote_bim360.html",
+      "title": "Forge DevCon Keynote and BIM360 Model Access",
+      "date": "2018-12-04",
+      "year": 2018,
+      "month": 12
+    },
+    {
+      "num": 1707,
+      "file": "1707_filter_intersect.html",
+      "title": "Using an Intersection Filter for Linked Elements",
+      "date": "2018-12-07",
+      "year": 2018,
+      "month": 12
+    },
+    {
+      "num": 1708,
+      "file": "1708_fire_rating_zone_inters.html",
+      "title": "Fire Rating Zone Intersection",
+      "date": "2018-12-10",
+      "year": 2018,
+      "month": 12
+    },
+    {
+      "num": 1709,
+      "file": "1709_rebar_framework_fuzz.html",
+      "title": "Rebars in Host, .NET Framework, Importance of Fuzz",
+      "date": "2018-12-11",
+      "year": 2018,
+      "month": 12
+    },
+    {
+      "num": 1710,
+      "file": "1710_dynamo_type_inst_except.html",
+      "title": "Dynamo, Symbol vs Type and Exporter Exception",
+      "date": "2018-12-13",
+      "year": 2018,
+      "month": 12
+    },
+    {
+      "num": 1711,
+      "file": "1711_dimension_line_weight.html",
+      "title": "Accessing Dimension Line Weight",
+      "date": "2018-12-17",
+      "year": 2018,
+      "month": 12
+    },
+    {
+      "num": 1712,
+      "file": "1712_py_rot_bb_midp.html",
+      "title": "Python Rotate Picked Around Bounding Box Centre",
+      "date": "2018-12-18",
+      "year": 2018,
+      "month": 12
+    },
+    {
+      "num": 1713,
+      "file": "1713_room_boundary_wpf.html",
+      "title": "Room Boundaries to CSV and WPF Template",
+      "date": "2019-01-07",
+      "year": 2019,
+      "month": 1
+    },
+    {
+      "num": 1714,
+      "file": "1714_keynote_becker.html",
+      "title": "pyRevit Keynote Manager and Becker Forge Blog",
+      "date": "2019-01-08",
+      "year": 2019,
+      "month": 1
+    },
+    {
+      "num": 1715,
+      "file": "1715_list_ifc_zones_py.html",
+      "title": "Retrieving Linked IfcZone Elements Using Python",
+      "date": "2019-01-15",
+      "year": 2019,
+      "month": 1
+    },
+    {
+      "num": 1716,
+      "file": "1716_snoop_edge_face_link.html",
+      "title": "New RevitLookup Snoops Edges, Faces and Links",
+      "date": "2019-01-18",
+      "year": 2019,
+      "month": 1
+    },
+    {
+      "num": 1717,
+      "file": "1717_cmdline_face.html",
+      "title": "Face Methods and Custom Command Line Arguments",
+      "date": "2019-01-22",
+      "year": 2019,
+      "month": 1
+    },
+    {
+      "num": 1718,
+      "file": "1718_da4r_beta.html",
+      "title": "Design Automation for Revit in Public Beta",
+      "date": "2019-01-29",
+      "year": 2019,
+      "month": 1
+    },
+    {
+      "num": 1719,
+      "file": "1719_link_in_ifc.html",
+      "title": "Link in and Analyse IFC File Zones and Spaces",
+      "date": "2019-02-01",
+      "year": 2019,
+      "month": 2
+    },
+    {
+      "num": 1720,
+      "file": "1720_prepare_da4r.html",
+      "title": "Preparing a Revit Add-in for Design Automation",
+      "date": "2019-02-05",
+      "year": 2019,
+      "month": 2
+    },
+    {
+      "num": 1721,
+      "file": "1721_cancel_collector.html",
+      "title": "Aborting Filtered Element Collection",
+      "date": "2019-02-06",
+      "year": 2019,
+      "month": 2
+    },
+    {
+      "num": 1722,
+      "file": "1722_stable_ref_relation.html",
+      "title": "Stable Reference Relationships",
+      "date": "2019-02-07",
+      "year": 2019,
+      "month": 2
+    },
+    {
+      "num": 1723,
+      "file": "1723_add_template_ini_file.html",
+      "title": "Accessing and Modifying Settings in the Ini File",
+      "date": "2019-02-12",
+      "year": 2019,
+      "month": 2
+    },
+    {
+      "num": 1724,
+      "file": "1724_multi_loop_newsweep.html",
+      "title": "Creating a Sweep with Multiple Closed Loops",
+      "date": "2019-02-14",
+      "year": 2019,
+      "month": 2
+    },
+    {
+      "num": 1725,
+      "file": "1725_devdays.html",
+      "title": "Register for DevDays Online",
+      "date": "2019-02-19",
+      "year": 2019,
+      "month": 2
+    },
+    {
+      "num": 1726,
+      "file": "1726_treeview_perfomance.html",
+      "title": "Forum Français and Treeview Performance",
+      "date": "2019-03-01",
+      "year": 2019,
+      "month": 3
+    },
+    {
+      "num": 1727,
+      "file": "1727_tbc_cleanup.html",
+      "title": "AI, Trends and Yearly API Usage Cleanup",
+      "date": "2019-03-04",
+      "year": 2019,
+      "month": 3
+    },
+    {
+      "num": 1728,
+      "file": "1728_assign_level.html",
+      "title": "Assigning a Level to an Element Missing It",
+      "date": "2019-03-06",
+      "year": 2019,
+      "month": 3
+    },
+    {
+      "num": 1729,
+      "file": "1729_begin_da4r.html",
+      "title": "Before Getting Started with Design Automation",
+      "date": "2019-03-13",
+      "year": 2019,
+      "month": 3
+    },
+    {
+      "num": 1730,
+      "file": "1730_dependent_elem.html",
+      "title": "Retrieving and Snooping Dependent Elements",
+      "date": "2019-03-18",
+      "year": 2019,
+      "month": 3
+    },
+    {
+      "num": 1731,
+      "file": "1731_scaling.html",
+      "title": "Scaling, Face and Mesh Triangle Normals",
+      "date": "2019-03-20",
+      "year": 2019,
+      "month": 3
+    },
+    {
+      "num": 1732,
+      "file": "1732_snoop_appearance_asset.html",
+      "title": "Forge Picture, Debugging, Snooping Appearances",
+      "date": "2019-03-26",
+      "year": 2019,
+      "month": 3
+    },
+    {
+      "num": 1733,
+      "file": "1733_demolished_solid.html",
+      "title": "Determine Exact Opening by Demolishing",
+      "date": "2019-03-28",
+      "year": 2019,
+      "month": 3
+    },
+    {
+      "num": 1734,
+      "file": "1734_bind_shared_param_rev.html",
+      "title": "Binding a Shared Parameter to Revision",
+      "date": "2019-04-01",
+      "year": 2019,
+      "month": 4
+    },
+    {
+      "num": 1735,
+      "file": "1735_editscope_texture.html",
+      "title": "Setting Material Texture Path in EditScope",
+      "date": "2019-04-02",
+      "year": 2019,
+      "month": 4
+    },
+    {
+      "num": 1736,
+      "file": "1736_faster_filtering.html",
+      "title": "Slow, Slower Still and Faster Filtering",
+      "date": "2019-04-08",
+      "year": 2019,
+      "month": 4
+    },
+    {
+      "num": 1737,
+      "file": "1737_ipc.html",
+      "title": "Set Floor Level and Use IPC for Disentanglement",
+      "date": "2019-04-10",
+      "year": 2019,
+      "month": 4
+    },
+    {
+      "num": 1738,
+      "file": "1738_rvt2020.html",
+      "title": "The Revit 2020 FCS, API and SDK",
+      "date": "2019-04-12",
+      "year": 2019,
+      "month": 4
+    },
+    {
+      "num": 1739,
+      "file": "1739_rvt2020.html",
+      "title": "RevitLookup and SDK for Revit 2020",
+      "date": "2019-04-20",
+      "year": 2019,
+      "month": 4
+    },
+    {
+      "num": 1740,
+      "file": "1740_whats_new_2020.html",
+      "title": "What's New in the Revit 2020 API",
+      "date": "2019-04-23",
+      "year": 2019,
+      "month": 4
+    },
+    {
+      "num": 1741,
+      "file": "1741_rvtsamp_zero_close.html",
+      "title": "Close Doc and Zero Doc RvtSamples",
+      "date": "2019-04-24",
+      "year": 2019,
+      "month": 4
+    },
+    {
+      "num": 1742,
+      "file": "1742_asstringvalue_batch.html",
+      "title": "Batch Processing and Aspects of AsStringValue",
+      "date": "2019-04-25",
+      "year": 2019,
+      "month": 4
+    },
+    {
+      "num": 1743,
+      "file": "1743_snoop_enhancement.html",
+      "title": "Forge DA4R IFC Support and Snoop Enhancements",
+      "date": "2019-04-26",
+      "year": 2019,
+      "month": 4
+    },
+    {
+      "num": 1744,
+      "file": "1744_2020_sdk_samples.html",
+      "title": "New Revit 2020 SDK Samples",
+      "date": "2019-04-29",
+      "year": 2019,
+      "month": 4
+    },
+    {
+      "num": 1745,
+      "file": "1745_wiz_2020.html",
+      "title": "Revit 2020 C# and VB Visual Studio Add-in Wizards",
+      "date": "2019-04-30",
+      "year": 2019,
+      "month": 4
+    },
+    {
+      "num": 1746,
+      "file": "1746_filter_location.html",
+      "title": "Location Point and Filtering Hints",
+      "date": "2019-05-02",
+      "year": 2019,
+      "month": 5
+    },
+    {
+      "num": 1747,
+      "file": "1747_apidocs_2020.html",
+      "title": "AI, Boundaries, Loops and RevitApiDocs 2020",
+      "date": "2019-05-06",
+      "year": 2019,
+      "month": 5
+    },
+    {
+      "num": 1748,
+      "file": "1748_spatial_geo_2020.html",
+      "title": "Spatial Geometry, Add-In Manager and Show Reels",
+      "date": "2019-05-07",
+      "year": 2019,
+      "month": 5
+    },
+    {
+      "num": 1749,
+      "file": "1749_pyrevit_invoke_script.html",
+      "title": "Rapid Prototyping, Testing and Deployment",
+      "date": "2019-05-09",
+      "year": 2019,
+      "month": 5
+    },
+    {
+      "num": 1750,
+      "file": "1750_tag_linked_elem.html",
+      "title": "Tagging a Linked Element",
+      "date": "2019-05-13",
+      "year": 2019,
+      "month": 5
+    },
+    {
+      "num": 1751,
+      "file": "1751_filter_benchmark.html",
+      "title": "Filtered Element Collector Benchmark",
+      "date": "2019-05-16",
+      "year": 2019,
+      "month": 5
+    },
+    {
+      "num": 1752,
+      "file": "1752_precast_cloud_open.html",
+      "title": "Precast API and Cloud Open Callback",
+      "date": "2019-05-20",
+      "year": 2019,
+      "month": 5
+    },
+    {
+      "num": 1753,
+      "file": "1753_edge_face.html",
+      "title": "Secret Reference Line Faces",
+      "date": "2019-05-21",
+      "year": 2019,
+      "month": 5
+    },
+    {
+      "num": 1754,
+      "file": "1754_section_intersect_geo.html",
+      "title": "Retrieving Section View Intersection Cut Geometry",
+      "date": "2019-05-23",
+      "year": 2019,
+      "month": 5
+    },
+    {
+      "num": 1755,
+      "file": "1755_room_volume_ds.html",
+      "title": "DirectShape Element to Represent Room Volume",
+      "date": "2019-05-28",
+      "year": 2019,
+      "month": 5
+    },
+    {
+      "num": 1756,
+      "file": "1756_bim360_links.html",
+      "title": "Access BIM360 Cloud Links, Thumbnail and Dynamo",
+      "date": "2019-06-03",
+      "year": 2019,
+      "month": 6
+    },
+    {
+      "num": 1757,
+      "file": "1757_lookup_types_names.html",
+      "title": "SketchIt, Lookup Family Types, Definition Names",
+      "date": "2019-06-04",
+      "year": 2019,
+      "month": 6
+    },
+    {
+      "num": 1758,
+      "file": "1758_camera_plasma_da4r_ai.html",
+      "title": "Revit Camera Settings, Project Plasma, DA4R and AI",
+      "date": "2019-06-21",
+      "year": 2019,
+      "month": 6
+    },
+    {
+      "num": 1759,
+      "file": "1759_rotation_phase.html",
+      "title": "Accelerator, Dash Pattern Fix, Rotation and Phase",
+      "date": "2019-06-25",
+      "year": 2019,
+      "month": 6
+    },
+    {
+      "num": 1760,
+      "file": "1760_room_closed_shell_forge.html",
+      "title": "Room Closed Shell DirectShape for Forge Viewer",
+      "date": "2019-06-28",
+      "year": 2019,
+      "month": 6
+    },
+    {
+      "num": 1761,
+      "file": "1761_room_volume_gltf.html",
+      "title": "Room Volume glTF Generator",
+      "date": "2019-06-29",
+      "year": 2019,
+      "month": 6
+    },
+    {
+      "num": 1762,
+      "file": "1762_forge_rvt_nw_ifc_id.html",
+      "title": "Element Identifiers in RVT, IFC, NW and Forge",
+      "date": "2019-07-08",
+      "year": 2019,
+      "month": 7
+    },
+    {
+      "num": 1763,
+      "file": "1763_bim365_visual_cpu.html",
+      "title": "BIM365 Getting Started, Materials API, CPU Voltage",
+      "date": "2019-07-11",
+      "year": 2019,
+      "month": 7
+    },
+    {
+      "num": 1764,
+      "file": "1764_rebar_curves_wizard_zip.html",
+      "title": "Roadmap, Rebar Curves, Wizard Zip and More",
+      "date": "2019-07-24",
+      "year": 2019,
+      "month": 7
+    },
+    {
+      "num": 1765,
+      "file": "1765_autodim_filled_region.html",
+      "title": "Auto-Dimension Filled Region Boundary",
+      "date": "2019-08-05",
+      "year": 2019,
+      "month": 8
+    },
+    {
+      "num": 1766,
+      "file": "1766_khl_snoop.html",
+      "title": "New PC, KLH Snoop, Annotations and Vertex Handling",
+      "date": "2019-08-09",
+      "year": 2019,
+      "month": 8
+    },
+    {
+      "num": 1767,
+      "file": "1767_ifc_geo_inst.html",
+      "title": "IFC Update, Instance Geometry, Parameters",
+      "date": "2019-08-14",
+      "year": 2019,
+      "month": 8
+    },
+    {
+      "num": 1768,
+      "file": "1768_pipe_direction.html",
+      "title": "MEP Ductwork and Changing Pipe Direction",
+      "date": "2019-08-15",
+      "year": 2019,
+      "month": 8
+    },
+    {
+      "num": 1769,
+      "file": "1769_2019_rvt_da4r_api_survey.html",
+      "title": "Revit API and Design Automation API Survey",
+      "date": "2019-08-16",
+      "year": 2019,
+      "month": 8
+    },
+    {
+      "num": 1770,
+      "file": "1770_dynztcs_wrapper.html",
+      "title": "Zero Touch Node Wrapper and Load from Stream",
+      "date": "2019-08-19",
+      "year": 2019,
+      "month": 8
+    },
+    {
+      "num": 1771,
+      "file": "1771_searchable_docs.html",
+      "title": "11 Years and Revit API Docs Full Text Search",
+      "date": "2019-08-22",
+      "year": 2019,
+      "month": 8
+    },
+    {
+      "num": 1772,
+      "file": "1772_autorun.html",
+      "title": "Auto-Executing an External Command",
+      "date": "2019-08-23",
+      "year": 2019,
+      "month": 8
+    },
+    {
+      "num": 1773,
+      "file": "1773_face_intersect_face.html",
+      "title": "Face Intersect Face is Unbounded",
+      "date": "2019-09-02",
+      "year": 2019,
+      "month": 9
+    },
+    {
+      "num": 1774,
+      "file": "1774_param_and_edge.html",
+      "title": "Parameters and Hiding DirectShape Edges",
+      "date": "2019-09-03",
+      "year": 2019,
+      "month": 9
+    },
+    {
+      "num": 1775,
+      "file": "1775_getsimilartypes.html",
+      "title": "GetSimilarTypes, SnappingService and Title Labels",
+      "date": "2019-09-04",
+      "year": 2019,
+      "month": 9
+    },
+    {
+      "num": 1776,
+      "file": "1776_api_survey_devcon.html",
+      "title": "API Survey and Forge DevCon",
+      "date": "2019-09-05",
+      "year": 2019,
+      "month": 9
+    },
+    {
+      "num": 1777,
+      "file": "1777_tls_pdf_dae.html",
+      "title": "TLS Requirement, PDF Data and Collada DAE Exporter",
+      "date": "2019-09-06",
+      "year": 2019,
+      "month": 9
+    },
+    {
+      "num": 1778,
+      "file": "1778_cylinder_inters.html",
+      "title": "Cylinder Intersection and Vision of Online Assets",
+      "date": "2019-09-10",
+      "year": 2019,
+      "month": 9
+    },
+    {
+      "num": 1779,
+      "file": "1779_pyrevit_apidocs_samples.html",
+      "title": "pyRevit Home and ApiDocs Code Sample Collection",
+      "date": "2019-09-11",
+      "year": 2019,
+      "month": 9
+    },
+    {
+      "num": 1780,
+      "file": "1780_4k_hires_scaling.html",
+      "title": "Scaling an Add-In for a 4K High Resolution Screen",
+      "date": "2019-09-17",
+      "year": 2019,
+      "month": 9
+    },
+    {
+      "num": 1781,
+      "file": "1781_whats_new_2020_1.html",
+      "title": "What's New in the Revit 2020.1 API",
+      "date": "2019-09-18",
+      "year": 2019,
+      "month": 9
+    },
+    {
+      "num": 1782,
+      "file": "1782_devcon_sun_true_north.html",
+      "title": "DevCon, Sun with True North and RVT without Revit",
+      "date": "2019-09-24",
+      "year": 2019,
+      "month": 9
+    },
+    {
+      "num": 1783,
+      "file": "1783_ui_top_form_button_web.html",
+      "title": "UI Top Forms, Buttons, Web, etc.",
+      "date": "2019-09-25",
+      "year": 2019,
+      "month": 9
+    },
+    {
+      "num": 1784,
+      "file": "1784_ext_evt_dat_dll.html",
+      "title": "Extensible Storage, External Event, DLL, Pipe Face",
+      "date": "2019-09-26",
+      "year": 2019,
+      "month": 9
+    },
+    {
+      "num": 1785,
+      "file": "1785_dmu_loop_project_param.html",
+      "title": "Get Project Parameter Id and Prevent Updater Loop",
+      "date": "2019-10-01",
+      "year": 2019,
+      "month": 10
+    },
+    {
+      "num": 1786,
+      "file": "1786_pet_change.html",
+      "title": "Pet Change &ndash; Python + Dynamo Swap Nested Family",
+      "date": "2019-10-03",
+      "year": 2019,
+      "month": 10
+    },
+    {
+      "num": 1787,
+      "file": "1787_book_music.html",
+      "title": "Starter Kit, Books and Music",
+      "date": "2019-10-07",
+      "year": 2019,
+      "month": 10
+    },
+    {
+      "num": 1788,
+      "file": "1788_testrunner.html",
+      "title": "TestRunner &ndash; Run Unit Tests in Revit",
+      "date": "2019-10-08",
+      "year": 2019,
+      "month": 10
+    },
+    {
+      "num": 1789,
+      "file": "1789_secrets_2.html",
+      "title": "Secret Series 2, CAD Link Status and DWG Blocks",
+      "date": "2019-10-15",
+      "year": 2019,
+      "month": 10
+    },
+    {
+      "num": 1790,
+      "file": "1790_macro_updater.html",
+      "title": "Dynamic Model Updater Macro",
+      "date": "2019-10-17",
+      "year": 2019,
+      "month": 10
+    },
+    {
+      "num": 1791,
+      "file": "1791_da4r_release.html",
+      "title": "Design Automation API for Revit Going Public",
+      "date": "2019-10-21",
+      "year": 2019,
+      "month": 10
+    },
+    {
+      "num": 1792,
+      "file": "1792_dynamo_infrastructure.html",
+      "title": "DevCon Invitation and Dynamo for Infrastructure",
+      "date": "2019-10-24",
+      "year": 2019,
+      "month": 10
+    },
+    {
+      "num": 1793,
+      "file": "1793_generating_graphics.html",
+      "title": "Generating Graphics and Collecting Assets",
+      "date": "2019-10-31",
+      "year": 2019,
+      "month": 10
+    },
+    {
+      "num": 1794,
+      "file": "1794_init_bim360.html",
+      "title": "Initiating BIM360 Collaboration and Linking",
+      "date": "2019-11-04",
+      "year": 2019,
+      "month": 11
+    },
+    {
+      "num": 1795,
+      "file": "1795_material_asset_prop.html",
+      "title": "Material, Physical and Thermal Assets",
+      "date": "2019-11-05",
+      "year": 2019,
+      "month": 11
+    },
+    {
+      "num": 1796,
+      "file": "1796_wiz_tag_vs_2019.html",
+      "title": "Visual Studio 2019 Revit Add-in Template Tags",
+      "date": "2019-11-06",
+      "year": 2019,
+      "month": 11
+    },
+    {
+      "num": 1797,
+      "file": "1797_indesign_rvtclipper.html",
+      "title": "Automated PDF Report and 2D Sketch Booleans",
+      "date": "2019-11-07",
+      "year": 2019,
+      "month": 11
+    },
+    {
+      "num": 1798,
+      "file": "1798_da4r_curve_project.html",
+      "title": "Curve Projection, Detach and FBX in DA4R",
+      "date": "2019-11-12",
+      "year": 2019,
+      "month": 11
+    },
+    {
+      "num": 1799,
+      "file": "1799_dll_hell_schedule_sort.html",
+      "title": "DLL Conflicts and Replicating Schedule Sort Order",
+      "date": "2019-11-19",
+      "year": 2019,
+      "month": 11
+    },
+    {
+      "num": 1800,
+      "file": "1800_helix_3d_viewer.html",
+      "title": "Integrating the Helix 3D Viewer with a WPF Add-In",
+      "date": "2019-11-20",
+      "year": 2019,
+      "month": 11
+    },
+    {
+      "num": 1801,
+      "file": "1801_revit_batch_processor.html",
+      "title": "The Revit Batch Processor RBP",
+      "date": "2019-11-21",
+      "year": 2019,
+      "month": 11
+    },
+    {
+      "num": 1802,
+      "file": "1802_electrical_load.html",
+      "title": "Retrieving the Electrical Load from a Fixture",
+      "date": "2019-11-26",
+      "year": 2019,
+      "month": 11
+    },
+    {
+      "num": 1803,
+      "file": "1803_da_webinar_ri_stack.html",
+      "title": "Design Automation API, Stacks, Collectors and Links",
+      "date": "2019-11-28",
+      "year": 2019,
+      "month": 11
+    },
+    {
+      "num": 1804,
+      "file": "1804_combine_edges.html",
+      "title": "Cyrillic Lookup, Moving Grids and Combining Edges",
+      "date": "2019-12-02",
+      "year": 2019,
+      "month": 12
+    },
+    {
+      "num": 1805,
+      "file": "1805_symbol_compare.html",
+      "title": "Comparing Symbols and Comparison Operators",
+      "date": "2019-12-09",
+      "year": 2019,
+      "month": 12
+    },
+    {
+      "num": 1806,
+      "file": "1806_effective_filter.html",
+      "title": "Forge Rooms, Effective Filtered Element Collectors",
+      "date": "2019-12-10",
+      "year": 2019,
+      "month": 12
+    },
+    {
+      "num": 1807,
+      "file": "1807_createviaoffset.html",
+      "title": "Dashboard, CreateViaOffset and Room Outer Outline",
+      "date": "2019-12-18",
+      "year": 2019,
+      "month": 12
+    },
+    {
+      "num": 1808,
+      "file": "1808_main_splitbutton.html",
+      "title": "DA4R, FindInserts, Deployment and SplitButton",
+      "date": "2019-12-19",
+      "year": 2019,
+      "month": 12
+    },
+    {
+      "num": 1809,
+      "file": "1809_element_outline.html",
+      "title": "Extrusion Analyser and 2D Boolean Element Outline",
+      "date": "2020-01-08",
+      "year": 2020,
+      "month": 1
+    },
+    {
+      "num": 1810,
+      "file": "1810_unit_migration.html",
+      "title": "Unit Migration Toggle Imperial and Metric Project Unit",
+      "date": "2020-01-10",
+      "year": 2020,
+      "month": 1
+    },
+    {
+      "num": 1811,
+      "file": "1811_family_compare_atom.html",
+      "title": "Swissbau Basel and Comparing Family Part Atoms",
+      "date": "2020-01-14",
+      "year": 2020,
+      "month": 1
+    },
+    {
+      "num": 1812,
+      "file": "1812_tutorial_book_insight.html",
+      "title": "C# Book, Chinese Revit API Tutorial and Insight",
+      "date": "2020-01-16",
+      "year": 2020,
+      "month": 1
+    },
+    {
+      "num": 1813,
+      "file": "1813_torsion_tools.html",
+      "title": "Torsion Tools, Command Event and Info in DA4R",
+      "date": "2020-01-21",
+      "year": 2020,
+      "month": 1
+    },
+    {
+      "num": 1814,
+      "file": "1814_unit_testing.html",
+      "title": "Unit Testing and the UsesInstanceGeometry Method",
+      "date": "2020-01-23",
+      "year": 2020,
+      "month": 1
+    },
+    {
+      "num": 1815,
+      "file": "1815_devdays_migrate.html",
+      "title": "DevDays Online and Add-In Migration",
+      "date": "2020-01-28",
+      "year": 2020,
+      "month": 1
+    },
+    {
+      "num": 1816,
+      "file": "1816_wpf_addin_template.html",
+      "title": "Revit WPF Add-Ins and Template",
+      "date": "2020-01-30",
+      "year": 2020,
+      "month": 1
+    },
+    {
+      "num": 1817,
+      "file": "1817_async_await.html",
+      "title": "External Communication and Async Await Event",
+      "date": "2020-02-05",
+      "year": 2020,
+      "month": 2
+    },
+    {
+      "num": 1818,
+      "file": "1818_video_macro_tutor.html",
+      "title": "Search for Getting Started Tutorials and Videos!",
+      "date": "2020-02-11",
+      "year": 2020,
+      "month": 2
+    },
+    {
+      "num": 1819,
+      "file": "1819_torsion_tools.html",
+      "title": "Ini File, Localisation and Torsion Tools Two",
+      "date": "2020-02-12",
+      "year": 2020,
+      "month": 2
+    },
+    {
+      "num": 1820,
+      "file": "1820_sheet_from_view.html",
+      "title": "Getting Title Block Data and ViewSheet from View",
+      "date": "2020-02-13",
+      "year": 2020,
+      "month": 2
+    },
+    {
+      "num": 1821,
+      "file": "1821_dupl_legend_comp.html",
+      "title": "Lat Long to Metres and Duplicate Legend Component",
+      "date": "2020-02-19",
+      "year": 2020,
+      "month": 2
+    },
+    {
+      "num": 1822,
+      "file": "1822_placing_monitor.html",
+      "title": "Multi-Threading Family Instance Placement Monitor",
+      "date": "2020-02-21",
+      "year": 2020,
+      "month": 2
+    },
+    {
+      "num": 1823,
+      "file": "1823_24x24_stackeditem.html",
+      "title": "24x24 StackedItem, Ribbon Utils, Journal Encoding",
+      "date": "2020-02-25",
+      "year": 2020,
+      "month": 2
+    },
+    {
+      "num": 1824,
+      "file": "1824_adjust_wall_location.html",
+      "title": "Adjust Wall Location Curve and Visual Presentation",
+      "date": "2020-02-27",
+      "year": 2020,
+      "month": 2
+    },
+    {
+      "num": 1825,
+      "file": "1825_elevations_cmd_line.html",
+      "title": "Coding, Interior Elevations and Command Line Opts",
+      "date": "2020-03-03",
+      "year": 2020,
+      "month": 3
+    },
+    {
+      "num": 1826,
+      "file": "1826_rex_2020_async_await.html",
+      "title": "Another Async Await, REX + Structural Analysis SDK",
+      "date": "2020-03-05",
+      "year": 2020,
+      "month": 3
+    },
+    {
+      "num": 1827,
+      "file": "1827_headless.html",
+      "title": "Split Pipe",
+      "date": "2020-03-11",
+      "year": 2020,
+      "month": 3
+    },
+    {
+      "num": 1828,
+      "file": "1828_change_room_level.html",
+      "title": "Panel Schedule Slots and Changing Room Level",
+      "date": "2020-03-12",
+      "year": 2020,
+      "month": 3
+    },
+    {
+      "num": 1829,
+      "file": "1829_split_duct.html",
+      "title": "Splitting a Duct in More Depth",
+      "date": "2020-03-17",
+      "year": 2020,
+      "month": 3
+    },
+    {
+      "num": 1830,
+      "file": "1830_face_bounding_box_uv.html",
+      "title": "Command Binding Conflicts and Face UV Coords",
+      "date": "2020-03-20",
+      "year": 2020,
+      "month": 3
+    },
+    {
+      "num": 1831,
+      "file": "1831_createpipeconnector.html",
+      "title": "Autorouting and Reference for CreatePipeConnector",
+      "date": "2020-03-26",
+      "year": 2020,
+      "month": 3
+    },
+    {
+      "num": 1832,
+      "file": "1832_xform_inst_sat_img.html",
+      "title": "Satellite Images and Instance Transforms",
+      "date": "2020-03-30",
+      "year": 2020,
+      "month": 3
+    },
+    {
+      "num": 1833,
+      "file": "1833_multistory_stair_refs.html",
+      "title": "Stair Point References, BIM360 Users, Zoom, Jobs",
+      "date": "2020-04-02",
+      "year": 2020,
+      "month": 4
+    },
+    {
+      "num": 1834,
+      "file": "1834_2021_cloud_model_api.html",
+      "title": "Revit 2021 Cloud Model API",
+      "date": "2020-04-09",
+      "year": 2020,
+      "month": 4
+    },
+    {
+      "num": 1835,
+      "file": "1835_revitlookup_2021.html",
+      "title": "RevitLookup 2021 with Multi-Release Support",
+      "date": "2020-04-14",
+      "year": 2020,
+      "month": 4
+    },
+    {
+      "num": 1836,
+      "file": "1836_whats_new_2021.html",
+      "title": "What's New in the Revit 2021 API",
+      "date": "2020-04-16",
+      "year": 2020,
+      "month": 4
+    },
+    {
+      "num": 1837,
+      "file": "1837_unit_types.html",
+      "title": "Revit 2021 Unit Types in Family Type Catalogues",
+      "date": "2020-04-20",
+      "year": 2020,
+      "month": 4
+    },
+    {
+      "num": 1838,
+      "file": "1838_cs_python_bim360_login.html",
+      "title": "2021 Migration, Add-In Language, BIM360 Research",
+      "date": "2020-04-21",
+      "year": 2020,
+      "month": 4
+    },
+    {
+      "num": 1839,
+      "file": "1839_da4r_cesium.html",
+      "title": "DA4R I/O, Logging, Updater and Custom Properties",
+      "date": "2020-04-27",
+      "year": 2020,
+      "month": 4
+    },
+    {
+      "num": 1840,
+      "file": "1840_camera_fov.html",
+      "title": "Revit Camera FOV, Forge Partner Talks and Jobs",
+      "date": "2020-04-28",
+      "year": 2020,
+      "month": 4
+    },
+    {
+      "num": 1841,
+      "file": "1841_symbol_vs_inst_w_refs.html",
+      "title": "References to Symbol versus Instance Geometry",
+      "date": "2020-04-30",
+      "year": 2020,
+      "month": 4
+    },
+    {
+      "num": 1842,
+      "file": "1842_15_years.html",
+      "title": "Convex Outer Loop, Non-Migration and 15-Year Stint",
+      "date": "2020-05-07",
+      "year": 2020,
+      "month": 5
+    },
+    {
+      "num": 1843,
+      "file": "1843_compile_2021_sdk.html",
+      "title": "Compiling the Revit 2021 SDK Samples",
+      "date": "2020-05-11",
+      "year": 2020,
+      "month": 5
+    },
+    {
+      "num": 1844,
+      "file": "1844_rvtsamples_2021.html",
+      "title": "Setting up RvtSamples for Revit 2021",
+      "date": "2020-05-14",
+      "year": 2020,
+      "month": 5
+    },
+    {
+      "num": 1845,
+      "file": "1845_raycast_linked.html",
+      "title": "Using ReferenceIntersector with a Linked File",
+      "date": "2020-05-19",
+      "year": 2020,
+      "month": 5
+    },
+    {
+      "num": 1846,
+      "file": "1846_open_rvt_file_version.html",
+      "title": "Automatically Open Correct RVT File Version",
+      "date": "2020-05-29",
+      "year": 2020,
+      "month": 5
+    },
+    {
+      "num": 1847,
+      "file": "1847_split_pipe.html",
+      "title": "Split Pipe Tutorial and Related Cases",
+      "date": "2020-06-02",
+      "year": 2020,
+      "month": 6
+    },
+    {
+      "num": 1848,
+      "file": "1848_wizard_2021.html",
+      "title": "Revit 2021 Visual Studio Add-in Templates",
+      "date": "2020-06-03",
+      "year": 2020,
+      "month": 6
+    },
+    {
+      "num": 1849,
+      "file": "1849_change_elem_color.html",
+      "title": "Changing Element Colour and Material",
+      "date": "2020-06-08",
+      "year": 2020,
+      "month": 6
+    },
+    {
+      "num": 1850,
+      "file": "1850_material_level_pixel.html",
+      "title": "Creating Material Texture and Retaining Pixels",
+      "date": "2020-06-16",
+      "year": 2020,
+      "month": 6
+    },
+    {
+      "num": 1851,
+      "file": "1851_bipch_mepshap_atfont.html",
+      "title": "Duct Shape, BipChecker Facelift and @ Fonts",
+      "date": "2020-06-22",
+      "year": 2020,
+      "month": 6
+    },
+    {
+      "num": 1852,
+      "file": "1852_sect_box_2_view_crop.html",
+      "title": "Section to Crop, Linked Boundary and Intersection",
+      "date": "2020-06-25",
+      "year": 2020,
+      "month": 6
+    },
+    {
+      "num": 1853,
+      "file": "1853_au_hack.html",
+      "title": "Virtual AU and AEC Hackathon, Units and DAS Job",
+      "date": "2020-07-07",
+      "year": 2020,
+      "month": 7
+    },
+    {
+      "num": 1854,
+      "file": "1854_pick_room_link.html",
+      "title": "Selection in Link, Cancel in Export, Multithreading",
+      "date": "2020-07-10",
+      "year": 2020,
+      "month": 7
+    },
+    {
+      "num": 1855,
+      "file": "1855_rvt_2021_1.html",
+      "title": "Revit 2021.1 and Normalising Custom Export UV",
+      "date": "2020-07-22",
+      "year": 2020,
+      "month": 7
+    },
+    {
+      "num": 1856,
+      "file": "1856_aec_hack.html",
+      "title": "IFC 21.1 and AEC Hackathon Presentations",
+      "date": "2020-07-24",
+      "year": 2020,
+      "month": 7
+    },
+    {
+      "num": 1857,
+      "file": "1857_encoding_legend_cats.html",
+      "title": "Cyrillic Encoding and Categories for Legends",
+      "date": "2020-07-28",
+      "year": 2020,
+      "month": 7
+    },
+    {
+      "num": 1858,
+      "file": "1858_whats_new_2021_1.html",
+      "title": "Revit 2021.1 SDK and What's New",
+      "date": "2020-08-04",
+      "year": 2020,
+      "month": 8
+    },
+    {
+      "num": 1859,
+      "file": "1859_compile_2021_1_sdk.html",
+      "title": "Compile and Compare Revit 2021.1 SDK Samples",
+      "date": "2020-08-12",
+      "year": 2020,
+      "month": 8
+    },
+    {
+      "num": 1860,
+      "file": "1860_ci_graphql.html",
+      "title": "RevitLookup Continuous Integration and GraphQL",
+      "date": "2020-08-17",
+      "year": 2020,
+      "month": 8
+    },
+    {
+      "num": 1861,
+      "file": "1861_params_tiles.html",
+      "title": "Custom Parameters and Tile Packing",
+      "date": "2020-08-26",
+      "year": 2020,
+      "month": 8
+    },
+    {
+      "num": 1862,
+      "file": "1862_codesign_preview.html",
+      "title": "Preview, Code Signing and Element Type Predicates",
+      "date": "2020-09-01",
+      "year": 2020,
+      "month": 9
+    },
+    {
+      "num": 1863,
+      "file": "1863_param_optimise_tbcfts.html",
+      "title": "Optimising Parameters and Full-Text Search",
+      "date": "2020-09-09",
+      "year": 2020,
+      "month": 9
+    },
+    {
+      "num": 1864,
+      "file": "1864_inside_factory_ama.html",
+      "title": "Inside the Factory &ndash; Ask me Anything &ndash; Today!",
+      "date": "2020-09-10",
+      "year": 2020,
+      "month": 9
+    },
+    {
+      "num": 1865,
+      "file": "1865_ren_param_f1_help.html",
+      "title": "On Spaces in Help and Renaming a Parameter",
+      "date": "2020-09-21",
+      "year": 2020,
+      "month": 9
+    },
+    {
+      "num": 1866,
+      "file": "1866_quo_vadis_revit.html",
+      "title": "Quo Vadis Revit",
+      "date": "2020-09-22",
+      "year": 2020,
+      "month": 9
+    },
+    {
+      "num": 1867,
+      "file": "1867_designscript_da4r.html",
+      "title": "Forge Design Automation and DesignScript",
+      "date": "2020-10-01",
+      "year": 2020,
+      "month": 10
+    },
+    {
+      "num": 1868,
+      "file": "1868_outline_performance.html",
+      "title": "High Performance Outline, Line-Plane Intersection",
+      "date": "2020-10-06",
+      "year": 2020,
+      "month": 10
+    },
+    {
+      "num": 1869,
+      "file": "1869_using_vs_racking.html",
+      "title": "Avoid Brain Racking by Using Using",
+      "date": "2020-10-13",
+      "year": 2020,
+      "month": 10
+    },
+    {
+      "num": 1870,
+      "file": "1870_save_restore_camera.html",
+      "title": "Save and Restore 3D View Camera Settings",
+      "date": "2020-10-14",
+      "year": 2020,
+      "month": 10
+    },
+    {
+      "num": 1871,
+      "file": "1871_elbow_centre.html",
+      "title": "FireRevit, Deprecated API and Elbow Centre Point",
+      "date": "2020-10-21",
+      "year": 2020,
+      "month": 10
+    },
+    {
+      "num": 1872,
+      "file": "1872_rect_jig.html",
+      "title": "Onbox, DirectContext Jig and No CDN",
+      "date": "2020-10-28",
+      "year": 2020,
+      "month": 10
+    },
+    {
+      "num": 1873,
+      "file": "1873_ce_prec_proj_id.html",
+      "title": "Custom Export Precision, Sheet Metadata, Project Id",
+      "date": "2020-11-03",
+      "year": 2020,
+      "month": 11
+    },
+    {
+      "num": 1874,
+      "file": "1874_doc_session_id.html",
+      "title": "Doc Session Id, API Context and External Events",
+      "date": "2020-11-11",
+      "year": 2020,
+      "month": 11
+    },
+    {
+      "num": 1875,
+      "file": "1875_dotnet_template_prism.html",
+      "title": "BIM360 Scripts, Dotnet Template and Prism Goodies",
+      "date": "2020-11-13",
+      "year": 2020,
+      "month": 11
+    },
+    {
+      "num": 1876,
+      "file": "1876_da4r_save_c4r.html",
+      "title": "DA4R Cannot Save Directly to Cloud",
+      "date": "2020-11-16",
+      "year": 2020,
+      "month": 11
+    },
+    {
+      "num": 1877,
+      "file": "1877_au_roundtable.html",
+      "title": "Join the Revit API Expert and Feedback Roundtable",
+      "date": "2020-11-17",
+      "year": 2020,
+      "month": 11
+    },
+    {
+      "num": 1878,
+      "file": "1878_forge_bim360.html",
+      "title": "Expand your App &ndash; Integrate and Leverage Cloud",
+      "date": "2020-11-20",
+      "year": 2020,
+      "month": 11
+    },
+    {
+      "num": 1879,
+      "file": "1879_au_roundtable_not.html",
+      "title": "Revit API Roundtable Notes",
+      "date": "2020-11-26",
+      "year": 2020,
+      "month": 11
+    },
+    {
+      "num": 1880,
+      "file": "1880_texture_uv_coord.html",
+      "title": "Dynamo Book and Texture Bitmap UV Coordinates",
+      "date": "2020-12-04",
+      "year": 2020,
+      "month": 12
+    },
+    {
+      "num": 1881,
+      "file": "1881_updater_lookup_cncfab.html",
+      "title": "Simple IUpdater and other TBC Updates",
+      "date": "2020-12-09",
+      "year": 2020,
+      "month": 12
+    },
+    {
+      "num": 1882,
+      "file": "1882_track_nw_api.html",
+      "title": "Line Subcategory Filter, Modification Tracker and NW",
+      "date": "2021-01-06",
+      "year": 2021,
+      "month": 1
+    },
+    {
+      "num": 1883,
+      "file": "1883_forge_props.html",
+      "title": "Forge at AU and Open Source Property Access",
+      "date": "2021-01-11",
+      "year": 2021,
+      "month": 1
+    },
+    {
+      "num": 1884,
+      "file": "1884_transient_graphics.html",
+      "title": "Transient Graphics, Humane AI, BI and Lockdown",
+      "date": "2021-01-14",
+      "year": 2021,
+      "month": 1
+    },
+    {
+      "num": 1885,
+      "file": "1885_aec_forge_accel.html",
+      "title": "I18n, Forge Accelerators, AEC and BIM360 Focus",
+      "date": "2021-01-19",
+      "year": 2021,
+      "month": 1
+    },
+    {
+      "num": 1886,
+      "file": "1886_preview_sketch_api.html",
+      "title": "Sketch-Based Creation and Editing API Preview",
+      "date": "2021-01-20",
+      "year": 2021,
+      "month": 1
+    },
+    {
+      "num": 1887,
+      "file": "1887_sheet_view_geom_text.html",
+      "title": "Sheet View Xform, Coords, Img Export and Title Block",
+      "date": "2021-01-21",
+      "year": 2021,
+      "month": 1
+    },
+    {
+      "num": 1888,
+      "file": "1888_net_5_core.html",
+      "title": "Face Triangulation LOD, .NET 5 and Core",
+      "date": "2021-01-27",
+      "year": 2021,
+      "month": 1
+    },
+    {
+      "num": 1889,
+      "file": "1889_param_filter_type.html",
+      "title": "Parameter Filter Checking Element Type and OCR",
+      "date": "2021-01-29",
+      "year": 2021,
+      "month": 1
+    },
+    {
+      "num": 1890,
+      "file": "1890_multiple_filter.html",
+      "title": "Splits: Persona, Collector, Region, Tag, Modification",
+      "date": "2021-02-02",
+      "year": 2021,
+      "month": 2
+    },
+    {
+      "num": 1891,
+      "file": "1891_postcommand_sendkeys.html",
+      "title": "Birthday, DevDays, PostCommand + SendKeys",
+      "date": "2021-02-05",
+      "year": 2021,
+      "month": 2
+    },
+    {
+      "num": 1892,
+      "file": "1892_forge_group_da4r_lang.html",
+      "title": "Model Group and DA4R Language in Forge",
+      "date": "2021-02-11",
+      "year": 2021,
+      "month": 2
+    },
+    {
+      "num": 1893,
+      "file": "1893_js_ifc_python_rps.html",
+      "title": "Addin File, Learning Python and IFC.js",
+      "date": "2021-02-17",
+      "year": 2021,
+      "month": 2
+    },
+    {
+      "num": 1894,
+      "file": "1894_naughty_updater.html",
+      "title": "Naughty Updaters, DIY Add-In Manifest, GD, AI, etc.",
+      "date": "2021-03-03",
+      "year": 2021,
+      "month": 3
+    },
+    {
+      "num": 1895,
+      "file": "1895_exterior_walls.html",
+      "title": "Exterior Walls and Room Bounding Elements",
+      "date": "2021-03-10",
+      "year": 2021,
+      "month": 3
+    },
+    {
+      "num": 1896,
+      "file": "1896_stirrup_constraint.html",
+      "title": "Boundary Elements and Stirrup Constraints",
+      "date": "2021-03-15",
+      "year": 2021,
+      "month": 3
+    },
+    {
+      "num": 1897,
+      "file": "1897_apidocs_mat_asset.html",
+      "title": "Forge, RevitApiDocs, Materials and Stacked Items",
+      "date": "2021-03-23",
+      "year": 2021,
+      "month": 3
+    },
+    {
+      "num": 1898,
+      "file": "1898_2022_job_column_inst.html",
+      "title": "Sneak Peek, Automatic Column, Arc Angle, Career",
+      "date": "2021-04-06",
+      "year": 2021,
+      "month": 4
+    },
+    {
+      "num": 1899,
+      "file": "1899_rvt_2022.html",
+      "title": "Revit 2022 Released",
+      "date": "2021-04-08",
+      "year": 2021,
+      "month": 4
+    },
+    {
+      "num": 1900,
+      "file": "1900_forgetypeid.html",
+      "title": "PDF Export, ForgeTypeId and Multi-Target Add-In",
+      "date": "2021-04-14",
+      "year": 2021,
+      "month": 4
+    },
+    {
+      "num": 1901,
+      "file": "1901_bim360_team_to_docs.html",
+      "title": "Revit 2022 Migrates BIM360 Team to Docs",
+      "date": "2021-04-15",
+      "year": 2021,
+      "month": 4
+    },
+    {
+      "num": 1902,
+      "file": "1902_2022_sdk_tbc.html",
+      "title": "Revit 2022 SDK and The Building Coder Samples",
+      "date": "2021-04-21",
+      "year": 2021,
+      "month": 4
+    },
+    {
+      "num": 1903,
+      "file": "1903_whats_new_2022.html",
+      "title": "What's New in the Revit 2022 API",
+      "date": "2021-04-23",
+      "year": 2021,
+      "month": 4
+    },
+    {
+      "num": 1904,
+      "file": "1904_sort_loops.html",
+      "title": "Roadmap Today and Sorting Non-Planar Curve Loops",
+      "date": "2021-05-04",
+      "year": 2021,
+      "month": 5
+    },
+    {
+      "num": 1905,
+      "file": "1905_line_angle_dir_jig.html",
+      "title": "Refreshment, Cloud Model Path, Angle and Direction",
+      "date": "2021-05-13",
+      "year": 2021,
+      "month": 5
+    },
+    {
+      "num": 1906,
+      "file": "1906_lookup_2022.html",
+      "title": "RevitLookup Update, Fuslogvw and Override Joins",
+      "date": "2021-05-20",
+      "year": 2021,
+      "month": 5
+    },
+    {
+      "num": 1907,
+      "file": "1907_reflect_transform.html",
+      "title": "Flip, Mirror, Transform and Transient Graphics",
+      "date": "2021-05-26",
+      "year": 2021,
+      "month": 5
+    },
+    {
+      "num": 1908,
+      "file": "1908_forgetypeid.html",
+      "title": "ForgeTypeId and Units Revisited",
+      "date": "2021-06-14",
+      "year": 2021,
+      "month": 6
+    },
+    {
+      "num": 1909,
+      "file": "1909_paint_stair_col_beam.html",
+      "title": "Painting Stairs and Shooting for the Beams",
+      "date": "2021-06-22",
+      "year": 2021,
+      "month": 6
+    },
+    {
+      "num": 1910,
+      "file": "1910_asset_keyword.html",
+      "title": "Topo from Lines, Asset Keyword and Regeneration",
+      "date": "2021-06-30",
+      "year": 2021,
+      "month": 6
+    },
+    {
+      "num": 1911,
+      "file": "1911_adjacent_wall_room.html",
+      "title": "Installer, List of Failures, Adjacent Rooms and Walls",
+      "date": "2021-07-07",
+      "year": 2021,
+      "month": 7
+    },
+    {
+      "num": 1912,
+      "file": "1912_aec_collaboration.html",
+      "title": "Collaboration, Dockables, Railings, Pop-Ups, ILSpy",
+      "date": "2021-07-14",
+      "year": 2021,
+      "month": 7
+    },
+    {
+      "num": 1913,
+      "file": "1913_au_fuzz.html",
+      "title": "Autodesk University 2021, Python, Fuzz and Break",
+      "date": "2021-07-23",
+      "year": 2021,
+      "month": 7
+    },
+    {
+      "num": 1914,
+      "file": "1914_create_floor.html",
+      "title": "Triangle Count, New Floor and Slab Creation",
+      "date": "2021-08-18",
+      "year": 2021,
+      "month": 8
+    },
+    {
+      "num": 1915,
+      "file": "1915_roadmap_survey.html",
+      "title": "Revit Roadmap, API and DA4R Survey",
+      "date": "2021-08-25",
+      "year": 2021,
+      "month": 8
+    },
+    {
+      "num": 1916,
+      "file": "1916_vs_extension.html",
+      "title": "Nina and a VS Revit Add-In Extension",
+      "date": "2021-08-31",
+      "year": 2021,
+      "month": 8
+    },
+    {
+      "num": 1917,
+      "file": "1917_select_level.html",
+      "title": "View Sheet from View and Select All on Level",
+      "date": "2021-09-06",
+      "year": 2021,
+      "month": 9
+    },
+    {
+      "num": 1918,
+      "file": "1918_avf_design_option.html",
+      "title": "Kfpopeye Open Source, AVF and Other Cleanup",
+      "date": "2021-09-15",
+      "year": 2021,
+      "month": 9
+    },
+    {
+      "num": 1919,
+      "file": "1919_py_cs_template.html",
+      "title": "Snooping Parts, C# Templates and Python Topics",
+      "date": "2021-09-24",
+      "year": 2021,
+      "month": 9
+    },
+    {
+      "num": 1920,
+      "file": "1920_apply_code_changes.html",
+      "title": "Localised Forge Intros and Apply Code Changes",
+      "date": "2021-10-01",
+      "year": 2021,
+      "month": 10
+    },
+    {
+      "num": 1921,
+      "file": "1921_vasa_roadmap.html",
+      "title": "Hiding Edges, AU, Roadmaps and Vasa",
+      "date": "2021-10-04",
+      "year": 2021,
+      "month": 10
+    },
+    {
+      "num": 1922,
+      "file": "1922_multiversion.html",
+      "title": "DLL as Resource and Multi-Version Add-Ins",
+      "date": "2021-10-12",
+      "year": 2021,
+      "month": 10
+    },
+    {
+      "num": 1923,
+      "file": "1923_mep_insulation.html",
+      "title": "Sci-Fi, Languages and Pipe Insulation Retrieval",
+      "date": "2021-10-14",
+      "year": 2021,
+      "month": 10
+    },
+    {
+      "num": 1924,
+      "file": "1924_modeless_revitlookup.html",
+      "title": "Bridges, Regeneration and Modeless RevitLookup",
+      "date": "2021-10-26",
+      "year": 2021,
+      "month": 10
+    },
+    {
+      "num": 1925,
+      "file": "1925_2022_1_bld_inst_dev.html",
+      "title": "Revit 2022.1 SDK, RevitLookup Build and Install",
+      "date": "2021-11-02",
+      "year": 2021,
+      "month": 11
+    },
+    {
+      "num": 1926,
+      "file": "1926_whats_new_2022_1.html",
+      "title": "What's New in the Revit 2022.1 API",
+      "date": "2021-11-08",
+      "year": 2021,
+      "month": 11
+    },
+    {
+      "num": 1927,
+      "file": "1927_wallcrosssection.html",
+      "title": "WallCrossSection Renaming in the Revit 2022.1 API",
+      "date": "2021-11-10",
+      "year": 2021,
+      "month": 11
+    },
+    {
+      "num": 1928,
+      "file": "1928_new_analytical_model.html",
+      "title": "New Analytical Model API",
+      "date": "2021-11-11",
+      "year": 2021,
+      "month": 11
+    },
+    {
+      "num": 1929,
+      "file": "1929_formit_quaternion.html",
+      "title": "Installer Asset, FormIt and Quaterions",
+      "date": "2021-11-19",
+      "year": 2021,
+      "month": 11
+    },
+    {
+      "num": 1930,
+      "file": "1930_revit_server.html",
+      "title": "Revit Server and View Filter Alert",
+      "date": "2021-11-25",
+      "year": 2021,
+      "month": 11
+    },
+    {
+      "num": 1931,
+      "file": "1931_log_and_monitor.html",
+      "title": "Logging and Monitoring Deleted Data",
+      "date": "2021-12-07",
+      "year": 2021,
+      "month": 12
+    },
+    {
+      "num": 1932,
+      "file": "1932_symb_inst_ole_journal.html",
+      "title": "Symbol, Instance, Material, Data, Journal, Break",
+      "date": "2021-12-17",
+      "year": 2021,
+      "month": 12
+    },
+    {
+      "num": 1933,
+      "file": "1933_revittemplates.html",
+      "title": "RevitTemplates Update 1.7.0",
+      "date": "2021-12-21",
+      "year": 2021,
+      "month": 12
+    },
+    {
+      "num": 1934,
+      "file": "1934_revitextensions.html",
+      "title": "Happy New Year with RevitExtensions",
+      "date": "2022-01-04",
+      "year": 2022,
+      "month": 1
+    },
+    {
+      "num": 1935,
+      "file": "1935_text_2d_geo.html",
+      "title": "Detailed 2D Text and Other Element Geometry",
+      "date": "2022-01-19",
+      "year": 2022,
+      "month": 1
+    },
+    {
+      "num": 1936,
+      "file": "1936_os_addin_mgr.html",
+      "title": "Add-In Manager, FormulaManager and Tiger Year",
+      "date": "2022-01-26",
+      "year": 2022,
+      "month": 1
+    },
+    {
+      "num": 1937,
+      "file": "1937_get_started.html",
+      "title": "Getting Started Once Again",
+      "date": "2022-02-02",
+      "year": 2022,
+      "month": 2
+    },
+    {
+      "num": 1938,
+      "file": "1938_utils_stirrups.html",
+      "title": "Utility Classes and Constraining Stirrups",
+      "date": "2022-02-10",
+      "year": 2022,
+      "month": 2
+    },
+    {
+      "num": 1939,
+      "file": "1939_purge_etransmit.html",
+      "title": "Purge Unused and eTransmit for DA4R",
+      "date": "2022-02-15",
+      "year": 2022,
+      "month": 2
+    },
+    {
+      "num": 1940,
+      "file": "1940_copy_relationships.html",
+      "title": "ACC Summit, Model Properties, Copy Relationships",
+      "date": "2022-02-22",
+      "year": 2022,
+      "month": 2
+    },
+    {
+      "num": 1941,
+      "file": "1941_family_void.html",
+      "title": "Drilling Holes in Beams and Other Projects",
+      "date": "2022-03-10",
+      "year": 2022,
+      "month": 3
+    },
+    {
+      "num": 1942,
+      "file": "1942_prevent_modification.html",
+      "title": "RevitLookup, WPF, Preventing Modification",
+      "date": "2022-03-23",
+      "year": 2022,
+      "month": 3
+    },
+    {
+      "num": 1943,
+      "file": "1943_purge_etransmit.html",
+      "title": "Purge Unused and the Autodesk Camel",
+      "date": "2022-03-30",
+      "year": 2022,
+      "month": 3
+    },
+    {
+      "num": 1944,
+      "file": "1944_macro_survey.html",
+      "title": "Revit Macro User Survey",
+      "date": "2022-04-01",
+      "year": 2022,
+      "month": 4
+    },
+    {
+      "num": 1945,
+      "file": "1945_rvt_2023.html",
+      "title": "Revit 2023 and RevitLookup 2023",
+      "date": "2022-04-05",
+      "year": 2022,
+      "month": 4
+    },
+    {
+      "num": 1946,
+      "file": "1946_compile_sdk_2023.html",
+      "title": "Compiling the Revit 2023 SDK Samples",
+      "date": "2022-04-07",
+      "year": 2022,
+      "month": 4
+    },
+    {
+      "num": 1947,
+      "file": "1947_whats_new_2023.html",
+      "title": "What's New in the Revit 2023 API",
+      "date": "2022-04-13",
+      "year": 2022,
+      "month": 4
+    },
+    {
+      "num": 1948,
+      "file": "1948_tbc_rst_2023.html",
+      "title": "TBC Samples 2023 and the New Structural API",
+      "date": "2022-04-26",
+      "year": 2022,
+      "month": 4
+    },
+    {
+      "num": 1949,
+      "file": "1949_unique_ifc_guid.html",
+      "title": "Unique Id and IFC GUID Parameter",
+      "date": "2022-04-29",
+      "year": 2022,
+      "month": 4
+    },
+    {
+      "num": 1950,
+      "file": "1950_forge_data_days.html",
+      "title": "Forge Data Days and JoinGeometryUtils",
+      "date": "2022-05-03",
+      "year": 2022,
+      "month": 5
+    },
+    {
+      "num": 1951,
+      "file": "1951_disable_error_failure.html",
+      "title": "Revit 2023 API Docs and Disabling an Error Failure",
+      "date": "2022-05-09",
+      "year": 2022,
+      "month": 5
+    },
+    {
+      "num": 1952,
+      "file": "1952_manager_journal_macro.html",
+      "title": "Analysis of Macros, Journals and Add-In Manager",
+      "date": "2022-05-11",
+      "year": 2022,
+      "month": 5
+    },
+    {
+      "num": 1953,
+      "file": "1953_rst_rex.html",
+      "title": "Structural Questions and the Future of REX",
+      "date": "2022-05-19",
+      "year": 2022,
+      "month": 5
+    },
+    {
+      "num": 1954,
+      "file": "1954_batch_snip_selfsign.html",
+      "title": "Parameters, Snippets, Batch Mode and Self-Signing",
+      "date": "2022-06-07",
+      "year": 2022,
+      "month": 6
+    },
+    {
+      "num": 1955,
+      "file": "1955_corridor_skeleton.html",
+      "title": "Corridor Skeleton, Copy and Paste API",
+      "date": "2022-06-15",
+      "year": 2022,
+      "month": 6
+    },
+    {
+      "num": 1956,
+      "file": "1956_outer_walls.html",
+      "title": "Outer Walls, Lookup Update and Filtering",
+      "date": "2022-06-29",
+      "year": 2022,
+      "month": 6
+    },
+    {
+      "num": 1957,
+      "file": "1957_rps_lookup_mep_start.html",
+      "title": "MEP API Intro and RevitPythonShell Lookup Nuptials",
+      "date": "2022-07-07",
+      "year": 2022,
+      "month": 7
+    },
+    {
+      "num": 1958,
+      "file": "1958_detail_component.html",
+      "title": "Tag Extents and Lazy Detail Components",
+      "date": "2022-07-12",
+      "year": 2022,
+      "month": 7
+    },
+    {
+      "num": 1959,
+      "file": "1959_rdbe.html",
+      "title": "Immutable UniqueId and Revit Database Explorer",
+      "date": "2022-07-22",
+      "year": 2022,
+      "month": 7
+    },
+    {
+      "num": 1960,
+      "file": "1960_27k_instances.html",
+      "title": "IFC Property Set, Bulk Instances and Vary by Group",
+      "date": "2022-08-17",
+      "year": 2022,
+      "month": 8
+    },
+    {
+      "num": 1961,
+      "file": "1961_inst_in_room.html",
+      "title": "Instances in Room and Need for Fuzz",
+      "date": "2022-08-24",
+      "year": 2022,
+      "month": 8
+    },
+    {
+      "num": 1962,
+      "file": "1962_dynamo_planet_risk.html",
+      "title": "Home Planet and to Dy or Not to Dy",
+      "date": "2022-08-26",
+      "year": 2022,
+      "month": 8
+    },
+    {
+      "num": 1963,
+      "file": "1963_point_cloud.html",
+      "title": "Point Clouds, Coloured Triangles and Faces",
+      "date": "2022-09-02",
+      "year": 2022,
+      "month": 9
+    },
+    {
+      "num": 1964,
+      "file": "1964_pick_sym_del_estorage.html",
+      "title": "Deleting Storage and Picking a Symbol",
+      "date": "2022-09-08",
+      "year": 2022,
+      "month": 9
+    },
+    {
+      "num": 1965,
+      "file": "1965_align_connectors.html",
+      "title": "Aligning Connectors",
+      "date": "2022-09-26",
+      "year": 2022,
+      "month": 9
+    },
+    {
+      "num": 1966,
+      "file": "1966_miter_full_face.html",
+      "title": "APS, AU, and Miter Wall Join for Full Face",
+      "date": "2022-09-28",
+      "year": 2022,
+      "month": 9
+    },
+    {
+      "num": 1967,
+      "file": "1967_addins.html",
+      "title": "BIM360 Links and Programming Add-Ins",
+      "date": "2022-10-06",
+      "year": 2022,
+      "month": 10
+    },
+    {
+      "num": 1968,
+      "file": "1968_level_ifc_prop.html",
+      "title": "Element Level and IFC Properties",
+      "date": "2022-10-12",
+      "year": 2022,
+      "month": 10
+    },
+    {
+      "num": 1969,
+      "file": "1969_chain_idling.html",
+      "title": "Can You Avoid Chaining Idling?",
+      "date": "2022-10-21",
+      "year": 2022,
+      "month": 10
+    },
+    {
+      "num": 1970,
+      "file": "1970_webview2.html",
+      "title": "WebView2, LandXML, RefPlane and Revision",
+      "date": "2022-10-27",
+      "year": 2022,
+      "month": 10
+    },
+    {
+      "num": 1971,
+      "file": "1971_unit_test.html",
+      "title": "Unit Test Your Revit Add-In",
+      "date": "2022-11-04",
+      "year": 2022,
+      "month": 11
+    },
+    {
+      "num": 1972,
+      "file": "1972_reload_purged_fam.html",
+      "title": "APS Accelerator and Reloading a Purged Family",
+      "date": "2022-11-11",
+      "year": 2022,
+      "month": 11
+    },
+    {
+      "num": 1973,
+      "file": "1973_estorage_rm.html",
+      "title": "Extensible Storage Schema Deletion",
+      "date": "2022-11-26",
+      "year": 2022,
+      "month": 11
+    },
+    {
+      "num": 1974,
+      "file": "1974_64_bit_element_id.html",
+      "title": "64-Bit Element Ids, Maybe?",
+      "date": "2022-11-29",
+      "year": 2022,
+      "month": 11
+    },
+    {
+      "num": 1975,
+      "file": "1975_nairobi.html",
+      "title": "APS, Nairobi and NetTopologySuite",
+      "date": "2022-12-07",
+      "year": 2022,
+      "month": 12
+    },
+    {
+      "num": 1976,
+      "file": "1976_chatgpt_arm_tsp.html",
+      "title": "Exploring ARM, ChatGPT, Nairobi and the TSP",
+      "date": "2022-12-13",
+      "year": 2022,
+      "month": 12
+    },
+    {
+      "num": 1977,
+      "file": "1977_cultureinfochanger.html",
+      "title": "CultureInfoChanger and IronPython3",
+      "date": "2023-01-03",
+      "year": 2023,
+      "month": 1
+    },
+    {
+      "num": 1978,
+      "file": "1978_sdk_2023_1.html",
+      "title": "SDK, Add-In Wizard and TrackChanges Updates",
+      "date": "2023-01-11",
+      "year": 2023,
+      "month": 1
+    },
+    {
+      "num": 1979,
+      "file": "1979_dark_theme.html",
+      "title": "New Roadmaps, Dark Theme Possibility Looming",
+      "date": "2023-01-18",
+      "year": 2023,
+      "month": 1
+    },
+    {
+      "num": 1980,
+      "file": "1980_multiple_updater.html",
+      "title": "Roadmap AmAs and Handling Multiple Updaters",
+      "date": "2023-01-24",
+      "year": 2023,
+      "month": 1
+    },
+    {
+      "num": 1981,
+      "file": "1981_chatgpt_basics.html",
+      "title": "Back to Basics and ChatGPT",
+      "date": "2023-02-08",
+      "year": 2023,
+      "month": 2
+    },
+    {
+      "num": 1982,
+      "file": "1982_builder_loader.html",
+      "title": "Pyramid Builder, CommandLoader, et al",
+      "date": "2023-02-14",
+      "year": 2023,
+      "month": 2
+    },
+    {
+      "num": 1983,
+      "file": "1983_geo_opt_curve.html",
+      "title": "Geometry Options and Clean Simple Curves",
+      "date": "2023-02-24",
+      "year": 2023,
+      "month": 2
+    },
+    {
+      "num": 1984,
+      "file": "1984_transient.html",
+      "title": "Lookup Ideas, Jigs and ACC Docs Access",
+      "date": "2023-03-07",
+      "year": 2023,
+      "month": 3
+    },
+    {
+      "num": 1985,
+      "file": "1985_refinters_link.html",
+      "title": "IFC, Dimension and Reference Intersector with Links",
+      "date": "2023-03-14",
+      "year": 2023,
+      "month": 3
+    },
+    {
+      "num": 1986,
+      "file": "1986_directshape.html",
+      "title": ".NET Assembly and DirectShape Libraries",
+      "date": "2023-03-23",
+      "year": 2023,
+      "month": 3
+    },
+    {
+      "num": 1987,
+      "file": "1987_uv_fuzz_get_prop.html",
+      "title": "UV, Emergence, Fuzz and the get_ Prefix",
+      "date": "2023-03-31",
+      "year": 2023,
+      "month": 3
+    },
+    {
+      "num": 1988,
+      "file": "1988_rvt_2024.html",
+      "title": "Revit 2024 and RevitLookup 2024",
+      "date": "2023-04-08",
+      "year": 2023,
+      "month": 4
+    },
+    {
+      "num": 1989,
+      "file": "1989_whats_new_2024.html",
+      "title": "What's New in the Revit 2024 API",
+      "date": "2023-04-11",
+      "year": 2023,
+      "month": 4
+    },
+    {
+      "num": 1990,
+      "file": "1990_rvt_2024_update.html",
+      "title": "News Reel, Roadmap and RevitLookup Updates",
+      "date": "2023-04-20",
+      "year": 2023,
+      "month": 4
+    },
+    {
+      "num": 1991,
+      "file": "1991_rvt2024sdk.html",
+      "title": "Nice Accelerator and Compiling the Revit 2024 SDK",
+      "date": "2023-04-26",
+      "year": 2023,
+      "month": 4
+    },
+    {
+      "num": 1992,
+      "file": "1992_rvtsamples2024.html",
+      "title": "Configuring RvtSamples 2024 and Big Numbers",
+      "date": "2023-04-28",
+      "year": 2023,
+      "month": 4
+    },
+    {
+      "num": 1993,
+      "file": "1993_dark_icon.html",
+      "title": "Dark Icons, NewFamilyInstance and AI News",
+      "date": "2023-05-10",
+      "year": 2023,
+      "month": 5
+    },
+    {
+      "num": 1994,
+      "file": "1994_wire_align.html",
+      "title": "Aligning Elements, Finding and Visualising Wires",
+      "date": "2023-05-16",
+      "year": 2023,
+      "month": 5
+    },
+    {
+      "num": 1995,
+      "file": "1995_lookup.html",
+      "title": "64 Bit Ids, Revit and RevitLookup Updates",
+      "date": "2023-05-23",
+      "year": 2023,
+      "month": 5
+    },
+    {
+      "num": 1996,
+      "file": "1996_view_workset.html",
+      "title": "Sustainability, Lookup, Sub-Elements and Wall Types",
+      "date": "2023-06-01",
+      "year": 2023,
+      "month": 6
+    },
+    {
+      "num": 1997,
+      "file": "1997_sdk_brep.html",
+      "title": "BRepBuilder and Toposurface Interior",
+      "date": "2023-06-13",
+      "year": 2023,
+      "month": 6
+    },
+    {
+      "num": 1998,
+      "file": "1998_unittest_arcdim.html",
+      "title": "Unit Testing and Arc Dimensioning",
+      "date": "2023-06-20",
+      "year": 2023,
+      "month": 6
+    },
+    {
+      "num": 1999,
+      "file": "1999_mep_calculation.html",
+      "title": "Docs, Lookup, MEP Calculation and APS DevCon",
+      "date": "2023-07-07",
+      "year": 2023,
+      "month": 7
+    },
+    {
+      "num": 2000,
+      "file": "2000_materials.html",
+      "title": "RBP, Materials, Their Assets and the Visual API",
+      "date": "2023-07-11",
+      "year": 2023,
+      "month": 7
+    },
+    {
+      "num": 2001,
+      "file": "2001_all_cats_params.html",
+      "title": "Bounding Boxes, All Categories and Parameters",
+      "date": "2023-07-18",
+      "year": 2023,
+      "month": 7
+    },
+    {
+      "num": 2001,
+      "file": "2001_boundingbox.html",
+      "title": "Bounding Boxes Axis Alignment and Transformation",
+      "date": "2023-07-18",
+      "year": 2023,
+      "month": 7
+    },
+    {
+      "num": 2002,
+      "file": "2002_dll_hell_gbxml.html",
+      "title": "Export, gbXML and Python Tips",
+      "date": "2023-07-27",
+      "year": 2023,
+      "month": 7
+    },
+    {
+      "num": 2003,
+      "file": "2003_resx_lang_devcon.html",
+      "title": "Resx Language Management and APS DevCons",
+      "date": "2023-08-04",
+      "year": 2023,
+      "month": 8
+    },
+    {
+      "num": 2004,
+      "file": "2004_cmd_id_key_schedule.html",
+      "title": "GasTools, Cmd Ids, Key Schedule et al",
+      "date": "2023-08-17",
+      "year": 2023,
+      "month": 8
+    },
+    {
+      "num": 2005,
+      "file": "2005_net_core.html",
+      "title": "15 Years, Polygon Areas and .NET Core",
+      "date": "2023-08-23",
+      "year": 2023,
+      "month": 8
+    },
+    {
+      "num": 2006,
+      "file": "2006_threads_geo_equal.html",
+      "title": "Add-In Threads and Geometry Comparison",
+      "date": "2023-09-01",
+      "year": 2023,
+      "month": 9
+    },
+    {
+      "num": 2007,
+      "file": "2007_sys_fam_py_section.html",
+      "title": "System Family Predicate and Python Section Creation",
+      "date": "2023-09-13",
+      "year": 2023,
+      "month": 9
+    },
+    {
+      "num": 2008,
+      "file": "2008_rdbe_elem_diff.html",
+      "title": "Element Diff Compare, Shapely and RDBE",
+      "date": "2023-09-19",
+      "year": 2023,
+      "month": 9
+    },
+    {
+      "num": 2009,
+      "file": "2009_optionsbar.html",
+      "title": "OptionsBar and Bye Bye to DA4R 2018",
+      "date": "2023-09-25",
+      "year": 2023,
+      "month": 9
+    },
+    {
+      "num": 2010,
+      "file": "2010_no_geo_adjacent.html",
+      "title": "No Geometry, Touching Geometry and Cut Geometry",
+      "date": "2023-10-03",
+      "year": 2023,
+      "month": 10
+    },
+    {
+      "num": 2011,
+      "file": "2011_xgbxml_fix_gap.html",
+      "title": "Xgbxml Fixes Building Geometry Gaps",
+      "date": "2023-10-20",
+      "year": 2023,
+      "month": 10
+    },
+    {
+      "num": 2012,
+      "file": "2012_dll_paradise.html",
+      "title": "DLL Paradise and a Fall",
+      "date": "2023-10-25",
+      "year": 2023,
+      "month": 10
+    },
+    {
+      "num": 2013,
+      "file": "2013_pernickety.html",
+      "title": "Pernickety Blogging",
+      "date": "2023-10-28",
+      "year": 2023,
+      "month": 10
+    },
+    {
+      "num": 2014,
+      "file": "2014_rbp_shapely.html",
+      "title": "Contour Lines, Batch Processor and Dynamo Shapely",
+      "date": "2023-11-02",
+      "year": 2023,
+      "month": 11
+    },
+    {
+      "num": 2015,
+      "file": "2015_2024_2_update.html",
+      "title": "Revit 2024.2 Update with UDA Preview",
+      "date": "2023-11-11",
+      "year": 2023,
+      "month": 11
+    },
+    {
+      "num": 2016,
+      "file": "2016_closed_room_bound.html",
+      "title": "Journal Magic, Adjacent Rooms and Room Boundary",
+      "date": "2023-11-14",
+      "year": 2023,
+      "month": 11
+    },
+    {
+      "num": 2017,
+      "file": "2017_os_projects.html",
+      "title": ".NET Core Preview and Open Source Add-In Projects",
+      "date": "2023-11-24",
+      "year": 2023,
+      "month": 11
+    },
+    {
+      "num": 2018,
+      "file": "2018_topo_mat_came_targ.html",
+      "title": "Camera Target and Toposolid Subdivision Material",
+      "date": "2023-11-29",
+      "year": 2023,
+      "month": 11
+    },
+    {
+      "num": 2019,
+      "file": "2019_cefsharp_roundtrip.html",
+      "title": "3D View, Curved Section and Browser Round-Trip",
+      "date": "2023-12-12",
+      "year": 2023,
+      "month": 12
+    },
+    {
+      "num": 2020,
+      "file": "2020_net_core_webinar.html",
+      "title": "Parameters and .NET Core Webinar",
+      "date": "2023-12-21",
+      "year": 2023,
+      "month": 12
+    },
+    {
+      "num": 2021,
+      "file": "2021_di_model_checker.html",
+      "title": "Dependency Injection and Model Checker API",
+      "date": "2024-01-05",
+      "year": 2024,
+      "month": 1
+    },
+    {
+      "num": 2022,
+      "file": "2022_logging.html",
+      "title": "Journals, Logging, Progress Bar, AEC, AI and CO2",
+      "date": "2024-01-12",
+      "year": 2024,
+      "month": 1
+    },
+    {
+      "num": 2023,
+      "file": "2023_id.html",
+      "title": "DirectContext3D, Ids and Linked Section Elements",
+      "date": "2024-01-19",
+      "year": 2024,
+      "month": 1
+    },
+    {
+      "num": 2024,
+      "file": "2024_context.html",
+      "title": "Valid Revit API Context, LLM and LTG",
+      "date": "2024-01-26",
+      "year": 2024,
+      "month": 1
+    },
+    {
+      "num": 2025,
+      "file": "2025_schema_rooms.html",
+      "title": "Retrieve Rooms, Build a Schema, Sort and Animate",
+      "date": "2024-02-02",
+      "year": 2024,
+      "month": 2
+    },
+    {
+      "num": 2026,
+      "file": "2026_reload_core_publ.html",
+      "title": ".NET Core, C4R Views and Interactive Hot Reloading",
+      "date": "2024-02-08",
+      "year": 2024,
+      "month": 2
+    },
+    {
+      "num": 2027,
+      "file": "2027_refresh.html",
+      "title": "Refresh Graphics, Start View and Excel",
+      "date": "2024-02-18",
+      "year": 2024,
+      "month": 2
+    },
+    {
+      "num": 2028,
+      "file": "2028_bim_notebook.html",
+      "title": "Interactive BIM Notebook, Temporary Graphics and AI",
+      "date": "2024-02-22",
+      "year": 2024,
+      "month": 2
+    },
+    {
+      "num": 2029,
+      "file": "2029_check_context.html",
+      "title": "API Context, APS Toolkit and DA4R Debugging",
+      "date": "2024-03-11",
+      "year": 2024,
+      "month": 3
+    },
+    {
+      "num": 2030,
+      "file": "2030_travel_doors.html",
+      "title": "Camera Settings, Doors Traversed, Script on the Fly",
+      "date": "2024-03-19",
+      "year": 2024,
+      "month": 3
+    },
+    {
+      "num": 2031,
+      "file": "2031_previewcontrol.html",
+      "title": "Change Pipe Level and PreviewControl Border",
+      "date": "2024-03-29",
+      "year": 2024,
+      "month": 3
+    },
+    {
+      "num": 2032,
+      "file": "2032_rvt_2025.html",
+      "title": "Revit 2025 and RevitLookup 2025",
+      "date": "2024-04-05",
+      "year": 2024,
+      "month": 4
+    },
+    {
+      "num": 2033,
+      "file": "2033_tbc_2025.html",
+      "title": "The Building Coder Samples 2025",
+      "date": "2024-04-08",
+      "year": 2024,
+      "month": 4
+    },
+    {
+      "num": 2034,
+      "file": "2034_sdk_2025.html",
+      "title": "RevitLookup Hotfix and The Revit 2025 SDK",
+      "date": "2024-04-15",
+      "year": 2024,
+      "month": 4
+    },
+    {
+      "num": 2035,
+      "file": "2035_net_core_8.html",
+      "title": "Migrating from .NET 4.8 to .NET Core 8",
+      "date": "2024-04-17",
+      "year": 2024,
+      "month": 4
+    },
+    {
+      "num": 2036,
+      "file": "2036_whats_new_2025.html",
+      "title": "What's New in the Revit 2025 API",
+      "date": "2024-04-22",
+      "year": 2024,
+      "month": 4
+    },
+    {
+      "num": 2037,
+      "file": "2037_vb_2025.html",
+      "title": "Migrating VB to .NET Core 8 and AI News",
+      "date": "2024-05-09",
+      "year": 2024,
+      "month": 5
+    },
+    {
+      "num": 2038,
+      "file": "2038_highlight_link.html",
+      "title": "Lengthen Ducts and Highlight Links",
+      "date": "2024-05-13",
+      "year": 2024,
+      "month": 5
+    },
+    {
+      "num": 2039,
+      "file": "2039_lookup.html",
+      "title": "RevitLookup Updates, Bounding Boxes and Podcast",
+      "date": "2024-05-21",
+      "year": 2024,
+      "month": 5
+    },
+    {
+      "num": 2040,
+      "file": "2040_rvt_2025_1.html",
+      "title": "Revit 2025.1 and Handling Lack of UI in DA",
+      "date": "2024-05-28",
+      "year": 2024,
+      "month": 5
+    },
+    {
+      "num": 2041,
+      "file": "2041_hide_linked.html",
+      "title": "Revit 2025 API Video and Hiding Linked Elements",
+      "date": "2024-06-05",
+      "year": 2024,
+      "month": 6
+    },
+    {
+      "num": 2042,
+      "file": "2042_hide_ribbon.html",
+      "title": "Removing Docs Zip Files, Panels and Buttons",
+      "date": "2024-06-10",
+      "year": 2024,
+      "month": 6
+    },
+    {
+      "num": 2043,
+      "file": "2043_lookup_geo_visual.html",
+      "title": "RevitLookup Geometry Visualisation",
+      "date": "2024-06-13",
+      "year": 2024,
+      "month": 6
+    },
+    {
+      "num": 2044,
+      "file": "2044_entitle_license.html",
+      "title": "Entitlement API for Revit, Licensing for Add-Ins",
+      "date": "2024-06-20",
+      "year": 2024,
+      "month": 6
+    },
+    {
+      "num": 2045,
+      "file": "2045_dll_paradise.html",
+      "title": "Length Query and RevitLookup Heralds DLL Paradise",
+      "date": "2024-06-27",
+      "year": 2024,
+      "month": 6
+    },
+    {
+      "num": 2046,
+      "file": "2046_mat_asset.html",
+      "title": "Material Assets, Chromium and Sorting Schedules",
+      "date": "2024-07-03",
+      "year": 2024,
+      "month": 7
+    },
+    {
+      "num": 2047,
+      "file": "2047_aps_accel_vacat.html",
+      "title": "APS Accelerator and Q4R4 Chunking with Claude",
+      "date": "2024-07-12",
+      "year": 2024,
+      "month": 7
+    },
+    {
+      "num": 2048,
+      "file": "2048_param_id_webview2.html",
+      "title": "Stable Parameter Identifier and WebView2 Plans",
+      "date": "2024-07-30",
+      "year": 2024,
+      "month": 7
+    },
+    {
+      "num": 2049,
+      "file": "2049_voodoo.html",
+      "title": "Link Filter, Ceiling and Link Hatch Dim Voodoo",
+      "date": "2024-08-05",
+      "year": 2024,
+      "month": 8
+    },
+    {
+      "num": 2050,
+      "file": "2050_modeless.html",
+      "title": "Modeless Add-Ins and PDF Printing Speed",
+      "date": "2024-08-13",
+      "year": 2024,
+      "month": 8
+    },
+    {
+      "num": 2051,
+      "file": "2051_modeless.html",
+      "title": "API Context, Background Process, PostCommand",
+      "date": "2024-08-27",
+      "year": 2024,
+      "month": 8
+    },
+    {
+      "num": 2052,
+      "file": "2052_multiversion.html",
+      "title": "Element Visibility and Multi-Version Add-In Code Base",
+      "date": "2024-09-06",
+      "year": 2024,
+      "month": 9
+    },
+    {
+      "num": 2053,
+      "file": "2053_cable_tray_bend.html",
+      "title": "MEP Cable Tray Bend and Tee Analysis",
+      "date": "2024-09-12",
+      "year": 2024,
+      "month": 9
+    },
+    {
+      "num": 2054,
+      "file": "2054_boolean_alternative.html",
+      "title": "Solid Boolean Operation Alternatives",
+      "date": "2024-09-22",
+      "year": 2024,
+      "month": 9
+    },
+    {
+      "num": 2055,
+      "file": "2055_lookup.html",
+      "title": "RevitLookup 2025.0.9",
+      "date": "2024-09-26",
+      "year": 2024,
+      "month": 9
+    },
+    {
+      "num": 2056,
+      "file": "2056_solid_from_face.html",
+      "title": "Join Beams and Solid from Face",
+      "date": "2024-10-02",
+      "year": 2024,
+      "month": 10
+    },
+    {
+      "num": 2057,
+      "file": "2057_filter_type.html",
+      "title": "Unload Links Offline and Filter for Types",
+      "date": "2024-10-10",
+      "year": 2024,
+      "month": 10
+    },
+    {
+      "num": 2058,
+      "file": "2058_rvt_file_version.html",
+      "title": "Determine RVT Version and Add Data from EXE",
+      "date": "2024-10-18",
+      "year": 2024,
+      "month": 10
+    },
+    {
+      "num": 2059,
+      "file": "2059_rvt_2025_3.html",
+      "title": "AU API Wishes and Revit 2025.3",
+      "date": "2024-10-23",
+      "year": 2024,
+      "month": 10
+    },
+    {
+      "num": 2060,
+      "file": "2060_modeless_tutor.html",
+      "title": "DevCon, AI for Revit API, Modeless Add-Ins, Leave",
+      "date": "2024-11-07",
+      "year": 2024,
+      "month": 11
+    },
+    {
+      "num": 2061,
+      "file": "2061_unittest_viewports.html",
+      "title": "Back Again to Unit Test, Icons, Viewports and More",
+      "date": "2025-01-02",
+      "year": 2025,
+      "month": 1
+    },
+    {
+      "num": 2062,
+      "file": "2062_gpt_prompt.html",
+      "title": "LLM Prompting, RAG Ingestion and New Projects",
+      "date": "2025-01-08",
+      "year": 2025,
+      "month": 1
+    },
+    {
+      "num": 2063,
+      "file": "2063_promptimal.html",
+      "title": "Wall Layer Voodoo and Prompt Optimisation",
+      "date": "2025-01-13",
+      "year": 2025,
+      "month": 1
+    },
+    {
+      "num": 2064,
+      "file": "2064_uiapp_tag.html",
+      "title": "Access to UIApplication, Tags and LLM API Support",
+      "date": "2025-01-23",
+      "year": 2025,
+      "month": 1
+    },
+    {
+      "num": 2065,
+      "file": "2065_context_estore_da4r.html",
+      "title": "API Context and Extensible Storage in DA4R",
+      "date": "2025-01-28",
+      "year": 2025,
+      "month": 1
+    },
+    {
+      "num": 2066,
+      "file": "2066_schema_migrat.html",
+      "title": "Tools for Extensible Storage and OAuth Auth0",
+      "date": "2025-02-05",
+      "year": 2025,
+      "month": 2
+    },
+    {
+      "num": 2067,
+      "file": "2067_revittest.html",
+      "title": "Unit Testing and More Serious Matters",
+      "date": "2025-02-20",
+      "year": 2025,
+      "month": 2
+    },
+    {
+      "num": 2068,
+      "file": "2068_uiapp.html",
+      "title": "Access UIApplication and Bounding Box on Sheet",
+      "date": "2025-03-03",
+      "year": 2025,
+      "month": 3
+    },
+    {
+      "num": 2069,
+      "file": "2069_fab_part_service.html",
+      "title": "DevCon, API Docs and Fabrication Part Service",
+      "date": "2025-03-14",
+      "year": 2025,
+      "month": 3
+    },
+    {
+      "num": 2070,
+      "file": "2070_orchestration.html",
+      "title": "Docs, Local APS LLM and Parallel Task Orchestration",
+      "date": "2025-03-20",
+      "year": 2025,
+      "month": 3
+    },
+    {
+      "num": 2071,
+      "file": "2071_gen_ai_rag.html",
+      "title": "Revit Gen AI: MCP, RAG and Vibe",
+      "date": "2025-03-27",
+      "year": 2025,
+      "month": 3
+    },
+    {
+      "num": 2072,
+      "file": "2072_empty_asset.html",
+      "title": "Revit 2026, Empty Assets and Demolished Stuff",
+      "date": "2025-04-02",
+      "year": 2025,
+      "month": 4
+    },
+    {
+      "num": 2073,
+      "file": "2073_lookup_foundation.html",
+      "title": "Lookup Foundation, RevitLookup and DA4R 2026",
+      "date": "2025-04-03",
+      "year": 2025,
+      "month": 4
+    },
+    {
+      "num": 2074,
+      "file": "2074_intersect_result.html",
+      "title": "Intersection Result, LLM for IFC and More AI",
+      "date": "2025-04-15",
+      "year": 2025,
+      "month": 4
+    },
+    {
+      "num": 2075,
+      "file": "2075_copilot_codex_mcp.html",
+      "title": "Revit API Agents, MCP, Copilot and Codex",
+      "date": "2025-04-29",
+      "year": 2025,
+      "month": 4
+    },
+    {
+      "num": 2076,
+      "file": "2076_2026_devguide.html",
+      "title": "DevCon 2025, Developer Guide, AI, AI, and AI",
+      "date": "2025-05-20",
+      "year": 2025,
+      "month": 5
+    },
+    {
+      "num": 2077,
+      "file": "2077_devcon.html",
+      "title": "AI Agents and Selfies at DevCon 2025",
+      "date": "2025-05-22",
+      "year": 2025,
+      "month": 5
+    },
+    {
+      "num": 2078,
+      "file": "2078_jeremy_tammik_retirement.html",
+      "title": "Jeremy's Retirement, Continuation of the Blog, Revit SDK 2026.2",
+      "date": "2025-07-25",
+      "year": 2025,
+      "month": 7
+    },
+    {
+      "num": 2079,
+      "file": "2079_sample_post_title.html",
+      "title": "Sample Post Title",
+      "date": "2026-01-04",
+      "year": 2026,
+      "month": 1
+    },
+    {
+      "num": 2080,
+      "file": "2080_sample_post_title.html",
+      "title": "Sample Post Title",
+      "date": "2026-01-04",
+      "year": 2026,
+      "month": 1
     }
   ],
   "years": [
     {
-      "year": 2008,
-      "count": 61
+      "year": 2026,
+      "count": 2,
+      "firstPost": 2079,
+      "lastPost": 2080
     },
     {
-      "year": 2009,
-      "count": 212
+      "year": 2025,
+      "count": 18,
+      "firstPost": 2061,
+      "lastPost": 2078
     },
     {
-      "year": 2010,
-      "count": 233
+      "year": 2024,
+      "count": 40,
+      "firstPost": 2021,
+      "lastPost": 2060
     },
     {
-      "year": 2011,
-      "count": 191
+      "year": 2023,
+      "count": 45,
+      "firstPost": 1977,
+      "lastPost": 2020
     },
     {
-      "year": 2012,
-      "count": 178
+      "year": 2022,
+      "count": 43,
+      "firstPost": 1934,
+      "lastPost": 1976
     },
     {
-      "year": 2013,
-      "count": 207
+      "year": 2021,
+      "count": 52,
+      "firstPost": 1882,
+      "lastPost": 1933
     },
     {
-      "year": 2014,
-      "count": 181
+      "year": 2020,
+      "count": 73,
+      "firstPost": 1809,
+      "lastPost": 1881
+    },
+    {
+      "year": 2019,
+      "count": 96,
+      "firstPost": 1713,
+      "lastPost": 1808
+    },
+    {
+      "year": 2018,
+      "count": 98,
+      "firstPost": 1615,
+      "lastPost": 1712
+    },
+    {
+      "year": 2017,
+      "count": 104,
+      "firstPost": 1511,
+      "lastPost": 1614
+    },
+    {
+      "year": 2016,
+      "count": 121,
+      "firstPost": 1390,
+      "lastPost": 1510
     },
     {
       "year": 2015,
-      "count": 87
+      "count": 126,
+      "firstPost": 1264,
+      "lastPost": 1389
+    },
+    {
+      "year": 2014,
+      "count": 181,
+      "firstPost": 1083,
+      "lastPost": 1263
+    },
+    {
+      "year": 2013,
+      "count": 207,
+      "firstPost": 876,
+      "lastPost": 1082
+    },
+    {
+      "year": 2012,
+      "count": 178,
+      "firstPost": 698,
+      "lastPost": 875
+    },
+    {
+      "year": 2011,
+      "count": 191,
+      "firstPost": 507,
+      "lastPost": 697
+    },
+    {
+      "year": 2010,
+      "count": 233,
+      "firstPost": 274,
+      "lastPost": 506
+    },
+    {
+      "year": 2009,
+      "count": 212,
+      "firstPost": 62,
+      "lastPost": 273
+    },
+    {
+      "year": 2008,
+      "count": 61,
+      "firstPost": 1,
+      "lastPost": 61
     }
   ]
 }

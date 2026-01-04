@@ -18,10 +18,13 @@ A_DIR = REPO_ROOT / 'a'
 TOC_DIR = A_DIR / 'toc'
 
 def get_htm_files():
-    """Get all .htm files in a/ directory."""
+    """Get all post files (.htm and .html) in a/ directory."""
     files = set()
     for f in os.listdir(A_DIR):
-        if f.endswith('.htm') and f != 'index.html':
+        if f.endswith('.htm') or f.endswith('.html'):
+            # Exclude non-post files
+            if f.startswith(('index', 'toc')):
+                continue
             files.add(f)
     return files
 

@@ -357,9 +357,9 @@ def main():
         print(f"ERROR: {index_path} not found!")
         return 1
     
-    # Get list of existing files
-    existing_files = set(f for f in os.listdir(a_dir) if f.endswith('.htm'))
-    print(f"Found {len(existing_files)} existing .htm files")
+    # Get list of existing files (both .htm and .html)
+    existing_files = set(f for f in os.listdir(a_dir) if f.endswith('.htm') or f.endswith('.html'))
+    print(f"Found {len(existing_files)} existing post files")
     
     # Read HTML content
     html_content = index_path.read_text(encoding="utf-8", errors="replace")
