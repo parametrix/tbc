@@ -1,7 +1,17 @@
-# No external dependencies required
-# All scripts use Python 3 standard library only
+# Python dependencies for The Building Coder scripts
+#
+# Install with: pip install -r requirements.txt
+
+# For publish_post.py (new post publishing)
+markdown>=3.5.0
+python-frontmatter>=1.0.0
+pyyaml>=6.0
+beautifulsoup4>=4.12.0
+
+# All other scripts use Python 3 standard library only
 #
 # Scripts in this directory:
+# - publish_post.py        : Publish new Markdown posts to HTML
 # - fix_all_links.py       : Main URL-to-local-file mapping (8,868 links)
 # - fix_remaining_links.py : Additional slug-based link fixes (4,684 links)
 # - wrap_html.py           : Wrap HTML fragments with document structure (2,066 files)

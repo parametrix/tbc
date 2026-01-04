@@ -114,7 +114,7 @@ by <a href="https://github.com/Pekshev/ProjectPointOnPlanetest">Alexander's Proj
 {
 &nbsp;&nbsp;<span style="color:blue;">double</span>&nbsp;d&nbsp;=&nbsp;plane.SignedDistanceTo(&nbsp;p&nbsp;);
 
-&nbsp;&nbsp;<span style="color:green;">//XYZ&nbsp;q&nbsp;=&nbsp;p&nbsp;+&nbsp;d&nbsp;*&nbsp;plane.Normal;&nbsp;//&nbsp;wrong&nbsp;according&nbsp;to&nbsp;Ruslan&nbsp;Hanza&nbsp;and&nbsp;Alexander&nbsp;Pekshev&nbsp;in&nbsp;their&nbsp;comments&nbsp;http://thebuildingcoder.typepad.com/blog/2014/09/planes-projections-and-picking-points.html#comment-3765750464</span>
+&nbsp;&nbsp;<span style="color:green;">//XYZ&nbsp;q&nbsp;=&nbsp;p&nbsp;+&nbsp;d&nbsp;*&nbsp;plane.Normal;&nbsp;//&nbsp;wrong&nbsp;according&nbsp;to&nbsp;Ruslan&nbsp;Hanza&nbsp;and&nbsp;Alexander&nbsp;Pekshev&nbsp;in&nbsp;their&nbsp;comments&nbsp;1202_plane_proj_pick.htm#comment-3765750464</span>
 &nbsp;&nbsp;<span style="color:#2b91af;">XYZ</span>&nbsp;q&nbsp;=&nbsp;p&nbsp;-&nbsp;d&nbsp;*&nbsp;plane.Normal;
 
 &nbsp;&nbsp;<span style="color:#2b91af;">Debug</span>.Assert(

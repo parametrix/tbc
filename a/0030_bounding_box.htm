@@ -132,7 +132,7 @@ Element bounding box of Windows M_Fixed <127959 0406 x 0610mm>
 <p>I hope this helps clarify this simple Element property somewhat.</p>
 
 <p>I am adding a new version 1.0.0.8 of the complete Visual Studio solution 
-<span class="unavailable-link" title="Original: http://thebuildingcoder.typepad.com/blog/files/bc1008.zip">here <em>(file no longer available)</em></span>, 
+<span class="unavailable-link" title="Original: bc1008.zip">here <em>(file no longer available)</em></span>, 
 including the new CmdBoundingBox class as well as all other commands discussed so far.</p>
 
 <p style="color:red">Die Frage von mir stammt aus einem solchen Projekt, wo der Kunde selber Bibliothekselemente aufbaut. Er hat ca. 25 Elemente mit vielen Optionen, wobei alle erlaubten Kombinationen eine Artikelnummer haben. Damit er nun in Revit seine Elemente platzieren kann und auch gleich die Optionen (im Revit Parameter) richtig gesetzt sind, mache ich ein Dialog, welcher eine Datenbank anbindet mit den Definitionen der Elemente und Optionen. Dieser Dialog setzt dann die Elemente im Revit ab. Nun sind aber die Elemente unterschiedlich breit, je nachdem welche Optionen ausgew�hlt sind, und da der Dialog die gew�hlten Artikel nebeneinander platzieren soll, muss ich rausfinden wie breit das Element ist (eben abh�ngig der gew�hlten Parameter). Bei eigenen Test habe ich nun rausgefunden, dass die BoundingBox anscheinend von der Bezugsebenen "vorn", "hinten", "rechts", "links", "oben" und "unten" abh�ngt und nicht die Geometrie selbst abfragt. Stimmt das? D.h. dass wenn im Familieneditor die erw�hnten Bezugsebenen nicht alle Teile einschliessen, dann bekomme ich nicht die BoundingBox.</p>

@@ -1,0 +1,88 @@
+name: Publish New Posts
+
+on:
+  push:
+    paths:
+      - 'a/drafts/*.md'
+  workflow_dispatch:
+    inputs:
+      draft_file:
+        description: 'Draft file to publish (e.g., a/drafts/my-post.md)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install markdown python-frontmatter pyyaml beautifulsoup4
+      
+      - name: Find new draft files
+        id: find_drafts
+        run: |
+          # If manual trigger with specific file
+          if [ -n "${{ github.event.inputs.draft_file }}" ]; then
+            echo "drafts=${{ github.event.inputs.draft_file }}" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          # Find new/modified .md files in drafts folder
+          DRAFTS=$(git diff --name-only HEAD~1 HEAD -- 'a/drafts/*.md' 2>/dev/null || echo "")
+          
+          # If no diff (first push), check for any drafts
+          if [ -z "$DRAFTS" ]; then
+            DRAFTS=$(ls a/drafts/*.md 2>/dev/null || echo "")
+          fi
+          
+          echo "Found drafts: $DRAFTS"
+          echo "drafts=$DRAFTS" >> $GITHUB_OUTPUT
+      
+      - name: Publish drafts
+        if: steps.find_drafts.outputs.drafts != ''
+        run: |
+          for draft in ${{ steps.find_drafts.outputs.drafts }}; do
+            echo "Publishing: $draft"
+            python scripts/publish_post.py "$draft"
+            
+            # Move processed draft to archive
+            if [ -f "$draft" ]; then
+              mkdir -p a/drafts/published
+              mv "$draft" "a/drafts/published/$(basename $draft)"
+            fi
+          done
+      
+      - name: Commit and push changes
+        if: steps.find_drafts.outputs.drafts != ''
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add -A
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
+          # Get the title from the first published post
+          COMMIT_MSG="Publish new blog post(s)"
+          
+          git commit -m "$COMMIT_MSG"
+          git push

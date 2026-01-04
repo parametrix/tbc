@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-01-02",
+  "lastUpdated": "2026-01-04",
   "totalTopics": 46,
-  "totalPostLinks": 370,
+  "totalPostLinks": 372,
   "navigation": [
     {
       "label": "About Jeremy Tammik",
@@ -26,6 +26,20 @@
     }
   ],
   "topics": [
+    {
+      "id": "0.1",
+      "title": "Recent Posts",
+      "posts": [
+        {
+          "title": "Sample Post Title",
+          "file": "2080_sample_post_title.html"
+        },
+        {
+          "title": "Sample Post Title",
+          "file": "2079_sample_post_title.html"
+        }
+      ]
+    },
     {
       "id": "5.1",
       "title": "Custom Exporter",
@@ -1783,6 +1797,17 @@
     }
   ],
   "archive": [
+    {
+      "id": "archive-2026",
+      "title": "2026",
+      "posts": [
+        {
+          "title": "#2080 - Sample Post Title",
+          "file": "2080_sample_post_title.html",
+          "date": "2026-01-04"
+        }
+      ]
+    },
     {
       "id": "archive-2025",
       "title": "2025",
@@ -12283,6 +12308,6 @@
       ]
     }
   ],
-  "totalArchiveYears": 19,
-  "totalArchivePosts": 2077
+  "totalArchiveYears": 20,
+  "totalArchivePosts": 2078
 }

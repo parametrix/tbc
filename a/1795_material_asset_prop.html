@@ -43,14 +43,14 @@
   https://forums.autodesk.com/t5/revit-api-forum/create-new-material-and-add-new-physical-and-thermal-assets-with/m-p/7311468
   15089722 [Revit Material Library] implemented CreateMaterialAsset sample add-in, reanswered case
   1735_editscope_texture.md
-  https://thebuildingcoder.typepad.com/blog/2016/10/list-material-asset-texture-and-forge-webinar-recordings.html#comment-4442686784
+  1482_material_asset_texture.html#comment-4442686784
   14254618 [Changing material texture path with editScope] reanswered
   https://forums.autodesk.com/t5/revit-api-forum/changing-material-texture-path-with-editscope/m-p/8017578
   15041727 [Unable to get correct texture path from Revit API]
   14887363 [Obtain Uv-coordinates from texture]
   14348365 [Render Material Texture Image]
   https://forums.autodesk.com/t5/revit-api-forum/render-material-texture-image/m-p/8080636
-  https://thebuildingcoder.typepad.com/blog/2016/10/list-material-asset-texture-and-forge-webinar-recordings.html#comment-4442686784
+  1482_material_asset_texture.html#comment-4442686784
     [Q] Great tip, but how can we create the fullpath to the unifiedbitmap_Bitmap texture. I've tried using Application:: GetLibraryPaths but the material library is not listed in the dictionnary :(
     [A] If all else fails, you can try to use the operating system functionality to search globally for the given filename. You should cache the folders in which you find it. If the system is sensibly set up, you will only need to search for it globally once, or a very few times, since there should not be many different locations in which these files are stored.
     [R] Thank you for this tip, especially for the cache recommandation. Works like a charm. :)
@@ -58,7 +58,7 @@
   [Changing material texture path with editScope](https://forums.autodesk.com/t5/revit-api-forum/changing-material-texture-path-with-editscope/m-p/8017578)
   [Render Material Texture Image](https://forums.autodesk.com/t5/revit-api-forum/render-material-texture-image/m-p/8080636)
 
-  [setting material texture path in `EditScope`](https://thebuildingcoder.typepad.com/blog/2019/04/set-material-texture-path-in-editscope.html)
+  [setting material texture path in `EditScope`](1735_editscope_texture.html
 
 - material and asset access
 Liz Fortune Oct 31st at 7:33 PM
@@ -101,11 +101,11 @@ Jeremy Tammik  21 hours ago
 
 i published what you shared so far; it would be great if you can also confirm that you can create new materials and successfully populate all these properties as well!
 
-https://thebuildingcoder.typepad.com/blog/2019/11/material-physical-and-thermal-assets.html
+1795_material_asset_prop.html
 
 Liz Fortune  10 hours ago
 @tammikj Awesome!  Glad my work helped. :slightly_smiling_face:
-I have successfully modified the values for the parameters. I attempted a handful. The trick I found was that I needed to identify the storage type of each so I could set the parameter accordingly. The pdf I was referring to is: https://thebuildingcoder.typepad.com/files/sd124625_visual_appearance_of_materials_api_boris_shafiro_handout.pdf
+I have successfully modified the values for the parameters. I attempted a handful. The trick I found was that I needed to identify the storage type of each so I could set the parameter accordingly. The pdf I was referring to is: sd124625_visual_appearance_of_materials_api_boris_shafiro_handout.pdf
 
 twitter:
 
@@ -166,7 +166,7 @@ the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api-forum/b
 15041727 [Unable to get correct texture path from Revit API]
 14887363 [Obtain Uv-coordinates from texture]
 
-- [Material asset textures](https://thebuildingcoder.typepad.com/blog/2016/10/list-material-asset-texture-and-forge-webinar-recordings.html)
+- [Material asset textures](1482_material_asset_texture.html
 - [Render material texture image](https://forums.autodesk.com/t5/revit-api-forum/render-material-texture-image/m-p/8080636), case 14348365
 - [AddMaterials GitHub repository](https://github.com/jeremytammik/AddMaterials) &ndash; add materials from a list of properties defined in Excel
 
