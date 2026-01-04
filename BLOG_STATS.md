@@ -6,7 +6,7 @@ Last updated: January 5, 2026
 
 | Metric | Count |
 |--------|-------|
-| Total posts in archive | 2,079 |
+| Total post files | 2,079 |
 | Post number range | 0001 - 2080 |
 | Years covered | 2008 - 2026 |
 
@@ -15,10 +15,20 @@ Last updated: January 5, 2026
 | Extension | Posts | Range |
 |-----------|-------|-------|
 | `.htm` | 1,350 | 0001 - 1350 |
-| `.html` | 729 | 1351 - 2080 |
+| `.html` | 729 | 1351 - 2080 (except 1397) |
 | **Total** | **2,079** | |
 
-*Note: 2 posts (1397, 2001) are referenced in index.html but files don't exist or have wrong extensions.*
+### Markdown Source Files
+
+Posts 1351-2078 have corresponding `.md` source files in the `a/` directory.
+These are the markdown sources used to generate the `.html` files.
+
+| Type | Count | Notes |
+|------|-------|-------|
+| Post `.md` files | 728 | Posts 1351-2078 |
+| Documentation `.md` files | 8 | Root-level docs |
+
+*Note: Post 1397 exists only as `.md` (missing `.html` conversion)*
 
 ## Posts by Year
 
@@ -43,7 +53,7 @@ Last updated: January 5, 2026
 | 2024 | 40 | |
 | 2025 | 18 | Through July 2025 |
 | 2026 | 2 | Sample posts |
-| **Total** | **~2,081** | |
+| **Total** | **~2,080** | |
 
 ## Navigation Data Files
 
@@ -51,10 +61,12 @@ Last updated: January 5, 2026
 
 | Metric | Count | Coverage |
 |--------|-------|----------|
-| Posts indexed | 2,081 | ~100% |
+| Posts indexed | 2,080 | ~100% |
 | Years | 18 | 2008-2026 |
 
 All existing posts are included in the chronological timeline.
+
+*Note: Post 1397 is referenced but missing `.html` file*
 
 ### toc-data.json (Topic Navigation)
 
@@ -62,8 +74,8 @@ All existing posts are included in the chronological timeline.
 |--------|-------|
 | Topics | 57 |
 | Subtopics | 3 |
-| Posts in topics | 438 unique files |
-| Topic coverage | 21% of all posts |
+| Posts in topics | 419 unique files |
+| Topic coverage | 20% of all posts |
 
 **Note**: Not all posts are categorized into topics. The topic structure comes from Section 5 of index.html, which only categorizes certain posts by subject matter.
 
@@ -71,8 +83,8 @@ All existing posts are included in the chronological timeline.
 
 | Category | Count | Notes |
 |----------|-------|-------|
-| Posts categorized into topics | 438 | Included in toc-data.json |
-| Posts NOT in any topic | ~1,641 | Only in chronological list |
+| Posts categorized into topics | 419 | Included in toc-data.json |
+| Posts NOT in any topic | ~1,660 | Only in chronological list |
 
 ## index.html Sections
 
@@ -83,16 +95,16 @@ All existing posts are included in the chronological timeline.
 | 2 | Getting Started | 9 |
 | 3 | License | 0 |
 | 4 | Disclaimer | 0 |
-| 5 | **Topics** (subject-based) | 438 unique |
-| 6 | **Chronological** (by date) | 2,082 |
+| 5 | **Topics** (subject-based) | 419 unique |
+| 6 | **Chronological** (by date) | 2,080 |
 | 7 | Footer | 0 |
 
 ## Verification
 
-Run the audit script to verify current statistics:
+Run the comprehensive audit script to verify current statistics:
 
 ```bash
-python scripts/audit_posts.py
+python scripts/comprehensive_audit.py
 ```
 
 ## History

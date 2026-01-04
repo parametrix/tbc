@@ -13,21 +13,45 @@ from pathlib import Path
 from datetime import datetime
 from collections import defaultdict
 
-def parse_index_html(index_path: Path) -> list[dict]:
-    """Parse the index.html and extract post data from the TOC table."""
+def parse_index_html(index_path: Path, a_dir: Path = None) -> tuple[list[dict], list[str]]:
+    """Parse the index.html and extract post data from the TOC table.
+    
+    Returns:
+        Tuple of (posts list, warnings list)
+    """
     
     content = index_path.read_text(encoding='utf-8')
+    warnings = []
+    
+    # Remove HTML comments to skip commented-out entries
+    # This handles entries like: <!-- <tr><td>2001</td>... -->
+    content_no_comments = re.sub(r'<!--.*?-->', '', content, flags=re.DOTALL)
     
     # Pattern to match table rows with post data
     # Format: <tr><td align="right">0001</td><td>2008-08-22</td><td><a href="0001_welcome.htm">Welcome</a>...
     pattern = r'<tr><td[^>]*>(\d{4})</td><td>(\d{4}-\d{2}-\d{2})</td><td><a href="([^"]+)">([^<]+)</a>'
     
     posts = []
-    for match in re.finditer(pattern, content):
+    seen_post_nums = {}  # Track post numbers to detect duplicates
+    
+    for match in re.finditer(pattern, content_no_comments):
         num = int(match.group(1))
         date_str = match.group(2)
         filename = match.group(3)
         title = match.group(4)
+        
+        # Check for duplicate post numbers
+        if num in seen_post_nums:
+            warnings.append(f"Duplicate post number {num}: '{filename}' (already have '{seen_post_nums[num]}')")
+            continue  # Skip duplicate, keep first entry
+        
+        seen_post_nums[num] = filename
+        
+        # Validate file exists if a_dir is provided
+        if a_dir:
+            file_path = a_dir / filename
+            if not file_path.exists():
+                warnings.append(f"Missing file for post {num}: {filename}")
         
         # Parse date
         date = datetime.strptime(date_str, '%Y-%m-%d')
@@ -44,7 +68,7 @@ def parse_index_html(index_path: Path) -> list[dict]:
     # Sort by post number (chronological)
     posts.sort(key=lambda p: p['num'])
     
-    return posts
+    return posts, warnings
 
 
 def calculate_year_stats(posts: list[dict]) -> list[dict]:
@@ -70,15 +94,20 @@ def calculate_year_stats(posts: list[dict]) -> list[dict]:
     return years
 
 
-def generate_chrono_data(workspace_root: Path) -> dict:
-    """Generate the complete chrono-data.json content."""
+def generate_chrono_data(workspace_root: Path) -> tuple[dict, list[str]]:
+    """Generate the complete chrono-data.json content.
+    
+    Returns:
+        Tuple of (chrono_data dict, warnings list)
+    """
     
     index_path = workspace_root / 'a' / 'index.html'
+    a_dir = workspace_root / 'a'
     
     if not index_path.exists():
         raise FileNotFoundError(f"Index file not found: {index_path}")
     
-    posts = parse_index_html(index_path)
+    posts, warnings = parse_index_html(index_path, a_dir)
     years = calculate_year_stats(posts)
     
     chrono_data = {
@@ -89,7 +118,7 @@ def generate_chrono_data(workspace_root: Path) -> dict:
         'years': years
     }
     
-    return chrono_data
+    return chrono_data, warnings
 
 
 def main():
@@ -100,7 +129,14 @@ def main():
     print(f"Workspace root: {workspace_root}")
     print(f"Parsing index.html...")
     
-    chrono_data = generate_chrono_data(workspace_root)
+    chrono_data, warnings = generate_chrono_data(workspace_root)
+    
+    # Report any warnings
+    if warnings:
+        print(f"\n⚠️  WARNINGS ({len(warnings)}):")
+        for w in warnings:
+            print(f"   - {w}")
+        print()
     
     print(f"Found {chrono_data['totalPosts']} posts")
     print(f"Years covered: {chrono_data['years'][-1]['year']} - {chrono_data['years'][0]['year']}")

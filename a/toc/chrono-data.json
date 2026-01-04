@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "lastUpdated": "2026-01-05",
-  "totalPosts": 2081,
+  "totalPosts": 2080,
   "posts": [
     {
       "num": 1,
@@ -16005,14 +16005,6 @@
     },
     {
       "num": 2001,
-      "file": "2001_all_cats_params.html",
-      "title": "Bounding Boxes, All Categories and Parameters",
-      "date": "2023-07-18",
-      "year": 2023,
-      "month": 7
-    },
-    {
-      "num": 2001,
       "file": "2001_boundingbox.html",
       "title": "Bounding Boxes Axis Alignment and Transformation",
       "date": "2023-07-18",
@@ -16673,7 +16665,7 @@
     },
     {
       "year": 2023,
-      "count": 45,
+      "count": 44,
       "firstPost": 1977,
       "lastPost": 2020
     },
