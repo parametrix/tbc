@@ -34,6 +34,20 @@ body {
   padding: 0 20px;
 }
 
+/* Sidebar-aware styles - when TOC sidebar is present */
+body.tbc-has-sidebar .hero,
+body.tbc-has-sidebar .nav-bar,
+body.tbc-has-sidebar footer {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body.tbc-has-sidebar .container {
+  max-width: 900px;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
@@ -88,7 +102,7 @@ body {
   padding: 12px 0;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 50;
 }
 
 .nav-links {
