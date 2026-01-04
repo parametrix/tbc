@@ -9,14 +9,42 @@ Last updated: January 5, 2026
 | Total posts in archive | 1,350 |
 | Post number range | 0001 - 1350 |
 | File extension | `.htm` |
-| Years covered | 2008 - 2015 |
+| Years covered | 2008 - 2015 (Aug) |
+
+## Posts by Year (In Archive)
+
+| Year | Posts | Notes |
+|------|-------|-------|
+| 2008 | 61 | Blog started August 2008 |
+| 2009 | 212 | |
+| 2010 | 233 | |
+| 2011 | 191 | |
+| 2012 | 178 | |
+| 2013 | 207 | |
+| 2014 | 181 | |
+| 2015 | 87 | Through August 21, 2015 |
+| **Total** | **1,350** | |
 
 ## Posts NOT in Archive
 
-The original Building Coder blog has additional posts (1351-2081+) that have not been migrated to this archive. These posts:
-- Use `.html` extension
-- Are referenced in `index.html` but files don't exist
-- Total: ~731 posts
+The original Building Coder blog continues beyond this archive. The index.html references posts 1351-2080+ with `.html` extension that have not been migrated:
+
+| Year | Posts | Status |
+|------|-------|--------|
+| 2015 (Sep-Dec) | 39 | NOT in archive |
+| 2016 | 121 | NOT in archive |
+| 2017 | 103 | NOT in archive |
+| 2018 | 95 | NOT in archive |
+| 2019 | 96 | NOT in archive |
+| 2020 | 73 | NOT in archive |
+| 2021 | 52 | NOT in archive |
+| 2022 | 43 | NOT in archive |
+| 2023 | 45 | NOT in archive |
+| 2024 | 40 | NOT in archive |
+| 2025 | 18 | NOT in archive |
+| **Total** | **~725** | Posts 1351-2080 |
+
+These posts are still available on the original WordPress blog at thebuildingcoder.typepad.com.
 
 ## Navigation Data Files
 
