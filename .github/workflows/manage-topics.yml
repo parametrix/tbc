@@ -1,0 +1,125 @@
+name: Manage Topics
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action to perform'
+        required: true
+        type: choice
+        options:
+          - list
+          - add-post
+          - new-topic
+          - remove-post
+      topic_id:
+        description: 'Topic ID (e.g., 5.9) - required for add-post, new-topic, remove-post'
+        required: false
+        type: string
+      post_file:
+        description: 'Post filename (e.g., 2079_my_post.html) - required for add-post, remove-post'
+        required: false
+        type: string
+      title:
+        description: 'Post title or Topic title - required for add-post, new-topic'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  manage:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: List Topics
+        if: github.event.inputs.action == 'list'
+        run: |
+          python scripts/manage_topics.py list
+      
+      - name: Add Post to Topic
+        if: github.event.inputs.action == 'add-post'
+        run: |
+          TOPIC_ID="${{ github.event.inputs.topic_id }}"
+          POST_FILE="${{ github.event.inputs.post_file }}"
+          TITLE="${{ github.event.inputs.title }}"
+          
+          if [ -z "$TOPIC_ID" ] || [ -z "$POST_FILE" ] || [ -z "$TITLE" ]; then
+            echo "❌ Error: topic_id, post_file, and title are all required for add-post"
+            exit 1
+          fi
+          
+          python scripts/manage_topics.py add-post "$TOPIC_ID" "$POST_FILE" "$TITLE" --force
+      
+      - name: Create New Topic
+        if: github.event.inputs.action == 'new-topic'
+        run: |
+          TOPIC_ID="${{ github.event.inputs.topic_id }}"
+          TITLE="${{ github.event.inputs.title }}"
+          
+          if [ -z "$TOPIC_ID" ] || [ -z "$TITLE" ]; then
+            echo "❌ Error: topic_id and title are required for new-topic"
+            exit 1
+          fi
+          
+          python scripts/manage_topics.py new-topic "$TOPIC_ID" "$TITLE"
+      
+      - name: Remove Post from Topic
+        if: github.event.inputs.action == 'remove-post'
+        run: |
+          TOPIC_ID="${{ github.event.inputs.topic_id }}"
+          POST_FILE="${{ github.event.inputs.post_file }}"
+          
+          if [ -z "$TOPIC_ID" ] || [ -z "$POST_FILE" ]; then
+            echo "❌ Error: topic_id and post_file are required for remove-post"
+            exit 1
+          fi
+          
+          python scripts/manage_topics.py remove-post "$TOPIC_ID" "$POST_FILE"
+      
+      - name: Commit and push changes
+        if: github.event.inputs.action != 'list'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add -A
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
+          ACTION="${{ github.event.inputs.action }}"
+          TOPIC_ID="${{ github.event.inputs.topic_id }}"
+          
+          case "$ACTION" in
+            "add-post")
+              COMMIT_MSG="Add post to topic $TOPIC_ID"
+              ;;
+            "new-topic")
+              COMMIT_MSG="Create new topic $TOPIC_ID"
+              ;;
+            "remove-post")
+              COMMIT_MSG="Remove post from topic $TOPIC_ID"
+              ;;
+            *)
+              COMMIT_MSG="Update topics"
+              ;;
+          esac
+          
+          git commit -m "$COMMIT_MSG"
+          git push
+          
+          echo "✅ Changes committed and pushed"

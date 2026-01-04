@@ -1,0 +1,143 @@
+name: Remove Post
+
+on:
+  workflow_dispatch:
+    inputs:
+      post_file:
+        description: 'Post filename to remove (e.g., 2079_my_post.html)'
+        required: true
+        type: string
+      confirm:
+        description: 'Type "DELETE" to confirm removal'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  remove:
+    runs-on: ubuntu-latest
+    if: github.event.inputs.confirm == 'DELETE'
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Validate input
+        id: validate
+        run: |
+          POST_FILE="${{ github.event.inputs.post_file }}"
+          
+          # Check if file exists
+          if [ ! -f "a/$POST_FILE" ]; then
+            echo "❌ Error: Post file 'a/$POST_FILE' not found"
+            exit 1
+          fi
+          
+          # Extract post number from filename
+          POST_NUM=$(echo "$POST_FILE" | grep -oE '^[0-9]+' || echo "")
+          if [ -z "$POST_NUM" ]; then
+            echo "❌ Error: Could not extract post number from filename"
+            exit 1
+          fi
+          
+          echo "post_file=$POST_FILE" >> $GITHUB_OUTPUT
+          echo "post_num=$POST_NUM" >> $GITHUB_OUTPUT
+          echo "✅ Validated: $POST_FILE (post #$POST_NUM)"
+      
+      - name: Remove post file
+        run: |
+          POST_FILE="${{ steps.validate.outputs.post_file }}"
+          echo "Removing: a/$POST_FILE"
+          rm -f "a/$POST_FILE"
+      
+      - name: Remove from index.html
+        run: |
+          POST_NUM="${{ steps.validate.outputs.post_num }}"
+          echo "Removing post #$POST_NUM from a/index.html"
+          
+          # Remove the table row for this post
+          # Pattern: <tr><td align="right">NNNN</td>...</tr>
+          sed -i "/<tr><td align=\"right\">${POST_NUM}<\/td>/d" a/index.html
+      
+      - name: Remove from toc-data.json
+        run: |
+          POST_FILE="${{ steps.validate.outputs.post_file }}"
+          echo "Removing '$POST_FILE' from a/toc/toc-data.json"
+          
+          python3 << 'EOF'
+          import json
+          from pathlib import Path
+          
+          toc_file = Path("a/toc/toc-data.json")
+          post_file = "${{ steps.validate.outputs.post_file }}"
+          
+          toc_data = json.loads(toc_file.read_text(encoding='utf-8'))
+          removed_count = 0
+          
+          # Remove from topics
+          for topic in toc_data.get('topics', []):
+              original_len = len(topic.get('posts', []))
+              topic['posts'] = [p for p in topic.get('posts', []) if p.get('file') != post_file]
+              removed_count += original_len - len(topic['posts'])
+              
+              # Also check subtopics
+              for subtopic in topic.get('subTopics', []):
+                  original_len = len(subtopic.get('posts', []))
+                  subtopic['posts'] = [p for p in subtopic.get('posts', []) if p.get('file') != post_file]
+                  removed_count += original_len - len(subtopic['posts'])
+          
+          # Remove from archive
+          for year in toc_data.get('archive', []):
+              original_len = len(year.get('posts', []))
+              year['posts'] = [p for p in year.get('posts', []) if p.get('file') != post_file]
+              removed_count += original_len - len(year['posts'])
+          
+          # Update metadata
+          toc_data['totalPostLinks'] = sum(len(t.get('posts', [])) for t in toc_data.get('topics', []))
+          toc_data['totalArchivePosts'] = sum(len(y.get('posts', [])) for y in toc_data.get('archive', []))
+          
+          from datetime import datetime
+          toc_data['lastUpdated'] = datetime.now().strftime("%Y-%m-%d")
+          
+          toc_file.write_text(json.dumps(toc_data, indent=2, ensure_ascii=False), encoding='utf-8')
+          
+          print(f"Removed {removed_count} reference(s) to {post_file}")
+          EOF
+      
+      - name: Commit and push changes
+        run: |
+          POST_FILE="${{ steps.validate.outputs.post_file }}"
+          POST_NUM="${{ steps.validate.outputs.post_num }}"
+          
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add -A
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
+          git commit -m "Remove post #$POST_NUM: $POST_FILE"
+          git push
+          
+          echo "✅ Successfully removed post #$POST_NUM"
+  
+  confirm-required:
+    runs-on: ubuntu-latest
+    if: github.event.inputs.confirm != 'DELETE'
+    steps:
+      - name: Confirmation required
+        run: |
+          echo "❌ Removal cancelled: You must type 'DELETE' in the confirm field"
+          exit 1
