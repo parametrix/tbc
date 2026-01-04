@@ -5,7 +5,7 @@ add_sidebar_to_pages.py - Inject sidebar into all HTML pages
 This script modifies all HTML files in the a/ directory to include
 the sidebar CSS, JS, and placeholder elements.
 
-Author: GitHub Copilot
+Author: parametrix
 Date: January 2, 2026
 """
 

@@ -5,7 +5,7 @@ extract_topic_toc.py - Extract topic-based TOC from a/index.html to JSON
 This script parses the homepage and extracts all 61+ topic groups from section #5,
 creating a structured JSON file for the sidebar navigation.
 
-Author: GitHub Copilot
+Author: parametrix
 Date: January 2, 2026
 """
 

@@ -5,7 +5,7 @@ add_chronological_archive.py - Add chronological archive to TOC data
 This script extracts all posts from the chronological TOC (Section #6) 
 in index.html and adds them as year-grouped entries to toc-data.json.
 
-Author: GitHub Copilot
+Author: parametrix
 Date: January 2, 2026
 """
 

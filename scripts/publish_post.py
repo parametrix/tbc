@@ -10,7 +10,7 @@ Usage:
     python publish_post.py a/drafts/my-post.md --date 2026-01-05 --title "My Title"
     python publish_post.py a/drafts/my-post.md --dry-run
 
-Author: GitHub Copilot
+Author: parametrix
 Date: January 4, 2026
 """
 

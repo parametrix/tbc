@@ -12,7 +12,7 @@ Usage:
     python delete_post.py 2079_sample_post.html
     python delete_post.py 2079_sample_post.html --dry-run
 
-Author: GitHub Copilot
+Author: parametrix
 Date: January 4, 2026
 """
 
