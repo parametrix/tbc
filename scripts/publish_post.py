@@ -34,13 +34,14 @@ REPO_ROOT = Path(__file__).parent.parent
 POSTS_DIR = REPO_ROOT / "a"
 DRAFTS_DIR = POSTS_DIR / "drafts"
 INDEX_FILE = POSTS_DIR / "index.html"
+CHRONO_FILE = POSTS_DIR / "toc" / "chrono-data.json"
 TOC_FILE = POSTS_DIR / "toc" / "toc-data.json"
 ROOT_INDEX = REPO_ROOT / "index.html"
 
-# Recent Posts topic ID (will be first in sidebar)
-RECENT_POSTS_ID = "0.1"
-RECENT_POSTS_TITLE = "Recent Posts"
-MAX_RECENT_POSTS = 20  # Keep only the most recent N posts in this section
+# Topic assignment:
+# - New posts are automatically added to the "Uncategorized" topic (ID 5.99)
+# - Use manage_topics.py to move posts to subject-specific topics
+# - The right-side timeline (chrono-data.json) is always updated
 
 # HTML template for new posts
 POST_TEMPLATE = '''<!DOCTYPE html>
@@ -184,8 +185,78 @@ def read_post(md_file):
     return post
 
 
-def update_toc(title, filename, post_number, post_date, dry_run=False):
-    """Add the new post to 'Recent Posts' and Chronological Archive in toc-data.json."""
+def update_chrono_data(title, filename, post_number, post_date, dry_run=False):
+    """Add the new post to chrono-data.json (right-side timeline navigation)."""
+    if not CHRONO_FILE.exists():
+        print(f"Warning: Chrono file not found: {CHRONO_FILE}")
+        return False
+    
+    try:
+        chrono_data = json.loads(CHRONO_FILE.read_text(encoding='utf-8'))
+    except json.JSONDecodeError as e:
+        print(f"Warning: Could not parse chrono file: {e}")
+        return False
+    
+    year = post_date.year
+    date_str = post_date.strftime("%Y-%m-%d")
+    
+    # Create new post entry
+    new_post = {
+        "num": post_number,
+        "file": filename,
+        "title": title,
+        "date": date_str,
+        "year": year,
+        "month": post_date.month
+    }
+    
+    # Check if post already exists (avoid duplicates)
+    existing_nums = [p.get('num') for p in chrono_data.get('posts', [])]
+    if post_number not in existing_nums:
+        # Add post and re-sort by number
+        chrono_data['posts'].append(new_post)
+        chrono_data['posts'].sort(key=lambda p: p['num'])
+        chrono_data['totalPosts'] = len(chrono_data['posts'])
+    
+    # Update year statistics
+    year_found = False
+    for year_entry in chrono_data.get('years', []):
+        if year_entry.get('year') == year:
+            year_entry['count'] += 1
+            year_entry['lastPost'] = max(year_entry['lastPost'], post_number)
+            year_found = True
+            break
+    
+    if not year_found:
+        # Create new year entry
+        new_year = {
+            "year": year,
+            "count": 1,
+            "firstPost": post_number,
+            "lastPost": post_number
+        }
+        chrono_data['years'].append(new_year)
+        chrono_data['years'].sort(key=lambda y: y['year'], reverse=True)
+    
+    # Update metadata
+    chrono_data['lastUpdated'] = datetime.now().strftime("%Y-%m-%d")
+    
+    if dry_run:
+        print(f"[DRY RUN] Would add to chrono-data.json: #{post_number:04d}")
+        print(f"[DRY RUN] Chrono would have {chrono_data['totalPosts']} posts")
+    else:
+        CHRONO_FILE.write_text(
+            json.dumps(chrono_data, indent=2, ensure_ascii=False),
+            encoding='utf-8'
+        )
+        print(f"Updated chrono-data.json:")
+        print(f"  - Added post #{post_number:04d} ({year})")
+    
+    return True
+
+
+def update_toc_data(title, filename, dry_run=False):
+    """Add the new post to the Uncategorized topic in toc-data.json."""
     if not TOC_FILE.exists():
         print(f"Warning: TOC file not found: {TOC_FILE}")
         return False
@@ -196,107 +267,41 @@ def update_toc(title, filename, post_number, post_date, dry_run=False):
         print(f"Warning: Could not parse TOC file: {e}")
         return False
     
-    # Find or create the "Recent Posts" topic
-    recent_topic = None
-    recent_index = -1
-    
-    for i, topic in enumerate(toc_data.get('topics', [])):
-        if topic.get('id') == RECENT_POSTS_ID:
-            recent_topic = topic
-            recent_index = i
+    # Find the Uncategorized topic (ID 5.99)
+    uncategorized = None
+    for topic in toc_data.get('topics', []):
+        if topic.get('id') == '5.99':
+            uncategorized = topic
             break
     
-    if recent_topic is None:
-        # Create new "Recent Posts" topic at the beginning
-        recent_topic = {
-            "id": RECENT_POSTS_ID,
-            "title": RECENT_POSTS_TITLE,
-            "posts": []
-        }
-        toc_data['topics'].insert(0, recent_topic)
-        recent_index = 0
+    if uncategorized is None:
+        print("Warning: Uncategorized topic (ID 5.99) not found in toc-data.json")
+        return False
     
-    # Create new post entry for Recent Posts
+    # Create new post entry
     new_post = {
         "title": title,
         "file": filename
     }
     
-    # Add to the beginning of Recent Posts (most recent first)
-    recent_topic['posts'].insert(0, new_post)
-    
-    # Limit the number of posts in Recent Posts section
-    if len(recent_topic['posts']) > MAX_RECENT_POSTS:
-        recent_topic['posts'] = recent_topic['posts'][:MAX_RECENT_POSTS]
-    
-    # Update the topic in the list
-    toc_data['topics'][recent_index] = recent_topic
-    
-    # ========================================
-    # Update Chronological Archive
-    # ========================================
-    year = post_date.year
-    year_id = f"archive-{year}"
-    date_str = post_date.strftime("%Y-%m-%d")
-    
-    # Create archive entry with post number in title (matches existing format)
-    archive_post = {
-        "title": f"#{post_number:04d} - {title}",
-        "file": filename,
-        "date": date_str
-    }
-    
-    # Find or create the year entry in archive
-    archive = toc_data.get('archive', [])
-    year_entry = None
-    year_index = -1
-    
-    for i, entry in enumerate(archive):
-        if entry.get('id') == year_id:
-            year_entry = entry
-            year_index = i
-            break
-    
-    if year_entry is None:
-        # Create new year entry and insert at the beginning (most recent year first)
-        year_entry = {
-            "id": year_id,
-            "title": str(year),
-            "posts": []
-        }
-        archive.insert(0, year_entry)
-        year_index = 0
-        toc_data['archive'] = archive
-        toc_data['totalArchiveYears'] = len(archive)
-    
-    # Add post to the end of the year's posts (chronological order within year)
     # Check if post already exists (avoid duplicates)
-    existing_files = [p.get('file') for p in year_entry['posts']]
+    existing_files = [p.get('file') for p in uncategorized.get('posts', [])]
     if filename not in existing_files:
-        year_entry['posts'].append(archive_post)
-        # Sort posts by date within the year
-        year_entry['posts'].sort(key=lambda p: p.get('date', ''))
-        toc_data['archive'][year_index] = year_entry
-        toc_data['totalArchivePosts'] = sum(len(y.get('posts', [])) for y in archive)
+        uncategorized['posts'].append(new_post)
+        toc_data['totalPostLinks'] = toc_data.get('totalPostLinks', 0) + 1
     
     # Update metadata
     toc_data['lastUpdated'] = datetime.now().strftime("%Y-%m-%d")
-    toc_data['totalPostLinks'] = sum(len(t.get('posts', [])) for t in toc_data['topics'])
     
     if dry_run:
-        print(f"[DRY RUN] Would add to TOC 'Recent Posts': {title}")
-        print(f"[DRY RUN] Would add to Chronological Archive ({year}): #{post_number:04d}")
-        print(f"[DRY RUN] TOC would have {toc_data['totalPostLinks']} topic post links")
-        print(f"[DRY RUN] Archive would have {toc_data.get('totalArchivePosts', 0)} posts")
+        print(f"[DRY RUN] Would add to Uncategorized topic in toc-data.json")
     else:
-        # Write with proper formatting
         TOC_FILE.write_text(
             json.dumps(toc_data, indent=2, ensure_ascii=False),
             encoding='utf-8'
         )
         print(f"Updated toc-data.json:")
-        print(f"  - Added to 'Recent Posts': {title}")
-        print(f"  - Added to Chronological Archive ({year}): #{post_number:04d}")
+        print(f"  - Added to Uncategorized topic")
     
     return True
 
@@ -408,9 +413,13 @@ def publish_post(md_file, date=None, title=None, slug=None,
     if update_idx:
         update_index(post_number, post_date, post_title, filename, categories, dry_run)
     
-    # Update TOC sidebar (Recent Posts + Chronological Archive)
+    # Update chrono-data.json (right column - timeline navigation)
     if update_toc_flag:
-        update_toc(post_title, filename, post_number, post_date, dry_run)
+        update_chrono_data(post_title, filename, post_number, post_date, dry_run)
+    
+    # Update toc-data.json (left sidebar - add to Uncategorized topic)
+    if update_toc_flag:
+        update_toc_data(post_title, filename, dry_run)
     
     # Update homepage stats
     if update_stats:
@@ -424,6 +433,9 @@ def publish_post(md_file, date=None, title=None, slug=None,
         print("  git add -A")
         print(f'  git commit -m "Add post {post_number}: {post_title}"')
         print("  git push")
+        print("\nTo move this post to a specific topic (from Uncategorized):")
+        print(f"  python scripts/manage_topics.py remove-post 5.99 {filename}")
+        print(f"  python scripts/manage_topics.py add-post <topic_id> {filename} \"{post_title}\"")
     
     return True
 
@@ -441,9 +453,12 @@ Examples:
 Updates performed:
   - Creates HTML file in a/ directory
   - Adds entry to a/index.html post table (chronological TOC)
-  - Adds to "Recent Posts" in a/toc/toc-data.json (sidebar)
-  - Adds to Chronological Archive in a/toc/toc-data.json (sidebar)
+  - Adds to a/toc/chrono-data.json (right column timeline navigation)
+  - Adds to Uncategorized topic in a/toc/toc-data.json (left sidebar)
   - Updates post count on homepage (index.html)
+  
+Note: New posts are added to the Uncategorized topic (ID 5.99) by default.
+      Use manage_topics.py to move posts to subject-specific topics.
         """
     )
     
@@ -476,7 +491,7 @@ Updates performed:
     parser.add_argument(
         "--no-toc",
         action="store_true",
-        help="Don't update a/toc/toc-data.json (sidebar)"
+        help="Don't update a/toc/chrono-data.json (timeline navigation)"
     )
     parser.add_argument(
         "--no-stats",

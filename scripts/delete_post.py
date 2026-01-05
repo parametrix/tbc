@@ -28,6 +28,7 @@ REPO_ROOT = Path(__file__).parent.parent
 POSTS_DIR = REPO_ROOT / "a"
 INDEX_FILE = POSTS_DIR / "index.html"
 TOC_FILE = POSTS_DIR / "toc" / "toc-data.json"
+CHRONO_FILE = POSTS_DIR / "toc" / "chrono-data.json"
 
 
 def delete_html_file(filename, dry_run=False):
@@ -119,6 +120,57 @@ def remove_from_toc(filename, dry_run=False):
     return removed
 
 
+def remove_from_chrono(filename, dry_run=False):
+    """Remove the post from chrono-data.json (right column timeline)."""
+    if not CHRONO_FILE.exists():
+        print(f"Warning: Chrono file not found: {CHRONO_FILE}")
+        return False
+    
+    try:
+        chrono_data = json.loads(CHRONO_FILE.read_text(encoding='utf-8'))
+    except json.JSONDecodeError as e:
+        print(f"Warning: Could not parse chrono file: {e}")
+        return False
+    
+    # Find and remove the post
+    original_len = len(chrono_data.get('posts', []))
+    removed_post = None
+    
+    for post in chrono_data.get('posts', []):
+        if post.get('file') == filename:
+            removed_post = post
+            break
+    
+    if removed_post:
+        chrono_data['posts'] = [p for p in chrono_data['posts'] if p.get('file') != filename]
+        chrono_data['totalPosts'] = len(chrono_data['posts'])
+        
+        # Update year statistics
+        year = removed_post.get('year')
+        for year_entry in chrono_data.get('years', []):
+            if year_entry.get('year') == year:
+                year_entry['count'] -= 1
+                if year_entry['count'] <= 0:
+                    # Remove the year entry if no posts left
+                    chrono_data['years'] = [y for y in chrono_data['years'] if y.get('year') != year]
+                break
+        
+        chrono_data['lastUpdated'] = datetime.now().strftime("%Y-%m-%d")
+        
+        if dry_run:
+            print(f"[DRY RUN] Would remove from chrono-data.json: {filename}")
+        else:
+            CHRONO_FILE.write_text(
+                json.dumps(chrono_data, indent=2, ensure_ascii=False),
+                encoding='utf-8'
+            )
+            print(f"Removed from chrono-data.json: {filename}")
+        return True
+    else:
+        print(f"Note: {filename} was not found in chrono-data.json")
+        return False
+
+
 def delete_post(filename, dry_run=False):
     """Delete a post and update all related files."""
     
@@ -137,6 +189,9 @@ def delete_post(filename, dry_run=False):
     # Remove from TOC
     toc_updated = remove_from_toc(filename, dry_run)
     
+    # Remove from chrono-data.json
+    chrono_updated = remove_from_chrono(filename, dry_run)
+    
     # Summary
     print()
     print("=" * 50)
@@ -145,6 +200,7 @@ def delete_post(filename, dry_run=False):
         print(f"  Would delete HTML file: {'Yes' if html_deleted else 'No (not found)'}")
         print(f"  Would update index.html: {'Yes' if index_updated else 'No'}")
         print(f"  Would update toc-data.json: {'Yes' if toc_updated else 'No'}")
+        print(f"  Would update chrono-data.json: {'Yes' if chrono_updated else 'No'}")
     else:
         print("Deletion complete.")
         print("\nNote: Homepage stats were not updated.")
@@ -170,7 +226,8 @@ Examples:
 This script removes:
   - The HTML file from a/
   - The entry from a/index.html
-  - The entry from a/toc/toc-data.json (if present)
+  - The entry from a/toc/toc-data.json (left sidebar)
+  - The entry from a/toc/chrono-data.json (right column timeline)
         """
     )
     

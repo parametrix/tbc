@@ -317,9 +317,8 @@ Examples:
   python manage_topics.py remove-post 5.1 0123_my_post.html
 
 Topic IDs:
-  - Existing topics: 5.1, 5.2, ..., 5.61 (see 'list' command)
-  - Recent Posts: 0.1
-  - Archives: archive-2025, archive-2024, etc.
+  - Subject topics: 5.1, 5.2, ..., 5.56 (see 'list' command)
+  - Uncategorized: 5.99 (new posts land here)
         """
     )
     

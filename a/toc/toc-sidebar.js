@@ -213,16 +213,24 @@
         <div id="tbc-search-results"></div>
       </div>
       
-      <nav id="tbc-nav-links" aria-label="Main navigation">
-        <!-- Populated dynamically -->
-      </nav>
+      <div id="tbc-welcome-link">
+        <a href="0001_welcome.htm" title="Welcome to The Building Coder">
+          <span class="tbc-welcome-icon">👋</span>
+          <span>Welcome</span>
+        </a>
+      </div>
       
       <div id="tbc-topics-container" aria-label="Topics navigation">
         <div class="tbc-loading-spinner"></div>
       </div>
       
-      <div class="tbc-shortcut-hint">
-        Press <kbd>/</kbd> to search
+      <div id="tbc-sidebar-footer">
+        <nav id="tbc-nav-links" aria-label="Main navigation">
+          <!-- Populated dynamically -->
+        </nav>
+        <div class="tbc-shortcut-hint">
+          Press <kbd>/</kbd> to search
+        </div>
       </div>
     `;
   }
@@ -243,59 +251,6 @@
     }
     
     return topics.map(topic => generateTopicHTML(topic)).join('');
-  }
-
-  function generateArchiveHTML(archive) {
-    if (!archive || !archive.length) {
-      return '';
-    }
-    
-    // Filter out invalid years (like typos e.g., 1020 instead of 2020)
-    const validArchive = archive.filter(year => {
-      const yearNum = parseInt(year.title);
-      return yearNum >= 2000 && yearNum <= 2100;
-    });
-    
-    if (!validArchive.length) return '';
-    
-    const archiveTopics = validArchive.map(year => {
-      const isExpanded = state.expandedTopics.has(year.id);
-      const expandedClass = isExpanded ? ' expanded' : '';
-      
-      const postsHTML = year.posts.map(post => {
-        const isCurrent = isCurrentPost(post.file);
-        const currentClass = isCurrent ? ' current' : '';
-        return `<a href="${escapeHtml(post.file)}" class="tbc-post-link${currentClass}" title="${escapeHtml(post.title)}">${escapeHtml(post.title)}</a>`;
-      }).join('');
-      
-      return `
-        <div class="tbc-topic tbc-archive-year${expandedClass}" data-topic-id="${escapeHtml(year.id)}">
-          <div class="tbc-topic-header" tabindex="0" role="button" aria-expanded="${isExpanded}">
-            <span class="tbc-topic-toggle">▶</span>
-            <span class="tbc-topic-title">
-              <span class="tbc-topic-id">📅</span>
-              ${escapeHtml(year.title)}
-            </span>
-            <span class="tbc-topic-count">(${year.posts.length})</span>
-          </div>
-          <div class="tbc-topic-posts">
-            ${postsHTML}
-          </div>
-        </div>
-      `;
-    }).join('');
-    
-    return `
-      <div class="tbc-archive-section">
-        <div class="tbc-section-header">
-          <span class="tbc-section-icon">📚</span>
-          <span class="tbc-section-title">Chronological Archive</span>
-          <span class="tbc-section-count">(${validArchive.reduce((sum, y) => sum + y.posts.length, 0)} posts)</span>
-          <button class="tbc-toggle-all" title="Toggle all years">±</button>
-        </div>
-        ${archiveTopics}
-      </div>
-    `;
   }
 
   function generateTopicHTML(topic, isSubTopic = false) {
@@ -465,11 +420,6 @@
           ${generateTopicsHTML(state.tocData.topics)}
         </div>
       `;
-      
-      // Archive section
-      if (state.tocData.archive && state.tocData.archive.length) {
-        html += generateArchiveHTML(state.tocData.archive);
-      }
       
       topicsContainer.innerHTML = html;
     }
@@ -936,6 +886,413 @@
     document.addEventListener('DOMContentLoaded', initSidebar);
   } else {
     initSidebar();
+  }
+
+})();
+
+
+/**
+ * Chronological Timeline Column
+ * 
+ * Adds an integrated right-side timeline navigation with:
+ * - Previous/Next post links
+ * - Year browser with expandable post lists
+ */
+(function() {
+  'use strict';
+
+  // ================================
+  // Configuration
+  // ================================
+  const CHRONO_CONFIG = {
+    dataUrl: 'toc/chrono-data.json',
+    storageKeys: {
+      expandedYears: 'tbc-chrono-expanded-years'
+    }
+  };
+
+  // ================================
+  // State
+  // ================================
+  const chronoState = {
+    data: null,
+    currentPostNum: null,
+    expandedYears: new Set()
+  };
+
+  // ================================
+  // Utility Functions
+  // ================================
+  function getCurrentPostNumber() {
+    const file = window.location.pathname.split('/').pop();
+    const match = file.match(/^(\d{4})_/);
+    return match ? parseInt(match[1]) : null;
+  }
+
+  function truncateTitle(title, maxLength = 50) {
+    if (title.length <= maxLength) return title;
+    return title.substring(0, maxLength - 3) + '...';
+  }
+
+  // ================================
+  // Data Loading
+  // ================================
+  async function loadChronoData() {
+    // Try cache first
+    const cached = localStorage.getItem('tbc-chrono-data');
+    const cacheTime = localStorage.getItem('tbc-chrono-cache-time');
+    const ONE_HOUR = 60 * 60 * 1000;
+    
+    if (cached && cacheTime && (Date.now() - parseInt(cacheTime)) < ONE_HOUR) {
+      try {
+        return JSON.parse(cached);
+      } catch (e) {
+        console.warn('Failed to parse cached chrono data');
+      }
+    }
+    
+    // Determine base path
+    const currentPath = window.location.pathname;
+    let basePath = '';
+    
+    if (currentPath.includes('/a/') && !currentPath.endsWith('/a/') && !currentPath.endsWith('/a/index.html')) {
+      basePath = '';
+    } else if (currentPath.endsWith('/a/') || currentPath.endsWith('/a/index.html')) {
+      basePath = '';
+    } else {
+      basePath = 'a/';
+    }
+    
+    const url = basePath + CHRONO_CONFIG.dataUrl;
+    
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      
+      const data = await response.json();
+      
+      // Cache the data
+      try {
+        localStorage.setItem('tbc-chrono-data', JSON.stringify(data));
+        localStorage.setItem('tbc-chrono-cache-time', Date.now().toString());
+      } catch (e) {
+        console.warn('Failed to cache chrono data');
+      }
+      
+      return data;
+    } catch (error) {
+      console.error('Failed to load chrono-data.json:', error);
+      return null;
+    }
+  }
+
+  // ================================
+  // Navigation Helpers
+  // ================================
+  function findPostByNum(posts, num) {
+    return posts.find(p => p.num === num);
+  }
+
+  function findPrevNext(posts, currentNum) {
+    const index = posts.findIndex(p => p.num === currentNum);
+    if (index === -1) return { prev: null, next: null };
+    
+    return {
+      prev: index > 0 ? posts[index - 1] : null,
+      next: index < posts.length - 1 ? posts[index + 1] : null
+    };
+  }
+
+  // ================================
+  // Render Timeline Column
+  // ================================
+  function renderChronoColumn() {
+    if (!chronoState.data) return;
+    
+    const currentNum = chronoState.currentPostNum;
+    const { prev, next } = findPrevNext(chronoState.data.posts, currentNum);
+    const currentPost = findPostByNum(chronoState.data.posts, currentNum);
+    
+    // Build HTML
+    let html = `
+      <nav class="tbc-chrono-nav" aria-label="Chronological navigation">
+        <div class="tbc-chrono-prevnext">
+    `;
+    
+    // Previous post
+    if (prev) {
+      html += `
+        <a href="${prev.file}" class="tbc-chrono-prev">
+          <span class="tbc-chrono-label">← Previous</span>
+          <span class="tbc-chrono-title">#${String(prev.num).padStart(4, '0')}: ${truncateTitle(prev.title, 40)}</span>
+        </a>
+      `;
+    } else {
+      html += `
+        <span class="tbc-chrono-prev" style="opacity: 0.3;">
+          <span class="tbc-chrono-label">← Previous</span>
+          <span class="tbc-chrono-title">First post</span>
+        </span>
+      `;
+    }
+    
+    // Next post
+    if (next) {
+      html += `
+        <a href="${next.file}" class="tbc-chrono-next">
+          <span class="tbc-chrono-label">Next →</span>
+          <span class="tbc-chrono-title">#${String(next.num).padStart(4, '0')}: ${truncateTitle(next.title, 40)}</span>
+        </a>
+      `;
+    } else {
+      html += `
+        <span class="tbc-chrono-next" style="opacity: 0.3;">
+          <span class="tbc-chrono-label">Next →</span>
+          <span class="tbc-chrono-title">Latest post</span>
+        </span>
+      `;
+    }
+    
+    html += `</div>`;
+    
+    // Current post indicator
+    if (currentPost) {
+      html += `
+        <div class="tbc-chrono-current">
+          <span class="tbc-chrono-label">Current Post</span>
+          <span class="tbc-chrono-num">#${String(currentPost.num).padStart(4, '0')} · ${currentPost.date}</span>
+        </div>
+      `;
+    }
+    
+    // Year browser
+    html += `
+      <hr class="tbc-chrono-divider">
+      <div class="tbc-chrono-years">
+        <span class="tbc-chrono-section-label">Browse by Year</span>
+        <ul>
+    `;
+    
+    for (const yearInfo of chronoState.data.years) {
+      const isExpanded = chronoState.expandedYears.has(yearInfo.year);
+      html += `
+        <li>
+          <div class="tbc-chrono-year-item">
+            <a class="tbc-chrono-year-link" data-year="${yearInfo.year}">${yearInfo.year}</a>
+            <span class="tbc-chrono-year-count">(${yearInfo.count})</span>
+          </div>
+          <ul class="tbc-chrono-year-posts ${isExpanded ? 'expanded' : ''}" data-year="${yearInfo.year}">
+          </ul>
+        </li>
+      `;
+    }
+    
+    html += `
+        </ul>
+      </div>
+    </nav>
+    `;
+    
+    // Create column element
+    const column = document.createElement('aside');
+    column.className = 'tbc-chrono-column';
+    column.innerHTML = html;
+    
+    return column;
+  }
+
+  // ================================
+  // Year Expansion
+  // ================================
+  function toggleYear(year) {
+    const postsList = document.querySelector(`.tbc-chrono-year-posts[data-year="${year}"]`);
+    if (!postsList) return;
+    
+    const isExpanded = postsList.classList.contains('expanded');
+    
+    if (isExpanded) {
+      postsList.classList.remove('expanded');
+      chronoState.expandedYears.delete(year);
+    } else {
+      // Load posts for this year if not already loaded
+      if (!postsList.hasChildNodes() || postsList.children.length === 0) {
+        loadYearPosts(year, postsList);
+      }
+      postsList.classList.add('expanded');
+      chronoState.expandedYears.add(year);
+    }
+    
+    // Save state
+    saveExpandedYears();
+  }
+
+  function loadYearPosts(year, container) {
+    const posts = chronoState.data.posts.filter(p => p.year === year);
+    const currentNum = chronoState.currentPostNum;
+    
+    let html = '';
+    for (const post of posts.slice().reverse()) { // Show newest first within year
+      const isCurrent = post.num === currentNum;
+      html += `
+        <li>
+          <a href="${post.file}" class="tbc-chrono-post-link ${isCurrent ? 'current' : ''}">
+            ${String(post.num).padStart(4, '0')}: ${truncateTitle(post.title, 35)}
+          </a>
+        </li>
+      `;
+    }
+    
+    container.innerHTML = html;
+  }
+
+  function saveExpandedYears() {
+    try {
+      const years = Array.from(chronoState.expandedYears);
+      localStorage.setItem(CHRONO_CONFIG.storageKeys.expandedYears, JSON.stringify(years));
+    } catch (e) {
+      console.warn('Failed to save expanded years');
+    }
+  }
+
+  function loadExpandedYears() {
+    try {
+      const stored = localStorage.getItem(CHRONO_CONFIG.storageKeys.expandedYears);
+      if (stored) {
+        const years = JSON.parse(stored);
+        chronoState.expandedYears = new Set(years);
+      }
+    } catch (e) {
+      console.warn('Failed to load expanded years');
+    }
+  }
+
+  // ================================
+  // Event Handlers
+  // ================================
+  function initYearClickHandlers(column) {
+    column.addEventListener('click', (e) => {
+      const yearLink = e.target.closest('.tbc-chrono-year-link');
+      if (yearLink) {
+        e.preventDefault();
+        const year = parseInt(yearLink.dataset.year);
+        toggleYear(year);
+      }
+    });
+  }
+
+  // ================================
+  // Keyboard Navigation
+  // ================================
+  function initKeyboardNav() {
+    document.addEventListener('keydown', (e) => {
+      // Skip if user is typing in an input
+      if (document.activeElement.tagName === 'INPUT' || 
+          document.activeElement.tagName === 'TEXTAREA') {
+        return;
+      }
+      
+      const { prev, next } = findPrevNext(chronoState.data.posts, chronoState.currentPostNum);
+      
+      // '[' or left arrow for previous post
+      if ((e.key === '[' || (e.key === 'ArrowLeft' && e.altKey)) && prev) {
+        window.location.href = prev.file;
+      }
+      
+      // ']' or right arrow for next post  
+      if ((e.key === ']' || (e.key === 'ArrowRight' && e.altKey)) && next) {
+        window.location.href = next.file;
+      }
+    });
+  }
+
+  // ================================
+  // DOM Integration
+  // ================================
+  function wrapContentWithColumn(column) {
+    const content = document.getElementById('tbc-content');
+    if (!content) {
+      console.warn('tbc-content not found, skipping chrono column');
+      return false;
+    }
+    
+    // Create wrapper
+    const wrapper = document.createElement('div');
+    wrapper.className = 'tbc-content-wrapper';
+    
+    // Create content container
+    const contentContainer = document.createElement('div');
+    contentContainer.className = 'tbc-blog-content';
+    
+    // Move existing content into container
+    while (content.firstChild) {
+      contentContainer.appendChild(content.firstChild);
+    }
+    
+    // Assemble wrapper
+    wrapper.appendChild(contentContainer);
+    wrapper.appendChild(column);
+    
+    // Add wrapper to content
+    content.appendChild(wrapper);
+    
+    return true;
+  }
+
+  // ================================
+  // Initialize
+  // ================================
+  async function initChronoColumn() {
+    // Get current post number (null for index.html)
+    chronoState.currentPostNum = getCurrentPostNumber();
+    
+    // Load saved state
+    loadExpandedYears();
+    
+    // Load data
+    chronoState.data = await loadChronoData();
+    if (!chronoState.data) {
+      console.warn('Failed to load chronological data');
+      return;
+    }
+    
+    // Render column (works for both index and post pages)
+    const column = renderChronoColumn();
+    if (!column) return;
+    
+    // Integrate into DOM
+    const success = wrapContentWithColumn(column);
+    if (!success) return;
+    
+    // Initialize event handlers
+    initYearClickHandlers(column);
+    
+    // Only init keyboard nav on post pages
+    if (chronoState.currentPostNum) {
+      initKeyboardNav();
+      
+      // Auto-expand current year
+      const currentPost = findPostByNum(chronoState.data.posts, chronoState.currentPostNum);
+      if (currentPost && !chronoState.expandedYears.has(currentPost.year)) {
+        toggleYear(currentPost.year);
+      }
+    } else {
+      // On index page, expand the most recent year
+      const years = chronoState.data.years || [];
+      if (years.length > 0 && !chronoState.expandedYears.has(years[0].year)) {
+        toggleYear(years[0].year);
+      }
+    }
+    
+    console.log('Chrono column initialized');
+  }
+
+  // ================================
+  // Run on DOM Ready
+  // ================================
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initChronoColumn);
+  } else {
+    initChronoColumn();
   }
 
 })();
