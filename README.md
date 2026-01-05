@@ -20,14 +20,16 @@ This fork has been modified for **fully offline local hosting**. All internal Ty
 
 ### Running Locally
 
-1. Start a local HTTP server from the repository root:
+1. Navigate to the local `tbc` repository root/
+
+2. Start a local HTTP server from the repository root:
    ```bash
    python -m http.server 9000 --directory .
    ```
 
-2. Open your browser to: http://localhost:9000/a/index.html
+3. Open your browser to: http://localhost:9000/a/index.html
 
-3. Browse the complete blog archive offline with all internal links working.
+4. Browse the complete blog archive offline with all internal links working.
 
 ### Original Repository
 
