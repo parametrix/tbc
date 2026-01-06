@@ -32,8 +32,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       
-      - name: Remove backup folder to reduce artifact size
-        run: rm -rf a_backup
+      - name: Remove large folders to reduce artifact size
+        run: |
+          # a_backup is a full duplicate (~1.6 GB)
+          rm -rf a_backup
+          # a/zip contains large media files (~1 GB) - videos, audio, archives
+          # These can be served from external hosting if needed
+          rm -rf a/zip
+          echo "Cleaned up large folders for Pages deployment"
       
       - name: Setup Pages
         uses: actions/configure-pages@v5
