@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "lastUpdated": "2026-01-06",
-  "totalPosts": 2080,
+  "totalPosts": 2081,
   "posts": [
     {
       "num": 1,
@@ -16642,14 +16642,22 @@
       "date": "2026-01-06",
       "year": 2026,
       "month": 1
+    },
+    {
+      "num": 2081,
+      "file": "2081_sample_post_title.html",
+      "title": "Sample Post Title",
+      "date": "2026-01-05",
+      "year": 2026,
+      "month": 1
     }
   ],
   "years": [
     {
       "year": 2026,
-      "count": 2,
+      "count": 3,
       "firstPost": 2079,
-      "lastPost": 2080
+      "lastPost": 2081
     },
     {
       "year": 2025,
