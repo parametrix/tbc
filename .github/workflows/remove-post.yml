@@ -59,14 +59,8 @@ jobs:
           echo "Removing: a/$POST_FILE"
           rm -f "a/$POST_FILE"
       
-      - name: Remove from index.html
-        run: |
-          POST_NUM="${{ steps.validate.outputs.post_num }}"
-          echo "Removing post #$POST_NUM from a/index.html"
-          
-          # Remove the table row for this post
-          # Pattern: <tr><td align="right">NNNN</td>...</tr>
-          sed -i "/<tr><td align=\"right\">${POST_NUM}<\/td>/d" a/index.html
+      # Note: The chronological table in a/index.html is dynamically generated
+      # from chrono-data.json via JavaScript, so no static row removal is needed.
       
       - name: Remove from toc-data.json
         run: |
