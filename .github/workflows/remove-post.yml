@@ -96,7 +96,11 @@ jobs:
                   removed_count += original_len - len(subtopic['posts'])
           
           # Update metadata
-          toc_data['totalPostLinks'] = sum(len(t.get('posts', [])) for t in toc_data.get('topics', []))
+          toc_data['totalPostLinks'] = sum(
+              len(topic.get('posts', [])) +
+              sum(len(subtopic.get('posts', [])) for subtopic in topic.get('subTopics', []))
+              for topic in toc_data.get('topics', [])
+          )
           
           from datetime import datetime
           toc_data['lastUpdated'] = datetime.now().strftime("%Y-%m-%d")
@@ -139,9 +143,16 @@ jobs:
               if year:
                   for year_entry in chrono_data.get('years', []):
                       if year_entry.get('year') == year:
-                          year_entry['count'] = max(0, year_entry['count'] - 1)
-                          # Remove year entry if empty
-                          if year_entry['count'] <= 0:
+                          # Recalculate year statistics from remaining posts
+                          posts_for_year = [p for p in chrono_data.get('posts', []) if p.get('year') == year]
+                          year_entry['count'] = len(posts_for_year)
+                          if year_entry['count'] > 0:
+                              nums = [p.get('num') for p in posts_for_year if isinstance(p.get('num'), int)]
+                              if nums:
+                                  year_entry['firstPost'] = min(nums)
+                                  year_entry['lastPost'] = max(nums)
+                          else:
+                              # Remove year entry if no posts remain for this year
                               chrono_data['years'] = [y for y in chrono_data['years'] if y.get('year') != year]
                           break
               

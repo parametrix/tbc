@@ -84,7 +84,8 @@ def update_index(filename, new_title=None, new_date=None, new_categories=None, d
     
     # Pattern to match the table row for this post
     # Format: <tr><td align="right">NNNN</td><td>DATE</td><td><a href="file">Title</a>...</td><td>Categories</td></tr>
-    pattern = rf'(<tr><td[^>]*>{post_num}</td><td>)(\d{{4}}-\d{{2}}-\d{{2}})(</td><td><a href="{re.escape(filename)}">)([^<]+)(</a>.*?</td><td>)([^<]*)(</td></tr>)'
+    # Note: categories field uses .*? to handle potential HTML or special characters
+    pattern = rf'(<tr><td[^>]*>{post_num}</td><td>)(\d{{4}}-\d{{2}}-\d{{2}})(</td><td><a href="{re.escape(filename)}">)([^<]+)(</a>.*?</td><td>)(.*?)(</td></tr>)'
     
     match = re.search(pattern, content, flags=re.DOTALL)
     
@@ -163,11 +164,38 @@ def update_chrono(filename, new_title=None, new_date=None, dry_run=False):
         # Update year statistics if year changed
         new_year = new_date.year
         if old_year != new_year:
-            # Decrement old year count
+            # Decrement old year count and recompute its first/last post
+            old_year_entry = None
             for year_entry in chrono_data.get('years', []):
                 if year_entry.get('year') == old_year:
                     year_entry['count'] = max(0, year_entry['count'] - 1)
+                    old_year_entry = year_entry
                     break
+            
+            # Recalculate firstPost/lastPost for old year or remove if empty
+            if old_year_entry is not None:
+                if old_year_entry.get('count', 0) > 0:
+                    # Recalculate first/last post from remaining posts
+                    first_post = None
+                    last_post = None
+                    for p in chrono_data.get('posts', []):
+                        if p.get('year') == old_year:
+                            post_no = p.get('num')
+                            if post_no is None:
+                                continue
+                            if first_post is None or post_no < first_post:
+                                first_post = post_no
+                            if last_post is None or post_no > last_post:
+                                last_post = post_no
+                    if first_post is not None and last_post is not None:
+                        old_year_entry['firstPost'] = first_post
+                        old_year_entry['lastPost'] = last_post
+                else:
+                    # Remove years that no longer have any posts
+                    chrono_data['years'] = [
+                        y for y in chrono_data.get('years', [])
+                        if y.get('year') != old_year
+                    ]
             
             # Increment new year count (or create entry)
             year_found = False
@@ -226,7 +254,6 @@ def update_toc(filename, new_title=None, dry_run=False):
     for topic in toc_data.get('topics', []):
         for post in topic.get('posts', []):
             if post.get('file') == filename:
-                old_title = post.get('title')
                 post['title'] = new_title
                 updated = True
                 topic_name = topic.get('title')
@@ -236,7 +263,6 @@ def update_toc(filename, new_title=None, dry_run=False):
         for subtopic in topic.get('subTopics', []):
             for post in subtopic.get('posts', []):
                 if post.get('file') == filename:
-                    old_title = post.get('title')
                     post['title'] = new_title
                     updated = True
                     topic_name = subtopic.get('title')
@@ -271,7 +297,11 @@ def update_post(filename, title=None, date=None, categories=None,
     
     # Parse date if provided as string
     if date and isinstance(date, str):
-        date = datetime.strptime(date, "%Y-%m-%d")
+        try:
+            date = datetime.strptime(date, "%Y-%m-%d")
+        except ValueError:
+            print(f"Error: Invalid date format '{date}'. Expected YYYY-MM-DD (e.g., 2026-01-10).")
+            sys.exit(1)
     
     results = {
         'html': False,

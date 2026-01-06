@@ -100,7 +100,9 @@
     } else if (currentPath.endsWith('/a/') || currentPath.endsWith('/a/index.html')) {
       basePath = '';  // we're in a/
     } else if (currentPath === '/index.html' || currentPath === '/' || currentPath.match(/^\/\d{4}_/)) {
-      // Serving directly from a/ directory (local dev or subdomain)
+      // Serving directly from a/ directory (local dev or subdomain).
+      // Post filenames are always 4-digit zero-padded (e.g. /0001_title.html),
+      // so /^\/\d{4}_/ intentionally matches those post URLs at the root.
       basePath = '';
     } else {
       basePath = 'a/';  // we're at root
