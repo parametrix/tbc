@@ -2,7 +2,7 @@
   "version": "1.0",
   "lastUpdated": "2026-01-06",
   "totalTopics": 58,
-  "totalPostLinks": 2256,
+  "totalPostLinks": 2257,
   "navigation": [
     {
       "label": "About Jeremy Tammik",
@@ -9514,6 +9514,10 @@
         {
           "title": "Sample Post Title_DELETE",
           "file": "2079_sample_post_title_delete.html"
+        },
+        {
+          "title": "Sample Post Title 02  DELETE",
+          "file": "2080_sample_post_title_02_delete.html"
         }
       ]
     }

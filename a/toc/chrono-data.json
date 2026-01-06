@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "lastUpdated": "2026-01-06",
-  "totalPosts": 2079,
+  "totalPosts": 2080,
   "posts": [
     {
       "num": 1,
@@ -16634,14 +16634,22 @@
       "date": "2026-01-05",
       "year": 2026,
       "month": 1
+    },
+    {
+      "num": 2080,
+      "file": "2080_sample_post_title_02_delete.html",
+      "title": "Sample Post Title 02  DELETE",
+      "date": "2026-01-06",
+      "year": 2026,
+      "month": 1
     }
   ],
   "years": [
     {
       "year": 2026,
-      "count": 1,
+      "count": 2,
       "firstPost": 2079,
-      "lastPost": 2079
+      "lastPost": 2080
     },
     {
       "year": 2025,
