@@ -434,7 +434,30 @@ The Action automatically:
 - Removes from timeline (`a/toc/chrono-data.json`)
 - Commits and pushes changes
 
-### 6.2 Remove Manually
+### 6.2 Remove via Local Script
+
+For local development, use the `delete_post.py` script:
+
+```bash
+# Preview what will be removed
+python scripts/delete_post.py 2079_my_post.html --dry-run
+
+# Actually remove the post
+python scripts/delete_post.py 2079_my_post.html
+
+# Commit and push
+git add -A
+git commit -m "Remove post #2079"
+git push
+```
+
+The script automatically:
+- Deletes the HTML file
+- Removes entry from `a/index.html`
+- Removes from any topics in `a/toc/toc-data.json`
+- Removes from timeline `a/toc/chrono-data.json`
+
+### 6.3 Remove Manually
 
 If you prefer to remove a post manually:
 
