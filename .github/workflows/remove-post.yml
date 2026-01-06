@@ -36,9 +36,23 @@ jobs:
         run: |
           POST_FILE="${{ github.event.inputs.post_file }}"
           
+          # Strip 'a/' prefix if user included it
+          POST_FILE="${POST_FILE#a/}"
+          
+          # Strip any leading/trailing whitespace
+          POST_FILE=$(echo "$POST_FILE" | xargs)
+          
+          echo "Looking for: a/$POST_FILE"
+          
+          # List similar files for debugging
+          echo "Files in a/ matching pattern:"
+          ls -la a/*.html 2>/dev/null | grep -i "$(echo $POST_FILE | cut -c1-4)" | head -5 || echo "No similar files found"
+          
           # Check if file exists
           if [ ! -f "a/$POST_FILE" ]; then
             echo "❌ Error: Post file 'a/$POST_FILE' not found"
+            echo "Available test posts (with 'sample' or 'delete'):"
+            ls a/*.html 2>/dev/null | grep -iE "sample|delete" | head -10 || echo "None found"
             exit 1
           fi
           
