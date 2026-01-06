@@ -60,8 +60,9 @@ After publishing, add to a subject topic via Actions:
 4. [Publishing via GitHub Actions](#4-publishing-via-github-actions)
 5. [Managing Topics](#5-managing-topics)
 6. [Removing Posts](#6-removing-posts)
-7. [Local Scripts Reference](#7-local-scripts-reference)
-8. [Troubleshooting](#8-troubleshooting)
+7. [Updating Published Posts](#7-updating-published-posts)
+8. [Local Scripts Reference](#8-local-scripts-reference)
+9. [Troubleshooting](#9-troubleshooting)
 
 ---
 
@@ -433,7 +434,30 @@ The Action automatically:
 - Removes from timeline (`a/toc/chrono-data.json`)
 - Commits and pushes changes
 
-### 6.2 Remove Manually
+### 6.2 Remove via Local Script
+
+For local development, use the `delete_post.py` script:
+
+```bash
+# Preview what will be removed
+python scripts/delete_post.py 2079_my_post.html --dry-run
+
+# Actually remove the post
+python scripts/delete_post.py 2079_my_post.html
+
+# Commit and push
+git add -A
+git commit -m "Remove post #2079"
+git push
+```
+
+The script automatically:
+- Deletes the HTML file
+- Removes entry from `a/index.html`
+- Removes from any topics in `a/toc/toc-data.json`
+- Removes from timeline `a/toc/chrono-data.json`
+
+### 6.3 Remove Manually
 
 If you prefer to remove a post manually:
 
@@ -484,11 +508,107 @@ git push
 
 ---
 
-## 7. Local Scripts Reference
+## 7. Updating Published Posts
+
+After publishing, you may need to correct typos, update content, or change metadata. The approach depends on what you're changing.
+
+### 7.1 Content-Only Edits (Most Common)
+
+For typos, content fixes, or adding information, just edit the HTML file directly:
+
+```bash
+# Edit the file
+code a/2079_my_post.html   # or use any editor
+
+# Commit and push
+git add a/2079_my_post.html
+git commit -m "Fix typo in post #2079"
+git push
+```
+
+**No scripts needed!** The TOC files only store metadata (title, filename, date), not content.
+
+### 7.2 Metadata Changes
+
+If you need to change the title, date, or categories, use the `update_post.py` script:
+
+```bash
+# Change title
+python scripts/update_post.py 2079_my_post.html --title "New Better Title"
+
+# Change date
+python scripts/update_post.py 2079_my_post.html --date 2026-01-15
+
+# Change categories (shown in index.html)
+python scripts/update_post.py 2079_my_post.html --categories "Geometry, Walls"
+
+# Multiple changes at once
+python scripts/update_post.py 2079_my_post.html --title "New Title" --date 2026-01-15
+
+# Preview without making changes
+python scripts/update_post.py 2079_my_post.html --title "New Title" --dry-run
+```
+
+#### What Gets Updated
+
+| Change | Files Updated |
+|--------|---------------|
+| **Title** | HTML `<title>`, `a/index.html`, `chrono-data.json`, `toc-data.json` (if in topic) |
+| **Date** | `a/index.html`, `chrono-data.json` |
+| **Categories** | `a/index.html` only |
+
+### 7.3 Topic Changes
+
+To move a post between topics, use `manage_topics.py`:
+
+```bash
+# Remove from current topic
+python scripts/manage_topics.py remove-post 5.99 2079_my_post.html
+
+# Add to new topic
+python scripts/manage_topics.py add-post 5.9 2079_my_post.html "My Post Title"
+```
+
+Or use the **Manage Topics** GitHub Action.
+
+### 7.4 Manual Metadata Update (Without Script)
+
+If you prefer to edit files manually:
+
+#### Update Title
+
+1. **Edit the HTML file** - update the `<title>` tag and any H3 heading
+2. **Edit `a/index.html`** - find the `<tr>` row and update the link text
+3. **Edit `a/toc/chrono-data.json`** - find the entry by post number and update `"title"`
+4. **Edit `a/toc/toc-data.json`** - if the post is in a topic, update `"title"` there too
+
+#### Update Date
+
+1. **Edit `a/index.html`** - update the date in the second `<td>`
+2. **Edit `a/toc/chrono-data.json`** - update `"date"`, `"year"`, and `"month"` fields
+
+#### Update Categories
+
+1. **Edit `a/index.html`** - update the categories in the fourth `<td>`
+
+### 7.5 Summary: When to Use What
+
+| Task | Method |
+|------|--------|
+| Fix typo in content | Edit HTML file directly |
+| Change title | `python scripts/update_post.py --title "..."` |
+| Change date | `python scripts/update_post.py --date YYYY-MM-DD` |
+| Change categories | `python scripts/update_post.py --categories "..."` |
+| Move to different topic | `python scripts/manage_topics.py remove-post` + `add-post` |
+| Add to a topic | `python scripts/manage_topics.py add-post` |
+
+---
+
+## 8. Local Scripts Reference
 
 For advanced users who prefer working locally with Python scripts.
 
-### 7.1 Prerequisites
+### 8.1 Prerequisites
 
 - Python 3.8 or higher
 - Required packages:
@@ -497,7 +617,7 @@ For advanced users who prefer working locally with Python scripts.
 pip install markdown beautifulsoup4 python-frontmatter pyyaml
 ```
 
-### 7.2 Publish a Single Post
+### 8.2 Publish a Single Post
 
 ```bash
 # Basic usage
@@ -510,7 +630,7 @@ python scripts/publish_post.py a/drafts/my-post.md --date 2026-01-05 --title "My
 python scripts/publish_post.py a/drafts/my-post.md --dry-run
 ```
 
-### 7.3 Command Options
+### 8.3 Command Options
 
 | Option | Description |
 |--------|-------------|
@@ -522,7 +642,7 @@ python scripts/publish_post.py a/drafts/my-post.md --dry-run
 | `--no-toc` | Don't update a/toc/ files (sidebar + timeline) |
 | `--no-stats` | Don't update homepage stats |
 
-### 7.4 What the Script Does
+### 8.4 What the Script Does
 
 1. **Reads** the Markdown file and front matter
 2. **Converts** Markdown to HTML with syntax highlighting
@@ -535,7 +655,7 @@ python scripts/publish_post.py a/drafts/my-post.md --dry-run
 
 **Note:** New posts are added to the Uncategorized topic (ID 5.99) in the left sidebar. Use `manage_topics.py` to move posts to subject-specific categories.
 
-### 7.5 Post-Publishing
+### 8.5 Post-Publishing
 
 After running the script:
 
@@ -552,18 +672,20 @@ git commit -m "Add post NNNN: Title"
 git push
 ```
 
-### 7.6 Available Scripts
+### 8.6 Available Scripts
 
 | Script | Purpose |
 |--------|---------|
 | `scripts/publish_post.py` | Publish new posts from Markdown |
+| `scripts/update_post.py` | Update title, date, or categories of published posts |
+| `scripts/delete_post.py` | Remove posts and clean up all references |
 | `scripts/manage_topics.py` | Add/remove posts to topics, create topics |
 
 ---
 
-## 8. Troubleshooting
+## 9. Troubleshooting
 
-### 8.1 Common Issues
+### 9.1 Common Issues
 
 **Issue: Script can't find the markdown file**
 ```
@@ -610,7 +732,7 @@ Solution:
 4. Check that filename ends in .md
 ```
 
-### 8.2 Validating Your Post
+### 9.2 Validating Your Post
 
 Before publishing, you can preview locally:
 

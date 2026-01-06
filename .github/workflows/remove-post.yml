@@ -95,22 +95,74 @@ jobs:
                   subtopic['posts'] = [p for p in subtopic.get('posts', []) if p.get('file') != post_file]
                   removed_count += original_len - len(subtopic['posts'])
           
-          # Remove from archive
-          for year in toc_data.get('archive', []):
-              original_len = len(year.get('posts', []))
-              year['posts'] = [p for p in year.get('posts', []) if p.get('file') != post_file]
-              removed_count += original_len - len(year['posts'])
-          
           # Update metadata
-          toc_data['totalPostLinks'] = sum(len(t.get('posts', [])) for t in toc_data.get('topics', []))
-          toc_data['totalArchivePosts'] = sum(len(y.get('posts', [])) for y in toc_data.get('archive', []))
+          toc_data['totalPostLinks'] = sum(
+              len(topic.get('posts', [])) +
+              sum(len(subtopic.get('posts', [])) for subtopic in topic.get('subTopics', []))
+              for topic in toc_data.get('topics', [])
+          )
           
           from datetime import datetime
           toc_data['lastUpdated'] = datetime.now().strftime("%Y-%m-%d")
           
           toc_file.write_text(json.dumps(toc_data, indent=2, ensure_ascii=False), encoding='utf-8')
           
-          print(f"Removed {removed_count} reference(s) to {post_file}")
+          print(f"Removed {removed_count} reference(s) to {post_file} from toc-data.json")
+          EOF
+      
+      - name: Remove from chrono-data.json
+        run: |
+          POST_FILE="${{ steps.validate.outputs.post_file }}"
+          POST_NUM="${{ steps.validate.outputs.post_num }}"
+          echo "Removing '$POST_FILE' from a/toc/chrono-data.json"
+          
+          python3 << 'EOF'
+          import json
+          from pathlib import Path
+          
+          chrono_file = Path("a/toc/chrono-data.json")
+          post_file = "${{ steps.validate.outputs.post_file }}"
+          post_num = int("${{ steps.validate.outputs.post_num }}")
+          
+          chrono_data = json.loads(chrono_file.read_text(encoding='utf-8'))
+          
+          # Find the post to get its year before removing
+          removed_post = None
+          for post in chrono_data.get('posts', []):
+              if post.get('file') == post_file or post.get('num') == post_num:
+                  removed_post = post
+                  break
+          
+          if removed_post:
+              # Remove the post
+              chrono_data['posts'] = [p for p in chrono_data['posts'] if p.get('file') != post_file and p.get('num') != post_num]
+              chrono_data['totalPosts'] = len(chrono_data['posts'])
+              
+              # Update year statistics
+              year = removed_post.get('year')
+              if year:
+                  for year_entry in chrono_data.get('years', []):
+                      if year_entry.get('year') == year:
+                          # Recalculate year statistics from remaining posts
+                          posts_for_year = [p for p in chrono_data.get('posts', []) if p.get('year') == year]
+                          year_entry['count'] = len(posts_for_year)
+                          if year_entry['count'] > 0:
+                              nums = [p.get('num') for p in posts_for_year if isinstance(p.get('num'), int)]
+                              if nums:
+                                  year_entry['firstPost'] = min(nums)
+                                  year_entry['lastPost'] = max(nums)
+                          else:
+                              # Remove year entry if no posts remain for this year
+                              chrono_data['years'] = [y for y in chrono_data['years'] if y.get('year') != year]
+                          break
+              
+              from datetime import datetime
+              chrono_data['lastUpdated'] = datetime.now().strftime("%Y-%m-%d")
+              
+              chrono_file.write_text(json.dumps(chrono_data, indent=2, ensure_ascii=False), encoding='utf-8')
+              print(f"Removed post #{post_num} from chrono-data.json (total now: {chrono_data['totalPosts']})")
+          else:
+              print(f"Post {post_file} not found in chrono-data.json")
           EOF
       
       - name: Commit and push changes

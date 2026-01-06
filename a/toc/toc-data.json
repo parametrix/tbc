@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-01-05",
+  "lastUpdated": "2026-01-06",
   "totalTopics": 58,
-  "totalPostLinks": 2256,
+  "totalPostLinks": 2255,
   "navigation": [
     {
       "label": "About Jeremy Tammik",
@@ -9510,10 +9510,6 @@
         {
           "title": "Jeremy's Retirement, Continuation of the Blog, Revit SDK 2026.2",
           "file": "2078_jeremy_tammik_retirement.html"
-        },
-        {
-          "title": "Sample Post Title",
-          "file": "2079_sample_post_title.html"
         }
       ]
     }
