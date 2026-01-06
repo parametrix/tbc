@@ -368,6 +368,13 @@ def publish_post(md_file, date=None, title=None, slug=None,
         output_path.write_text(full_html, encoding='utf-8')
         print(f"Created: {output_path}")
     
+    # Update the markdown file with post_number and html_file for future updates
+    if not dry_run:
+        post['post_number'] = post_number
+        post['html_file'] = filename
+        md_path.write_text(frontmatter.dumps(post), encoding='utf-8')
+        print(f"Updated markdown with post_number: {post_number}")
+    
     # Update chrono-data.json (right column - timeline navigation)
     # Note: This also populates the chronological table in a/index.html (dynamically generated)
     if update_toc_flag:

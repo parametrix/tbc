@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'a/drafts/*.md'
+      - 'a/drafts/published/*.md'
   workflow_dispatch:
     inputs:
       draft_file:
@@ -39,28 +40,35 @@ jobs:
           # If manual trigger with specific file
           if [ -n "${{ github.event.inputs.draft_file }}" ]; then
             echo "drafts=${{ github.event.inputs.draft_file }}" >> $GITHUB_OUTPUT
+            echo "updates=" >> $GITHUB_OUTPUT
             exit 0
           fi
           
           # Find new/modified .md files in drafts folder (exclude README and templates)
           DRAFTS=$(git diff --name-only HEAD~1 HEAD -- 'a/drafts/*.md' 2>/dev/null | grep -v 'README.md' | grep -v '_TEMPLATE.md' || echo "")
           
+          # Find updated .md files in published folder
+          UPDATES=$(git diff --name-only HEAD~1 HEAD -- 'a/drafts/published/*.md' 2>/dev/null | grep -v '.gitkeep' || echo "")
+          
           # If no diff (first push), check for any drafts (exclude README and templates)
           if [ -z "$DRAFTS" ]; then
             DRAFTS=$(ls a/drafts/*.md 2>/dev/null | grep -v 'README.md' | grep -v '_TEMPLATE.md' || echo "")
           fi
           
-          # If still no drafts found, exit gracefully
-          if [ -z "$DRAFTS" ]; then
-            echo "No draft files found to publish"
+          # Log what we found
+          if [ -z "$DRAFTS" ] && [ -z "$UPDATES" ]; then
+            echo "No draft files found to publish and no updates to process"
             echo "drafts=" >> $GITHUB_OUTPUT
+            echo "updates=" >> $GITHUB_OUTPUT
             exit 0
           fi
           
-          echo "Found drafts: $DRAFTS"
+          echo "Found new drafts: $DRAFTS"
+          echo "Found updates: $UPDATES"
           echo "drafts=$DRAFTS" >> $GITHUB_OUTPUT
+          echo "updates=$UPDATES" >> $GITHUB_OUTPUT
       
-      - name: Publish drafts
+      - name: Publish new drafts
         if: steps.find_drafts.outputs.drafts != ''
         run: |
           for draft in ${{ steps.find_drafts.outputs.drafts }}; do
@@ -87,8 +95,28 @@ jobs:
             fi
           done
       
+      - name: Update existing posts
+        if: steps.find_drafts.outputs.updates != ''
+        run: |
+          for update in ${{ steps.find_drafts.outputs.updates }}; do
+            echo "Updating from: $update"
+            
+            # Skip if file doesn't exist
+            if [ ! -f "$update" ]; then
+              echo "Warning: File not found: $update - skipping"
+              continue
+            fi
+            
+            # Skip gitkeep
+            if [[ "$update" == *".gitkeep" ]]; then
+              continue
+            fi
+            
+            python scripts/update_from_markdown.py "$update"
+          done
+      
       - name: Commit and push changes
-        if: steps.find_drafts.outputs.drafts != ''
+        if: steps.find_drafts.outputs.drafts != '' || steps.find_drafts.outputs.updates != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -101,14 +129,20 @@ jobs:
             exit 0
           fi
           
-          # Get the title from the first published post
-          COMMIT_MSG="Publish new blog post(s)"
+          # Determine commit message based on what was processed
+          if [ -n "${{ steps.find_drafts.outputs.drafts }}" ] && [ -n "${{ steps.find_drafts.outputs.updates }}" ]; then
+            COMMIT_MSG="Publish new posts and update existing posts"
+          elif [ -n "${{ steps.find_drafts.outputs.drafts }}" ]; then
+            COMMIT_MSG="Publish new blog post(s)"
+          else
+            COMMIT_MSG="Update existing blog post(s)"
+          fi
           
           git commit -m "$COMMIT_MSG"
           git push
       
       - name: Trigger Pages deployment
-        if: steps.find_drafts.outputs.drafts != ''
+        if: steps.find_drafts.outputs.drafts != '' || steps.find_drafts.outputs.updates != ''
         uses: actions/github-script@v7
         with:
           script: |
