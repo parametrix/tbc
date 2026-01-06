@@ -42,12 +42,19 @@ jobs:
             exit 0
           fi
           
-          # Find new/modified .md files in drafts folder
-          DRAFTS=$(git diff --name-only HEAD~1 HEAD -- 'a/drafts/*.md' 2>/dev/null || echo "")
+          # Find new/modified .md files in drafts folder (exclude README and templates)
+          DRAFTS=$(git diff --name-only HEAD~1 HEAD -- 'a/drafts/*.md' 2>/dev/null | grep -v 'README.md' | grep -v '_TEMPLATE.md' || echo "")
           
-          # If no diff (first push), check for any drafts
+          # If no diff (first push), check for any drafts (exclude README and templates)
           if [ -z "$DRAFTS" ]; then
-            DRAFTS=$(ls a/drafts/*.md 2>/dev/null || echo "")
+            DRAFTS=$(ls a/drafts/*.md 2>/dev/null | grep -v 'README.md' | grep -v '_TEMPLATE.md' || echo "")
+          fi
+          
+          # If still no drafts found, exit gracefully
+          if [ -z "$DRAFTS" ]; then
+            echo "No draft files found to publish"
+            echo "drafts=" >> $GITHUB_OUTPUT
+            exit 0
           fi
           
           echo "Found drafts: $DRAFTS"
@@ -58,6 +65,19 @@ jobs:
         run: |
           for draft in ${{ steps.find_drafts.outputs.drafts }}; do
             echo "Publishing: $draft"
+            
+            # Skip if file doesn't exist
+            if [ ! -f "$draft" ]; then
+              echo "Warning: File not found: $draft - skipping"
+              continue
+            fi
+            
+            # Skip README and template files (extra safety)
+            if [[ "$draft" == *"README.md" ]] || [[ "$draft" == *"_TEMPLATE.md" ]]; then
+              echo "Skipping: $draft (not a post file)"
+              continue
+            fi
+            
             python scripts/publish_post.py "$draft"
             
             # Move processed draft to archive
