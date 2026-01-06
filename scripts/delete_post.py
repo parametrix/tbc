@@ -4,9 +4,11 @@ delete_post.py - Delete a published blog post
 
 This script removes a post and updates all related files:
 - Deletes the HTML file
-- Removes entry from a/index.html
-- Removes entry from a/toc/toc-data.json
-- Does NOT update homepage stats (manual review recommended)
+- Removes entry from a/toc/chrono-data.json (timeline navigation)
+- Removes entry from a/toc/toc-data.json (topic sidebar)
+
+Note: The chronological table in a/index.html is dynamically generated from
+chrono-data.json via JavaScript, so updating the JSON updates the table.
 
 Usage:
     python delete_post.py 2079_sample_post.html
@@ -26,7 +28,6 @@ from pathlib import Path
 # Configuration
 REPO_ROOT = Path(__file__).parent.parent
 POSTS_DIR = REPO_ROOT / "a"
-INDEX_FILE = POSTS_DIR / "index.html"
 TOC_FILE = POSTS_DIR / "toc" / "toc-data.json"
 CHRONO_FILE = POSTS_DIR / "toc" / "chrono-data.json"
 
@@ -46,32 +47,6 @@ def delete_html_file(filename, dry_run=False):
         print(f"Deleted: {file_path}")
     
     return True
-
-
-def remove_from_index(filename, dry_run=False):
-    """Remove the post entry from index.html."""
-    if not INDEX_FILE.exists():
-        print(f"Warning: Index file not found: {INDEX_FILE}")
-        return False
-    
-    content = INDEX_FILE.read_text(encoding='utf-8')
-    
-    # Pattern to match the table row containing this file
-    # The row format is: <tr><td>NUM</td><td>DATE</td><td><a href="file">Title</a>...<a href="file">web</a>...</td><td>Categories</td></tr>
-    pattern = rf'<tr><td[^>]*>\d+</td><td>[^<]+</td><td>.*?<a href="{re.escape(filename)}".*?</td><td>[^<]*</td></tr>\n?'
-    
-    new_content, count = re.subn(pattern, '', content, flags=re.DOTALL)
-    
-    if count > 0:
-        if dry_run:
-            print(f"[DRY RUN] Would remove from index.html: {filename}")
-        else:
-            INDEX_FILE.write_text(new_content, encoding='utf-8')
-            print(f"Removed from index.html: {filename}")
-        return True
-    else:
-        print(f"Warning: Could not find {filename} in index.html")
-        return False
 
 
 def remove_from_toc(filename, dry_run=False):
@@ -183,9 +158,6 @@ def delete_post(filename, dry_run=False):
     # Delete HTML file
     html_deleted = delete_html_file(filename, dry_run)
     
-    # Remove from index
-    index_updated = remove_from_index(filename, dry_run)
-    
     # Remove from TOC
     toc_updated = remove_from_toc(filename, dry_run)
     
@@ -198,19 +170,16 @@ def delete_post(filename, dry_run=False):
     if dry_run:
         print("[DRY RUN] Summary:")
         print(f"  Would delete HTML file: {'Yes' if html_deleted else 'No (not found)'}")
-        print(f"  Would update index.html: {'Yes' if index_updated else 'No'}")
         print(f"  Would update toc-data.json: {'Yes' if toc_updated else 'No'}")
         print(f"  Would update chrono-data.json: {'Yes' if chrono_updated else 'No'}")
     else:
         print("Deletion complete.")
-        print("\nNote: Homepage stats were not updated.")
-        print("If needed, manually edit index.html to update the post count.")
         print("\nNext steps:")
         print("  git add -A")
         print(f'  git commit -m "Delete post: {filename}"')
         print("  git push")
     
-    return html_deleted or index_updated
+    return html_deleted or chrono_updated
 
 
 def main():
@@ -225,9 +194,10 @@ Examples:
 
 This script removes:
   - The HTML file from a/
-  - The entry from a/index.html
   - The entry from a/toc/toc-data.json (left sidebar)
   - The entry from a/toc/chrono-data.json (right column timeline)
+  
+Note: The chronological table is dynamically generated from chrono-data.json.
         """
     )
     

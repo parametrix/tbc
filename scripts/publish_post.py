@@ -3,7 +3,10 @@
 publish_post.py - Publish a new blog post from Markdown to HTML
 
 This script converts a Markdown file to HTML with the proper template,
-updates the index page, TOC sidebar, and homepage stats.
+updates the TOC sidebar, timeline navigation, and homepage stats.
+
+Note: The chronological table in a/index.html is dynamically generated from
+chrono-data.json via JavaScript, so updating the JSON updates the table.
 
 Usage:
     python publish_post.py a/drafts/my-post.md
@@ -33,7 +36,6 @@ except ImportError:
 REPO_ROOT = Path(__file__).parent.parent
 POSTS_DIR = REPO_ROOT / "a"
 DRAFTS_DIR = POSTS_DIR / "drafts"
-INDEX_FILE = POSTS_DIR / "index.html"
 CHRONO_FILE = POSTS_DIR / "toc" / "chrono-data.json"
 TOC_FILE = POSTS_DIR / "toc" / "toc-data.json"
 ROOT_INDEX = REPO_ROOT / "index.html"
@@ -133,49 +135,6 @@ def convert_markdown_to_html(md_content):
     )
     
     return html
-
-
-def update_index(post_number, date, title, filename, categories, dry_run=False):
-    """Add a new entry to the index.html file."""
-    if not INDEX_FILE.exists():
-        print(f"Warning: Index file not found: {INDEX_FILE}")
-        return False
-    
-    content = INDEX_FILE.read_text(encoding='utf-8')
-    
-    # Format the new table row
-    date_str = date.strftime("%Y-%m-%d")
-    categories_str = ", ".join(categories) if categories else ""
-    
-    new_row = (
-        f'<tr><td align="right">{post_number}</td>'
-        f'<td>{date_str}</td>'
-        f'<td><a href="{filename}">{title}</a>'
-        f'&nbsp;&nbsp;&nbsp;<a href="{filename}">web</a>'
-        f'&nbsp;&nbsp;&nbsp;&nbsp;</td>'
-        f'<td>{categories_str}</td></tr>\n'
-    )
-    
-    # Find the last table row and insert after it
-    # Look for the pattern of the last post entry
-    last_row_pattern = r'(<tr><td align="right">\d+</td><td>\d{4}-\d{2}-\d{2}</td>.*?</tr>)\s*</table>'
-    match = re.search(last_row_pattern, content, re.DOTALL)
-    
-    if match:
-        # Insert the new row after the last existing row
-        insert_pos = match.end(1)
-        new_content = content[:insert_pos] + '\n' + new_row + content[insert_pos:]
-        
-        if dry_run:
-            print(f"[DRY RUN] Would add to index: {new_row.strip()}")
-        else:
-            INDEX_FILE.write_text(new_content, encoding='utf-8')
-            print(f"Updated index.html with post #{post_number}")
-        return True
-    else:
-        print("Warning: Could not find insertion point in index.html")
-        print("You may need to manually add the post to the index.")
-        return False
 
 
 def read_post(md_file):
@@ -346,7 +305,7 @@ def update_homepage_stats(post_count, dry_run=False):
 
 
 def publish_post(md_file, date=None, title=None, slug=None, 
-                 dry_run=False, update_idx=True, update_toc_flag=True, 
+                 dry_run=False, update_toc_flag=True, 
                  update_stats=True):
     """Publish a Markdown file as an HTML blog post."""
     
@@ -409,11 +368,8 @@ def publish_post(md_file, date=None, title=None, slug=None,
         output_path.write_text(full_html, encoding='utf-8')
         print(f"Created: {output_path}")
     
-    # Update index.html
-    if update_idx:
-        update_index(post_number, post_date, post_title, filename, categories, dry_run)
-    
     # Update chrono-data.json (right column - timeline navigation)
+    # Note: This also populates the chronological table in a/index.html (dynamically generated)
     if update_toc_flag:
         update_chrono_data(post_title, filename, post_number, post_date, dry_run)
     
@@ -452,12 +408,12 @@ Examples:
 
 Updates performed:
   - Creates HTML file in a/ directory
-  - Adds entry to a/index.html post table (chronological TOC)
   - Adds to a/toc/chrono-data.json (right column timeline navigation)
   - Adds to Uncategorized topic in a/toc/toc-data.json (left sidebar)
   - Updates post count on homepage (index.html)
   
-Note: New posts are added to the Uncategorized topic (ID 5.99) by default.
+Note: The chronological table is dynamically generated from chrono-data.json.
+      New posts are added to the Uncategorized topic (ID 5.99) by default.
       Use manage_topics.py to move posts to subject-specific topics.
         """
     )
@@ -484,11 +440,6 @@ Note: New posts are added to the Uncategorized topic (ID 5.99) by default.
         help="Preview changes without writing files"
     )
     parser.add_argument(
-        "--no-index",
-        action="store_true",
-        help="Don't update a/index.html"
-    )
-    parser.add_argument(
         "--no-toc",
         action="store_true",
         help="Don't update a/toc/chrono-data.json (timeline navigation)"
@@ -507,7 +458,6 @@ Note: New posts are added to the Uncategorized topic (ID 5.99) by default.
         title=args.title,
         slug=args.slug,
         dry_run=args.dry_run,
-        update_idx=not args.no_index,
         update_toc_flag=not args.no_toc,
         update_stats=not args.no_stats
     )

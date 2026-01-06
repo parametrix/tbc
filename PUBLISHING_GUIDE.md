@@ -553,9 +553,11 @@ python scripts/update_post.py 2079_my_post.html --title "New Title" --dry-run
 
 | Change | Files Updated |
 |--------|---------------|
-| **Title** | HTML `<title>`, `a/index.html`, `chrono-data.json`, `toc-data.json` (if in topic) |
-| **Date** | `a/index.html`, `chrono-data.json` |
-| **Categories** | `a/index.html` only |
+| **Title** | HTML `<title>`, `chrono-data.json`, `toc-data.json` (if in topic) |
+| **Date** | `chrono-data.json` |
+| **Categories** | `chrono-data.json` |
+
+**Note:** The chronological table in `a/index.html` is dynamically generated from `chrono-data.json` via JavaScript.
 
 ### 7.3 Topic Changes
 
@@ -575,21 +577,21 @@ Or use the **Manage Topics** GitHub Action.
 
 If you prefer to edit files manually:
 
+**Note:** The chronological table in `a/index.html` is dynamically generated from `chrono-data.json` via JavaScript, so you only need to update the JSON files.
+
 #### Update Title
 
 1. **Edit the HTML file** - update the `<title>` tag and any H3 heading
-2. **Edit `a/index.html`** - find the `<tr>` row and update the link text
-3. **Edit `a/toc/chrono-data.json`** - find the entry by post number and update `"title"`
-4. **Edit `a/toc/toc-data.json`** - if the post is in a topic, update `"title"` there too
+2. **Edit `a/toc/chrono-data.json`** - find the entry by post number and update `"title"`
+3. **Edit `a/toc/toc-data.json`** - if the post is in a topic, update `"title"` there too
 
 #### Update Date
 
-1. **Edit `a/index.html`** - update the date in the second `<td>`
-2. **Edit `a/toc/chrono-data.json`** - update `"date"`, `"year"`, and `"month"` fields
+1. **Edit `a/toc/chrono-data.json`** - update `"date"`, `"year"`, and `"month"` fields
 
 #### Update Categories
 
-1. **Edit `a/index.html`** - update the categories in the fourth `<td>`
+1. **Edit `a/toc/chrono-data.json`** - update the `"categories"` field (if present)
 
 ### 7.5 Summary: When to Use What
 
@@ -638,7 +640,6 @@ python scripts/publish_post.py a/drafts/my-post.md --dry-run
 | `--title "Title"` | Override post title |
 | `--slug name` | Custom filename slug |
 | `--dry-run` | Preview without writing |
-| `--no-index` | Don't update a/index.html |
 | `--no-toc` | Don't update a/toc/ files (sidebar + timeline) |
 | `--no-stats` | Don't update homepage stats |
 
@@ -648,12 +649,11 @@ python scripts/publish_post.py a/drafts/my-post.md --dry-run
 2. **Converts** Markdown to HTML with syntax highlighting
 3. **Wraps** with the site template (nav, sidebar, CSS)
 4. **Generates** filename: `NNNN_slug.html` (next number)
-5. **Updates** `a/index.html` with new table row
-6. **Updates** `a/toc/chrono-data.json` (right column timeline)
-7. **Updates** `a/toc/toc-data.json` (adds to Uncategorized topic)
-8. **Updates** `index.html` (homepage) - post count stats
+5. **Updates** `a/toc/chrono-data.json` (right column timeline)
+6. **Updates** `a/toc/toc-data.json` (adds to Uncategorized topic)
+7. **Updates** `index.html` (homepage) - post count stats
 
-**Note:** New posts are added to the Uncategorized topic (ID 5.99) in the left sidebar. Use `manage_topics.py` to move posts to subject-specific categories.
+**Note:** The chronological table in `a/index.html` is dynamically generated from `chrono-data.json` via JavaScript. New posts are added to the Uncategorized topic (ID 5.99) in the left sidebar. Use `manage_topics.py` to move posts to subject-specific categories.
 
 ### 8.5 Post-Publishing
 

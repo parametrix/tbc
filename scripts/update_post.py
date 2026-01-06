@@ -4,10 +4,12 @@ update_post.py - Update metadata for a published blog post
 
 This script updates the title, date, or categories of an existing post
 across all relevant files:
-- a/index.html (chronological table)
-- a/toc/chrono-data.json (timeline navigation)
-- a/toc/toc-data.json (topic sidebar - if post is in a topic)
+- a/toc/chrono-data.json (timeline navigation - title, date, categories)
+- a/toc/toc-data.json (topic sidebar - title only, if post is in a topic)
 - The HTML file itself (optional, updates <title> tag)
+
+Note: The chronological table in a/index.html is dynamically generated from
+chrono-data.json via JavaScript, so updating the JSON updates the table.
 
 Usage:
     python update_post.py 2079_my_post.html --title "New Title"
@@ -29,7 +31,6 @@ from pathlib import Path
 # Configuration
 REPO_ROOT = Path(__file__).parent.parent
 POSTS_DIR = REPO_ROOT / "a"
-INDEX_FILE = POSTS_DIR / "index.html"
 TOC_FILE = POSTS_DIR / "toc" / "toc-data.json"
 CHRONO_FILE = POSTS_DIR / "toc" / "chrono-data.json"
 
@@ -69,59 +70,7 @@ def update_html_title(filename, new_title, dry_run=False):
         return False
 
 
-def update_index(filename, new_title=None, new_date=None, new_categories=None, dry_run=False):
-    """Update the post entry in index.html."""
-    if not INDEX_FILE.exists():
-        print(f"Warning: Index file not found: {INDEX_FILE}")
-        return False
-    
-    content = INDEX_FILE.read_text(encoding='utf-8')
-    post_num = get_post_number(filename)
-    
-    if not post_num:
-        print(f"Warning: Could not extract post number from {filename}")
-        return False
-    
-    # Pattern to match the table row for this post
-    # Format: <tr><td align="right">NNNN</td><td>DATE</td><td><a href="file">Title</a>...</td><td>Categories</td></tr>
-    # Note: categories field uses .*? to handle potential HTML or special characters
-    pattern = rf'(<tr><td[^>]*>{post_num}</td><td>)(\d{{4}}-\d{{2}}-\d{{2}})(</td><td><a href="{re.escape(filename)}">)([^<]+)(</a>.*?</td><td>)(.*?)(</td></tr>)'
-    
-    match = re.search(pattern, content, flags=re.DOTALL)
-    
-    if not match:
-        print(f"Warning: Could not find post {post_num} in index.html")
-        return False
-    
-    # Get current values
-    current_date = match.group(2)
-    current_title = match.group(4)
-    current_categories = match.group(6)
-    
-    # Apply updates
-    updated_date = new_date.strftime("%Y-%m-%d") if new_date else current_date
-    updated_title = new_title if new_title else current_title
-    updated_categories = new_categories if new_categories else current_categories
-    
-    # Build replacement string
-    replacement = f"{match.group(1)}{updated_date}{match.group(3)}{updated_title}{match.group(5)}{updated_categories}{match.group(7)}"
-    
-    new_content = content[:match.start()] + replacement + content[match.end():]
-    
-    if dry_run:
-        changes = []
-        if new_title: changes.append(f"title: '{current_title}' → '{updated_title}'")
-        if new_date: changes.append(f"date: '{current_date}' → '{updated_date}'")
-        if new_categories: changes.append(f"categories: '{current_categories}' → '{updated_categories}'")
-        print(f"[DRY RUN] Would update in index.html: {', '.join(changes)}")
-    else:
-        INDEX_FILE.write_text(new_content, encoding='utf-8')
-        print(f"Updated index.html for post #{post_num}")
-    
-    return True
-
-
-def update_chrono(filename, new_title=None, new_date=None, dry_run=False):
+def update_chrono(filename, new_title=None, new_date=None, new_categories=None, dry_run=False):
     """Update the post in chrono-data.json."""
     if not CHRONO_FILE.exists():
         print(f"Warning: Chrono file not found: {CHRONO_FILE}")
@@ -152,6 +101,11 @@ def update_chrono(filename, new_title=None, new_date=None, dry_run=False):
     if new_title:
         changes.append(f"title: '{post.get('title')}' → '{new_title}'")
         post['title'] = new_title
+    
+    if new_categories:
+        old_categories = post.get('categories', '')
+        changes.append(f"categories: '{old_categories}' → '{new_categories}'")
+        post['categories'] = new_categories
     
     if new_date:
         old_date = post.get('date')
@@ -305,7 +259,6 @@ def update_post(filename, title=None, date=None, categories=None,
     
     results = {
         'html': False,
-        'index': False,
         'chrono': False,
         'toc': False
     }
@@ -314,11 +267,8 @@ def update_post(filename, title=None, date=None, categories=None,
     if title and update_html:
         results['html'] = update_html_title(filename, title, dry_run)
     
-    # Update index.html
-    results['index'] = update_index(filename, title, date, categories, dry_run)
-    
-    # Update chrono-data.json
-    results['chrono'] = update_chrono(filename, title, date, dry_run)
+    # Update chrono-data.json (title, date, categories)
+    results['chrono'] = update_chrono(filename, title, date, categories, dry_run)
     
     # Update toc-data.json (only for title changes)
     if title:
@@ -333,7 +283,6 @@ def update_post(filename, title=None, date=None, categories=None,
         print("Update complete.")
     
     print(f"  Updated HTML file: {'Yes' if results['html'] else 'No'}")
-    print(f"  Updated index.html: {'Yes' if results['index'] else 'No'}")
     print(f"  Updated chrono-data.json: {'Yes' if results['chrono'] else 'No'}")
     print(f"  Updated toc-data.json: {'Yes' if results['toc'] else 'No/Not in topic'}")
     
@@ -358,12 +307,12 @@ Examples:
   python update_post.py 2079_my_post.html --title "New" --date 2026-01-10 --dry-run
 
 This script updates:
-  - a/index.html (title, date, categories)
-  - a/toc/chrono-data.json (title, date)
+  - a/toc/chrono-data.json (title, date, categories)
   - a/toc/toc-data.json (title only, if post is in a topic)
   - The HTML file's <title> tag (title only)
   
-Note: For content changes, just edit the HTML file directly.
+Note: The chronological table is dynamically generated from chrono-data.json.
+      For content changes, just edit the HTML file directly.
       For topic changes, use manage_topics.py instead.
         """
     )
