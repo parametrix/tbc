@@ -34,4 +34,23 @@ Copy `_TEMPLATE.md` as a starting point for new posts.
 
 ## After Publishing
 
-Published drafts are moved to `published/` subfolder.
+Published drafts are moved to `published/` subfolder with `post_number` and `html_file` added to front matter.
+
+## Updating Published Posts
+
+To update a published post, edit the markdown file in `published/` and push:
+
+```bash
+# Edit the markdown
+code a/drafts/published/2026-01-05-your-post.md
+
+# Push - GitHub Actions regenerates HTML automatically
+git add a/drafts/published/2026-01-05-your-post.md
+git commit -m "Update: fixed typo"
+git push
+```
+
+The workflow will:
+1. Regenerate the HTML from the updated markdown
+2. Update title/date in JSON files if changed
+3. Deploy the updated site

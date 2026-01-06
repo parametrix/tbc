@@ -50,6 +50,16 @@ After publishing, add to a subject topic via Actions:
    - Confirm: `DELETE`
 4. The Action removes the post from all locations automatically.
 
+### Update a Published Post
+
+1. **Edit the markdown** in `a/drafts/published/your-post.md`
+2. **Push to GitHub** - The Action regenerates HTML automatically!
+   ```bash
+   git add a/drafts/published/your-post.md
+   git commit -m "Update: added new section"
+   git push
+   ```
+
 ---
 
 ## 📋 Table of Contents
@@ -87,7 +97,9 @@ a/drafts/2026-01-05-my-post-title.md
 thebuildingcoder-archive/
 ├── a/
 │   ├── drafts/              ← Put new posts here
-│   │   └── 2026-01-05-my-post.md
+│   │   ├── 2026-01-05-my-post.md
+│   │   └── published/       ← Published markdown (edit to update)
+│   │       └── 2026-01-05-my-post.md
 │   ├── img/                 ← Put images here
 │   ├── 0001_welcome.htm     ← Published posts
 │   └── ...
@@ -510,9 +522,40 @@ git push
 
 ## 7. Updating Published Posts
 
-After publishing, you may need to correct typos, update content, or change metadata. The approach depends on what you're changing.
+After publishing, you may need to correct typos, update content, or change metadata. There are several approaches depending on your needs.
 
-### 7.1 Content-Only Edits (Most Common)
+### 7.1 Update via Markdown (Recommended for Major Changes)
+
+When you publish a post, the original markdown is moved to `a/drafts/published/` with `post_number` and `html_file` metadata added. You can edit this markdown and push to regenerate the HTML:
+
+```bash
+# Edit the markdown source
+code a/drafts/published/2026-01-05-my-post.md
+
+# Commit and push - GitHub Actions regenerates HTML automatically
+git add a/drafts/published/2026-01-05-my-post.md
+git commit -m "Update post: add new section"
+git push
+```
+
+**Benefits:**
+- Edit in familiar Markdown format
+- Full content regeneration
+- Title/date changes update JSON automatically
+- Works via GitHub web editor too!
+
+**Note:** If your published markdown doesn't have `post_number` and `html_file` in front matter (older posts), add them manually:
+
+```yaml
+---
+title: "My Post Title"
+date: 2026-01-05
+post_number: 2079
+html_file: "2079_my_post.html"
+---
+```
+
+### 7.2 Content-Only Edits (Quick Fixes)
 
 For typos, content fixes, or adding information, just edit the HTML file directly:
 
@@ -597,10 +640,10 @@ If you prefer to edit files manually:
 
 | Task | Method |
 |------|--------|
-| Fix typo in content | Edit HTML file directly |
-| Change title | `python scripts/update_post.py --title "..."` |
-| Change date | `python scripts/update_post.py --date YYYY-MM-DD` |
-| Change categories | `python scripts/update_post.py --categories "..."` |
+| Major content rewrite | Edit markdown in `a/drafts/published/`, push |
+| Fix typo in content | Edit HTML file directly, or edit markdown |
+| Change title/date | Edit markdown in `a/drafts/published/`, push |
+| Metadata only (local) | `python scripts/update_post.py --title "..."` |
 | Move to different topic | `python scripts/manage_topics.py remove-post` + `add-post` |
 | Add to a topic | `python scripts/manage_topics.py add-post` |
 
@@ -678,8 +721,26 @@ git push
 |--------|---------|
 | `scripts/publish_post.py` | Publish new posts from Markdown |
 | `scripts/update_post.py` | Update title, date, or categories of published posts |
+| `scripts/update_from_markdown.py` | Regenerate HTML from updated markdown source |
 | `scripts/delete_post.py` | Remove posts and clean up all references |
 | `scripts/manage_topics.py` | Add/remove posts to topics, create topics |
+
+### 8.7 Update from Markdown (Local)
+
+If you edit markdown in `a/drafts/published/` locally, you can regenerate the HTML:
+
+```bash
+# Regenerate HTML from updated markdown
+python scripts/update_from_markdown.py a/drafts/published/2026-01-05-my-post.md
+
+# Preview without writing
+python scripts/update_from_markdown.py a/drafts/published/2026-01-05-my-post.md --dry-run
+```
+
+The script:
+1. Finds the corresponding HTML file (via `post_number` or `html_file` in front matter)
+2. Regenerates HTML from the markdown content
+3. Updates title/date in JSON files if changed
 
 ---
 
