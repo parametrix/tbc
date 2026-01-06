@@ -192,6 +192,18 @@ jobs:
           git push
           
           echo "✅ Successfully removed post #$POST_NUM"
+      
+      - name: Trigger Pages deployment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'static.yml',
+              ref: 'main'
+            });
+            console.log('Triggered static.yml deployment workflow');
   
   confirm-required:
     runs-on: ubuntu-latest
