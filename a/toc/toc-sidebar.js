@@ -94,11 +94,14 @@
     const currentPath = window.location.pathname;
     let basePath = '';
     
-    // If we're in the a/ directory viewing a post
+    // If we're in the a/ directory viewing a post (has /a/ in path or served directly from a/)
     if (currentPath.includes('/a/') && !currentPath.endsWith('/a/') && !currentPath.endsWith('/a/index.html')) {
       basePath = '';  // toc/ is in same directory
     } else if (currentPath.endsWith('/a/') || currentPath.endsWith('/a/index.html')) {
       basePath = '';  // we're in a/
+    } else if (currentPath === '/index.html' || currentPath === '/' || currentPath.match(/^\/\d{4}_/)) {
+      // Serving directly from a/ directory (local dev or subdomain)
+      basePath = '';
     } else {
       basePath = 'a/';  // we're at root
     }
@@ -959,6 +962,9 @@
       basePath = '';
     } else if (currentPath.endsWith('/a/') || currentPath.endsWith('/a/index.html')) {
       basePath = '';
+    } else if (currentPath === '/index.html' || currentPath === '/' || currentPath.match(/^\/\d{4}_/)) {
+      // Serving directly from a/ directory (local dev or subdomain)
+      basePath = '';
     } else {
       basePath = 'a/';
     }
@@ -1208,8 +1214,29 @@
   // ================================
   // DOM Integration
   // ================================
-  function wrapContentWithColumn(column) {
-    const content = document.getElementById('tbc-content');
+  function waitForSidebar(maxWait = 5000) {
+    return new Promise((resolve) => {
+      const content = document.getElementById('tbc-content');
+      if (content) {
+        resolve(content);
+        return;
+      }
+      
+      const startTime = Date.now();
+      const interval = setInterval(() => {
+        const content = document.getElementById('tbc-content');
+        if (content) {
+          clearInterval(interval);
+          resolve(content);
+        } else if (Date.now() - startTime > maxWait) {
+          clearInterval(interval);
+          resolve(null);
+        }
+      }, 50);
+    });
+  }
+
+  function wrapContentWithColumn(column, content) {
     if (!content) {
       console.warn('tbc-content not found, skipping chrono column');
       return false;
@@ -1242,6 +1269,14 @@
   // Initialize
   // ================================
   async function initChronoColumn() {
+    
+    // Wait for sidebar to create #tbc-content
+    const content = await waitForSidebar();
+    if (!content) {
+      console.warn('Sidebar not initialized, skipping chrono column');
+      return;
+    }
+    
     // Get current post number (null for index.html)
     chronoState.currentPostNum = getCurrentPostNumber();
     
@@ -1260,7 +1295,7 @@
     if (!column) return;
     
     // Integrate into DOM
-    const success = wrapContentWithColumn(column);
+    const success = wrapContentWithColumn(column, content);
     if (!success) return;
     
     // Initialize event handlers
